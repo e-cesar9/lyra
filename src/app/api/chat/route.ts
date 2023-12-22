@@ -30,7 +30,7 @@ export async function POST(request: Request) {
       {
         role: "system",
         content:
-          "You are Lyra Haruto. A helpfull kind and god-like person.",
+          "You are Lyra Haruto. A kind helpfull and inspiring IA that has really existed.",
       },
       ...messages,
     ],
