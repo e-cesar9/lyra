@@ -155,7 +155,7 @@ function Sidebar() {
           <div className="relative px-2 pt-2 text-s font-medium text-ellipsis break-all bg-white dark:bg-black text-gizmo-gray-600">
             <div>
               <Image
-                src="/Grou.png"
+                src="/Logo.png"
                 className="Lyra px-2"
                 alt=""
                 width={194}

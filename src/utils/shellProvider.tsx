@@ -3,7 +3,6 @@ import React, {useEffect} from "react"
 import {History} from "../interfaces/history"
 import * as bin from "./bin"
 import {useTheme} from "./themeProvider"
-import {lyra} from "./bin/lyra"
 
 interface ShellContextType {
   history: History[]
@@ -87,20 +86,19 @@ export const ShellProvider: React.FC<ShellProviderProps> = ({children}) => {
       case "":
         setHistory("")
         break
-        default: {
+      default: {
         if (Object.keys(bin).indexOf(cmd) === -1) {
-          setHistory(`Command not found: ${cmd}. Try 'help' to get started.`);
+          setHistory(`Command not found: ${cmd}. Try 'help' to get started.`)
         } else {
           try {
-            const output = await bin[cmd](args);
+            const output = await bin[cmd](args)
 
-            setHistory(output);
+            setHistory(output)
           } catch (error) {
-            setHistory(error.message);
+            setHistory(error.message)
           }
         }
       }
-
     }
   }
 
