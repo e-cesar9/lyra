@@ -3,7 +3,6 @@ import React, {useEffect} from "react"
 import {History} from "../interfaces/history"
 import * as bin from "./bin"
 import {useTheme} from "./themeProvider"
-import {lyra} from "./bin/lyra"
 
 interface ShellContextType {
   history: History[]
