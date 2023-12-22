@@ -88,20 +88,7 @@ export const ShellProvider: React.FC<ShellProviderProps> = ({children}) => {
         break
       default: {
         if (Object.keys(bin).indexOf(cmd) === -1) {
-          try {
-            // Call the main function and await its response
-            const response = await lyra(cmd + " " + args.join(" "))
-            setHistory(response) // Update history with the response
-          } catch (error) {
-            setHistory(`Error: ${error.message}`)
-          }
-        } else {
-          try {
-            const output = await bin[cmd](args)
-            setHistory(output)
-          } catch (error) {
-            setHistory(error.message)
-          }
+
 
           // main(cmd)
           // setHistory(`
