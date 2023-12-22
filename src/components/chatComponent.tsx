@@ -1,5 +1,5 @@
 "use client"
-import {useChat, Message} from "ai/react"
+import {useChat} from "ai/react"
 import React, {useEffect, useState} from "react"
 import {commandExists} from "./../utils/commandExists"
 import {useShell} from "./../utils/shellProvider"
@@ -114,58 +114,10 @@ export const ChatComponent = ({inputRef, containerRef}) => {
       output: m.content,
     })),
   ]
-  // console.log(mixedHistory)
-
-  //   const mixedHistory = [
-  //   ...history.map(entry => ({ ...entry, type: 'command', timestamp: entry.timestamp || new Date().getTime() })),
-  //   ...messages.map(m => ({ command: m.role === 'user' ? m.content : '', output: m.content, type: 'message', timestamp: m.timestamp }))
-  // ].sort((a, b) => a.timestamp - b.timestamp);
-
-  // // Debugging: Log the relevantHistory
-  // console.log(mixedHistory);
 
   return (
     <div>
       <History history={history} messages={messages} />
-      {/* {history.map((entry: HistoryInterface, index: number) => (
-        <div key={entry.command + index}>
-          <div className="flex flex-row space-x-2">
-            <div className="flex-shrink">
-              <Ps1 />
-            </div>
-
-            <div className="flex-grow">{entry.command}</div>
-          </div>
-
-          <p
-            className="whitespace-pre-wrap mb-2"
-            style={{lineHeight: "normal"}}
-            dangerouslySetInnerHTML={{__html: entry.output}}
-          />
-        </div>
-      ))} */}
-      {/*       
-      {messages.map((message: Message) => {       
-        return (
-          <div key={message.id}>
-            {message.role === "assistant" ? (
-              <h3 className="text-lg font-semibold mt-2">GPT-4</h3>
-            ) : (
-              <Ps1/>
-            )}
-
-            {message.content
-              .split("\n")
-              .map((currentTextBlock: string, index: number) => {
-                if (currentTextBlock === "") {
-                  return <p key={message.id + index}>&nbsp;</p> // " "
-                } else {
-                  return <p key={message.id + index}>{currentTextBlock}</p> // "Cooper Codes is a YouTuber"
-                }
-              })}
-          </div>
-        )
-      })} */}
 
       <form className="" onSubmit={handleSubmit}>
         <Ps1 />
@@ -182,9 +134,8 @@ export const ChatComponent = ({inputRef, containerRef}) => {
           }}
           value={input || value}
           onChange={(event) => {
-            setValue(event.target.value) // Simply set the value
+            setValue(event.target.value)
             handleInputChange(event)
-            // Continue handling the change for other purposes
           }}
           autoComplete="off"
           autoCorrect="off"

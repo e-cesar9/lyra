@@ -5,10 +5,6 @@ import {useTheme} from "../utils/themeProvider"
 import config from "../../config.json"
 import ChatComponent from "../components/chatComponent"
 
-// interface IndexPageProps {
-//   inputRef: React.MutableRefObject<HTMLInputElement>
-// }
-
 const IndexPage = ({}) => {
   const {history} = useShell()
   const {theme} = useTheme()
@@ -29,8 +25,6 @@ const IndexPage = ({}) => {
         }}
       >
         <div ref={containerRef} id="yo" className="overflow-y-auto h-full">
-          {/* <History history={history} messages={messages} /> */}
-          {/* <Input inputRef={inputRef} containerRef={containerRef} /> */}
           <ChatComponent inputRef={inputRef} containerRef={containerRef} />
         </div>
       </div>

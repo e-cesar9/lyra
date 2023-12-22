@@ -7,7 +7,6 @@ import {ThemeProvider} from "../utils/themeProvider"
 import Sidebar from "../utils/sideBar"
 
 const RootLayout = ({children}: {children: React.ReactNode}) => {
-  // const inputRef = React.useRef<HTMLInputElement>(null)
   const [isSidebarVisible, setSidebarVisible] = useState(false)
 
   const onClickAnywhere = () => {

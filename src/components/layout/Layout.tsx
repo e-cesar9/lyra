@@ -1,6 +1,5 @@
 import React from "react"
 import {useTheme} from "../../utils/themeProvider"
-import ChatComponent from "../chatComponent"
 
 interface Props {
   children: React.ReactNode
