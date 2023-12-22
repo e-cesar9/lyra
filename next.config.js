@@ -23,17 +23,17 @@
 // module.exports = nextConfig
 
 
-// module.exports = {
-//   assetPrefix: '.',
-// };
+module.exports = {
+  assetPrefix: '.',
+};
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-      images: {
-    unoptimized: true,
-  },
-    output: 'export',
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//       images: {
+//     unoptimized: true,
+//   },
+//     output: 'export',
 
-}
+// }
 
-module.exports = nextConfig
+// module.exports = nextConfig
