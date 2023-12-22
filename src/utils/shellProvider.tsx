@@ -34,7 +34,7 @@ export const ShellProvider: React.FC<ShellProviderProps> = ({children}) => {
   const {theme, setTheme} = useTheme()
 
   useEffect(() => {
-    setTheme("Homebrew")
+    setTheme("homebrew")
     setCommand("neofetch")
   }, [])
 
