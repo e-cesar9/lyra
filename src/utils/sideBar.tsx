@@ -3,8 +3,8 @@ import React, {useEffect, useRef, useState} from "react"
 import {Fragment} from "react"
 import {Menu, Transition} from "@headlessui/react"
 import Image from "next/image"
-import {Item} from "./effect/effect"
-import "./effect/effect.css"
+import {Item} from "./effect/BtnEffect"
+import "./effect/BtnEffect.css"
 import Link from "next/link"
 
 function classNames(...classes) {
@@ -161,8 +161,6 @@ function Sidebar() {
                 width={194}
                 height={218}
               />
-              {/* <a href="" className='Lyra group flex h-10 items-center gap-2 rounded-lg px-2 font-medium hover:bg-token-surface-primary mt-5'> */}
-              {/* </a> */}
             </div>
 
             <div

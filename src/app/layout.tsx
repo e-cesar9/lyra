@@ -10,8 +10,8 @@ const RootLayout = ({children}: {children: React.ReactNode}) => {
   const [isSidebarVisible, setSidebarVisible] = useState(false)
 
   const onClickAnywhere = () => {
-    // inputRef.current.
-    // focus()
+    // children.current.
+    focus()
   }
 
   useEffect(() => {

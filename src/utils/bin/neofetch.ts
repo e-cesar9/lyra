@@ -217,11 +217,18 @@ const getInfo = () => {
 export const neofetch = async (args?: string[]): Promise<string> => {
   const art = getArt()
   const info = getInfo()
+  const mainColor = getMainColor()
+
+  // console.log(art);
+  // var firstIndex = art.indexOf('>')+1;
+  // var secondIndex = art.indexOf('<', firstIndex + 1);
+
+  // console.log(art.substring(firstIndex,secondIndex));
 
   return `
   <table>
     <tr>
-      <td class="lyrart">${art}</td>
+      <td class="lyrart"style="color: ${mainColor}">${lyra}</td>
       <td class="system">${info}</td>
     <tr>
   </table>

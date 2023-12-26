@@ -19,8 +19,8 @@ export const ChatComponent = ({inputRef, containerRef}) => {
     isLoading,
     messages,
   } = useChat()
-  // console.log(messages);
 
+  // console.log(messages);
   // console.log(input)
 
   const {theme} = useTheme()
@@ -36,6 +36,8 @@ export const ChatComponent = ({inputRef, containerRef}) => {
 
   useEffect(() => {
     containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
+    inputRef.current.focus()
+    inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
   }, [messages, history])
 
   const onSubmit = async (event: React.KeyboardEvent<HTMLInputElement>) => {

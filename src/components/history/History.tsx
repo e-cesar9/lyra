@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect, useRef, useState} from "react"
 import {History as HistoryInterface} from "../../interfaces/history"
 import {Ps1} from "../ps1"
 import {Message} from "ai/react"
@@ -48,6 +48,41 @@ export const History: React.FC<Props> = ({history, messages}) => {
     (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
   )
 
+  const typingEffect = (text: string, element: HTMLElement) => {
+    let i = 0
+    const interval = setInterval(() => {
+      if (i < text.length) {
+        element.textContent += text.charAt(i)
+        i++
+      } else {
+        clearInterval(interval)
+      }
+    }, 7)
+  }
+
+  const animPlayed = useRef(false)
+  useEffect(() => {
+    history.forEach((item) => {
+      if (item.command === "neofetch" && !animPlayed.current) {
+        const lyraElements = document.querySelectorAll(".lyrart")
+        lyraElements.forEach((element, index) => {
+          typingEffect(element.textContent || "", element as HTMLElement)
+          element.textContent = "" // Clear initial text
+
+          if (index === lyraElements.length - 1) {
+            // Set a timeout to mark the animation as played
+            setTimeout(
+              () => {
+                animPlayed.current = true
+              },
+              (element.textContent?.length || 0) * 7,
+            )
+          }
+        })
+      }
+    })
+  }, [history])
+
   return (
     <>
       {mixedHistory.map((item, index) => (
@@ -67,13 +102,13 @@ export const History: React.FC<Props> = ({history, messages}) => {
             // Render message item
             <div>
               {item.role === "assistant" ? (
-                <p className="text-right pt-12 pr-6 resLy"> - Lyra Haruto</p>
+                <p className="resLy">Lyra Haruto - </p>
               ) : (
                 <Ps1 />
               )}
               {item.role === "assistant"
                 ? item.content.split("\n").map((line, lineIndex) => (
-                    <p className="text-right pt-2 pr-6 pb-6" key={lineIndex}>
+                    <p className="resLy" key={lineIndex}>
                       {line}
                     </p>
                   ))
@@ -91,11 +126,3 @@ export const History: React.FC<Props> = ({history, messages}) => {
 }
 
 export default History
-
-// // Filtering mixedHistory based on the current input value
-// const relevantHistory = mixedHistory.filter(entry =>
-//   commandExists(value) ? entry.type === 'command' : entry.type === 'message'
-// );
-
-// const mixedHistory = [...history, ...messages.map(m => ({ command: m.role === "user" ? m.content : "", output: m.content }))]
-// console.log(mixedHistory);

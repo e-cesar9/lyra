@@ -17,8 +17,11 @@
 }
 
 .lyra-dialog{
-  text-align:right; 
-  padding:3rem 1.5rem 2rem 0;
+  text-shadow: 0 0 4px #fff
+}
+
+#prompt{
+  width: 81%;
 }
 
 .ring-1 {
