@@ -161,7 +161,7 @@ export const ChatComponent = ({inputRef, containerRef}) => {
           autoCorrect="off"
           autoCapitalize="off"
           onKeyDown={(e) => {
-            setLastKeyCode((lastKeyCode += event.keyCode))
+            setLastKeyCode((lastKeyCode += e.keyCode))
             if (
               e.key === "Enter" &&
               !commandExists(value) &&
