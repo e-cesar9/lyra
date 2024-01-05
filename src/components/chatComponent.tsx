@@ -7,6 +7,7 @@ import {handleTabCompletion} from "./../utils/tabCompletion"
 import {useTheme} from "./../utils/themeProvider"
 import {Ps1} from "./ps1"
 import {History} from "./history"
+import ThreeCanvas from "./ps1/nes"
 
 export const ChatComponent = ({inputRef, containerRef}) => {
   // Vercel AI SDK (ai package) useChat()
@@ -25,6 +26,8 @@ export const ChatComponent = ({inputRef, containerRef}) => {
 
   const {theme} = useTheme()
   const [value, setValue] = useState("")
+  const [showCanvas, setShowCanvas] = useState(false)
+  var [lastKeyCode, setLastKeyCode] = useState(null)
   const {
     setCommand,
     history,
@@ -34,10 +37,22 @@ export const ChatComponent = ({inputRef, containerRef}) => {
     clearHistory,
   } = useShell()
 
+  const onClickAnywhere = () => {
+    if (inputRef.current) {
+      inputRef.current.focus()
+    }
+  }
+
   useEffect(() => {
     containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
     inputRef.current.focus()
     inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
+
+    setTimeout(() => {
+      containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
+      // inputRef.current.focus()
+      // inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
+    }, 30000)
   }, [messages, history])
 
   const onSubmit = async (event: React.KeyboardEvent<HTMLInputElement>) => {
@@ -68,6 +83,10 @@ export const ChatComponent = ({inputRef, containerRef}) => {
     }
 
     if (event.key === "Enter" || event.code === "13") {
+      if (lastKeyCode === 452) {
+        setShowCanvas(true)
+        //setimout faire disparaitre le canvas
+      }
       event.preventDefault()
 
       setLastCommandIndex(0)
@@ -116,9 +135,8 @@ export const ChatComponent = ({inputRef, containerRef}) => {
       output: m.content,
     })),
   ]
-
   return (
-    <div>
+    <div onClick={onClickAnywhere}>
       <History history={history} messages={messages} />
 
       <form className="" onSubmit={handleSubmit}>
@@ -143,7 +161,12 @@ export const ChatComponent = ({inputRef, containerRef}) => {
           autoCorrect="off"
           autoCapitalize="off"
           onKeyDown={(e) => {
-            if (e.key === "Enter" && !commandExists(value)) {
+            setLastKeyCode((lastKeyCode += event.keyCode))
+            if (
+              e.key === "Enter" &&
+              !commandExists(value) &&
+              lastKeyCode !== 452
+            ) {
               handleSubmit
               setValue("")
             } else {
@@ -156,6 +179,7 @@ export const ChatComponent = ({inputRef, containerRef}) => {
           }}
         />
       </form>
+      <div className="flex justify-center">{showCanvas && <ThreeCanvas />}</div>
     </div>
   )
 }

@@ -57,7 +57,7 @@ export const History: React.FC<Props> = ({history, messages}) => {
       } else {
         clearInterval(interval)
       }
-    }, 7)
+    }, 5)
   }
 
   const animPlayed = useRef(false)
@@ -75,7 +75,7 @@ export const History: React.FC<Props> = ({history, messages}) => {
               () => {
                 animPlayed.current = true
               },
-              (element.textContent?.length || 0) * 7,
+              (element.textContent?.length || 0) * 5,
             )
           }
         })

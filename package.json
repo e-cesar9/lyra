@@ -42,7 +42,9 @@
     "openai-edge": "^1.2.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-icons": "^4.11.0"
+    "react-icons": "^4.11.0",
+    "three": "^0.160.0",
+    "three-plain-animator": "^1.1.2"
   },
   "devDependencies": {
     "@types/node": "^20.10.4",

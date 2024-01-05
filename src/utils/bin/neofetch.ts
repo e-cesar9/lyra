@@ -219,12 +219,6 @@ export const neofetch = async (args?: string[]): Promise<string> => {
   const info = getInfo()
   const mainColor = getMainColor()
 
-  // console.log(art);
-  // var firstIndex = art.indexOf('>')+1;
-  // var secondIndex = art.indexOf('<', firstIndex + 1);
-
-  // console.log(art.substring(firstIndex,secondIndex));
-
   return `
   <table>
     <tr>
