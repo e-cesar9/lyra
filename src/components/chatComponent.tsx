@@ -52,7 +52,7 @@ export const ChatComponent = ({inputRef, containerRef}) => {
       containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
       // inputRef.current.focus()
       // inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
-    }, 30000)
+    }, 17000)
   }, [messages, history])
 
   const onSubmit = async (event: React.KeyboardEvent<HTMLInputElement>) => {
@@ -85,7 +85,9 @@ export const ChatComponent = ({inputRef, containerRef}) => {
     if (event.key === "Enter" || event.code === "13") {
       if (lastKeyCode === 452) {
         setShowCanvas(true)
-        //setimout faire disparaitre le canvas
+        setTimeout(() => {
+          setShowCanvas(false)
+        }, 10000)
       }
       event.preventDefault()
 

@@ -1,21 +1,20 @@
 import React, {useEffect, useRef} from "react"
 import "../../styles/global.css"
-
 import * as THREE from "three"
 import gsap from "gsap"
 import {PlainAnimator} from "three-plain-animator/lib/plain-animator"
 
 type GalaxyParameters = {
-  count: number;
-  size: number;
-  radius: number;
-  branches: number;
-  spin: number;
-  randomness: number;
-  randomnessPower: number;
-  insideColor: string;
-  outsideColor: string;
-};
+  count: number
+  size: number
+  radius: number
+  branches: number
+  spin: number
+  randomness: number
+  randomnessPower: number
+  insideColor: string
+  outsideColor: string
+}
 
 const ThreeCanvas: React.FC = () => {
   const canvasRef = useRef<HTMLDivElement>(null)
@@ -30,7 +29,6 @@ const ThreeCanvas: React.FC = () => {
     renderer.setSize(window.innerWidth / 2, window.innerHeight / 2)
     canvasRef.current.appendChild(renderer.domElement)
 
-    // ... existing Three.js setup ...
     // Scene
     const scene = new THREE.Scene()
 
@@ -45,7 +43,7 @@ const ThreeCanvas: React.FC = () => {
       randomnessPower: 10,
       insideColor: "#190600",
       outsideColor: "#ff6030",
-    };
+    }
 
     let geometry = null
     let material = null
@@ -141,8 +139,12 @@ const ThreeCanvas: React.FC = () => {
 
     const tl = gsap.timeline()
     let a = false
-    tl.to(parameters,{radius:4, duration:4 ,onUpdate:generateDoor}, 0)
-    tl.to(parameters,{randomnessPower:40, duration:2 ,onUpdate:generateDoor}, 3.4)
+    tl.to(parameters, {radius: 4, duration: 4, onUpdate: generateDoor}, 0)
+    tl.to(
+      parameters,
+      {randomnessPower: 40, duration: 2, onUpdate: generateDoor},
+      3.4,
+    )
 
     setTimeout(() => {
       a = true
@@ -185,7 +187,7 @@ const ThreeCanvas: React.FC = () => {
       if (a == true) {
         animator.animate() // update the animation
       }
-        generateDoor()
+      generateDoor()
       requestAnimationFrame(tick)
     }
 
