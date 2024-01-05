@@ -5,6 +5,18 @@ import * as THREE from "three"
 import gsap from "gsap"
 import {PlainAnimator} from "three-plain-animator/lib/plain-animator"
 
+type GalaxyParameters = {
+  count: number;
+  size: number;
+  radius: number;
+  branches: number;
+  spin: number;
+  randomness: number;
+  randomnessPower: number;
+  insideColor: string;
+  outsideColor: string;
+};
+
 const ThreeCanvas: React.FC = () => {
   const canvasRef = useRef<HTMLDivElement>(null)
 
@@ -23,16 +35,17 @@ const ThreeCanvas: React.FC = () => {
     const scene = new THREE.Scene()
 
     //Galaxy
-    const parameters = {}
-    parameters.count = 2000
-    parameters.size = 0.01
-    parameters.radius = 0.01
-    parameters.branches = 1
-    parameters.spin = 0
-    parameters.randomness = 0.2
-    parameters.randomnessPower = 50
-    parameters.insideColor = "#190600"
-    parameters.outsideColor = "#ff6030"
+    const parameters: GalaxyParameters = {
+      count: 2000,
+      size: 0.01,
+      radius: 0.01,
+      branches: 1,
+      spin: 0,
+      randomness: 0.2,
+      randomnessPower: 50,
+      insideColor: "#190600",
+      outsideColor: "#ff6030",
+    };
 
     let geometry = null
     let material = null
