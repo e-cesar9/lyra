@@ -42,7 +42,7 @@ const ThreeCanvas: React.FC = () => {
       branches: 1,
       spin: 0,
       randomness: 0.2,
-      randomnessPower: 50,
+      randomnessPower: 10,
       insideColor: "#190600",
       outsideColor: "#ff6030",
     };
@@ -54,7 +54,7 @@ const ThreeCanvas: React.FC = () => {
     let pointsRight = null
     let pointsHorizontal2 = null
 
-    const generateGalaxy = () => {
+    const generateDoor = () => {
       //destroy Galaxy
       if (points !== null) {
         geometry.dispose()
@@ -137,25 +137,18 @@ const ThreeCanvas: React.FC = () => {
       pointsHorizontal2.scale.set(1.6, 1, 0.2)
     }
 
-    generateGalaxy()
-
-    const light = new THREE.AmbientLight(0x404040, 5) // soft white light
-
-    scene.add(light)
+    generateDoor()
 
     const tl = gsap.timeline()
     let a = false
-    tl.to(parameters, {radius: 4, duration: 6, onUpdate: generateGalaxy}, 0)
-    // tl.to(parameters,{count:1000, duration:4,onUpdate:generateGalaxy}, 0)
-    // tl.to(particles1.scale,{y:1, duration:4,onUpdate:generateGalaxy}, 0)
-    // tl.to(plane.rotation,{y:-Math.PI*.75, duration:5}, 0)
-    // tl.to(plane.position,{x:-2.5, duration:3}, 0)
+    tl.to(parameters,{radius:4, duration:4 ,onUpdate:generateDoor}, 0)
+    tl.to(parameters,{randomnessPower:40, duration:2 ,onUpdate:generateDoor}, 3.4)
+
     setTimeout(() => {
       a = true
-      // After 6 seconds of `a` being true, set `a` back to false
       setTimeout(() => {
         a = false
-      }, 6000) // This timeout runs for 6 seconds
+      }, 6000)
     }, 6000)
 
     const camera = new THREE.PerspectiveCamera(
@@ -166,7 +159,7 @@ const ThreeCanvas: React.FC = () => {
     )
     camera.position.x = 0
     camera.position.y = 0
-    camera.position.z = 10
+    camera.position.z = 6
     scene.add(camera)
 
     const texturePath = "spritesheet.png"
@@ -187,21 +180,13 @@ const ThreeCanvas: React.FC = () => {
     scene.add(mesh3)
 
     const tick = () => {
-      // Update controls
-      //   controls.update()
-
       // Render
       renderer.render(scene, camera)
-
       if (a == true) {
         animator.animate() // update the animation
       }
-      // parameters.randomness = Math.sin(parameters.randomness)
-      //   generateGalaxy()
+        generateDoor()
       requestAnimationFrame(tick)
-
-      // Call tick again on the next frame
-      // window.requestAnimationFrame(animate)
     }
 
     tick()
