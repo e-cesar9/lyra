@@ -1,4 +1,4 @@
-if (screenWidth > 1280) {
+
   import gsap from "gsap"
 
   // Linear interpolation
@@ -181,4 +181,3 @@ if (screenWidth > 1280) {
       this.loopRender()
     }
   }
-}
