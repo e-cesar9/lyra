@@ -1,3 +1,4 @@
+"use client"
 import React from "react"
 import {useShell} from "../utils/shellProvider"
 import {useTheme} from "../utils/themeProvider"
