@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
+    "@vercel/speed-insights": "^1.0.2",
     "ai": "^2.2.29",
     "axios": "^1.6.0",
     "cowsay-browser": "^1.1.8",

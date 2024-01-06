@@ -4,6 +4,7 @@ import "../styles/global.css"
 import {ShellProvider} from "../utils/shellProvider"
 import {ThemeProvider} from "../utils/themeProvider"
 import Sidebar from "../utils/sideBar"
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const RootLayout = ({children}: {children: React.ReactNode}) => {
   const [isSidebarVisible, setSidebarVisible] = useState(false)
@@ -72,6 +73,7 @@ const RootLayout = ({children}: {children: React.ReactNode}) => {
             </ShellProvider>
           </ThemeProvider>
         </Global>
+        <SpeedInsights />
       </body>
     </html>
   )
