@@ -1,4 +1,3 @@
-"use client"
 import React, {useEffect} from "react"
 import {History} from "../interfaces/history"
 import * as bin from "./bin"

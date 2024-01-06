@@ -1,4 +1,3 @@
-"use client"
 import React, {useEffect, useState} from "react"
 import Themes from "../../themes.json"
 import {Theme} from "../interfaces/theme"
