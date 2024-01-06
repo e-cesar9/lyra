@@ -10,11 +10,15 @@ import Link from "next/link"
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ")
 }
+const isLaptop = () => {
+  const minWidth = 1024 // Minimum width in pixels to consider as a laptop
+  return window.innerWidth >= minWidth
+}
 
 function Example() {
   const hoverRef = useRef(null)
   useEffect(() => {
-    if (hoverRef.current) {
+    if (hoverRef.current && isLaptop()) {
       new Item(hoverRef.current)
     }
   }, [])
@@ -104,34 +108,36 @@ function Sidebar() {
   const handleMouseOverRef = useRef(null)
 
   useEffect(() => {
-    handleMouseOverRef.current = (e) => {
-      const link = links.find((l) => l.ref.current === e.currentTarget)
-      if (link) {
-        const textLength = link.text.length
-        link.setText(getRandomString(textLength))
-        setTimeout(() => link.setText(getRandomString(textLength)), 100)
-        setTimeout(() => link.setText(getRandomString(textLength)), 200)
-        setTimeout(() => link.setText(link.originalText), 400)
+    if (isLaptop()) {
+      handleMouseOverRef.current = (e) => {
+        const link = links.find((l) => l.ref.current === e.currentTarget)
+        if (link) {
+          const textLength = link.text.length
+          link.setText(getRandomString(textLength))
+          setTimeout(() => link.setText(getRandomString(textLength)), 100)
+          setTimeout(() => link.setText(getRandomString(textLength)), 200)
+          setTimeout(() => link.setText(link.originalText), 400)
+        }
       }
-    }
 
-    links.forEach((link) => {
-      const linkElement = link.ref.current
-      if (linkElement) {
-        linkElement.addEventListener("mouseover", handleMouseOverRef.current)
-      }
-    })
-
-    return () => {
       links.forEach((link) => {
         const linkElement = link.ref.current
         if (linkElement) {
-          linkElement.removeEventListener(
-            "mouseover",
-            handleMouseOverRef.current,
-          )
+          linkElement.addEventListener("mouseover", handleMouseOverRef.current)
         }
       })
+
+      return () => {
+        links.forEach((link) => {
+          const linkElement = link.ref.current
+          if (linkElement) {
+            linkElement.removeEventListener(
+              "mouseover",
+              handleMouseOverRef.current,
+            )
+          }
+        })
+      }
     }
   }, [links])
 
