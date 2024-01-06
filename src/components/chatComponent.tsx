@@ -1,3 +1,4 @@
+"use client"
 import {useChat} from "ai/react"
 import React, {useEffect, useState} from "react"
 import {commandExists} from "./../utils/commandExists"
