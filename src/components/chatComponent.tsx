@@ -8,10 +8,7 @@ import {Ps1} from "./ps1"
 import {History} from "./history"
 import ThreeCanvas from "./ps1/nes"
 
-export const ChatComponent = ({}) => {
-  const inputRef = React.useRef<HTMLInputElement>(null)
-  const containerRef = React.useRef(null)
-
+export const ChatComponent = ({inputRef, containerRef}) => {
   // Vercel AI SDK (ai package) useChat()
 
   const {input, setInput, handleInputChange, handleSubmit, messages} = useChat()
@@ -32,23 +29,23 @@ export const ChatComponent = ({}) => {
     clearHistory,
   } = useShell()
 
-  // const onClickAnywhere = () => {
-  //   if (inputRef.current) {
-  //     inputRef.current.focus()
-  //   }
-  // }
+  const onClickAnywhere = () => {
+    if (inputRef.current) {
+      inputRef.current.focus()
+    }
+  }
 
-  // useEffect(() => {
-  //   containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
-  //   inputRef.current.focus()
-  //   inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
+  useEffect(() => {
+    containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
+    inputRef.current.focus()
+    inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
 
-  //   setTimeout(() => {
-  //     containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
-  //     // inputRef.current.focus()
-  //     // inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
-  //   }, 17000)
-  // }, [messages, history])
+    setTimeout(() => {
+      containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
+      inputRef.current.focus()
+      inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
+    }, 18000)
+  }, [messages, history])
 
   const onSubmit = async (event: React.KeyboardEvent<HTMLInputElement>) => {
     const commands: string[] = history
@@ -121,7 +118,7 @@ export const ChatComponent = ({}) => {
   }
 
   return (
-    <>
+    <div onClick={onClickAnywhere}>
       <History history={history} messages={messages} />
 
       <form className="" onSubmit={handleSubmit}>
@@ -165,7 +162,7 @@ export const ChatComponent = ({}) => {
         />
       </form>
       <div className="flex justify-center">{showCanvas && <ThreeCanvas />}</div>
-    </>
+    </div>
   )
 }
 export default ChatComponent
