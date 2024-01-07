@@ -1,5 +1,4 @@
-"use client"
-import React, {useEffect, useState} from "react"
+import React from "react"
 import {Layout} from "../components/layout"
 import "../styles/global.css"
 import {ShellProvider} from "../utils/shellProvider"
@@ -8,24 +7,24 @@ import Sidebar from "../utils/sideBar"
 import {SpeedInsights} from "@vercel/speed-insights/next"
 
 const RootLayout = ({children}: {children: React.ReactNode}) => {
-  const [isSidebarVisible, setSidebarVisible] = useState(false)
+  // const [isSidebarVisible, setSidebarVisible] = useState(false)
 
-  const onClickAnywhere = () => {
-    // children.current.
-    focus()
-  }
+  // const onClickAnywhere = () => {
+  //   // children.current.
+  //   focus()
+  // }
 
-  useEffect(() => {
-    localStorage.setItem("visitedAt", new Date().toString())
-  }, [])
+  // useEffect(() => {
+  //   localStorage.setItem("visitedAt", new Date().toString())
+  // }, [])
 
   type GlobalProps = {
     children: React.ReactNode
   }
 
-  const toggleSidebar = () => {
-    setSidebarVisible(!isSidebarVisible)
-  }
+  // const toggleSidebar = () => {
+  //   setSidebarVisible(!isSidebarVisible)
+  // }
 
   const Global = (props: GlobalProps) => {
     return (
@@ -35,30 +34,30 @@ const RootLayout = ({children}: {children: React.ReactNode}) => {
     )
   }
 
-  const MobileSidebarToggle = ({onClick}) => (
-    <div className={`bar ${isSidebarVisible ? "h-20" : "h-11"}`}>
-      <button
-        onClick={onClick}
-        className="mobile-sidebar-toggle mobile-toggle absolute left-0 -ml-0.5 -mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-md hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white active:opacity-50 dark:hover:text-white"
-      >
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="icon-md"
-        >
-          <path
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M3 8C3 7.44772 3.44772 7 4 7H20C20.5523 7 21 7.44772 21 8C21 8.55228 20.5523 9 20 9H4C3.44772 9 3 8.55228 3 8ZM3 16C3 15.4477 3.44772 15 4 15H14C14.5523 15 15 15.4477 15 16C15 16.5523 14.5523 17 14 17H4C3.44772 17 3 16.5523 3 16Z"
-            fill="currentColor"
-          ></path>
-        </svg>
-      </button>
-    </div>
-  )
+  // const MobileSidebarToggle = ({onClick}) => (
+  //   <div className={`bar ${isSidebarVisible ? "h-20" : "h-11"}`}>
+  //     <button
+  //       onClick={onClick}
+  //       className="mobile-sidebar-toggle mobile-toggle absolute left-0 -ml-0.5 -mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-md hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white active:opacity-50 dark:hover:text-white"
+  //     >
+  //       <svg
+  //         width="24"
+  //         height="24"
+  //         viewBox="0 0 24 24"
+  //         fill="none"
+  //         xmlns="http://www.w3.org/2000/svg"
+  //         className="icon-md"
+  //       >
+  //         <path
+  //           fillRule="evenodd"
+  //           clipRule="evenodd"
+  //           d="M3 8C3 7.44772 3.44772 7 4 7H20C20.5523 7 21 7.44772 21 8C21 8.55228 20.5523 9 20 9H4C3.44772 9 3 8.55228 3 8ZM3 16C3 15.4477 3.44772 15 4 15H14C14.5523 15 15 15.4477 15 16C15 16.5523 14.5523 17 14 17H4C3.44772 17 3 16.5523 3 16Z"
+  //           fill="currentColor"
+  //         ></path>
+  //       </svg>
+  //     </button>
+  //   </div>
+  // )
 
   return (
     <html lang="en">
@@ -67,10 +66,9 @@ const RootLayout = ({children}: {children: React.ReactNode}) => {
         <Global>
           <ThemeProvider>
             <ShellProvider>
-              <MobileSidebarToggle onClick={toggleSidebar} />
-              {!isSidebarVisible && <Sidebar />}
-
-              <Layout onClick={onClickAnywhere}>{children}</Layout>
+              {/* <MobileSidebarToggle onClick={toggleSidebar} /> */}
+              {/* {!isSidebarVisible &&  */}
+              {children}
             </ShellProvider>
           </ThemeProvider>
         </Global>

@@ -1,4 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
+"use client"
 import React, {useEffect, useRef, useState} from "react"
 import {Fragment} from "react"
 import {Menu, Transition} from "@headlessui/react"
