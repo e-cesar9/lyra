@@ -274,6 +274,12 @@ to { transform: translate(0, 100vh)}
 
 }
 
+@media(max-width:760px){
+  .sidebar-hidden{
+    width:0px;
+  }
+}
+
 @media (max-width: 501px){
   .lyrart1{
     display: none;
