@@ -181,7 +181,7 @@ to { transform: translate(0, 100vh)}
   }
 }
 @media (prefers-reduced-motion) {
-  .noise, .flicker, .scanlines:before {
+  .noise, .scanlines:before {
       animation: none !important;
   }
 }

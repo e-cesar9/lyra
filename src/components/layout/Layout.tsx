@@ -24,7 +24,6 @@ const Layout: React.FC<Props> = ({children}) => {
       >
         {children}
       </main>
-      <div className="flicker"></div>
       <div className="scanlines"></div>
       <div className="noise"></div>
     </div>
