@@ -31,7 +31,7 @@ const RootLayout = ({children}: {children: React.ReactNode}) => {
   }
 
   const MobileSidebarToggle = ({onClick}) => (
-    <div className={`bar ${isSidebarVisible ? "h-11" : "h-20"}`}>
+    <div className={`bar ${isSidebarVisible ? "h-20" : "h-11"}`}>
       <button
         onClick={onClick}
         className="mobile-sidebar-toggle mobile-toggle absolute left-0 -ml-0.5 -mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-md hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white active:opacity-50 dark:hover:text-white"
@@ -63,13 +63,7 @@ const RootLayout = ({children}: {children: React.ReactNode}) => {
           <ThemeProvider>
             <ShellProvider>
               <MobileSidebarToggle onClick={toggleSidebar} />
-              <div
-                className={
-                  isSidebarVisible ? "sidebar-visible" : "sidebar-hidden"
-                }
-              >
-                <Sidebar />
-              </div>
+              {!isSidebarVisible && <Sidebar />}
 
               <Layout>{children}</Layout>
             </ShellProvider>
