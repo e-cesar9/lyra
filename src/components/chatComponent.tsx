@@ -32,11 +32,11 @@ export const ChatComponent = ({}) => {
     clearHistory,
   } = useShell()
 
-  const onClickAnywhere = () => {
-    if (inputRef.current) {
-      inputRef.current.focus()
-    }
-  }
+  // const onClickAnywhere = () => {
+  //   if (inputRef.current) {
+  //     inputRef.current.focus()
+  //   }
+  // }
 
   // useEffect(() => {
   //   containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
@@ -121,7 +121,7 @@ export const ChatComponent = ({}) => {
   }
 
   return (
-    <div onClick={onClickAnywhere}>
+    <>
       <History history={history} messages={messages} />
 
       <form className="" onSubmit={handleSubmit}>
@@ -165,7 +165,7 @@ export const ChatComponent = ({}) => {
         />
       </form>
       <div className="flex justify-center">{showCanvas && <ThreeCanvas />}</div>
-    </div>
+    </>
   )
 }
 export default ChatComponent

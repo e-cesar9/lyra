@@ -89,7 +89,7 @@ export const History: React.FC<Props> = ({history, messages}) => {
         <div key={index}>
           {item.type === "history" ? (
             // Render history item
-            <div>
+            <>
               <Ps1 />
               <div className="inline">{item.command}</div>
               <p
@@ -97,10 +97,10 @@ export const History: React.FC<Props> = ({history, messages}) => {
                 style={{lineHeight: "normal"}}
                 dangerouslySetInnerHTML={{__html: item.output}}
               />
-            </div>
+            </>
           ) : (
             // Render message item
-            <div>
+            <>
               {item.role === "assistant" ? (
                 <p className="resLy">Lyra Haruto - </p>
               ) : (
@@ -117,7 +117,7 @@ export const History: React.FC<Props> = ({history, messages}) => {
                       {line}
                     </p>
                   ))}
-            </div>
+            </>
           )}
         </div>
       ))}

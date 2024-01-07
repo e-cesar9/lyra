@@ -180,6 +180,11 @@ to { transform: translate(0, 100vh)}
       background-position: 50% 0, 50% 60%;
   }
 }
+@media (max-width : 1280px){
+  .noise{
+    display: none;
+  }
+}
 @media (prefers-reduced-motion) {
   .noise, .scanlines:before {
       animation: none !important;
