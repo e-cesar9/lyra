@@ -26,7 +26,7 @@ function Example() {
     >
       <div className="item">
         <Menu.Button className="inline-flex w-full rounded-md justify-center gap-x-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-white-500 ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-          <a className="img pt-2 pb-7" ref={hoverRef}>
+          <a className="img" ref={hoverRef}>
             <div className="grid__item-img-deco"></div>
             <p className="want">Want more ? </p>
           </a>
