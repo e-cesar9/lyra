@@ -12,6 +12,9 @@ const RootLayout = ({children}: {children: React.ReactNode}) => {
 
   useEffect(() => {
     localStorage.setItem("visitedAt", new Date().toString())
+    if (window.innerWidth <= 760) {
+      setSidebarVisible(!isSidebarVisible)
+    }
   }, [])
 
   type GlobalProps = {
