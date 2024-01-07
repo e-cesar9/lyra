@@ -58,7 +58,6 @@ div#__next > div {
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
-  overflow-y: auto;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -78,7 +77,9 @@ a {
   color: #ECECF1;
   font-family: 'Technor-Variable'!important;
   overflow-y: auto;
-  
+    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: auto;
+
 }
 
 form{
@@ -88,8 +89,6 @@ form{
 .sidebar div {
   font-family: 'Technor-Variable'!important;
   font-weight: 400;
-  overflow-y: auto;
-
 }
 
 .sidebar .Lyra{
