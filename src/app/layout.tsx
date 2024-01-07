@@ -10,11 +10,6 @@ import {SpeedInsights} from "@vercel/speed-insights/next"
 const RootLayout = ({children}: {children: React.ReactNode}) => {
   const [isSidebarVisible, setSidebarVisible] = useState(false)
 
-  // const onClickAnywhere = () => {
-  //   // children.current.
-  //   focus()
-  // }
-
   useEffect(() => {
     localStorage.setItem("visitedAt", new Date().toString())
   }, [])

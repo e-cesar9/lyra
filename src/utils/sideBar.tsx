@@ -148,7 +148,7 @@ function Sidebar() {
 
   return (
     <div
-      className="sidebar dark flex-shrink-0 overflow-x-hidden bg-black"
+      className="sidebar dark flex-shrink-0 overflow-x-hidden overflow-y-auto bg-black"
       id="sidebar"
     >
       <div className="scrollbar-trigger relative h-full w-full flex-1 items-start border-white/20">

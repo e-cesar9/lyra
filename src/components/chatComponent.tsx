@@ -30,21 +30,21 @@ export const ChatComponent = ({inputRef, containerRef}) => {
   } = useShell()
 
   const onClickAnywhere = () => {
-    if (inputRef.current) {
+    if (inputRef.current && window.innerWidth >= 1280) {
       inputRef.current.focus()
     }
   }
 
   useEffect(() => {
     containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
-    inputRef.current.focus()
+    // inputRef.current.focus()
     inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
 
     setTimeout(() => {
       containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
-      inputRef.current.focus()
       inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
-    }, 18000)
+      // inputRef.current.focus()
+    }, 17500)
   }, [messages, history])
 
   const onSubmit = async (event: React.KeyboardEvent<HTMLInputElement>) => {

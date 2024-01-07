@@ -3,7 +3,6 @@ import {useTheme} from "../../utils/themeProvider"
 
 interface Props {
   children: React.ReactNode
-  // onClick: () => void
 }
 
 const Layout: React.FC<Props> = ({children}) => {

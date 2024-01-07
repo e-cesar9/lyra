@@ -6,10 +6,6 @@ const IndexPage = ({}) => {
   const inputRef = React.useRef<HTMLInputElement>(null)
   const containerRef = React.useRef(null)
 
-  // React.useEffect(() => {
-  //   inputRef.current.focus()
-  // }, [history])
-
   return (
     <div
       ref={containerRef}
