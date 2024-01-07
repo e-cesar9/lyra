@@ -28,7 +28,7 @@ body {
 .img {
 
 	width: 100%;
-	aspect-ratio: 7;
+	aspect-ratio: 6;
 	position: relative;
 	overflow: hidden;
     display: grid;
