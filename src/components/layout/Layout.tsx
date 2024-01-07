@@ -23,11 +23,9 @@ const Layout: React.FC<Props> = ({children}) => {
     >
       <main
         className="w-full h-full p-2"
-        style={
-          {
-            background: theme.background,
-          }
-        }
+        style={{
+          background: theme.background,
+        }}
       >
         {children}
       </main>
