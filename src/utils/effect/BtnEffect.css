@@ -72,6 +72,7 @@ body {
 }
 .want{
     z-index: 2;
+	align-content: center;
 }
 
 .link:hover{
