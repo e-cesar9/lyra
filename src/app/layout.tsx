@@ -63,7 +63,7 @@ const RootLayout = ({children}: {children: React.ReactNode}) => {
   return (
     <html lang="en">
       <title>Lyra Haruto | Home</title>
-      <body suppressHydrationWarning={true}>
+      <body>
         <Global>
           <ThemeProvider>
             <ShellProvider>

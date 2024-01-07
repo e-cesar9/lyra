@@ -3,23 +3,18 @@ import {useChat} from "ai/react"
 import React, {useEffect, useState} from "react"
 import {commandExists} from "./../utils/commandExists"
 import {useShell} from "./../utils/shellProvider"
-import {handleTabCompletion} from "./../utils/tabCompletion"
 import {useTheme} from "./../utils/themeProvider"
 import {Ps1} from "./ps1"
 import {History} from "./history"
 import ThreeCanvas from "./ps1/nes"
 
-export const ChatComponent = ({inputRef, containerRef}) => {
+export const ChatComponent = ({}) => {
+  const inputRef = React.useRef<HTMLInputElement>(null)
+  const containerRef = React.useRef(null)
+
   // Vercel AI SDK (ai package) useChat()
 
-  const {
-    input,
-    setInput,
-    handleInputChange,
-    handleSubmit,
-    isLoading,
-    messages,
-  } = useChat()
+  const {input, setInput, handleInputChange, handleSubmit, messages} = useChat()
 
   // console.log(messages);
   // console.log(input)
@@ -43,17 +38,17 @@ export const ChatComponent = ({inputRef, containerRef}) => {
     }
   }
 
-  useEffect(() => {
-    containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
-    inputRef.current.focus()
-    inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
+  // useEffect(() => {
+  //   containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
+  //   inputRef.current.focus()
+  //   inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
 
-    setTimeout(() => {
-      containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
-      // inputRef.current.focus()
-      // inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
-    }, 17000)
-  }, [messages, history])
+  //   setTimeout(() => {
+  //     containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
+  //     // inputRef.current.focus()
+  //     // inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
+  //   }, 17000)
+  // }, [messages, history])
 
   const onSubmit = async (event: React.KeyboardEvent<HTMLInputElement>) => {
     const commands: string[] = history
@@ -74,12 +69,6 @@ export const ChatComponent = ({inputRef, containerRef}) => {
       event.preventDefault()
 
       clearHistory()
-    }
-
-    if (event.key === "Tab") {
-      event.preventDefault()
-
-      handleTabCompletion(value, setValue)
     }
 
     if (event.key === "Enter" || event.code === "13") {
@@ -130,13 +119,7 @@ export const ChatComponent = ({inputRef, containerRef}) => {
       }
     }
   }
-  const mixedHistory = [
-    ...history,
-    ...messages.map((m) => ({
-      command: m.role === "user" ? m.content : "",
-      output: m.content,
-    })),
-  ]
+
   return (
     <div onClick={onClickAnywhere}>
       <History history={history} messages={messages} />
