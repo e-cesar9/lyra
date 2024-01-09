@@ -86,7 +86,7 @@ const RootLayout = ({children}: {children: React.ReactNode}) => {
               <Layout>{children}</Layout>
 
               {showConfirmation && (
-                <div className="confirmation-dialog fixed bg-white top-44 left-12">
+                <div className="confirmation-dialog fixed bg-white">
                   <p className="pb-3">Everything not saved will be lost.</p>
                   <div className="flex justify-around">
                     <button onClick={() => handleConfirmationResponse(true)}>
