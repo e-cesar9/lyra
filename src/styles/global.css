@@ -78,6 +78,27 @@ a {
   color: #ECECF1;
   font-family: 'Technor-Variable'!important;
   overflow-y: auto !important;
+  
+}
+
+.confirmation-dialog{
+  background-color:#ECECEC;
+  padding: 1rem 2rem;
+  color: #414141;
+  border: 1px solid #414141;
+  box-shadow: 1px 1px 2px #414141;
+  margin-left: auto;
+  margin-right: auto;
+  /* top: 50%; Positioned 50% from the top */
+  left: 50%; /* Positioned 50% from the left */
+  transform: translate(-50%, -50%); /* Shifts the element back by half its width and height */
+  width: 300px; /* Optional: Width of the div */
+  /* height: 200px; */
+}
+.confirmation-dialog button{
+  border: 1px solid #414141;
+  padding: 0.1rem 1.5rem;
+  box-shadow: .5px .5px 2px #414141;
 }
 
 form{
