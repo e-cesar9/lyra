@@ -100,15 +100,15 @@ export const History: React.FC<Props> = ({history, messages}) => {
             </>
           ) : (
             // Render message item
-            <>
+            <div className="pb-2">
               {item.role === "assistant" ? (
-                <p className="resLy">Lyra Haruto - </p>
+                <p className="resLy pb-1">Lyra Haruto - </p>
               ) : (
                 <Ps1 />
               )}
               {item.role === "assistant"
                 ? item.content.split("\n").map((line, lineIndex) => (
-                    <p className="resLy" key={lineIndex}>
+                    <p className="resLy py-1" key={lineIndex}>
                       {line}
                     </p>
                   ))
@@ -117,7 +117,7 @@ export const History: React.FC<Props> = ({history, messages}) => {
                       {line}
                     </p>
                   ))}
-            </>
+            </div>
           )}
         </div>
       ))}
