@@ -83,6 +83,7 @@ a {
 
 .confirmation-dialog{
   font-family: 'CourierPrime-Regular';
+  text-align: center;
   background-color:#ECECEC;
   padding: 1rem 2rem;
   color: #414141;
