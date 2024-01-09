@@ -130,7 +130,7 @@ const ThreeCanvas: React.FC = () => {
       pointsHorizontal.rotation.set(0, Math.PI, 0)
       pointsHorizontal.scale.set(0.76, 1, 0.2)
 
-      pointsHorizontal2.position.set(-3, -3, -0.5)
+      pointsHorizontal2.position.set(-2.8, -3, -0.5)
       pointsHorizontal2.rotation.set(Math.PI, 0, 0)
       pointsHorizontal2.scale.set(1.6, 1, 0.2)
     }
@@ -150,7 +150,7 @@ const ThreeCanvas: React.FC = () => {
       a = true
       setTimeout(() => {
         a = false
-      }, 6000)
+      }, 3000)
     }, 6000)
 
     const camera = new THREE.PerspectiveCamera(
@@ -164,9 +164,9 @@ const ThreeCanvas: React.FC = () => {
     camera.position.z = 6
     scene.add(camera)
 
-    const texturePath = "spritesheet.png"
+    const texturePath = "1spritesheet.png"
     const spriteTexture = new THREE.TextureLoader().load(texturePath)
-    const animator = new PlainAnimator(spriteTexture, 15, 1, 15, 5)
+    const animator = new PlainAnimator(spriteTexture, 14, 1, 14, 5)
 
     const texture = animator.init()
 
@@ -177,7 +177,7 @@ const ThreeCanvas: React.FC = () => {
     })
 
     let mesh3 = new THREE.Mesh(geometry3, material3)
-    mesh3.position.set(0, -0.5, 0)
+    mesh3.position.set(-0.08, -0.5, 0)
 
     scene.add(mesh3)
 
