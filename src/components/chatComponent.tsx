@@ -36,13 +36,13 @@ export const ChatComponent = ({inputRef, containerRef}) => {
   }
 
   useEffect(() => {
-    if (inputRef.current && window.innerWidth >= 1280) {
-      containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
-      // inputRef.current.focus()
-      inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
+    containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
+    // inputRef.current.focus()
+    inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
 
+    if (inputRef.current && window.innerWidth >= 1280) {
       setTimeout(() => {
-        // containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
+        containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
         inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
         // inputRef.current.focus()
       }, 17500)
@@ -78,7 +78,7 @@ export const ChatComponent = ({inputRef, containerRef}) => {
         }, 10000)
       }
       event.preventDefault()
-
+      setLastKeyCode(0)
       setLastCommandIndex(0)
       setCommand(value)
 
