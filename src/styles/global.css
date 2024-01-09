@@ -89,11 +89,11 @@ a {
   box-shadow: 1px 1px 2px #414141;
   margin-left: auto;
   margin-right: auto;
-  /* top: 50%; Positioned 50% from the top */
-  left: 50%; /* Positioned 50% from the left */
-  transform: translate(-50%, -50%); /* Shifts the element back by half its width and height */
-  width: 300px; /* Optional: Width of the div */
-  /* height: 200px; */
+  top: 25%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 300px; 
+
 }
 .confirmation-dialog button{
   border: 1px solid #414141;
