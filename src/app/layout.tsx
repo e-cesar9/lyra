@@ -93,7 +93,7 @@ const RootLayout = ({children}: {children: React.ReactNode}) => {
               <p className="pb-3">Everything not saved will be lost.</p>
               <div className="flex justify-around">
               <button onClick={() => handleConfirmationResponse(true)}>Yes</button>
-              <button onClick={() => handleConfirmationResponse(false)}>No</button>
+              <button onClick={() => handleConfirmationResponse(false)}>Yes</button>
               </div>
             </div>
           )}
