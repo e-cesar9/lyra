@@ -93,7 +93,7 @@ const RootLayout = ({children}: {children: React.ReactNode}) => {
                       Yes
                     </button>
                     <button onClick={() => handleConfirmationResponse(false)}>
-                      No
+                      Yes
                     </button>
                   </div>
                 </div>
