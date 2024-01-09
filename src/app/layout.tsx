@@ -9,7 +9,7 @@ import {SpeedInsights} from "@vercel/speed-insights/next"
 
 const RootLayout = ({children}: {children: React.ReactNode}) => {
   const [isSidebarVisible, setSidebarVisible] = useState(false)
-  const [showConfirmation, setShowConfirmation] = useState(false);
+  const [showConfirmation, setShowConfirmation] = useState(false)
 
   useEffect(() => {
     localStorage.setItem("visitedAt", new Date().toString())
@@ -25,23 +25,20 @@ const RootLayout = ({children}: {children: React.ReactNode}) => {
   const handleToggleRequest = () => {
     if (isSidebarVisible) {
       // Only show confirmation when trying to hide the sidebar
-      setShowConfirmation(true);
+      setShowConfirmation(true)
     } else {
       // If the sidebar is not visible, just show it
-      setSidebarVisible(true);
+      setSidebarVisible(true)
     }
-
-  };
+  }
 
   const handleConfirmationResponse = (confirm: boolean) => {
-    setShowConfirmation(false);
+    setShowConfirmation(false)
     if (confirm) {
       // Hide the sidebar if user confirms
-      setSidebarVisible(false);
+      setSidebarVisible(false)
     }
-
-  };
-
+  }
 
   const Global = (props: GlobalProps) => {
     return (
@@ -87,17 +84,20 @@ const RootLayout = ({children}: {children: React.ReactNode}) => {
               {!isSidebarVisible && <Sidebar />}
 
               <Layout>{children}</Layout>
-              
-              {showConfirmation && (
-            <div className="confirmation-dialog fixed bg-white top-44 left-12">
-              <p className="pb-3">Everything not saved will be lost.</p>
-              <div className="flex justify-around">
-              <button onClick={() => handleConfirmationResponse(true)}>Yes</button>
-              <button onClick={() => handleConfirmationResponse(false)}>Yes</button>
-              </div>
-            </div>
-          )}
 
+              {showConfirmation && (
+                <div className="confirmation-dialog fixed bg-white top-44 left-12">
+                  <p className="pb-3">Everything not saved will be lost.</p>
+                  <div className="flex justify-around">
+                    <button onClick={() => handleConfirmationResponse(true)}>
+                      Yes
+                    </button>
+                    <button onClick={() => handleConfirmationResponse(false)}>
+                      Yes
+                    </button>
+                  </div>
+                </div>
+              )}
             </ShellProvider>
           </ThemeProvider>
         </Global>
