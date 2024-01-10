@@ -158,7 +158,7 @@ function Sidebar() {
       <div className="scrollbar-trigger relative h-full w-full flex-1 items-start border-white/20">
         <nav className="flex h-full w-full flex-col pb-3.5 justify-between">
           <div className="relative px-2 pt-2 text-s font-medium text-ellipsis break-all bg-white dark:bg-black text-gizmo-gray-600">
-            <div>
+            <a href="/">
               <Image
                 src="/Logo.png"
                 className="Lyra px-2"
@@ -166,7 +166,7 @@ function Sidebar() {
                 width={194}
                 height={218}
               />
-            </div>
+            </a>
 
             <div
               className="relative pb-2 pt-3 px-2 text-s font-medium text-ellipsis break-all bg-white dark:bg-black text-gizmo-gray-600 break-words text-justify"
