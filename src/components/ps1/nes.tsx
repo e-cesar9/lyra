@@ -164,7 +164,7 @@ const ThreeCanvas: React.FC = () => {
     camera.position.z = 6
     scene.add(camera)
 
-    const texturePath = "1spritesheet.png"
+    const texturePath = "spritesheet.png"
     const spriteTexture = new THREE.TextureLoader().load(texturePath)
     const animator = new PlainAnimator(spriteTexture, 14, 1, 14, 5)
 

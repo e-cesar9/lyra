@@ -319,3 +319,21 @@ to { transform: translate(0, 100vh)}
     display: none;
   }
 }
+
+.overlay {
+	grid-area: 1 / 1 / -1 / -1;
+	display: grid;
+	position: absolute;
+  height: 100%;
+  width: 100%;
+	z-index: 3000;
+	pointer-events: none;
+	opacity: 0;
+	--columns: 20;
+	grid-template-columns: repeat(var(--columns),1fr);
+  background-color: #000;
+}
+
+.overlay div {
+	background: var(--color-bg-overlay);
+}

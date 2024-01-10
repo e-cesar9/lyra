@@ -4,7 +4,7 @@ import {Layout} from "../components/layout"
 import "../styles/global.css"
 import {ShellProvider} from "../utils/shellProvider"
 import {ThemeProvider} from "../utils/themeProvider"
-import Sidebar from "../utils/sideBar"
+import Sidebar from "./sideBar"
 import {SpeedInsights} from "@vercel/speed-insights/next"
 
 const RootLayout = ({children}: {children: React.ReactNode}) => {

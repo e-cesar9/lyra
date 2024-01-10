@@ -35,7 +35,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-, "src/app", "src/pages/api/chat", "src/app"  ],
+, "src/app", "src/app/api/chat", "src/app"  ],
   "exclude": [
     "node_modules"
   ]

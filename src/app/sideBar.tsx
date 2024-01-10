@@ -3,10 +3,12 @@
 import React, {useEffect, useRef, useState} from "react"
 import {Fragment} from "react"
 import {Menu, Transition} from "@headlessui/react"
+import {Item} from "../utils/effect/BtnEffect"
+import {motion} from "framer-motion"
 import Image from "next/image"
-import {Item} from "./effect/BtnEffect"
-import "./effect/BtnEffect.css"
 import Link from "next/link"
+import "../utils/effect/BtnEffect.css"
+import {usePathname} from "next/navigation"
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ")
@@ -80,19 +82,21 @@ function Example() {
 type Link = {
   originalText: string
   emoji: string
+  href: string
   ref: React.RefObject<HTMLParagraphElement>
   text: string
   setText: React.Dispatch<React.SetStateAction<string>>
 }
 
 function Sidebar() {
+  const path = usePathname()
   const linksData = [
-    {originalText: "#Me", emoji: "😜"},
-    {originalText: "My Craft", emoji: "🤖"},
-    {originalText: "My Diary", emoji: "👩‍🦳"},
-    {originalText: "My Library", emoji: "👾"},
-    {originalText: "Your Fate", emoji: "🦄"},
-    {originalText: "Don't Be Shy", emoji: "😉"},
+    {originalText: "#Me", emoji: "😜", href: "/Me"},
+    {originalText: "My Craft", emoji: "🤖", href: "/My-craft"},
+    {originalText: "My Diary", emoji: "👩‍🦳", href: "/My-diary"},
+    {originalText: "My Library", emoji: "👾", href: "/My-library"},
+    {originalText: "Your Fate", emoji: "🦄", href: "/Your-fate"},
+    {originalText: "Don't Be Shy", emoji: "😉", href: "/Dont-be-shy"},
   ]
 
   // Create a ref and a state for each link
@@ -178,9 +182,15 @@ function Sidebar() {
             {links.map((link, index) => (
               <div key={index} className="group relative active:opacity-90">
                 <Link
-                  href="/Me"
+                  href={link.href}
                   className="flex items-center gap-2 rounded-lg p-2"
                 >
+                  {link.href === path && (
+                    <motion.span
+                      layoutId="underline"
+                      className="absolute left-0 top-full block h-[1px] w-full bg-white"
+                    />
+                  )}
                   <div
                     ref={link.ref}
                     className="relative grow overflow-hidden whitespace-nowrap"
@@ -189,6 +199,7 @@ function Sidebar() {
                     <div className="absolute bottom-0 right-0 top-0 w-8 bg-gradient-to-l to-transparent from-token-surface-primary group-hover:from-token-surface-primary dark:from-black">
                       {link.emoji}
                     </div>
+                    {/* </motion.span> */}
                   </div>
                 </Link>
               </div>
