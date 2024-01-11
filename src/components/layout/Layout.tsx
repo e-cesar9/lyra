@@ -54,7 +54,7 @@ const Layout: React.FC<Props> = ({children}) => {
   }
 
   useEffect(() => {
-    animateBoxes(181, null, "power3.inOut")
+    animateBoxes("start", null, "power3.inOut")
   }, [])
 
   return (
