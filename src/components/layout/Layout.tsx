@@ -2,54 +2,59 @@ import React, {useEffect, useRef} from "react"
 import {useTheme} from "../../utils/themeProvider"
 import {Overlay} from "./overlay"
 import {motion} from "framer-motion"
+import gsap from "gsap"
 
 interface Props {
   children: React.ReactNode
 }
 
 const Layout: React.FC<Props> = ({children}) => {
-  const overlayRef = useRef(null)
   const {theme} = useTheme()
-  let isAnimating = false
+
+  const rows = 10
+  const columns = 20
+  const grid = [rows, columns]
+  const boxes = []
+
+  // Create boxes for the grid
+  for (let row = 0; row < rows; row++) {
+    for (let col = 0; col < columns; col++) {
+      boxes.push(
+        <div
+          className="box"
+          style={{
+            backgroundColor: theme.foreground,
+          }}
+          key={`${row}-${col}`}
+        ></div>,
+      )
+    }
+  }
+
+  // Animation function
+  const animateBoxes = (from, axis, ease) => {
+    const tl = gsap.timeline({})
+    tl.to(".box", {
+      duration: 1.2,
+      scale: 0,
+      opacity: 0,
+      // x:40,
+      y: 20,
+      // yoyo: true,
+      // repeat: 1,
+      ease: "power1.inOut",
+      stagger: {
+        amount: 1,
+        grid: [10, 20],
+        axis: axis,
+        ease: ease,
+        from: from,
+      },
+    })
+  }
 
   useEffect(() => {
-    const overlayEl = overlayRef.current
-    if (!overlayEl) return
-
-    const overlay = new Overlay(overlayEl, {
-      rows: 7,
-      columns: 13,
-    })
-
-    overlay.show({
-      // Duration for each cell animation
-      duration: 0.3,
-      // Ease for each cell animation
-      ease: "power1.inOut",
-      // Stagger object
-      stagger: {
-        grid: [overlay.options.rows, overlay.options.columns],
-        from: "end",
-        each: 0.035,
-      },
-    })
-    // show content
-    // intro.classList.add('intro--closed');
-    // contentElements[position].classList.add('content--open');
-
-    // Now hide the overlay
-    overlay.hide({
-      // Duration for each cell animation
-      duration: 0.3,
-      // Ease for each cell animation
-      ease: "power3",
-      // Stagger object
-      stagger: {
-        grid: [overlay.options.rows, overlay.options.columns],
-        from: "end",
-        each: 0.035,
-      },
-    })
+    animateBoxes("random", null, "power3.inOut")
   }, [])
 
   return (
@@ -72,11 +77,13 @@ const Layout: React.FC<Props> = ({children}) => {
       <motion.div
         initial={{opacity: 1}}
         animate={{opacity: 0}}
-        transition={{duration: 1}}
+        transition={{duration: 2}}
         exit={{opacity: 1}}
         className="overlay"
-        ref={overlayRef}
-      ></motion.div>
+      >
+        {" "}
+        {boxes}
+      </motion.div>
     </div>
   )
 }

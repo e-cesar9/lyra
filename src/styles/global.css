@@ -335,5 +335,9 @@ to { transform: translate(0, 100vh)}
 }
 
 .overlay div {
-	background: var(--color-bg-overlay);
+	/* background: var(--color-bg-overlay); */
+}
+
+.box{
+  /* background-color: #000!important; */
 }

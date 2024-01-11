@@ -185,12 +185,12 @@ function Sidebar() {
                   href={link.href}
                   className="flex items-center gap-2 rounded-lg p-2"
                 >
-                  {link.href === path && (
+                  {/* {link.href === path && (
                     <motion.span
                       layoutId="underline"
                       className="absolute left-0 top-full block h-[1px] w-full bg-white"
                     />
-                  )}
+                  )} */}
                   <div
                     ref={link.ref}
                     className="relative grow overflow-hidden whitespace-nowrap"
