@@ -35,7 +35,7 @@ const Layout: React.FC<Props> = ({children}) => {
   const animateBoxes = (from, axis, ease) => {
     const tl = gsap.timeline({})
     tl.to(".box", {
-      duration: 1.2,
+      duration: 0.8,
       scale: 0,
       opacity: 0,
       // x:40,
@@ -77,7 +77,7 @@ const Layout: React.FC<Props> = ({children}) => {
       <motion.div
         initial={{opacity: 1}}
         animate={{opacity: 0}}
-        transition={{duration: 2}}
+        transition={{duration: 1.2}}
         exit={{opacity: 1}}
         className="overlay"
       >

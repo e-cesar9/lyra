@@ -8,15 +8,13 @@ const DiaryPage = ({}) => {
   const containerRef = React.useRef(null)
 
   return (
-    <RootLayout>
-      <div
-        ref={containerRef}
-        id="yo"
-        className="overflow-y-auto h-full p-4 rounded layout"
-      >
-        <h1>Welcome</h1>
-      </div>
-    </RootLayout>
+    <div
+      ref={containerRef}
+      id="yo"
+      className="overflow-y-auto h-full p-4 rounded layout"
+    >
+      <h1>Welcome</h1>
+    </div>
   )
 }
 
