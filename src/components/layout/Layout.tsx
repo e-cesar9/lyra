@@ -54,7 +54,7 @@ const Layout: React.FC<Props> = ({children}) => {
   }
 
   useEffect(() => {
-    animateBoxes("random", null, "power3.inOut")
+    animateBoxes(181, null, "power3.inOut")
   }, [])
 
   return (
@@ -81,7 +81,6 @@ const Layout: React.FC<Props> = ({children}) => {
         exit={{opacity: 1}}
         className="overlay"
       >
-        {" "}
         {boxes}
       </motion.div>
     </div>

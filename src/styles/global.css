@@ -11,6 +11,12 @@
   font-family: 'Technor-Variable';
   src: url(/assets/fonts/Technor-Variable.ttf);
 }
+.jobs{
+  margin-top: 8rem;
+  display: flex;
+  justify-content:space-around;
+  
+}
 
 .linkT:hover{
   text-shadow: 0 0 4px #fff;
