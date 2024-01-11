@@ -21,7 +21,7 @@ const Layout: React.FC<Props> = ({children}) => {
         <div
           className="box"
           style={{
-            backgroundColor: "white",
+            backgroundColor: theme.foreground,
           }}
           key={`${row}-${col}`}
         ></div>,
@@ -33,7 +33,7 @@ const Layout: React.FC<Props> = ({children}) => {
   const animateBoxes = (from, axis, ease) => {
     const tl = gsap.timeline({})
     tl.to(".box", {
-      duration: 0.8,
+      duration: 1,
       scale: 0,
       opacity: 0,
       // x:40,
