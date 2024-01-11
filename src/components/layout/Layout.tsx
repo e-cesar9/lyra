@@ -33,7 +33,7 @@ const Layout: React.FC<Props> = ({children}) => {
   const animateBoxes = (from, axis, ease) => {
     const tl = gsap.timeline({})
     tl.to(".box", {
-      duration: 1,
+      duration: .3,
       scale: 1.0,
       opacity: 1,
       ease: "none",
