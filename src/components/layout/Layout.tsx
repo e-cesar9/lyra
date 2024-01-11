@@ -1,7 +1,5 @@
-import React, {useEffect, useRef} from "react"
+import React, {useEffect} from "react"
 import {useTheme} from "../../utils/themeProvider"
-import {Overlay} from "./overlay"
-import {motion} from "framer-motion"
 import gsap from "gsap"
 
 interface Props {
@@ -23,7 +21,7 @@ const Layout: React.FC<Props> = ({children}) => {
         <div
           className="box"
           style={{
-            backgroundColor: theme.foreground,
+            backgroundColor: "white",
           }}
           key={`${row}-${col}`}
         ></div>,
@@ -54,7 +52,7 @@ const Layout: React.FC<Props> = ({children}) => {
   }
 
   useEffect(() => {
-    animateBoxes(200, null, "power3.inOut")
+    animateBoxes(199, null, "power3.inOut")
   }, [])
 
   return (
@@ -74,15 +72,7 @@ const Layout: React.FC<Props> = ({children}) => {
       </main>
       <div className="scanlines"></div>
       <div className="noise"></div>
-      <motion.div
-        initial={{opacity: 1}}
-        animate={{opacity: 0}}
-        transition={{duration: 1.2}}
-        exit={{opacity: 1}}
-        className="overlay"
-      >
-        {boxes}
-      </motion.div>
+      <div className="overlay">{boxes}</div>
     </div>
   )
 }

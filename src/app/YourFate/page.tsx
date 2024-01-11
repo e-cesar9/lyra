@@ -16,11 +16,10 @@ const DiaryPage = ({}) => {
     >
       <table className="jobs">
         <tr>
-          <td className="lyrart whitespace-pre-wrap">
+          <td className="">
             <Image src="/ed.png" alt="" width={194} height={218} />
           </td>
           <td className="system">
-            {" "}
             <h1>Lead Art Director</h1>
             <h2>Send a status email in the evening</h2>
             <p>

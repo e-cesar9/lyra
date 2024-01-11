@@ -334,10 +334,10 @@ to { transform: translate(0, 100vh)}
   width: 100%;
 	z-index: 3000;
 	pointer-events: none;
-	opacity: 0;
+	/* opacity: ; */
 	--columns: 20;
 	grid-template-columns: repeat(var(--columns),1fr);
-  background-color: #000;
+  background-color: transparent;
 }
 
 .overlay div {
