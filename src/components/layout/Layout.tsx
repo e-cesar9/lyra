@@ -34,13 +34,9 @@ const Layout: React.FC<Props> = ({children}) => {
     const tl = gsap.timeline({})
     tl.to(".box", {
       duration: 1,
-      scale: 0,
-      opacity: 0,
-      // x:40,
-      y: 20,
-      // yoyo: true,
-      // repeat: 1,
-      ease: "power1.inOut",
+      scale: 1.0,
+      opacity: 1,
+      ease: "none",
       stagger: {
         amount: 1,
         grid: [10, 20],
@@ -48,11 +44,27 @@ const Layout: React.FC<Props> = ({children}) => {
         ease: ease,
         from: from,
       },
-    })
+    }).to(
+      ".box",
+      {
+        duration: 1,
+        scale: 0,
+        opacity: 0,
+        ease: "none",
+        stagger: {
+          amount: 1,
+          grid: [10, 20],
+          axis: axis,
+          ease: ease,
+          from: from,
+        },
+      },
+      2,
+    )
   }
 
   useEffect(() => {
-    animateBoxes(199, null, "power3.inOut")
+    animateBoxes(199, null, "none")
   }, [])
 
   return (

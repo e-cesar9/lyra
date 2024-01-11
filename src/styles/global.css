@@ -346,4 +346,6 @@ to { transform: translate(0, 100vh)}
 
 .box{
   /* background-color: #000!important; */
-}
+  /* scale:1.01; */
+
+opacity: 0;}
