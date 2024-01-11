@@ -92,11 +92,11 @@ function Sidebar() {
   const path = usePathname()
   const linksData = [
     {originalText: "#Me", emoji: "😜", href: "/Me"},
-    {originalText: "My Craft", emoji: "🤖", href: "/My-craft"},
-    {originalText: "My Diary", emoji: "👩‍🦳", href: "/My-diary"},
-    {originalText: "My Library", emoji: "👾", href: "/My-library"},
-    {originalText: "Your Fate", emoji: "🦄", href: "/Your-fate"},
-    {originalText: "Don't Be Shy", emoji: "😉", href: "/Dont-be-shy"},
+    {originalText: "My Craft", emoji: "🤖", href: "/MyCraft"},
+    {originalText: "My Diary", emoji: "👩‍🦳", href: "/MyDiary"},
+    {originalText: "My Library", emoji: "👾", href: "/MyLibrary"},
+    {originalText: "Your Fate", emoji: "🦄", href: "/YourFate"},
+    {originalText: "Don't Be Shy", emoji: "😉", href: "/DontBeShy"},
   ]
 
   // Create a ref and a state for each link
