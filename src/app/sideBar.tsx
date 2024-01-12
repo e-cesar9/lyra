@@ -14,7 +14,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ")
 }
 
-function Example() {
+function BtnSide() {
   const hoverRef = useRef(null)
   useEffect(() => {
     if (hoverRef.current) {
@@ -90,6 +90,7 @@ type Link = {
 
 function Sidebar() {
   const path = usePathname()
+
   const linksData = [
     {originalText: "#Me", emoji: "😜", href: "/Me"},
     {originalText: "My Craft", emoji: "🤖", href: "/MyCraft"},
@@ -150,65 +151,135 @@ function Sidebar() {
     return result
   }
 
+  const [isSidebarVisible, setSidebarVisible] = useState(false)
+  const [showConfirmation, setShowConfirmation] = useState(false)
+
+  useEffect(() => {
+    localStorage.setItem("visitedAt", new Date().toString())
+    if (window.innerWidth <= 760) {
+      setSidebarVisible(!isSidebarVisible)
+    }
+  }, [])
+  const handleToggleRequest = () => {
+    if (isSidebarVisible) {
+      // Only show confirmation when trying to hide the sidebar
+      // setShowConfirmation(true)
+      setSidebarVisible(false)
+    } else {
+      // If the sidebar is not visible, just show it
+      setSidebarVisible(true)
+    }
+  }
+
+  const handleConfirmationResponse = (confirm: boolean) => {
+    setShowConfirmation(false)
+    if (confirm) {
+      // Hide the sidebar if user confirms
+      setSidebarVisible(false)
+    }
+  }
+  const MobileSidebarToggle = ({onClick}) => (
+    <div className={`bar ${isSidebarVisible ? "h-20" : "h-11"}`}>
+      <button
+        onClick={onClick}
+        className="mobile-sidebar-toggle mobile-toggle absolute left-0 -ml-0.5 -mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-md hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white active:opacity-50 dark:hover:text-white"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="icon-md"
+        >
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M3 8C3 7.44772 3.44772 7 4 7H20C20.5523 7 21 7.44772 21 8C21 8.55228 20.5523 9 20 9H4C3.44772 9 3 8.55228 3 8ZM3 16C3 15.4477 3.44772 15 4 15H14C14.5523 15 15 15.4477 15 16C15 16.5523 14.5523 17 14 17H4C3.44772 17 3 16.5523 3 16Z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  )
+
   return (
-    <div
-      className="sidebar dark flex-shrink-0 overflow-x-hidden overflow-y-auto bg-black"
-      id="sidebar"
-    >
-      <div className="scrollbar-trigger relative h-full w-full flex-1 items-start border-white/20">
-        <nav className="flex h-full w-full flex-col pb-3.5 justify-between">
-          <div className="relative px-2 pt-2 text-s font-medium text-ellipsis break-all bg-white dark:bg-black text-gizmo-gray-600">
-            <a href="/">
-              <Image
-                src="/Logo.png"
-                className="Lyra px-2"
-                alt=""
-                width={194}
-                height={218}
-              />
-            </a>
+    <>
+      <MobileSidebarToggle onClick={handleToggleRequest} />
+      {!isSidebarVisible && (
+        <div
+          className="sidebar dark flex-shrink-0 overflow-x-hidden overflow-y-auto bg-black"
+          id="sidebar"
+        >
+          <div className="scrollbar-trigger relative h-full w-full flex-1 items-start border-white/20">
+            <nav className="flex h-full w-full flex-col pb-3.5 justify-between">
+              <div className="relative px-2 pt-2 text-s font-medium text-ellipsis break-all bg-white dark:bg-black text-gizmo-gray-600">
+                <a href="/">
+                  <Image
+                    src="/Logo.png"
+                    className="Lyra px-2"
+                    alt=""
+                    width={194}
+                    height={218}
+                  />
+                </a>
 
-            <div
-              className="relative pb-2 pt-3 px-2 text-s font-medium text-ellipsis break-all bg-white dark:bg-black text-gizmo-gray-600 break-words text-justify"
-              id="paragraphe"
-            >
-              As AI-born storytellers, The Lyra Haruto Company craft tales that
-              reshape reality. Our stories live vividly in the imagination.
-              We&apos;re actively looking for singularities.
-            </div>
-          </div>
-
-          <div className="py-3 mb-6">
-            {links.map((link, index) => (
-              <div key={index} className="group relative active:opacity-90">
-                <Link
-                  href={link.href}
-                  className="flex items-center gap-2 rounded-lg p-2"
+                <div
+                  className="relative pb-2 pt-3 px-2 text-s font-medium text-ellipsis break-all bg-white dark:bg-black text-gizmo-gray-600 break-words text-justify"
+                  id="paragraphe"
                 >
-                  {/* {link.href === path && (
+                  As AI-born storytellers, The Lyra Haruto Company craft tales
+                  that reshape reality. Our stories live vividly in the
+                  imagination. We&apos;re actively looking for singularities.
+                </div>
+              </div>
+
+              <div className="py-3 mb-6">
+                {links.map((link, index) => (
+                  <div key={index} className="group relative active:opacity-90">
+                    <Link
+                      href={link.href}
+                      className="flex items-center gap-2 rounded-lg p-2"
+                    >
+                      {/* {link.href === path && (
                     <motion.span
                       layoutId="underline"
                       className="absolute left-0 top-full block h-[1px] w-full bg-white"
                     />
                   )} */}
-                  <div
-                    ref={link.ref}
-                    className="relative grow overflow-hidden whitespace-nowrap"
-                  >
-                    <p className="linkT">{link.text}</p>
-                    <div className="absolute bottom-0 right-0 top-0 w-8 bg-gradient-to-l to-transparent from-token-surface-primary group-hover:from-token-surface-primary dark:from-black">
-                      {link.emoji}
-                    </div>
-                    {/* </motion.span> */}
+                      <div
+                        ref={link.ref}
+                        className="relative grow overflow-hidden whitespace-nowrap"
+                      >
+                        <p className="linkT">{link.text}</p>
+                        <div className="absolute bottom-0 right-0 top-0 w-8 bg-gradient-to-l to-transparent from-token-surface-primary group-hover:from-token-surface-primary dark:from-black">
+                          {link.emoji}
+                        </div>
+                        {/* </motion.span> */}
+                      </div>
+                    </Link>
                   </div>
-                </Link>
+                ))}
+                <BtnSide />
               </div>
-            ))}
-            <Example />
+            </nav>
           </div>
-        </nav>
-      </div>
-    </div>
+        </div>
+      )}
+      {/* {showConfirmation && (
+                <div className="confirmation-dialog fixed bg-white">
+                  <p className="pb-4">Everything not saved will be lost.</p>
+                  <div className="flex justify-around">
+                    <button onClick={() => handleConfirmationResponse(true)}>
+                      Yes
+                    </button>
+                    <button onClick={() => handleConfirmationResponse(false)}>
+                      Yes
+                    </button>
+                  </div>
+                </div>
+              )} */}
+    </>
   )
 }
 

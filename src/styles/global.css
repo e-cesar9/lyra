@@ -278,6 +278,10 @@ to { transform: translate(0, 100vh)}
   display: none;
 }
 
+.bar{
+  display: none;
+}
+
 @media (max-width: 760px) { 
 .mobile-toggle{
   -webkit-appearance:button;
@@ -293,7 +297,9 @@ to { transform: translate(0, 100vh)}
   display: inline;
   width: 100%;
   /* height: 100px; */
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1001;
   background: black;
 }
@@ -347,5 +353,5 @@ to { transform: translate(0, 100vh)}
 .box{
   /* background-color: #000!important; */
   /* scale:1.01; */
-
-opacity: 0;}
+     opacity: 0;
+}
