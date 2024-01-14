@@ -11,45 +11,6 @@
   font-family: 'Technor-Variable';
   src: url(/assets/fonts/Technor-Variable.ttf);
 }
-.jobs{
-  margin-top: 8rem;
-  display: flex;
-  justify-content:space-around;
-  
-}
-
-.linkT:hover{
-  text-shadow: 0 0 4px #fff;
-}
-
-.lyra-dialog{
-  text-shadow: 0 0 4px #fff
-}
-
-#prompt{
-  width: 75%;
-}
-
-
-.ring-1 {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) #ffffff80;
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
-.terminal {
-  font-family: 'CourierPrime-Regular';
-}
-
-#paragraphe{
-word-break: break-word;
-font-size: 0.85rem!important;
-} 
-
-
-.fond{
-  background-color: #000!important;
-}
 
 html,
 body,
@@ -58,7 +19,6 @@ div#__next,
 div#__next > div {
   height: 100%;
   overflow: auto;
-  /* mix-blend-mode: normal; */
 }
 
 ::-webkit-scrollbar {
@@ -74,6 +34,18 @@ a {
   text-decoration: none!important;
 }
 
+/* 
+SideBar
+ */
+.itemMenu:hover{
+  text-shadow: 0 0 4px #fff;
+}
+
+#sideBarText{
+  word-break: break-word;
+  font-size: 0.85rem!important;
+} 
+
 .sidebar {
   z-index: 1000;
   width: 250px;
@@ -84,7 +56,45 @@ a {
   color: #ECECF1;
   font-family: 'Technor-Variable'!important;
   overflow-y: auto !important;
-  
+}
+
+.sidebar div {
+  font-family: 'Technor-Variable'!important;
+  font-weight: 400;
+}
+
+.sidebar .brand{
+  text-decoration: none!important;
+}
+
+.sidebar .brand:hover{
+  background-color: transparent;
+}
+
+.ring-1 {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) #ffffff80;
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.mobile-toggle{
+  display: none;
+}
+
+.bar{
+  display: none;
+}
+
+/* 
+Main terminal screen
+*/
+
+.terminal {
+  font-family: 'CourierPrime-Regular';
+}
+
+#prompt{
+  width: 75%;
 }
 
 .confirmation-dialog{
@@ -101,8 +111,8 @@ a {
   left: 50%; 
   transform: translate(-50%, -50%); 
   width: 300px; 
-
 }
+
 .confirmation-dialog button{
   border: 1px solid #414141;
   padding: 0.1rem 1.5rem;
@@ -113,20 +123,19 @@ form{
   display: inline;
 }
 
-.sidebar div {
+.response,.lyrartTitle{
+  text-shadow: 0 0 4px #fff
+}
+
+.response{
   font-family: 'Technor-Variable'!important;
-  font-weight: 400;
-}
-
-.sidebar .Lyra{
-  text-decoration: none!important;
-}
-
-.sidebar .Lyra:hover{
-  background-color: transparent;
+  letter-spacing: .8px;
 }
 
 
+/* 
+Main Screen Effect
+ */
 .scanlines {
   position: absolute;
   top: 0;
@@ -170,26 +179,16 @@ box-shadow: 0 2px 6px rgba(25,25,25,0.2),
   animation: vline calc(var(--time, 2) * 1s) linear infinite;
 }
 
-
 @supports (-ms-ime-align:auto) {
   .scanlines:before {
       content: '';
       animation: vline 3s linear infinite;
   }
 }
+
 @keyframes vline {
 to { transform: translate(0, 100vh)}
 }
-
-.resLy,.lyrart1{
-  text-shadow: 0 0 4px #fff
-}
-
-.resLy{
-  font-family: 'Technor-Variable'!important;
-  letter-spacing: .8px;
-}
-
 
 .noise {
   position: absolute;
@@ -206,16 +205,13 @@ to { transform: translate(0, 100vh)}
   background-blend-mode: difference;
   animation: shift .2s infinite alternate;
 }
+
 @keyframes shift {
   100% {
       background-position: 50% 0, 50% 60%;
   }
 }
-@media (max-width : 1280px){
-  .noise{
-    display: none;
-  }
-}
+
 @media (prefers-reduced-motion) {
   .noise, .scanlines:before {
       animation: none !important;
@@ -231,6 +227,7 @@ to { transform: translate(0, 100vh)}
 @keyframes vline {
 to { transform: translate(0, 100vh)}
 }
+
 /* turn off animation */
 /* .tv {
   height: 100vh;
@@ -259,6 +256,8 @@ to { transform: translate(0, 100vh)}
 @keyframes opacity {
   to { opacity: 1; }
 } */
+
+
 @keyframes size {
   50% {
       transform: scaleX(calc(1 / var(--width)));
@@ -272,64 +271,6 @@ to { transform: translate(0, 100vh)}
       transform: scaleX(calc(1 / var(--width))) scaleY(calc(1 / var(--height)));
       opacity: 0;
   }  
-}
-
-.mobile-toggle{
-  display: none;
-}
-
-.bar{
-  display: none;
-}
-
-@media (max-width: 760px) { 
-.mobile-toggle{
-  -webkit-appearance:button;
-  display: block;
-  width: 50px;
-  /* height:50px; */
-  position: absolute;
-  z-index: 1;
-  color: white;
-  padding: 24px;
-}
-.bar{
-  display: inline;
-  width: 100%;
-  /* height: 100px; */
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1001;
-  background: black;
-}
-
-.sidebar{
-  overflow-y: auto;
-}
-
-.lyrart{
-  display: none;
-}
-
-}
-
-@media(max-width:760px){
-  .sidebar-hidden{
-    width:0px;
-  }
-}
-
-@media (max-width: 501px){
-  .lyrart1{
-    display: none;
-  }
-}
-
-@media (max-width: 1531px){
-  .lyrart{
-    display: none;
-  }
 }
 
 .overlay {
@@ -351,7 +292,64 @@ to { transform: translate(0, 100vh)}
 }
 
 .box{
-  /* background-color: #000!important; */
-  /* scale:1.01; */
      opacity: 0;
+}
+
+
+/* 
+MediaQuery General
+ */ 
+@media (max-width: 760px) { 
+  .mobile-toggle{
+    -webkit-appearance:button;
+    display: block;
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding: 24px;
+  }
+  .bar{
+    display: inline;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: black;
+  }
+  .sidebar{
+    overflow-y: auto;
+  }
+  .lyrart{
+    display: none;
+  }
+  .sidebar-hidden{
+    width:0px;
+  }
+}
+  
+@media (max-width: 501px){
+  .lyrartTitle{
+    display: none;
+  }
+}
+@media (max-width: 1531px){
+  .lyrart{
+    display: none;
+  }
+}
+@media (max-width : 1280px){
+  .noise{
+    display: none;
+  }
+}
+
+
+/* YOUR FATE PAGE */
+.jobs{
+  margin-top: 8rem;
+  display: flex;
+  justify-content:space-around;
+  
 }

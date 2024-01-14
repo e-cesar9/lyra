@@ -9,6 +9,7 @@ import Image from "next/image"
 import Link from "next/link"
 import "../utils/effect/BtnEffect.css"
 import {usePathname} from "next/navigation"
+import {useConfirmContext} from "../components/context/ConfirmContext"
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ")
@@ -21,6 +22,21 @@ function BtnSide() {
       new Item(hoverRef.current)
     }
   }, [])
+
+  const closeWindow = () => {
+    window.close()
+  }
+
+  let [isOpen, setIsOpen] = useState(true)
+
+  function closeModal() {
+    setIsOpen(false)
+  }
+
+  function openModal() {
+    setIsOpen(true)
+  }
+
   return (
     <Menu
       as="div"
@@ -63,6 +79,7 @@ function BtnSide() {
               {({active}) => (
                 <a
                   href="#"
+                  onClick={closeWindow}
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                     "block px-4 py-2 text-sm",
@@ -89,7 +106,7 @@ type Link = {
 }
 
 function Sidebar() {
-  const path = usePathname()
+  // const path = usePathname()
 
   const linksData = [
     {originalText: "#Me", emoji: "😜", href: "/Me"},
@@ -152,7 +169,8 @@ function Sidebar() {
   }
 
   const [isSidebarVisible, setSidebarVisible] = useState(false)
-  const [showConfirmation, setShowConfirmation] = useState(false)
+  // const [showConfirmation, setShowConfirmation] = useState(false)
+  const {showConfirmation, setShowConfirmation} = useConfirmContext()
 
   useEffect(() => {
     localStorage.setItem("visitedAt", new Date().toString())
@@ -163,21 +181,18 @@ function Sidebar() {
   const handleToggleRequest = () => {
     if (isSidebarVisible) {
       // Only show confirmation when trying to hide the sidebar
-      // setShowConfirmation(true)
-      setSidebarVisible(false)
+      if (!showConfirmation) {
+        setShowConfirmation(true)
+        setSidebarVisible(false)
+      } else {
+        setSidebarVisible(false)
+      }
     } else {
       // If the sidebar is not visible, just show it
       setSidebarVisible(true)
     }
   }
 
-  const handleConfirmationResponse = (confirm: boolean) => {
-    setShowConfirmation(false)
-    if (confirm) {
-      // Hide the sidebar if user confirms
-      setSidebarVisible(false)
-    }
-  }
   const MobileSidebarToggle = ({onClick}) => (
     <div className={`bar ${isSidebarVisible ? "h-20" : "h-11"}`}>
       <button
@@ -217,7 +232,7 @@ function Sidebar() {
                 <a href="/">
                   <Image
                     src="/Logo.png"
-                    className="Lyra px-2"
+                    className="brand px-2"
                     alt=""
                     width={194}
                     height={218}
@@ -226,7 +241,7 @@ function Sidebar() {
 
                 <div
                   className="relative pb-2 pt-3 px-2 text-s font-medium text-ellipsis break-all bg-white dark:bg-black text-gizmo-gray-600 break-words text-justify"
-                  id="paragraphe"
+                  id="sideBarText"
                 >
                   As AI-born storytellers, The Lyra Haruto Company craft tales
                   that reshape reality. Our stories live vividly in the
@@ -251,7 +266,7 @@ function Sidebar() {
                         ref={link.ref}
                         className="relative grow overflow-hidden whitespace-nowrap"
                       >
-                        <p className="linkT">{link.text}</p>
+                        <p className="itemMenu">{link.text}</p>
                         <div className="absolute bottom-0 right-0 top-0 w-8 bg-gradient-to-l to-transparent from-token-surface-primary group-hover:from-token-surface-primary dark:from-black">
                           {link.emoji}
                         </div>
@@ -266,19 +281,6 @@ function Sidebar() {
           </div>
         </div>
       )}
-      {/* {showConfirmation && (
-                <div className="confirmation-dialog fixed bg-white">
-                  <p className="pb-4">Everything not saved will be lost.</p>
-                  <div className="flex justify-around">
-                    <button onClick={() => handleConfirmationResponse(true)}>
-                      Yes
-                    </button>
-                    <button onClick={() => handleConfirmationResponse(false)}>
-                      Yes
-                    </button>
-                  </div>
-                </div>
-              )} */}
     </>
   )
 }

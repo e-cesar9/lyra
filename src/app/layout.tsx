@@ -4,6 +4,7 @@ import {Layout} from "../components/layout"
 import "../styles/global.css"
 import {ShellProvider} from "../utils/shellProvider"
 import {ThemeProvider} from "../utils/themeProvider"
+import {ConfirmProvider} from "../components/context/ConfirmContext"
 import Sidebar from "./sideBar"
 import {SpeedInsights} from "@vercel/speed-insights/next"
 
@@ -27,8 +28,10 @@ const RootLayout = ({children}: {children: React.ReactNode}) => {
         <Global>
           <ThemeProvider>
             <ShellProvider>
-              <Sidebar />
-              <Layout>{children}</Layout>
+              <ConfirmProvider>
+                <Sidebar />
+                <Layout>{children}</Layout>
+              </ConfirmProvider>
             </ShellProvider>
           </ThemeProvider>
         </Global>

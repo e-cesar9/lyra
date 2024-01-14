@@ -193,7 +193,7 @@ const getInfo = () => {
   const mainColor = getMainColor()
 
   let message = ""
-  message += `<span class="lyrart1">${theLyraHaruto}\n\n\n</span>`
+  message += `<span class="lyrartTitle">${theLyraHaruto}\n\n\n</span>`
   message += `<span style="color: ${mainColor}">Host</span>: OpenAI\n`
   message += `<span style="color: ${mainColor}">OS</span>: Lyra 1.0\n`
   message += `<span style="color: ${mainColor}">Packages</span>: 42\n`
