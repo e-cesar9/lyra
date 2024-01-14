@@ -2,7 +2,7 @@
 "use client"
 import React, {useEffect, useRef, useState} from "react"
 import {Fragment} from "react"
-import {Menu, Transition} from "@headlessui/react"
+import {Dialog, Menu, Transition} from "@headlessui/react"
 import {Item} from "../utils/effect/BtnEffect"
 import {motion} from "framer-motion"
 import Image from "next/image"
@@ -23,11 +23,13 @@ function BtnSide() {
     }
   }, [])
 
-  const closeWindow = () => {
-    window.close()
+  const closeTab = () => {
+    try {
+      window.close()
+    } catch (e) {}
   }
 
-  let [isOpen, setIsOpen] = useState(true)
+  let [isOpen, setIsOpen] = useState(false)
 
   function closeModal() {
     setIsOpen(false)
@@ -38,61 +40,121 @@ function BtnSide() {
   }
 
   return (
-    <Menu
-      as="div"
-      className="absolute w-9/10 mx-auto mt-3 left-0 right-0 inline-block text-left"
-    >
-      <div className="item">
-        <Menu.Button className="inline-flex w-full rounded-md justify-center gap-x-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-white-500 ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-          <a className="img" ref={hoverRef}>
-            <div className="grid__item-img-deco"></div>
-            <p className="want">Want more ? </p>
-          </a>
-        </Menu.Button>
-      </div>
+    <>
+      <Transition appear show={isOpen} as={Fragment}>
+        <Dialog as="div" className="relative z-10" onClose={closeModal}>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black/25" />
+          </Transition.Child>
 
-      <Transition
-        as={Fragment}
-        enter="transition ease-out duration-100"
-        enterFrom="transform opacity-0 scale-95"
-        enterTo="transform opacity-100 scale-100"
-        leave="transition ease-in duration-75"
-        leaveFrom="transform opacity-100 scale-100"
-        leaveTo="transform opacity-0 scale-95"
-      >
-        <Menu.Items className="fond absolute right-0 dark bottom-full z-10 mb-2 w-full origin-bottom-right divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-white ring-opacity-5 focus:outline-none">
-          <div className="py-1">
-            <Menu.Item>
-              {({active}) => (
-                <a
-                  href="#"
-                  className={classNames(
-                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm",
-                  )}
-                >
-                  Settings
-                </a>
-              )}
-            </Menu.Item>
-            <Menu.Item>
-              {({active}) => (
-                <a
-                  href="#"
-                  onClick={closeWindow}
-                  className={classNames(
-                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm",
-                  )}
-                >
-                  Log out
-                </a>
-              )}
-            </Menu.Item>
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center p-4 text-center">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Title
+                    as="h3"
+                    className="text-lg font-medium leading-6 text-gray-900"
+                  >
+                    Available informations
+                  </Dialog.Title>
+                  <div className="mt-2">
+                    <p className="text-sm text-gray-500">
+                      Type &apos;help&apos; to see list of available commands.
+                      <br />
+                      To find details 🎉 type &apos;repo&apos; to check out the
+                      repository. Try out the new &apos;theme&apos; command.
+                    </p>
+                  </div>
+
+                  <div className="mt-4">
+                    <button
+                      type="button"
+                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                      onClick={closeModal}
+                    >
+                      Got it, thanks!
+                    </button>
+                  </div>
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
           </div>
-        </Menu.Items>
+        </Dialog>
       </Transition>
-    </Menu>
+
+      <Menu
+        as="div"
+        className="absolute w-9/10 mx-auto mt-3 left-0 right-0 inline-block text-left"
+      >
+        <div className="item">
+          <Menu.Button className="inline-flex w-full rounded-md justify-center gap-x-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-white-500 ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+            <a className="img" ref={hoverRef}>
+              <div className="grid__item-img-deco"></div>
+              <p className="want">Want more ? </p>
+            </a>
+          </Menu.Button>
+        </div>
+
+        <Transition
+          as={Fragment}
+          enter="transition ease-out duration-100"
+          enterFrom="transform opacity-0 scale-95"
+          enterTo="transform opacity-100 scale-100"
+          leave="transition ease-in duration-75"
+          leaveFrom="transform opacity-100 scale-100"
+          leaveTo="transform opacity-0 scale-95"
+        >
+          <Menu.Items className="fond absolute right-0 dark bottom-full z-10 mb-2 w-full origin-bottom-right divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-white ring-opacity-5 focus:outline-none">
+            <div className="py-1">
+              <Menu.Item>
+                {({active}) => (
+                  <a
+                    href="#"
+                    onClick={() => setIsOpen(true)}
+                    className={classNames(
+                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      "block px-4 py-2 text-sm",
+                    )}
+                  >
+                    Settings
+                  </a>
+                )}
+              </Menu.Item>
+
+              <Menu.Item>
+                {({active}) => (
+                  <a
+                    onClick={closeTab}
+                    className={classNames(
+                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      "block px-4 py-2 text-sm",
+                    )}
+                  >
+                    Log out
+                  </a>
+                )}
+              </Menu.Item>
+            </div>
+          </Menu.Items>
+        </Transition>
+      </Menu>
+    </>
   )
 }
 
