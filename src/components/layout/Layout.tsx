@@ -59,10 +59,14 @@ const Layout: React.FC<Props> = ({children}) => {
         },
         0.5,
       )
-      .to(".overlay", {
-        duration: 0.7,
-        opacity: 0,
-      })
+      .to(
+        ".overlay",
+        {
+          duration: 0.7,
+          opacity: 0,
+        },
+        1,
+      )
   }
 
   useEffect(() => {
