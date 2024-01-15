@@ -23,20 +23,10 @@ function BtnSide() {
     }
   }, [])
 
-  const closeTab = () => {
-    try {
-      window.close()
-    } catch (e) {}
-  }
-
   let [isOpen, setIsOpen] = useState(false)
 
   function closeModal() {
     setIsOpen(false)
-  }
-
-  function openModal() {
-    setIsOpen(true)
   }
 
   return (

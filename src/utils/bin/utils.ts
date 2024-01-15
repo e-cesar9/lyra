@@ -76,7 +76,7 @@ v${packageJson.version}
 Type 'help' to see list of available commands.
 
 --
-The project is open-source 🎉 type 'repo' to check out the repository.
+The project is visible 🎉 type 'repo' to check out the repository.
 
 New 🎉: Try out the new 'theme' command. See all available themes <a href="https://daedelium.com">in the docs</a>.
 New 🎉: New command 'neofetch', for you linux.

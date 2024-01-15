@@ -9,8 +9,8 @@ interface Props {
 const Layout: React.FC<Props> = ({children}) => {
   const {theme} = useTheme()
 
-  const rows = 10
-  const columns = 20
+  const rows = 7
+  const columns = 11
   const grid = [rows, columns]
   const boxes = []
 
@@ -23,48 +23,50 @@ const Layout: React.FC<Props> = ({children}) => {
           style={{
             backgroundColor: theme.foreground,
           }}
-          key={`${row}-${col}`}
+          key={`${row}+${col}`}
         ></div>,
       )
     }
   }
 
   // Animation function
-  const animateBoxes = (from, axis, ease) => {
+  const animateBoxes = (from) => {
     const tl = gsap.timeline({})
     tl.to(".box", {
       duration: 0.3,
-      scale: 1.0,
+      transformOrigin: "50% 50%",
       opacity: 1,
-      ease: "none",
+      ease: "power1.inOut",
       stagger: {
-        amount: 1,
-        grid: [10, 20],
-        axis: axis,
-        ease: ease,
+        grid: [rows, columns],
         from: from,
+        each: 0.035,
       },
-    }).to(
-      ".box",
-      {
-        duration: 1,
-        scale: 0,
-        opacity: 0,
-        ease: "none",
-        stagger: {
-          amount: 1,
-          grid: [10, 20],
-          axis: axis,
-          ease: ease,
-          from: from,
+    })
+      .to(
+        ".box",
+        {
+          duration: 0.3,
+          // scale: 0.1,
+          opacity: 0,
+          transformOrigin: "50% 50%",
+          ease: "power3",
+          stagger: {
+            grid: [rows, columns],
+            from: from,
+            each: 0.035,
+          },
         },
-      },
-      2,
-    )
+        0.5,
+      )
+      .to(".overlay", {
+        duration: 0.7,
+        opacity: 0,
+      })
   }
 
   useEffect(() => {
-    animateBoxes(199, null, "none")
+    animateBoxes("end")
   }, [])
 
   return (
