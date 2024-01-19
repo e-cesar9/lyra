@@ -18,6 +18,14 @@ export const snake = () => {
     position: number[]
   }
 
+  const fontFile = new FontFace(
+    "Inconsolata",
+    'url(https://fonts.gstatic.com/s/inconsolata/v31/QlddNThLqRwH-OJ1UHjlKENVzlm-WkL3GZQmAwPyya15.woff2) format("woff2")',
+    { stretch: "50% 200%" },
+  );
+  
+  document.fonts.add(fontFile);
+
   const canvasWidth: number = 900
   const canvasHeight: number = 600
   const blockSize: number = 30
@@ -36,10 +44,10 @@ export const snake = () => {
     const canvas: HTMLCanvasElement = document.createElement("canvas")
     canvas.width = canvasWidth
     canvas.height = canvasHeight
-    canvas.style.border = "30px solid gray"
+    canvas.style.border = "10px solid #202124"
     canvas.style.margin = "50px auto"
     canvas.style.display = "block"
-    canvas.style.backgroundColor = "#ddd"
+    canvas.style.backgroundColor = "#70B68A"
     document.getElementById("form").appendChild(canvas)
     ctx = canvas.getContext("2d")
     snakee = new Snake(
@@ -83,23 +91,15 @@ export const snake = () => {
     ctx.fillStyle = "#000"
     ctx.textAlign = "center"
     ctx.textBaseline = "middle"
-    ctx.strokeStyle = "white"
+    ctx.strokeStyle = "#70B68A"
     ctx.lineWidth = 5
     const centreX: number = canvasWidth / 2
     const centreY: number = canvasHeight / 2
     ctx.strokeText("Game Over", centreX, centreY - 180)
     ctx.fillText("Game Over", centreX, centreY - 180)
     ctx.font = "bold 30px sans-serif"
-    ctx.strokeText(
-      "Press space to try again",
-      centreX,
-      centreY - 120,
-    )
-    ctx.fillText(
-      "Press space to try again",
-      centreX,
-      centreY - 120,
-    )
+    ctx.strokeText("Press space to try again", centreX, centreY - 120)
+    ctx.fillText("Press space to try again", centreX, centreY - 120)
     ctx.restore()
   }
 
@@ -122,13 +122,13 @@ export const snake = () => {
 
   function drawScore(): void {
     ctx.save()
-    ctx.font = "bold 200px sans-serif"
-    ctx.fillStyle = "gray"
+    ctx.font = "bold 20px sans-serif"
+    ctx.fillStyle = "black"
     ctx.textAlign = "center"
     ctx.textBaseline = "middle"
-    const centreX: number = canvasWidth / 2
-    const centreY: number = canvasHeight / 2
-    ctx.fillText(score.toString(), centreX, centreY)
+    const centreX: number = canvasWidth /18
+    const centreY: number = canvasHeight /1.03
+    ctx.fillText("Score:"+score.toString(), centreX, centreY)
     ctx.restore()
   }
 
@@ -154,7 +154,7 @@ export const snake = () => {
 
     draw(): void {
       ctx.save()
-      ctx.fillStyle = "#ff0000"
+      ctx.fillStyle = "#202124"
       for (var i = 0; i < this.body.length; i++) {
         drawBlock(ctx, this.body[i])
       }
@@ -248,12 +248,17 @@ export const snake = () => {
 
     draw(): void {
       ctx.save()
-      ctx.fillStyle = "#33cc33"
+      ctx.fillStyle = "#202124"
       ctx.beginPath()
-      var radius: number = blockSize / 2
-      var x: number = this.position[0] * blockSize + radius
-      var y: number = this.position[1] * blockSize + radius
-      ctx.arc(x, y, radius, 0, Math.PI * 2, true)
+      var sideLength = blockSize; // Adjust this to control the size of the diamond
+      var x = this.position[0] * blockSize + sideLength / 2;
+      var y = this.position[1] * blockSize + sideLength / 2;
+      
+      ctx.moveTo(x, y - sideLength / 2);
+      ctx.lineTo(x + sideLength / 2, y);
+      ctx.lineTo(x, y + sideLength / 2);
+      ctx.lineTo(x - sideLength / 2, y);
+      ctx.closePath();
       ctx.fill()
       ctx.restore()
     }
