@@ -76,7 +76,6 @@ export const ShellProvider: React.FC<ShellProviderProps> = ({children}) => {
     switch (cmd) {
       case "theme":
         const output = await bin.theme(args, setTheme)
-
         setHistory(output)
 
         break
@@ -92,7 +91,6 @@ export const ShellProvider: React.FC<ShellProviderProps> = ({children}) => {
         } else {
           try {
             const output = await bin[cmd](args)
-
             setHistory(output)
           } catch (error) {
             setHistory(error.message)

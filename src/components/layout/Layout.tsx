@@ -11,7 +11,6 @@ const Layout: React.FC<Props> = ({children}) => {
 
   const rows = 7
   const columns = 11
-  const grid = [rows, columns]
   const boxes = []
 
   // Create boxes for the grid

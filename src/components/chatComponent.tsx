@@ -123,7 +123,7 @@ export const ChatComponent = ({inputRef, containerRef}) => {
     <div onClick={onClickAnywhere}>
       <History history={history} messages={messages} />
 
-      <form className="" onSubmit={handleSubmit}>
+      <form className="" onSubmit={handleSubmit} id="form">
         <Ps1 />
         <input
           ref={inputRef}
@@ -163,7 +163,9 @@ export const ChatComponent = ({inputRef, containerRef}) => {
           }}
         />
       </form>
-      <div className="flex justify-center">{showCanvas && <ThreeCanvas />}</div>
+      <div id="smf" className="flex justify-center">
+        {showCanvas && <ThreeCanvas />}
+      </div>
     </div>
   )
 }

@@ -194,7 +194,7 @@ const getInfo = () => {
 
   let message = ""
   message += `<span class="lyrartTitle">${theLyraHaruto}\n\n\n</span>`
-  message += `<span style="color: ${mainColor}">Host</span>: OpenAI\n`
+  message += `<span style="color: ${mainColor}">Host</span>: <span onclick="var audio = new Audio('/c3po.mp3');audio.play();">OpenAI\n</span>`
   message += `<span style="color: ${mainColor}">OS</span>: Lyra 1.0\n`
   message += `<span style="color: ${mainColor}">Packages</span>: 42\n`
   message += `<span style="color: ${mainColor}">Resolution</span>: ${
@@ -205,9 +205,9 @@ const getInfo = () => {
   message += `<span style="color: ${mainColor}">License</span>: copyright daedalium\n`
   message += `<span style="color: ${mainColor}">Version</span>: ${packageJson.version}\n`
   message += `<span style="color: ${mainColor}">Repo</span>: <a href="${packageJson.repository.url}" target="_blank">${packageJson.repository.url}</a>\n`
-  message += `<span style="color: ${mainColor}">Uptime</span>: ${formatDistanceToNow(
+  message += `<span style="color: ${mainColor}">Uptime</span>: <span id="light"> ${formatDistanceToNow(
     visitedAt,
-  )}\n`
+  )}\n</span>`
   message += `<span style="color: ${mainColor}">Author</span>: ${packageJson.author.name}\n`
   message += `<span style="color: ${mainColor}">Instructions</span>: i'm alive \n`
 

@@ -1,10 +1,12 @@
 "use client"
 import React from "react"
 import ChatComponent from "../components/chatComponent"
+import useContain from "../components/context/context"
 
 const IndexPage = ({}) => {
   const inputRef = React.useRef<HTMLInputElement>(null)
   const containerRef = React.useRef(null)
+  useContain(containerRef)
 
   return (
     <div

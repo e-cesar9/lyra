@@ -132,6 +132,10 @@ form{
   letter-spacing: .8px;
 }
 
+#light:hover{
+  cursor: url('/1lightcursor.png'), auto;
+}
+
 
 /* 
 Main Screen Effect
@@ -331,6 +335,10 @@ MediaQuery General
   }
   .sidebar-hidden{
     width:0px;
+    padding: 0;
+  }
+  .terminal{
+    position: absolute;
   }
 }
   
