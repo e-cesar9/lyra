@@ -21,10 +21,10 @@ export const snake = () => {
   const fontFile = new FontFace(
     "Inconsolata",
     'url(https://fonts.gstatic.com/s/inconsolata/v31/QlddNThLqRwH-OJ1UHjlKENVzlm-WkL3GZQmAwPyya15.woff2) format("woff2")',
-    { stretch: "50% 200%" },
-  );
-  
-  document.fonts.add(fontFile);
+    {stretch: "50% 200%"},
+  )
+
+  document.fonts.add(fontFile)
 
   const canvasWidth: number = 900
   const canvasHeight: number = 600
@@ -126,9 +126,9 @@ export const snake = () => {
     ctx.fillStyle = "black"
     ctx.textAlign = "center"
     ctx.textBaseline = "middle"
-    const centreX: number = canvasWidth /18
-    const centreY: number = canvasHeight /1.03
-    ctx.fillText("Score:"+score.toString(), centreX, centreY)
+    const centreX: number = canvasWidth / 18
+    const centreY: number = canvasHeight / 1.03
+    ctx.fillText("Score:" + score.toString(), centreX, centreY)
     ctx.restore()
   }
 
@@ -250,15 +250,15 @@ export const snake = () => {
       ctx.save()
       ctx.fillStyle = "#202124"
       ctx.beginPath()
-      var sideLength = blockSize; // Adjust this to control the size of the diamond
-      var x = this.position[0] * blockSize + sideLength / 2;
-      var y = this.position[1] * blockSize + sideLength / 2;
-      
-      ctx.moveTo(x, y - sideLength / 2);
-      ctx.lineTo(x + sideLength / 2, y);
-      ctx.lineTo(x, y + sideLength / 2);
-      ctx.lineTo(x - sideLength / 2, y);
-      ctx.closePath();
+      var sideLength = blockSize // Adjust this to control the size of the diamond
+      var x = this.position[0] * blockSize + sideLength / 2
+      var y = this.position[1] * blockSize + sideLength / 2
+
+      ctx.moveTo(x, y - sideLength / 2)
+      ctx.lineTo(x + sideLength / 2, y)
+      ctx.lineTo(x, y + sideLength / 2)
+      ctx.lineTo(x - sideLength / 2, y)
+      ctx.closePath()
       ctx.fill()
       ctx.restore()
     }
