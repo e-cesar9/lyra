@@ -64,21 +64,24 @@ export const History: React.FC<Props> = ({history, messages}) => {
   useEffect(() => {
     history.forEach((item) => {
       if (item.command === "neofetch" && !animPlayed.current) {
-        const lyraElements = document.querySelectorAll(".lyrart")
-        lyraElements.forEach((element, index) => {
-          typingEffect(element.textContent || "", element as HTMLElement)
-          element.textContent = "" // Clear initial text
+        setTimeout(() => {
+          const lyraElements = document.querySelectorAll(".lyrart")
 
-          if (index === lyraElements.length - 1) {
-            // Set a timeout to mark the animation as played
-            setTimeout(
-              () => {
-                animPlayed.current = true
-              },
-              (element.textContent?.length || 0) * 5,
-            )
-          }
-        })
+          lyraElements.forEach((element, index) => {
+            typingEffect(element.textContent || "", element as HTMLElement)
+            element.textContent = "" // Clear initial text
+
+            if (index === lyraElements.length - 1) {
+              // Set a timeout to mark the animation as played
+              setTimeout(
+                () => {
+                  animPlayed.current = true
+                },
+                (element.textContent?.length || 0) * 5,
+              )
+            }
+          })
+        }, 800)
       }
     })
   }, [history])

@@ -24,7 +24,7 @@ const RootLayout = ({children}: {children: React.ReactNode}) => {
   return (
     <html lang="en">
       <title>Lyra Haruto | Home</title>
-      <body>
+      <body suppressHydrationWarning={true}>
         <Global>
           <ThemeProvider>
             <ShellProvider>

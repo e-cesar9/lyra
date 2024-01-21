@@ -10,6 +10,7 @@ import Link from "next/link"
 import "../utils/effect/BtnEffect.css"
 import {usePathname} from "next/navigation"
 import {useConfirmContext} from "../components/context/ConfirmContext"
+import gsap from "gsap"
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ")
@@ -56,7 +57,10 @@ function BtnSide() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel
+                  id="modal"
+                  className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all"
+                >
                   <Dialog.Title
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
@@ -159,6 +163,7 @@ type Link = {
 
 function Sidebar() {
   // const path = usePathname()
+  const sidebarRef = useRef<HTMLDivElement>(null)
 
   const linksData = [
     {originalText: "#Me", emoji: "😜", href: "/Me"},
@@ -220,9 +225,25 @@ function Sidebar() {
     return result
   }
 
-  const [isSidebarVisible, setSidebarVisible] = useState(false)
+  const [isSidebarVisible, setSidebarVisible] = useState(true)
   // const [showConfirmation, setShowConfirmation] = useState(false)
   const {showConfirmation, setShowConfirmation} = useConfirmContext()
+
+  useEffect(() => {
+    const sidebar = sidebarRef.current
+    if (sidebar) {
+      if (isSidebarVisible) {
+        gsap.to(sidebar, {x: 0, opacity: 1, duration: 0.5, ease: "power3.out"})
+      } else {
+        gsap.to(sidebar, {
+          x: "-100%",
+          opacity: 1,
+          duration: 0.5,
+          ease: "power3.inOut",
+        })
+      }
+    }
+  }, [isSidebarVisible])
 
   useEffect(() => {
     localStorage.setItem("visitedAt", new Date().toString())
@@ -230,6 +251,7 @@ function Sidebar() {
       setSidebarVisible(!isSidebarVisible)
     }
   }, [])
+
   const handleToggleRequest = () => {
     if (isSidebarVisible) {
       // Only show confirmation when trying to hide the sidebar
@@ -246,7 +268,9 @@ function Sidebar() {
   }
 
   const MobileSidebarToggle = ({onClick}) => (
-    <div className={`bar ${isSidebarVisible ? "h-20" : "h-11"}`}>
+    <div
+      className={`bar ${isSidebarVisible ? "h-11 z-[1001]" : "h-20 z-[999]"}`}
+    >
       <button
         onClick={onClick}
         className="mobile-sidebar-toggle mobile-toggle absolute left-0 -ml-0.5 -mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-md hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white active:opacity-50 dark:hover:text-white"
@@ -273,66 +297,67 @@ function Sidebar() {
   return (
     <>
       <MobileSidebarToggle onClick={handleToggleRequest} />
-      {!isSidebarVisible && (
-        <div
-          className="sidebar dark flex-shrink-0 overflow-x-hidden overflow-y-auto bg-black"
-          id="sidebar"
-        >
-          <div className="scrollbar-trigger relative h-full w-full flex-1 items-start border-white/20">
-            <nav className="flex h-full w-full flex-col pb-3.5 justify-between">
-              <div className="relative px-2 pt-2 text-s font-medium text-ellipsis break-all bg-white dark:bg-black text-gizmo-gray-600">
-                <a href="/">
-                  <Image
-                    src="/Logo.png"
-                    className="brand px-2"
-                    alt=""
-                    width={194}
-                    height={218}
-                  />
-                </a>
 
-                <div
-                  className="relative pb-2 pt-3 px-2 text-s font-medium text-ellipsis break-all bg-white dark:bg-black text-gizmo-gray-600 break-words text-justify"
-                  id="sideBarText"
-                >
-                  As AI-born storytellers, The Lyra Haruto Company craft tales
-                  that reshape reality. Our stories live vividly in the
-                  imagination. We&apos;re actively looking for singularities.
-                </div>
+      <div
+        className="sidebar dark flex-shrink-0 overflow-x-hidden overflow-y-auto bg-black"
+        id="sidebar"
+        ref={sidebarRef}
+      >
+        <div className="scrollbar-trigger relative h-full w-full flex-1 items-start border-white/20">
+          <nav className="flex h-full w-full flex-col pb-1 justify-between">
+            <div className="relative pr-2 pt-2 text-s font-medium text-ellipsis break-all bg-white dark:bg-black text-gizmo-gray-600">
+              <a href="/">
+                <Image
+                  src="/Logo.png"
+                  className="brand px-2"
+                  alt="Brand logo from Lyra Haruto"
+                  width={194}
+                  height={218}
+                  priority={true}
+                />
+              </a>
+
+              <div
+                className="relative pb-2 pt-3 px-2 text-s text-ellipsis break-all bg-white dark:bg-black text-gizmo-gray-600 break-words text-justify"
+                id="sideBarText"
+              >
+                As AI-born storytellers, The Lyra Haruto Company craft tales
+                that reshape reality. Our stories live vividly in the
+                imagination. We&apos;re actively looking for singularities.
               </div>
+            </div>
 
-              <div className="py-3 mb-6">
-                {links.map((link, index) => (
-                  <div key={index} className="group relative active:opacity-90">
-                    <Link
-                      href={link.href}
-                      className="flex items-center gap-2 rounded-lg p-2"
-                    >
-                      {/* {link.href === path && (
+            <div className="py-3 mb-6 ml-1">
+              {links.map((link, index) => (
+                <div key={index} className="group relative active:opacity-90">
+                  <Link
+                    href={link.href}
+                    className="flex items-center gap-2 rounded-lg p-2"
+                  >
+                    {/* {link.href === path && (
                     <motion.span
                       layoutId="underline"
                       className="absolute left-0 top-full block h-[1px] w-full bg-white"
                     />
                   )} */}
-                      <div
-                        ref={link.ref}
-                        className="relative grow overflow-hidden whitespace-nowrap"
-                      >
-                        <p className="itemMenu">{link.text}</p>
-                        <div className="absolute bottom-0 right-0 top-0 w-8 bg-gradient-to-l to-transparent from-token-surface-primary group-hover:from-token-surface-primary dark:from-black">
-                          {link.emoji}
-                        </div>
-                        {/* </motion.span> */}
+                    <div
+                      ref={link.ref}
+                      className="relative grow overflow-hidden whitespace-nowrap"
+                    >
+                      <p className="itemMenu">{link.text}</p>
+                      <div className="absolute text-center bottom-0 right-0 top-0 w-8 bg-gradient-to-l to-transparent from-token-surface-primary group-hover:from-token-surface-primary dark:from-black">
+                        {link.emoji}
                       </div>
-                    </Link>
-                  </div>
-                ))}
-                <BtnSide />
-              </div>
-            </nav>
-          </div>
+                      {/* </motion.span> */}
+                    </div>
+                  </Link>
+                </div>
+              ))}
+              <BtnSide />
+            </div>
+          </nav>
         </div>
-      )}
+      </div>
     </>
   )
 }

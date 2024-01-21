@@ -88,7 +88,7 @@ export const snake = () => {
   function gameOver(): void {
     ctx.save()
     ctx.font = "bold 70px sans-serif"
-    ctx.fillStyle = "#000"
+    ctx.fillStyle = "#202124"
     ctx.textAlign = "center"
     ctx.textBaseline = "middle"
     ctx.strokeStyle = "#70B68A"

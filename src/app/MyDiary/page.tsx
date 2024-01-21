@@ -12,6 +12,7 @@ const DiaryPage = ({}) => {
     setShowConfirmation(false) // Hide confirmation dialog in all cases
 
     if (confirm === true) {
+      window.location.reload()
     }
   }
 
