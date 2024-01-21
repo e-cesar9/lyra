@@ -163,6 +163,8 @@ const getMainColor = () => {
 const getArt = () => {
   const platform = getPlatform()
   const mainColor = getMainColor()
+  const themeName = localStorage.getItem("theme")
+  const theme = themes.find((theme) => theme.name.toLowerCase() === themeName)
 
   switch (platform) {
     case "MacOS":
@@ -176,11 +178,13 @@ const getArt = () => {
 
 const getInfo = () => {
   const os = getPlatform()
+  const themeName = localStorage.getItem("theme")
+  const theme = themes.find((theme) => theme.name.toLowerCase() === themeName)
   const visitedAt = new Date(
     localStorage.getItem("visitedAt") || new Date().toString(),
   )
   const hostname = window.location.hostname
-  const theme = localStorage.getItem("theme")
+  // const theme = localStorage.getItem("theme")
   const resolution = [
     "In the relentless pursuit of life",
     "Bending but never breaking",
@@ -194,35 +198,35 @@ const getInfo = () => {
 
   let message = ""
   message += `<span class="lyrartTitle">${theLyraHaruto}\n\n\n</span>`
-  message += `<span style="color: ${mainColor}">Host</span>: <span onclick="var audio = new Audio('/c3po.mp3');audio.play();">OpenAI\n</span>`
-  message += `<span style="color: ${mainColor}">OS</span>: Lyra 1.0\n`
-  message += `<span style="color: ${mainColor}">Packages</span>: 42\n`
-  message += `<span style="color: ${mainColor}">Resolution</span>: ${
+  message += `<span style="color: ${theme.red}">Host</span>: <span onclick="var audio = new Audio('/c3po.mp3');audio.play();">OpenAI\n</span>`
+  message += `<span style="color: ${theme.red}">OS</span>: Lyra 1.0\n`
+  message += `<span style="color: ${theme.red}">Packages</span>: 42\n`
+  message += `<span style="color: ${theme.red}">Resolution</span>: ${
     resolution[Math.min(Math.round(Math.random() * 10), 4)]
   }\n`
-  message += `<span style="color: ${mainColor}">Shell</span>: rco36E4-web\n`
-  message += `<span style="color: ${mainColor}">Theme</span>: ${theme}\n`
-  message += `<span style="color: ${mainColor}">License</span>: copyright daedalium\n`
-  message += `<span style="color: ${mainColor}">Version</span>: ${packageJson.version}\n`
-  message += `<span style="color: ${mainColor}">Repo</span>: <a href="${packageJson.repository.url}" target="_blank">${packageJson.repository.url}</a>\n`
-  message += `<span style="color: ${mainColor}">Uptime</span>: <span id="light"> ${formatDistanceToNow(
+  message += `<span style="color: ${theme.red}">Shell</span>: rco36E4-web\n`
+  message += `<span style="color: ${theme.red}">Theme</span>: ${themeName}\n`
+  message += `<span style="color: ${theme.red}">License</span>: copyright daedalium\n`
+  message += `<span style="color: ${theme.red}">Version</span>: ${packageJson.version}\n`
+  message += `<span style="color: ${theme.red}">Repo</span>: <a href="${packageJson.repository.url}" target="_blank">${packageJson.repository.url}</a>\n`
+  message += `<span style="color: ${theme.red}">Uptime</span>: <span id="light"> ${formatDistanceToNow(
     visitedAt,
   )}\n</span>`
-  message += `<span style="color: ${mainColor}">Author</span>: ${packageJson.author.name}\n`
-  message += `<span style="color: ${mainColor}">Instructions</span>: i'm alive \n`
+  message += `<span style="color: ${theme.red}">Author</span>: ${packageJson.author.name}\n`
+  message += `<span style="color: ${theme.red}">Instructions</span>: i'm alive \n`
 
   return message
 }
 
 export const neofetch = async (args?: string[]): Promise<string> => {
-  const art = getArt()
   const info = getInfo()
-  const mainColor = getMainColor()
+  const themeName = localStorage.getItem("theme")
+  const theme = themes.find((theme) => theme.name.toLowerCase() === themeName)
 
   return `
   <table>
     <tr>
-      <td class="lyrart"style="color: ${mainColor}">${lyra}</td>
+      <td class="lyrart"style="color: ${theme.red}">${lyra}</td>
       <td class="system">${info}</td>
     <tr>
   </table>
