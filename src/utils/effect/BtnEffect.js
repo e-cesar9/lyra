@@ -128,7 +128,6 @@ export class Item {
       this.requestId = undefined
     }
   }
-
   // Render the current frame
   render(isFirstTick) {
     // Clear requestId for the next frame
