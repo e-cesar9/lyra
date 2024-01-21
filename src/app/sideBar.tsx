@@ -164,6 +164,7 @@ type Link = {
 function Sidebar() {
   // const path = usePathname()
   const sidebarRef = useRef<HTMLDivElement>(null)
+  const toggleRef = useRef<HTMLDivElement>(null)
 
   const linksData = [
     {originalText: "#Me", emoji: "😜", href: "/Me"},
@@ -246,6 +247,27 @@ function Sidebar() {
   }, [isSidebarVisible])
 
   useEffect(() => {
+    const toggle = toggleRef.current
+    if (toggle) {
+      if (isSidebarVisible) {
+        gsap.to(toggle, {
+          height: "2.75rem",
+          opacity: 1,
+          duration: 0.5,
+          ease: "power3.out",
+        })
+      } else {
+        gsap.to(toggle, {
+          height: "5rem",
+          opacity: 1,
+          duration: 0.5,
+          ease: "power3.inOut",
+        })
+      }
+    }
+  }, [isSidebarVisible])
+
+  useEffect(() => {
     localStorage.setItem("visitedAt", new Date().toString())
     if (window.innerWidth <= 760) {
       setSidebarVisible(!isSidebarVisible)
@@ -270,6 +292,7 @@ function Sidebar() {
   const MobileSidebarToggle = ({onClick}) => (
     <div
       className={`bar ${isSidebarVisible ? "h-11 z-[1001]" : "h-20 z-[999]"}`}
+      ref={toggleRef}
     >
       <button
         onClick={onClick}

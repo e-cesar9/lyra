@@ -13,7 +13,7 @@ export const Ps1 = () => {
   }, [])
 
   return (
-    <div className="inline mr-2">
+    <div className="inline mr-2 log">
       <span
         style={{
           color: theme.yellow,

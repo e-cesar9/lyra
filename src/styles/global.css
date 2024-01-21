@@ -48,9 +48,9 @@ SideBar
   border:1px solid #ECECF1;
 }
 
-  .itemMenu:hover{
-    text-shadow: 0 0 4px #fff;
-  }
+.itemMenu:hover{
+  text-shadow: 0 0 4px #fff;
+}
 
 .sidebar {
   z-index: 1000;
@@ -96,13 +96,12 @@ SideBar
 /* 
 Main terminal screen
 */
+#prompt{
+  width: 75%;
+}
 
 .terminal {
   font-family: 'CourierPrime-Regular';
-}
-
-#prompt{
-  width: 75%;
 }
 
 .confirmation-dialog{

@@ -58,15 +58,12 @@ export const ChatComponent = ({inputRef, containerRef}) => {
       event.preventDefault()
 
       setValue("")
-
       setHistory("")
-
       setLastCommandIndex(0)
     }
 
     if (event.key === "l" && event.ctrlKey) {
       event.preventDefault()
-
       clearHistory()
     }
 
