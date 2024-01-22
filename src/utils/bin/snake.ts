@@ -123,7 +123,7 @@ export const snake = () => {
   function drawScore(): void {
     ctx.save()
     ctx.font = "bold 20px sans-serif"
-    ctx.fillStyle = "black"
+    ctx.fillStyle = "#70B68A"
     ctx.textAlign = "center"
     ctx.textBaseline = "middle"
     const centreX: number = canvasWidth / 18

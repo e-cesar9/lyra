@@ -209,7 +209,9 @@ const getInfo = () => {
   message += `<span style="color: ${theme.red}">License</span>: copyright daedalium\n`
   message += `<span style="color: ${theme.red}">Version</span>: ${packageJson.version}\n`
   message += `<span style="color: ${theme.red}">Repo</span>: <a href="${packageJson.repository.url}" target="_blank">${packageJson.repository.url}</a>\n`
-  message += `<span style="color: ${theme.red}">Uptime</span>: <span id="light"> ${formatDistanceToNow(
+  message += `<span style="color: ${
+    theme.red
+  }">Uptime</span>: <span id="light"> ${formatDistanceToNow(
     visitedAt,
   )}\n</span>`
   message += `<span style="color: ${theme.red}">Author</span>: ${packageJson.author.name}\n`
