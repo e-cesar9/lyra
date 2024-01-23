@@ -377,3 +377,8 @@ MediaQuery General
   justify-content:space-around;
   
 }
+
+/* ME */
+.photo{
+  height: 100vh;
+}

@@ -1,0 +1,34 @@
+
+
+.grid {
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+}
+
+.grid__item1 {
+	position: relative;
+	will-change: transform;
+	grid-column: var(--c);
+	grid-row: var(--r);
+}
+
+#it{
+	--c:2;
+	--r:1;
+}
+
+.grid__item1-img {
+	position: relative;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1;
+	background-size: cover;
+	background-position: 50% 50%;
+	will-change: transform, opacity;
+}
+
+/* .demo-1 .grid__item-img {
+	filter: contrast(70%);
+} */
