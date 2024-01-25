@@ -207,10 +207,10 @@ const DiaryPage: React.FC = () => {
     <>
       <Sidebar />
 
-      <div id="Me" className=" p-20 rounded layout">
+      <div id="Me" className=" p-20 rounded layout overflow-y-auto overflow-x-hidden h-auto w-full">
         <section>
           <div
-            className=" flex flex-col justify-center pt-1 items-center"
+            className=" flex flex-row justify-center pt-1 items-center"
             id="hi"
           >
             <div className="grid">
@@ -225,8 +225,8 @@ const DiaryPage: React.FC = () => {
                 ></div>
               </div>
             </div>
-          </div>
           <h1 id="printemps">りら はると</h1>
+          </div>
           <div className="text-center">
             <div>
               <div className="content" ref={titleRef}>
