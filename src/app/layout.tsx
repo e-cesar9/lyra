@@ -28,10 +28,7 @@ const RootLayout = ({children}: {children: React.ReactNode}) => {
         <Global>
           <ThemeProvider>
             <ShellProvider>
-              <ConfirmProvider>
-                <Sidebar />
-                <Layout>{children}</Layout>
-              </ConfirmProvider>
+              <ConfirmProvider>{children}</ConfirmProvider>
             </ShellProvider>
           </ThemeProvider>
         </Global>
