@@ -292,7 +292,6 @@ const DiaryPage: React.FC = () => {
                 backgroundImage:
                   "url('/AnIncredibleLife/LYH_1940_visuel_v002-min.jpg')",
               }}
-              ref={imgRef}
             ></div>
           </div>
         </div>
