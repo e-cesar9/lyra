@@ -12,11 +12,6 @@
   src: url(/assets/fonts/Technor-Variable.ttf);
 }
 
-@font-face {
-  font-family: 'Stardom-Regular';
-  src: url(/assets/fonts/Stardom-Regular.ttf);
-}
-
 html,
 body,
 body > div:first-child,

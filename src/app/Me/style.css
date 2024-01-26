@@ -1,11 +1,37 @@
+@font-face {
+	font-family: 'Stardom-Regular';
+	src: url(/assets/fonts/Stardom-Regular.ttf);
+}
+
+
+@font-face {
+	font-family: 'Zodiak-Variable';
+	src: url(/assets/fonts/Zodiak-Variable.ttf);
+}
+
+#Me{
+	font-family: 'Zodiak-Variable';
+	/* line-height: 3em;
+	letter-spacing: .2em; */
+	font-weight: 200;
+
+}
+
+span{
+	line-height:2em;
+	letter-spacing: .1em;
+	font-size: 38px;
+}
+
 .grid {
 position: relative;
-/* width: 100%; */
 display: grid;
-/* grid-template-columns: repeat(3,1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px; */
+}
+
+.content__title{
+	padding: 2em 6em;
+	font-size: 28px;
+
 }
 
 .grid__item {
@@ -13,16 +39,6 @@ grid-row-gap: 0px; */
 	will-change: transform;
 	grid-column: 2;
 	grid-row: 1;
-}
-
-/* .sidebar{
-	height: 100vh;
-	position: fixed;
-} */
-
-#it{
-	--c:2;
-	--r:1;
 }
 
 .grid__item-img {
@@ -146,50 +162,51 @@ grid-row-gap: 0px; */
 	border: 5px solid white;
 }
 
-/* .demo-1 .grid__item-img {
-	filter: contrast(70%);
-} */
 
-
-
-.content {
+/* .content {
 	display: flex;
 	flex-direction: column;
 	width: 80vw;
 	position: relative;
 	padding: 1.5rem 2rem;
-}
-
-.content:last-child {
-	/* padding-bottom: 40vh; */
-}
-/* 
-.pin-spacer{
-	height: 850px;
 } */
 
-.content__title {
-	font-size: 12vw;
-	line-height: 0.8;
-	counter-increment: section;
-	text-align: center;
-	display: grid;
-	gap: 2rem;
-}
-
-.content__title--left {
-	text-align: left;
-}
-main {
-	counter-reset: section;
-}
 
 
-.content p {
-	max-width: 660px;
-    margin: 1.5rem auto;
-    font-size: 1.25rem;
-    font-weight: 600;
-    line-height: 1.5;
-}
 
+
+.photo{
+	border: 5px solid white;
+	/* border-bottom: 20px solid white; */
+  
+  }
+  
+  #h1{
+  font-size: 52px;
+  }
+  
+  /* #h2{
+  font-size: 42px;
+  } */
+  
+  #printemps{
+  position: relative;
+  margin-top: -360px;
+  font-size: 72px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  }
+  
+  /* #Me{
+  font-family: 'Stardom-Regular';
+  }
+  
+  #firstP{
+	font-size: 32px;
+  }
+  
+  #intro{
+	text-align: start;
+	  font-size: 52px;
+	  line-height: 1.2em;
+  } */

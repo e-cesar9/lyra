@@ -167,12 +167,12 @@ function Sidebar() {
   const toggleRef = useRef<HTMLDivElement>(null)
 
   const linksData = [
-    {originalText: "#Me", emoji: "😜", href: "/Me"},
-    {originalText: "My Craft", emoji: "🤖", href: "/MyCraft"},
-    {originalText: "My Diary", emoji: "👩‍🦳", href: "/MyDiary"},
-    {originalText: "My Library", emoji: "👾", href: "/MyLibrary"},
-    {originalText: "Your Fate", emoji: "🦄", href: "/YourFate"},
-    {originalText: "Don't Be Shy", emoji: "😉", href: "/DontBeShy"},
+    {originalText: "#Me", emoji: "😜", href: "/me"},
+    {originalText: "My Craft", emoji: "🤖", href: "/mycraft"},
+    {originalText: "My Diary", emoji: "👩‍🦳", href: "/mydiary"},
+    {originalText: "My Library", emoji: "👾", href: "/mylibrary"},
+    {originalText: "Your Fate", emoji: "🦄", href: "/yourfate"},
+    {originalText: "Don't Be Shy", emoji: "😉", href: "/dontbeshy"},
   ]
 
   // Create a ref and a state for each link

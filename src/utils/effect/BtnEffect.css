@@ -79,38 +79,3 @@ body {
     text-shadow: 0 0 4px #fff;
 }
 
-.photo{
-	border: 5px solid white;
-	/* border-bottom: 20px solid white; */
-  
-  }
-  
-  #h1{
-  font-size: 52px;
-  }
-  
-  /* #h2{
-  font-size: 42px;
-  } */
-  
-  #printemps{
-  position: relative;
-  margin-top: -360px;
-  font-size: 72px;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  }
-  
-  #Me{
-  font-family: 'Stardom-Regular';
-  }
-  
-  #firstP{
-	font-size: 32px;
-  }
-  
-  #intro{
-	text-align: start;
-	  font-size: 52px;
-	  line-height: 1.2em;
-  }
