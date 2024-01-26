@@ -6,21 +6,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 if (typeof document !== "undefined") {
   const gridItems = [...document.querySelectorAll(".grid > .grid__item")]
-  // console.log(gridItems)
 
-  // Preload images
-  // preloadImages(".grid__item-img").then((_) => {
-  //   // Smooth scrolling initialization (using Lenis https://github.com/studio-freight/lenis)
-  //   // const lenis = new Lenis({
-  //   // 	lerp: 0.1,
-  //   // 	smooth: true,
-  //   // });
-  //   // const scrollFn = () => {
-  //   // 	lenis.raf();
-  //   // 	requestAnimationFrame(scrollFn);
-  //   // };
-  //   // requestAnimationFrame(scrollFn);
-  // console.log(gridItems)
   gridItems.forEach((item) => {
     const image = item.querySelector(".grid__item-img")
     // console.log(item)

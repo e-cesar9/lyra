@@ -13,8 +13,8 @@ import "splitting/dist/splitting.css"
 import "splitting/dist/splitting-cells.css"
 // import {useGSAP} from "@gsap/react"
 
-// let textRef: React.MutableRefObject<any>
 gsap.registerPlugin(ScrollTrigger)
+
 
 const DiaryPage: React.FC = () => {
   let textRef = React.useRef(null)
@@ -29,15 +29,17 @@ const DiaryPage: React.FC = () => {
       if (textRef.current) {
         Splitting({target: textRef.current})
       }
+
     }
 
     splitText()
+    // gsap.to(textRef.current, {})
     // const effect = textRef.current.querySelectorAll(".word")
     // console.log(effect);
   }, [])
 
   React.useEffect(() => {
-    gsap.to(imgRef.current, {opacity: 1, duration: 4})
+    gsap.to(imgRef.current, {opacity: 1, duration: 1})
   }, [])
 
   React.useEffect(() => {
@@ -53,6 +55,10 @@ const DiaryPage: React.FC = () => {
       },
     })
   }, [])
+
+  React.useEffect(() => {
+    gsap.to(textRef.current, {})
+  })
 
   return (
     <>
@@ -87,7 +93,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="content">
-          <p className="content__title">
+          <p ref={textRef} className="content__title" data-effect16>
             In the twilight of 1948, within a world still finding its bearings
             after the tumult of war, I was born, a child of two worlds. My
             existence was the weaving together of two richly distinct heritages
@@ -121,7 +127,7 @@ const DiaryPage: React.FC = () => {
               <div
                 id="img2"
                 ref={imgRef2}
-                className="grid__item-img1"
+                className="grid__item-img"
                 style={{
                   backgroundImage:
                     "url('/AnIncredibleLife/LYH_1940_visuel_v002-min.jpg')",
