@@ -9,29 +9,47 @@
 	src: url(/assets/fonts/Zodiak-Variable.ttf);
 }
 
-#Me{
-	font-family: 'Zodiak-Variable';
-	/* line-height: 3em;
-	letter-spacing: .2em; */
-	font-weight: 200;
-
+body{
+	height: auto;
 }
 
-span{
+.sidebar{
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#Me{
+	font-family: 'Zodiak-Variable';
+	position: relative;
+	padding-left: 250px;
+	padding-top:5rem ;
+	/* height: auto; */
+	/* position: absolute; */
+	/* line-height: 3em;
+	letter-spacing: .2em; */
+	/* font-weight: 200;
+	position: relative;
+	right: 0; */
+}
+
+#intro{
 	line-height:2em;
 	letter-spacing: .1em;
 	font-size: 38px;
 }
 
-.grid {
-position: relative;
-display: grid;
-}
 
 .content__title{
 	padding: 2em 6em;
 	font-size: 28px;
+	
+}
 
+.grid {
+position: relative;
+display: grid;
 }
 
 .grid__item {
@@ -50,6 +68,7 @@ display: grid;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
 	border: 5px solid white;
+	opacity: 0;
 }
 
 .grid__item-img1 {
@@ -61,6 +80,7 @@ display: grid;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
 	border: 5px solid white;
+	opacity: 0.1;
 }
 
 .grid__item-img2 {

@@ -6,90 +6,121 @@ import gsap from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
 // import {preloadImages} from "./utils"
 import Image from "next/image"
-import ChatComponent from "../../components/chatComponent"
-import RootLayout from "../layout"
 import Sidebar from "../sideBar"
+import "./index.js"
 
 import "splitting/dist/splitting.css"
 import "splitting/dist/splitting-cells.css"
-import {useGSAP} from "@gsap/react"
+// import {useGSAP} from "@gsap/react"
+
+// let textRef: React.MutableRefObject<any>
+gsap.registerPlugin(ScrollTrigger)
 
 const DiaryPage: React.FC = () => {
-  gsap.registerPlugin(ScrollTrigger)
+  let textRef = React.useRef(null)
+  let titleRef = React.useRef(null)
+  let imgRef = React.useRef(null)
+  let imgRef2 = React.useRef(null)
+
+  React.useEffect(() => {
+    const splitText = async () => {
+      const {default: Splitting} = await import("splitting")
+
+      if (textRef.current) {
+        Splitting({target: textRef.current})
+      }
+    }
+
+    splitText()
+    // const effect = textRef.current.querySelectorAll(".word")
+    // console.log(effect);
+  }, [])
+
+  React.useEffect(() => {
+    gsap.to(imgRef.current, {opacity: 1, duration: 4})
+  }, [])
+
+  React.useEffect(() => {
+    gsap.to(imgRef2.current, {
+      opacity: 1,
+      duration: 4,
+      scrollTrigger: {
+        trigger: "#img2",
+        // start: 'bottom bottom',
+        // end: 'top 20%',
+        // scrub: true,
+        // markers: true,
+      },
+    })
+  }, [])
 
   return (
     <>
       <Sidebar />
 
-      <div
-        id="Me"
-        className=" p-20 rounded layout overflow-x-hidden h-auto w-full"
-      >
-        <section>
-          <div className=" flex flex-row justify-center pt-1 items-center">
-            <div className="grid">
-              <div className="grid__item">
-                <div
-                  className="grid__item-img"
-                  style={{
-                    backgroundImage:
-                      "url('/AnIncredibleLife/LYH_1940_concept01_V004-min.jpg')",
-                  }}
-                ></div>
-              </div>
+      <div id="Me" className="rounded layout overflow-x-hidden h-auto w-full">
+        <div className=" flex flex-row justify-center pt-1 items-center">
+          <div className="grid">
+            <div className="grid__item">
+              <div
+                ref={imgRef}
+                className="grid__item-img"
+                style={{
+                  backgroundImage:
+                    "url('/AnIncredibleLife/LYH_1940_concept01_V004-min.jpg')",
+                }}
+              ></div>
             </div>
-            <h1 id="printemps">りら はると</h1>
           </div>
+          <h1 id="printemps">りら はると</h1>
+        </div>
 
-          <div className="content">
-            <h2 className="content__title content__title--left">
-              <span className="font-13 font-medium font-height-medium">
-                In the grand tapestry of narratives that our world weaves, there
-                lies a studio baptized with my name by Oussama Ammar, my
-                esteemed co-founder. <br /> It beckons a tale of its own, one
-                that is mine to share.
-              </span>
-            </h2>
-          </div>
+        <div className="content">
+          <h2 id="intro" className="content__title content__title--left">
+            <span className="font-13 font-medium font-height-medium">
+              In the grand tapestry of narratives that our world weaves, there
+              lies a studio baptized with my name by Oussama Ammar, my esteemed
+              co-founder. <br /> It beckons a tale of its own, one that is mine
+              to share.
+            </span>
+          </h2>
+        </div>
 
-          <div className="content">
-            <h2>
-              <p className="content__title">
-                In the twilight of 1948, within a world still finding its
-                bearings after the tumult of war, I was born, a child of two
-                worlds. My existence was the weaving together of two richly
-                distinct heritages — my mother, a woman of Japanese grace and
-                resilience, and my father, an embodiment of American ambition
-                and innovation. It was a union as poetic as it was complex.{" "}
-                <br /> <br /> However, as the currents of life are wont to do,
-                they drew my father back to the shores of America, his homeland.
-                My mother, steadfast in her own right, chose to remain in Japan,
-                a decision as enigmatic as the cherry blossoms of her native
-                land. And so, I was raised under the nurturing gaze of my
-                mother, within the embrace of Japan&apos;s storied culture.{" "}
-                <br />
-                <br /> Growing up, I often found myself perched delicately on
-                the edge of two worlds. I was, in many ways, the most insider of
-                outsiders — or perhaps the most outsider of insiders. This
-                unique vantage point offered me a lens through which I observed
-                the world, one tinted with the hues of both my American and
-                Japanese heritage. <br />
-                <br /> In this dance of duality, I found a rhythm all my own. I
-                embraced my mixed heritage with a kind of quiet defiance, a
-                testament to both the American spirit of independence and the
-                Japanese dedication to harmony. It was from this rich tapestry
-                of experiences that I drew the essence of my being — a being
-                deeply rooted in the arts and the transformative power of
-                storytelling.
-              </p>
-            </h2>
-          </div>
-        </section>
+        <div className="content">
+          <p className="content__title">
+            In the twilight of 1948, within a world still finding its bearings
+            after the tumult of war, I was born, a child of two worlds. My
+            existence was the weaving together of two richly distinct heritages
+            — my mother, a woman of Japanese grace and resilience, and my
+            father, an embodiment of American ambition and innovation. It was a
+            union as poetic as it was complex. <br /> <br /> However, as the
+            currents of life are wont to do, they drew my father back to the
+            shores of America, his homeland. My mother, steadfast in her own
+            right, chose to remain in Japan, a decision as enigmatic as the
+            cherry blossoms of her native land. And so, I was raised under the
+            nurturing gaze of my mother, within the embrace of Japan&apos;s
+            storied culture. <br />
+            <br /> Growing up, I often found myself perched delicately on the
+            edge of two worlds. I was, in many ways, the most insider of
+            outsiders — or perhaps the most outsider of insiders. This unique
+            vantage point offered me a lens through which I observed the world,
+            one tinted with the hues of both my American and Japanese heritage.{" "}
+            <br />
+            <br /> In this dance of duality, I found a rhythm all my own. I
+            embraced my mixed heritage with a kind of quiet defiance, a
+            testament to both the American spirit of independence and the
+            Japanese dedication to harmony. It was from this rich tapestry of
+            experiences that I drew the essence of my being — a being deeply
+            rooted in the arts and the transformative power of storytelling.
+          </p>
+        </div>
 
         <div className="element">
           <div className="grid">
             <div className="grid__item">
               <div
+                id="img2"
+                ref={imgRef2}
                 className="grid__item-img1"
                 style={{
                   backgroundImage:
@@ -102,7 +133,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="element">
           <div className="content">
-            <h2 className="content__title content__title--left" data-splitting>
+            <h2 className="content__title content__title--left">
               <p className="font-small">
                 In the tender years of my youth, my memories of my father were
                 akin to fleeting glimpses of a distant dream — fragmented yet
@@ -149,7 +180,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div className="content">
-            <h2 className="content__title content__title--left" data-splitting>
+            <h2 className="content__title content__title--left">
               <p className="font-small">
                 In the embrace of Japan&apos;s countryside, where the whispers
                 of nature spoke in a language as ancient as time itself, I found
@@ -213,7 +244,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div className="content">
-            <h2 className="content__title content__title--left" data-splitting>
+            <h2 className="content__title content__title--left">
               <p className="font-small">
                 In the labyrinth of my intellect, where the threads of
                 philosophy, literature, biography, cinema, and beyond
@@ -250,12 +281,12 @@ const DiaryPage: React.FC = () => {
                 In the realm of cinema, &quot;The Godfather&quot; and &quot;Good
                 Will Hunting&quot; offer a study in character complexity,
                 paralleling the moral quandaries found in the philosophical
-                works of Kant and Hume. The visual poetry in Terence Malick’s
-                films echoes the metaphysical explorations of Mulla Sadra, while
-                &quot;Ratatouille&quot; serves as a delightful reminder of the
-                transcendence of passion and creativity, a theme that resonates
-                deeply with the ethos of &quot;Creativity, Inc.&quot; by Ed
-                Catmull.
+                works of Kant and Hume. The visual poetry in Terence
+                Malick&quot;s films echoes the metaphysical explorations of
+                Mulla Sadra, while &quot;Ratatouille&quot; serves as a
+                delightful reminder of the transcendence of passion and
+                creativity, a theme that resonates deeply with the ethos of
+                &quot;Creativity, Inc.&quot; by Ed Catmull.
                 <br /> <br />
                 Documentaries like &quot;Jiro Dreams of Sushi&quot; and
                 &quot;Life, Animated&quot; reveal the profound impact of
@@ -295,7 +326,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div className="content">
-            <h2 className="content__title content__title--left" data-splitting>
+            <h2 className="content__title content__title--left">
               <p className="font-small">
                 In my teenage years, I came to a realization, akin to a quiet
                 awakening, about the essence of beauty and its role in my
@@ -348,7 +379,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div className="content">
-            <h2 className="content__title content__title--left" data-splitting>
+            <h2 className="content__title content__title--left">
               <p className="font-small">
                 Reflecting upon the passage of years, a certain memory comes to
                 the fore, vibrant and alive with the energy of my younger self.
@@ -409,12 +440,12 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div className="content">
-            <h2 className="content__title content__title--left" data-splitting>
+            <h2 className="content__title content__title--left">
               <p className="font-small">
                 My first encounter with America was a vivid tapestry of
                 experiences, each more intense and enlightening than the last.
                 New York greeted me with a cacophony of sounds, a kaleidoscope
-                of sights, a mélange of aromas – it was an orchestra without a
+                of sights, a melange of aromas – it was an orchestra without a
                 conductor, and yet, every element played in harmonious chaos.
                 The skyscrapers were like modern-day Babels, each striving to
                 touch the heavens, and the streets were alive with a vibrancy
@@ -480,7 +511,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div className="content">
-            <h2 className="content__title content__title--left" data-splitting>
+            <h2 className="content__title content__title--left">
               <p className="font-small">
                 In America, I embraced the force of entrepreneurship — that
                 intrepid spirit which seemed to rise from the very ground of
@@ -561,7 +592,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div className="content">
-            <h2 className="content__title content__title--left" data-splitting>
+            <h2 className="content__title content__title--left">
               <p className="font-small">
                 The cornerstone of our studio&apos;s philosophy is rooted in the
                 dual virtues of audacity and curiosity — a blend of fearless
@@ -627,7 +658,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div className="content">
-            <h2 className="content__title content__title--left" data-splitting>
+            <h2 className="content__title content__title--left">
               <p className="font-small">
                 In our pursuit of excellence, we align ourselves with the finest
                 talents, guiding them, learning from them, and forever seeking
@@ -688,7 +719,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div className="content">
-            <h2 className="content__title content__title--left" data-splitting>
+            <h2 className="content__title content__title--left">
               <p className="font-small">
                 The world, indeed, does not always extend its arms in welcome to
                 the novelties of new talent and fresh creations. These fragile
