@@ -33,7 +33,7 @@ const DiaryPage: React.FC = () => {
                   className="grid__item-img"
                   style={{
                     backgroundImage:
-                      "url('/AnIncredibleLife/LYH_1940_concept01_v004-min.jpg')",
+                      "url('/AnIncredibleLife/LYH_1940_concept01_V004-min.jpg')",
                   }}
                 ></div>
               </div>
