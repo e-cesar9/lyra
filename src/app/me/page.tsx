@@ -16,7 +16,11 @@ gsap.registerPlugin(ScrollTrigger)
 
 const DiaryPage: React.FC = () => {
   let textRef = React.useRef(null)
+
   let titleRef = React.useRef(null)
+  let titleRef2 = React.useRef(null)
+  let titleRef3 = React.useRef(null)
+
   let imgRef = React.useRef(null)
   let imgRef2 = React.useRef(null)
 
@@ -59,6 +63,103 @@ const DiaryPage: React.FC = () => {
 
     splitText()
   }, [titleRef.current])
+
+  React.useEffect(() => {
+    const splitText = async () => {
+      const {default: Splitting} = await import("splitting")
+
+      if (titleRef2.current) {
+        Splitting({target: titleRef2.current})
+        const fx5Titles = titleRef2.current.querySelectorAll(
+          ".content__title[data-effect5]",
+        )
+
+        fx5Titles.forEach((title) => {
+          const chars = title.querySelectorAll(".char")
+
+          gsap.fromTo(
+            chars,
+            {
+              "will-change": "opacity, transform",
+              opacity: 0,
+              xPercent: () => gsap.utils.random(-200, 200),
+              yPercent: () => gsap.utils.random(-150, 150),
+            },
+            {
+              ease: "power1.inOut",
+              opacity: 1,
+              xPercent: 0,
+              yPercent: 0,
+              stagger: {each: 0.05, grid: "auto", from: "random"},
+              scrollTrigger: {
+                trigger: title,
+                start: "center bottom+=10%",
+                end: "bottom center",
+                scrub: 0.9,
+              },
+            },
+          )
+        })
+      }
+    }
+
+    splitText()
+  }, [titleRef2.current])
+
+  React.useEffect(() => {
+    const splitText = async () => {
+      const {default: Splitting} = await import("splitting")
+
+      if (titleRef3.current) {
+        Splitting({target: titleRef3.current})
+        const fx6Titles = titleRef3.current.querySelectorAll(
+          ".content__title[data-effect6]",
+        )
+
+        fx6Titles.forEach((title) => {
+          const words = title.querySelectorAll(
+            ".font-13.font-medium.font-height-medium",
+          )
+
+          for (const word of words) {
+            const chars = word.querySelectorAll(".char")
+
+            chars.forEach((char) =>
+              gsap.set(char.parentNode, {perspective: 2000}),
+            )
+
+            gsap.fromTo(
+              chars,
+              {
+                "will-change": "opacity, transform",
+                opacity: 0,
+                rotationX: -90,
+                yPercent: 50,
+              },
+              {
+                ease: "power1.inOut",
+                opacity: 1,
+                rotationX: 0,
+                yPercent: 0,
+                stagger: {
+                  each: 0.03,
+                  from: 0,
+                },
+                scrollTrigger: {
+                  trigger: word,
+                  start: "center bottom+=40%",
+                  end: "bottom center-=30%",
+                  scrub: 0.9,
+                },
+              },
+            )
+          }
+        })
+      }
+    }
+
+    splitText()
+  }, [titleRef3.current])
 
   React.useEffect(() => {
     const splitText = async () => {
@@ -112,7 +213,7 @@ const DiaryPage: React.FC = () => {
     }
 
     splitText()
-  }, [])
+  }, [textRef.current])
 
   React.useEffect(() => {
     gsap.to(imgRef.current, {opacity: 1, duration: 1})
@@ -175,9 +276,17 @@ const DiaryPage: React.FC = () => {
             embraced my mixed heritage with a kind of quiet defiance, a
             testament to both the American spirit of independence and the
             Japanese dedication to harmony. It was from this rich tapestry of
-            experiences that I drew the essence of my being — a being deeply
-            rooted in the arts and the transformative power of storytelling.
+            experiences that I drew the essence of my being
           </p>
+        </div>
+
+        <div id="section" className="content" ref={titleRef2}>
+          <h2 id="intro" className="content__title" data-effect5>
+            <span className="font-13 font-medium font-height-medium">
+              — a being deeply rooted in the arts and the transformative power
+              of storytelling.
+            </span>
+          </h2>
         </div>
 
         <div className="element">
@@ -413,9 +522,15 @@ const DiaryPage: React.FC = () => {
                 world, not as a mere adornment but as a transformative force. I
                 sought to weave this beauty into my narratives, my interactions,
                 and my very being. In doing so, I aimed to inspire, to elevate
-                thoughts, and to kindle a similar recognition in others – the
-                recognition that beauty is not just something to be observed but
-                something to be experienced and shared.
+                thoughts, and to kindle a similar recognition in others
+                <div id="section" className="content" ref={titleRef3}>
+                  <h2 id="intro" className="content__title" data-effect6>
+                    <span className="font-13 font-medium font-height-medium">
+                      – the recognition that beauty is not just something to be
+                      observed but something to be experienced and shared.
+                    </span>
+                  </h2>
+                </div>
                 <br /> <br />
                 Like the subtle yet undeniable influence of a well-crafted story
                 or a beautifully composed piece of music, I aspired to make my

@@ -157,7 +157,7 @@ form{
 /* 
 Main Screen Effect
  */
-.scanlines {
+/* .scanlines {
   position: absolute;
   top: 0;
   left: 0;
@@ -247,7 +247,7 @@ to { transform: translate(0, 100vh)}
 }
 @keyframes vline {
 to { transform: translate(0, 100vh)}
-}
+} */
 
 /* turn off animation */
 /* .tv {
