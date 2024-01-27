@@ -15,7 +15,6 @@ import "splitting/dist/splitting-cells.css"
 
 gsap.registerPlugin(ScrollTrigger)
 
-
 const DiaryPage: React.FC = () => {
   let textRef = React.useRef(null)
   let titleRef = React.useRef(null)
@@ -28,8 +27,54 @@ const DiaryPage: React.FC = () => {
 
       if (textRef.current) {
         Splitting({target: textRef.current})
-      }
+        const fx16Titles = textRef.current.querySelectorAll(
+          ".content__title[data-effect16]",
+        )
+        // console.log(fx16Titles);
 
+        fx16Titles.forEach((title) => {
+          // console.log(title);
+
+          gsap.fromTo(
+            title,
+            {
+              transformOrigin: "0% 50%",
+              rotate: 0,
+            },
+            {
+              ease: "none",
+              rotate: 0,
+              scrollTrigger: {
+                trigger: title,
+                start: "top bottom",
+                end: "top top",
+                scrub: true,
+              },
+            },
+          )
+          const tit = title.querySelectorAll("span.word")
+          // console.log(tit);
+
+          gsap.fromTo(
+            tit,
+            {
+              "will-change": "opacity",
+              opacity: 0.1,
+            },
+            {
+              ease: "none",
+              opacity: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                trigger: textRef.current,
+                start: "top bottom-=20%",
+                end: "center top+=20%",
+                scrub: true,
+              },
+            },
+          )
+        })
+      }
     }
 
     splitText()
@@ -38,22 +83,32 @@ const DiaryPage: React.FC = () => {
     // console.log(effect);
   }, [])
 
-  React.useEffect(() => {
-    gsap.to(imgRef.current, {opacity: 1, duration: 1})
-  }, [])
+  // React.useEffect(() => {
+  //   // if(textRef.current){
+  //     const elements = textRef.current.querySelectorAll('span.word')
+  //     elements.forEach(element => {
+  //       gsap.fromTo(element, {opacity:0.1},
+  //         {
+  //           ease: 'none',
+  //           opacity: 1,
+  //           stagger: 0.05,
+  //           scrollTrigger: {
+  //               trigger: textRef.current,
+  //               start: 'top bottom',
+  //               end: 'center top',
+  //               scrub: true,
+  //           }
+  //         }
+
+  //         )
+
+  //     });
+
+  // })
 
   React.useEffect(() => {
-    gsap.to(imgRef2.current, {
-      opacity: 1,
-      duration: 4,
-      scrollTrigger: {
-        trigger: "#img2",
-        // start: 'bottom bottom',
-        // end: 'top 20%',
-        // scrub: true,
-        // markers: true,
-      },
-    })
+    gsap.to(imgRef.current, {opacity: 1, duration: 1})
+    gsap.to(imgRef2.current, {opacity: 1, duration: 1})
   }, [])
 
   React.useEffect(() => {
@@ -92,8 +147,8 @@ const DiaryPage: React.FC = () => {
           </h2>
         </div>
 
-        <div className="content">
-          <p ref={textRef} className="content__title" data-effect16>
+        <div className="content" ref={textRef}>
+          <p className="content__title" data-effect16>
             In the twilight of 1948, within a world still finding its bearings
             after the tumult of war, I was born, a child of two worlds. My
             existence was the weaving together of two richly distinct heritages
