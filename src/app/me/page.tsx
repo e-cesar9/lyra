@@ -476,17 +476,11 @@ const DiaryPage: React.FC = () => {
             testament to both the American spirit of independence and the
             Japanese dedication to harmony. It was from this rich tapestry of
             experiences that I drew the essence of my being
+              — a being deeply rooted in the arts and the transformative power
+              of storytelling.
           </p>
         </div>
 
-        <div id="section" className="content" ref={titleRef2}>
-          <h2 id="intro" className="content__title" data-effect5>
-            <span className="lined font-medium font-height-medium">
-              — a being deeply rooted in the arts and the transformative power
-              of storytelling.
-            </span>
-          </h2>
-        </div>
 
         <div className="element">
           <div className="grid">
@@ -584,17 +578,10 @@ const DiaryPage: React.FC = () => {
               character was forged. The tranquility of the countryside was not a
               barrier to contain me, but a canvas upon which I painted my
               thoughts and dreams.
-            </p>
-            <div className="inside content" ref={titleRef6}>
-              <p className="content__title" data-effect10>
-                <span className="lined font-medium font-height-medium">
+            
                   It taught me to respect the delicate balance of life, to
                   understand that true freedom is not about the absence of
                   rules, but the understanding of harmony.
-                </span>
-              </p>
-            </div>
-            <p className="content__title" data-effect16>
               <br /> <br />
               In these moments of solitude and reflection, my rebellious spirit
               was not dampened but invigorated. It was here, in the heart of
@@ -723,16 +710,9 @@ const DiaryPage: React.FC = () => {
               sought to weave this beauty into my narratives, my interactions,
               and my very being. In doing so, I aimed to inspire, to elevate
               thoughts, and to kindle a similar recognition in others
-            </p>
-            <p className="inside content" ref={titleRef3}>
-              <p className="content__title" data-effect6>
-                <span className="lined font-medium font-height-medium">
+
                   – the recognition that beauty is not just something to be
                   observed but something to be experienced and shared.
-                </span>
-              </p>
-            </p>
-            <p className="content__title" data-effect16>
               <br /> <br />
               Like the subtle yet undeniable influence of a well-crafted story
               or a beautifully composed piece of music, I aspired to make my
@@ -925,19 +905,13 @@ const DiaryPage: React.FC = () => {
               say, his voice a mixture of challenge and inspiration, &quot;is
               not just a gadget. It&apos;s a story. It&apos;s a narrative about
               who we are and who we can become.
-            </p>
 
-            <p id="section" className="content" ref={titleRef5}>
-              <h2 id="intro" className="content__title" data-effect7>
-                <span className="lined font-medium font-height-medium">
+
                   This device will tell a story that changes the way people
                   understand what is in their hands, and what is in their
                   hearts.&quot;
-                </span>
-              </h2>
-            </p>
 
-            <p className="content__title" data-effect16>
+
               <br /> <br />
               In this fable-like story, Jobs wasn&apos;t just pushing for
               technical excellence; he was inspiring his team to embed a story
@@ -1148,19 +1122,15 @@ const DiaryPage: React.FC = () => {
                 friends to the new, guardians of the spark of innovation, and
                 believers in the power of storytelling to transcend, transform,
                 and transport.
+                
+                Here, within the walls of The Lyra Haruto Company, greatness is
+                not just recognized — it is expected, nurtured, and celebrated,
+                for it can, indeed, come from anywhere.
                 <br /> <br />
               </p>
             </h2>
           </div>
-          <div className="content pb-36" ref={titleRef4}>
-            <h2 id="intro" className="content__title" data-effect28>
-              <span className="lined font-medium font-height-medium">
-                Here, within the walls of The Lyra Haruto Company, greatness is
-                not just recognized — it is expected, nurtured, and celebrated,
-                for it can, indeed, come from anywhere.
-              </span>
-            </h2>
-          </div>
+
         </div>
       </div>
     </>
