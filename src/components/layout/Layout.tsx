@@ -87,7 +87,7 @@ const Layout: React.FC<Props> = ({children}) => {
       >
         {children}
       </main>
-      <div className="scanlines"></div>
+      {/* <div className="scanlines"></div> */}
       {/* <div className="noise"></div> */}
       <div className="overlay">{boxes}</div>
     </div>
