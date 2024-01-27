@@ -30,35 +30,35 @@ const DiaryPage: React.FC = () => {
           ".content__title[data-effect25]",
         )
 
-        fx25Titles.forEach(letter => {
-        const letters = letter.querySelectorAll('span.char')
-          gsap.fromTo(letters, {
-              'will-change': 'transform',
-              transformOrigin: '50% 100%',
-              scaleY: 0
-          }, 
-          {
-              ease: 'power3.in',
+        fx25Titles.forEach((letter) => {
+          const letters = letter.querySelectorAll("span.char")
+          gsap.fromTo(
+            letters,
+            {
+              "will-change": "transform",
+              transformOrigin: "50% 100%",
+              scaleY: 0,
+            },
+            {
+              ease: "power3.in",
               opacity: 1,
               scaleY: 1,
               stagger: 0.05,
               scrollTrigger: {
-                  trigger: letter,
-                  start: '-=150%',
-                  end: '+=100%',
-                  scrub: true,
-                  // pin: letter,
-              }
-          });
-  
-      });
-
+                trigger: letter,
+                start: "-=150%",
+                end: "+=100%",
+                scrub: true,
+                // pin: letter,
+              },
+            },
+          )
+        })
       }
     }
 
     splitText()
   }, [titleRef.current])
-
 
   React.useEffect(() => {
     const splitText = async () => {
