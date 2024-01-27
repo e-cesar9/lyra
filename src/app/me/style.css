@@ -28,7 +28,7 @@ html {
 	font-family: 'Zodiak-Variable';
 	position: relative;
 	padding-left: 250px;
-	padding-top:5rem ;
+	padding-top: 5rem;
 	/* height: auto; */
 	/* position: absolute; */
 	/* line-height: 3em;
@@ -38,15 +38,20 @@ html {
 	right: 0; */
 }
 
-#intro{
+.lined{
 	line-height:2em;
 	letter-spacing: .1em;
 	font-size: 38px;
 }
 
+.lined.inside{
+	padding: 0!important;
+}
 /* #section{
 	margin: 8em 0 0 0;
 } */
+
+
 
 
 .content__title{
@@ -55,7 +60,6 @@ html {
 	will-change: opacity;
 	/* opacity: 0.1;
 	rotate: 0; */
-	
 }
 
 .grid {
@@ -227,6 +231,8 @@ display: grid;
   writing-mode: vertical-rl;
   text-orientation: upright;
   }
+
+  
   
   /* #Me{
   font-family: 'Stardom-Regular';
