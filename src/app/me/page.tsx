@@ -4,7 +4,6 @@ import "./style.css"
 import Lenis from "@studio-freight/lenis"
 import gsap from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
-// import {preloadImages} from "./utils"
 import Image from "next/image"
 import Sidebar from "../sideBar"
 import "./index.js"
@@ -25,16 +24,53 @@ const DiaryPage: React.FC = () => {
     const splitText = async () => {
       const {default: Splitting} = await import("splitting")
 
+      if (titleRef.current) {
+        Splitting({target: titleRef.current})
+        const fx25Titles = titleRef.current.querySelectorAll(
+          ".content__title[data-effect25]",
+        )
+
+        fx25Titles.forEach(letter => {
+        const letters = letter.querySelectorAll('span.char')
+          gsap.fromTo(letters, {
+              'will-change': 'transform',
+              transformOrigin: '50% 100%',
+              scaleY: 0
+          }, 
+          {
+              ease: 'power3.in',
+              opacity: 1,
+              scaleY: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                  trigger: letter,
+                  start: '-=150%',
+                  end: '+=100%',
+                  scrub: true,
+                  // pin: letter,
+              }
+          });
+  
+      });
+
+      }
+    }
+
+    splitText()
+  }, [titleRef.current])
+
+
+  React.useEffect(() => {
+    const splitText = async () => {
+      const {default: Splitting} = await import("splitting")
+
       if (textRef.current) {
         Splitting({target: textRef.current})
         const fx16Titles = textRef.current.querySelectorAll(
           ".content__title[data-effect16]",
         )
-        // console.log(fx16Titles);
 
         fx16Titles.forEach((title) => {
-          // console.log(title);
-
           gsap.fromTo(
             title,
             {
@@ -53,8 +89,6 @@ const DiaryPage: React.FC = () => {
             },
           )
           const tit = title.querySelectorAll("span.word")
-          // console.log(tit);
-
           gsap.fromTo(
             tit,
             {
@@ -78,49 +112,19 @@ const DiaryPage: React.FC = () => {
     }
 
     splitText()
-    // gsap.to(textRef.current, {})
-    // const effect = textRef.current.querySelectorAll(".word")
-    // console.log(effect);
   }, [])
-
-  // React.useEffect(() => {
-  //   // if(textRef.current){
-  //     const elements = textRef.current.querySelectorAll('span.word')
-  //     elements.forEach(element => {
-  //       gsap.fromTo(element, {opacity:0.1},
-  //         {
-  //           ease: 'none',
-  //           opacity: 1,
-  //           stagger: 0.05,
-  //           scrollTrigger: {
-  //               trigger: textRef.current,
-  //               start: 'top bottom',
-  //               end: 'center top',
-  //               scrub: true,
-  //           }
-  //         }
-
-  //         )
-
-  //     });
-
-  // })
 
   React.useEffect(() => {
     gsap.to(imgRef.current, {opacity: 1, duration: 1})
     gsap.to(imgRef2.current, {opacity: 1, duration: 1})
   }, [])
 
-  React.useEffect(() => {
-    gsap.to(textRef.current, {})
-  })
-
   return (
     <>
       <Sidebar />
 
       <div id="Me" className="rounded layout overflow-x-hidden h-auto w-full">
-        <div className=" flex flex-row justify-center pt-1 items-center">
+        <div className=" flex flex-row justify-center pt-1 mb-20 items-center">
           <div className="grid">
             <div className="grid__item">
               <div
@@ -136,8 +140,8 @@ const DiaryPage: React.FC = () => {
           <h1 id="printemps">りら はると</h1>
         </div>
 
-        <div className="content">
-          <h2 id="intro" className="content__title content__title--left">
+        <div id="section" className="content" ref={titleRef}>
+          <h2 id="intro" className="content__title" data-effect25>
             <span className="font-13 font-medium font-height-medium">
               In the grand tapestry of narratives that our world weaves, there
               lies a studio baptized with my name by Oussama Ammar, my esteemed

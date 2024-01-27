@@ -13,6 +13,10 @@ body{
 	height: auto;
 }
 
+html {
+	scroll-behavior: smooth;
+  }
+
 .sidebar{
 	height: 100vh;
 	position: fixed;
@@ -39,6 +43,10 @@ body{
 	letter-spacing: .1em;
 	font-size: 38px;
 }
+
+/* #section{
+	margin: 8em 0 0 0;
+} */
 
 
 .content__title{
