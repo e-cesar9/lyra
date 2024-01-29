@@ -437,7 +437,7 @@ const DiaryPage: React.FC = () => {
         pin: ".wrap",
         animation: animation,
         scrub: true,
-        markers: true,
+        // markers: true,
       })
     })
     return () => ctx.revert()
