@@ -24,6 +24,14 @@ html {
 	left: 0;
 }
 
+#section{
+	position: absolute;
+	top: 1px;
+}
+.quotes{
+	text-align: center;
+}
+
 #Me{
 	font-family: 'Zodiak-Variable';
 	position: relative;

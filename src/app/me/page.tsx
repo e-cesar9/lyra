@@ -52,8 +52,8 @@ const DiaryPage: React.FC = () => {
               stagger: 0.05,
               scrollTrigger: {
                 trigger: letter,
-                start: "-=150%",
-                end: "+=120%",
+                start: "start",
+                end: "bottom",
                 scrub: true,
                 // pin: letter,
               },
@@ -419,70 +419,96 @@ const DiaryPage: React.FC = () => {
     gsap.to(imgRef2.current, {opacity: 1, duration: 1})
   }, [])
 
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.set(".swap", {opacity: 1, scale: 1})
+
+      const animation = gsap.to(".swap", {
+        opacity: 0,
+        scale: 0,
+        duration: 1,
+        stagger: 1,
+      })
+
+      ScrollTrigger.create({
+        trigger: ".wrap",
+        start: "top-=10% top-=10%",
+        end: "bottom+=10% bottom-=100%",
+        pin: ".wrap",
+        animation: animation,
+        scrub: true,
+        markers: true,
+      })
+    })
+    return () => ctx.revert()
+  }, [])
+
   return (
     <>
       <Sidebar />
 
       <div id="Me" className="rounded layout overflow-x-hidden h-auto w-full">
-        <div className=" flex flex-row justify-center pt-1 mb-20 items-center">
-          <div className="grid">
-            <div className="grid__item">
-              <div
-                ref={imgRef}
-                className="grid__item-img"
-                style={{
-                  backgroundImage:
-                    "url('/AnIncredibleLife/LYH_1940_concept01_V004-min.jpg')",
-                }}
-              ></div>
+        <div className="echo">
+          <div className="wrap">
+            <div className=" flex flex-row justify-center pt-1 mb-20 items-center swap">
+              <div className="grid">
+                <div className="grid__item">
+                  <div
+                    ref={imgRef}
+                    className="grid__item-img photo"
+                    style={{
+                      backgroundImage:
+                        "url('/AnIncredibleLife/LYH_1940_concept01_V004-min.jpg')",
+                    }}
+                  ></div>
+                  <p className="quotes">Lorem Ipsum</p>
+                </div>
+              </div>
+              <h1 id="printemps">リラ はると</h1>
+            </div>
+            <div id="section" className="content pt-48" ref={titleRef}>
+              <h2 id="intro" className="content__title" data-effect25>
+                <span className="lined font-medium font-height-medium">
+                  In the grand tapestry of narratives that our world weaves,
+                  there lies a studio baptized with my name by Oussama Ammar, my
+                  esteemed co-founder. <br /> It beckons a tale of its own, one
+                  that is mine to share.
+                </span>
+              </h2>
             </div>
           </div>
-          <h1 id="printemps">リラ はると</h1>
+
+          <div className="content" ref={textRef}>
+            <p className="content__title" data-effect16>
+              In the twilight of 1948, within a world still finding its bearings
+              after the tumult of war, I was born, a child of two worlds. My
+              existence was the weaving together of two richly distinct
+              heritages — my mother, a woman of Japanese grace and resilience,
+              and my father, an embodiment of American ambition and innovation.
+              It was a union as poetic as it was complex. <br /> <br /> However,
+              as the currents of life are wont to do, they drew my father back
+              to the shores of America, his homeland. My mother, steadfast in
+              her own right, chose to remain in Japan, a decision as enigmatic
+              as the cherry blossoms of her native land. And so, I was raised
+              under the nurturing gaze of my mother, within the embrace of
+              Japan&apos;s storied culture. <br />
+              <br /> Growing up, I often found myself perched delicately on the
+              edge of two worlds. I was, in many ways, the most insider of
+              outsiders — or perhaps the most outsider of insiders. This unique
+              vantage point offered me a lens through which I observed the
+              world, one tinted with the hues of both my American and Japanese
+              heritage. <br />
+              <br /> In this dance of duality, I found a rhythm all my own. I
+              embraced my mixed heritage with a kind of quiet defiance, a
+              testament to both the American spirit of independence and the
+              Japanese dedication to harmony. It was from this rich tapestry of
+              experiences that I drew the essence of my being — a being deeply
+              rooted in the arts and the transformative power of storytelling.
+            </p>
+          </div>
         </div>
 
-        <div id="section" className="content" ref={titleRef}>
-          <h2 id="intro" className="content__title" data-effect25>
-            <span className="lined font-medium font-height-medium">
-              In the grand tapestry of narratives that our world weaves, there
-              lies a studio baptized with my name by Oussama Ammar, my esteemed
-              co-founder. <br /> It beckons a tale of its own, one that is mine
-              to share.
-            </span>
-          </h2>
-        </div>
-
-        <div className="content" ref={textRef}>
-          <p className="content__title" data-effect16>
-            In the twilight of 1948, within a world still finding its bearings
-            after the tumult of war, I was born, a child of two worlds. My
-            existence was the weaving together of two richly distinct heritages
-            — my mother, a woman of Japanese grace and resilience, and my
-            father, an embodiment of American ambition and innovation. It was a
-            union as poetic as it was complex. <br /> <br /> However, as the
-            currents of life are wont to do, they drew my father back to the
-            shores of America, his homeland. My mother, steadfast in her own
-            right, chose to remain in Japan, a decision as enigmatic as the
-            cherry blossoms of her native land. And so, I was raised under the
-            nurturing gaze of my mother, within the embrace of Japan&apos;s
-            storied culture. <br />
-            <br /> Growing up, I often found myself perched delicately on the
-            edge of two worlds. I was, in many ways, the most insider of
-            outsiders — or perhaps the most outsider of insiders. This unique
-            vantage point offered me a lens through which I observed the world,
-            one tinted with the hues of both my American and Japanese heritage.{" "}
-            <br />
-            <br /> In this dance of duality, I found a rhythm all my own. I
-            embraced my mixed heritage with a kind of quiet defiance, a
-            testament to both the American spirit of independence and the
-            Japanese dedication to harmony. It was from this rich tapestry of
-            experiences that I drew the essence of my being
-              — a being deeply rooted in the arts and the transformative power
-              of storytelling.
-          </p>
-        </div>
-
-
-        <div className="element">
+        <div className="element pin">
           <div className="grid">
             <div className="grid__item">
               <div
@@ -577,11 +603,9 @@ const DiaryPage: React.FC = () => {
               environment both serene and wild, was the crucible in which my
               character was forged. The tranquility of the countryside was not a
               barrier to contain me, but a canvas upon which I painted my
-              thoughts and dreams.
-            
-                  It taught me to respect the delicate balance of life, to
-                  understand that true freedom is not about the absence of
-                  rules, but the understanding of harmony.
+              thoughts and dreams. It taught me to respect the delicate balance
+              of life, to understand that true freedom is not about the absence
+              of rules, but the understanding of harmony.
               <br /> <br />
               In these moments of solitude and reflection, my rebellious spirit
               was not dampened but invigorated. It was here, in the heart of
@@ -709,10 +733,9 @@ const DiaryPage: React.FC = () => {
               world, not as a mere adornment but as a transformative force. I
               sought to weave this beauty into my narratives, my interactions,
               and my very being. In doing so, I aimed to inspire, to elevate
-              thoughts, and to kindle a similar recognition in others
-
-                  – the recognition that beauty is not just something to be
-                  observed but something to be experienced and shared.
+              thoughts, and to kindle a similar recognition in others – the
+              recognition that beauty is not just something to be observed but
+              something to be experienced and shared.
               <br /> <br />
               Like the subtle yet undeniable influence of a well-crafted story
               or a beautifully composed piece of music, I aspired to make my
@@ -904,14 +927,9 @@ const DiaryPage: React.FC = () => {
               the room and gather the team around. &quot;This,&quot; he would
               say, his voice a mixture of challenge and inspiration, &quot;is
               not just a gadget. It&apos;s a story. It&apos;s a narrative about
-              who we are and who we can become.
-
-
-                  This device will tell a story that changes the way people
-                  understand what is in their hands, and what is in their
-                  hearts.&quot;
-
-
+              who we are and who we can become. This device will tell a story
+              that changes the way people understand what is in their hands, and
+              what is in their hearts.&quot;
               <br /> <br />
               In this fable-like story, Jobs wasn&apos;t just pushing for
               technical excellence; he was inspiring his team to embed a story
@@ -1121,16 +1139,14 @@ const DiaryPage: React.FC = () => {
                 dream in color and speak in the language of possibility. We are
                 friends to the new, guardians of the spark of innovation, and
                 believers in the power of storytelling to transcend, transform,
-                and transport.
-                
-                Here, within the walls of The Lyra Haruto Company, greatness is
-                not just recognized — it is expected, nurtured, and celebrated,
-                for it can, indeed, come from anywhere.
+                and transport. Here, within the walls of The Lyra Haruto
+                Company, greatness is not just recognized — it is expected,
+                nurtured, and celebrated, for it can, indeed, come from
+                anywhere.
                 <br /> <br />
               </p>
             </h2>
           </div>
-
         </div>
       </div>
     </>
