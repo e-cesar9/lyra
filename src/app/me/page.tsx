@@ -51,7 +51,7 @@ const DiaryPage: React.FC = () => {
               scaleY: 1,
               stagger: 0.05,
               scrollTrigger: {
-                trigger: '.echo',
+                trigger: ".echo",
                 start: "start",
                 end: "bottom-=20%",
                 scrub: true,
@@ -421,23 +421,23 @@ const DiaryPage: React.FC = () => {
 
   useEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.set(".swap", {opacity: 1, scale: 1})
+      gsap.set(".swap", {opacity: 1})
 
       const animation = gsap.to(".swap", {
         opacity: 0,
-        scale: 0,
+        // scale: 0,
         duration: 1,
         stagger: 1,
       })
 
       ScrollTrigger.create({
         trigger: ".wrap",
-        start: "top-=10% top-=10%",
+        start: "top-=25% top-=10%",
         end: "bottom+=10% bottom-=400%",
         pin: ".wrap",
         animation: animation,
         scrub: true,
-        // markers: true,
+        markers: true,
       })
     })
     return () => ctx.revert()
@@ -450,7 +450,7 @@ const DiaryPage: React.FC = () => {
       <div id="Me" className="rounded layout overflow-x-hidden h-auto w-full">
         <div className="echo">
           <div className="wrap">
-            <div className=" flex flex-row justify-center pt-1 mb-20 items-center swap">
+            <div className=" flex flex-row justify-center pt-1 mb-20 pl-[30px] items-center swap">
               <div className="grid">
                 <div className="grid__item">
                   <div
@@ -466,7 +466,7 @@ const DiaryPage: React.FC = () => {
               </div>
               <h1 id="printemps">リラ はると</h1>
             </div>
-            <div id="section" className="content pt-48" ref={titleRef}>
+            <div id="section" className="content pt-56" ref={titleRef}>
               <h2 id="intro" className="content__title" data-effect25>
                 <span className="lined font-medium font-height-medium">
                   In the grand tapestry of narratives that our world weaves,
@@ -477,39 +477,36 @@ const DiaryPage: React.FC = () => {
               </h2>
             </div>
           </div>
-          </div>
+        </div>
 
-
-          <div className="content" ref={textRef}>
-            <p className="content__title" data-effect16>
-              In the twilight of 1948, within a world still finding its bearings
-              after the tumult of war, I was born, a child of two worlds. My
-              existence was the weaving together of two richly distinct
-              heritages — my mother, a woman of Japanese grace and resilience,
-              and my father, an embodiment of American ambition and innovation.
-              It was a union as poetic as it was complex. <br /> <br /> However,
-              as the currents of life are wont to do, they drew my father back
-              to the shores of America, his homeland. My mother, steadfast in
-              her own right, chose to remain in Japan, a decision as enigmatic
-              as the cherry blossoms of her native land. And so, I was raised
-              under the nurturing gaze of my mother, within the embrace of
-              Japan&apos;s storied culture. <br />
-              <br /> Growing up, I often found myself perched delicately on the
-              edge of two worlds. I was, in many ways, the most insider of
-              outsiders — or perhaps the most outsider of insiders. This unique
-              vantage point offered me a lens through which I observed the
-              world, one tinted with the hues of both my American and Japanese
-              heritage. <br />
-              <br /> In this dance of duality, I found a rhythm all my own. I
-              embraced my mixed heritage with a kind of quiet defiance, a
-              testament to both the American spirit of independence and the
-              Japanese dedication to harmony. It was from this rich tapestry of
-              experiences that I drew the essence of my being — a being deeply
-              rooted in the arts and the transformative power of storytelling.
-            </p>
-          </div>
-          
-        
+        <div className="content" ref={textRef}>
+          <p className="content__title" data-effect16>
+            In the twilight of 1948, within a world still finding its bearings
+            after the tumult of war, I was born, a child of two worlds. My
+            existence was the weaving together of two richly distinct heritages
+            — my mother, a woman of Japanese grace and resilience, and my
+            father, an embodiment of American ambition and innovation. It was a
+            union as poetic as it was complex. <br /> <br /> However, as the
+            currents of life are wont to do, they drew my father back to the
+            shores of America, his homeland. My mother, steadfast in her own
+            right, chose to remain in Japan, a decision as enigmatic as the
+            cherry blossoms of her native land. And so, I was raised under the
+            nurturing gaze of my mother, within the embrace of Japan&apos;s
+            storied culture. <br />
+            <br /> Growing up, I often found myself perched delicately on the
+            edge of two worlds. I was, in many ways, the most insider of
+            outsiders — or perhaps the most outsider of insiders. This unique
+            vantage point offered me a lens through which I observed the world,
+            one tinted with the hues of both my American and Japanese heritage.{" "}
+            <br />
+            <br /> In this dance of duality, I found a rhythm all my own. I
+            embraced my mixed heritage with a kind of quiet defiance, a
+            testament to both the American spirit of independence and the
+            Japanese dedication to harmony. It was from this rich tapestry of
+            experiences that I drew the essence of my being — a being deeply
+            rooted in the arts and the transformative power of storytelling.
+          </p>
+        </div>
 
         <div className="element pin">
           <div className="grid">
