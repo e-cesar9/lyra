@@ -51,9 +51,9 @@ const DiaryPage: React.FC = () => {
               scaleY: 1,
               stagger: 0.05,
               scrollTrigger: {
-                trigger: letter,
+                trigger: '.echo',
                 start: "start",
-                end: "bottom",
+                end: "bottom-=20%",
                 scrub: true,
                 // pin: letter,
               },
@@ -433,7 +433,7 @@ const DiaryPage: React.FC = () => {
       ScrollTrigger.create({
         trigger: ".wrap",
         start: "top-=10% top-=10%",
-        end: "bottom+=10% bottom-=100%",
+        end: "bottom+=10% bottom-=400%",
         pin: ".wrap",
         animation: animation,
         scrub: true,
@@ -477,6 +477,8 @@ const DiaryPage: React.FC = () => {
               </h2>
             </div>
           </div>
+          </div>
+
 
           <div className="content" ref={textRef}>
             <p className="content__title" data-effect16>
@@ -506,7 +508,8 @@ const DiaryPage: React.FC = () => {
               rooted in the arts and the transformative power of storytelling.
             </p>
           </div>
-        </div>
+          
+        
 
         <div className="element pin">
           <div className="grid">
