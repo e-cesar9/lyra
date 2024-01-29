@@ -421,11 +421,12 @@ const DiaryPage: React.FC = () => {
 
   useEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.set(".swap", {opacity: 1})
+      gsap.set(".swap", {opacity: 1, filter: "blur(0px)",})
 
       const animation = gsap.to(".swap", {
         opacity: 0,
         // scale: 0,
+        filter: "blur(20px)",
         duration: 1,
         stagger: 1,
       })
@@ -450,7 +451,7 @@ const DiaryPage: React.FC = () => {
       <div id="Me" className="rounded layout overflow-x-hidden h-auto w-full">
         <div className="echo">
           <div className="wrap">
-            <div className=" flex flex-row justify-center pt-1 mb-20 pl-[30px] items-center swap">
+            <div className=" flex flex-row justify-center pt-1 mb-20 pl-[45px] items-center swap">
               <div className="grid">
                 <div className="grid__item">
                   <div
@@ -466,7 +467,7 @@ const DiaryPage: React.FC = () => {
               </div>
               <h1 id="printemps">リラ はると</h1>
             </div>
-            <div id="section" className="content pt-56" ref={titleRef}>
+            <div id="section" className="content pt-40" ref={titleRef}>
               <h2 id="intro" className="content__title" data-effect25>
                 <span className="lined font-medium font-height-medium">
                   In the grand tapestry of narratives that our world weaves,
