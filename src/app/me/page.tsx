@@ -6,7 +6,6 @@ import gsap from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
 import Image from "next/image"
 import Sidebar from "../sideBar"
-import "./index.js"
 
 import "splitting/dist/splitting.css"
 import "splitting/dist/splitting-cells.css"
@@ -14,17 +13,43 @@ import "splitting/dist/splitting-cells.css"
 gsap.registerPlugin(ScrollTrigger)
 
 const DiaryPage: React.FC = () => {
+  let springRef = React.useRef(null)
   let textRef = React.useRef(null)
 
   let titleRef = React.useRef(null)
-  let titleRef2 = React.useRef(null)
-  let titleRef3 = React.useRef(null)
-  let titleRef4 = React.useRef(null)
-  let titleRef5 = React.useRef(null)
-  let titleRef6 = React.useRef(null)
+  let textRef2 = React.useRef(null)
 
-  let imgRef = React.useRef(null)
-  let imgRef2 = React.useRef(null)
+  const [text, setText] = useState("リラ はると")
+  function getRandomString(length: number) {
+    let result = ""
+    const characters =
+      "あかさたなはまやらわいきしちにひみりゐうくすつぬふむゆるえけせてねへめれゑおこそとのほもよろをん0123456789"
+    for (let i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * characters.length))
+    }
+    return result
+  }
+
+  useEffect(() => {
+    const handleMouseOver = () => {
+      const textLength = text.length
+
+      setText(getRandomString(textLength))
+      setTimeout(() => setText(getRandomString(textLength)), 100)
+      setTimeout(() => setText(getRandomString(textLength)), 200)
+      setTimeout(() => setText("リラ はると"), 400)
+    }
+
+    if (springRef.current) {
+      springRef.current.addEventListener("mouseover", handleMouseOver)
+    }
+
+    return () => {
+      if (springRef.current) {
+        springRef.current.removeEventListener("mouseover", handleMouseOver)
+      }
+    }
+  }, [text])
 
   React.useEffect(() => {
     const splitText = async () => {
@@ -70,303 +95,64 @@ const DiaryPage: React.FC = () => {
     const splitText = async () => {
       const {default: Splitting} = await import("splitting")
 
-      if (titleRef4.current) {
-        Splitting({target: titleRef4.current})
-        const fx28Titles = titleRef4.current.querySelectorAll(
-          ".content__title[data-effect28]",
-        )
-
-        fx28Titles.forEach((title) => {
-          const words = [...title.querySelectorAll(".word")]
-
-          for (const word of words) {
-            const chars = word.querySelectorAll(".char")
-            const charsTotal = chars.length
-
-            gsap.fromTo(
-              chars,
-              {
-                "will-change": "transform, filter",
-                transformOrigin: "50% 100%",
-                scale: (position) => {
-                  const factor =
-                    position < Math.ceil(charsTotal / 2)
-                      ? position
-                      : Math.ceil(charsTotal / 2) -
-                        Math.abs(Math.floor(charsTotal / 2) - position) -
-                        1
-                  return gsap.utils.mapRange(
-                    0,
-                    Math.ceil(charsTotal / 2),
-                    0.5,
-                    2.1,
-                    factor,
-                  )
-                },
-                y: (position) => {
-                  const factor =
-                    position < Math.ceil(charsTotal / 2)
-                      ? position
-                      : Math.ceil(charsTotal / 2) -
-                        Math.abs(Math.floor(charsTotal / 2) - position) -
-                        1
-                  return gsap.utils.mapRange(
-                    0,
-                    Math.ceil(charsTotal / 2),
-                    0,
-                    60,
-                    factor,
-                  )
-                },
-                rotation: (position) => {
-                  const factor =
-                    position < Math.ceil(charsTotal / 2)
-                      ? position
-                      : Math.ceil(charsTotal / 2) -
-                        Math.abs(Math.floor(charsTotal / 2) - position) -
-                        1
-                  return position < charsTotal / 2
-                    ? gsap.utils.mapRange(
-                        0,
-                        Math.ceil(charsTotal / 2),
-                        -4,
-                        0,
-                        factor,
-                      )
-                    : gsap.utils.mapRange(
-                        0,
-                        Math.ceil(charsTotal / 2),
-                        0,
-                        4,
-                        factor,
-                      )
-                },
-                filter: "blur(12px) opacity(0)",
-              },
-              {
-                ease: "power2.inOut",
-                y: 0,
-                rotation: 0,
-                scale: 1,
-                filter: "blur(0px) opacity(1)",
-                scrollTrigger: {
-                  trigger: word,
-                  start: "top bottom+=40%",
-                  end: "top top+=50%",
-                  scrub: true,
-                },
-                stagger: {
-                  amount: 0.15,
-                  from: "center",
-                },
-              },
-            )
-          }
-        })
-      }
-    }
-
-    splitText()
-  }, [titleRef4.current])
-
-  React.useEffect(() => {
-    const splitText = async () => {
-      const {default: Splitting} = await import("splitting")
-
-      if (titleRef.current) {
-        Splitting({target: titleRef6.current})
-        const fx10Titles = titleRef6.current.querySelectorAll(
-          ".content__title[data-effect10]",
-        )
-
-        fx10Titles.forEach((title) => {
-          const chars = title.querySelectorAll(".word")
-
-          gsap.fromTo(
-            chars,
-            {
-              "will-change": "opacity",
-              opacity: 0,
-              filter: "blur(20px)",
-            },
-            {
-              duration: 0.35,
-              ease: "power1.inOut",
-              opacity: 1,
-              filter: "blur(0px)",
-              stagger: {each: 0.05, from: "random"},
-              scrollTrigger: {
-                trigger: title,
-                start: "top bottom",
-                end: "center center",
-                toggleActions: "play resume resume reset",
-              },
-            },
-          )
-        })
-      }
-    }
-
-    splitText()
-  }, [titleRef6.current])
-
-  React.useEffect(() => {
-    const splitText = async () => {
-      const {default: Splitting} = await import("splitting")
-
-      if (titleRef5.current) {
-        Splitting({target: titleRef5.current})
-        const fx7Titles = titleRef5.current.querySelectorAll(
-          ".content__title[data-effect7]",
-        )
-
-        fx7Titles.forEach((title) => {
-          const words = title.querySelectorAll(
-            ".font-medium.font-height-medium",
-          )
-
-          for (const word of words) {
-            const chars = word.querySelectorAll(".char")
-
-            chars.forEach((char) =>
-              gsap.set(char.parentNode, {perspective: 2000}),
-            )
-
-            gsap.fromTo(
-              chars,
-              {
-                "will-change": "opacity, transform",
-                transformOrigin: "100% 50%",
-                opacity: 0,
-                rotationY: -90,
-                z: -300,
-              },
-              {
-                ease: "expo",
-                opacity: 1,
-                rotationY: 0,
-                z: 0,
-                stagger: {each: 0.06, from: "end"},
-                scrollTrigger: {
-                  trigger: word,
-                  start: "bottom bottom+=300%",
-                  end: "bottom top",
-                  scrub: 1,
-                },
-              },
-            )
-          }
-        })
-      }
-    }
-
-    splitText()
-  }, [titleRef5.current])
-
-  React.useEffect(() => {
-    const splitText = async () => {
-      const {default: Splitting} = await import("splitting")
-
-      if (titleRef2.current) {
-        Splitting({target: titleRef2.current})
-        const fx5Titles = titleRef2.current.querySelectorAll(
-          ".content__title[data-effect5]",
-        )
-
-        fx5Titles.forEach((title) => {
-          const chars = title.querySelectorAll(".char")
-
-          gsap.fromTo(
-            chars,
-            {
-              "will-change": "opacity, transform",
-              opacity: 0,
-              xPercent: () => gsap.utils.random(-200, 200),
-              yPercent: () => gsap.utils.random(-150, 150),
-            },
-            {
-              ease: "power1.inOut",
-              opacity: 1,
-              xPercent: 0,
-              yPercent: 0,
-              stagger: {each: 0.05, grid: "auto", from: "random"},
-              scrollTrigger: {
-                trigger: title,
-                start: "center bottom+=10%",
-                end: "bottom center",
-                scrub: 0.9,
-              },
-            },
-          )
-        })
-      }
-    }
-
-    splitText()
-  }, [titleRef2.current])
-
-  React.useEffect(() => {
-    const splitText = async () => {
-      const {default: Splitting} = await import("splitting")
-
-      if (titleRef3.current) {
-        Splitting({target: titleRef3.current})
-        const fx6Titles = titleRef3.current.querySelectorAll(
-          ".content__title[data-effect6]",
-        )
-
-        fx6Titles.forEach((title) => {
-          const words = title.querySelectorAll(
-            ".font-medium.font-height-medium",
-          )
-
-          for (const word of words) {
-            const chars = word.querySelectorAll(".char")
-
-            chars.forEach((char) =>
-              gsap.set(char.parentNode, {perspective: 2000}),
-            )
-
-            gsap.fromTo(
-              chars,
-              {
-                "will-change": "opacity, transform",
-                opacity: 0,
-                rotationX: -90,
-                yPercent: 50,
-              },
-              {
-                ease: "power1.inOut",
-                opacity: 1,
-                rotationX: 0,
-                yPercent: 0,
-                stagger: {
-                  each: 0.03,
-                  from: 0,
-                },
-                scrollTrigger: {
-                  trigger: word,
-                  start: "center bottom+=40%",
-                  end: "bottom center-=30%",
-                  scrub: 0.9,
-                },
-              },
-            )
-          }
-        })
-      }
-    }
-
-    splitText()
-  }, [titleRef3.current])
-
-  React.useEffect(() => {
-    const splitText = async () => {
-      const {default: Splitting} = await import("splitting")
-
       if (textRef.current) {
         Splitting({target: textRef.current})
         const fx16Titles = textRef.current.querySelectorAll(
+          ".content__title[data-effect16]",
+        )
+
+        fx16Titles.forEach((title) => {
+          gsap.fromTo(
+            fx16Titles,
+            {
+              filter: "blur(20px)",
+              // opacity: 0,
+            },
+            {
+              ease: "none",
+              filter: "blur(0px)",
+              // opacity: .1,
+              scrollTrigger: {
+                trigger: textRef.current,
+                start: "start bottom",
+                end: "top top",
+                scrub: true,
+              },
+            },
+          )
+          const tit = title.querySelectorAll("span.word")
+          gsap.fromTo(
+            tit,
+            {
+              "will-change": "opacity",
+              opacity: 0,
+            },
+            {
+              ease: "none",
+              opacity: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                trigger: textRef.current,
+                start: "top+=15% bottom-=200%",
+                end: "bottom+=70% top+=40%",
+                scrub: true,
+              },
+            },
+          )
+        })
+      }
+    }
+
+    splitText()
+  }, [textRef.current])
+
+  React.useEffect(() => {
+    const splitText = async () => {
+      const {default: Splitting} = await import("splitting")
+
+      if (textRef2.current) {
+        Splitting({target: textRef2.current})
+        const fx16Titles = textRef2.current.querySelectorAll(
           ".content__title[data-effect16]",
         )
 
@@ -400,9 +186,9 @@ const DiaryPage: React.FC = () => {
               opacity: 1,
               stagger: 0.05,
               scrollTrigger: {
-                trigger: textRef.current,
-                start: "top bottom-=20%",
-                end: "center top+=20%",
+                trigger: textRef2.current,
+                start: "top bottom-=40%",
+                end: "bottom+=20% top+=40%",
                 scrub: true,
               },
             },
@@ -412,20 +198,24 @@ const DiaryPage: React.FC = () => {
     }
 
     splitText()
-  }, [textRef.current])
-
-  React.useEffect(() => {
-    gsap.to(imgRef.current, {opacity: 1, duration: 1})
-    gsap.to(imgRef2.current, {opacity: 1, duration: 1})
-  }, [])
+  }, [textRef2.current])
 
   useEffect(() => {
+    let tl = gsap.timeline()
+
     let ctx = gsap.context(() => {
-      gsap.set(".swap", {opacity: 1, filter: "blur(0px)",})
+      gsap.set(".swap", {
+        opacity: 1,
+        filter: "blur(0px)",
+      })
+
+      gsap.set(".grid", {
+        opacity: 1,
+        filter: "blur(0px)",
+      })
 
       const animation = gsap.to(".swap", {
         opacity: 0,
-        // scale: 0,
         filter: "blur(20px)",
         duration: 1,
         stagger: 1,
@@ -433,13 +223,30 @@ const DiaryPage: React.FC = () => {
 
       ScrollTrigger.create({
         trigger: ".wrap",
-        start: "top-=25% top-=10%",
-        end: "bottom+=10% bottom-=400%",
-        pin: ".wrap",
+        start: "top top",
+        end: "bottom+=200% bottom",
+        pin: ".echo",
         animation: animation,
         scrub: true,
         markers: true,
       })
+
+      // const animation1 = gsap.to(".grid", {
+      //   opacity: 0,
+      //   filter: "blur(20px)",
+      //   duration: 1,
+      //   stagger: 1,
+      // })
+
+      // ScrollTrigger.create({
+      //   trigger: ".element",
+      //   start: "top-=10% top",
+      //   end: "bottom+=200% bottom",
+      //   pin: ".element",
+      //   animation: animation1,
+      //   scrub: true,
+      //   markers: true,
+      // })
     })
     return () => ctx.revert()
   }, [])
@@ -448,26 +255,29 @@ const DiaryPage: React.FC = () => {
     <>
       <Sidebar />
 
-      <div id="Me" className="rounded layout overflow-x-hidden h-auto w-full">
-        <div className="echo">
-          <div className="wrap">
-            <div className=" flex flex-row justify-center pt-1 mb-20 pl-[45px] items-center swap">
-              <div className="grid">
-                <div className="grid__item">
-                  <div
-                    ref={imgRef}
-                    className="grid__item-img photo"
-                    style={{
-                      backgroundImage:
-                        "url('/AnIncredibleLife/LYH_1940_concept01_V004-min.jpg')",
-                    }}
-                  ></div>
-                  <p className="quotes">Lorem Ipsum</p>
-                </div>
+      <div id="Me" className="rounded layout w-full">
+        <div className="echo relative">
+          <div className="wrap flex items-center w-full justify-center">
+            <div className=" flex flex-row justify-center pl-[45px] z-30 items-center swap">
+              <div className="grid__item">
+                <div
+                  className="grid__item-img photo"
+                  style={{
+                    backgroundImage:
+                      "url('/AnIncredibleLife/LYH_1940_concept01_V004-min.jpg')",
+                  }}
+                ></div>
+                <figcaption className="quotes">Lorem Ipsum</figcaption>
               </div>
-              <h1 id="printemps">リラ はると</h1>
+              <h1 ref={springRef} id="printemps">
+                {text}
+              </h1>
             </div>
-            <div id="section" className="content pt-40" ref={titleRef}>
+            <div
+              id="section"
+              className="swap flex justify-center items-center content"
+              ref={titleRef}
+            >
               <h2 id="intro" className="content__title" data-effect25>
                 <span className="lined font-medium font-height-medium">
                   In the grand tapestry of narratives that our world weaves,
@@ -478,55 +288,53 @@ const DiaryPage: React.FC = () => {
               </h2>
             </div>
           </div>
+
+          <div id="parg1" className="content absolute" ref={textRef}>
+            <p className="content__title" data-effect16>
+              In the twilight of 1948, within a world still finding its bearings
+              after the tumult of war, I was born, a child of two worlds. My
+              existence was the weaving together of two richly distinct
+              heritages — my mother, a woman of Japanese grace and resilience,
+              and my father, an embodiment of American ambition and innovation.
+              It was a union as poetic as it was complex. <br /> <br /> However,
+              as the currents of life are wont to do, they drew my father back
+              to the shores of America, his homeland. My mother, steadfast in
+              her own right, chose to remain in Japan, a decision as enigmatic
+              as the cherry blossoms of her native land. And so, I was raised
+              under the nurturing gaze of my mother, within the embrace of
+              Japan&apos;s storied culture. <br />
+              <br /> Growing up, I often found myself perched delicately on the
+              edge of two worlds. I was, in many ways, the most insider of
+              outsiders — or perhaps the most outsider of insiders. This unique
+              vantage point offered me a lens through which I observed the
+              world, one tinted with the hues of both my American and Japanese
+              heritage. <br />
+              <br /> In this dance of duality, I found a rhythm all my own. I
+              embraced my mixed heritage with a kind of quiet defiance, a
+              testament to both the American spirit of independence and the
+              Japanese dedication to harmony. It was from this rich tapestry of
+              experiences that I drew the essence of my being — a being deeply
+              rooted in the arts and the transformative power of storytelling.
+            </p>
+          </div>
         </div>
 
-        <div className="content" ref={textRef}>
-          <p className="content__title" data-effect16>
-            In the twilight of 1948, within a world still finding its bearings
-            after the tumult of war, I was born, a child of two worlds. My
-            existence was the weaving together of two richly distinct heritages
-            — my mother, a woman of Japanese grace and resilience, and my
-            father, an embodiment of American ambition and innovation. It was a
-            union as poetic as it was complex. <br /> <br /> However, as the
-            currents of life are wont to do, they drew my father back to the
-            shores of America, his homeland. My mother, steadfast in her own
-            right, chose to remain in Japan, a decision as enigmatic as the
-            cherry blossoms of her native land. And so, I was raised under the
-            nurturing gaze of my mother, within the embrace of Japan&apos;s
-            storied culture. <br />
-            <br /> Growing up, I often found myself perched delicately on the
-            edge of two worlds. I was, in many ways, the most insider of
-            outsiders — or perhaps the most outsider of insiders. This unique
-            vantage point offered me a lens through which I observed the world,
-            one tinted with the hues of both my American and Japanese heritage.{" "}
-            <br />
-            <br /> In this dance of duality, I found a rhythm all my own. I
-            embraced my mixed heritage with a kind of quiet defiance, a
-            testament to both the American spirit of independence and the
-            Japanese dedication to harmony. It was from this rich tapestry of
-            experiences that I drew the essence of my being — a being deeply
-            rooted in the arts and the transformative power of storytelling.
-          </p>
-        </div>
-
-        <div className="element pin">
+        <div className="element flex relative flex-col items-center w-full justify-center">
           <div className="grid">
             <div className="grid__item">
               <div
                 id="img2"
-                ref={imgRef2}
-                className="grid__item-img"
+                className="grid__item-img1"
                 style={{
                   backgroundImage:
                     "url('/AnIncredibleLife/LYH_1940_visuel_v002-min.jpg')",
                 }}
               ></div>
+              <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
-        </div>
 
-        <div className="element">
-          <div className="content">
+          <div className="content absolute" ref={textRef2}>
             <p className="content__title" data-effect16>
               In the tender years of my youth, my memories of my father were
               akin to fleeting glimpses of a distant dream — fragmented yet
@@ -553,13 +361,12 @@ const DiaryPage: React.FC = () => {
               life can take. It is in this spirit that I continued to grow, ever
               curious, ever learning, and ever respectful of the myriad
               narratives that make up our world.
-              <br /> <br />
             </p>
           </div>
         </div>
 
-        <div className="element">
-          <div className="grid">
+        <div className="element flex relative flex-col items-center w-full justify-center">
+          <div className="flex flex-row justify-center pl-[45px] z-30 items-center swap">
             <div className="grid__item">
               <div
                 className="grid__item-img2"
@@ -568,6 +375,7 @@ const DiaryPage: React.FC = () => {
                     "url('/AnIncredibleLife/LYH_1957_visuel03_V001-min.jpg')",
                 }}
               ></div>
+              <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
 
@@ -619,8 +427,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="element">
-          <div className="grid">
+        <div className="element flex relative flex-col items-center w-full justify-center">
+          <div className="grid flex items-center w-full justify-center flex items-center w-full justify-center">
             <div className="grid__item">
               <div
                 className="grid__item-img3"
@@ -629,6 +437,7 @@ const DiaryPage: React.FC = () => {
                     "url('/AnIncredibleLife/LYH_1957_visuel06_V001-min.jpg')",
                 }}
               ></div>
+              <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
 
@@ -699,8 +508,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="element">
-          <div className="grid">
+        <div className="element flex relative flex-col items-center w-full justify-center">
+          <div className="grid flex items-center w-full justify-center">
             <div className="grid__item">
               <div
                 className="grid__item-img4"
@@ -709,6 +518,7 @@ const DiaryPage: React.FC = () => {
                     "url('/AnIncredibleLife/LYH_1967_concept01_V001-min.jpg')",
                 }}
               ></div>
+              <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
 
@@ -750,8 +560,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="element">
-          <div className="grid">
+        <div className="element flex relative flex-col items-center w-full justify-center">
+          <div className="grid flex items-center w-full justify-center">
             <div className="grid__item">
               <div
                 className="grid__item-img5"
@@ -760,6 +570,7 @@ const DiaryPage: React.FC = () => {
                     "url('/AnIncredibleLife/LYH_1967_visuel01_V020-min.jpg')",
                 }}
               ></div>
+              <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
 
@@ -811,8 +622,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="element">
-          <div className="grid">
+        <div className="element flex relative flex-col items-center w-full justify-center">
+          <div className="grid flex items-center w-full justify-center">
             <div className="grid__item">
               <div
                 className="grid__item-img6"
@@ -821,6 +632,7 @@ const DiaryPage: React.FC = () => {
                     "url('/AnIncredibleLife/LYH_1977_visuel_2_v001-min.jpg')",
                 }}
               ></div>
+              <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
 
@@ -882,8 +694,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="element">
-          <div className="grid">
+        <div className="element flex relative flex-col items-center w-full justify-center">
+          <div className="grid flex items-center w-full justify-center">
             <div className="grid__item">
               <div
                 className="grid__item-img7"
@@ -892,6 +704,7 @@ const DiaryPage: React.FC = () => {
                     "url('/AnIncredibleLife/LYH_1977_visuel_3_v001-min.jpg')",
                 }}
               ></div>
+              <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
 
@@ -951,13 +764,12 @@ const DiaryPage: React.FC = () => {
               the spirit of our studio — where the spirit of objects is revered,
               where the narrative is king, and where every creation is a journey
               that begins with a single, powerful word: Imagine.
-              <br /> <br />
             </p>
           </div>
         </div>
 
-        <div className="element">
-          <div className="grid">
+        <div className="element flex relative flex-col items-center w-full justify-center">
+          <div className="grid flex items-center w-full justify-center">
             <div className="grid__item">
               <div
                 className="grid__item-img8"
@@ -966,6 +778,7 @@ const DiaryPage: React.FC = () => {
                     "url('/AnIncredibleLife/LYH_1977_visuel_v001-min.jpg')",
                 }}
               ></div>
+              <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
 
@@ -1016,14 +829,13 @@ const DiaryPage: React.FC = () => {
                 with the laughter of children and the wisdom of the ancients,
                 inviting all who hear them to join us in a journey towards a
                 future replete with hope and harmony.
-                <br /> <br />
               </p>
             </h2>
           </div>
         </div>
 
-        <div className="element">
-          <div className="grid">
+        <div className="element flex relative flex-col items-center w-full justify-center">
+          <div className="grid flex items-center w-full justify-center">
             <div className="grid__item">
               <div
                 className="grid__item-img9"
@@ -1032,6 +844,7 @@ const DiaryPage: React.FC = () => {
                     "url('/AnIncredibleLife/LYH_2007_visuel2_v009-min.jpg')",
                 }}
               ></div>
+              <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
 
@@ -1083,8 +896,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="element">
-          <div className="grid">
+        <div className="element flex relative flex-col items-center w-full justify-center">
+          <div className="grid flex items-center w-full justify-center">
             <div className="grid__item">
               <div
                 className="grid__item-img10"
@@ -1093,6 +906,7 @@ const DiaryPage: React.FC = () => {
                     "url('/AnIncredibleLife/LYH_2023_visuel1_cleanup_v001-min.jpg')",
                 }}
               ></div>
+              <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
 

@@ -9,6 +9,11 @@
 	src: url(/assets/fonts/Zodiak-Variable.ttf);
 }
 
+:root{
+	--max-width:calc(min(100vw - 60px, 2000px, 145px + 50vw));
+	--margin: calc((100vw - var(--max-width))/2);
+}
+
 body{
 	height: auto;
 }
@@ -18,18 +23,22 @@ html {
   }
 
 .sidebar{
-	height: 100vh;
+	height: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
 }
 
+/* 
 #section{
 	position: absolute;
 	top: 0;
-}
-.quotes{
+} */
+
+figcaption{
 	text-align: center;
+	padding-top: 1.5em;
+	font-style: italic;
 }
 
 
@@ -37,7 +46,7 @@ html {
 	font-family: 'Zodiak-Variable';
 	position: relative;
 	padding-left: 250px;
-	padding-top: 5rem;
+	padding-top: 1px;
 	/* height: auto; */
 	/* position: absolute; */
 	/* line-height: 3em;
@@ -56,22 +65,24 @@ html {
 .lined.inside{
 	padding: 0!important;
 }
+
 /* #section{
 	margin: 8em 0 0 0;
 } */
 
 
-
-
 .content__title{
-	padding: 2em 6em;
-	font-size: 28px;
-	will-change: opacity;
+	/* padding: 2em 6em; */
+	margin: var(--margin);
+	font-size: 27px;
+	font-weight: 300;
+	/* letter-spacing: 1px; */
+	/* will-change: opacity; */
 	/* opacity: 0.1;
 	rotate: 0; */
 }
 
-.grid {
+/* .grid {
 position: relative;
 display: grid;
 }
@@ -81,7 +92,7 @@ display: grid;
 	will-change: transform;
 	grid-column: 2;
 	grid-row: 1;
-}
+} */
 
 .grid__item-img {
 	position: relative;
@@ -92,7 +103,7 @@ display: grid;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
 	border: 5px solid white;
-	opacity: 0;
+	opacity: 1;
 }
 
 .grid__item-img1 {
@@ -104,7 +115,7 @@ display: grid;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
 	border: 5px solid white;
-	opacity: 0.1;
+	opacity: 1;
 }
 
 .grid__item-img2 {
@@ -215,14 +226,9 @@ display: grid;
 	padding: 1.5rem 2rem;
 } */
 
-
-
-
-
 .photo{
 	border: 5px solid white;
 	/* border-bottom: 20px solid white; */
-  
   }
   
   #h1{
@@ -240,6 +246,18 @@ display: grid;
   writing-mode: vertical-rl;
   text-orientation: upright;
   }
+  #printemps:hover{
+	/* text-shadow: 0 0 4px #fff; */
+
+  }
+
+  #parg1{
+	margin-top: -22vh;
+  }
+
+  #section{
+	/* margin-top: 250px; */
+  }
 
   
   
@@ -256,3 +274,21 @@ display: grid;
 	  font-size: 52px;
 	  line-height: 1.2em;
   } */
+
+  .swap{
+	position: absolute;
+  }
+
+  .wrap{
+	display: flex;
+  }
+
+.echo{
+	display: flex;
+	height: 100vh;
+}
+
+.element{
+	margin-top: 50em;
+	height:100vh;
+}
