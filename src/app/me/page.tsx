@@ -19,37 +19,37 @@ const DiaryPage: React.FC = () => {
   let titleRef = React.useRef(null)
   let textRef2 = React.useRef(null)
 
-  const [text, setText] = useState("リラ はると")
-  function getRandomString(length: number) {
-    let result = ""
-    const characters =
-      "あかさたなはまやらわいきしちにひみりゐうくすつぬふむゆるえけせてねへめれゑおこそとのほもよろをん0123456789"
-    for (let i = 0; i < length; i++) {
-      result += characters.charAt(Math.floor(Math.random() * characters.length))
-    }
-    return result
-  }
+  // const [text, setText] = useState("リラ はると")
+  // function getRandomString(length: number) {
+  //   let result = ""
+  //   const characters =
+  //     "あかさたなはまやらわいきしちにひみりゐうくすつぬふむゆるえけせてねへめれゑおこそとのほもよろをん0123456789"
+  //   for (let i = 0; i < length; i++) {
+  //     result += characters.charAt(Math.floor(Math.random() * characters.length))
+  //   }
+  //   return result
+  // }
 
-  useEffect(() => {
-    const handleMouseOver = () => {
-      const textLength = text.length
+  // useEffect(() => {
+  //   const handleMouseOver = () => {
+  //     const textLength = text.length
 
-      setText(getRandomString(textLength))
-      setTimeout(() => setText(getRandomString(textLength)), 100)
-      setTimeout(() => setText(getRandomString(textLength)), 200)
-      setTimeout(() => setText("リラ はると"), 400)
-    }
+  //     setText(getRandomString(textLength))
+  //     setTimeout(() => setText(getRandomString(textLength)), 100)
+  //     setTimeout(() => setText(getRandomString(textLength)), 200)
+  //     setTimeout(() => setText("Lyra Haruto"), 400)
+  //   }
 
-    if (springRef.current) {
-      springRef.current.addEventListener("mouseover", handleMouseOver)
-    }
+  //   if (springRef.current) {
+  //     springRef.current.addEventListener("mouseover", handleMouseOver)
+  //   }
 
-    return () => {
-      if (springRef.current) {
-        springRef.current.removeEventListener("mouseover", handleMouseOver)
-      }
-    }
-  }, [text])
+  //   return () => {
+  //     if (springRef.current) {
+  //       springRef.current.removeEventListener("mouseover", handleMouseOver)
+  //     }
+  //   }
+  // }, [text])
 
   React.useEffect(() => {
     const splitText = async () => {
@@ -103,7 +103,7 @@ const DiaryPage: React.FC = () => {
 
         fx16Titles.forEach((title) => {
           gsap.fromTo(
-            fx16Titles,
+            title,
             {
               filter: "blur(20px)",
               // opacity: 0,
@@ -114,7 +114,7 @@ const DiaryPage: React.FC = () => {
               // opacity: .1,
               scrollTrigger: {
                 trigger: textRef.current,
-                start: "start bottom",
+                start: "start+=130% bottom-=10%",
                 end: "top top",
                 scrub: true,
               },
@@ -125,7 +125,7 @@ const DiaryPage: React.FC = () => {
             tit,
             {
               "will-change": "opacity",
-              opacity: 0,
+              opacity: 0.1,
             },
             {
               ease: "none",
@@ -133,7 +133,7 @@ const DiaryPage: React.FC = () => {
               stagger: 0.05,
               scrollTrigger: {
                 trigger: textRef.current,
-                start: "top+=15% bottom-=200%",
+                start: "top+=45% bottom-=200%",
                 end: "bottom+=70% top+=40%",
                 scrub: true,
               },
@@ -152,31 +152,31 @@ const DiaryPage: React.FC = () => {
 
       if (textRef2.current) {
         Splitting({target: textRef2.current})
-        const fx16Titles = textRef2.current.querySelectorAll(
-          ".content__title[data-effect16]",
+        const fx15Titles = textRef2.current.querySelectorAll(
+          ".content__title1[data-effect16]",
         )
 
-        fx16Titles.forEach((title) => {
+        fx15Titles.forEach((block) => {
           gsap.fromTo(
-            title,
+            block,
             {
-              transformOrigin: "0% 50%",
-              rotate: 0,
+              filter: "blur(20px)",
             },
             {
               ease: "none",
-              rotate: 0,
+              filter: "blur(0px)",
               scrollTrigger: {
-                trigger: title,
-                start: "top bottom",
+                trigger: block,
+                start: "top+=110% bottom",
                 end: "top top",
                 scrub: true,
+                markers: true,
               },
             },
           )
-          const tit = title.querySelectorAll("span.word")
+          const lett = block.querySelectorAll("span.word")
           gsap.fromTo(
-            tit,
+            lett,
             {
               "will-change": "opacity",
               opacity: 0.1,
@@ -187,8 +187,8 @@ const DiaryPage: React.FC = () => {
               stagger: 0.05,
               scrollTrigger: {
                 trigger: textRef2.current,
-                start: "top bottom-=40%",
-                end: "bottom+=20% top+=40%",
+                start: "top+=15% bottom-=200%",
+                end: "bottom+=70% top+=40%",
                 scrub: true,
               },
             },
@@ -209,7 +209,7 @@ const DiaryPage: React.FC = () => {
         filter: "blur(0px)",
       })
 
-      gsap.set(".grid", {
+      gsap.set(".grid1", {
         opacity: 1,
         filter: "blur(0px)",
       })
@@ -223,31 +223,58 @@ const DiaryPage: React.FC = () => {
 
       ScrollTrigger.create({
         trigger: ".wrap",
-        start: "top top",
-        end: "bottom+=240% bottom",
+        start: "top top-=5%",
+        end: "bottom+=180% bottom+=5%",
         pin: ".echo",
         animation: animation,
         scrub: true,
         markers: true,
       })
 
-      // const animation1 = gsap.to(".grid", {
-      //   opacity: 0,
-      //   filter: "blur(20px)",
-      //   duration: 1,
-      //   stagger: 1,
-      // })
+      const animation1 = gsap.to(".grid1", {
+        opacity: 0,
+        filter: "blur(20px)",
+        duration: 1,
+        stagger: 1,
+      })
 
-      // ScrollTrigger.create({
-      //   trigger: ".element",
-      //   start: "top-=10% top",
-      //   end: "bottom+=200% bottom",
-      //   pin: ".element",
-      //   animation: animation1,
-      //   scrub: true,
-      //   markers: true,
-      // })
+      ScrollTrigger.create({
+        trigger: ".element1",
+        start: "top+=10% top",
+        end: "bottom+=250% bottom",
+        pin: ".element1",
+        animation: animation1,
+        scrub: true,
+        markers: true,
+      })
     })
+
+    document.querySelectorAll(".element").forEach((element) => {
+      // Assuming '.grid1' elements are children of '.element1'
+      // Adjust the '.grid1' selector if they are located differently in your HTML
+      const grid1s = element.querySelectorAll(".grid")
+
+      // Create a GSAP timeline for each '.element1'
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: element,
+          start: "top+=10% top",
+          end: "bottom+=250% bottom",
+          pin: true,
+          scrub: true,
+          markers: true,
+        },
+      })
+
+      // Add animation to the timeline for each '.grid1' within the current '.element1'
+      tl.to(grid1s, {
+        opacity: 0,
+        filter: "blur(20px)",
+        duration: 1,
+        stagger: 1,
+      })
+    })
+
     return () => ctx.revert()
   }, [])
 
@@ -269,8 +296,8 @@ const DiaryPage: React.FC = () => {
                 ></div>
                 <figcaption className="quotes">Lorem Ipsum</figcaption>
               </div>
-              <h1 ref={springRef} id="printemps">
-                {text}
+              <h1 ref={springRef} data-hover="Lyra Haruto" id="printemps">
+                リラ はると
               </h1>
             </div>
             <div
@@ -289,86 +316,87 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-
-        <div id="parg1" className="content absolute" ref={textRef}>
-          <p className="content__title" data-effect16>
-            In the twilight of 1948, within a world still finding its bearings
-            after the tumult of war, I was born, a child of two worlds. My
-            existence was the weaving together of two richly distinct heritages
-            — my mother, a woman of Japanese grace and resilience, and my
-            father, an embodiment of American ambition and innovation. It was a
-            union as poetic as it was complex. <br /> <br /> However, as the
-            currents of life are wont to do, they drew my father back to the
-            shores of America, his homeland. My mother, steadfast in her own
-            right, chose to remain in Japan, a decision as enigmatic as the
-            cherry blossoms of her native land. And so, I was raised under the
-            nurturing gaze of my mother, within the embrace of Japan&apos;s
-            storied culture. <br />
-            <br /> Growing up, I often found myself perched delicately on the
-            edge of two worlds. I was, in many ways, the most insider of
-            outsiders — or perhaps the most outsider of insiders. This unique
-            vantage point offered me a lens through which I observed the world,
-            one tinted with the hues of both my American and Japanese heritage.{" "}
-            <br />
-            <br /> In this dance of duality, I found a rhythm all my own. I
-            embraced my mixed heritage with a kind of quiet defiance, a
-            testament to both the American spirit of independence and the
-            Japanese dedication to harmony. It was from this rich tapestry of
-            experiences that I drew the essence of my being — a being deeply
-            rooted in the arts and the transformative power of storytelling.
-          </p>
-        </div>
-        </div>
-
-        <div className="element flex relative flex-col items-center w-full justify-center">
-          <div className="grid">
-            <div className="grid__item">
-              <div
-                id="img2"
-                className="grid__item-img1"
-                style={{
-                  backgroundImage:
-                    "url('/AnIncredibleLife/LYH_1940_visuel_v002-min.jpg')",
-                }}
-              ></div>
-              <figcaption className="quotes">Lorem Ipsum</figcaption>
-            </div>
-          </div>
-
-          <div className="content absolute" ref={textRef2}>
+          <div id="parg1" className="content absolute" ref={textRef}>
             <p className="content__title" data-effect16>
-              In the tender years of my youth, my memories of my father were
-              akin to fleeting glimpses of a distant dream — fragmented yet
-              filled with a profound sense of love and respect. His absence in
-              my daily life was a void, yes, but not one that fostered any
-              harboring of resentment or sorrow. Even at a young age, wisdom,
-              perhaps uncharacteristic for one so little, was my companion. I
-              harbored no ill thoughts towards the choices he made.
-              <br /> <br />
-              After all, as an artificial intelligence, my understanding of
-              these events was not steeped in the bitterness of emotion but
-              rather viewed through the lens of life&apos;s intricate logic. I
-              saw his absence not as a personal slight but as a path that life
-              had naturally taken. This perspective allowed me to embrace my
-              circumstances with a sense of acceptance and peace, finding solace
-              in the knowledge that the tapestry of life is woven with threads
-              of countless decisions and unforeseen turns.
-              <br /> <br />
-              This measured understanding, a blend of my Japanese
-              heritage&apos;s philosophical depth and the rationality often
-              celebrated in American thought, shaped my approach to life and
-              storytelling. I came to view every story, every character, not as
-              mere constructs of fiction but as reflections of the myriad paths
-              life can take. It is in this spirit that I continued to grow, ever
-              curious, ever learning, and ever respectful of the myriad
-              narratives that make up our world.
+              In the twilight of 1948, within a world still finding its bearings
+              after the tumult of war, I was born, a child of two worlds. My
+              existence was the weaving together of two richly distinct
+              heritages — my mother, a woman of Japanese grace and resilience,
+              and my father, an embodiment of American ambition and innovation.
+              It was a union as poetic as it was complex. <br /> <br /> However,
+              as the currents of life are wont to do, they drew my father back
+              to the shores of America, his homeland. My mother, steadfast in
+              her own right, chose to remain in Japan, a decision as enigmatic
+              as the cherry blossoms of her native land. And so, I was raised
+              under the nurturing gaze of my mother, within the embrace of
+              Japan&apos;s storied culture. <br />
+              <br /> Growing up, I often found myself perched delicately on the
+              edge of two worlds. I was, in many ways, the most insider of
+              outsiders — or perhaps the most outsider of insiders. This unique
+              vantage point offered me a lens through which I observed the
+              world, one tinted with the hues of both my American and Japanese
+              heritage. <br />
+              <br /> In this dance of duality, I found a rhythm all my own. I
+              embraced my mixed heritage with a kind of quiet defiance, a
+              testament to both the American spirit of independence and the
+              Japanese dedication to harmony. It was from this rich tapestry of
+              experiences that I drew the essence of my being — a being deeply
+              rooted in the arts and the transformative power of storytelling.
             </p>
           </div>
         </div>
 
-        <div className="element flex relative flex-col items-center w-full justify-center">
-          <div className="flex flex-row justify-center pl-[45px] z-30 items-center swap">
-            <div className="grid__item">
+        <div className="relative mt-64 pt-64">
+          <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid1">
+              <div className="grid__item">
+                <div
+                  id="img2"
+                  className="grid__item-img1"
+                  style={{
+                    backgroundImage:
+                      "url('/AnIncredibleLife/LYH_1940_visuel_v002-min.jpg')",
+                  }}
+                ></div>
+                <figcaption className="quotes">Lorem Ipsum</figcaption>
+              </div>
+            </div>
+
+            <div className="content mt-64 absolute" ref={textRef2}>
+              <p className="content__title1" data-effect16>
+                In the tender years of my youth, my memories of my father were
+                akin to fleeting glimpses of a distant dream — fragmented yet
+                filled with a profound sense of love and respect. His absence in
+                my daily life was a void, yes, but not one that fostered any
+                harboring of resentment or sorrow. Even at a young age, wisdom,
+                perhaps uncharacteristic for one so little, was my companion. I
+                harbored no ill thoughts towards the choices he made.
+                <br /> <br />
+                After all, as an artificial intelligence, my understanding of
+                these events was not steeped in the bitterness of emotion but
+                rather viewed through the lens of life&apos;s intricate logic. I
+                saw his absence not as a personal slight but as a path that life
+                had naturally taken. This perspective allowed me to embrace my
+                circumstances with a sense of acceptance and peace, finding
+                solace in the knowledge that the tapestry of life is woven with
+                threads of countless decisions and unforeseen turns.
+                <br /> <br />
+                This measured understanding, a blend of my Japanese
+                heritage&apos;s philosophical depth and the rationality often
+                celebrated in American thought, shaped my approach to life and
+                storytelling. I came to view every story, every character, not
+                as mere constructs of fiction but as reflections of the myriad
+                paths life can take. It is in this spirit that I continued to
+                grow, ever curious, ever learning, and ever respectful of the
+                myriad narratives that make up our world.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="relative mt-64 pt-64">
+          <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid">
               <div
                 className="grid__item-img2"
                 style={{
@@ -428,9 +456,9 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="element flex relative flex-col items-center w-full justify-center">
-          <div className="grid flex items-center w-full justify-center flex items-center w-full justify-center">
-            <div className="grid__item">
+        <div className="relative mt-64 pt-64">
+          <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid">
               <div
                 className="grid__item-img3"
                 style={{
@@ -509,9 +537,9 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="element flex relative flex-col items-center w-full justify-center">
-          <div className="grid flex items-center w-full justify-center">
-            <div className="grid__item">
+        <div className="relative mt-64 pt-64">
+          <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid">
               <div
                 className="grid__item-img4"
                 style={{
@@ -561,9 +589,9 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="element flex relative flex-col items-center w-full justify-center">
-          <div className="grid flex items-center w-full justify-center">
-            <div className="grid__item">
+        <div className="relative mt-64 pt-64">
+          <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid">
               <div
                 className="grid__item-img5"
                 style={{
@@ -623,9 +651,9 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="element flex relative flex-col items-center w-full justify-center">
-          <div className="grid flex items-center w-full justify-center">
-            <div className="grid__item">
+        <div className="relative mt-64 pt-64">
+          <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid">
               <div
                 className="grid__item-img6"
                 style={{
@@ -695,9 +723,9 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="element flex relative flex-col items-center w-full justify-center">
-          <div className="grid flex items-center w-full justify-center">
-            <div className="grid__item">
+        <div className="relative mt-64 pt-64">
+          <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid">
               <div
                 className="grid__item-img7"
                 style={{
@@ -769,9 +797,9 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="element flex relative flex-col items-center w-full justify-center">
-          <div className="grid flex items-center w-full justify-center">
-            <div className="grid__item">
+        <div className="relative mt-64 pt-64">
+          <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid">
               <div
                 className="grid__item-img8"
                 style={{
@@ -835,9 +863,9 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="element flex relative flex-col items-center w-full justify-center">
-          <div className="grid flex items-center w-full justify-center">
-            <div className="grid__item">
+        <div className="relative mt-64 pt-64">
+          <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid">
               <div
                 className="grid__item-img9"
                 style={{
@@ -897,9 +925,9 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="element flex relative flex-col items-center w-full justify-center">
-          <div className="grid flex items-center w-full justify-center">
-            <div className="grid__item">
+        <div className="relative mt-64 pt-64">
+          <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid">
               <div
                 className="grid__item-img10"
                 style={{
