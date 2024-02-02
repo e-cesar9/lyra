@@ -29,11 +29,6 @@ html {
 	left: 0;
 }
 
-/* 
-#section{
-	position: absolute;
-	top: 0;
-} */
 
 #section{
 	height: 200vh;
@@ -51,13 +46,6 @@ figcaption{
 	position: relative;
 	padding-left: 250px;
 	padding-top: 1px;
-	/* height: auto; */
-	/* position: absolute; */
-	/* line-height: 3em;
-	letter-spacing: .2em; */
-	/* font-weight: 200;
-	position: relative;
-	right: 0; */
 }
 
 .lined{
@@ -70,46 +58,36 @@ figcaption{
 	padding: 0!important;
 }
 
-/* #section{
-	margin: 8em 0 0 0;
-} */
 
 
 .content__title{
-	/* padding: 2em 6em; */
 	margin: var(--margin);
 	font-size: 27px;
 	font-weight: 300;
-	/* letter-spacing: 1px; */
-	/* will-change: opacity; */
-	/* opacity: 0.1;
-	rotate: 0; */
+
 }
 
 
 .content__title1{
-	/* padding: 2em 6em; */
 	margin: var(--margin);
 	font-size: 27px;
 	font-weight: 300;
-	/* letter-spacing: 1px; */
-	/* will-change: opacity; */
-	/* opacity: 0.1;
-	rotate: 0; */
+}
+
+.content__title3{
+	margin: var(--margin);
+	font-size: 27px;
+	font-weight: 300;
+}
+
+.content__title4{
+	margin: var(--margin);
+	font-size: 27px;
+	font-weight: 300;
 }
 
 
-/* .grid {
-position: relative;
-display: grid;
-}
 
-.grid__item {
-	position: relative;
-	will-change: transform;
-	grid-column: 2;
-	grid-row: 1;
-} */
 
 .grid__item-img {
 	position: relative;
@@ -234,27 +212,14 @@ display: grid;
 	border: 5px solid white;
 }
 
-
-/* .content {
-	display: flex;
-	flex-direction: column;
-	width: 80vw;
-	position: relative;
-	padding: 1.5rem 2rem;
-} */
-
 .photo{
 	border: 5px solid white;
-	/* border-bottom: 20px solid white; */
   }
   
   #h1{
   font-size: 52px;
   }
-  
-  /* #h2{
-  font-size: 42px;
-  } */
+
   
   #printemps{
   position: relative;
@@ -288,41 +253,11 @@ display: grid;
 	visibility: hidden;
   }
 
-
-
   #parg1{
 	margin-top: -22vh;
-	/* height: 200vh; */
-
   }
 
-  #section{
-	/* margin-top: 250px; */
-  }
 
-  .element1{
-	/* margin-top: 40vh; */
-
-  }
-  
-  
-  /* #Me{
-  font-family: 'Stardom-Regular';
-  }
-  
-  #firstP{
-	font-size: 32px;
-  }
-  
-  #intro{
-	text-align: start;
-	  font-size: 52px;
-	  line-height: 1.2em;
-  } */
-
-  #intro{
-	/* height: 200vh; */
-  }
 
   .swap{
 	position: absolute;
@@ -337,7 +272,22 @@ display: grid;
 	height: 100vh;
 }
 
-.element{
-	margin-top: 50em;
-	height:100vh;
+#hello{
+	height: 100vh;
+}
+
+.lol{
+	top: 0;
+	margin-top: -45vh;
+
+
+}
+
+.lil{
+	height: 360vh;
+}
+
+.lul{
+	top:0;
+	margin-top:-45vh;
 }
