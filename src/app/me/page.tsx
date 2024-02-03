@@ -636,7 +636,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div id="p3" className="lil relative my-72 pb-96">
+        <div id="p3" className="lil relative my-72">
           <div className="element3 flex relative flex-col items-center w-full pt-96 justify-center">
             <div className="grid3 absolute">
               <div
