@@ -252,7 +252,7 @@ const DiaryPage: React.FC = () => {
               scrollTrigger: {
                 trigger: blocx,
                 start: "top+=90% bottom",
-                end: "top+=45% top",
+                end: "top top",
                 scrub: true,
                 // markers: true,
               },
@@ -283,6 +283,60 @@ const DiaryPage: React.FC = () => {
 
     splitText()
   }, [textRef4.current])
+
+  React.useEffect(() => {
+    const splitText = async () => {
+      const {default: Splitting} = await import("splitting")
+
+      if (textRef5.current) {
+        Splitting({target: textRef5.current})
+        const fx14Titles = textRef5.current.querySelectorAll(
+          ".content__title[data-effect16]",
+        )
+
+        fx14Titles.forEach((bloc5) => {
+          gsap.fromTo(
+            bloc5,
+            {
+              filter: "blur(20px)",
+            },
+            {
+              ease: "none",
+              filter: "blur(0px)",
+              scrollTrigger: {
+                trigger: bloc5,
+                start: "top bottom",
+                end: "top top",
+                scrub: true,
+                // markers: true,
+              },
+            },
+          )
+          const lette5 = bloc5.querySelectorAll("span.word")
+          gsap.fromTo(
+            lette5,
+            {
+              "will-change": "opacity",
+              opacity: 0.1,
+            },
+            {
+              ease: "none",
+              opacity: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                trigger: textRef5.current,
+                start: "top+=15% bottom-=200%",
+                end: "bottom+=70% top+=40%",
+                scrub: true,
+              },
+            },
+          )
+        })
+      }
+    }
+
+    splitText()
+  }, [textRef5.current])
 
   useLayoutEffect(() => {
     let tl = gsap.timeline()
@@ -374,7 +428,7 @@ const DiaryPage: React.FC = () => {
 
     ScrollTrigger.create({
       trigger: ".element3",
-      start: "top-=15% top",
+      start: "top-=20% top",
       end: "bottom+=300% bottom",
       pin: "#p3",
       animation: animation3,
