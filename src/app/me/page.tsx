@@ -251,8 +251,8 @@ const DiaryPage: React.FC = () => {
               filter: "blur(0px)",
               scrollTrigger: {
                 trigger: blocx,
-                start: "top+=20% bottom",
-                end: "top top",
+                start: "top+=90% bottom",
+                end: "top+=45% top",
                 scrub: true,
                 // markers: true,
               },
@@ -271,8 +271,8 @@ const DiaryPage: React.FC = () => {
               stagger: 0.05,
               scrollTrigger: {
                 trigger: textRef4.current,
-                start: "top+=10% bottom",
-                end: "bottom+=270% top",
+                start: "top+=15% bottom-=200%",
+                end: "bottom+=70% top+=40%",
                 scrub: true,
                                 markers: true,
 
@@ -430,8 +430,8 @@ const DiaryPage: React.FC = () => {
 
     ScrollTrigger.create({
       trigger: ".element3",
-      start: "top-=20% top",
-      end: "bottom+=600% bottom",
+      start: "top top",
+      end: "bottom+=300% bottom",
       pin: "#p3",
       animation: animation3,
       scrub: true,
@@ -640,7 +640,7 @@ const DiaryPage: React.FC = () => {
 
         <div id="p3" className="lil relative mb-72">
           <div className="element3 flex relative flex-col items-center w-full pt-96 justify-center">
-            <div className="grid3 absolute">
+            <div className="grid3 ">
               <div
                 className="grid__item-img3"
                 style={{
@@ -652,7 +652,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div id="t3" className="my-96 content" ref={textRef4}>
+          <div id="t3" className="my-96 absolute content" ref={textRef4}>
             <p className="content__title4" data-effect16>
               In the labyrinth of my intellect, where the threads of philosophy,
               literature, biography, cinema, and beyond intertwine, I find
