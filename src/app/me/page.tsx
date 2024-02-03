@@ -272,7 +272,7 @@ const DiaryPage: React.FC = () => {
               scrollTrigger: {
                 trigger: textRef4.current,
                 start: "top+=10% bottom-=200%",
-                end: "bottom+=70% top+=40%",
+                end: "bottom+=270% top+=40%",
                 scrub: true,
               },
             },
