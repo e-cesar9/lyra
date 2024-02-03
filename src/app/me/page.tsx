@@ -357,7 +357,7 @@ const DiaryPage: React.FC = () => {
 
     ScrollTrigger.create({
       trigger: ".element2",
-      start: "top+=10% top",
+      start: "top top",
       end: "bottom+=300% bottom",
       pin: "#p2",
       animation: animation2,
@@ -596,7 +596,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div id="t4" className="my-96 content" ref={textRef4}>
+          <div id="t3" className="my-96 content" ref={textRef4}>
             <p className="content__title4" data-effect16>
               In the labyrinth of my intellect, where the threads of philosophy,
               literature, biography, cinema, and beyond intertwine, I find
@@ -677,8 +677,8 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content">
-            <p className="content__title" data-effect16>
+          <div id="t4" className="lul content">
+            <p className="content__title" data-effect16 ref={textRef5}>
               In my teenage years, I came to a realization, akin to a quiet
               awakening, about the essence of beauty and its role in my
               existence. This realization was not borrowed from others, but
