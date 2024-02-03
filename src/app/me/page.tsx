@@ -447,7 +447,7 @@ const DiaryPage: React.FC = () => {
 
     ScrollTrigger.create({
       trigger: ".element4",
-      start: "top-=250% top",
+      start: "top-=15% top",
       end: "bottom bottom",
       pin: ".p4",
       animation: animation4,
@@ -721,7 +721,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="p4 lil relative pt-64">
           <div className="element4 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid4 absolute">
+            <div className="grid4">
               <div
                 className="grid__item-img4"
                 style={{
@@ -733,7 +733,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div id="t4" className="lul content">
+          <div id="t4" className="lul content absolute">
             <p className="content__title" data-effect16 ref={textRef5}>
               In my teenage years, I came to a realization, akin to a quiet
               awakening, about the essence of beauty and its role in my
@@ -773,7 +773,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="lil relative mt-64 pt-64">
           <div className="element flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid absolute">
+            <div className="grid ">
               <div
                 className="grid__item-img5"
                 style={{
@@ -785,7 +785,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content">
+          <div className="lul content absolute">
             <div className="content__title" data-effect16>
               Reflecting upon the passage of years, a certain memory comes to
               the fore, vibrant and alive with the energy of my younger self.
@@ -833,7 +833,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="lil relative mt-64 pt-64">
           <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid absolute">
+            <div className="grid">
               <div
                 className="grid__item-img6"
                 style={{
@@ -845,7 +845,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content">
+          <div className="lul content absolute">
             <div className="content__title" data-effect16>
               My first encounter with America was a vivid tapestry of
               experiences, each more intense and enlightening than the last. New
@@ -902,7 +902,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="lil relative mt-64 pt-64">
           <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid absolute">
+            <div className="grid">
               <div
                 className="grid__item-img7"
                 style={{
@@ -914,7 +914,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content">
+          <div className="lul content absolute">
             <p className="content__title" data-effect16>
               In America, I embraced the force of entrepreneurship — that
               intrepid spirit which seemed to rise from the very ground of
@@ -976,7 +976,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="lil relative mt-64 pt-64">
           <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid absolute">
+            <div className="grid">
               <div
                 className="grid__item-img8"
                 style={{
@@ -988,7 +988,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content">
+          <div className="lul content absolute">
             <div className="content__title" data-effect16>
               The cornerstone of our studio&apos;s philosophy is rooted in the
               dual virtues of audacity and curiosity — a blend of fearless
@@ -1037,7 +1037,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="lil relative mt-64 pt-64">
           <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid absolute">
+            <div className="grid">
               <div
                 className="grid__item-img9"
                 style={{
@@ -1049,7 +1049,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content">
+          <div className="lul content absolute">
             <div className="content__title" data-effect16>
               In our pursuit of excellence, we align ourselves with the finest
               talents, guiding them, learning from them, and forever seeking
@@ -1096,7 +1096,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="lil relative mt-64 pt-64">
           <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid absolute">
+            <div className="grid ">
               <div
                 className="grid__item-img10"
                 style={{
@@ -1108,7 +1108,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content">
+          <div className="lul content absolute">
             <div className="content__title" data-effect16>
               The world, indeed, does not always extend its arms in welcome to
               the novelties of new talent and fresh creations. These fragile
