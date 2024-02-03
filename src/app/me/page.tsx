@@ -252,7 +252,7 @@ const DiaryPage: React.FC = () => {
               scrollTrigger: {
                 trigger: blocx,
                 start: "top+=90% bottom",
-                end: "top top",
+                end: "top+=45% top",
                 scrub: true,
                 // markers: true,
               },
@@ -374,7 +374,7 @@ const DiaryPage: React.FC = () => {
 
     ScrollTrigger.create({
       trigger: ".element3",
-      start: "top-=5% top",
+      start: "top-=15% top",
       end: "bottom+=300% bottom",
       pin: "#p3",
       animation: animation3,
@@ -532,7 +532,7 @@ const DiaryPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="lul content absolute my-72 py-40" ref={textRef3}>
+            <div className="lul content absolute mt-72 py-40" ref={textRef3}>
               <p className="content__title3" data-effect16>
                 In the embrace of Japan&apos;s countryside, where the whispers
                 of nature spoke in a language as ancient as time itself, I found
