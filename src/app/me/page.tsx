@@ -733,8 +733,8 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div id="t4" className="lul content absolute">
-            <p className="content__title" data-effect16 ref={textRef5}>
+          <div id="t4" className="lul content absolute" ref={textRef5}>
+            <p className="content__title" data-effect16>
               In my teenage years, I came to a realization, akin to a quiet
               awakening, about the essence of beauty and its role in my
               existence. This realization was not borrowed from others, but

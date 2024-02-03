@@ -86,6 +86,12 @@ figcaption{
 	font-weight: 300;
 }
 
+.content__title5{
+	margin: var(--margin);
+	font-size: 27px;
+	font-weight: 300;
+}
+
 
 
 
