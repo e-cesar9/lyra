@@ -374,7 +374,7 @@ const DiaryPage: React.FC = () => {
 
     ScrollTrigger.create({
       trigger: ".element3",
-      start: "top+=1% top",
+      start: "top-=5% top",
       end: "bottom+=300% bottom",
       pin: "#p3",
       animation: animation3,
@@ -391,8 +391,8 @@ const DiaryPage: React.FC = () => {
 
     ScrollTrigger.create({
       trigger: ".element4",
-      start: "top+=1% top",
-      end: "bottom+=300% bottom",
+      start: "top-=250% top",
+      end: "bottom bottom",
       pin: ".p4",
       animation: animation4,
       scrub: true,
@@ -715,9 +715,9 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p4 lil relative mt-64 pt-64">
-          <div className="element4 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid4 absolute">
+        <div className="lil relative mt-64 pt-64">
+          <div className="element flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid absolute">
               <div
                 className="grid__item-img5"
                 style={{
