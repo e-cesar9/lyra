@@ -308,6 +308,11 @@ const DiaryPage: React.FC = () => {
         filter: "blur(0px)",
       })
 
+      gsap.set(".grid4", {
+        opacity: 1,
+        filter: "blur(0px)",
+      })
+
       const animation = gsap.to(".swap", {
         opacity: 0,
         filter: "blur(20px)",
@@ -373,6 +378,23 @@ const DiaryPage: React.FC = () => {
       end: "bottom+=300% bottom",
       pin: "#p3",
       animation: animation3,
+      scrub: true,
+      markers: true,
+    })
+
+    const animation4 = gsap.to(".grid4", {
+      opacity: 0,
+      filter: "blur(20px)",
+      duration: 1,
+      stagger: 1,
+    })
+
+    ScrollTrigger.create({
+      trigger: ".element4",
+      start: "top+=1% top",
+      end: "bottom+=300% bottom",
+      pin: ".p4",
+      animation: animation4,
       scrub: true,
       markers: true,
     })
@@ -641,9 +663,9 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="lil relative my-64 py-64">
-          <div className="element flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid absolute">
+        <div className="p4 lil relative my-64 py-64">
+          <div className="element4 flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid4 absolute">
               <div
                 className="grid__item-img4"
                 style={{
@@ -693,9 +715,9 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="lil relative mt-64 pt-64">
-          <div className="element flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid absolute">
+        <div className="p4 lil relative mt-64 pt-64">
+          <div className="element4 flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid4 absolute">
               <div
                 className="grid__item-img5"
                 style={{
