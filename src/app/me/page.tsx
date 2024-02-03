@@ -447,8 +447,8 @@ const DiaryPage: React.FC = () => {
 
     ScrollTrigger.create({
       trigger: ".element4",
-      start: "top-=15% top",
-      end: "bottom bottom",
+      start: "top top",
+      end: "bottom+=150% bottom",
       pin: ".p4",
       animation: animation4,
       scrub: true,
