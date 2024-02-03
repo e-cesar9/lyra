@@ -374,7 +374,7 @@ const DiaryPage: React.FC = () => {
       pin: "#p3",
       animation: animation3,
       scrub: true,
-      // markers: true,
+      markers: true,
     })
 
     return () => ctx.revert()
@@ -560,9 +560,9 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div id="#p3" className="lil relative my-72 pb-96">
+        <div id="p3" className="lil relative my-72 pb-96">
           <div className="element3 flex relative flex-col items-center w-full pt-96 justify-center">
-            <div className="grid3">
+            <div className="grid3 absolute">
               <div
                 className="grid__item-img3"
                 style={{
@@ -574,7 +574,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="absolute my-96 content" ref={textRef4}>
+          <div id="t4" className="my-96 content" ref={textRef4}>
             <p className="content__title4" data-effect16>
               In the labyrinth of my intellect, where the threads of philosophy,
               literature, biography, cinema, and beyond intertwine, I find
@@ -642,8 +642,8 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="lil relative my-64 py-64">
-          <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid">
+          <div className="element flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid absolute">
               <div
                 className="grid__item-img4"
                 style={{
@@ -656,7 +656,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div className="lul content">
-            <p className="absolute content__title" data-effect16>
+            <p className="content__title" data-effect16>
               In my teenage years, I came to a realization, akin to a quiet
               awakening, about the essence of beauty and its role in my
               existence. This realization was not borrowed from others, but
@@ -694,8 +694,8 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="lil relative mt-64 pt-64">
-          <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid">
+          <div className="element flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid absolute">
               <div
                 className="grid__item-img5"
                 style={{
@@ -708,7 +708,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div className="lul content">
-            <div className="absolute content__title" data-effect16>
+            <div className="content__title" data-effect16>
               Reflecting upon the passage of years, a certain memory comes to
               the fore, vibrant and alive with the energy of my younger self.
               There was a time when I would sit, surrounded by swathes of
@@ -755,7 +755,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="lil relative mt-64 pt-64">
           <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid">
+            <div className="grid absolute">
               <div
                 className="grid__item-img6"
                 style={{
@@ -768,7 +768,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div className="lul content">
-            <div className="content__title content__title--left" data-effect16>
+            <div className="content__title" data-effect16>
               My first encounter with America was a vivid tapestry of
               experiences, each more intense and enlightening than the last. New
               York greeted me with a cacophony of sounds, a kaleidoscope of
@@ -824,7 +824,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="lil relative mt-64 pt-64">
           <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid">
+            <div className="grid absolute">
               <div
                 className="grid__item-img7"
                 style={{
@@ -898,7 +898,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="lil relative mt-64 pt-64">
           <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid">
+            <div className="grid absolute">
               <div
                 className="grid__item-img8"
                 style={{
@@ -911,7 +911,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div className="lul content">
-            <div className="content__title content__title--left" data-effect16>
+            <div className="content__title" data-effect16>
               The cornerstone of our studio&apos;s philosophy is rooted in the
               dual virtues of audacity and curiosity — a blend of fearless
               innovation and an insatiable thirst for understanding. We approach
@@ -959,7 +959,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="lil relative mt-64 pt-64">
           <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid">
+            <div className="grid absolute">
               <div
                 className="grid__item-img9"
                 style={{
@@ -972,7 +972,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div className="lul content">
-            <div className="content__title content__title--left" data-effect16>
+            <div className="content__title" data-effect16>
               In our pursuit of excellence, we align ourselves with the finest
               talents, guiding them, learning from them, and forever seeking
               those undiscovered voices that might one day change the world. We
@@ -1018,7 +1018,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="lil relative mt-64 pt-64">
           <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid">
+            <div className="grid absolute">
               <div
                 className="grid__item-img10"
                 style={{
@@ -1031,7 +1031,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div className="lul content">
-            <div className="content__title content__title--left" data-effect16>
+            <div className="content__title" data-effect16>
               The world, indeed, does not always extend its arms in welcome to
               the novelties of new talent and fresh creations. These fragile
               newcomers to the stage of art and storytelling require champions,
