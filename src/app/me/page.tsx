@@ -254,7 +254,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=20% bottom",
                 end: "top top",
                 scrub: true,
-                markers: true,
+                // markers: true,
               },
             },
           )
@@ -274,6 +274,8 @@ const DiaryPage: React.FC = () => {
                 start: "top+=10% bottom-=200%",
                 end: "bottom+=270% top+=40%",
                 scrub: true,
+                                markers: true,
+
               },
             },
           )
