@@ -717,7 +717,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p4 lil relative my-64 py-64">
+        <div className="p4 lil relative py-64">
           <div className="element4 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid4 absolute">
               <div
