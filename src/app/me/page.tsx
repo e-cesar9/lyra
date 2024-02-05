@@ -898,6 +898,7 @@ const DiaryPage: React.FC = () => {
                   className="grid__item-img1"
                   src=
                       "/AnIncredibleLife/LYH_1940_visuel_v002-min.jpg"
+                      loading="lazy"
                   
                 />
                 <figcaption className="quotes">Lorem Ipsum</figcaption>
@@ -944,7 +945,7 @@ const DiaryPage: React.FC = () => {
                   className="grid__item-img2"
                   src=
                       "/AnIncredibleLife/LYH_1957_visuel03_V001-min.jpg"
-
+                  loading="lazy"
                 />
                 <figcaption className="quotes">Lorem Ipsum</figcaption>
               </div>
@@ -1003,13 +1004,12 @@ const DiaryPage: React.FC = () => {
         <div id="p3" className="lil relative">
           <div className="element3 flex relative flex-col items-center w-full justify-center">
             <div className="grid3 ">
-              <div
+              <img
                 className="grid__item-img3"
-                style={{
-                  backgroundImage:
-                    "url('/AnIncredibleLife/LYH_1957_visuel06_V001-min.jpg')",
-                }}
-              ></div>
+                src=
+                    '/AnIncredibleLife/LYH_1957_visuel06_V001-min.jpg'
+                    loading="lazy"
+              />
               <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
@@ -1084,13 +1084,11 @@ const DiaryPage: React.FC = () => {
         <div className="p4 lil relative pt-64">
           <div className="element4 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid4">
-              <div
+              <img
                 className="grid__item-img4"
-                style={{
-                  backgroundImage:
-                    "url('/AnIncredibleLife/LYH_1967_concept01_V001-min.jpg')",
-                }}
-              ></div>
+                src='/AnIncredibleLife/LYH_1967_concept01_V001-min.jpg'
+                loading="lazy"
+              />
               <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
@@ -1136,13 +1134,11 @@ const DiaryPage: React.FC = () => {
         <div className="p5 lil relative mt-64 pt-64">
           <div className="element5 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid5">
-              <div
+              <img
                 className="grid__item-img5"
-                style={{
-                  backgroundImage:
-                    "url('/AnIncredibleLife/LYH_1967_visuel01_V020-min.jpg')",
-                }}
-              ></div>
+                src='/AnIncredibleLife/LYH_1967_visuel01_V020-min.jpg'
+                loading="lazy"
+              />
               <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
@@ -1196,13 +1192,11 @@ const DiaryPage: React.FC = () => {
         <div className="p6 lil relative mt-64 pt-64">
           <div className="element6 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid6">
-              <div
+              <img
                 className="grid__item-img6"
-                style={{
-                  backgroundImage:
-                    "url('/AnIncredibleLife/LYH_1977_visuel_2_v001-min.jpg')",
-                }}
-              ></div>
+                src='/AnIncredibleLife/LYH_1977_visuel_2_v001-min.jpg'
+                loading="lazy"
+              />
               <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
@@ -1265,13 +1259,11 @@ const DiaryPage: React.FC = () => {
         <div className="p7 lil relative mt-64 pt-64">
           <div className="element7 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid7">
-              <div
+              <img
                 className="grid__item-img7"
-                style={{
-                  backgroundImage:
-                    "url('/AnIncredibleLife/LYH_1977_visuel_3_v001-min.jpg')",
-                }}
-              ></div>
+                src='/AnIncredibleLife/LYH_1977_visuel_3_v001-min.jpg'
+                loading="lazy"
+              />
               <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
@@ -1339,13 +1331,13 @@ const DiaryPage: React.FC = () => {
         <div className="p8 lil relative mt-64 pt-64">
           <div className="element8 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid8">
-              <div
+              <img
                 className="grid__item-img8"
-                style={{
-                  backgroundImage:
-                    "url('/AnIncredibleLife/LYH_1977_visuel_v001-min.jpg')",
-                }}
-              ></div>
+                src=
+                    '/AnIncredibleLife/LYH_1977_visuel_v001-min.jpg'
+                    loading="lazy"
+                
+              />
               <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
@@ -1400,13 +1392,12 @@ const DiaryPage: React.FC = () => {
         <div className="p9 lil relative mt-64 pt-64">
           <div className="element9 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid9">
-              <div
+              <img
                 className="grid__item-img9"
-                style={{
-                  backgroundImage:
-                    "url('/AnIncredibleLife/LYH_2007_visuel2_v009-min.jpg')",
-                }}
-              ></div>
+                src=
+                    '/AnIncredibleLife/LYH_2007_visuel2_v009-min.jpg'
+                    loading="lazy"
+            />
               <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
@@ -1459,13 +1450,11 @@ const DiaryPage: React.FC = () => {
         <div className="p10 lil relative mt-64 pt-64">
           <div className="element10 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid10">
-              <div
+              <img
                 className="grid__item-img10"
-                style={{
-                  backgroundImage:
-                    "url('/AnIncredibleLife/LYH_2023_visuel1_cleanup_v001-min.jpg')",
-                }}
-              ></div>
+                src='/AnIncredibleLife/LYH_2023_visuel1_cleanup_v001-min.jpg'
+                loading="lazy"
+              />
               <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
