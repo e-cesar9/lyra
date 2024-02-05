@@ -32,7 +32,7 @@ const DiaryPage: React.FC = () => {
       const {default: Splitting} = await import("splitting")
 
       if (titleRef.current) {
-        Splitting({target: titleRef.current})
+        Splitting({target: titleRef.current, by:"chars"})
         const fx25Titles = titleRef.current.querySelectorAll(
           ".content__title[data-effect25]",
         )
