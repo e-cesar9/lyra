@@ -894,13 +894,12 @@ const DiaryPage: React.FC = () => {
           <div className="element1 flex relative flex-wrap flex-col items-center w-full pt-40 justify-center">
             <div className="grid1">
               <div className="grid__item">
-                <div
+                <img
                   className="grid__item-img1"
-                  style={{
-                    backgroundImage:
-                      "url('/AnIncredibleLife/LYH_1940_visuel_v002-min.jpg')",
-                  }}
-                ></div>
+                  src=
+                      "/AnIncredibleLife/LYH_1940_visuel_v002-min.jpg"
+                  
+                />
                 <figcaption className="quotes">Lorem Ipsum</figcaption>
               </div>
             </div>
@@ -941,13 +940,12 @@ const DiaryPage: React.FC = () => {
           <div className="element2 flex relative flex-wrap flex-col items-center w-full pt-40 justify-center">
             <div className="grid2">
               <div className="grid__item">
-                <div
+                <img
                   className="grid__item-img2"
-                  style={{
-                    backgroundImage:
-                      "url('/AnIncredibleLife/LYH_1957_visuel03_V001-min.jpg')",
-                  }}
-                ></div>
+                  src=
+                      "/AnIncredibleLife/LYH_1957_visuel03_V001-min.jpg"
+
+                />
                 <figcaption className="quotes">Lorem Ipsum</figcaption>
               </div>
             </div>
