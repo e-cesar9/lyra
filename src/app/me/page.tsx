@@ -935,7 +935,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div id="p2" className="lil relative">
+        <div id="p2" className="relative">
           <div className="element2 flex relative flex-wrap flex-col items-center w-full pt-40 justify-center">
             <div className="grid2">
               <div className="grid__item">
