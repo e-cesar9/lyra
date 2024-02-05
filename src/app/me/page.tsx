@@ -74,14 +74,14 @@ const DiaryPage: React.FC = () => {
       if (textRef.current) {
         Splitting({target: textRef.current})
         Splitting({target: textRef2.current})
-        const fx16Titles = textRef.current.querySelectorAll(
+        const fx11Titles = textRef.current.querySelectorAll(
           ".content__title[data-effect16]",
         )
-        const fx15Titles = textRef2.current.querySelectorAll(
+        const fx12Titles = textRef2.current.querySelectorAll(
           ".content__title1[data-effect16]",
         )
 
-        fx16Titles.forEach((title) => {
+        fx11Titles.forEach((title) => {
           gsap.fromTo(
             title,
             {
@@ -121,7 +121,7 @@ const DiaryPage: React.FC = () => {
           )
         })
 
-        fx15Titles.forEach((block) => {
+        fx12Titles.forEach((block) => {
           gsap.fromTo(
             block,
             {
@@ -203,87 +203,7 @@ const DiaryPage: React.FC = () => {
             },
           )
         })
-      }
-    }
 
-    splitText()
-  }, [textRef.current, textRef2.current, textRef3.current])
-
-  // React.useEffect(() => {
-  //   const splitText = async () => {
-  //     const {default: Splitting} = await import("splitting")
-
-  //     if (textRef2.current) {
-  //       Splitting({target: textRef2.current})
-  //       const fx15Titles = textRef2.current.querySelectorAll(
-  //         ".content__title1[data-effect16]",
-  //       )
-
-  //     }
-  //   }
-
-  //   splitText()
-  // }, [textRef2.current])
-
-  // React.useEffect(() => {
-  //   const splitText = async () => {
-  //     const {default: Splitting} = await import("splitting")
-
-  //     if (textRef3.current) {
-  //       Splitting({target: textRef3.current})
-  //       const fx13Titles = textRef3.current.querySelectorAll(
-  //         ".content__title3[data-effect16]",
-  //       )
-
-  //       fx13Titles.forEach((bloc) => {
-  //         gsap.fromTo(
-  //           bloc,
-  //           {
-  //             filter: "blur(20px)",
-  //           },
-  //           {
-  //             ease: "none",
-  //             filter: "blur(0px)",
-  //             scrollTrigger: {
-  //               trigger: bloc,
-  //               start: "top+=90% bottom",
-  //               end: "top+=45% top",
-  //               scrub: true,
-  //               // markers: true,
-  //             },
-  //           },
-  //         )
-  //         const lette = bloc.querySelectorAll("span.word")
-  //         gsap.fromTo(
-  //           lette,
-  //           {
-  //             "will-change": "opacity",
-  //             opacity: 0.1,
-  //           },
-  //           {
-  //             ease: "none",
-  //             opacity: 1,
-  //             stagger: 0.05,
-  //             scrollTrigger: {
-  //               trigger: textRef3.current,
-  //               start: "top+=15% bottom-=200%",
-  //               end: "bottom+=70% top+=40%",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //       })
-  //     }
-  //   }
-
-  //   splitText()
-  // }, [textRef3.current])
-
-  React.useEffect(() => {
-    const splitText = async () => {
-      const {default: Splitting} = await import("splitting")
-
-      if (textRef4.current) {
         Splitting({target: textRef4.current})
         const fx14Titles = textRef4.current.querySelectorAll(
           ".content__title4[data-effect16]",
@@ -328,23 +248,13 @@ const DiaryPage: React.FC = () => {
             },
           )
         })
-      }
-    }
 
-    splitText()
-  }, [textRef4.current])
-
-  React.useEffect(() => {
-    const splitText = async () => {
-      const {default: Splitting} = await import("splitting")
-
-      if (textRef5.current) {
         Splitting({target: textRef5.current})
-        const fx14Titles = textRef5.current.querySelectorAll(
+        const fx15Titles = textRef5.current.querySelectorAll(
           ".content__title[data-effect16]",
         )
 
-        fx14Titles.forEach((bloc5) => {
+        fx15Titles.forEach((bloc5) => {
           gsap.fromTo(
             bloc5,
             {
@@ -382,23 +292,13 @@ const DiaryPage: React.FC = () => {
             },
           )
         })
-      }
-    }
 
-    splitText()
-  }, [textRef5.current])
-
-  React.useEffect(() => {
-    const splitText = async () => {
-      const {default: Splitting} = await import("splitting")
-
-      if (textRef6.current) {
         Splitting({target: textRef6.current})
-        const fx14Titles = textRef6.current.querySelectorAll(
+        const fx16Titles = textRef6.current.querySelectorAll(
           ".content__title[data-effect16]",
         )
 
-        fx14Titles.forEach((bloc5) => {
+        fx16Titles.forEach((bloc5) => {
           gsap.fromTo(
             bloc5,
             {
@@ -436,17 +336,7 @@ const DiaryPage: React.FC = () => {
             },
           )
         })
-      }
-    }
 
-    splitText()
-  }, [textRef6.current])
-
-  React.useEffect(() => {
-    const splitText = async () => {
-      const {default: Splitting} = await import("splitting")
-
-      if (textRef7.current) {
         Splitting({target: textRef7.current})
         const fx17Titles = textRef7.current.querySelectorAll(
           ".content__title[data-effect16]",
@@ -490,17 +380,7 @@ const DiaryPage: React.FC = () => {
             },
           )
         })
-      }
-    }
 
-    splitText()
-  }, [textRef7.current])
-
-  React.useEffect(() => {
-    const splitText = async () => {
-      const {default: Splitting} = await import("splitting")
-
-      if (textRef8.current) {
         Splitting({target: textRef8.current})
         const fx18Titles = textRef8.current.querySelectorAll(
           ".content__title[data-effect16]",
@@ -544,17 +424,7 @@ const DiaryPage: React.FC = () => {
             },
           )
         })
-      }
-    }
 
-    splitText()
-  }, [textRef8.current])
-
-  React.useEffect(() => {
-    const splitText = async () => {
-      const {default: Splitting} = await import("splitting")
-
-      if (textRef9.current) {
         Splitting({target: textRef9.current})
         const fx19Titles = textRef9.current.querySelectorAll(
           ".content__title[data-effect16]",
@@ -598,17 +468,7 @@ const DiaryPage: React.FC = () => {
             },
           )
         })
-      }
-    }
 
-    splitText()
-  }, [textRef9.current])
-
-  React.useEffect(() => {
-    const splitText = async () => {
-      const {default: Splitting} = await import("splitting")
-
-      if (textRef10.current) {
         Splitting({target: textRef10.current})
         const fx10Titles = textRef10.current.querySelectorAll(
           ".content__title[data-effect16]",
@@ -652,23 +512,13 @@ const DiaryPage: React.FC = () => {
             },
           )
         })
-      }
-    }
 
-    splitText()
-  }, [textRef10.current])
-
-  React.useEffect(() => {
-    const splitText = async () => {
-      const {default: Splitting} = await import("splitting")
-
-      if (textRef11.current) {
         Splitting({target: textRef11.current})
-        const fx11Titles = textRef11.current.querySelectorAll(
+        const fx21Titles = textRef11.current.querySelectorAll(
           ".content__title[data-effect16]",
         )
 
-        fx11Titles.forEach((bloc5) => {
+        fx21Titles.forEach((bloc5) => {
           gsap.fromTo(
             bloc5,
             {
@@ -710,7 +560,19 @@ const DiaryPage: React.FC = () => {
     }
 
     splitText()
-  }, [textRef11.current])
+  }, [
+    textRef.current,
+    textRef2.current,
+    textRef3.current,
+    textRef4.current,
+    textRef5.current,
+    textRef6.current,
+    textRef7.current,
+    textRef8.current,
+    textRef9.current,
+    textRef10.current,
+    textRef11.current,
+  ])
 
   useLayoutEffect(() => {
     let tl = gsap.timeline()
