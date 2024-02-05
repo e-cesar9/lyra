@@ -657,7 +657,7 @@ const DiaryPage: React.FC = () => {
       ScrollTrigger.create({
         trigger: ".element1",
         start: "top+=10% top",
-        end: "bottom+=250% bottom",
+        end: "bottom+=220% bottom",
         pin: ".element1",
         animation: animation1,
         scrub: true,
@@ -675,7 +675,7 @@ const DiaryPage: React.FC = () => {
     ScrollTrigger.create({
       trigger: ".element2",
       start: "top top",
-      end: "bottom+=300% bottom",
+      end: "bottom+=270% bottom",
       pin: "#p2",
       animation: animation2,
       scrub: true,
@@ -708,7 +708,7 @@ const DiaryPage: React.FC = () => {
 
     ScrollTrigger.create({
       trigger: ".element4",
-      start: "top top",
+      start: "top+=9% top",
       end: "bottom+=150% bottom",
       pin: ".p4",
       animation: animation4,
@@ -725,7 +725,7 @@ const DiaryPage: React.FC = () => {
 
     ScrollTrigger.create({
       trigger: ".element5",
-      start: "top top",
+      start: "top+=11% top",
       end: "bottom+=150% bottom",
       pin: ".p5",
       animation: animation5,
@@ -742,8 +742,8 @@ const DiaryPage: React.FC = () => {
 
     ScrollTrigger.create({
       trigger: ".element6",
-      start: "top top",
-      end: "bottom+=150% bottom",
+      start: "top+=5% top",
+      end: "bottom+=170% bottom",
       pin: ".p6",
       animation: animation6,
       scrub: true,
