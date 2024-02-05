@@ -26,6 +26,7 @@ const DiaryPage: React.FC = () => {
   let textRef8 = React.useRef(null)
   let textRef9 = React.useRef(null)
   let textRef10 = React.useRef(null)
+  let textRef11 = React.useRef(null)
 
   React.useEffect(() => {
     const splitText = async () => {
@@ -275,7 +276,6 @@ const DiaryPage: React.FC = () => {
                 end: "bottom+=40% top+=40%",
                 scrub: true,
                 markers: true,
-
               },
             },
           )
@@ -340,6 +340,60 @@ const DiaryPage: React.FC = () => {
     splitText()
   }, [textRef5.current])
 
+  React.useEffect(() => {
+    const splitText = async () => {
+      const {default: Splitting} = await import("splitting")
+
+      if (textRef6.current) {
+        Splitting({target: textRef6.current})
+        const fx14Titles = textRef6.current.querySelectorAll(
+          ".content__title[data-effect16]",
+        )
+
+        fx14Titles.forEach((bloc5) => {
+          gsap.fromTo(
+            bloc5,
+            {
+              filter: "blur(20px)",
+            },
+            {
+              ease: "none",
+              filter: "blur(0px)",
+              scrollTrigger: {
+                trigger: bloc5,
+                start: "top bottom",
+                end: "top top",
+                scrub: true,
+                // markers: true,
+              },
+            },
+          )
+          const lette5 = bloc5.querySelectorAll("span.word")
+          gsap.fromTo(
+            lette5,
+            {
+              "will-change": "opacity",
+              opacity: 0.1,
+            },
+            {
+              ease: "none",
+              opacity: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                trigger: textRef6.current,
+                start: "top+=15% bottom-=200%",
+                end: "bottom+=70% top+=40%",
+                scrub: true,
+              },
+            },
+          )
+        })
+      }
+    }
+
+    splitText()
+  }, [textRef6.current])
+
   useLayoutEffect(() => {
     let tl = gsap.timeline()
 
@@ -365,6 +419,41 @@ const DiaryPage: React.FC = () => {
       })
 
       gsap.set(".grid4", {
+        opacity: 1,
+        filter: "blur(0px)",
+      })
+
+      gsap.set(".grid5", {
+        opacity: 1,
+        filter: "blur(0px)",
+      })
+
+      gsap.set(".grid6", {
+        opacity: 1,
+        filter: "blur(0px)",
+      })
+
+      gsap.set(".grid7", {
+        opacity: 1,
+        filter: "blur(0px)",
+      })
+
+      gsap.set(".grid8", {
+        opacity: 1,
+        filter: "blur(0px)",
+      })
+
+      gsap.set(".grid9", {
+        opacity: 1,
+        filter: "blur(0px)",
+      })
+
+      gsap.set(".grid10", {
+        opacity: 1,
+        filter: "blur(0px)",
+      })
+
+      gsap.set(".grid11", {
         opacity: 1,
         filter: "blur(0px)",
       })
@@ -451,6 +540,108 @@ const DiaryPage: React.FC = () => {
       end: "bottom+=150% bottom",
       pin: ".p4",
       animation: animation4,
+      scrub: true,
+      markers: true,
+    })
+
+    const animation5 = gsap.to(".grid5", {
+      opacity: 0,
+      filter: "blur(20px)",
+      duration: 1,
+      stagger: 1,
+    })
+
+    ScrollTrigger.create({
+      trigger: ".element5",
+      start: "top top",
+      end: "bottom+=150% bottom",
+      pin: ".p5",
+      animation: animation5,
+      scrub: true,
+      markers: true,
+    })
+
+    const animation6 = gsap.to(".grid6", {
+      opacity: 0,
+      filter: "blur(20px)",
+      duration: 1,
+      stagger: 1,
+    })
+
+    ScrollTrigger.create({
+      trigger: ".element6",
+      start: "top top",
+      end: "bottom+=150% bottom",
+      pin: ".p6",
+      animation: animation6,
+      scrub: true,
+      markers: true,
+    })
+
+    const animation7 = gsap.to(".grid7", {
+      opacity: 0,
+      filter: "blur(20px)",
+      duration: 1,
+      stagger: 1,
+    })
+
+    ScrollTrigger.create({
+      trigger: ".element7",
+      start: "top top",
+      end: "bottom+=150% bottom",
+      pin: ".p7",
+      animation: animation7,
+      scrub: true,
+      markers: true,
+    })
+
+    const animation8 = gsap.to(".grid8", {
+      opacity: 0,
+      filter: "blur(20px)",
+      duration: 1,
+      stagger: 1,
+    })
+
+    ScrollTrigger.create({
+      trigger: ".element8",
+      start: "top top",
+      end: "bottom+=150% bottom",
+      pin: ".p8",
+      animation: animation8,
+      scrub: true,
+      markers: true,
+    })
+
+    const animation9 = gsap.to(".grid9", {
+      opacity: 0,
+      filter: "blur(20px)",
+      duration: 1,
+      stagger: 1,
+    })
+
+    ScrollTrigger.create({
+      trigger: ".element9",
+      start: "top top",
+      end: "bottom+=150% bottom",
+      pin: ".p9",
+      animation: animation9,
+      scrub: true,
+      markers: true,
+    })
+
+    const animation10 = gsap.to(".grid10", {
+      opacity: 0,
+      filter: "blur(20px)",
+      duration: 1,
+      stagger: 1,
+    })
+
+    ScrollTrigger.create({
+      trigger: ".element10",
+      start: "top top",
+      end: "bottom+=150% bottom",
+      pin: ".p10",
+      animation: animation10,
       scrub: true,
       markers: true,
     })
@@ -771,9 +962,9 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="lil relative mt-64 pt-64">
-          <div className="element flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid ">
+        <div className="p5 lil relative mt-64 pt-64">
+          <div className="element5 flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid5">
               <div
                 className="grid__item-img5"
                 style={{
@@ -785,7 +976,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content absolute">
+          <div className="lul content absolute" ref={textRef6}>
             <div className="content__title" data-effect16>
               Reflecting upon the passage of years, a certain memory comes to
               the fore, vibrant and alive with the energy of my younger self.
@@ -831,9 +1022,9 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="lil relative mt-64 pt-64">
-          <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid">
+        <div className="p6 lil relative mt-64 pt-64">
+          <div className="element6 flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid6">
               <div
                 className="grid__item-img6"
                 style={{
@@ -845,7 +1036,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content absolute">
+          <div className="lul content absolute" ref={textRef7}>
             <div className="content__title" data-effect16>
               My first encounter with America was a vivid tapestry of
               experiences, each more intense and enlightening than the last. New
@@ -900,9 +1091,9 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="lil relative mt-64 pt-64">
-          <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid">
+        <div className="p7 lil relative mt-64 pt-64">
+          <div className="element7 flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid7">
               <div
                 className="grid__item-img7"
                 style={{
@@ -914,7 +1105,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content absolute">
+          <div className="lul content absolute" ref={textRef8}>
             <p className="content__title" data-effect16>
               In America, I embraced the force of entrepreneurship — that
               intrepid spirit which seemed to rise from the very ground of
@@ -974,9 +1165,9 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="lil relative mt-64 pt-64">
-          <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid">
+        <div className="p8 lil relative mt-64 pt-64">
+          <div className="element8 flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid8">
               <div
                 className="grid__item-img8"
                 style={{
@@ -988,7 +1179,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content absolute">
+          <div className="lul content absolute" ref={textRef9}>
             <div className="content__title" data-effect16>
               The cornerstone of our studio&apos;s philosophy is rooted in the
               dual virtues of audacity and curiosity — a blend of fearless
@@ -1035,9 +1226,9 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="lil relative mt-64 pt-64">
-          <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid">
+        <div className="p9 lil relative mt-64 pt-64">
+          <div className="element9 flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid9">
               <div
                 className="grid__item-img9"
                 style={{
@@ -1049,7 +1240,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content absolute">
+          <div className="lul content absolute" ref={textRef10}>
             <div className="content__title" data-effect16>
               In our pursuit of excellence, we align ourselves with the finest
               talents, guiding them, learning from them, and forever seeking
@@ -1094,9 +1285,9 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="lil relative mt-64 pt-64">
-          <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid ">
+        <div className="p10 lil relative mt-64 pt-64">
+          <div className="element10 flex relative flex-col items-center w-full pt-40 justify-center">
+            <div className="grid10">
               <div
                 className="grid__item-img10"
                 style={{
@@ -1108,7 +1299,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content absolute">
+          <div className="lul content absolute" ref={textRef11}>
             <div className="content__title" data-effect16>
               The world, indeed, does not always extend its arms in welcome to
               the novelties of new talent and fresh creations. These fragile
