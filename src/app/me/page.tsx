@@ -73,7 +73,7 @@ const DiaryPage: React.FC = () => {
 
       if (textRef.current) {
         Splitting({target: textRef.current})
-        Splitting({target: textRef2.current})
+        Splitting({target: textRef2.current, by: "words"})
         const fx11Titles = textRef.current.querySelectorAll(
           ".content__title[data-effect16]",
         )
@@ -160,7 +160,7 @@ const DiaryPage: React.FC = () => {
           )
         })
 
-        Splitting({target: textRef3.current})
+        Splitting({target: textRef3.current, by: "words"})
         const fx13Titles = textRef3.current.querySelectorAll(
           ".content__title3[data-effect16]",
         )
@@ -204,7 +204,7 @@ const DiaryPage: React.FC = () => {
           )
         })
 
-        Splitting({target: textRef4.current})
+        Splitting({target: textRef4.current, by: "words"})
         const fx14Titles = textRef4.current.querySelectorAll(
           ".content__title4[data-effect16]",
         )
@@ -249,7 +249,7 @@ const DiaryPage: React.FC = () => {
           )
         })
 
-        Splitting({target: textRef5.current})
+        Splitting({target: textRef5.current, by: "words"})
         const fx15Titles = textRef5.current.querySelectorAll(
           ".content__title[data-effect16]",
         )
@@ -293,7 +293,7 @@ const DiaryPage: React.FC = () => {
           )
         })
 
-        Splitting({target: textRef6.current})
+        Splitting({target: textRef6.current, by: "words"})
         const fx16Titles = textRef6.current.querySelectorAll(
           ".content__title[data-effect16]",
         )
@@ -337,7 +337,7 @@ const DiaryPage: React.FC = () => {
           )
         })
 
-        Splitting({target: textRef7.current})
+        Splitting({target: textRef7.current, by: "words"})
         const fx17Titles = textRef7.current.querySelectorAll(
           ".content__title[data-effect16]",
         )
@@ -381,7 +381,7 @@ const DiaryPage: React.FC = () => {
           )
         })
 
-        Splitting({target: textRef8.current})
+        Splitting({target: textRef8.current, by: "words"})
         const fx18Titles = textRef8.current.querySelectorAll(
           ".content__title[data-effect16]",
         )
@@ -425,7 +425,7 @@ const DiaryPage: React.FC = () => {
           )
         })
 
-        Splitting({target: textRef9.current})
+        Splitting({target: textRef9.current, by: "words"})
         const fx19Titles = textRef9.current.querySelectorAll(
           ".content__title[data-effect16]",
         )
@@ -469,7 +469,7 @@ const DiaryPage: React.FC = () => {
           )
         })
 
-        Splitting({target: textRef10.current})
+        Splitting({target: textRef10.current, by: "words"})
         const fx10Titles = textRef10.current.querySelectorAll(
           ".content__title[data-effect16]",
         )
@@ -513,7 +513,7 @@ const DiaryPage: React.FC = () => {
           )
         })
 
-        Splitting({target: textRef11.current})
+        Splitting({target: textRef11.current, by: "words"})
         const fx21Titles = textRef11.current.querySelectorAll(
           ".content__title[data-effect16]",
         )
@@ -575,8 +575,6 @@ const DiaryPage: React.FC = () => {
   ])
 
   useLayoutEffect(() => {
-    let tl = gsap.timeline()
-
     let ctx = gsap.context(() => {
       gsap.set(".swap", {
         opacity: 1,
