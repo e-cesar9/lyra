@@ -1,7 +1,6 @@
 "use client"
-import React, {useEffect, useLayoutEffect, useState} from "react"
+import React, {useEffect, useLayoutEffect} from "react"
 import "./style.css"
-import Lenis from "@studio-freight/lenis"
 import gsap from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
 import Image from "next/image"
@@ -74,8 +73,12 @@ const DiaryPage: React.FC = () => {
 
       if (textRef.current) {
         Splitting({target: textRef.current})
+        Splitting({target: textRef2.current})
         const fx16Titles = textRef.current.querySelectorAll(
           ".content__title[data-effect16]",
+        )
+        const fx15Titles = textRef2.current.querySelectorAll(
+          ".content__title1[data-effect16]",
         )
 
         fx16Titles.forEach((title) => {
@@ -117,21 +120,6 @@ const DiaryPage: React.FC = () => {
             },
           )
         })
-      }
-    }
-
-    splitText()
-  }, [textRef.current])
-
-  React.useEffect(() => {
-    const splitText = async () => {
-      const {default: Splitting} = await import("splitting")
-
-      if (textRef2.current) {
-        Splitting({target: textRef2.current})
-        const fx15Titles = textRef2.current.querySelectorAll(
-          ".content__title1[data-effect16]",
-        )
 
         fx15Titles.forEach((block) => {
           gsap.fromTo(
@@ -171,23 +159,13 @@ const DiaryPage: React.FC = () => {
             },
           )
         })
-      }
-    }
 
-    splitText()
-  }, [textRef2.current])
-
-  React.useEffect(() => {
-    const splitText = async () => {
-      const {default: Splitting} = await import("splitting")
-
-      if (textRef3.current) {
         Splitting({target: textRef3.current})
-        const fx15Titles = textRef3.current.querySelectorAll(
+        const fx13Titles = textRef3.current.querySelectorAll(
           ".content__title3[data-effect16]",
         )
 
-        fx15Titles.forEach((bloc) => {
+        fx13Titles.forEach((bloc) => {
           gsap.fromTo(
             bloc,
             {
@@ -229,7 +207,77 @@ const DiaryPage: React.FC = () => {
     }
 
     splitText()
-  }, [textRef3.current])
+  }, [textRef.current, textRef2.current, textRef3.current])
+
+  // React.useEffect(() => {
+  //   const splitText = async () => {
+  //     const {default: Splitting} = await import("splitting")
+
+  //     if (textRef2.current) {
+  //       Splitting({target: textRef2.current})
+  //       const fx15Titles = textRef2.current.querySelectorAll(
+  //         ".content__title1[data-effect16]",
+  //       )
+
+  //     }
+  //   }
+
+  //   splitText()
+  // }, [textRef2.current])
+
+  // React.useEffect(() => {
+  //   const splitText = async () => {
+  //     const {default: Splitting} = await import("splitting")
+
+  //     if (textRef3.current) {
+  //       Splitting({target: textRef3.current})
+  //       const fx13Titles = textRef3.current.querySelectorAll(
+  //         ".content__title3[data-effect16]",
+  //       )
+
+  //       fx13Titles.forEach((bloc) => {
+  //         gsap.fromTo(
+  //           bloc,
+  //           {
+  //             filter: "blur(20px)",
+  //           },
+  //           {
+  //             ease: "none",
+  //             filter: "blur(0px)",
+  //             scrollTrigger: {
+  //               trigger: bloc,
+  //               start: "top+=90% bottom",
+  //               end: "top+=45% top",
+  //               scrub: true,
+  //               // markers: true,
+  //             },
+  //           },
+  //         )
+  //         const lette = bloc.querySelectorAll("span.word")
+  //         gsap.fromTo(
+  //           lette,
+  //           {
+  //             "will-change": "opacity",
+  //             opacity: 0.1,
+  //           },
+  //           {
+  //             ease: "none",
+  //             opacity: 1,
+  //             stagger: 0.05,
+  //             scrollTrigger: {
+  //               trigger: textRef3.current,
+  //               start: "top+=15% bottom-=200%",
+  //               end: "bottom+=70% top+=40%",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //       })
+  //     }
+  //   }
+
+  //   splitText()
+  // }, [textRef3.current])
 
   React.useEffect(() => {
     const splitText = async () => {
@@ -719,11 +767,6 @@ const DiaryPage: React.FC = () => {
       })
 
       gsap.set(".grid10", {
-        opacity: 1,
-        filter: "blur(0px)",
-      })
-
-      gsap.set(".grid11", {
         opacity: 1,
         filter: "blur(0px)",
       })
