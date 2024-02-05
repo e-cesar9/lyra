@@ -12,6 +12,7 @@
 :root{
 	--max-width:calc(min(100vw - 60px, 2000px, 145px + 50vw));
 	--margin: calc((100vw - var(--max-width))/2);
+	--font-size: calc(max(min(14px + 0.75vw, 50px), 14.5px + 0.75vw))
 }
 
 body{
@@ -46,6 +47,16 @@ figcaption{
 	position: relative;
 	padding-left: 250px;
 	padding-top: 1px;
+}
+
+@media (max-width: 760px) { 
+	#Me{
+		padding: 1px 0 0 0;
+	}
+	.echo{
+		width: 100vw;
+	}
+	
 }
 
 .lined{
