@@ -394,6 +394,276 @@ const DiaryPage: React.FC = () => {
     splitText()
   }, [textRef6.current])
 
+  React.useEffect(() => {
+    const splitText = async () => {
+      const {default: Splitting} = await import("splitting")
+
+      if (textRef7.current) {
+        Splitting({target: textRef7.current})
+        const fx17Titles = textRef7.current.querySelectorAll(
+          ".content__title[data-effect16]",
+        )
+
+        fx17Titles.forEach((bloc5) => {
+          gsap.fromTo(
+            bloc5,
+            {
+              filter: "blur(20px)",
+            },
+            {
+              ease: "none",
+              filter: "blur(0px)",
+              scrollTrigger: {
+                trigger: bloc5,
+                start: "top bottom",
+                end: "top top",
+                scrub: true,
+                // markers: true,
+              },
+            },
+          )
+          const lette5 = bloc5.querySelectorAll("span.word")
+          gsap.fromTo(
+            lette5,
+            {
+              "will-change": "opacity",
+              opacity: 0.1,
+            },
+            {
+              ease: "none",
+              opacity: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                trigger: textRef7.current,
+                start: "top+=15% bottom-=200%",
+                end: "bottom+=70% top+=40%",
+                scrub: true,
+              },
+            },
+          )
+        })
+      }
+    }
+
+    splitText()
+  }, [textRef7.current])
+
+  React.useEffect(() => {
+    const splitText = async () => {
+      const {default: Splitting} = await import("splitting")
+
+      if (textRef8.current) {
+        Splitting({target: textRef8.current})
+        const fx14Titles = textRef8.current.querySelectorAll(
+          ".content__title[data-effect16]",
+        )
+
+        fx18Titles.forEach((bloc5) => {
+          gsap.fromTo(
+            bloc5,
+            {
+              filter: "blur(20px)",
+            },
+            {
+              ease: "none",
+              filter: "blur(0px)",
+              scrollTrigger: {
+                trigger: bloc5,
+                start: "top bottom",
+                end: "top top",
+                scrub: true,
+                // markers: true,
+              },
+            },
+          )
+          const lette5 = bloc5.querySelectorAll("span.word")
+          gsap.fromTo(
+            lette5,
+            {
+              "will-change": "opacity",
+              opacity: 0.1,
+            },
+            {
+              ease: "none",
+              opacity: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                trigger: textRef8.current,
+                start: "top+=15% bottom-=200%",
+                end: "bottom+=70% top+=40%",
+                scrub: true,
+              },
+            },
+          )
+        })
+      }
+    }
+
+    splitText()
+  }, [textRef8.current])
+
+  React.useEffect(() => {
+    const splitText = async () => {
+      const {default: Splitting} = await import("splitting")
+
+      if (textRef9.current) {
+        Splitting({target: textRef9.current})
+        const fx14Titles = textRef9.current.querySelectorAll(
+          ".content__title[data-effect16]",
+        )
+
+        fx19Titles.forEach((bloc5) => {
+          gsap.fromTo(
+            bloc5,
+            {
+              filter: "blur(20px)",
+            },
+            {
+              ease: "none",
+              filter: "blur(0px)",
+              scrollTrigger: {
+                trigger: bloc5,
+                start: "top bottom",
+                end: "top top",
+                scrub: true,
+                // markers: true,
+              },
+            },
+          )
+          const lette5 = bloc5.querySelectorAll("span.word")
+          gsap.fromTo(
+            lette5,
+            {
+              "will-change": "opacity",
+              opacity: 0.1,
+            },
+            {
+              ease: "none",
+              opacity: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                trigger: textRef9.current,
+                start: "top+=15% bottom-=200%",
+                end: "bottom+=70% top+=40%",
+                scrub: true,
+              },
+            },
+          )
+        })
+      }
+    }
+
+    splitText()
+  }, [textRef9.current])
+
+  React.useEffect(() => {
+    const splitText = async () => {
+      const {default: Splitting} = await import("splitting")
+
+      if (textRef10.current) {
+        Splitting({target: textRef10.current})
+        const fx10Titles = textRef10.current.querySelectorAll(
+          ".content__title[data-effect16]",
+        )
+
+        fx10Titles.forEach((bloc5) => {
+          gsap.fromTo(
+            bloc5,
+            {
+              filter: "blur(20px)",
+            },
+            {
+              ease: "none",
+              filter: "blur(0px)",
+              scrollTrigger: {
+                trigger: bloc5,
+                start: "top bottom",
+                end: "top top",
+                scrub: true,
+                // markers: true,
+              },
+            },
+          )
+          const lette5 = bloc5.querySelectorAll("span.word")
+          gsap.fromTo(
+            lette5,
+            {
+              "will-change": "opacity",
+              opacity: 0.1,
+            },
+            {
+              ease: "none",
+              opacity: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                trigger: textRef10.current,
+                start: "top+=15% bottom-=200%",
+                end: "bottom+=70% top+=40%",
+                scrub: true,
+              },
+            },
+          )
+        })
+      }
+    }
+
+    splitText()
+  }, [textRef10.current])
+
+  React.useEffect(() => {
+    const splitText = async () => {
+      const {default: Splitting} = await import("splitting")
+
+      if (textRef11.current) {
+        Splitting({target: textRef11.current})
+        const fx11Titles = textRef11.current.querySelectorAll(
+          ".content__title[data-effect16]",
+        )
+
+        fx11Titles.forEach((bloc5) => {
+          gsap.fromTo(
+            bloc5,
+            {
+              filter: "blur(20px)",
+            },
+            {
+              ease: "none",
+              filter: "blur(0px)",
+              scrollTrigger: {
+                trigger: bloc5,
+                start: "top bottom",
+                end: "top top",
+                scrub: true,
+                // markers: true,
+              },
+            },
+          )
+          const lette5 = bloc5.querySelectorAll("span.word")
+          gsap.fromTo(
+            lette5,
+            {
+              "will-change": "opacity",
+              opacity: 0.1,
+            },
+            {
+              ease: "none",
+              opacity: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                trigger: textRef11.current,
+                start: "top+=15% bottom-=200%",
+                end: "bottom+=70% top+=40%",
+                scrub: true,
+              },
+            },
+          )
+        })
+      }
+    }
+
+    splitText()
+  }, [textRef11.current])
+
   useLayoutEffect(() => {
     let tl = gsap.timeline()
 
