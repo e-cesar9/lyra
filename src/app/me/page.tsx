@@ -271,7 +271,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=90% bottom",
                 end: "top+=45% top",
                 scrub: true,
-                // markers: true,
+                markers: true,
               },
             },
           )
@@ -291,6 +291,8 @@ const DiaryPage: React.FC = () => {
                 start: "top+=15% bottom-=200%",
                 end: "bottom+=70% top+=40%",
                 scrub: true,
+                markers: true,
+
               },
             },
           )
@@ -315,7 +317,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=90% bottom",
                 end: "top+=45% top",
                 scrub: true,
-                // markers: true,
+                markers: true,
               },
             },
           )
@@ -335,6 +337,8 @@ const DiaryPage: React.FC = () => {
                 start: "top+=15% bottom-=200%",
                 end: "bottom+=70% top+=40%",
                 scrub: true,
+                markers: true,
+
               },
             },
           )
@@ -359,7 +363,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=90% bottom",
                 end: "top+=45% top",
                 scrub: true,
-                // markers: true,
+                markers: true,
               },
             },
           )
@@ -379,6 +383,8 @@ const DiaryPage: React.FC = () => {
                 start: "top+=15% bottom-=200%",
                 end: "bottom+=70% top+=40%",
                 scrub: true,
+                markers: true,
+
               },
             },
           )
@@ -403,7 +409,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=90% bottom",
                 end: "top+=45% top",
                 scrub: true,
-                // markers: true,
+                markers: true,
               },
             },
           )
@@ -423,6 +429,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=15% bottom-=200%",
                 end: "bottom+=70% top+=40%",
                 scrub: true,
+                markers: true,
               },
             },
           )
@@ -447,7 +454,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=90% bottom",
                 end: "top+=45% top",
                 scrub: true,
-                // markers: true,
+                markers: true,
               },
             },
           )
@@ -467,6 +474,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=15% bottom-=200%",
                 end: "bottom+=70% top+=40%",
                 scrub: true,
+                markers: true,
               },
             },
           )
@@ -491,7 +499,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=90% bottom",
                 end: "top+=45% top",
                 scrub: true,
-                // markers: true,
+                markers: true,
               },
             },
           )
@@ -511,6 +519,8 @@ const DiaryPage: React.FC = () => {
                 start: "top+=15% bottom-=200%",
                 end: "bottom+=70% top+=40%",
                 scrub: true,
+                markers: true,
+
               },
             },
           )
@@ -535,7 +545,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=90% bottom",
                 end: "top+=45% top",
                 scrub: true,
-                // markers: true,
+                markers: true,
               },
             },
           )
@@ -555,6 +565,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=15% bottom-=200%",
                 end: "bottom+=70% top+=40%",
                 scrub: true,
+                markers: true,
               },
             },
           )
