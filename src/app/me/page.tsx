@@ -71,7 +71,7 @@ const DiaryPage: React.FC = () => {
       const {default: Splitting} = await import("splitting")
 
       if (textRef.current) {
-        Splitting({target: textRef.current})
+        Splitting({target: textRef.current, by:"words"})
         Splitting({target: textRef2.current, by: "words"})
         const fx11Titles = textRef.current.querySelectorAll(
           ".content__title[data-effect16]",
