@@ -1012,7 +1012,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div id="t3" className="my-96 absolute content" ref={textRef4}>
+          <div id="t3" className="mt-72 pt-40 absolute content" ref={textRef4}>
             <p className="content__title" data-effect16>
               In the labyrinth of my intellect, where the threads of philosophy,
               literature, biography, cinema, and beyond intertwine, I find
