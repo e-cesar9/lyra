@@ -50,11 +50,18 @@ figcaption{
 }
 
 @media (max-width: 760px) { 
+	body{
+		font-size: var(--font-size);
+	}
 	#Me{
 		padding: 1px 0 0 0;
+		font-size: var(--font-size);
 	}
 	.echo{
 		width: 100vw;
+	}
+	.content__title{
+		font-size: var(--font-size);
 	}
 	
 }
