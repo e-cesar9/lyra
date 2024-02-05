@@ -454,7 +454,7 @@ const DiaryPage: React.FC = () => {
 
       if (textRef8.current) {
         Splitting({target: textRef8.current})
-        const fx14Titles = textRef8.current.querySelectorAll(
+        const fx18Titles = textRef8.current.querySelectorAll(
           ".content__title[data-effect16]",
         )
 
@@ -508,7 +508,7 @@ const DiaryPage: React.FC = () => {
 
       if (textRef9.current) {
         Splitting({target: textRef9.current})
-        const fx14Titles = textRef9.current.querySelectorAll(
+        const fx19Titles = textRef9.current.querySelectorAll(
           ".content__title[data-effect16]",
         )
 
