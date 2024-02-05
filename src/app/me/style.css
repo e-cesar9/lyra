@@ -293,8 +293,32 @@ figcaption{
 
 #p3{
 	top: 0;
+	height: 200vh;
 }
 
 #p2{
 	height: 250vh;
+}
+
+.p4{
+	height: 100vh;
+}
+
+.p5{
+	height: 250vh;
+}
+.p6{
+	height: 200vh;
+}
+.p7{
+	height: 250vh;
+}
+.p8{
+	height: 250vh;
+}
+.p9{
+	height: 200vh;
+}
+.p10{
+	height: 200vh;
 }
