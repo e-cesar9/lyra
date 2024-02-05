@@ -59,40 +59,11 @@ figcaption{
 }
 
 
-
 .content__title{
 	margin: var(--margin);
 	font-size: 27px;
 	font-weight: 300;
-
 }
-
-
-.content__title1{
-	margin: var(--margin);
-	font-size: 27px;
-	font-weight: 300;
-}
-
-.content__title3{
-	margin: var(--margin);
-	font-size: 27px;
-	font-weight: 300;
-}
-
-.content__title4{
-	margin: var(--margin);
-	font-size: 27px;
-	font-weight: 300;
-}
-
-.content__title5{
-	margin: var(--margin);
-	font-size: 27px;
-	font-weight: 300;
-}
-
-
 
 
 .grid__item-img {
@@ -225,7 +196,6 @@ figcaption{
   #h1{
   font-size: 52px;
   }
-
   
   #printemps{
   position: relative;
@@ -262,8 +232,6 @@ figcaption{
   #parg1{
 	margin-top: -22vh;
   }
-
-
 
   .swap{
 	position: absolute;
@@ -307,8 +275,4 @@ figcaption{
 
 #p3{
 	top: 0;
-}
-
-#t4{
-
 }

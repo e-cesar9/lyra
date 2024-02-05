@@ -1,9 +1,8 @@
 "use client"
-import React, {useEffect, useLayoutEffect} from "react"
+import React, {useLayoutEffect} from "react"
 import "./style.css"
 import gsap from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
-import Image from "next/image"
 import Sidebar from "../sideBar"
 
 import "splitting/dist/splitting.css"
@@ -27,12 +26,12 @@ const DiaryPage: React.FC = () => {
   let textRef10 = React.useRef(null)
   let textRef11 = React.useRef(null)
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     const splitText = async () => {
       const {default: Splitting} = await import("splitting")
 
       if (titleRef.current) {
-        Splitting({target: titleRef.current, by:"chars"})
+        Splitting({target: titleRef.current, by: "chars"})
         const fx25Titles = titleRef.current.querySelectorAll(
           ".content__title[data-effect25]",
         )
@@ -78,7 +77,7 @@ const DiaryPage: React.FC = () => {
           ".content__title[data-effect16]",
         )
         const fx12Titles = textRef2.current.querySelectorAll(
-          ".content__title1[data-effect16]",
+          ".content__title[data-effect16]",
         )
 
         fx11Titles.forEach((title) => {
@@ -162,7 +161,7 @@ const DiaryPage: React.FC = () => {
 
         Splitting({target: textRef3.current, by: "words"})
         const fx13Titles = textRef3.current.querySelectorAll(
-          ".content__title3[data-effect16]",
+          ".content__title[data-effect16]",
         )
 
         fx13Titles.forEach((bloc) => {
@@ -206,7 +205,7 @@ const DiaryPage: React.FC = () => {
 
         Splitting({target: textRef4.current, by: "words"})
         const fx14Titles = textRef4.current.querySelectorAll(
-          ".content__title4[data-effect16]",
+          ".content__title[data-effect16]",
         )
 
         fx14Titles.forEach((blocx) => {
@@ -896,17 +895,16 @@ const DiaryPage: React.FC = () => {
               <div className="grid__item">
                 <img
                   className="grid__item-img1"
-                  src=
-                      "/AnIncredibleLife/LYH_1940_visuel_v002-min.jpg"
-                      loading="lazy"
-                  
+                  src="/AnIncredibleLife/LYH_1940_visuel_v002-min.jpg"
+                  loading="lazy"
+                  alt=""
                 />
                 <figcaption className="quotes">Lorem Ipsum</figcaption>
               </div>
             </div>
 
             <div className="lol content mt-40 pt-40 absolute" ref={textRef2}>
-              <p className="content__title1" data-effect16>
+              <p className="content__title" data-effect16>
                 In the tender years of my youth, my memories of my father were
                 akin to fleeting glimpses of a distant dream — fragmented yet
                 filled with a profound sense of love and respect. His absence in
@@ -943,16 +941,16 @@ const DiaryPage: React.FC = () => {
               <div className="grid__item">
                 <img
                   className="grid__item-img2"
-                  src=
-                      "/AnIncredibleLife/LYH_1957_visuel03_V001-min.jpg"
+                  src="/AnIncredibleLife/LYH_1957_visuel03_V001-min.jpg"
                   loading="lazy"
+                  alt=""
                 />
                 <figcaption className="quotes">Lorem Ipsum</figcaption>
               </div>
             </div>
 
             <div className="lel content absolute mt-72 pt-40" ref={textRef3}>
-              <p className="content__title3" data-effect16>
+              <p className="content__title" data-effect16>
                 In the embrace of Japan&apos;s countryside, where the whispers
                 of nature spoke in a language as ancient as time itself, I found
                 an unbridled freedom that seemed almost paradoxical within the
@@ -1006,16 +1004,16 @@ const DiaryPage: React.FC = () => {
             <div className="grid3 ">
               <img
                 className="grid__item-img3"
-                src=
-                    '/AnIncredibleLife/LYH_1957_visuel06_V001-min.jpg'
-                    loading="lazy"
+                src="/AnIncredibleLife/LYH_1957_visuel06_V001-min.jpg"
+                loading="lazy"
+                alt=""
               />
               <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
 
           <div id="t3" className="my-96 absolute content" ref={textRef4}>
-            <p className="content__title4" data-effect16>
+            <p className="content__title" data-effect16>
               In the labyrinth of my intellect, where the threads of philosophy,
               literature, biography, cinema, and beyond intertwine, I find
               myself wandering, a curious observer, a seeker of hidden
@@ -1086,8 +1084,9 @@ const DiaryPage: React.FC = () => {
             <div className="grid4">
               <img
                 className="grid__item-img4"
-                src='/AnIncredibleLife/LYH_1967_concept01_V001-min.jpg'
+                src="/AnIncredibleLife/LYH_1967_concept01_V001-min.jpg"
                 loading="lazy"
+                alt=""
               />
               <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
@@ -1136,8 +1135,9 @@ const DiaryPage: React.FC = () => {
             <div className="grid5">
               <img
                 className="grid__item-img5"
-                src='/AnIncredibleLife/LYH_1967_visuel01_V020-min.jpg'
+                src="/AnIncredibleLife/LYH_1967_visuel01_V020-min.jpg"
                 loading="lazy"
+                alt=""
               />
               <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
@@ -1194,8 +1194,9 @@ const DiaryPage: React.FC = () => {
             <div className="grid6">
               <img
                 className="grid__item-img6"
-                src='/AnIncredibleLife/LYH_1977_visuel_2_v001-min.jpg'
+                src="/AnIncredibleLife/LYH_1977_visuel_2_v001-min.jpg"
                 loading="lazy"
+                alt=""
               />
               <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
@@ -1261,8 +1262,9 @@ const DiaryPage: React.FC = () => {
             <div className="grid7">
               <img
                 className="grid__item-img7"
-                src='/AnIncredibleLife/LYH_1977_visuel_3_v001-min.jpg'
+                src="/AnIncredibleLife/LYH_1977_visuel_3_v001-min.jpg"
                 loading="lazy"
+                alt=""
               />
               <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
@@ -1333,10 +1335,9 @@ const DiaryPage: React.FC = () => {
             <div className="grid8">
               <img
                 className="grid__item-img8"
-                src=
-                    '/AnIncredibleLife/LYH_1977_visuel_v001-min.jpg'
-                    loading="lazy"
-                
+                src="/AnIncredibleLife/LYH_1977_visuel_v001-min.jpg"
+                loading="lazy"
+                alt=""
               />
               <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
@@ -1394,10 +1395,10 @@ const DiaryPage: React.FC = () => {
             <div className="grid9">
               <img
                 className="grid__item-img9"
-                src=
-                    '/AnIncredibleLife/LYH_2007_visuel2_v009-min.jpg'
-                    loading="lazy"
-            />
+                src="/AnIncredibleLife/LYH_2007_visuel2_v009-min.jpg"
+                loading="lazy"
+                alt=""
+              />
               <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
           </div>
@@ -1452,8 +1453,9 @@ const DiaryPage: React.FC = () => {
             <div className="grid10">
               <img
                 className="grid__item-img10"
-                src='/AnIncredibleLife/LYH_2023_visuel1_cleanup_v001-min.jpg'
+                src="/AnIncredibleLife/LYH_2023_visuel1_cleanup_v001-min.jpg"
                 loading="lazy"
+                alt=""
               />
               <figcaption className="quotes">Lorem Ipsum</figcaption>
             </div>
