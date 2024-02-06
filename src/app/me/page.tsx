@@ -335,7 +335,7 @@ const DiaryPage: React.FC = () => {
               scrollTrigger: {
                 trigger: textRef6.current,
                 start: "top+=10% bottom-=200%",
-                end: "bottom+=60% top+=40%",
+                end: "bottom+=55% top+=40%",
                 scrub: true,
                 markers: true,
 
@@ -381,7 +381,7 @@ const DiaryPage: React.FC = () => {
               scrollTrigger: {
                 trigger: textRef7.current,
                 start: "top bottom-=200%",
-                end: "bottom+=80% top+=40%",
+                end: "bottom+=50% top+=40%",
                 scrub: true,
                 markers: true,
 
@@ -427,7 +427,7 @@ const DiaryPage: React.FC = () => {
               scrollTrigger: {
                 trigger: textRef8.current,
                 start: "top+=5% bottom-=200%",
-                end: "bottom+=90% top+=40%",
+                end: "bottom+=50% top+=40%",
                 scrub: true,
                 markers: true,
               },
@@ -472,7 +472,7 @@ const DiaryPage: React.FC = () => {
               scrollTrigger: {
                 trigger: textRef9.current,
                 start: "top+=15% bottom-=200%",
-                end: "bottom+=70% top+=40%",
+                end: "bottom+=60% top+=40%",
                 scrub: true,
                 markers: true,
               },
@@ -517,7 +517,7 @@ const DiaryPage: React.FC = () => {
               scrollTrigger: {
                 trigger: textRef10.current,
                 start: "top+=15% bottom-=200%",
-                end: "bottom+=70% top+=40%",
+                end: "bottom+=60% top+=40%",
                 scrub: true,
                 markers: true,
 
@@ -542,8 +542,8 @@ const DiaryPage: React.FC = () => {
               filter: "blur(0px)",
               scrollTrigger: {
                 trigger: bloc5,
-                start: "top+=90% bottom",
-                end: "top+=45% top",
+                start: "top+=80% bottom",
+                end: "top+=35% top",
                 scrub: true,
                 markers: true,
               },
@@ -562,8 +562,8 @@ const DiaryPage: React.FC = () => {
               stagger: 0.05,
               scrollTrigger: {
                 trigger: textRef11.current,
-                start: "top+=5% bottom-=200%",
-                end: "bottom+=50% top+=40%",
+                start: "top+=10% bottom-=200%",
+                end: "bottom+=45% top+=40%",
                 scrub: true,
                 markers: true,
               },
