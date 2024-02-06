@@ -271,7 +271,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=60% bottom",
                 end: "top+=15% top",
                 scrub: true,
-                markers: true,
+                // markers: true,
               },
             },
           )
@@ -728,7 +728,7 @@ const DiaryPage: React.FC = () => {
       pin: ".p4",
       animation: animation4,
       scrub: true,
-      markers: true,
+      // markers: true,
     })
 
     const animation5 = gsap.to(".grid5", {
@@ -745,7 +745,7 @@ const DiaryPage: React.FC = () => {
       pin: ".p5",
       animation: animation5,
       scrub: true,
-      markers: true,
+      // markers: true,
     })
 
     const animation6 = gsap.to(".grid6", {
