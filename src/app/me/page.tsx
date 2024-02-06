@@ -288,8 +288,8 @@ const DiaryPage: React.FC = () => {
               stagger: 0.05,
               scrollTrigger: {
                 trigger: textRef5.current,
-                start: "top bottom-=250%",
-                end: "bottom+=195% top",
+                start: "top bottom-=200%",
+                end: "bottom+=195% top+=60%",
                 scrub: true,
                 markers: true,
 
