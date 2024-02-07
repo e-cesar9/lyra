@@ -92,7 +92,7 @@ figcaption{
 	width: 408px;
 	height: 716px;
 	aspect-ratio: 1;
-	background-size: contain;
+	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
 	border: 5px solid white;
@@ -104,7 +104,7 @@ figcaption{
 	width: auto;
 	height: auto;
 	aspect-ratio: 1;
-	background-size: contain;
+	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
 	border: 5px solid white;
@@ -116,7 +116,7 @@ figcaption{
 	width: 773px;
 	height: 618px;
 	aspect-ratio: 1;
-	background-size: contain;
+	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
 	border: 5px solid white;
@@ -124,10 +124,10 @@ figcaption{
 
 .grid__item-img3 {
 	position: relative;
-	width: calc(1207px/1.5);
-	height: calc(966px/1.5);
+	width: 804px;
+	height: 642px;
 	aspect-ratio: 1;
-	background-size: contain;
+	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
 	border: 5px solid white;
@@ -135,10 +135,10 @@ figcaption{
 
 .grid__item-img4 {
 	position: relative;
-	width: calc(1920px /3);
-	height: calc(2245px/3);
+	width: 640px;
+	height: 768px;
 	aspect-ratio: 1;
-	background-size: contain;
+	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
 	border: 5px solid white;
@@ -146,10 +146,10 @@ figcaption{
 
 .grid__item-img5 {
 	position: relative;
-	width: calc(1602px/3);
-	height: calc(2290px/3);
+	width: 534px;
+	height: 769px;
 	aspect-ratio: 1;
-	background-size: contain;
+	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
 	border: 5px solid white;
@@ -157,10 +157,10 @@ figcaption{
 
 .grid__item-img6 {
 	position: relative;
-	height: calc(1728px/2.75);
-	width: calc(2592px/2.75);
+	width: 942px;
+	height: 628px;
 	aspect-ratio: 1;
-	background-size: contain;
+	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
 	border: 5px solid white;
@@ -168,10 +168,10 @@ figcaption{
 
 .grid__item-img7 {
 	position: relative;
-	width: calc(1728px/3.25);
-	height: calc(2540px/3.25);
+	width: 531px;
+	height: 797px;
 	aspect-ratio: 1;
-	background-size: contain;
+	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
 	border: 5px solid white;
@@ -179,10 +179,10 @@ figcaption{
 
 .grid__item-img8 {
 	position: relative;
-	width: calc(1728px/3.25);
-	height: calc(2570px/3.25);
+	width: 531px;
+	height: 797px;
 	aspect-ratio: 1;
-	background-size: contain;
+	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
 	border: 5px solid white;
@@ -193,7 +193,7 @@ figcaption{
 	width: 600px;
 	height: 790px;
 	aspect-ratio: 1;
-	background-size: contain;
+	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
 	border: 5px solid white;
@@ -201,10 +201,10 @@ figcaption{
 
 .grid__item-img10 {
 	position: relative;
-	width: calc(1024px/1.5);
-	height: calc(1024px/1.5);
+	width: 682px;
+	height: 682px;
 	aspect-ratio: 1;
-	background-size: contain;
+	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
 	border: 5px solid white;
@@ -341,17 +341,25 @@ figcaption{
 	}
 	#section{
 		top: 0;
-		font-size: var(--font-size);
+		/* font-size: var(--font-size); */
 		height: 110vh;
 	}
 
 	#parg1{
-		font-size: var(--font-size);
+		/* font-size: var(--font-size); */
 		margin-top: 22vh;
 	}
 
 	.lined{
 		font-size: 25px;
+	}
+
+	.lol{
+		margin-top: 21rem;
+	}
+
+	.lel{
+		margin-top: -28vh;
 	}
 
 	#printemps{
@@ -392,10 +400,10 @@ figcaption{
 
 	.grid__item-img {
 		position: relative;
-		width: calc(408px/1.5);
-		height: calc(716px/1.5);
+		width: 272px;
+		height: 485px;
 		aspect-ratio: 1;
-		background-size: contain;
+		background-size: cover;
 		background-position: 50% 50%;
 		will-change: transform, opacity;
 		border: 5px solid white;
@@ -404,10 +412,10 @@ figcaption{
 	
 	.grid__item-img1 {
 		position: relative;
-		width: 517px;
-		height: 720px;
+		width: 335px;
+		height: 470px;
 		aspect-ratio: 1;
-		background-size: contain;
+		background-size: cover;
 		background-position: 50% 50%;
 		will-change: transform, opacity;
 		border: 5px solid white;
@@ -416,10 +424,10 @@ figcaption{
 	
 	.grid__item-img2 {
 		position: relative;
-		width: 773px;
-		height: 618px;
+		width: 334px;
+		height: 265px;
 		aspect-ratio: 1;
-		background-size: contain;
+		background-size: cover;
 		background-position: 50% 50%;
 		will-change: transform, opacity;
 		border: 5px solid white;
@@ -427,10 +435,10 @@ figcaption{
 	
 	.grid__item-img3 {
 		position: relative;
-		width: calc(1207px/1.5);
-		height: calc(966px/1.5);
+		width: 344px;
+		height: 276px;
 		aspect-ratio: 1;
-		background-size: contain;
+		background-size: cover;
 		background-position: 50% 50%;
 		will-change: transform, opacity;
 		border: 5px solid white;
@@ -438,10 +446,10 @@ figcaption{
 	
 	.grid__item-img4 {
 		position: relative;
-		width: calc(1920px /3);
-		height: calc(2245px/3);
+		width: 365px;
+		height: 427px;
 		aspect-ratio: 1;
-		background-size: contain;
+		background-size: cover;
 		background-position: 50% 50%;
 		will-change: transform, opacity;
 		border: 5px solid white;
@@ -449,10 +457,10 @@ figcaption{
 	
 	.grid__item-img5 {
 		position: relative;
-		width: calc(1602px/3);
-		height: calc(2290px/3);
+		width: 356px;
+		height: 508px;
 		aspect-ratio: 1;
-		background-size: contain;
+		background-size: cover;
 		background-position: 50% 50%;
 		will-change: transform, opacity;
 		border: 5px solid white;
@@ -460,10 +468,10 @@ figcaption{
 	
 	.grid__item-img6 {
 		position: relative;
-		height: calc(1728px/2.75);
-		width: calc(2592px/2.75);
+		width: 370px;
+		height: 246px;
 		aspect-ratio: 1;
-		background-size: contain;
+		background-size: cover;
 		background-position: 50% 50%;
 		will-change: transform, opacity;
 		border: 5px solid white;
@@ -471,10 +479,10 @@ figcaption{
 	
 	.grid__item-img7 {
 		position: relative;
-		width: calc(1728px/3.25);
-		height: calc(2540px/3.25);
+		width: 363px;
+		height: 534px;
 		aspect-ratio: 1;
-		background-size: contain;
+		background-size: cover;
 		background-position: 50% 50%;
 		will-change: transform, opacity;
 		border: 5px solid white;
@@ -482,10 +490,10 @@ figcaption{
 	
 	.grid__item-img8 {
 		position: relative;
-		width: calc(1728px/3.25);
-		height: calc(2570px/3.25);
+		width: 363px;
+		height: 541px;
 		aspect-ratio: 1;
-		background-size: contain;
+		background-size: cover;
 		background-position: 50% 50%;
 		will-change: transform, opacity;
 		border: 5px solid white;
@@ -493,10 +501,10 @@ figcaption{
 	
 	.grid__item-img9 {
 		position: relative;
-		width: 600px;
-		height: 790px;
+		width: 342px;
+		height: 451px;
 		aspect-ratio: 1;
-		background-size: contain;
+		background-size: cover;
 		background-position: 50% 50%;
 		will-change: transform, opacity;
 		border: 5px solid white;
@@ -504,10 +512,10 @@ figcaption{
 	
 	.grid__item-img10 {
 		position: relative;
-		width: calc(1024px/1.5);
-		height: calc(1024px/1.5);
+		width: 372px;
+		height: 372px;
 		aspect-ratio: 1;
-		background-size: contain;
+		background-size: cover;
 		background-position: 50% 50%;
 		will-change: transform, opacity;
 		border: 5px solid white;
@@ -523,7 +531,7 @@ figcaption{
 	}
 	
 	.lul{
-		top:0;
+		top:47vh;
 		margin-top:0vh;
 	}
 	
@@ -537,8 +545,10 @@ figcaption{
 	}
 	
 	#p3{
-		top: 0;
 		height: 250vh;
+	}
+	.element3{
+		/* padding-top: 20vh; */
 	}
 	
 	#p2{
