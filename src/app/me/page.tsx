@@ -918,7 +918,7 @@ const DiaryPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="lol content mt-40 pt-40 absolute" ref={textRef2}>
+            <div className="lel content mt-40 pt-40 absolute" ref={textRef2}>
               <p className="content__title" data-effect16>
                 In the tender years of my youth, my memories of my father were
                 akin to fleeting glimpses of a distant dream — fragmented yet
