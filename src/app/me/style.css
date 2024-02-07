@@ -525,6 +525,7 @@ figcaption{
 		top: 0;
 		margin-top: -45vh;
 	}
+
 	
 	.lil{
 		height: 400vh;
@@ -538,10 +539,19 @@ figcaption{
 	.grid{
 		z-index: 40;
 	}
+
+	/* .txt2{
+		margin-top: 40vh;
+	} */
+
+	.txt3{
+		top: 0;
+		margin-top: -5vh;
+	}
 	
 	#t3{
 		top: 0;
-		margin-top: -40vh;
+		margin-top: -15vh;
 	}
 	
 	#p3{
@@ -552,11 +562,11 @@ figcaption{
 	}
 	
 	#p2{
-		height: 250vh;
+		height: 275vh;
 	}
 	
 	.p4{
-		height: 150vh;
+		height: 250vh;
 	}
 	
 	.p5{

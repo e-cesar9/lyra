@@ -918,7 +918,7 @@ const DiaryPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="lel content mt-40 pt-40 absolute" ref={textRef2}>
+            <div className="lol content mt-40 pt-40 absolute" ref={textRef2}>
               <p className="content__title" data-effect16>
                 In the tender years of my youth, my memories of my father were
                 akin to fleeting glimpses of a distant dream — fragmented yet
@@ -964,7 +964,7 @@ const DiaryPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="lel content absolute mt-72 pt-40" ref={textRef3}>
+            <div className="txt3 content absolute mt-72 pt-40" ref={textRef3}>
               <p className="content__title" data-effect16>
                 In the embrace of Japan&apos;s countryside, where the whispers
                 of nature spoke in a language as ancient as time itself, I found
