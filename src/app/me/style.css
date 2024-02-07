@@ -354,6 +354,14 @@ figcaption{
 		font-size: 25px;
 	}
 
+	.lol{
+		margin-top: 21rem;
+	}
+
+	.lel{
+		margin-top: -28vh;
+	}
+
 	#printemps{
 		position: relative;
 		margin-top: -420px;
@@ -523,7 +531,7 @@ figcaption{
 	}
 	
 	.lul{
-		top:0;
+		top:47vh;
 		margin-top:0vh;
 	}
 	
@@ -537,8 +545,10 @@ figcaption{
 	}
 	
 	#p3{
-		top: 0;
 		height: 250vh;
+	}
+	.element3{
+		padding-top: 24vh;
 	}
 	
 	#p2{
