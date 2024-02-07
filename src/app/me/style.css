@@ -49,22 +49,7 @@ figcaption{
 	padding-top: 1px;
 }
 
-@media (max-width: 760px) { 
-	body{
-		font-size: var(--font-size);
-	}
-	#Me{
-		padding: 1px 0 0 0;
-		font-size: var(--font-size);
-	}
-	.echo{
-		width: 100vw;
-	}
-	.content__title{
-		font-size: 17px;
-	}
 
-}
 
 
 @media (max-width: 1550px) { 
@@ -339,4 +324,248 @@ figcaption{
 }
 .p10{
 	height: 300vh;
+}
+
+
+@media (max-width: 760px) { 
+	body{
+		font-size: var(--font-size);
+	}
+	#Me{
+		padding: 1px 0 0 0;
+		font-size: var(--font-size);
+	}
+	.echo{
+		width: 100vw;
+		top: 0;
+	}
+	#section{
+		top: 0;
+		font-size: var(--font-size);
+		height: 110vh;
+	}
+
+	#parg1{
+		font-size: var(--font-size);
+		margin-top: 22vh;
+	}
+
+	.lined{
+		font-size: 25px;
+	}
+
+	#printemps{
+		position: relative;
+		margin-top: -420px;
+		font-size: 27px;
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+		}
+		#printemps::after {
+		  content: attr(data-hover);
+		  font-size: 32px;
+		  font-weight: 500;
+		  margin-left: 24px;
+		  height: 80vh;
+		  writing-mode: vertical-rl;
+		  text-orientation: upright;
+		  visibility: hidden;
+		  opacity: 0;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  transition: opacity 0.5s, visibility 0.5s;
+		}
+	  
+		#printemps:hover::after {
+		  visibility: visible;
+		  opacity: 1;
+		}
+	  
+		#printemps:hover {
+		  visibility: hidden;
+		}
+	  
+	.content__title{
+		font-size: 17px;
+	}
+
+	.grid__item-img {
+		position: relative;
+		width: calc(408px/1.5);
+		height: calc(716px/1.5);
+		aspect-ratio: 1;
+		background-size: contain;
+		background-position: 50% 50%;
+		will-change: transform, opacity;
+		border: 5px solid white;
+		opacity: 1;
+	}
+	
+	.grid__item-img1 {
+		position: relative;
+		width: auto;
+		height: auto;
+		aspect-ratio: 1;
+		background-size: contain;
+		background-position: 50% 50%;
+		will-change: transform, opacity;
+		border: 5px solid white;
+		opacity: 1;
+	}
+	
+	.grid__item-img2 {
+		position: relative;
+		width: 773px;
+		height: 618px;
+		aspect-ratio: 1;
+		background-size: contain;
+		background-position: 50% 50%;
+		will-change: transform, opacity;
+		border: 5px solid white;
+	}
+	
+	.grid__item-img3 {
+		position: relative;
+		width: calc(1207px/1.5);
+		height: calc(966px/1.5);
+		aspect-ratio: 1;
+		background-size: contain;
+		background-position: 50% 50%;
+		will-change: transform, opacity;
+		border: 5px solid white;
+	}
+	
+	.grid__item-img4 {
+		position: relative;
+		width: calc(1920px /3);
+		height: calc(2245px/3);
+		aspect-ratio: 1;
+		background-size: contain;
+		background-position: 50% 50%;
+		will-change: transform, opacity;
+		border: 5px solid white;
+	}
+	
+	.grid__item-img5 {
+		position: relative;
+		width: calc(1602px/3);
+		height: calc(2290px/3);
+		aspect-ratio: 1;
+		background-size: contain;
+		background-position: 50% 50%;
+		will-change: transform, opacity;
+		border: 5px solid white;
+	}
+	
+	.grid__item-img6 {
+		position: relative;
+		height: calc(1728px/2.75);
+		width: calc(2592px/2.75);
+		aspect-ratio: 1;
+		background-size: contain;
+		background-position: 50% 50%;
+		will-change: transform, opacity;
+		border: 5px solid white;
+	}
+	
+	.grid__item-img7 {
+		position: relative;
+		width: calc(1728px/3.25);
+		height: calc(2540px/3.25);
+		aspect-ratio: 1;
+		background-size: contain;
+		background-position: 50% 50%;
+		will-change: transform, opacity;
+		border: 5px solid white;
+	}
+	
+	.grid__item-img8 {
+		position: relative;
+		width: calc(1728px/3.25);
+		height: calc(2570px/3.25);
+		aspect-ratio: 1;
+		background-size: contain;
+		background-position: 50% 50%;
+		will-change: transform, opacity;
+		border: 5px solid white;
+	}
+	
+	.grid__item-img9 {
+		position: relative;
+		width: 600px;
+		height: 790px;
+		aspect-ratio: 1;
+		background-size: contain;
+		background-position: 50% 50%;
+		will-change: transform, opacity;
+		border: 5px solid white;
+	}
+	
+	.grid__item-img10 {
+		position: relative;
+		width: calc(1024px/1.5);
+		height: calc(1024px/1.5);
+		aspect-ratio: 1;
+		background-size: contain;
+		background-position: 50% 50%;
+		will-change: transform, opacity;
+		border: 5px solid white;
+	}
+
+	.lel{
+		top: 0;
+		margin-top: -45vh;
+	}
+	
+	.lil{
+		height: 400vh;
+	}
+	
+	.lul{
+		top:0;
+		margin-top:0vh;
+	}
+	
+	.grid{
+		z-index: 40;
+	}
+	
+	#t3{
+		top: 0;
+		margin-top: -40vh;
+	}
+	
+	#p3{
+		top: 0;
+		height: 250vh;
+	}
+	
+	#p2{
+		height: 250vh;
+	}
+	
+	.p4{
+		height: 150vh;
+	}
+	
+	.p5{
+		height: 200vh;
+	}
+	.p6{
+		height: 220vh;
+	}
+	.p7{
+		height: 240vh;
+	}
+	.p8{
+		height: 200vh;
+	}
+	.p9{
+		height: 175vh;
+	}
+	.p10{
+		height: 300vh;
+	}	
+
 }
