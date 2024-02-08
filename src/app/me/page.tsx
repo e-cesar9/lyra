@@ -76,7 +76,7 @@ const DiaryPage: React.FC = () => {
         const fx11Titles = textRef.current.querySelectorAll(
           ".content__title[data-effect16]",
         )
-          gsap.set(fx11Titles, {opacity:1})
+        gsap.set(textRef.current, {opacity:1})
         fx11Titles.forEach((title) => {
           gsap.fromTo(
             title,
@@ -979,7 +979,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div id="p3" className=" relative">
+        <div id="p3" className="relative">
           <div className="element3 flex relative flex-col items-center w-full justify-center">
             <div className="grid3 ">
               <img
