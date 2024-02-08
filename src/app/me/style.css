@@ -611,5 +611,72 @@ display: flex;
 		margin-left: 2rem;
 		margin-right: 2rem;
 	}
+
+	.echo{
+		display: flex;
+		height: 100vh;
+	}
+	
+	#hello{
+		height: 100vh;
+	}
+	
+	#t3{
+		top: 0;
+		margin-top: -49vh;
+	}
+	
+	.txt3{
+		top: 0;
+		margin-top: -8vh;
+	}
+	
+	#p2{
+		height: 250vh;
+	}
+	
+	#p3{
+		top: 0;
+		height: 222vh;
+	}
+	
+	.p4{
+		height: 130vh;
+	}
+	
+	.p5{
+		height: 168vh;
+	}
+	.p6{
+		height: 215vh;
+	}
+	#t6{
+		margin-top: -5vh;
+	}
+	
+	.p7{
+		height: 240vh;
+	}
+	#t7{
+		margin-top: 2.5vh;
+	}
+	.p8{
+		height: 180vh;
+	}
+	#t8{
+		margin-top: 2vh;
+	}
+	.p9{
+		height: 160vh;
+	}
+	#t9{
+		margin-top: 1.5vh;
+	}
+	.p10{
+		height: 320vh;
+	}
+	#t10{
+		margin-top: -3vh;
+	}
 	
 }
