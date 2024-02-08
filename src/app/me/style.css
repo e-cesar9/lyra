@@ -599,7 +599,7 @@ display: flex;
 }
 
 @media (max-width: 1550px) { 
-	body{
+	/* body{
 		font-size: var(--font-size);
 	}
 	#Me{
@@ -631,7 +631,6 @@ display: flex;
 	}
 
 	.txt3{
-		/* top: 0; */
 		margin-top: -6vh;
 	}
 
@@ -640,7 +639,6 @@ display: flex;
 	}
 	
 	#t3{
-		/* top: 0; */
 		margin-top: 0;
 	}
 	
@@ -654,7 +652,6 @@ display: flex;
 	}
 
 	#t4{
-		/* top: 0; */
 		margin-top: -1vh;
 	}
 	
@@ -669,7 +666,6 @@ display: flex;
 		height: 265vh;
 	}
 	#t6{
-		/* top: 0; */
 		margin-top: 5vh;
 	}
 	.p7{
@@ -697,5 +693,5 @@ display: flex;
 	#t10{
 		margin-top: -3vh;
 	}
-	
+	 */
 }
