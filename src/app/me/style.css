@@ -49,34 +49,10 @@ figcaption{
 	padding-top: 1px;
 }
 
-
-
-
-@media (max-width: 1550px) { 
-	body{
-		font-size: var(--font-size);
-	}
-	#Me{
-		padding: 1px 0 0 0;
-		font-size: var(--font-size);
-	}
-	.echo{
-		width: 100vw;
-	}
-	.content__title{
-		font-size: var(--font-size);
-	}
-	
-}
-
 .lined{
 	line-height:2em;
 	letter-spacing: .1em;
 	font-size: 38px;
-}
-
-.lined.inside{
-	padding: 0!important;
 }
 
 
@@ -283,10 +259,6 @@ figcaption{
 .lul{
 	top:0;
 	margin-top:0vh;
-}
-
-.grid{
-	z-index: 40;
 }
 
 #t3{
@@ -539,6 +511,10 @@ figcaption{
 	.lal{
 		height: 300vh;
 	}
+
+	.lvl{
+		height: 225vh;
+	}
 	
 	.lul{
 		top:47vh;
@@ -602,4 +578,21 @@ figcaption{
 		height: 300vh;
 	}	
 
+}
+
+@media (max-width: 1550px) { 
+	body{
+		font-size: var(--font-size);
+	}
+	#Me{
+		padding: 1px 0 0 0;
+		font-size: var(--font-size);
+	}
+	.echo{
+		width: 100vw;
+	}
+	.content__title{
+		font-size: var(--font-size);
+	}
+	
 }
