@@ -27,7 +27,7 @@ const DiaryPage: React.FC = () => {
   let textRef11 = React.useRef(null)
 
   React.useLayoutEffect(() => {
-    gsap.set('#intro', {opacity:1})
+
     const splitText = async () => {
       const {default: Splitting} = await import("splitting")
       if (titleRef.current) {
@@ -37,7 +37,7 @@ const DiaryPage: React.FC = () => {
         )
         // gsap.set(titleRef.current, {opacity:1})
 
-
+        gsap.set('#intro', {opacity:1})
         fx25Titles.forEach((letter) => {
           const letters = letter.querySelectorAll("span.char")
           gsap.fromTo(
