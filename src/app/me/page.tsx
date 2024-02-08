@@ -966,7 +966,7 @@ const DiaryPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="txt3 content absolute" ref={textRef3}>
+            <div className="lul content absolute" ref={textRef3}>
               <p className="content__title" data-effect16>
                 In the embrace of Japan&apos;s countryside, where the whispers
                 of nature spoke in a language as ancient as time itself, I found
