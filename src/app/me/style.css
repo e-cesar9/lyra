@@ -336,7 +336,7 @@ display: flex;
 	}
 
 	#parg1{
-		margin-top: 17vh;
+		margin-top: 12vh;
 	}
 
 	.lined{
@@ -362,7 +362,7 @@ display: flex;
 		  content: attr(data-hover);
 		  font-size: 27px;
 		  font-weight: 500;
-		  margin-left: 12px;
+		  margin-left: 6px;
 		  height: 80vh;
 		  writing-mode: vertical-rl;
 		  text-orientation: upright;
@@ -521,33 +521,33 @@ display: flex;
 
 	.txt3{
 		top: 0;
-		margin-top: -5vh;
+		margin-top: 5vh;
 	}
 
 	.p1{
-		height: 165vh;
+		height: 160vh;
 	}
 	
 	#t3{
 		top: 0;
-		margin-top: 0vh;
+		margin-top: 10vh;
 	}
 	
 	#p3{
-		height: 250vh;
+		height: 265vh;
 	}
 	
 	#p2{
-		height: 300vh;
+		height: 265vh;
 	}
 
 	#t4{
 		top: 0;
-		margin-top: -3vh;
+		margin-top: 0vh;
 	}
 	
 	.p4{
-		height: 170vh;
+		height: 150vh;
 	}
 	
 	.p5{
@@ -558,10 +558,10 @@ display: flex;
 	}
 	#t6{
 		top: 0;
-		margin-top: 5vh;
+		margin-top: 20vh;
 	}
 	.p7{
-		height: 280vh;
+		height: 290vh;
 	}
 	#t7{
 		margin-top: 2vh;
