@@ -306,6 +306,10 @@ display: flex;
 		padding: 1px 0 0 0;
 		font-size: var(--font-size);
 	}
+
+	.quotes{
+		font-size: 21px;
+	}
 	.echo{
 		width: 100vw;
 		top: 0;
@@ -342,7 +346,7 @@ display: flex;
 		}
 		#printemps::after {
 		  content: attr(data-hover);
-		  font-size: 32px;
+		  font-size: 27px;
 		  font-weight: 500;
 		  margin-left: 24px;
 		  height: 80vh;
