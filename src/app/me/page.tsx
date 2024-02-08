@@ -27,16 +27,16 @@ const DiaryPage: React.FC = () => {
   let textRef11 = React.useRef(null)
 
   React.useLayoutEffect(() => {
+    gsap.set('#intro', {opacity:1})
     const splitText = async () => {
       const {default: Splitting} = await import("splitting")
-
       if (titleRef.current) {
         Splitting({target: titleRef.current, by: "chars"})
         const fx25Titles = titleRef.current.querySelectorAll(
           ".content__title[data-effect25]",
         )
-        gsap.set(titleRef.current, {opacity:1})
-        gsap.set('#intro', {opacity:1})
+        // gsap.set(titleRef.current, {opacity:1})
+
 
         fx25Titles.forEach((letter) => {
           const letters = letter.querySelectorAll("span.char")
@@ -223,8 +223,8 @@ const DiaryPage: React.FC = () => {
               filter: "blur(0px)",
               scrollTrigger: {
                 trigger: blocx,
-                start: "top+=85% bottom",
-                end: "top+=45% top",
+                start: "top+=80% bottom",
+                end: "top+=40% top",
                 scrub: true,
               },
             },
@@ -242,8 +242,8 @@ const DiaryPage: React.FC = () => {
               stagger: 0.05,
               scrollTrigger: {
                 trigger: textRef4.current,
-                start: "top+=15% bottom-=200%",
-                end: "bottom+=70% top+=40%",
+                start: "top+=5% bottom-=200%",
+                end: "bottom+=55% top+=40%",
                 scrub: true,
               },
             },
