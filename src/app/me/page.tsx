@@ -138,7 +138,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=85% bottom",
                 end: "top+=45% top",
                 scrub: true,
-                markers: true,
+                //  
               },
             },
           )
@@ -158,7 +158,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=15% bottom-=200%",
                 end: "bottom+=70% top+=40%",
                 scrub: true,
-                                markers: true,
+                                 
 
               },
             },
@@ -184,7 +184,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=80% bottom",
                 end: "top+=35% top",
                 scrub: true,
-                markers: true,
+                 
               },
             },
           )
@@ -204,7 +204,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=15% bottom-=200%",
                 end: "bottom+=60% top+=40%",
                 scrub: true,
-                markers: true,
+                 
 
               },
             },
@@ -230,7 +230,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=60% bottom",
                 end: "top+=35% top",
                 scrub: true,
-                markers: true,
+                 
               },
             },
           )
@@ -250,7 +250,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=15% bottom-=200%",
                 end: "bottom+=45% top+=40%",
                 scrub: true,
-                markers: true,
+                 
               },
             },
           )
@@ -275,7 +275,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=60% bottom",
                 end: "top+=15% top",
                 scrub: true,
-                // markers: true,
+                //  
               },
             },
           )
@@ -295,7 +295,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=10% bottom-=200%",
                 end: "bottom+=65% top+=40%",
                 scrub: true,
-                markers: true,
+                 
 
               },
             },
@@ -321,7 +321,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=90% bottom",
                 end: "top+=15% top",
                 scrub: true,
-                markers: true,
+                 
               },
             },
           )
@@ -341,7 +341,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=10% bottom-=200%",
                 end: "bottom+=55% top+=40%",
                 scrub: true,
-                markers: true,
+                 
 
               },
             },
@@ -367,7 +367,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=60% bottom",
                 end: "top+=20% top",
                 scrub: true,
-                markers: true,
+                 
               },
             },
           )
@@ -387,7 +387,7 @@ const DiaryPage: React.FC = () => {
                 start: "top bottom-=200%",
                 end: "bottom+=40% top+=40%",
                 scrub: true,
-                markers: true,
+                 
 
               },
             },
@@ -413,7 +413,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=50% bottom",
                 end: "top+=10% top",
                 scrub: true,
-                markers: true,
+                 
               },
             },
           )
@@ -433,7 +433,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=5% bottom-=200%",
                 end: "bottom+=50% top+=40%",
                 scrub: true,
-                markers: true,
+                 
               },
             },
           )
@@ -458,7 +458,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=90% bottom",
                 end: "top+=45% top",
                 scrub: true,
-                markers: true,
+                 
               },
             },
           )
@@ -478,7 +478,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=15% bottom-=200%",
                 end: "bottom+=60% top+=40%",
                 scrub: true,
-                markers: true,
+                 
               },
             },
           )
@@ -503,7 +503,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=90% bottom",
                 end: "top+=45% top",
                 scrub: true,
-                markers: true,
+                 
               },
             },
           )
@@ -523,7 +523,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=15% bottom-=200%",
                 end: "bottom+=60% top+=40%",
                 scrub: true,
-                markers: true,
+                 
 
               },
             },
@@ -549,7 +549,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=80% bottom",
                 end: "top+=35% top",
                 scrub: true,
-                markers: true,
+                 
               },
             },
           )
@@ -569,7 +569,7 @@ const DiaryPage: React.FC = () => {
                 start: "top+=10% bottom-=200%",
                 end: "bottom+=45% top+=40%",
                 scrub: true,
-                markers: true,
+                 
               },
             },
           )
@@ -663,7 +663,7 @@ const DiaryPage: React.FC = () => {
         pin: ".echo",
         animation: animation,
         scrub: true,
-        markers: true,
+         
       })
 
       const animation1 = gsap.to(".grid1", {
@@ -680,7 +680,7 @@ const DiaryPage: React.FC = () => {
         pin: ".p1",
         animation: animation1,
         scrub: true,
-        markers: true,
+         
       })
     })
 
@@ -698,7 +698,7 @@ const DiaryPage: React.FC = () => {
       pin: "#p2",
       animation: animation2,
       scrub: true,
-      markers: true,
+       
     })
 
     const animation3 = gsap.to(".grid3", {
@@ -715,7 +715,7 @@ const DiaryPage: React.FC = () => {
       pin: "#p3",
       animation: animation3,
       scrub: true,
-      markers: true,
+       
     })
 
     const animation4 = gsap.to(".grid4", {
@@ -732,7 +732,7 @@ const DiaryPage: React.FC = () => {
       pin: ".p4",
       animation: animation4,
       scrub: true,
-      // markers: true,
+      //  
     })
 
     const animation5 = gsap.to(".grid5", {
@@ -749,7 +749,7 @@ const DiaryPage: React.FC = () => {
       pin: ".p5",
       animation: animation5,
       scrub: true,
-      // markers: true,
+      //  
     })
 
     const animation6 = gsap.to(".grid6", {
@@ -766,7 +766,7 @@ const DiaryPage: React.FC = () => {
       pin: ".p6",
       animation: animation6,
       scrub: true,
-      markers: true,
+       
     })
 
     const animation7 = gsap.to(".grid7", {
@@ -783,7 +783,7 @@ const DiaryPage: React.FC = () => {
       pin: ".p7",
       animation: animation7,
       scrub: true,
-      markers: true,
+       
     })
 
     const animation8 = gsap.to(".grid8", {
@@ -800,7 +800,7 @@ const DiaryPage: React.FC = () => {
       pin: ".p8",
       animation: animation8,
       scrub: true,
-      markers: true,
+       
     })
 
     const animation9 = gsap.to(".grid9", {
@@ -817,7 +817,7 @@ const DiaryPage: React.FC = () => {
       pin: ".p9",
       animation: animation9,
       scrub: true,
-      markers: true,
+       
     })
 
     const animation10 = gsap.to(".grid10", {
@@ -834,7 +834,7 @@ const DiaryPage: React.FC = () => {
       pin: ".p10",
       animation: animation10,
       scrub: true,
-      markers: true,
+       
     })
 
     return () => ctx.revert()
