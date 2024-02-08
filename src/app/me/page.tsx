@@ -72,13 +72,11 @@ const DiaryPage: React.FC = () => {
 
       if (textRef.current) {
         Splitting({target: textRef.current, by:"words"})
-        Splitting({target: textRef2.current, by: "words"})
+
         const fx11Titles = textRef.current.querySelectorAll(
           ".content__title[data-effect16]",
         )
-        const fx12Titles = textRef2.current.querySelectorAll(
-          ".content__title[data-effect16]",
-        )
+
 
         fx11Titles.forEach((title) => {
           gsap.fromTo(
@@ -119,7 +117,13 @@ const DiaryPage: React.FC = () => {
             },
           )
         })
+      }
 
+        if (textRef2.current) {
+        Splitting({target: textRef2.current, by: "words"})
+        const fx12Titles = textRef2.current.querySelectorAll(
+          ".content__title[data-effect16]",
+        )
         fx12Titles.forEach((block) => {
           gsap.fromTo(
             block,
