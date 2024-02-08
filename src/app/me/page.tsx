@@ -563,7 +563,7 @@ const DiaryPage: React.FC = () => {
               scrollTrigger: {
                 trigger: textRef11.current,
                 start: "top+=10% bottom-=200%",
-                end: "bottom+=43% top+=40%",
+                end: "bottom+=45% top+=40%",
                 scrub: true,
                 markers: true,
               },
@@ -655,7 +655,7 @@ const DiaryPage: React.FC = () => {
       ScrollTrigger.create({
         trigger: ".wrap",
         start: "top top-=5%",
-        end: "bottom+=210% bottom+=5%",
+        end: "bottom+=250% bottom+=5%",
         pin: ".echo",
         animation: animation,
         scrub: true,
