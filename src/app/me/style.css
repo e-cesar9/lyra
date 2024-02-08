@@ -521,7 +521,7 @@ display: flex;
 
 	.txt3{
 		/* top: 0; */
-		margin-top: -4vh;
+		margin-top: -6vh;
 	}
 
 	.p1{
@@ -530,7 +530,7 @@ display: flex;
 	
 	#t3{
 		/* top: 0; */
-		margin-top: 5vh;
+		margin-top: 3vh;
 	}
 	
 	#p3{
@@ -554,11 +554,11 @@ display: flex;
 		height: 200vh;
 	}
 	.p6{
-		height: 270vh;
+		height: 265vh;
 	}
 	#t6{
 		/* top: 0; */
-		margin-top: 10vh;
+		margin-top: 5vh;
 	}
 	.p7{
 		height: 290vh;
