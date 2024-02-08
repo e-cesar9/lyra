@@ -186,6 +186,24 @@ figcaption{
 	border: 5px solid white;
 }
 
+.lal{
+	height: 300vh;
+}
+
+.lvl{
+	height: 225vh;
+}
+
+.lul{
+	top:47vh;
+	margin-top:0vh;
+}
+
+.lxl{
+	top:30vh;
+	margin-top:0vh;
+}
+
 .photo{
 	border: 5px solid white;
   }
