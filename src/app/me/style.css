@@ -223,40 +223,28 @@ text-orientation: upright;
 	border: 5px solid white;
 }
 
-/* .lal{
-	height: 300vh;
-} */
-
-/* .lvl{
-	height: 225vh;
-} */
-
 .lul{
 	top:0vh;
 	margin-top:0vh;
 }
 
-/* .lxl{
-	top:30vh;
-	margin-top:0vh;
-} */
 
 .photo{
 	border: 5px solid white;
   }
   
 
-  #parg1{
-	margin-top: -22vh;
-  }
+#parg1{
+margin-top: -22vh;
+}
 
-  .swap{
-	position: absolute;
-  }
+.swap{
+position: absolute;
+}
 
-  .wrap{
-	display: flex;
-  }
+.wrap{
+display: flex;
+}
 
 .echo{
 	display: flex;
@@ -265,11 +253,6 @@ text-orientation: upright;
 
 #hello{
 	height: 100vh;
-}
-
-
-.lil{
-	height: 400vh;
 }
 
 #t3{
@@ -311,7 +294,7 @@ text-orientation: upright;
 	height: 160vh;
 }
 .p10{
-	height: 255vh;
+	height: 265vh;
 }
 
 
@@ -508,32 +491,9 @@ text-orientation: upright;
 		will-change: transform, opacity;
 		border: 5px solid white;
 	}
-
-	.lel{
-		top: 0;
-		margin-top: -45vh;
-	}
-
-	
-	.lil{
-		height: 400vh;
-	}
-
-	.lal{
-		height: 300vh;
-	}
-
-	.lvl{
-		height: 225vh;
-	}
 	
 	.lul{
 		top:50vh;
-		margin-top:0vh;
-	}
-
-	.lxl{
-		top:30vh;
 		margin-top:0vh;
 	}
 	
@@ -541,13 +501,13 @@ text-orientation: upright;
 		z-index: 40;
 	}
 
-	/* .txt2{
-		margin-top: 40vh;
-	} */
-
 	.txt3{
 		top: 0;
 		margin-top: -5vh;
+	}
+
+	.p1{
+		height: 200vh;
 	}
 	
 	#t3{
