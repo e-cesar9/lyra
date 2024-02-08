@@ -318,7 +318,7 @@ display: flex;
 
 	#parg1{
 		/* font-size: var(--font-size); */
-		margin-top: 22vh;
+		margin-top: 16vh;
 	}
 
 	.lined{
@@ -507,7 +507,7 @@ display: flex;
 	}
 
 	.p1{
-		height: 200vh;
+		height: 175vh;
 	}
 	
 	#t3{
@@ -523,11 +523,11 @@ display: flex;
 	}
 	
 	#p2{
-		height: 275vh;
+		height: 300vh;
 	}
 	
 	.p4{
-		height: 200vh;
+		height: 180vh;
 	}
 	
 	.p5{
@@ -537,16 +537,16 @@ display: flex;
 		height: 250vh;
 	}
 	.p7{
-		height: 260vh;
+		height: 280vh;
 	}
 	.p8{
-		height: 200vh;
+		height: 220vh;
 	}
 	.p9{
 		height: 195vh;
 	}
 	.p10{
-		height: 250vh;
+		height: 350vh;
 	}	
 
 }
