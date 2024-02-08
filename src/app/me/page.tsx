@@ -931,7 +931,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content absolute" ref={textRef3}>
+          <div className="txt3 lul content absolute" ref={textRef3}>
             <p className="content__title" data-effect16>
               In the embrace of Japan&apos;s countryside, where the whispers of
               nature spoke in a language as ancient as time itself, I found an
@@ -1182,7 +1182,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content absolute" ref={textRef7}>
+          <div id="t6" className="lul content absolute" ref={textRef7}>
             <div className="content__title" data-effect16>
               My first encounter with America was a vivid tapestry of
               experiences, each more intense and enlightening than the last. New
@@ -1250,7 +1250,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content absolute" ref={textRef8}>
+          <div id="t7" className="lul content absolute" ref={textRef8}>
             <p className="content__title" data-effect16>
               In America, I embraced the force of entrepreneurship — that
               intrepid spirit which seemed to rise from the very ground of
@@ -1441,7 +1441,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content absolute" ref={textRef11}>
+          <div id="t10" className="lul content absolute" ref={textRef11}>
             <div className="content__title" data-effect16>
               The world, indeed, does not always extend its arms in welcome to
               the novelties of new talent and fresh creations. These fragile
