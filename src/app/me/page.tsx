@@ -53,7 +53,7 @@ const DiaryPage: React.FC = () => {
               scrollTrigger: {
                 trigger: ".echo",
                 start: "start",
-                end: "bottom-=20%",
+                end: "bottom",
                 scrub: true,
                 // pin: letter,
               },
