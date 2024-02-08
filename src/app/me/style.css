@@ -284,10 +284,6 @@ figcaption{
 	margin-top: -45vh;
 }
 
-#p3{
-	top: 0;
-	height: 250vh;
-}
 
 .txt3{
 	top: 0;
@@ -295,15 +291,19 @@ figcaption{
 }
 
 #p2{
-	height: 250vh;
+	height: 275vh;
+}
+#p3{
+	top: 0;
+	height: 240vh;
 }
 
 .p4{
-	height: 150vh;
+	height: 145vh;
 }
 
 .p5{
-	height: 200vh;
+	height: 195vh;
 }
 .p6{
 	height: 220vh;
@@ -312,13 +312,13 @@ figcaption{
 	height: 240vh;
 }
 .p8{
-	height: 200vh;
+	height: 190vh;
 }
 .p9{
-	height: 175vh;
+	height: 170vh;
 }
 .p10{
-	height: 275vh;
+	height: 260vh;
 }
 
 
