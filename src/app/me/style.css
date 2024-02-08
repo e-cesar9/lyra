@@ -360,9 +360,9 @@ display: flex;
 		}
 		#printemps::after {
 		  content: attr(data-hover);
-		  font-size: 27px;
+		  font-size: 21px;
 		  font-weight: 500;
-		  margin-left: 6px;
+		  margin-left: 4px;
 		  height: 80vh;
 		  writing-mode: vertical-rl;
 		  text-orientation: upright;
@@ -520,7 +520,7 @@ display: flex;
 	}
 
 	.txt3{
-		top: 0;
+		/* top: 0; */
 		margin-top: 5vh;
 	}
 
@@ -529,7 +529,7 @@ display: flex;
 	}
 	
 	#t3{
-		top: 0;
+		/* top: 0; */
 		margin-top: 10vh;
 	}
 	
@@ -542,7 +542,7 @@ display: flex;
 	}
 
 	#t4{
-		top: 0;
+		/* top: 0; */
 		margin-top: 0vh;
 	}
 	
@@ -557,7 +557,7 @@ display: flex;
 		height: 250vh;
 	}
 	#t6{
-		top: 0;
+		/* top: 0; */
 		margin-top: 20vh;
 	}
 	.p7{
