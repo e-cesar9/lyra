@@ -521,7 +521,7 @@ display: flex;
 
 	.txt3{
 		/* top: 0; */
-		margin-top: 0vh;
+		margin-top: -4vh;
 	}
 
 	.p1{
@@ -538,7 +538,7 @@ display: flex;
 	}
 	
 	#p2{
-		height: 285vh;
+		height: 295vh;
 	}
 
 	#t4{
@@ -554,11 +554,11 @@ display: flex;
 		height: 200vh;
 	}
 	.p6{
-		height: 260vh;
+		height: 280vh;
 	}
 	#t6{
 		/* top: 0; */
-		margin-top: 30vh;
+		margin-top: 10vh;
 	}
 	.p7{
 		height: 290vh;
@@ -570,7 +570,7 @@ display: flex;
 		height: 215vh;
 	}
 	#t8{
-		margin-top: 0vh;
+		margin-top: 2vh;
 	}
 	.p9{
 		height: 195vh;
