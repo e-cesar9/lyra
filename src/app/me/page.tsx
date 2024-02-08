@@ -76,7 +76,7 @@ const DiaryPage: React.FC = () => {
         const fx11Titles = textRef.current.querySelectorAll(
           ".content__title[data-effect16]",
         )
-
+          gsap.set(fx11Titles, {opacity:1})
         fx11Titles.forEach((title) => {
           gsap.fromTo(
             title,

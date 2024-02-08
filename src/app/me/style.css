@@ -58,6 +58,10 @@ figcaption{
 #h1{
 	font-size: 52px;
 	}
+
+	#intro{
+		opacity: 0;
+	}
 	
 #printemps{
 position: relative;
