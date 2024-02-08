@@ -55,6 +55,43 @@ figcaption{
 	font-size: 38px;
 }
 
+#h1{
+	font-size: 52px;
+	}
+	
+#printemps{
+position: relative;
+margin-top: -360px;
+font-size: 72px;
+writing-mode: vertical-rl;
+text-orientation: upright;
+}
+#printemps::after {
+	content: attr(data-hover);
+	font-size: 32px;
+	font-weight: 500;
+	margin-left: 24px;
+	height: 80vh;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: opacity 0.5s, visibility 0.5s;
+}
+
+#printemps:hover::after {
+	visibility: visible;
+	opacity: 1;
+}
+
+#printemps:hover {
+	visibility: hidden;
+}
+
+
 
 .content__title{
 	margin: var(--margin);
@@ -208,41 +245,6 @@ figcaption{
 	border: 5px solid white;
   }
   
-  #h1{
-  font-size: 52px;
-  }
-  
-  #printemps{
-  position: relative;
-  margin-top: -360px;
-  font-size: 72px;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  }
-  #printemps::after {
-	content: attr(data-hover);
-	font-size: 32px;
-	font-weight: 500;
-	margin-left: 24px;
-	height: 80vh;
-	writing-mode: vertical-rl;
-	text-orientation: upright;
-	visibility: hidden;
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	transition: opacity 0.5s, visibility 0.5s;
-  }
-
-  #printemps:hover::after {
-	visibility: visible;
-	opacity: 1;
-  }
-
-  #printemps:hover {
-	visibility: hidden;
-  }
 
   #parg1{
 	margin-top: -22vh;
@@ -284,18 +286,18 @@ figcaption{
 	margin-top: -45vh;
 }
 
-
 .txt3{
 	top: 0;
 	margin-top: 0;
 }
 
 #p2{
-	height: 275vh;
+	height: 265vh;
 }
+
 #p3{
 	top: 0;
-	height: 240vh;
+	height: 235vh;
 }
 
 .p4{
@@ -303,7 +305,7 @@ figcaption{
 }
 
 .p5{
-	height: 195vh;
+	height: 185vh;
 }
 .p6{
 	height: 220vh;
@@ -312,13 +314,13 @@ figcaption{
 	height: 240vh;
 }
 .p8{
-	height: 190vh;
+	height: 180vh;
 }
 .p9{
 	height: 170vh;
 }
 .p10{
-	height: 260vh;
+	height: 255vh;
 }
 
 
