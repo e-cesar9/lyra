@@ -607,9 +607,9 @@ display: flex;
 		font-size: var(--font-size);
 	}
 	.content__title{
-		font-size: var(--font-size);
-		margin-left: 5rem;
-		margin-right: 5rem;
+		font-size: 14px;
+		margin-left: 2rem;
+		margin-right: 2rem;
 	}
 	
 }
