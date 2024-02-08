@@ -1323,7 +1323,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content absolute" ref={textRef9}>
+          <div id="t8" className="lul content absolute" ref={textRef9}>
             <div className="content__title" data-effect16>
               The cornerstone of our studio&apos;s philosophy is rooted in the
               dual virtues of audacity and curiosity — a blend of fearless
@@ -1383,7 +1383,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content absolute" ref={textRef10}>
+          <div id="t9" className="lul content absolute" ref={textRef10}>
             <div className="content__title" data-effect16>
               In our pursuit of excellence, we align ourselves with the finest
               talents, guiding them, learning from them, and forever seeking

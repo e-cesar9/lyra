@@ -257,13 +257,13 @@ display: flex;
 
 #t3{
 	top: 0;
-	margin-top: -45vh;
+	margin-top: -48vh;
 }
 
-/* .txt3{
+.txt3{
 	top: 0;
-	margin-top: 0;
-} */
+	margin-top: -7vh;
+}
 
 #p2{
 	height: 250vh;
@@ -271,7 +271,7 @@ display: flex;
 
 #p3{
 	top: 0;
-	height: 225vh;
+	height: 222vh;
 }
 
 .p4{
@@ -279,22 +279,38 @@ display: flex;
 }
 
 .p5{
-	height: 170vh;
+	height: 168vh;
 }
 .p6{
 	height: 215vh;
 }
+#t6{
+	margin-top: -3vh;
+}
+
 .p7{
 	height: 240vh;
+}
+#t7{
+	margin-top: 2vh;
 }
 .p8{
 	height: 180vh;
 }
+#t8{
+	margin-top: 1vh;
+}
 .p9{
 	height: 160vh;
 }
+#t9{
+	margin-top: 1vh;
+}
 .p10{
 	height: 320vh;
+}
+#t10{
+	margin-top: -2vh;
 }
 
 
@@ -346,7 +362,7 @@ display: flex;
 		  content: attr(data-hover);
 		  font-size: 27px;
 		  font-weight: 500;
-		  margin-left: 24px;
+		  margin-left: 12px;
 		  height: 80vh;
 		  writing-mode: vertical-rl;
 		  text-orientation: upright;
@@ -540,21 +556,28 @@ display: flex;
 	.p6{
 		height: 250vh;
 	}
-	.p7{
-		height: 280vh;
-	}
 	#t6{
 		top: 0;
 		margin-top: 5vh;
 	}
-	.p8{
-		height: 215vh;
+	.p7{
+		height: 280vh;
 	}
 	#t7{
 		margin-top: 2vh;
 	}
+	.p8{
+		height: 215vh;
+	}
+	#t8{
+		margin-top: 0vh;
+	}
 	.p9{
 		height: 195vh;
+	}
+
+	#t9{
+		margin-top: 0vh;
 	}
 	.p10{
 		height: 350vh;
