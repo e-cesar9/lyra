@@ -677,7 +677,7 @@ const DiaryPage: React.FC = () => {
         trigger: ".element1",
         start: "top+=10% top",
         end: "bottom+=220% bottom",
-        pin: ".element1",
+        pin: ".p1",
         animation: animation1,
         scrub: true,
         markers: true,
@@ -908,10 +908,9 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative mt-96 py-96">
-          <div className="element1 flex relative flex-wrap flex-col items-center w-full pt-40 justify-center">
+        <div className="p1 lil relative pt-64">
+          <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid1">
-              <div className="grid__item">
                 <img
                   className="grid__item-img1"
                   src="/AnIncredibleLife/LYH_1940_visuel_v002-min.jpg"
@@ -922,7 +921,7 @@ const DiaryPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="lol content mt-40 pt-40 absolute" ref={textRef2}>
+            <div className="lul content absolute" ref={textRef2}>
               <p className="content__title" data-effect16>
                 In the tender years of my youth, my memories of my father were
                 akin to fleeting glimpses of a distant dream — fragmented yet
@@ -952,12 +951,11 @@ const DiaryPage: React.FC = () => {
               </p>
             </div>
           </div>
-        </div>
 
-        <div id="p2" className="relative">
-          <div className="element2 flex relative flex-wrap flex-col items-center w-full pt-40 justify-center">
+
+        <div id="p2" className="relative lil relative pt-64">
+          <div className="element2 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid2">
-              <div className="grid__item">
                 <img
                   className="grid__item-img2"
                   src="/AnIncredibleLife/LYH_1957_visuel03_V001-min.jpg"
@@ -968,7 +966,7 @@ const DiaryPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="txt3 content absolute mt-72 pt-40" ref={textRef3}>
+            <div className="txt3 lul content absolute" ref={textRef3}>
               <p className="content__title" data-effect16>
                 In the embrace of Japan&apos;s countryside, where the whispers
                 of nature spoke in a language as ancient as time itself, I found
@@ -1016,7 +1014,7 @@ const DiaryPage: React.FC = () => {
               </p>
             </div>
           </div>
-        </div>
+
 
         <div id="p3" className="lil relative">
           <div className="element3 flex relative flex-col items-center w-full justify-center">
