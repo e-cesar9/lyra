@@ -36,6 +36,7 @@ const DiaryPage: React.FC = () => {
           ".content__title[data-effect25]",
         )
         gsap.set(titleRef.current, {opacity:1})
+        gsap.set('#intro', {opacity:1})
 
         fx25Titles.forEach((letter) => {
           const letters = letter.querySelectorAll("span.char")

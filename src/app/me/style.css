@@ -65,7 +65,9 @@ figcaption{
 	#section{
 		opacity: 0;
 	}
-	
+	#intro{
+		opacity: 0;
+	}
 #printemps{
 position: relative;
 margin-top: -360px;
