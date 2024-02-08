@@ -953,7 +953,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
 
-        <div id="p2" className="lil relative pt-64">
+        <div id="p2" className=" relative pt-64">
           <div className="element2 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid2">
                 <img
@@ -1016,7 +1016,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
 
-        <div id="p3" className="lil relative">
+        <div id="p3" className=" relative">
           <div className="element3 flex relative flex-col items-center w-full justify-center">
             <div className="grid3 ">
               <img
@@ -1096,7 +1096,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p4 lil relative pt-64">
+        <div className="p4 relative pt-64">
           <div className="element4 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid4">
               <img
@@ -1147,7 +1147,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p5 lil relative mt-64 pt-64">
+        <div className="p5 relative mt-64 pt-64">
           <div className="element5 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid5">
               <img
@@ -1206,7 +1206,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p6 lil relative mt-64 pt-64">
+        <div className="p6 relative mt-64 pt-64">
           <div className="element6 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid6">
               <img
@@ -1274,7 +1274,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p7 lil relative mt-64 pt-64">
+        <div className="p7 relative mt-64 pt-64">
           <div className="element7 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid7">
               <img
@@ -1347,7 +1347,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p8 lil relative mt-64 pt-64">
+        <div className="p8 relative mt-64 pt-64">
           <div className="element8 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid8">
               <img
@@ -1407,7 +1407,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p9 lil relative mt-64 pt-64">
+        <div className="p9 relative mt-64 pt-64">
           <div className="element9 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid9">
               <img
