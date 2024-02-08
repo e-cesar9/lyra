@@ -1465,7 +1465,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p10 lvl relative mt-64 pt-64">
+        <div className="p10 relative mt-64 pt-64">
           <div className="element10 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid10">
               <img
