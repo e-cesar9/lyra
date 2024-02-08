@@ -324,7 +324,7 @@ display: flex;
 	}
 
 	.quotes{
-		font-size: 17px;
+		font-size: 13px;
 	}
 	.echo{
 		width: 100vw;
@@ -554,7 +554,7 @@ display: flex;
 		height: 200vh;
 	}
 	.p6{
-		height: 280vh;
+		height: 270vh;
 	}
 	#t6{
 		/* top: 0; */
