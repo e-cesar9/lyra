@@ -535,9 +535,18 @@ figcaption{
 	.lil{
 		height: 400vh;
 	}
+
+	.lal{
+		height: 300vh;
+	}
 	
 	.lul{
 		top:47vh;
+		margin-top:0vh;
+	}
+
+	.lxl{
+		top:30vh;
 		margin-top:0vh;
 	}
 	

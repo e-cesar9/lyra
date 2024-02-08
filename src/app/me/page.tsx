@@ -908,7 +908,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p1 lil relative pt-64">
+        <div className="p1 lal relative mt-64 pt-64">
           <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid1">
                 <img
@@ -953,7 +953,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
 
-        <div id="p2" className="relative lil relative pt-64">
+        <div id="p2" className="lil relative pt-64">
           <div className="element2 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid2">
                 <img
@@ -966,7 +966,7 @@ const DiaryPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="txt3 lul content absolute" ref={textRef3}>
+            <div className="txt3 lxl content absolute" ref={textRef3}>
               <p className="content__title" data-effect16>
                 In the embrace of Japan&apos;s countryside, where the whispers
                 of nature spoke in a language as ancient as time itself, I found
@@ -1465,7 +1465,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p10 lil relative mt-64 pt-64">
+        <div className="p10 lal relative mt-64 pt-64">
           <div className="element10 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid10">
               <img
