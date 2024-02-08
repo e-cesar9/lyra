@@ -221,8 +221,8 @@ const DiaryPage: React.FC = () => {
               filter: "blur(0px)",
               scrollTrigger: {
                 trigger: blocx,
-                start: "top+=80% bottom",
-                end: "top+=35% top",
+                start: "top+=50% bottom",
+                end: "top+=5% top",
                 scrub: true,
               },
             },
