@@ -593,7 +593,7 @@ display: flex;
 
 }
 
-@media (max-width: 1550px) { 
+/* @media (max-width: 1550px) { 
 	body{
 		font-size: var(--font-size);
 	}
@@ -608,4 +608,4 @@ display: flex;
 		font-size: var(--font-size);
 	}
 	
-}
+} */
