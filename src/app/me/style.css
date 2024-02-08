@@ -521,7 +521,7 @@ display: flex;
 
 	.txt3{
 		/* top: 0; */
-		margin-top: 5vh;
+		margin-top: 0vh;
 	}
 
 	.p1{
@@ -530,7 +530,7 @@ display: flex;
 	
 	#t3{
 		/* top: 0; */
-		margin-top: 10vh;
+		margin-top: 5vh;
 	}
 	
 	#p3{
@@ -538,12 +538,12 @@ display: flex;
 	}
 	
 	#p2{
-		height: 265vh;
+		height: 285vh;
 	}
 
 	#t4{
 		/* top: 0; */
-		margin-top: 0vh;
+		margin-top: -1vh;
 	}
 	
 	.p4{
@@ -554,17 +554,17 @@ display: flex;
 		height: 200vh;
 	}
 	.p6{
-		height: 250vh;
+		height: 260vh;
 	}
 	#t6{
 		/* top: 0; */
-		margin-top: 20vh;
+		margin-top: 30vh;
 	}
 	.p7{
 		height: 290vh;
 	}
 	#t7{
-		margin-top: 2vh;
+		margin-top: 0vh;
 	}
 	.p8{
 		height: 215vh;
