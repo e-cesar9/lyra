@@ -607,9 +607,13 @@ display: flex;
 		/* font-size: var(--font-size); */
 	}
 	.content__title{
-		font-size: 14px;
+		font-size: 27px;
 		margin-left: 2rem;
 		margin-right: 2rem;
+	}
+
+	#parg1{
+		margin-top: 21vw;
 	}
 
 	.echo{
