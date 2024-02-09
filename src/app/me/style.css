@@ -600,11 +600,11 @@ display: flex;
 
 @media (max-width: 1550px) and (min-width: 761px) { 
 	body{
-		font-size: var(--font-size);
+		/* font-size: var(--font-size); */
 	}
 	#Me{
 		padding: 1px 0 0 250px;
-		font-size: var(--font-size);
+		/* font-size: var(--font-size); */
 	}
 	.content__title{
 		font-size: 14px;
