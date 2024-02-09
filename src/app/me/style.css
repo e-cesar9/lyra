@@ -349,7 +349,7 @@ display: flex;
 	}
 
 	.lined{
-		font-size: 25px;
+		font-size: 24px;
 	}
 
 	.lol{
@@ -704,12 +704,21 @@ display: flex;
 		display: none;
 	}
 	.lined{
-		font-size: 18px;
+		font-size: 19px;
 	}
 
 	#Me{
 		overflow-x: hidden;
 	}
+	#Me > div:nth-child(1) > div > div.wrap.flex.items-center.w-full.justify-center > div.flex.flex-row.justify-center.pl-\[45px\].z-30.items-center.swap{
+		padding-left: 0;
+	}
 
 }
 
+@media (max-width: 770px) and (min-width: 600px){
+	.lined{
+		font-size: 32px;
+	}
+
+}
