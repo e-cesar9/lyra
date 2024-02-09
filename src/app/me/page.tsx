@@ -654,153 +654,152 @@ const DiaryPage: React.FC = () => {
         scrub: true,
       })
 
+      const animation2 = gsap.to(".grid2", {
+        opacity: 0,
+        filter: "blur(20px)",
+        duration: 1,
+        stagger: 1,
+      })
 
-    const animation2 = gsap.to(".grid2", {
-      opacity: 0,
-      filter: "blur(20px)",
-      duration: 1,
-      stagger: 1,
-    })
+      ScrollTrigger.create({
+        trigger: ".element2",
+        start: "top+=3% top",
+        end: "bottom+=270% bottom",
+        pin: "#p2",
+        animation: animation2,
+        scrub: true,
+      })
 
-    ScrollTrigger.create({
-      trigger: ".element2",
-      start: "top+=3vh top",
-      end: "bottom+=270vh bottom",
-      pin: "#p2",
-      animation: animation2,
-      scrub: true,
-    })
+      const animation3 = gsap.to(".grid3", {
+        opacity: 0,
+        filter: "blur(20px)",
+        duration: 1,
+        stagger: 1,
+      })
 
-    const animation3 = gsap.to(".grid3", {
-      opacity: 0,
-      filter: "blur(20px)",
-      duration: 1,
-      stagger: 1,
-    })
+      ScrollTrigger.create({
+        trigger: ".element3",
+        start: "top-=15% top",
+        end: "bottom+=300% bottom",
+        pin: "#p3",
+        animation: animation3,
+        scrub: true,
+      })
 
-    ScrollTrigger.create({
-      trigger: ".element3",
-      start: "top-=15% top",
-      end: "bottom+=300% bottom",
-      pin: "#p3",
-      animation: animation3,
-      scrub: true,
-    })
+      const animation4 = gsap.to(".grid4", {
+        opacity: 0,
+        filter: "blur(20px)",
+        duration: 1,
+        stagger: 1,
+      })
 
-    const animation4 = gsap.to(".grid4", {
-      opacity: 0,
-      filter: "blur(20px)",
-      duration: 1,
-      stagger: 1,
-    })
+      ScrollTrigger.create({
+        trigger: ".element4",
+        start: "top+=9% top",
+        end: "bottom+=180% bottom",
+        pin: ".p4",
+        animation: animation4,
+        scrub: true,
+        //
+      })
 
-    ScrollTrigger.create({
-      trigger: ".element4",
-      start: "top+=9% top",
-      end: "bottom+=180% bottom",
-      pin: ".p4",
-      animation: animation4,
-      scrub: true,
-      //
-    })
+      const animation5 = gsap.to(".grid5", {
+        opacity: 0,
+        filter: "blur(20px)",
+        duration: 1,
+        stagger: 1,
+      })
 
-    const animation5 = gsap.to(".grid5", {
-      opacity: 0,
-      filter: "blur(20px)",
-      duration: 1,
-      stagger: 1,
-    })
+      ScrollTrigger.create({
+        trigger: ".element5",
+        start: "top+=11% top",
+        end: "bottom+=180% bottom",
+        pin: ".p5",
+        animation: animation5,
+        scrub: true,
+        //
+      })
 
-    ScrollTrigger.create({
-      trigger: ".element5",
-      start: "top+=11% top",
-      end: "bottom+=180% bottom",
-      pin: ".p5",
-      animation: animation5,
-      scrub: true,
-      //
-    })
+      const animation6 = gsap.to(".grid6", {
+        opacity: 0,
+        filter: "blur(20px)",
+        duration: 1,
+        stagger: 1,
+      })
 
-    const animation6 = gsap.to(".grid6", {
-      opacity: 0,
-      filter: "blur(20px)",
-      duration: 1,
-      stagger: 1,
-    })
+      ScrollTrigger.create({
+        trigger: ".element6",
+        start: "top+=5% top",
+        end: "bottom+=190% bottom+=10%",
+        pin: ".p6",
+        animation: animation6,
+        scrub: true,
+      })
 
-    ScrollTrigger.create({
-      trigger: ".element6",
-      start: "top+=5% top",
-      end: "bottom+=190% bottom+=10%",
-      pin: ".p6",
-      animation: animation6,
-      scrub: true,
-    })
+      const animation7 = gsap.to(".grid7", {
+        opacity: 0,
+        filter: "blur(20px)",
+        duration: 1,
+        stagger: 1,
+      })
 
-    const animation7 = gsap.to(".grid7", {
-      opacity: 0,
-      filter: "blur(20px)",
-      duration: 1,
-      stagger: 1,
-    })
+      ScrollTrigger.create({
+        trigger: ".element7",
+        start: "top+=12% top",
+        end: "bottom+=190% bottom",
+        pin: ".p7",
+        animation: animation7,
+        scrub: true,
+      })
 
-    ScrollTrigger.create({
-      trigger: ".element7",
-      start: "top+=12% top",
-      end: "bottom+=190% bottom",
-      pin: ".p7",
-      animation: animation7,
-      scrub: true,
-    })
+      const animation8 = gsap.to(".grid8", {
+        opacity: 0,
+        filter: "blur(20px)",
+        duration: 1,
+        stagger: 1,
+      })
 
-    const animation8 = gsap.to(".grid8", {
-      opacity: 0,
-      filter: "blur(20px)",
-      duration: 1,
-      stagger: 1,
-    })
+      ScrollTrigger.create({
+        trigger: ".element8",
+        start: "top+=12% top",
+        end: "bottom+=190% bottom",
+        pin: ".p8",
+        animation: animation8,
+        scrub: true,
+      })
 
-    ScrollTrigger.create({
-      trigger: ".element8",
-      start: "top+=12% top",
-      end: "bottom+=190% bottom",
-      pin: ".p8",
-      animation: animation8,
-      scrub: true,
-    })
+      const animation9 = gsap.to(".grid9", {
+        opacity: 0,
+        filter: "blur(20px)",
+        duration: 1,
+        stagger: 1,
+      })
 
-    const animation9 = gsap.to(".grid9", {
-      opacity: 0,
-      filter: "blur(20px)",
-      duration: 1,
-      stagger: 1,
-    })
+      ScrollTrigger.create({
+        trigger: ".element9",
+        start: "top+=12% top",
+        end: "bottom+=190% bottom",
+        pin: ".p9",
+        animation: animation9,
+        scrub: true,
+      })
 
-    ScrollTrigger.create({
-      trigger: ".element9",
-      start: "top+=12% top",
-      end: "bottom+=190% bottom",
-      pin: ".p9",
-      animation: animation9,
-      scrub: true,
-    })
+      const animation10 = gsap.to(".grid10", {
+        opacity: 0,
+        filter: "blur(20px)",
+        duration: 1,
+        stagger: 1,
+      })
 
-    const animation10 = gsap.to(".grid10", {
-      opacity: 0,
-      filter: "blur(20px)",
-      duration: 1,
-      stagger: 1,
+      ScrollTrigger.create({
+        trigger: ".element10",
+        start: "top+=7% top",
+        end: "bottom+=190% bottom",
+        pin: ".p10",
+        animation: animation10,
+        scrub: true,
+      })
     })
-
-    ScrollTrigger.create({
-      trigger: ".element10",
-      start: "top+=7% top",
-      end: "bottom+=190% bottom",
-      pin: ".p10",
-      animation: animation10,
-      scrub: true,
-    })
-  })
 
     ScrollTrigger.update()
 
