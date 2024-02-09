@@ -598,7 +598,7 @@ display: flex;
 
 }
 
-@media (max-width: 1550px) and (min-width: 761px) { 
+@media (max-width: 1281px) and (min-width: 761px) { 
 	body{
 		/* font-size: var(--font-size); */
 	}
