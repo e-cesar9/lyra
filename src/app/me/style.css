@@ -598,8 +598,8 @@ display: flex;
 
 }
 
-@media (max-width: 1550px) { 
-	/* body{
+@media (max-width: 1550px) and (min-width: 761px) { 
+	body{
 		font-size: var(--font-size);
 	}
 	#Me{
@@ -693,5 +693,5 @@ display: flex;
 	#t10{
 		margin-top: -3vh;
 	}
-	 */
+	
 }
