@@ -697,5 +697,19 @@ display: flex;
 	#t10{
 		margin-top: -3vh;
 	}
-	
 }
+
+@media (max-width: 365px){
+	#printemps{
+		display: none;
+	}
+	.lined{
+		font-size: 18px;
+	}
+
+	#Me{
+		overflow-x: hidden;
+	}
+
+}
+
