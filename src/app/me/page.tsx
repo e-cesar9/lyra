@@ -801,6 +801,8 @@ const DiaryPage: React.FC = () => {
       scrub: true,
     })
 
+    ScrollTrigger.update()
+
     return () => ctx.revert()
   }, [])
 
