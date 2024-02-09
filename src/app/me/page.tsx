@@ -653,7 +653,7 @@ const DiaryPage: React.FC = () => {
         animation: animation1,
         scrub: true,
       })
-    })
+
 
     const animation2 = gsap.to(".grid2", {
       opacity: 0,
@@ -800,6 +800,7 @@ const DiaryPage: React.FC = () => {
       animation: animation10,
       scrub: true,
     })
+  })
 
     ScrollTrigger.update()
 
