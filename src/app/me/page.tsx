@@ -801,12 +801,13 @@ const DiaryPage: React.FC = () => {
       })
     })
     ScrollTrigger.update()
-    const handleResize = () => {
-      ScrollTrigger.refresh();
-    };
 
-    // Adding the resize event listener
-    window.addEventListener('resize', handleResize);
+    // const handleResize = () => {
+    //   ScrollTrigger.refresh();
+    // };
+
+    // // Adding the resize event listener
+    // window.addEventListener('resize', handleResize);
 
     return () => ctx.revert()
   }, [])
