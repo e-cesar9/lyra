@@ -799,9 +799,8 @@ const DiaryPage: React.FC = () => {
         animation: animation10,
         scrub: true,
       })
-
-      ScrollTrigger.update()
     })
+    ScrollTrigger.update()
 
     return () => ctx.revert()
   }, [])
