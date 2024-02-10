@@ -561,7 +561,7 @@ const DiaryPage: React.FC = () => {
     }
   }, [textRefs])
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     splitText()
   }, [splitText])
 
