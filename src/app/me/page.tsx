@@ -171,6 +171,9 @@ const DiaryPage: React.FC = () => {
           },
         )
       }
+    }
+
+    if (textRef2.current) {
 
       Splitting({target: textRef3.current, by: "words"})
       const fx13Titles = textRef3.current.querySelectorAll(
