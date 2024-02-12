@@ -807,9 +807,10 @@ const DiaryPage: React.FC = () => {
         })
       }
     })
-    // ScrollTrigger.update()
+    ScrollTrigger.update()
 
-    return () => ctx.revert()
+    return () => {ctx.revert();    ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    }
   }, [])
 
   return (
