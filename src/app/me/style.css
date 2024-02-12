@@ -60,13 +60,15 @@ figcaption{
 	font-size: 52px;
 	}
 
-	#parg1{
-		opacity: 0;
-	}
+#parg1{
+	opacity: 0;
+}
 
-	#intro{
-		opacity: 0;
-	}
+#intro{
+	opacity: 0;
+	/* scroll-behavior: smooth; */
+}
+
 #printemps{
 position: relative;
 margin-top: -360px;
@@ -239,7 +241,7 @@ text-orientation: upright;
 
 .photo{
 	border: 5px solid white;
-  }
+}
   
 
 #parg1{
@@ -324,11 +326,11 @@ display: flex;
 
 @media (max-width: 760px) { 
 	body{
-		font-size: var(--font-size);
+		/* font-size: var(--font-size); */
 	}
 	#Me{
 		padding: 4px 25px;
-		font-size: var(--font-size);
+		/* font-size: var(--font-size); */
 	}
 
 	.wm{

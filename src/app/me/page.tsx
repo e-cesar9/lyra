@@ -48,7 +48,7 @@ const DiaryPage: React.FC = () => {
         const fx25Titles = titleRef.current.querySelectorAll(
           ".content__title[data-effect25]",
         )
-
+        
         gsap.set("#intro", {opacity: 1})
         fx25Titles.forEach((letter) => {
           const letters = letter.querySelectorAll("span.char")
@@ -67,7 +67,7 @@ const DiaryPage: React.FC = () => {
               scrollTrigger: {
                 trigger: ".echo",
                 start: "start",
-                end: "bottom+=30%",
+                end: "bottom+=300%",
                 scrub: true,
               },
             },
@@ -101,8 +101,8 @@ const DiaryPage: React.FC = () => {
             filter: "blur(0px)",
             scrollTrigger: {
               trigger: textRef.current,
-              start: "start+=140% bottom",
-              end: "top+=120% top",
+              start: "start+=370% bottom",
+              end: "top+=370% top",
               scrub: true,
             },
           },
@@ -120,8 +120,8 @@ const DiaryPage: React.FC = () => {
             stagger: 0.05,
             scrollTrigger: {
               trigger: textRef.current,
-              start: "top+=70% bottom-=230%",
-              end: "bottom+=125% top+=60%",
+              start: "top+=315% bottom-=300%",
+              end: "bottom+=450% top+=60%",
               scrub: true,
             },
           },
@@ -191,8 +191,8 @@ const DiaryPage: React.FC = () => {
               filter: "blur(0px)",
               scrollTrigger: {
                 trigger: bloc,
-                start: "top+=80% bottom",
-                end: "top+=35% top",
+                start: "top+=70% bottom",
+                end: "top+=30% top",
                 scrub: true,
               },
             },
@@ -210,7 +210,7 @@ const DiaryPage: React.FC = () => {
               stagger: 0.05,
               scrollTrigger: {
                 trigger: textRef3.current,
-                start: "top+=5% bottom-=200%",
+                start: "top+=13% bottom-=200%",
                 end: "bottom+=60% top+=40%",
                 scrub: true,
               },
@@ -586,7 +586,7 @@ const DiaryPage: React.FC = () => {
       ScrollTrigger.create({
         trigger: ".wrap",
         start: "top top-=5%",
-        end: "bottom+=290% bottom+=5%",
+        end: "bottom+=990% bottom+=5%",
         pin: ".echo",
         animation: animation,
         scrub: true,
