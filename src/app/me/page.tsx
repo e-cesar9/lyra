@@ -11,7 +11,6 @@ import "splitting/dist/splitting-cells.css"
 gsap.registerPlugin(ScrollTrigger)
 
 const DiaryPage: React.FC = () => {
-
   const springRef = React.useRef(null)
   const titleRef = React.useRef(null)
 
