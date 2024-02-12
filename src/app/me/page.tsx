@@ -665,7 +665,7 @@ const DiaryPage: React.FC = () => {
         trigger: ".element2",
         start: "top+=3% top",
         end: "bottom+=270% bottom",
-        pin: "#p2",
+        pin: ".p2",
         animation: animation2,
         scrub: true,
       })
@@ -924,7 +924,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div id="p2" className=" relative pt-64">
+        <div className="p2 relative pt-64">
           <div className="element2 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid2">
               <img
