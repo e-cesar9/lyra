@@ -330,7 +330,7 @@ display: flex;
 		font-size: var(--font-size);
 	}
 	#Me{
-		padding: 1px 0 0 0;
+		padding: 1rem;
 		font-size: var(--font-size);
 	}
 
@@ -338,7 +338,7 @@ display: flex;
 		font-size: 13px;
 	}
 	.echo{
-		width: 100vw;
+		/* width: 100vw; */
 		top: 0;
 	}
 	#section{
@@ -387,6 +387,7 @@ display: flex;
 		}
 	  
 	.content__title{
+		margin: 1rem .5rem;
 		font-size: 17px;
 	}
 
@@ -529,7 +530,7 @@ display: flex;
 	.p1{
 		display: flex;
 		flex-direction: column;
-		width: 100vw;
+		/* width: 100vw; */
 		height: auto;
 	}
 	.p2{
