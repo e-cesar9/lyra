@@ -17,12 +17,10 @@
 
 body{
 	height: auto;
-	scroll-behavior: smooth!important;
-
 }
 
 html {
-	scroll-behavior: smooth!important;
+	scroll-behavior: smooth;
 	height: 100%;
   }
 
@@ -46,7 +44,6 @@ figcaption{
 
 
 #Me{
-	scroll-behavior: smooth!important;
 	font-family: 'Zodiak-Variable';
 	position: relative;
 	padding-left: 250px;
