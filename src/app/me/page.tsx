@@ -132,7 +132,7 @@ const DiaryPage: React.FC = () => {
     if (textRef2.current) {
       Splitting({target: textRef2.current, by: "words"})
       const fx12Titles = textRef2.current.querySelectorAll(
-        ".content__title2[data-effect16]",
+        ".content__title[data-effect16]",
       )
       for (const block of fx12Titles) {
         gsap.fromTo(
@@ -894,7 +894,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div className="lul content absolute" ref={textRef2}>
-            <p className="content__title2" data-effect16>
+            <p className="content__title" data-effect16>
               In the tender years of my youth, my memories of my father were
               akin to fleeting glimpses of a distant dream — fragmented yet
               filled with a profound sense of love and respect. His absence in
