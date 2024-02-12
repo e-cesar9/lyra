@@ -535,6 +535,8 @@ display: flex;
 	}
 
 	.p1{
+		display: flex;
+		width: 100vw;
 		height: 165vh;
 	}
 	.p2{
