@@ -129,440 +129,440 @@ const DiaryPage: React.FC = () => {
       }
     }
 
-    if(window.innerWidth >= 1280){
-    if (textRef2.current) {
-      Splitting({target: textRef2.current, by: "words"})
-      const fx12Titles = textRef2.current.querySelectorAll(
-        ".content__title[data-effect16]",
-      )
-      for (const block of fx12Titles) {
-        gsap.fromTo(
-          block,
-          {
-            filter: "blur(20px)",
-          },
-          {
-            ease: "none",
-            filter: "blur(0px)",
-            scrollTrigger: {
-              trigger: block,
-              start: "top+=85% bottom",
-              end: "top+=45% top",
-              scrub: true,
-            },
-          },
+    if (window.innerWidth >= 1280) {
+      if (textRef2.current) {
+        Splitting({target: textRef2.current, by: "words"})
+        const fx12Titles = textRef2.current.querySelectorAll(
+          ".content__title[data-effect16]",
         )
-        const lett = block.querySelectorAll("span.word")
-        gsap.fromTo(
-          lett,
-          {
-            "will-change": "opacity",
-            opacity: 0.1,
-          },
-          {
-            ease: "none",
-            opacity: 1,
-            stagger: 0.05,
-            scrollTrigger: {
-              trigger: textRef2.current,
-              start: "top+=15% bottom-=200%",
-              end: "bottom+=70% top+=40%",
-              scrub: true,
+        for (const block of fx12Titles) {
+          gsap.fromTo(
+            block,
+            {
+              filter: "blur(20px)",
             },
-          },
+            {
+              ease: "none",
+              filter: "blur(0px)",
+              scrollTrigger: {
+                trigger: block,
+                start: "top+=85% bottom",
+                end: "top+=45% top",
+                scrub: true,
+              },
+            },
+          )
+          const lett = block.querySelectorAll("span.word")
+          gsap.fromTo(
+            lett,
+            {
+              "will-change": "opacity",
+              opacity: 0.1,
+            },
+            {
+              ease: "none",
+              opacity: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                trigger: textRef2.current,
+                start: "top+=15% bottom-=200%",
+                end: "bottom+=70% top+=40%",
+                scrub: true,
+              },
+            },
+          )
+        }
+      }
+
+      if (textRef3.current) {
+        Splitting({target: textRef3.current, by: "words"})
+        const fx13Titles = textRef3.current.querySelectorAll(
+          ".content__title[data-effect16]",
         )
+
+        for (const bloc of fx13Titles) {
+          gsap.fromTo(
+            bloc,
+            {
+              filter: "blur(20px)",
+            },
+            {
+              ease: "none",
+              filter: "blur(0px)",
+              scrollTrigger: {
+                trigger: bloc,
+                start: "top+=80% bottom",
+                end: "top+=35% top",
+                scrub: true,
+              },
+            },
+          )
+          const lette = bloc.querySelectorAll("span.word")
+          gsap.fromTo(
+            lette,
+            {
+              "will-change": "opacity",
+              opacity: 0.1,
+            },
+            {
+              ease: "none",
+              opacity: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                trigger: textRef3.current,
+                start: "top+=5% bottom-=200%",
+                end: "bottom+=60% top+=40%",
+                scrub: true,
+              },
+            },
+          )
+        }
+
+        Splitting({target: textRef4.current, by: "words"})
+        const fx14Titles = textRef4.current.querySelectorAll(
+          ".content__title[data-effect16]",
+        )
+
+        for (const blocx of fx14Titles) {
+          gsap.fromTo(
+            blocx,
+            {
+              filter: "blur(20px)",
+            },
+            {
+              ease: "none",
+              filter: "blur(0px)",
+              scrollTrigger: {
+                trigger: blocx,
+                start: "top+=10% bottom",
+                end: "top+=5% top",
+                scrub: true,
+              },
+            },
+          )
+          const lettex = blocx.querySelectorAll("span.word")
+          gsap.fromTo(
+            lettex,
+            {
+              "will-change": "opacity",
+              opacity: 0.1,
+            },
+            {
+              ease: "none",
+              opacity: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                trigger: textRef4.current,
+                start: "top-=15% bottom-=200%",
+                end: "bottom+=30% top+=40%",
+                scrub: true,
+              },
+            },
+          )
+        }
+
+        Splitting({target: textRef5.current, by: "words"})
+        const fx15Titles = textRef5.current.querySelectorAll(
+          ".content__title[data-effect16]",
+        )
+
+        for (const bloc5 of fx15Titles) {
+          gsap.fromTo(
+            bloc5,
+            {
+              filter: "blur(20px)",
+            },
+            {
+              ease: "none",
+              filter: "blur(0px)",
+              scrollTrigger: {
+                trigger: bloc5,
+                start: "top+=70% bottom",
+                end: "top+=15% top",
+                scrub: true,
+              },
+            },
+          )
+          const lette5 = bloc5.querySelectorAll("span.word")
+          gsap.fromTo(
+            lette5,
+            {
+              "will-change": "opacity",
+              opacity: 0.1,
+            },
+            {
+              ease: "none",
+              opacity: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                trigger: textRef5.current,
+                start: "top+=10% bottom-=200%",
+                end: "bottom+=55% top+=40%",
+                scrub: true,
+              },
+            },
+          )
+        }
+
+        Splitting({target: textRef6.current, by: "words"})
+        const fx16Titles = textRef6.current.querySelectorAll(
+          ".content__title[data-effect16]",
+        )
+
+        for (const bloc5 of fx16Titles) {
+          gsap.fromTo(
+            bloc5,
+            {
+              filter: "blur(20px)",
+            },
+            {
+              ease: "none",
+              filter: "blur(0px)",
+              scrollTrigger: {
+                trigger: bloc5,
+                start: "top+=90% bottom",
+                end: "top+=15% top",
+                scrub: true,
+              },
+            },
+          )
+          const lette5 = bloc5.querySelectorAll("span.word")
+          gsap.fromTo(
+            lette5,
+            {
+              "will-change": "opacity",
+              opacity: 0.1,
+            },
+            {
+              ease: "none",
+              opacity: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                trigger: textRef6.current,
+                start: "top+=10% bottom-=200%",
+                end: "bottom+=55% top+=40%",
+                scrub: true,
+              },
+            },
+          )
+        }
+
+        Splitting({target: textRef7.current, by: "words"})
+        const fx17Titles = textRef7.current.querySelectorAll(
+          ".content__title[data-effect16]",
+        )
+
+        for (const bloc5 of fx17Titles) {
+          gsap.fromTo(
+            bloc5,
+            {
+              filter: "blur(20px)",
+            },
+            {
+              ease: "none",
+              filter: "blur(0px)",
+              scrollTrigger: {
+                trigger: bloc5,
+                start: "top+=5% bottom",
+                end: "top+=2% top",
+                scrub: true,
+              },
+            },
+          )
+          const lette5 = bloc5.querySelectorAll("span.word")
+          gsap.fromTo(
+            lette5,
+            {
+              "will-change": "opacity",
+              opacity: 0.1,
+            },
+            {
+              ease: "none",
+              opacity: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                trigger: textRef7.current,
+                start: "top-=15% bottom-=200%",
+                end: "bottom+=30% top+=40%",
+                scrub: true,
+              },
+            },
+          )
+        }
+
+        Splitting({target: textRef8.current, by: "words"})
+        const fx18Titles = textRef8.current.querySelectorAll(
+          ".content__title[data-effect16]",
+        )
+
+        for (const bloc5 of fx18Titles) {
+          gsap.fromTo(
+            bloc5,
+            {
+              filter: "blur(20px)",
+            },
+            {
+              ease: "none",
+              filter: "blur(0px)",
+              scrollTrigger: {
+                trigger: bloc5,
+                start: "top+=50% bottom",
+                end: "top+=10% top",
+                scrub: true,
+              },
+            },
+          )
+          const lette5 = bloc5.querySelectorAll("span.word")
+          gsap.fromTo(
+            lette5,
+            {
+              "will-change": "opacity",
+              opacity: 0.1,
+            },
+            {
+              ease: "none",
+              opacity: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                trigger: textRef8.current,
+                start: "top+=5% bottom-=200%",
+                end: "bottom+=50% top+=40%",
+                scrub: true,
+              },
+            },
+          )
+        }
+
+        Splitting({target: textRef9.current, by: "words"})
+        const fx19Titles = textRef9.current.querySelectorAll(
+          ".content__title[data-effect16]",
+        )
+
+        for (const bloc5 of fx19Titles) {
+          gsap.fromTo(
+            bloc5,
+            {
+              filter: "blur(20px)",
+            },
+            {
+              ease: "none",
+              filter: "blur(0px)",
+              scrollTrigger: {
+                trigger: bloc5,
+                start: "top+=90% bottom",
+                end: "top+=45% top",
+                scrub: true,
+              },
+            },
+          )
+          const lette5 = bloc5.querySelectorAll("span.word")
+          gsap.fromTo(
+            lette5,
+            {
+              "will-change": "opacity",
+              opacity: 0.1,
+            },
+            {
+              ease: "none",
+              opacity: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                trigger: textRef9.current,
+                start: "top+=15% bottom-=200%",
+                end: "bottom+=60% top+=40%",
+                scrub: true,
+              },
+            },
+          )
+        }
+
+        Splitting({target: textRef10.current, by: "words"})
+        const fx10Titles = textRef10.current.querySelectorAll(
+          ".content__title[data-effect16]",
+        )
+
+        for (const bloc5 of fx10Titles) {
+          gsap.fromTo(
+            bloc5,
+            {
+              filter: "blur(20px)",
+            },
+            {
+              ease: "none",
+              filter: "blur(0px)",
+              scrollTrigger: {
+                trigger: bloc5,
+                start: "top+=90% bottom",
+                end: "top+=45% top",
+                scrub: true,
+              },
+            },
+          )
+          const lette5 = bloc5.querySelectorAll("span.word")
+          gsap.fromTo(
+            lette5,
+            {
+              "will-change": "opacity",
+              opacity: 0.1,
+            },
+            {
+              ease: "none",
+              opacity: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                trigger: textRef10.current,
+                start: "top+=15% bottom-=200%",
+                end: "bottom+=60% top+=40%",
+                scrub: true,
+              },
+            },
+          )
+        }
+
+        Splitting({target: textRef11.current, by: "words"})
+        const fx21Titles = textRef11.current.querySelectorAll(
+          ".content__title[data-effect16]",
+        )
+
+        for (const bloc5 of fx21Titles) {
+          gsap.fromTo(
+            bloc5,
+            {
+              filter: "blur(20px)",
+            },
+            {
+              ease: "none",
+              filter: "blur(0px)",
+              scrollTrigger: {
+                trigger: bloc5,
+                start: "top+=60% bottom",
+                end: "top+=25% top",
+                scrub: true,
+              },
+            },
+          )
+          const lette5 = bloc5.querySelectorAll("span.word")
+          gsap.fromTo(
+            lette5,
+            {
+              "will-change": "opacity",
+              opacity: 0.1,
+            },
+            {
+              ease: "none",
+              opacity: 1,
+              stagger: 0.05,
+              scrollTrigger: {
+                trigger: textRef11.current,
+                start: "top+=2% bottom-=200%",
+                end: "bottom+=42% top+=40%",
+                scrub: true,
+              },
+            },
+          )
+        }
       }
     }
-
-    if (textRef3.current) {
-
-      Splitting({target: textRef3.current, by: "words"})
-      const fx13Titles = textRef3.current.querySelectorAll(
-        ".content__title[data-effect16]",
-      )
-
-      for (const bloc of fx13Titles) {
-        gsap.fromTo(
-          bloc,
-          {
-            filter: "blur(20px)",
-          },
-          {
-            ease: "none",
-            filter: "blur(0px)",
-            scrollTrigger: {
-              trigger: bloc,
-              start: "top+=80% bottom",
-              end: "top+=35% top",
-              scrub: true,
-            },
-          },
-        )
-        const lette = bloc.querySelectorAll("span.word")
-        gsap.fromTo(
-          lette,
-          {
-            "will-change": "opacity",
-            opacity: 0.1,
-          },
-          {
-            ease: "none",
-            opacity: 1,
-            stagger: 0.05,
-            scrollTrigger: {
-              trigger: textRef3.current,
-              start: "top+=5% bottom-=200%",
-              end: "bottom+=60% top+=40%",
-              scrub: true,
-            },
-          },
-        )
-      }
-
-      Splitting({target: textRef4.current, by: "words"})
-      const fx14Titles = textRef4.current.querySelectorAll(
-        ".content__title[data-effect16]",
-      )
-
-      for (const blocx of fx14Titles) {
-        gsap.fromTo(
-          blocx,
-          {
-            filter: "blur(20px)",
-          },
-          {
-            ease: "none",
-            filter: "blur(0px)",
-            scrollTrigger: {
-              trigger: blocx,
-              start: "top+=10% bottom",
-              end: "top+=5% top",
-              scrub: true,
-            },
-          },
-        )
-        const lettex = blocx.querySelectorAll("span.word")
-        gsap.fromTo(
-          lettex,
-          {
-            "will-change": "opacity",
-            opacity: 0.1,
-          },
-          {
-            ease: "none",
-            opacity: 1,
-            stagger: 0.05,
-            scrollTrigger: {
-              trigger: textRef4.current,
-              start: "top-=15% bottom-=200%",
-              end: "bottom+=30% top+=40%",
-              scrub: true,
-            },
-          },
-        )
-      }
-
-      Splitting({target: textRef5.current, by: "words"})
-      const fx15Titles = textRef5.current.querySelectorAll(
-        ".content__title[data-effect16]",
-      )
-
-      for (const bloc5 of fx15Titles) {
-        gsap.fromTo(
-          bloc5,
-          {
-            filter: "blur(20px)",
-          },
-          {
-            ease: "none",
-            filter: "blur(0px)",
-            scrollTrigger: {
-              trigger: bloc5,
-              start: "top+=70% bottom",
-              end: "top+=15% top",
-              scrub: true,
-            },
-          },
-        )
-        const lette5 = bloc5.querySelectorAll("span.word")
-        gsap.fromTo(
-          lette5,
-          {
-            "will-change": "opacity",
-            opacity: 0.1,
-          },
-          {
-            ease: "none",
-            opacity: 1,
-            stagger: 0.05,
-            scrollTrigger: {
-              trigger: textRef5.current,
-              start: "top+=10% bottom-=200%",
-              end: "bottom+=55% top+=40%",
-              scrub: true,
-            },
-          },
-        )
-      }
-
-      Splitting({target: textRef6.current, by: "words"})
-      const fx16Titles = textRef6.current.querySelectorAll(
-        ".content__title[data-effect16]",
-      )
-
-      for (const bloc5 of fx16Titles) {
-        gsap.fromTo(
-          bloc5,
-          {
-            filter: "blur(20px)",
-          },
-          {
-            ease: "none",
-            filter: "blur(0px)",
-            scrollTrigger: {
-              trigger: bloc5,
-              start: "top+=90% bottom",
-              end: "top+=15% top",
-              scrub: true,
-            },
-          },
-        )
-        const lette5 = bloc5.querySelectorAll("span.word")
-        gsap.fromTo(
-          lette5,
-          {
-            "will-change": "opacity",
-            opacity: 0.1,
-          },
-          {
-            ease: "none",
-            opacity: 1,
-            stagger: 0.05,
-            scrollTrigger: {
-              trigger: textRef6.current,
-              start: "top+=10% bottom-=200%",
-              end: "bottom+=55% top+=40%",
-              scrub: true,
-            },
-          },
-        )
-      }
-
-      Splitting({target: textRef7.current, by: "words"})
-      const fx17Titles = textRef7.current.querySelectorAll(
-        ".content__title[data-effect16]",
-      )
-
-      for (const bloc5 of fx17Titles) {
-        gsap.fromTo(
-          bloc5,
-          {
-            filter: "blur(20px)",
-          },
-          {
-            ease: "none",
-            filter: "blur(0px)",
-            scrollTrigger: {
-              trigger: bloc5,
-              start: "top+=5% bottom",
-              end: "top+=2% top",
-              scrub: true,
-            },
-          },
-        )
-        const lette5 = bloc5.querySelectorAll("span.word")
-        gsap.fromTo(
-          lette5,
-          {
-            "will-change": "opacity",
-            opacity: 0.1,
-          },
-          {
-            ease: "none",
-            opacity: 1,
-            stagger: 0.05,
-            scrollTrigger: {
-              trigger: textRef7.current,
-              start: "top-=15% bottom-=200%",
-              end: "bottom+=30% top+=40%",
-              scrub: true,
-            },
-          },
-        )
-      }
-
-      Splitting({target: textRef8.current, by: "words"})
-      const fx18Titles = textRef8.current.querySelectorAll(
-        ".content__title[data-effect16]",
-      )
-
-      for (const bloc5 of fx18Titles) {
-        gsap.fromTo(
-          bloc5,
-          {
-            filter: "blur(20px)",
-          },
-          {
-            ease: "none",
-            filter: "blur(0px)",
-            scrollTrigger: {
-              trigger: bloc5,
-              start: "top+=50% bottom",
-              end: "top+=10% top",
-              scrub: true,
-            },
-          },
-        )
-        const lette5 = bloc5.querySelectorAll("span.word")
-        gsap.fromTo(
-          lette5,
-          {
-            "will-change": "opacity",
-            opacity: 0.1,
-          },
-          {
-            ease: "none",
-            opacity: 1,
-            stagger: 0.05,
-            scrollTrigger: {
-              trigger: textRef8.current,
-              start: "top+=5% bottom-=200%",
-              end: "bottom+=50% top+=40%",
-              scrub: true,
-            },
-          },
-        )
-      }
-
-      Splitting({target: textRef9.current, by: "words"})
-      const fx19Titles = textRef9.current.querySelectorAll(
-        ".content__title[data-effect16]",
-      )
-
-      for (const bloc5 of fx19Titles) {
-        gsap.fromTo(
-          bloc5,
-          {
-            filter: "blur(20px)",
-          },
-          {
-            ease: "none",
-            filter: "blur(0px)",
-            scrollTrigger: {
-              trigger: bloc5,
-              start: "top+=90% bottom",
-              end: "top+=45% top",
-              scrub: true,
-            },
-          },
-        )
-        const lette5 = bloc5.querySelectorAll("span.word")
-        gsap.fromTo(
-          lette5,
-          {
-            "will-change": "opacity",
-            opacity: 0.1,
-          },
-          {
-            ease: "none",
-            opacity: 1,
-            stagger: 0.05,
-            scrollTrigger: {
-              trigger: textRef9.current,
-              start: "top+=15% bottom-=200%",
-              end: "bottom+=60% top+=40%",
-              scrub: true,
-            },
-          },
-        )
-      }
-
-      Splitting({target: textRef10.current, by: "words"})
-      const fx10Titles = textRef10.current.querySelectorAll(
-        ".content__title[data-effect16]",
-      )
-
-      for (const bloc5 of fx10Titles) {
-        gsap.fromTo(
-          bloc5,
-          {
-            filter: "blur(20px)",
-          },
-          {
-            ease: "none",
-            filter: "blur(0px)",
-            scrollTrigger: {
-              trigger: bloc5,
-              start: "top+=90% bottom",
-              end: "top+=45% top",
-              scrub: true,
-            },
-          },
-        )
-        const lette5 = bloc5.querySelectorAll("span.word")
-        gsap.fromTo(
-          lette5,
-          {
-            "will-change": "opacity",
-            opacity: 0.1,
-          },
-          {
-            ease: "none",
-            opacity: 1,
-            stagger: 0.05,
-            scrollTrigger: {
-              trigger: textRef10.current,
-              start: "top+=15% bottom-=200%",
-              end: "bottom+=60% top+=40%",
-              scrub: true,
-            },
-          },
-        )
-      }
-
-      Splitting({target: textRef11.current, by: "words"})
-      const fx21Titles = textRef11.current.querySelectorAll(
-        ".content__title[data-effect16]",
-      )
-
-      for (const bloc5 of fx21Titles) {
-        gsap.fromTo(
-          bloc5,
-          {
-            filter: "blur(20px)",
-          },
-          {
-            ease: "none",
-            filter: "blur(0px)",
-            scrollTrigger: {
-              trigger: bloc5,
-              start: "top+=60% bottom",
-              end: "top+=25% top",
-              scrub: true,
-            },
-          },
-        )
-        const lette5 = bloc5.querySelectorAll("span.word")
-        gsap.fromTo(
-          lette5,
-          {
-            "will-change": "opacity",
-            opacity: 0.1,
-          },
-          {
-            ease: "none",
-            opacity: 1,
-            stagger: 0.05,
-            scrollTrigger: {
-              trigger: textRef11.current,
-              start: "top+=2% bottom-=200%",
-              end: "bottom+=42% top+=40%",
-              scrub: true,
-            },
-          },
-        )
-      }
-    }}
   }, [textRefs])
 
   React.useLayoutEffect(() => {
@@ -592,221 +592,220 @@ const DiaryPage: React.FC = () => {
         scrub: true,
       })
 
-      if(window.innerWidth >=1280){
+      if (window.innerWidth >= 1280) {
+        gsap.set(".grid1", {
+          opacity: 1,
+          filter: "blur(0px)",
+        })
 
-      gsap.set(".grid1", {
-        opacity: 1,
-        filter: "blur(0px)",
-      })
+        gsap.set(".grid2", {
+          opacity: 1,
+          filter: "blur(0px)",
+        })
 
-      gsap.set(".grid2", {
-        opacity: 1,
-        filter: "blur(0px)",
-      })
+        gsap.set(".grid3", {
+          opacity: 1,
+          filter: "blur(0px)",
+        })
 
-      gsap.set(".grid3", {
-        opacity: 1,
-        filter: "blur(0px)",
-      })
+        gsap.set(".grid4", {
+          opacity: 1,
+          filter: "blur(0px)",
+        })
 
-      gsap.set(".grid4", {
-        opacity: 1,
-        filter: "blur(0px)",
-      })
+        gsap.set(".grid5", {
+          opacity: 1,
+          filter: "blur(0px)",
+        })
 
-      gsap.set(".grid5", {
-        opacity: 1,
-        filter: "blur(0px)",
-      })
+        gsap.set(".grid6", {
+          opacity: 1,
+          filter: "blur(0px)",
+        })
 
-      gsap.set(".grid6", {
-        opacity: 1,
-        filter: "blur(0px)",
-      })
+        gsap.set(".grid7", {
+          opacity: 1,
+          filter: "blur(0px)",
+        })
 
-      gsap.set(".grid7", {
-        opacity: 1,
-        filter: "blur(0px)",
-      })
+        gsap.set(".grid8", {
+          opacity: 1,
+          filter: "blur(0px)",
+        })
 
-      gsap.set(".grid8", {
-        opacity: 1,
-        filter: "blur(0px)",
-      })
+        gsap.set(".grid9", {
+          opacity: 1,
+          filter: "blur(0px)",
+        })
 
-      gsap.set(".grid9", {
-        opacity: 1,
-        filter: "blur(0px)",
-      })
+        gsap.set(".grid10", {
+          opacity: 1,
+          filter: "blur(0px)",
+        })
 
-      gsap.set(".grid10", {
-        opacity: 1,
-        filter: "blur(0px)",
-      })
+        const animation1 = gsap.to(".grid1", {
+          opacity: 0,
+          filter: "blur(20px)",
+          duration: 1,
+          stagger: 1,
+        })
 
-     
-      const animation1 = gsap.to(".grid1", {
-        opacity: 0,
-        filter: "blur(20px)",
-        duration: 1,
-        stagger: 1,
-      })
+        ScrollTrigger.create({
+          trigger: ".element1",
+          start: "top+=10% top",
+          end: "bottom+=220% bottom",
+          pin: ".p1",
+          animation: animation1,
+          scrub: true,
+        })
 
-      ScrollTrigger.create({
-        trigger: ".element1",
-        start: "top+=10% top",
-        end: "bottom+=220% bottom",
-        pin: ".p1",
-        animation: animation1,
-        scrub: true,
-      })
+        const animation2 = gsap.to(".grid2", {
+          opacity: 0,
+          filter: "blur(20px)",
+          duration: 1,
+          stagger: 1,
+        })
 
-      const animation2 = gsap.to(".grid2", {
-        opacity: 0,
-        filter: "blur(20px)",
-        duration: 1,
-        stagger: 1,
-      })
+        ScrollTrigger.create({
+          trigger: ".element2",
+          start: "top+=3% top",
+          end: "bottom+=270% bottom",
+          pin: ".p2",
+          animation: animation2,
+          scrub: true,
+        })
 
-      ScrollTrigger.create({
-        trigger: ".element2",
-        start: "top+=3% top",
-        end: "bottom+=270% bottom",
-        pin: ".p2",
-        animation: animation2,
-        scrub: true,
-      })
+        const animation3 = gsap.to(".grid3", {
+          opacity: 0,
+          filter: "blur(20px)",
+          duration: 1,
+          stagger: 1,
+        })
 
-      const animation3 = gsap.to(".grid3", {
-        opacity: 0,
-        filter: "blur(20px)",
-        duration: 1,
-        stagger: 1,
-      })
+        ScrollTrigger.create({
+          trigger: ".element3",
+          start: "top-=15% top",
+          end: "bottom+=300% bottom",
+          pin: "#p3",
+          animation: animation3,
+          scrub: true,
+        })
 
-      ScrollTrigger.create({
-        trigger: ".element3",
-        start: "top-=15% top",
-        end: "bottom+=300% bottom",
-        pin: "#p3",
-        animation: animation3,
-        scrub: true,
-      })
+        const animation4 = gsap.to(".grid4", {
+          opacity: 0,
+          filter: "blur(20px)",
+          duration: 1,
+          stagger: 1,
+        })
 
-      const animation4 = gsap.to(".grid4", {
-        opacity: 0,
-        filter: "blur(20px)",
-        duration: 1,
-        stagger: 1,
-      })
+        ScrollTrigger.create({
+          trigger: ".element4",
+          start: "top+=9% top",
+          end: "bottom+=180% bottom",
+          pin: ".p4",
+          animation: animation4,
+          scrub: true,
+          //
+        })
 
-      ScrollTrigger.create({
-        trigger: ".element4",
-        start: "top+=9% top",
-        end: "bottom+=180% bottom",
-        pin: ".p4",
-        animation: animation4,
-        scrub: true,
-        //
-      })
+        const animation5 = gsap.to(".grid5", {
+          opacity: 0,
+          filter: "blur(20px)",
+          duration: 1,
+          stagger: 1,
+        })
 
-      const animation5 = gsap.to(".grid5", {
-        opacity: 0,
-        filter: "blur(20px)",
-        duration: 1,
-        stagger: 1,
-      })
+        ScrollTrigger.create({
+          trigger: ".element5",
+          start: "top+=11% top",
+          end: "bottom+=180% bottom",
+          pin: ".p5",
+          animation: animation5,
+          scrub: true,
+          //
+        })
 
-      ScrollTrigger.create({
-        trigger: ".element5",
-        start: "top+=11% top",
-        end: "bottom+=180% bottom",
-        pin: ".p5",
-        animation: animation5,
-        scrub: true,
-        //
-      })
+        const animation6 = gsap.to(".grid6", {
+          opacity: 0,
+          filter: "blur(20px)",
+          duration: 1,
+          stagger: 1,
+        })
 
-      const animation6 = gsap.to(".grid6", {
-        opacity: 0,
-        filter: "blur(20px)",
-        duration: 1,
-        stagger: 1,
-      })
+        ScrollTrigger.create({
+          trigger: ".element6",
+          start: "top+=10% top",
+          end: "bottom+=250% bottom+=10%",
+          pin: ".p6",
+          animation: animation6,
+          scrub: true,
+        })
 
-      ScrollTrigger.create({
-        trigger: ".element6",
-        start: "top+=10% top",
-        end: "bottom+=250% bottom+=10%",
-        pin: ".p6",
-        animation: animation6,
-        scrub: true,
-      })
+        const animation7 = gsap.to(".grid7", {
+          opacity: 0,
+          filter: "blur(20px)",
+          duration: 1,
+          stagger: 1,
+        })
 
-      const animation7 = gsap.to(".grid7", {
-        opacity: 0,
-        filter: "blur(20px)",
-        duration: 1,
-        stagger: 1,
-      })
+        ScrollTrigger.create({
+          trigger: ".element7",
+          start: "top+=12% top",
+          end: "bottom+=190% bottom",
+          pin: ".p7",
+          animation: animation7,
+          scrub: true,
+        })
 
-      ScrollTrigger.create({
-        trigger: ".element7",
-        start: "top+=12% top",
-        end: "bottom+=190% bottom",
-        pin: ".p7",
-        animation: animation7,
-        scrub: true,
-      })
+        const animation8 = gsap.to(".grid8", {
+          opacity: 0,
+          filter: "blur(20px)",
+          duration: 1,
+          stagger: 1,
+        })
 
-      const animation8 = gsap.to(".grid8", {
-        opacity: 0,
-        filter: "blur(20px)",
-        duration: 1,
-        stagger: 1,
-      })
+        ScrollTrigger.create({
+          trigger: ".element8",
+          start: "top+=12% top",
+          end: "bottom+=190% bottom",
+          pin: ".p8",
+          animation: animation8,
+          scrub: true,
+        })
 
-      ScrollTrigger.create({
-        trigger: ".element8",
-        start: "top+=12% top",
-        end: "bottom+=190% bottom",
-        pin: ".p8",
-        animation: animation8,
-        scrub: true,
-      })
+        const animation9 = gsap.to(".grid9", {
+          opacity: 0,
+          filter: "blur(20px)",
+          duration: 1,
+          stagger: 1,
+        })
 
-      const animation9 = gsap.to(".grid9", {
-        opacity: 0,
-        filter: "blur(20px)",
-        duration: 1,
-        stagger: 1,
-      })
+        ScrollTrigger.create({
+          trigger: ".element9",
+          start: "top+=12% top",
+          end: "bottom+=190% bottom",
+          pin: ".p9",
+          animation: animation9,
+          scrub: true,
+        })
 
-      ScrollTrigger.create({
-        trigger: ".element9",
-        start: "top+=12% top",
-        end: "bottom+=190% bottom",
-        pin: ".p9",
-        animation: animation9,
-        scrub: true,
-      })
+        const animation10 = gsap.to(".grid10", {
+          opacity: 0,
+          filter: "blur(20px)",
+          duration: 1,
+          stagger: 1,
+        })
 
-      const animation10 = gsap.to(".grid10", {
-        opacity: 0,
-        filter: "blur(20px)",
-        duration: 1,
-        stagger: 1,
-      })
-
-      ScrollTrigger.create({
-        trigger: ".element10",
-        start: "top+=7% top",
-        end: "bottom+=190% bottom",
-        pin: ".p10",
-        animation: animation10,
-        scrub: true,
-      })
-    }})
+        ScrollTrigger.create({
+          trigger: ".element10",
+          start: "top+=7% top",
+          end: "bottom+=190% bottom",
+          pin: ".p10",
+          animation: animation10,
+          scrub: true,
+        })
+      }
+    })
     ScrollTrigger.update()
 
     // const handleResize = () => {
@@ -889,7 +888,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="p1 relative mt-64 pt-64">
           <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid1">
+            <div className="grid1 wm">
               <img
                 className="grid__item-img1"
                 src="/AnIncredibleLife/LYH_1940_visuel_v002-min.jpg"
@@ -933,7 +932,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="p2 relative pt-64">
           <div className="element2 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid2">
+            <div className="grid2 wm">
               <img
                 className="grid__item-img2"
                 src="/AnIncredibleLife/LYH_1957_visuel03_V001-min.jpg"
@@ -994,7 +993,7 @@ const DiaryPage: React.FC = () => {
 
         <div id="p3" className="relative">
           <div className="element3 flex relative flex-col items-center w-full justify-center">
-            <div className="grid3 ">
+            <div className="grid3 wm">
               <img
                 className="grid__item-img3"
                 src="/AnIncredibleLife/LYH_1957_visuel06_V001-min.jpg"
@@ -1074,7 +1073,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="p4 relative pt-64">
           <div className="element4 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid4">
+            <div className="grid4 wm">
               <img
                 className="grid__item-img4"
                 src="/AnIncredibleLife/LYH_1967_concept01_V001-mina.jpg"
@@ -1125,7 +1124,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="p5 relative mt-64 pt-64">
           <div className="element5 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid5">
+            <div className="grid5 wm">
               <img
                 className="grid__item-img5"
                 src="/AnIncredibleLife/LYH_1967_visuel01_V020-mina.jpg"
@@ -1184,7 +1183,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="p6 relative mt-64 pt-64">
           <div className="element6 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid6">
+            <div className="grid6 wm">
               <img
                 className="grid__item-img6"
                 src="/AnIncredibleLife/LYH_1977_visuel_2_v001-min.jpg"
@@ -1252,7 +1251,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="p7 relative mt-64 pt-64">
           <div className="element7 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid7">
+            <div className="grid7 wm">
               <img
                 className="grid__item-img7"
                 src="/AnIncredibleLife/LYH_1977_visuel_3_v001-min.jpg"
@@ -1325,7 +1324,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="p8 relative mt-64 pt-64">
           <div className="element8 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid8">
+            <div className="grid8 wm">
               <img
                 className="grid__item-img8"
                 src="/AnIncredibleLife/LYH_1977_visuel_v001-mina.jpg"
@@ -1385,7 +1384,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="p9 relative mt-64 pt-64">
           <div className="element9 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid9">
+            <div className="grid9 wm">
               <img
                 className="grid__item-img9"
                 src="/AnIncredibleLife/LYH_2007_visuel2_v009-min.jpg"
@@ -1443,7 +1442,7 @@ const DiaryPage: React.FC = () => {
 
         <div className="p10 relative mt-64 pt-64">
           <div className="element10 flex relative flex-col items-center w-full pt-40 justify-center">
-            <div className="grid10">
+            <div className="grid10 wm">
               <img
                 className="grid__item-img10"
                 src="/AnIncredibleLife/LYH_2023_visuel1_cleanup_v001-min.jpg"

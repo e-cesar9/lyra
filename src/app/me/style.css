@@ -276,7 +276,7 @@ display: flex;
 }
 
 .p2{
-	display: flex;
+	/* display: flex; */
 	height: 250vh;
 }
 
@@ -330,10 +330,13 @@ display: flex;
 		font-size: var(--font-size);
 	}
 	#Me{
-		padding: 1rem;
+		padding: 1.5rem;
 		font-size: var(--font-size);
 	}
 
+	.wm{
+		width: 100%;
+	}
 	.quotes{
 		font-size: 13px;
 	}
@@ -387,7 +390,7 @@ display: flex;
 		}
 	  
 	.content__title{
-		margin: 1rem .5rem;
+		margin: 1rem 0rem;
 		font-size: 17px;
 	}
 
