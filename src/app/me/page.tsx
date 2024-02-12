@@ -563,7 +563,7 @@ const DiaryPage: React.FC = () => {
         }
       }
     }
-  }, [textRefs])
+  }, [textRef, textRefs])
 
   React.useLayoutEffect(() => {
     splitText()
@@ -593,6 +593,7 @@ const DiaryPage: React.FC = () => {
       })
 
       if (window.innerWidth >= 1280) {
+
         gsap.set(".grid1", {
           opacity: 1,
           filter: "blur(0px)",
@@ -686,7 +687,7 @@ const DiaryPage: React.FC = () => {
           trigger: ".element3",
           start: "top-=15% top",
           end: "bottom+=300% bottom",
-          pin: "#p3",
+          pin: ".p3",
           animation: animation3,
           scrub: true,
         })
@@ -808,13 +809,6 @@ const DiaryPage: React.FC = () => {
     })
     ScrollTrigger.update()
 
-    // const handleResize = () => {
-    //   ScrollTrigger.refresh();
-    // };
-
-    // // Adding the resize event listener
-    // window.addEventListener('resize', handleResize);
-
     return () => ctx.revert()
   }, [])
 
@@ -899,7 +893,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content absolute" ref={textRef2}>
+          <div id="t1" className="lul content absolute" ref={textRef2}>
             <p className="content__title" data-effect16>
               In the tender years of my youth, my memories of my father were
               akin to fleeting glimpses of a distant dream — fragmented yet
@@ -943,7 +937,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="txt3 lul content absolute" ref={textRef3}>
+          <div id="t2" className="txt3 lul content absolute" ref={textRef3}>
             <p className="content__title" data-effect16>
               In the embrace of Japan&apos;s countryside, where the whispers of
               nature spoke in a language as ancient as time itself, I found an
@@ -991,8 +985,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div id="p3" className="relative pt-64">
-          <div className="element3 flex relative flex-col items-center w-full justify-center">
+        <div className="p3 relative pt-64">
+          <div className="element3 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid3 wm">
               <img
                 className="grid__item-img3"
@@ -1122,7 +1116,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p5 relative   pt-64">
+        <div className="p5 relative pt-64">
           <div className="element5 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid5 wm">
               <img
@@ -1135,7 +1129,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content absolute" ref={textRef6}>
+          <div id="t5" className="lul content absolute" ref={textRef6}>
             <div className="content__title" data-effect16>
               Reflecting upon the passage of years, a certain memory comes to
               the fore, vibrant and alive with the energy of my younger self.
