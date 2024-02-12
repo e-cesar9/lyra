@@ -11,6 +11,7 @@ import "splitting/dist/splitting-cells.css"
 gsap.registerPlugin(ScrollTrigger)
 
 const DiaryPage: React.FC = () => {
+
   const springRef = React.useRef(null)
   const titleRef = React.useRef(null)
 
@@ -899,7 +900,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content absolute" ref={textRef2}>
+          <div id="t1" className="lul content absolute" ref={textRef2}>
             <p className="content__title" data-effect16>
               In the tender years of my youth, my memories of my father were
               akin to fleeting glimpses of a distant dream — fragmented yet
@@ -943,7 +944,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="txt3 lul content absolute" ref={textRef3}>
+          <div id="t2" className="txt3 lul content absolute" ref={textRef3}>
             <p className="content__title" data-effect16>
               In the embrace of Japan&apos;s countryside, where the whispers of
               nature spoke in a language as ancient as time itself, I found an
@@ -992,7 +993,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div id="p3" className="relative pt-64">
-          <div className="element3 flex relative flex-col items-center w-full justify-center">
+          <div className="element3 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid3 wm">
               <img
                 className="grid__item-img3"
@@ -1122,7 +1123,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p5 relative   pt-64">
+        <div className="p5 relative pt-64">
           <div className="element5 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid5 wm">
               <img
@@ -1135,7 +1136,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="lul content absolute" ref={textRef6}>
+          <div id="t5" className="lul content absolute" ref={textRef6}>
             <div className="content__title" data-effect16>
               Reflecting upon the passage of years, a certain memory comes to
               the fore, vibrant and alive with the energy of my younger self.
