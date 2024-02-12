@@ -593,6 +593,7 @@ const DiaryPage: React.FC = () => {
       })
 
       if (window.innerWidth >= 1280) {
+
         gsap.set(".grid1", {
           opacity: 1,
           filter: "blur(0px)",
@@ -686,7 +687,7 @@ const DiaryPage: React.FC = () => {
           trigger: ".element3",
           start: "top-=15% top",
           end: "bottom+=300% bottom",
-          pin: "#p3",
+          pin: ".p3",
           animation: animation3,
           scrub: true,
         })
@@ -984,7 +985,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div id="p3" className="relative pt-64">
+        <div className="p3 relative pt-64">
           <div className="element3 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid3 wm">
               <img
