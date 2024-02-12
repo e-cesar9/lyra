@@ -524,7 +524,7 @@ display: flex;
 	}
 
 	.txt3{
-		margin-top: 0vh;
+		margin-top: 0;
 	}
 
 	.pt-64{
@@ -559,7 +559,7 @@ display: flex;
 
 	#t4{
 		position: relative;
-		margin-top: 0vh;
+		margin-top: 0;
 	}
 	
 	.p4{
@@ -580,7 +580,7 @@ display: flex;
 	}
 	#t6{
 		position: relative;
-		margin-top: 0vh;
+		margin-top: 0;
 	}
 	.p7{
 		display: flex;
@@ -589,7 +589,7 @@ display: flex;
 	}
 	#t7{
 		position: relative;
-		margin-top: 0vh;
+		margin-top: 0;
 	}
 	.p8{
 		display: flex;
@@ -598,7 +598,7 @@ display: flex;
 	}
 	#t8{
 		position: relative;
-		margin-top: 0vh;
+		margin-top: 0;
 	}
 	.p9{
 		display: flex;
@@ -608,7 +608,7 @@ display: flex;
 
 	#t9{
 		position: relative;
-		margin-top: 0vh;
+		margin-top: 0;
 	}
 	.p10{
 		display: flex;
@@ -617,7 +617,7 @@ display: flex;
 	}	
 	#t10{
 		position: relative;
-		margin-top: 0vh;
+		margin-top: 0;
 	}
 
 }
