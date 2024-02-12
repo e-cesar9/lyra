@@ -234,8 +234,8 @@ const DiaryPage: React.FC = () => {
               filter: "blur(0px)",
               scrollTrigger: {
                 trigger: blocx,
-                start: "top+=10% bottom",
-                end: "top+=5% top",
+                start: "top+=85% bottom",
+                end: "top+=45% top",
                 scrub: true,
               },
             },
@@ -253,8 +253,8 @@ const DiaryPage: React.FC = () => {
               stagger: 0.05,
               scrollTrigger: {
                 trigger: textRef4.current,
-                start: "top-=15% bottom-=200%",
-                end: "bottom+=30% top+=40%",
+                start: "top+=25% bottom-=200%",
+                end: "bottom+=70% top+=40%",
                 scrub: true,
               },
             },
@@ -277,8 +277,8 @@ const DiaryPage: React.FC = () => {
               filter: "blur(0px)",
               scrollTrigger: {
                 trigger: bloc5,
-                start: "top+=70% bottom",
-                end: "top+=15% top",
+                start: "top+=85% bottom",
+                end: "top+=45% top",
                 scrub: true,
               },
             },
@@ -296,8 +296,8 @@ const DiaryPage: React.FC = () => {
               stagger: 0.05,
               scrollTrigger: {
                 trigger: textRef5.current,
-                start: "top+=10% bottom-=200%",
-                end: "bottom+=55% top+=40%",
+                start: "top+=15% bottom-=200%",
+                end: "bottom+=70% top+=40%",
                 scrub: true,
               },
             },
@@ -320,8 +320,8 @@ const DiaryPage: React.FC = () => {
               filter: "blur(0px)",
               scrollTrigger: {
                 trigger: bloc5,
-                start: "top+=90% bottom",
-                end: "top+=15% top",
+                start: "top+=85% bottom",
+                end: "top+=45% top",
                 scrub: true,
               },
             },
@@ -339,8 +339,8 @@ const DiaryPage: React.FC = () => {
               stagger: 0.05,
               scrollTrigger: {
                 trigger: textRef6.current,
-                start: "top+=10% bottom-=200%",
-                end: "bottom+=55% top+=40%",
+                start: "top+=5% bottom-=200%",
+                end: "bottom+=50% top+=40%",
                 scrub: true,
               },
             },
@@ -363,8 +363,8 @@ const DiaryPage: React.FC = () => {
               filter: "blur(0px)",
               scrollTrigger: {
                 trigger: bloc5,
-                start: "top+=5% bottom",
-                end: "top+=2% top",
+                start: "top+=75% bottom",
+                end: "top+=35% top",
                 scrub: true,
               },
             },
@@ -382,8 +382,8 @@ const DiaryPage: React.FC = () => {
               stagger: 0.05,
               scrollTrigger: {
                 trigger: textRef7.current,
-                start: "top-=15% bottom-=200%",
-                end: "bottom+=30% top+=40%",
+                start: "top+=15% bottom-=200%",
+                end: "bottom+=50% top+=30%",
                 scrub: true,
               },
             },
@@ -554,7 +554,7 @@ const DiaryPage: React.FC = () => {
               stagger: 0.05,
               scrollTrigger: {
                 trigger: textRef11.current,
-                start: "top+=2% bottom-=200%",
+                start: "top+=4% bottom-=200%",
                 end: "bottom+=42% top+=40%",
                 scrub: true,
               },
@@ -685,7 +685,7 @@ const DiaryPage: React.FC = () => {
 
         ScrollTrigger.create({
           trigger: ".element3",
-          start: "top-=15% top",
+          start: "top+=5% top",
           end: "bottom+=300% bottom",
           pin: ".p3",
           animation: animation3,
