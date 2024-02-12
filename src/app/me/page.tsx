@@ -793,6 +793,7 @@ const DiaryPage: React.FC = () => {
         const animation10 = gsap.to(".grid10", {
           opacity: 0,
           filter: "blur(20px)",
+          
           duration: 1,
           stagger: 1,
         })
@@ -809,8 +810,7 @@ const DiaryPage: React.FC = () => {
     })
     ScrollTrigger.update()
 
-    return () => {ctx.revert();    ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-    }
+    return () => ctx.revert()
   }, [])
 
   return (
