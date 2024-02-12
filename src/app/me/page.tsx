@@ -129,6 +129,7 @@ const DiaryPage: React.FC = () => {
       }
     }
 
+    if(window.innerWidth >= 1280){
     if (textRef2.current) {
       Splitting({target: textRef2.current, by: "words"})
       const fx12Titles = textRef2.current.querySelectorAll(
@@ -561,7 +562,7 @@ const DiaryPage: React.FC = () => {
           },
         )
       }
-    }
+    }}
   }, [textRefs])
 
   React.useLayoutEffect(() => {
@@ -574,6 +575,24 @@ const DiaryPage: React.FC = () => {
         opacity: 1,
         filter: "blur(0px)",
       })
+
+      const animation = gsap.to(".swap", {
+        opacity: 0,
+        filter: "blur(20px)",
+        duration: 1,
+        stagger: 1,
+      })
+
+      ScrollTrigger.create({
+        trigger: ".wrap",
+        start: "top top-=5%",
+        end: "bottom+=290% bottom+=5%",
+        pin: ".echo",
+        animation: animation,
+        scrub: true,
+      })
+
+      if(window.innerWidth >=1280){
 
       gsap.set(".grid1", {
         opacity: 1,
@@ -625,22 +644,7 @@ const DiaryPage: React.FC = () => {
         filter: "blur(0px)",
       })
 
-      const animation = gsap.to(".swap", {
-        opacity: 0,
-        filter: "blur(20px)",
-        duration: 1,
-        stagger: 1,
-      })
-
-      ScrollTrigger.create({
-        trigger: ".wrap",
-        start: "top top-=5%",
-        end: "bottom+=290% bottom+=5%",
-        pin: ".echo",
-        animation: animation,
-        scrub: true,
-      })
-
+     
       const animation1 = gsap.to(".grid1", {
         opacity: 0,
         filter: "blur(20px)",
@@ -802,7 +806,7 @@ const DiaryPage: React.FC = () => {
         animation: animation10,
         scrub: true,
       })
-    })
+    }})
     ScrollTrigger.update()
 
     // const handleResize = () => {

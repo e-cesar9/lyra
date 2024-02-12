@@ -354,14 +354,6 @@ display: flex;
 		font-size: 24px;
 	}
 
-	.lol{
-		margin-top: 21rem;
-	}
-
-	.lel{
-		margin-top: -28vh;
-	}
-
 	#printemps{
 		position: relative;
 		margin-top: -420px;
@@ -522,8 +514,8 @@ display: flex;
 	}
 	
 	.lul{
-		top:50vh;
-		margin-top:0vh;
+		position: relative;
+		margin-top:1rem;
 	}
 	
 	.grid{
@@ -531,71 +523,88 @@ display: flex;
 	}
 
 	.txt3{
-		margin-top: -6vh;
+		margin-top: 0vh;
 	}
 
 	.p1{
 		display: flex;
+		flex-direction: column;
 		width: 100vw;
-		height: 165vh;
+		height: auto;
 	}
 	.p2{
-		height: 295vh;
+		display: flex;
+		flex-direction: column;
+		height: auto;
 	}
 	
 	#t3{
+		position: relative;
 		margin-top: 0;
 	}
 	
 	#p3{
-		top: 10vh;
-		height: 265vh;
-	}
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		}
 	
 
 	#t4{
-		/* top: 0; */
-		margin-top: -1vh;
+		position: relative;
+		margin-top: 0vh;
 	}
 	
 	.p4{
-		height: 150vh;
+		display: flex;
+		flex-direction: column;
+		height: auto;	
 	}
 	
 	.p5{
-		height: 200vh;
-	}
+		display: flex;
+		flex-direction: column;
+		height: auto;	}
 	.p6{
-		height: 265vh;
-	}
+		display: flex;
+		flex-direction: column;
+		height: auto;	}
 	#t6{
-		/* top: 0; */
-		margin-top: 5vh;
+		position: relative;
+		margin-top: 0vh;
 	}
 	.p7{
-		height: 290vh;
-	}
+		display: flex;
+		flex-direction: column;
+		height: auto;	}
 	#t7{
+		position: relative;
 		margin-top: 0vh;
 	}
 	.p8{
-		height: 215vh;
-	}
+		display: flex;
+		flex-direction: column;
+		height: auto;	}
 	#t8{
-		margin-top: 2vh;
+		position: relative;
+		margin-top: 0vh;
 	}
 	.p9{
-		height: 195vh;
-	}
+		display: flex;
+		flex-direction: column;
+		height: auto;	}
 
 	#t9{
+		position: relative;
 		margin-top: 0vh;
 	}
 	.p10{
-		height: 350vh;
-	}	
+		display: flex;
+		flex-direction: column;
+		height: auto;	}	
 	#t10{
-		margin-top: -3vh;
+		position: relative;
+		margin-top: 0vh;
 	}
 
 }
