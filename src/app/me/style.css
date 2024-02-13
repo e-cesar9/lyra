@@ -341,17 +341,17 @@ display: flex;
 	}
 	.echo{
 		top: 0;
-
 	}
+	
 	#section{
 		top: 0;
 		height: 110vh;
 	}
 
-	/* #parg1{
+	#parg1{
 		margin-top: 12vh;
 
-	} */
+	}
 
 	.lined{
 		font-size: 24px;
