@@ -270,6 +270,7 @@ display: flex;
 	margin-top: -5vh;
 }
 
+
 .txt3{
 	top: 0;
 	margin-top: -8vh;
@@ -326,11 +327,9 @@ display: flex;
 
 @media (max-width: 760px) { 
 	body{
-		/* font-size: var(--font-size); */
 	}
 	#Me{
 		padding: 4px 25px;
-		/* font-size: var(--font-size); */
 	}
 
 	.wm{
@@ -340,8 +339,9 @@ display: flex;
 		font-size: 13px;
 	}
 	.echo{
-		/* width: 100vw; */
 		top: 0;
+		height: 150vh;
+
 	}
 	#section{
 		top: 0;
@@ -350,6 +350,7 @@ display: flex;
 
 	#parg1{
 		margin-top: 12vh;
+
 	}
 
 	.lined{
@@ -624,7 +625,7 @@ display: flex;
 
 }
 
-@media (max-width: 1550px) and (min-width: 761px) { 
+@media (max-width: 1281px) and (min-width: 761px) { 
 	body{
 		/* font-size: var(--font-size); */
 	}
@@ -632,6 +633,10 @@ display: flex;
 		margin: 1px 0 0 250px;
 		padding: 0 2rem;
 		/* font-size: var(--font-size); */
+	}
+	
+	#parg1{
+		/* position: relative; */
 	}
 
 
@@ -817,6 +822,21 @@ display: flex;
 @media (max-width: 770px) and (min-width: 600px){
 	.lined{
 		font-size: 32px;
+	}
+
+}
+
+@media (max-width: 1901px) and (min-width: 1642px) { 
+	.content__title{
+		margin: 24rem 14rem ;
+	}
+
+}
+
+@media (max-width: 1641px) and (min-width: 1281px) { 
+	.content__title{
+		margin: 24rem 14rem ;
+		font-size: 22px;
 	}
 
 }
