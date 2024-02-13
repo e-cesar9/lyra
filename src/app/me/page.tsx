@@ -836,7 +836,7 @@ const DiaryPage: React.FC = () => {
       <Sidebar />
       <div id="Me" className="rounded layout w-full">
         <div className="echo flex flex-col relative">
-          <div className="flex flex-col h-screen items-center w-full justify-center">
+          <div className="flex flex-col  h-screen items-center w-full justify-center">
             <div className=" flex flex-row justify-center pl-[45px] z-50 items-center swap">
               <div className="grid__item">
                 <div
@@ -900,7 +900,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="flex flex-col pt-64">
-          <div className="flex flex-col items-center w-full h-screen justify-center pink">
+          <div className="flex flex-col items-center w-full h-auto justify-center pink py-20">
             <div className="grid1 wm">
               <img
                 className="grid__item-img1 aspectm"
@@ -1005,7 +1005,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="pt-64">
-          <div className="flex flex-col items-center w-full h-screen justify-center pink">
+          <div className="flex flex-col items-center w-full  h-auto justify-center pink py-20">
             <div className="grid3 wm">
               <img
                 className="grid__item-img3 aspectm"
@@ -1085,7 +1085,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="pt-64">
-          <div className="flex flex-col items-center w-full h-screen justify-center pink">
+          <div className="flex flex-col items-center w-full  h-auto justify-center pink py-20">
             <div className="grid4 wm">
               <img
                 className="grid__item-img4 aspectm"
@@ -1136,7 +1136,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="pt-64">
-          <div className="flex flex-col items-center w-full h-screen justify-center pink">
+          <div className="flex flex-col items-center w-full  h-auto justify-center pink py-20">
             <div className="grid5 wm">
               <img
                 className="grid__item-img5 aspectm"
@@ -1195,7 +1195,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="pt-64">
-          <div className="flex flex-col items-center w-full h-screen justify-center pink">
+          <div className="flex flex-col items-center w-full  h-auto justify-center pink py-20">
             <div className="grid6 wm">
               <img
                 className="grid__item-img6 aspectm"
@@ -1263,7 +1263,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="pt-64">
-          <div className="flex flex-col items-center w-full h-screen justify-center pink">
+          <div className="flex flex-col items-center w-full  h-auto justify-center pink py-20">
             <div className="grid7 wm">
               <img
                 className="grid__item-img7 aspectm"
@@ -1336,7 +1336,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="pt-64">
-          <div className="flex flex-col items-center w-full h-screen justify-center pink">
+          <div className="flex flex-col items-center w-full  h-auto justify-center pink py-20">
             <div className="grid8 wm">
               <img
                 className="grid__item-img8 aspectm"
@@ -1396,7 +1396,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="pt-64">
-          <div className="flex flex-col items-center w-full h-screen justify-center pink">
+          <div className="flex flex-col items-center w-full  h-auto justify-center pink py-20">
             <div className="grid9 wm">
               <img
                 className="grid__item-img9 aspectm"
@@ -1453,8 +1453,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-64 sc">
-          <div className="flex flex-col items-center w-full h-screen justify-center pink">
+        <div className="pt-64">
+          <div className="flex flex-col items-center w-full h-auto justify-center pink py-20">
             <div className="grid10 wm">
               <img
                 className="grid__item-img10 aspectm"
