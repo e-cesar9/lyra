@@ -856,7 +856,7 @@ const DiaryPage: React.FC = () => {
             </div>
             <div
               id="section"
-              className="swap flex justify-center items-center content"
+              className="swap flex justify-center items-center content z-50"
               ref={titleRef}
             >
               <h2 id="intro" className="content__title" data-effect25>
