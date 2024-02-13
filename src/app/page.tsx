@@ -12,7 +12,6 @@ const IndexPage = ({}) => {
 
   return (
     <>
-
       <Layout>
         <div
           ref={containerRef}
