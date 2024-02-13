@@ -884,7 +884,7 @@ const DiaryPage: React.FC = () => {
           <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid1 wm">
               <img
-                className="grid__item-img1"
+                className="grid__item-img1 aspectm"
                 src="/AnIncredibleLife/LYH_1940_visuel_v002-min.jpg"
                 loading="lazy"
                 alt=""
@@ -928,7 +928,7 @@ const DiaryPage: React.FC = () => {
           <div className="element2 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid2 wm">
               <img
-                className="grid__item-img2"
+                className="grid__item-img2 aspectm"
                 src="/AnIncredibleLife/LYH_1957_visuel03_V001-min.jpg"
                 loading="lazy"
                 alt=""
@@ -989,7 +989,7 @@ const DiaryPage: React.FC = () => {
           <div className="element3 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid3 wm">
               <img
-                className="grid__item-img3"
+                className="grid__item-img3 aspectm"
                 src="/AnIncredibleLife/LYH_1957_visuel06_V001-min.jpg"
                 loading="lazy"
                 alt=""
@@ -1069,7 +1069,7 @@ const DiaryPage: React.FC = () => {
           <div className="element4 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid4 wm">
               <img
-                className="grid__item-img4"
+                className="grid__item-img4 aspectm"
                 src="/AnIncredibleLife/LYH_1967_concept01_V001-mina.jpg"
                 loading="lazy"
                 alt=""
@@ -1120,7 +1120,7 @@ const DiaryPage: React.FC = () => {
           <div className="element5 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid5 wm">
               <img
-                className="grid__item-img5"
+                className="grid__item-img5 aspectm"
                 src="/AnIncredibleLife/LYH_1967_visuel01_V020-mina.jpg"
                 loading="lazy"
                 alt=""
@@ -1179,7 +1179,7 @@ const DiaryPage: React.FC = () => {
           <div className="element6 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid6 wm">
               <img
-                className="grid__item-img6"
+                className="grid__item-img6 aspectm"
                 src="/AnIncredibleLife/LYH_1977_visuel_2_v001-min.jpg"
                 loading="lazy"
                 alt=""
@@ -1247,7 +1247,7 @@ const DiaryPage: React.FC = () => {
           <div className="element7 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid7 wm">
               <img
-                className="grid__item-img7"
+                className="grid__item-img7 aspectm"
                 src="/AnIncredibleLife/LYH_1977_visuel_3_v001-min.jpg"
                 loading="lazy"
                 alt=""
@@ -1320,7 +1320,7 @@ const DiaryPage: React.FC = () => {
           <div className="element8 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid8 wm">
               <img
-                className="grid__item-img8"
+                className="grid__item-img8 aspectm"
                 src="/AnIncredibleLife/LYH_1977_visuel_v001-mina.jpg"
                 loading="lazy"
                 alt=""
@@ -1380,7 +1380,7 @@ const DiaryPage: React.FC = () => {
           <div className="element9 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid9 wm">
               <img
-                className="grid__item-img9"
+                className="grid__item-img9 aspectm"
                 src="/AnIncredibleLife/LYH_2007_visuel2_v009-min.jpg"
                 loading="lazy"
                 alt=""
@@ -1438,7 +1438,7 @@ const DiaryPage: React.FC = () => {
           <div className="element10 flex relative flex-col items-center w-full pt-40 justify-center">
             <div className="grid10 wm">
               <img
-                className="grid__item-img10"
+                className="grid__item-img10 aspectm"
                 src="/AnIncredibleLife/LYH_2023_visuel1_cleanup_v001-min.jpg"
                 loading="lazy"
                 alt=""

@@ -641,6 +641,7 @@ display: flex;
 	}
 
 
+
 	#printemps{
 		position: relative;
 		margin-top: -360px;
@@ -673,6 +674,22 @@ display: flex;
 			visibility: hidden;
 		}
 
+	/* .grid__item-img1{
+		aspect-ratio: 0;
+	}
+
+	.grid__item-img2{
+		aspect-ratio: 0;
+		width: auto;
+		height: auto;
+	} */
+
+	.aspectm{
+		aspect-ratio: 0;
+		width: auto;
+		height: auto;
+	}
+
 	
 	.content__title{
 		margin: 2rem 0rem;
@@ -680,7 +697,7 @@ display: flex;
 	}
 
 	#parg1{
-		margin-top: 21vw;
+		margin-top: 36vw;
 	}
 
 	.echo{
