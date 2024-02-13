@@ -334,6 +334,7 @@ display: flex;
 
 	.wm{
 		width: 100%;
+		text-align: -webkit-center;
 	}
 	.quotes{
 		font-size: 13px;
@@ -833,6 +834,7 @@ display: flex;
 	}
 	.wm{
 		margin-top: -1rem;
+		text-align: -webkit-center;
 	}
 
 }
@@ -844,6 +846,7 @@ display: flex;
 	}
 	.wm{
 		margin-top: -3rem;
+		text-align: -webkit-center;
 	}
 
 }
