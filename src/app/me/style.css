@@ -341,7 +341,6 @@ display: flex;
 	}
 	.echo{
 		top: 0;
-		height: 150vh;
 
 	}
 	#section{
@@ -722,7 +721,6 @@ display: flex;
 		padding-top: 16rem;
 		display: flex;
 		flex-direction: column;
-		/* width: 100vw; */
 		height: auto;
 	}
 	.p2{
