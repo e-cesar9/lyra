@@ -838,7 +838,7 @@ const DiaryPage: React.FC = () => {
       <div id="Me" className="rounded layout w-full">
         <div className="echo relative">
           <div className="wrap flex items-center w-full justify-center">
-            <div className=" flex flex-row justify-center pl-[45px] z-30 items-center swap">
+            <div className=" flex flex-row justify-center pl-[45px] z-50 items-center swap">
               <div className="grid__item">
                 <div
                   className="grid__item-img photo"
@@ -855,13 +855,13 @@ const DiaryPage: React.FC = () => {
             </div>
             <div
               id="section"
-              className="swap flex justify-center items-center content z-50"
+              className="swap flex justify-center items-center content z-40"
               ref={titleRef}
             >
               <h2 id="intro" className="content__title" data-effect25>
                 <span className="lined font-medium font-height-medium">
                   In the grand tapestry of narratives that our world weaves,
-                  there lies a studio baptized with my name by <a href={selectedUrl} target="_blank" className="OussamaAmmar">Oussama Ammar</a>, my
+                  there lies a studio baptized with my name by <a href={selectedUrl} target="_blank" className="OussamaAmmar">Oussama Ammar,</a> my
                   esteemed co-founder. <br /> It beckons a tale of its own, one
                   that is mine to share.
                 </span>
