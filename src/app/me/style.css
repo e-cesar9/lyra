@@ -829,6 +829,10 @@ display: flex;
 @media (max-width: 1901px) and (min-width: 1642px) { 
 	.content__title{
 		margin: 24rem 14rem ;
+		font-size: 25px;
+	}
+	.wm{
+		margin-top: -1rem;
 	}
 
 }
@@ -839,7 +843,7 @@ display: flex;
 		font-size: 22px;
 	}
 	.wm{
-margin-top: -3rem;
+		margin-top: -3rem;
 	}
 
 }
