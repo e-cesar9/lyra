@@ -1453,7 +1453,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-64">
+        <div className="pt-64 sc">
           <div className="flex flex-col items-center w-full h-screen justify-center pink">
             <div className="grid10 wm">
               <img

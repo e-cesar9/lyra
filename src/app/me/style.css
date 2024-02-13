@@ -107,9 +107,15 @@ text-orientation: upright;
 }
 
 .pink{
-	background-color: #EFAECB;
+	background-color: #ea7bb7;
+	
 }
 
+.sc{
+	scroll-snap-align: start none;
+	scroll-margin-block: 20px;
+	scroll-margin-block-start: 20px;
+}
 
 .content__title{
 	margin: 2rem 26rem;
