@@ -12,7 +12,7 @@ const IndexPage = ({}) => {
 
   return (
     <>
-      <Sidebar />
+
       <Layout>
         <div
           ref={containerRef}
