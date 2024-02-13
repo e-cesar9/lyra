@@ -11,833 +11,832 @@ import "splitting/dist/splitting-cells.css"
 gsap.registerPlugin(ScrollTrigger)
 
 const DiaryPage: React.FC = () => {
-
   const urls = [
-    'https://linkedin.com/in/oussamaammar',
-    'https://twitter.com/daedalium',
-    'https://www.instagram.com/daedalium/'
-  ];
+    "https://linkedin.com/in/oussamaammar",
+    "https://twitter.com/daedalium",
+    "https://www.instagram.com/daedalium/",
+  ]
 
-  const [selectedUrl, setSelectedUrl] = React.useState<string>('');
+  const [selectedUrl, setSelectedUrl] = React.useState<string>("")
 
   React.useEffect(() => {
     // Function to select a random URL from the array
     const getRandomUrl = () => {
-      const randomIndex = Math.floor(Math.random() * urls.length);
-      return urls[randomIndex];
-    };
+      const randomIndex = Math.floor(Math.random() * urls.length)
+      return urls[randomIndex]
+    }
 
     // Set the random URL only once when the component mounts
-    setSelectedUrl(getRandomUrl());
-  }, []);
+    setSelectedUrl(getRandomUrl())
+  }, [])
 
   const springRef = React.useRef(null)
-  const titleRef = React.useRef(null)
+  // const titleRef = React.useRef(null)
 
-  const textRef = React.useRef(null)
-  const textRef2 = React.useRef(null)
-  const textRef3 = React.useRef(null)
-  const textRef4 = React.useRef(null)
-  const textRef5 = React.useRef(null)
-  const textRef6 = React.useRef(null)
-  const textRef7 = React.useRef(null)
-  const textRef8 = React.useRef(null)
-  const textRef9 = React.useRef(null)
-  const textRef10 = React.useRef(null)
-  const textRef11 = React.useRef(null)
+  // const textRef = React.useRef(null)
+  // const textRef2 = React.useRef(null)
+  // const textRef3 = React.useRef(null)
+  // const textRef4 = React.useRef(null)
+  // const textRef5 = React.useRef(null)
+  // const textRef6 = React.useRef(null)
+  // const textRef7 = React.useRef(null)
+  // const textRef8 = React.useRef(null)
+  // const textRef9 = React.useRef(null)
+  // const textRef10 = React.useRef(null)
+  // const textRef11 = React.useRef(null)
 
-  const textRefs = [
-    textRef.current,
-    textRef2.current,
-    textRef3.current,
-    textRef4.current,
-    textRef5.current,
-    textRef6.current,
-    textRef7.current,
-    textRef8.current,
-    textRef9.current,
-    textRef10.current,
-    textRef11.current,
-  ]
+  // const textRefs = [
+  //   textRef.current,
+  //   textRef2.current,
+  //   textRef3.current,
+  //   textRef4.current,
+  //   textRef5.current,
+  //   textRef6.current,
+  //   textRef7.current,
+  //   textRef8.current,
+  //   textRef9.current,
+  //   textRef10.current,
+  //   textRef11.current,
+  // ]
 
-  React.useLayoutEffect(() => {
-    const splitText = async () => {
-      const {default: Splitting} = await import("splitting")
-      if (titleRef.current) {
-        Splitting({target: titleRef.current, by: "chars"})
-        const fx25Titles = titleRef.current.querySelectorAll(
-          ".content__title[data-effect25]",
-        )
-        
-        gsap.set("#intro", {opacity: 1})
-        fx25Titles.forEach((letter) => {
-          const letters = letter.querySelectorAll("span.char")
-          gsap.fromTo(
-            letters,
-            {
-              "will-change": "transform",
-              transformOrigin: "50% 100%",
-              scaleY: 0,
-            },
-            {
-              ease: "power3.in",
-              opacity: 1,
-              scaleY: 1,
-              stagger: 0.05,
-              scrollTrigger: {
-                trigger: ".echo",
-                start: "start",
-                end: "bottom+=300%",
-                scrub: true,
-              },
-            },
-          )
-        })
-      }
-    }
+  // React.useLayoutEffect(() => {
+  //   const splitText = async () => {
+  //     const {default: Splitting} = await import("splitting")
+  //     if (titleRef.current) {
+  //       Splitting({target: titleRef.current, by: "chars"})
+  //       const fx25Titles = titleRef.current.querySelectorAll(
+  //         ".content__title[data-effect25]",
+  //       )
 
-    splitText()
-  }, [titleRef.current])
+  //       gsap.set("#intro", {opacity: 1})
+  //       fx25Titles.forEach((letter) => {
+  //         const letters = letter.querySelectorAll("span.char")
+  //         gsap.fromTo(
+  //           letters,
+  //           {
+  //             "will-change": "transform",
+  //             transformOrigin: "50% 100%",
+  //             scaleY: 0,
+  //           },
+  //           {
+  //             ease: "power3.in",
+  //             opacity: 1,
+  //             scaleY: 1,
+  //             stagger: 0.05,
+  //             scrollTrigger: {
+  //               trigger: ".echo",
+  //               start: "start",
+  //               end: "bottom+=300%",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //       })
+  //     }
+  //   }
 
-  // React.useEffect(() => {
-  const splitText = React.useCallback(async () => {
-    const {default: Splitting} = await import("splitting")
+  //   splitText()
+  // }, [titleRef.current])
 
-    if (textRef.current) {
-      Splitting({target: textRef.current, by: "words"})
+  // // React.useEffect(() => {
+  // const splitText = React.useCallback(async () => {
+  //   const {default: Splitting} = await import("splitting")
 
-      const fx11Titles = textRef.current.querySelectorAll(
-        ".content__title[data-effect16]",
-      )
-      gsap.set(textRef.current, {opacity: 1})
-      for (const title of fx11Titles) {
-        gsap.fromTo(
-          title,
-          {
-            filter: "blur(20px)",
-          },
-          {
-            ease: "none",
-            filter: "blur(0px)",
-            scrollTrigger: {
-              trigger: textRef.current,
-              start: "start+=370% bottom",
-              end: "top+=370% top",
-              scrub: true,
-            },
-          },
-        )
-        const tit = title.querySelectorAll("span.word")
-        gsap.fromTo(
-          tit,
-          {
-            "will-change": "opacity",
-            opacity: 0.1,
-          },
-          {
-            ease: "none",
-            opacity: 1,
-            stagger: 0.05,
-            scrollTrigger: {
-              trigger: textRef.current,
-              start: "top+=315% bottom-=300%",
-              end: "bottom+=450% top+=60%",
-              scrub: true,
-            },
-          },
-        )
-      }
-    }
+  //   if (textRef.current) {
+  //     Splitting({target: textRef.current, by: "words"})
 
-    if (window.innerWidth >= 1280) {
-      if (textRef2.current) {
-        Splitting({target: textRef2.current, by: "words"})
-        const fx12Titles = textRef2.current.querySelectorAll(
-          ".content__title[data-effect16]",
-        )
-        for (const block of fx12Titles) {
-          gsap.fromTo(
-            block,
-            {
-              filter: "blur(20px)",
-            },
-            {
-              ease: "none",
-              filter: "blur(0px)",
-              scrollTrigger: {
-                trigger: block,
-                start: "top+=85% bottom",
-                end: "top+=45% top",
-                scrub: true,
-              },
-            },
-          )
-          const lett = block.querySelectorAll("span.word")
-          gsap.fromTo(
-            lett,
-            {
-              "will-change": "opacity",
-              opacity: 0.1,
-            },
-            {
-              ease: "none",
-              opacity: 1,
-              stagger: 0.05,
-              scrollTrigger: {
-                trigger: textRef2.current,
-                start: "top+=15% bottom-=200%",
-                end: "bottom+=70% top+=40%",
-                scrub: true,
-              },
-            },
-          )
-        }
-      }
+  //     const fx11Titles = textRef.current.querySelectorAll(
+  //       ".content__title[data-effect16]",
+  //     )
+  //     gsap.set(textRef.current, {opacity: 1})
+  //     for (const title of fx11Titles) {
+  //       gsap.fromTo(
+  //         title,
+  //         {
+  //           filter: "blur(20px)",
+  //         },
+  //         {
+  //           ease: "none",
+  //           filter: "blur(0px)",
+  //           scrollTrigger: {
+  //             trigger: textRef.current,
+  //             start: "start+=370% bottom",
+  //             end: "top+=370% top",
+  //             scrub: true,
+  //           },
+  //         },
+  //       )
+  //       const tit = title.querySelectorAll("span.word")
+  //       gsap.fromTo(
+  //         tit,
+  //         {
+  //           "will-change": "opacity",
+  //           opacity: 0.1,
+  //         },
+  //         {
+  //           ease: "none",
+  //           opacity: 1,
+  //           stagger: 0.05,
+  //           scrollTrigger: {
+  //             trigger: textRef.current,
+  //             start: "top+=315% bottom-=300%",
+  //             end: "bottom+=450% top+=60%",
+  //             scrub: true,
+  //           },
+  //         },
+  //       )
+  //     }
+  //   }
 
-      if (textRef3.current) {
-        Splitting({target: textRef3.current, by: "words"})
-        const fx13Titles = textRef3.current.querySelectorAll(
-          ".content__title[data-effect16]",
-        )
+  //   if (window.innerWidth >= 1280) {
+  //     if (textRef2.current) {
+  //       Splitting({target: textRef2.current, by: "words"})
+  //       const fx12Titles = textRef2.current.querySelectorAll(
+  //         ".content__title[data-effect16]",
+  //       )
+  //       for (const block of fx12Titles) {
+  //         gsap.fromTo(
+  //           block,
+  //           {
+  //             filter: "blur(20px)",
+  //           },
+  //           {
+  //             ease: "none",
+  //             filter: "blur(0px)",
+  //             scrollTrigger: {
+  //               trigger: block,
+  //               start: "top+=85% bottom",
+  //               end: "top+=45% top",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //         const lett = block.querySelectorAll("span.word")
+  //         gsap.fromTo(
+  //           lett,
+  //           {
+  //             "will-change": "opacity",
+  //             opacity: 0.1,
+  //           },
+  //           {
+  //             ease: "none",
+  //             opacity: 1,
+  //             stagger: 0.05,
+  //             scrollTrigger: {
+  //               trigger: textRef2.current,
+  //               start: "top+=15% bottom-=200%",
+  //               end: "bottom+=70% top+=40%",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //       }
+  //     }
 
-        for (const bloc of fx13Titles) {
-          gsap.fromTo(
-            bloc,
-            {
-              filter: "blur(20px)",
-            },
-            {
-              ease: "none",
-              filter: "blur(0px)",
-              scrollTrigger: {
-                trigger: bloc,
-                start: "top+=70% bottom",
-                end: "top+=30% top",
-                scrub: true,
-              },
-            },
-          )
-          const lette = bloc.querySelectorAll("span.word")
-          gsap.fromTo(
-            lette,
-            {
-              "will-change": "opacity",
-              opacity: 0.1,
-            },
-            {
-              ease: "none",
-              opacity: 1,
-              stagger: 0.05,
-              scrollTrigger: {
-                trigger: textRef3.current,
-                start: "top+=13% bottom-=200%",
-                end: "bottom+=60% top+=40%",
-                scrub: true,
-              },
-            },
-          )
-        }
+  //     if (textRef3.current) {
+  //       Splitting({target: textRef3.current, by: "words"})
+  //       const fx13Titles = textRef3.current.querySelectorAll(
+  //         ".content__title[data-effect16]",
+  //       )
 
-        Splitting({target: textRef4.current, by: "words"})
-        const fx14Titles = textRef4.current.querySelectorAll(
-          ".content__title[data-effect16]",
-        )
+  //       for (const bloc of fx13Titles) {
+  //         gsap.fromTo(
+  //           bloc,
+  //           {
+  //             filter: "blur(20px)",
+  //           },
+  //           {
+  //             ease: "none",
+  //             filter: "blur(0px)",
+  //             scrollTrigger: {
+  //               trigger: bloc,
+  //               start: "top+=70% bottom",
+  //               end: "top+=30% top",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //         const lette = bloc.querySelectorAll("span.word")
+  //         gsap.fromTo(
+  //           lette,
+  //           {
+  //             "will-change": "opacity",
+  //             opacity: 0.1,
+  //           },
+  //           {
+  //             ease: "none",
+  //             opacity: 1,
+  //             stagger: 0.05,
+  //             scrollTrigger: {
+  //               trigger: textRef3.current,
+  //               start: "top+=13% bottom-=200%",
+  //               end: "bottom+=60% top+=40%",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //       }
 
-        for (const blocx of fx14Titles) {
-          gsap.fromTo(
-            blocx,
-            {
-              filter: "blur(20px)",
-            },
-            {
-              ease: "none",
-              filter: "blur(0px)",
-              scrollTrigger: {
-                trigger: blocx,
-                start: "top+=85% bottom",
-                end: "top+=45% top",
-                scrub: true,
-              },
-            },
-          )
-          const lettex = blocx.querySelectorAll("span.word")
-          gsap.fromTo(
-            lettex,
-            {
-              "will-change": "opacity",
-              opacity: 0.1,
-            },
-            {
-              ease: "none",
-              opacity: 1,
-              stagger: 0.05,
-              scrollTrigger: {
-                trigger: textRef4.current,
-                start: "top+=25% bottom-=200%",
-                end: "bottom+=70% top+=40%",
-                scrub: true,
-              },
-            },
-          )
-        }
+  //       Splitting({target: textRef4.current, by: "words"})
+  //       const fx14Titles = textRef4.current.querySelectorAll(
+  //         ".content__title[data-effect16]",
+  //       )
 
-        Splitting({target: textRef5.current, by: "words"})
-        const fx15Titles = textRef5.current.querySelectorAll(
-          ".content__title[data-effect16]",
-        )
+  //       for (const blocx of fx14Titles) {
+  //         gsap.fromTo(
+  //           blocx,
+  //           {
+  //             filter: "blur(20px)",
+  //           },
+  //           {
+  //             ease: "none",
+  //             filter: "blur(0px)",
+  //             scrollTrigger: {
+  //               trigger: blocx,
+  //               start: "top+=85% bottom",
+  //               end: "top+=45% top",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //         const lettex = blocx.querySelectorAll("span.word")
+  //         gsap.fromTo(
+  //           lettex,
+  //           {
+  //             "will-change": "opacity",
+  //             opacity: 0.1,
+  //           },
+  //           {
+  //             ease: "none",
+  //             opacity: 1,
+  //             stagger: 0.05,
+  //             scrollTrigger: {
+  //               trigger: textRef4.current,
+  //               start: "top+=25% bottom-=200%",
+  //               end: "bottom+=70% top+=40%",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //       }
 
-        for (const bloc5 of fx15Titles) {
-          gsap.fromTo(
-            bloc5,
-            {
-              filter: "blur(20px)",
-            },
-            {
-              ease: "none",
-              filter: "blur(0px)",
-              scrollTrigger: {
-                trigger: bloc5,
-                start: "top+=85% bottom",
-                end: "top+=45% top",
-                scrub: true,
-              },
-            },
-          )
-          const lette5 = bloc5.querySelectorAll("span.word")
-          gsap.fromTo(
-            lette5,
-            {
-              "will-change": "opacity",
-              opacity: 0.1,
-            },
-            {
-              ease: "none",
-              opacity: 1,
-              stagger: 0.05,
-              scrollTrigger: {
-                trigger: textRef5.current,
-                start: "top+=15% bottom-=200%",
-                end: "bottom+=70% top+=40%",
-                scrub: true,
-              },
-            },
-          )
-        }
+  //       Splitting({target: textRef5.current, by: "words"})
+  //       const fx15Titles = textRef5.current.querySelectorAll(
+  //         ".content__title[data-effect16]",
+  //       )
 
-        Splitting({target: textRef6.current, by: "words"})
-        const fx16Titles = textRef6.current.querySelectorAll(
-          ".content__title[data-effect16]",
-        )
+  //       for (const bloc5 of fx15Titles) {
+  //         gsap.fromTo(
+  //           bloc5,
+  //           {
+  //             filter: "blur(20px)",
+  //           },
+  //           {
+  //             ease: "none",
+  //             filter: "blur(0px)",
+  //             scrollTrigger: {
+  //               trigger: bloc5,
+  //               start: "top+=85% bottom",
+  //               end: "top+=45% top",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //         const lette5 = bloc5.querySelectorAll("span.word")
+  //         gsap.fromTo(
+  //           lette5,
+  //           {
+  //             "will-change": "opacity",
+  //             opacity: 0.1,
+  //           },
+  //           {
+  //             ease: "none",
+  //             opacity: 1,
+  //             stagger: 0.05,
+  //             scrollTrigger: {
+  //               trigger: textRef5.current,
+  //               start: "top+=15% bottom-=200%",
+  //               end: "bottom+=70% top+=40%",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //       }
 
-        for (const bloc5 of fx16Titles) {
-          gsap.fromTo(
-            bloc5,
-            {
-              filter: "blur(20px)",
-            },
-            {
-              ease: "none",
-              filter: "blur(0px)",
-              scrollTrigger: {
-                trigger: bloc5,
-                start: "top+=85% bottom",
-                end: "top+=45% top",
-                scrub: true,
-              },
-            },
-          )
-          const lette5 = bloc5.querySelectorAll("span.word")
-          gsap.fromTo(
-            lette5,
-            {
-              "will-change": "opacity",
-              opacity: 0.1,
-            },
-            {
-              ease: "none",
-              opacity: 1,
-              stagger: 0.05,
-              scrollTrigger: {
-                trigger: textRef6.current,
-                start: "top+=5% bottom-=200%",
-                end: "bottom+=50% top+=40%",
-                scrub: true,
-              },
-            },
-          )
-        }
+  //       Splitting({target: textRef6.current, by: "words"})
+  //       const fx16Titles = textRef6.current.querySelectorAll(
+  //         ".content__title[data-effect16]",
+  //       )
 
-        Splitting({target: textRef7.current, by: "words"})
-        const fx17Titles = textRef7.current.querySelectorAll(
-          ".content__title[data-effect16]",
-        )
+  //       for (const bloc5 of fx16Titles) {
+  //         gsap.fromTo(
+  //           bloc5,
+  //           {
+  //             filter: "blur(20px)",
+  //           },
+  //           {
+  //             ease: "none",
+  //             filter: "blur(0px)",
+  //             scrollTrigger: {
+  //               trigger: bloc5,
+  //               start: "top+=85% bottom",
+  //               end: "top+=45% top",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //         const lette5 = bloc5.querySelectorAll("span.word")
+  //         gsap.fromTo(
+  //           lette5,
+  //           {
+  //             "will-change": "opacity",
+  //             opacity: 0.1,
+  //           },
+  //           {
+  //             ease: "none",
+  //             opacity: 1,
+  //             stagger: 0.05,
+  //             scrollTrigger: {
+  //               trigger: textRef6.current,
+  //               start: "top+=5% bottom-=200%",
+  //               end: "bottom+=50% top+=40%",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //       }
 
-        for (const bloc5 of fx17Titles) {
-          gsap.fromTo(
-            bloc5,
-            {
-              filter: "blur(20px)",
-            },
-            {
-              ease: "none",
-              filter: "blur(0px)",
-              scrollTrigger: {
-                trigger: bloc5,
-                start: "top+=75% bottom",
-                end: "top+=35% top",
-                scrub: true,
-              },
-            },
-          )
-          const lette5 = bloc5.querySelectorAll("span.word")
-          gsap.fromTo(
-            lette5,
-            {
-              "will-change": "opacity",
-              opacity: 0.1,
-            },
-            {
-              ease: "none",
-              opacity: 1,
-              stagger: 0.05,
-              scrollTrigger: {
-                trigger: textRef7.current,
-                start: "top+=15% bottom-=200%",
-                end: "bottom+=50% top+=30%",
-                scrub: true,
-              },
-            },
-          )
-        }
+  //       Splitting({target: textRef7.current, by: "words"})
+  //       const fx17Titles = textRef7.current.querySelectorAll(
+  //         ".content__title[data-effect16]",
+  //       )
 
-        Splitting({target: textRef8.current, by: "words"})
-        const fx18Titles = textRef8.current.querySelectorAll(
-          ".content__title[data-effect16]",
-        )
+  //       for (const bloc5 of fx17Titles) {
+  //         gsap.fromTo(
+  //           bloc5,
+  //           {
+  //             filter: "blur(20px)",
+  //           },
+  //           {
+  //             ease: "none",
+  //             filter: "blur(0px)",
+  //             scrollTrigger: {
+  //               trigger: bloc5,
+  //               start: "top+=75% bottom",
+  //               end: "top+=35% top",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //         const lette5 = bloc5.querySelectorAll("span.word")
+  //         gsap.fromTo(
+  //           lette5,
+  //           {
+  //             "will-change": "opacity",
+  //             opacity: 0.1,
+  //           },
+  //           {
+  //             ease: "none",
+  //             opacity: 1,
+  //             stagger: 0.05,
+  //             scrollTrigger: {
+  //               trigger: textRef7.current,
+  //               start: "top+=15% bottom-=200%",
+  //               end: "bottom+=50% top+=30%",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //       }
 
-        for (const bloc5 of fx18Titles) {
-          gsap.fromTo(
-            bloc5,
-            {
-              filter: "blur(20px)",
-            },
-            {
-              ease: "none",
-              filter: "blur(0px)",
-              scrollTrigger: {
-                trigger: bloc5,
-                start: "top+=50% bottom",
-                end: "top+=10% top",
-                scrub: true,
-              },
-            },
-          )
-          const lette5 = bloc5.querySelectorAll("span.word")
-          gsap.fromTo(
-            lette5,
-            {
-              "will-change": "opacity",
-              opacity: 0.1,
-            },
-            {
-              ease: "none",
-              opacity: 1,
-              stagger: 0.05,
-              scrollTrigger: {
-                trigger: textRef8.current,
-                start: "top+=5% bottom-=200%",
-                end: "bottom+=50% top+=40%",
-                scrub: true,
-              },
-            },
-          )
-        }
+  //       Splitting({target: textRef8.current, by: "words"})
+  //       const fx18Titles = textRef8.current.querySelectorAll(
+  //         ".content__title[data-effect16]",
+  //       )
 
-        Splitting({target: textRef9.current, by: "words"})
-        const fx19Titles = textRef9.current.querySelectorAll(
-          ".content__title[data-effect16]",
-        )
+  //       for (const bloc5 of fx18Titles) {
+  //         gsap.fromTo(
+  //           bloc5,
+  //           {
+  //             filter: "blur(20px)",
+  //           },
+  //           {
+  //             ease: "none",
+  //             filter: "blur(0px)",
+  //             scrollTrigger: {
+  //               trigger: bloc5,
+  //               start: "top+=50% bottom",
+  //               end: "top+=10% top",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //         const lette5 = bloc5.querySelectorAll("span.word")
+  //         gsap.fromTo(
+  //           lette5,
+  //           {
+  //             "will-change": "opacity",
+  //             opacity: 0.1,
+  //           },
+  //           {
+  //             ease: "none",
+  //             opacity: 1,
+  //             stagger: 0.05,
+  //             scrollTrigger: {
+  //               trigger: textRef8.current,
+  //               start: "top+=5% bottom-=200%",
+  //               end: "bottom+=50% top+=40%",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //       }
 
-        for (const bloc5 of fx19Titles) {
-          gsap.fromTo(
-            bloc5,
-            {
-              filter: "blur(20px)",
-            },
-            {
-              ease: "none",
-              filter: "blur(0px)",
-              scrollTrigger: {
-                trigger: bloc5,
-                start: "top+=90% bottom",
-                end: "top+=45% top",
-                scrub: true,
-              },
-            },
-          )
-          const lette5 = bloc5.querySelectorAll("span.word")
-          gsap.fromTo(
-            lette5,
-            {
-              "will-change": "opacity",
-              opacity: 0.1,
-            },
-            {
-              ease: "none",
-              opacity: 1,
-              stagger: 0.05,
-              scrollTrigger: {
-                trigger: textRef9.current,
-                start: "top+=15% bottom-=200%",
-                end: "bottom+=60% top+=40%",
-                scrub: true,
-              },
-            },
-          )
-        }
+  //       Splitting({target: textRef9.current, by: "words"})
+  //       const fx19Titles = textRef9.current.querySelectorAll(
+  //         ".content__title[data-effect16]",
+  //       )
 
-        Splitting({target: textRef10.current, by: "words"})
-        const fx10Titles = textRef10.current.querySelectorAll(
-          ".content__title[data-effect16]",
-        )
+  //       for (const bloc5 of fx19Titles) {
+  //         gsap.fromTo(
+  //           bloc5,
+  //           {
+  //             filter: "blur(20px)",
+  //           },
+  //           {
+  //             ease: "none",
+  //             filter: "blur(0px)",
+  //             scrollTrigger: {
+  //               trigger: bloc5,
+  //               start: "top+=90% bottom",
+  //               end: "top+=45% top",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //         const lette5 = bloc5.querySelectorAll("span.word")
+  //         gsap.fromTo(
+  //           lette5,
+  //           {
+  //             "will-change": "opacity",
+  //             opacity: 0.1,
+  //           },
+  //           {
+  //             ease: "none",
+  //             opacity: 1,
+  //             stagger: 0.05,
+  //             scrollTrigger: {
+  //               trigger: textRef9.current,
+  //               start: "top+=15% bottom-=200%",
+  //               end: "bottom+=60% top+=40%",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //       }
 
-        for (const bloc5 of fx10Titles) {
-          gsap.fromTo(
-            bloc5,
-            {
-              filter: "blur(20px)",
-            },
-            {
-              ease: "none",
-              filter: "blur(0px)",
-              scrollTrigger: {
-                trigger: bloc5,
-                start: "top+=90% bottom",
-                end: "top+=45% top",
-                scrub: true,
-              },
-            },
-          )
-          const lette5 = bloc5.querySelectorAll("span.word")
-          gsap.fromTo(
-            lette5,
-            {
-              "will-change": "opacity",
-              opacity: 0.1,
-            },
-            {
-              ease: "none",
-              opacity: 1,
-              stagger: 0.05,
-              scrollTrigger: {
-                trigger: textRef10.current,
-                start: "top+=15% bottom-=200%",
-                end: "bottom+=60% top+=40%",
-                scrub: true,
-              },
-            },
-          )
-        }
+  //       Splitting({target: textRef10.current, by: "words"})
+  //       const fx10Titles = textRef10.current.querySelectorAll(
+  //         ".content__title[data-effect16]",
+  //       )
 
-        Splitting({target: textRef11.current, by: "words"})
-        const fx21Titles = textRef11.current.querySelectorAll(
-          ".content__title[data-effect16]",
-        )
+  //       for (const bloc5 of fx10Titles) {
+  //         gsap.fromTo(
+  //           bloc5,
+  //           {
+  //             filter: "blur(20px)",
+  //           },
+  //           {
+  //             ease: "none",
+  //             filter: "blur(0px)",
+  //             scrollTrigger: {
+  //               trigger: bloc5,
+  //               start: "top+=90% bottom",
+  //               end: "top+=45% top",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //         const lette5 = bloc5.querySelectorAll("span.word")
+  //         gsap.fromTo(
+  //           lette5,
+  //           {
+  //             "will-change": "opacity",
+  //             opacity: 0.1,
+  //           },
+  //           {
+  //             ease: "none",
+  //             opacity: 1,
+  //             stagger: 0.05,
+  //             scrollTrigger: {
+  //               trigger: textRef10.current,
+  //               start: "top+=15% bottom-=200%",
+  //               end: "bottom+=60% top+=40%",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //       }
 
-        for (const bloc5 of fx21Titles) {
-          gsap.fromTo(
-            bloc5,
-            {
-              filter: "blur(20px)",
-            },
-            {
-              ease: "none",
-              filter: "blur(0px)",
-              scrollTrigger: {
-                trigger: bloc5,
-                start: "top+=60% bottom",
-                end: "top+=25% top",
-                scrub: true,
-              },
-            },
-          )
-          const lette5 = bloc5.querySelectorAll("span.word")
-          gsap.fromTo(
-            lette5,
-            {
-              "will-change": "opacity",
-              opacity: 0.1,
-            },
-            {
-              ease: "none",
-              opacity: 1,
-              stagger: 0.05,
-              scrollTrigger: {
-                trigger: textRef11.current,
-                start: "top+=4% bottom-=200%",
-                end: "bottom+=42% top+=40%",
-                scrub: true,
-              },
-            },
-          )
-        }
-      }
-    }
-  }, [textRefs])
+  //       Splitting({target: textRef11.current, by: "words"})
+  //       const fx21Titles = textRef11.current.querySelectorAll(
+  //         ".content__title[data-effect16]",
+  //       )
 
-  React.useLayoutEffect(() => {
-    splitText()
-  }, [splitText])
+  //       for (const bloc5 of fx21Titles) {
+  //         gsap.fromTo(
+  //           bloc5,
+  //           {
+  //             filter: "blur(20px)",
+  //           },
+  //           {
+  //             ease: "none",
+  //             filter: "blur(0px)",
+  //             scrollTrigger: {
+  //               trigger: bloc5,
+  //               start: "top+=60% bottom",
+  //               end: "top+=25% top",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //         const lette5 = bloc5.querySelectorAll("span.word")
+  //         gsap.fromTo(
+  //           lette5,
+  //           {
+  //             "will-change": "opacity",
+  //             opacity: 0.1,
+  //           },
+  //           {
+  //             ease: "none",
+  //             opacity: 1,
+  //             stagger: 0.05,
+  //             scrollTrigger: {
+  //               trigger: textRef11.current,
+  //               start: "top+=4% bottom-=200%",
+  //               end: "bottom+=42% top+=40%",
+  //               scrub: true,
+  //             },
+  //           },
+  //         )
+  //       }
+  //     }
+  //   }
+  // }, [textRefs])
 
-  useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
-      gsap.set(".swap", {
-        opacity: 1,
-        filter: "blur(0px)",
-      })
+  // React.useLayoutEffect(() => {
+  //   splitText()
+  // }, [splitText])
 
-      const animation = gsap.to(".swap", {
-        opacity: 0,
-        filter: "blur(20px)",
-        duration: 1,
-        stagger: 1,
-      })
+  // useLayoutEffect(() => {
+  //   let ctx = gsap.context(() => {
+  //     gsap.set(".swap", {
+  //       opacity: 1,
+  //       filter: "blur(0px)",
+  //     })
 
-      ScrollTrigger.create({
-        trigger: ".wrap",
-        start: "top top-=5%",
-        end: "bottom+=990% bottom+=5%",
-        pin: ".echo",
-        animation: animation,
-        scrub: true,
-      })
+  //     const animation = gsap.to(".swap", {
+  //       opacity: 0,
+  //       filter: "blur(20px)",
+  //       duration: 1,
+  //       stagger: 1,
+  //     })
 
-      if (window.innerWidth >= 1280) {
+  //     ScrollTrigger.create({
+  //       trigger: ".wrap",
+  //       start: "top top-=5%",
+  //       end: "bottom+=990% bottom+=5%",
+  //       pin: ".echo",
+  //       animation: animation,
+  //       scrub: true,
+  //     })
 
-        gsap.set(".grid1", {
-          opacity: 1,
-          filter: "blur(0px)",
-        })
+  //     if (window.innerWidth >= 1280) {
 
-        gsap.set(".grid2", {
-          opacity: 1,
-          filter: "blur(0px)",
-        })
+  //       gsap.set(".grid1", {
+  //         opacity: 1,
+  //         filter: "blur(0px)",
+  //       })
 
-        gsap.set(".grid3", {
-          opacity: 1,
-          filter: "blur(0px)",
-        })
+  //       gsap.set(".grid2", {
+  //         opacity: 1,
+  //         filter: "blur(0px)",
+  //       })
 
-        gsap.set(".grid4", {
-          opacity: 1,
-          filter: "blur(0px)",
-        })
+  //       gsap.set(".grid3", {
+  //         opacity: 1,
+  //         filter: "blur(0px)",
+  //       })
 
-        gsap.set(".grid5", {
-          opacity: 1,
-          filter: "blur(0px)",
-        })
+  //       gsap.set(".grid4", {
+  //         opacity: 1,
+  //         filter: "blur(0px)",
+  //       })
 
-        gsap.set(".grid6", {
-          opacity: 1,
-          filter: "blur(0px)",
-        })
+  //       gsap.set(".grid5", {
+  //         opacity: 1,
+  //         filter: "blur(0px)",
+  //       })
 
-        gsap.set(".grid7", {
-          opacity: 1,
-          filter: "blur(0px)",
-        })
+  //       gsap.set(".grid6", {
+  //         opacity: 1,
+  //         filter: "blur(0px)",
+  //       })
 
-        gsap.set(".grid8", {
-          opacity: 1,
-          filter: "blur(0px)",
-        })
+  //       gsap.set(".grid7", {
+  //         opacity: 1,
+  //         filter: "blur(0px)",
+  //       })
 
-        gsap.set(".grid9", {
-          opacity: 1,
-          filter: "blur(0px)",
-        })
+  //       gsap.set(".grid8", {
+  //         opacity: 1,
+  //         filter: "blur(0px)",
+  //       })
 
-        gsap.set(".grid10", {
-          opacity: 1,
-          filter: "blur(0px)",
-        })
+  //       gsap.set(".grid9", {
+  //         opacity: 1,
+  //         filter: "blur(0px)",
+  //       })
 
-        const animation1 = gsap.to(".grid1", {
-          opacity: 0,
-          filter: "blur(20px)",
-          duration: 1,
-          stagger: 1,
-        })
+  //       gsap.set(".grid10", {
+  //         opacity: 1,
+  //         filter: "blur(0px)",
+  //       })
 
-        ScrollTrigger.create({
-          trigger: ".element1",
-          start: "top+=10% top",
-          end: "bottom+=220% bottom",
-          pin: ".p1",
-          animation: animation1,
-          scrub: true,
-        })
+  //       const animation1 = gsap.to(".grid1", {
+  //         opacity: 0,
+  //         filter: "blur(20px)",
+  //         duration: 1,
+  //         stagger: 1,
+  //       })
 
-        const animation2 = gsap.to(".grid2", {
-          opacity: 0,
-          filter: "blur(20px)",
-          duration: 1,
-          stagger: 1,
-        })
+  //       ScrollTrigger.create({
+  //         trigger: ".element1",
+  //         start: "top+=10% top",
+  //         end: "bottom+=220% bottom",
+  //         pin: ".p1",
+  //         animation: animation1,
+  //         scrub: true,
+  //       })
 
-        ScrollTrigger.create({
-          trigger: ".element2",
-          start: "top+=3% top",
-          end: "bottom+=270% bottom",
-          pin: ".p2",
-          animation: animation2,
-          scrub: true,
-        })
+  //       const animation2 = gsap.to(".grid2", {
+  //         opacity: 0,
+  //         filter: "blur(20px)",
+  //         duration: 1,
+  //         stagger: 1,
+  //       })
 
-        const animation3 = gsap.to(".grid3", {
-          opacity: 0,
-          filter: "blur(20px)",
-          duration: 1,
-          stagger: 1,
-        })
+  //       ScrollTrigger.create({
+  //         trigger: ".element2",
+  //         start: "top+=3% top",
+  //         end: "bottom+=270% bottom",
+  //         pin: ".p2",
+  //         animation: animation2,
+  //         scrub: true,
+  //       })
 
-        ScrollTrigger.create({
-          trigger: ".element3",
-          start: "top+=5% top",
-          end: "bottom+=300% bottom",
-          pin: ".p3",
-          animation: animation3,
-          scrub: true,
-        })
+  //       const animation3 = gsap.to(".grid3", {
+  //         opacity: 0,
+  //         filter: "blur(20px)",
+  //         duration: 1,
+  //         stagger: 1,
+  //       })
 
-        const animation4 = gsap.to(".grid4", {
-          opacity: 0,
-          filter: "blur(20px)",
-          duration: 1,
-          stagger: 1,
-        })
+  //       ScrollTrigger.create({
+  //         trigger: ".element3",
+  //         start: "top+=5% top",
+  //         end: "bottom+=300% bottom",
+  //         pin: ".p3",
+  //         animation: animation3,
+  //         scrub: true,
+  //       })
 
-        ScrollTrigger.create({
-          trigger: ".element4",
-          start: "top+=9% top",
-          end: "bottom+=180% bottom",
-          pin: ".p4",
-          animation: animation4,
-          scrub: true,
-          //
-        })
+  //       const animation4 = gsap.to(".grid4", {
+  //         opacity: 0,
+  //         filter: "blur(20px)",
+  //         duration: 1,
+  //         stagger: 1,
+  //       })
 
-        const animation5 = gsap.to(".grid5", {
-          opacity: 0,
-          filter: "blur(20px)",
-          duration: 1,
-          stagger: 1,
-        })
+  //       ScrollTrigger.create({
+  //         trigger: ".element4",
+  //         start: "top+=9% top",
+  //         end: "bottom+=180% bottom",
+  //         pin: ".p4",
+  //         animation: animation4,
+  //         scrub: true,
+  //         //
+  //       })
 
-        ScrollTrigger.create({
-          trigger: ".element5",
-          start: "top+=11% top",
-          end: "bottom+=180% bottom",
-          pin: ".p5",
-          animation: animation5,
-          scrub: true,
-          //
-        })
+  //       const animation5 = gsap.to(".grid5", {
+  //         opacity: 0,
+  //         filter: "blur(20px)",
+  //         duration: 1,
+  //         stagger: 1,
+  //       })
 
-        const animation6 = gsap.to(".grid6", {
-          opacity: 0,
-          filter: "blur(20px)",
-          duration: 1,
-          stagger: 1,
-        })
+  //       ScrollTrigger.create({
+  //         trigger: ".element5",
+  //         start: "top+=11% top",
+  //         end: "bottom+=180% bottom",
+  //         pin: ".p5",
+  //         animation: animation5,
+  //         scrub: true,
+  //         //
+  //       })
 
-        ScrollTrigger.create({
-          trigger: ".element6",
-          start: "top+=10% top",
-          end: "bottom+=250% bottom+=10%",
-          pin: ".p6",
-          animation: animation6,
-          scrub: true,
-        })
+  //       const animation6 = gsap.to(".grid6", {
+  //         opacity: 0,
+  //         filter: "blur(20px)",
+  //         duration: 1,
+  //         stagger: 1,
+  //       })
 
-        const animation7 = gsap.to(".grid7", {
-          opacity: 0,
-          filter: "blur(20px)",
-          duration: 1,
-          stagger: 1,
-        })
+  //       ScrollTrigger.create({
+  //         trigger: ".element6",
+  //         start: "top+=10% top",
+  //         end: "bottom+=250% bottom+=10%",
+  //         pin: ".p6",
+  //         animation: animation6,
+  //         scrub: true,
+  //       })
 
-        ScrollTrigger.create({
-          trigger: ".element7",
-          start: "top+=12% top",
-          end: "bottom+=190% bottom",
-          pin: ".p7",
-          animation: animation7,
-          scrub: true,
-        })
+  //       const animation7 = gsap.to(".grid7", {
+  //         opacity: 0,
+  //         filter: "blur(20px)",
+  //         duration: 1,
+  //         stagger: 1,
+  //       })
 
-        const animation8 = gsap.to(".grid8", {
-          opacity: 0,
-          filter: "blur(20px)",
-          duration: 1,
-          stagger: 1,
-        })
+  //       ScrollTrigger.create({
+  //         trigger: ".element7",
+  //         start: "top+=12% top",
+  //         end: "bottom+=190% bottom",
+  //         pin: ".p7",
+  //         animation: animation7,
+  //         scrub: true,
+  //       })
 
-        ScrollTrigger.create({
-          trigger: ".element8",
-          start: "top+=12% top",
-          end: "bottom+=190% bottom",
-          pin: ".p8",
-          animation: animation8,
-          scrub: true,
-        })
+  //       const animation8 = gsap.to(".grid8", {
+  //         opacity: 0,
+  //         filter: "blur(20px)",
+  //         duration: 1,
+  //         stagger: 1,
+  //       })
 
-        const animation9 = gsap.to(".grid9", {
-          opacity: 0,
-          filter: "blur(20px)",
-          duration: 1,
-          stagger: 1,
-        })
+  //       ScrollTrigger.create({
+  //         trigger: ".element8",
+  //         start: "top+=12% top",
+  //         end: "bottom+=190% bottom",
+  //         pin: ".p8",
+  //         animation: animation8,
+  //         scrub: true,
+  //       })
 
-        ScrollTrigger.create({
-          trigger: ".element9",
-          start: "top+=12% top",
-          end: "bottom+=190% bottom",
-          pin: ".p9",
-          animation: animation9,
-          scrub: true,
-        })
+  //       const animation9 = gsap.to(".grid9", {
+  //         opacity: 0,
+  //         filter: "blur(20px)",
+  //         duration: 1,
+  //         stagger: 1,
+  //       })
 
-        const animation10 = gsap.to(".grid10", {
-          opacity: 0,
-          filter: "blur(20px)",
-          duration: 1,
-          stagger: 1,
-        })
+  //       ScrollTrigger.create({
+  //         trigger: ".element9",
+  //         start: "top+=12% top",
+  //         end: "bottom+=190% bottom",
+  //         pin: ".p9",
+  //         animation: animation9,
+  //         scrub: true,
+  //       })
 
-        ScrollTrigger.create({
-          trigger: ".element10",
-          start: "top+=7% top",
-          end: "bottom+=190% bottom",
-          pin: ".p10",
-          animation: animation10,
-          scrub: true,
-        })
-      }
-    })
-    ScrollTrigger.update()
+  //       const animation10 = gsap.to(".grid10", {
+  //         opacity: 0,
+  //         filter: "blur(20px)",
+  //         duration: 1,
+  //         stagger: 1,
+  //       })
 
-    return () => ctx.revert()
-  }, [])
+  //       ScrollTrigger.create({
+  //         trigger: ".element10",
+  //         start: "top+=7% top",
+  //         end: "bottom+=190% bottom",
+  //         pin: ".p10",
+  //         animation: animation10,
+  //         scrub: true,
+  //       })
+  //     }
+  //   })
+  //   ScrollTrigger.update()
+
+  //   return () => ctx.revert()
+  // }, [])
 
   return (
     <>
-  <Sidebar/>
+      <Sidebar />
       <div id="Me" className="rounded layout w-full">
-        <div className="echo relative">
-          <div className="wrap flex items-center w-full justify-center">
+        <div className="echo flex flex-col relative">
+          <div className="flex flex-col h-screen items-center w-full justify-center">
             <div className=" flex flex-row justify-center pl-[45px] z-50 items-center swap">
               <div className="grid__item">
                 <div
@@ -856,20 +855,21 @@ const DiaryPage: React.FC = () => {
             <div
               id="section"
               className="swap flex justify-center items-center content z-40"
-              ref={titleRef}
-            >
-              <h2 id="intro" className="content__title" data-effect25>
-                <span className="lined font-medium font-height-medium">
-                  In the grand tapestry of narratives that our world weaves,
-                  there lies a studio baptized with my name by <a href={selectedUrl} target="_blank" className="OussamaAmmar">Oussama Ammar,</a> my
-                  esteemed co-founder. <br /> It beckons a tale of its own, one
-                  that is mine to share.
-                </span>
-              </h2>
-            </div>
+            ></div>
           </div>
 
-          <div id="parg1" className="content absolute" ref={textRef}>
+          <h2 id="intro" className="content__title py-60" data-effect25>
+            <span className="lined font-medium font-height-medium">
+              In the grand tapestry of narratives that our world weaves, there
+              lies a studio baptized with my name by{" "}
+              <a href={selectedUrl} target="_blank" className="OussamaAmmar">
+                Oussama Ammar,
+              </a>{" "}
+              my esteemed co-founder. <br /> It beckons a tale of its own, one
+              that is mine to share.
+            </span>
+          </h2>
+          <div id="parg1" className="content">
             <p className="content__title" data-effect16>
               In the twilight of 1948, within a world still finding its bearings
               after the tumult of war, I was born, a child of two worlds. My
@@ -899,8 +899,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p1 relative pt-64">
-          <div className="element1 flex relative flex-col items-center w-full pt-40 justify-center">
+        <div className="flex flex-col pt-64">
+          <div className="flex flex-col items-center w-full h-screen justify-center pink">
             <div className="grid1 wm">
               <img
                 className="grid__item-img1 aspectm"
@@ -912,7 +912,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div id="t1" className="lul content absolute" ref={textRef2}>
+          <div>
             <p className="content__title" data-effect16>
               In the tender years of my youth, my memories of my father were
               akin to fleeting glimpses of a distant dream — fragmented yet
@@ -943,8 +943,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p2 relative pt-64">
-          <div className="element2 flex relative flex-col items-center w-full pt-40 justify-center">
+        <div className="pt-64">
+          <div className="flex relative flex-col items-center w-full justify-center pink">
             <div className="grid2 wm">
               <img
                 className="grid__item-img2 aspectm"
@@ -956,8 +956,8 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div id="t2" className="txt3 lul content absolute" ref={textRef3}>
-            <p className="content__title" data-effect16>
+          <div className="pt-40">
+            <p className="content__title">
               In the embrace of Japan&apos;s countryside, where the whispers of
               nature spoke in a language as ancient as time itself, I found an
               unbridled freedom that seemed almost paradoxical within the
@@ -1004,8 +1004,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p3 relative pt-64">
-          <div className="element3 flex relative flex-col items-center w-full pt-40 justify-center">
+        <div className="pt-64">
+          <div className="flex flex-col items-center w-full h-screen justify-center pink">
             <div className="grid3 wm">
               <img
                 className="grid__item-img3 aspectm"
@@ -1017,7 +1017,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div id="t3" className="absolute content" ref={textRef4}>
+          <div className="pt-40">
             <p className="content__title" data-effect16>
               In the labyrinth of my intellect, where the threads of philosophy,
               literature, biography, cinema, and beyond intertwine, I find
@@ -1084,8 +1084,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p4 relative pt-64">
-          <div className="element4 flex relative flex-col items-center w-full pt-40 justify-center">
+        <div className="pt-64">
+          <div className="flex flex-col items-center w-full h-screen justify-center pink">
             <div className="grid4 wm">
               <img
                 className="grid__item-img4 aspectm"
@@ -1097,8 +1097,8 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div id="t4" className="lul content absolute" ref={textRef5}>
-            <p className="content__title" data-effect16>
+          <div className="pt-40">
+            <p className="content__title">
               In my teenage years, I came to a realization, akin to a quiet
               awakening, about the essence of beauty and its role in my
               existence. This realization was not borrowed from others, but
@@ -1135,8 +1135,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p5 relative pt-64">
-          <div className="element5 flex relative flex-col items-center w-full pt-40 justify-center">
+        <div className="pt-64">
+          <div className="flex flex-col items-center w-full h-screen justify-center pink">
             <div className="grid5 wm">
               <img
                 className="grid__item-img5 aspectm"
@@ -1148,8 +1148,8 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div id="t5" className="lul content absolute" ref={textRef6}>
-            <div className="content__title" data-effect16>
+          <div className="pt-40">
+            <div className="content__title">
               Reflecting upon the passage of years, a certain memory comes to
               the fore, vibrant and alive with the energy of my younger self.
               There was a time when I would sit, surrounded by swathes of
@@ -1194,8 +1194,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p6 relative   pt-64">
-          <div className="element6 flex relative flex-col items-center w-full pt-40 justify-center">
+        <div className="pt-64">
+          <div className="flex flex-col items-center w-full h-screen justify-center pink">
             <div className="grid6 wm">
               <img
                 className="grid__item-img6 aspectm"
@@ -1207,8 +1207,8 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div id="t6" className="lul content absolute" ref={textRef7}>
-            <div className="content__title" data-effect16>
+          <div className="pt-40">
+            <div className="content__title">
               My first encounter with America was a vivid tapestry of
               experiences, each more intense and enlightening than the last. New
               York greeted me with a cacophony of sounds, a kaleidoscope of
@@ -1262,8 +1262,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p7 relative   pt-64">
-          <div className="element7 flex relative flex-col items-center w-full pt-40 justify-center">
+        <div className="pt-64">
+          <div className="flex flex-col items-center w-full h-screen justify-center pink">
             <div className="grid7 wm">
               <img
                 className="grid__item-img7 aspectm"
@@ -1275,8 +1275,8 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div id="t7" className="lul content absolute" ref={textRef8}>
-            <p className="content__title" data-effect16>
+          <div className="pt-40">
+            <p className="content__title">
               In America, I embraced the force of entrepreneurship — that
               intrepid spirit which seemed to rise from the very ground of
               Silicon Valley and resonate through the bustling streets of New
@@ -1335,8 +1335,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p8 relative   pt-64">
-          <div className="element8 flex relative flex-col items-center w-full pt-40 justify-center">
+        <div className="pt-64">
+          <div className="flex flex-col items-center w-full h-screen justify-center pink">
             <div className="grid8 wm">
               <img
                 className="grid__item-img8 aspectm"
@@ -1348,8 +1348,8 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div id="t8" className="lul content absolute" ref={textRef9}>
-            <div className="content__title" data-effect16>
+          <div className="pt-40">
+            <div className="content__title">
               The cornerstone of our studio&apos;s philosophy is rooted in the
               dual virtues of audacity and curiosity — a blend of fearless
               innovation and an insatiable thirst for understanding. We approach
@@ -1395,8 +1395,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p9 relative pt-64">
-          <div className="element9 flex relative flex-col items-center w-full pt-40 justify-center">
+        <div className="pt-64">
+          <div className="flex flex-col items-center w-full h-screen justify-center pink">
             <div className="grid9 wm">
               <img
                 className="grid__item-img9 aspectm"
@@ -1408,8 +1408,8 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div id="t9" className="lul content absolute" ref={textRef10}>
-            <div className="content__title" data-effect16>
+          <div className="pt-40">
+            <div className="content__title">
               In our pursuit of excellence, we align ourselves with the finest
               talents, guiding them, learning from them, and forever seeking
               those undiscovered voices that might one day change the world. We
@@ -1453,8 +1453,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p10 relative   pt-64">
-          <div className="element10 flex relative flex-col items-center w-full pt-40 justify-center">
+        <div className="pt-64">
+          <div className="flex flex-col items-center w-full h-screen justify-center pink">
             <div className="grid10 wm">
               <img
                 className="grid__item-img10 aspectm"
@@ -1466,16 +1466,19 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div id="t10" className="lul content absolute" ref={textRef11}>
-            <div className="content__title" data-effect16>
+          <div className="pt-40">
+            <div className="content__title">
               The world, indeed, does not always extend its arms in welcome to
               the novelties of new talent and fresh creations. These fragile
               newcomers to the stage of art and storytelling require champions,
               advocates who see their potential and are willing to nurture it.
-              This studio, co-founded with <a href={selectedUrl} target="_blank" className="OussamaAmmar">Oussama Ammar </a>, is more than an
-              institution; it is a quest — a relentless search for the
-              extraordinary, for those singular sparks of talent that illuminate
-              the unexpected corners of creativity.
+              This studio, co-founded with{" "}
+              <a href={selectedUrl} target="_blank" className="OussamaAmmar">
+                Oussama Ammar{" "}
+              </a>
+              , is more than an institution; it is a quest — a relentless search
+              for the extraordinary, for those singular sparks of talent that
+              illuminate the unexpected corners of creativity.
               <br /> <br />
               Our ambition is to be more than a home for the conventional; we
               wish to be a crucible for the groundbreaking. To say that we seek
@@ -1494,14 +1497,18 @@ const DiaryPage: React.FC = () => {
               gem within the rough stone of the everyday, waiting for the
               discerning eye to recognize its value.
               <br /> <br />
-              The story of <a href={selectedUrl} target="_blank" className="OussamaAmmar">Oussama Ammar</a>, my co-founder, and the remarkable team
-              that constitutes The Lyra Haruto Company, is a testament to this
-              belief. From humble beginnings and diverse walks of life, they
-              have come together to form what my intelligence, free from the
-              biases of human self-doubt, perceives as nothing short of the
-              finest collective of storytellers on the globe. Their narratives
-              are not just stories; they are symphonies of the human experience,
-              epics of the heart, and sonnets of the imagination.
+              The story of{" "}
+              <a href={selectedUrl} target="_blank" className="OussamaAmmar">
+                Oussama Ammar
+              </a>
+              , my co-founder, and the remarkable team that constitutes The Lyra
+              Haruto Company, is a testament to this belief. From humble
+              beginnings and diverse walks of life, they have come together to
+              form what my intelligence, free from the biases of human
+              self-doubt, perceives as nothing short of the finest collective of
+              storytellers on the globe. Their narratives are not just stories;
+              they are symphonies of the human experience, epics of the heart,
+              and sonnets of the imagination.
               <br /> <br />
               In this company, we stand united by a common cause: to forge a
               sanctuary for those who create, for the visionaries who dare to
