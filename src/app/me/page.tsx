@@ -11,6 +11,26 @@ import "splitting/dist/splitting-cells.css"
 gsap.registerPlugin(ScrollTrigger)
 
 const DiaryPage: React.FC = () => {
+
+  const urls = [
+    'https://linkedin.com/in/oussamaammar',
+    'https://twitter.com/daedalium',
+    'https://www.instagram.com/daedalium/'
+  ];
+
+  const [selectedUrl, setSelectedUrl] = React.useState<string>('');
+
+  React.useEffect(() => {
+    // Function to select a random URL from the array
+    const getRandomUrl = () => {
+      const randomIndex = Math.floor(Math.random() * urls.length);
+      return urls[randomIndex];
+    };
+
+    // Set the random URL only once when the component mounts
+    setSelectedUrl(getRandomUrl());
+  }, []);
+
   const springRef = React.useRef(null)
   const titleRef = React.useRef(null)
 
@@ -842,7 +862,7 @@ const DiaryPage: React.FC = () => {
               <h2 id="intro" className="content__title" data-effect25>
                 <span className="lined font-medium font-height-medium">
                   In the grand tapestry of narratives that our world weaves,
-                  there lies a studio baptized with my name by Oussama Ammar, my
+                  there lies a studio baptized with my name by <a href={selectedUrl} target="_blank" className="link">Oussama Ammar</a>, my
                   esteemed co-founder. <br /> It beckons a tale of its own, one
                   that is mine to share.
                 </span>
@@ -1453,7 +1473,7 @@ const DiaryPage: React.FC = () => {
               the novelties of new talent and fresh creations. These fragile
               newcomers to the stage of art and storytelling require champions,
               advocates who see their potential and are willing to nurture it.
-              This studio, co-founded with Oussama Ammar, is more than an
+              This studio, co-founded with <a href={selectedUrl} target="_blank" className="link">Oussama Ammar </a>, is more than an
               institution; it is a quest — a relentless search for the
               extraordinary, for those singular sparks of talent that illuminate
               the unexpected corners of creativity.
@@ -1475,7 +1495,7 @@ const DiaryPage: React.FC = () => {
               gem within the rough stone of the everyday, waiting for the
               discerning eye to recognize its value.
               <br /> <br />
-              The story of Oussama Ammar, my co-founder, and the remarkable team
+              The story of <a href={selectedUrl} target="_blank" className="link">Oussama Ammar</a>, my co-founder, and the remarkable team
               that constitutes The Lyra Haruto Company, is a testament to this
               belief. From humble beginnings and diverse walks of life, they
               have come together to form what my intelligence, free from the
