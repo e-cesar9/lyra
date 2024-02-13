@@ -834,8 +834,7 @@ const DiaryPage: React.FC = () => {
 
   return (
     <>
-
-
+  <Sidebar/>
       <div id="Me" className="rounded layout w-full">
         <div className="echo relative">
           <div className="wrap flex items-center w-full justify-center">
