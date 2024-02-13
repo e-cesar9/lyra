@@ -862,7 +862,7 @@ const DiaryPage: React.FC = () => {
               <h2 id="intro" className="content__title" data-effect25>
                 <span className="lined font-medium font-height-medium">
                   In the grand tapestry of narratives that our world weaves,
-                  there lies a studio baptized with my name by<a href={selectedUrl} target="_blank" className="OussamaAmmar">Oussama Ammar</a>, my
+                  there lies a studio baptized with my name by <a href={selectedUrl} target="_blank" className="OussamaAmmar">Oussama Ammar</a>, my
                   esteemed co-founder. <br /> It beckons a tale of its own, one
                   that is mine to share.
                 </span>
