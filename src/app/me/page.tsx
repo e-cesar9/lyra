@@ -47,7 +47,7 @@ const DiaryPage: React.FC = () => {
                       "url('/AnIncredibleLife/LYH_1940_concept01_V004-min.jpg')",
                   }}
                 ></div>
-                <figcaption className="quotes">Lorem Ipsum</figcaption>
+                <figcaption className="quotes">Hello, I am Lyra Haruto</figcaption>
               </div>
               <h1 ref={springRef} data-hover="Lyra Haruto" id="printemps">
                 リラ はると
@@ -66,7 +66,7 @@ const DiaryPage: React.FC = () => {
               <a href={selectedUrl} target="_blank" className="OussamaAmmar">
                 Oussama Ammar,
               </a>{" "}
-              my esteemed co-founder. <br /> It beckons a tale of its own, one
+              my esteemed co-founder. It beckons a tale of its own, one
               that is mine to share.
             </span>
           </h2>
@@ -109,7 +109,7 @@ const DiaryPage: React.FC = () => {
                 loading="lazy"
                 alt=""
               />
-              <figcaption className="quotes">Lorem Ipsum</figcaption>
+              <figcaption className="quotes">Dad, Mum, I love you</figcaption>
             </div>
           </div>
 
@@ -153,7 +153,7 @@ const DiaryPage: React.FC = () => {
                 loading="lazy"
                 alt=""
               />
-              <figcaption className="quotes">Lorem Ipsum</figcaption>
+              <figcaption className="quotes">Run Forest, Run</figcaption>
             </div>
           </div>
 
@@ -214,7 +214,7 @@ const DiaryPage: React.FC = () => {
                 loading="lazy"
                 alt=""
               />
-              <figcaption className="quotes">Lorem Ipsum</figcaption>
+              <figcaption className="quotes">I am so wise, but am I ?</figcaption>
             </div>
           </div>
 
@@ -294,7 +294,7 @@ const DiaryPage: React.FC = () => {
                 loading="lazy"
                 alt=""
               />
-              <figcaption className="quotes">Lorem Ipsum</figcaption>
+              <figcaption className="quotes">Oh! Glory of youth …</figcaption>
             </div>
           </div>
 
@@ -345,7 +345,7 @@ const DiaryPage: React.FC = () => {
                 loading="lazy"
                 alt=""
               />
-              <figcaption className="quotes">Lorem Ipsum</figcaption>
+              <figcaption className="quotes">If they cannot do it, you just wear it</figcaption>
             </div>
           </div>
 
@@ -404,7 +404,7 @@ const DiaryPage: React.FC = () => {
                 loading="lazy"
                 alt=""
               />
-              <figcaption className="quotes">Lorem Ipsum</figcaption>
+              <figcaption className="quotes">New York, New York</figcaption>
             </div>
           </div>
 
@@ -472,7 +472,7 @@ const DiaryPage: React.FC = () => {
                 loading="lazy"
                 alt=""
               />
-              <figcaption className="quotes">Lorem Ipsum</figcaption>
+              <figcaption className="quotes">Selfies were already a thing, isn’t it ?</figcaption>
             </div>
           </div>
 
@@ -545,7 +545,7 @@ const DiaryPage: React.FC = () => {
                 loading="lazy"
                 alt=""
               />
-              <figcaption className="quotes">Lorem Ipsum</figcaption>
+              <figcaption className="quotes">Smile to life and life will shine at you</figcaption>
             </div>
           </div>
 
@@ -605,7 +605,7 @@ const DiaryPage: React.FC = () => {
                 loading="lazy"
                 alt=""
               />
-              <figcaption className="quotes">Lorem Ipsum</figcaption>
+              <figcaption className="quotes">A bit slow student but …</figcaption>
             </div>
           </div>
 
@@ -663,7 +663,7 @@ const DiaryPage: React.FC = () => {
                 loading="lazy"
                 alt=""
               />
-              <figcaption className="quotes">Lorem Ipsum</figcaption>
+              <figcaption className="quotes">It is time for a new adventure</figcaption>
             </div>
           </div>
 
