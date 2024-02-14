@@ -22,7 +22,6 @@ body{
 
 html {
 	scroll-behavior: smooth;
-
 }
 
 
@@ -109,7 +108,6 @@ text-orientation: upright;
 
 .pink{
 	background-color: #f1a7ce;
-	
 }
 
 
@@ -143,7 +141,6 @@ text-orientation: upright;
 	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
-
 	opacity: 1;
 }
 
@@ -422,8 +419,6 @@ text-orientation: upright;
 		border: 5px solid white;
 	}
 	
-
-	
 }
 
 @media (max-width: 1281px) and (min-width: 761px) { 
@@ -433,8 +428,6 @@ text-orientation: upright;
 		margin: 1px 0 0 250px;
 		padding: 2rem 0;
 	}
-
-
 
 	#printemps{
 		position: relative;
@@ -487,8 +480,6 @@ text-orientation: upright;
 	#parg1{
 		margin-top: 36vw;
 	}
-
-
 }
 
 @media (max-width: 365px){
@@ -512,7 +503,6 @@ text-orientation: upright;
 	.lined{
 		font-size: 32px;
 	}
-
 }
 
 @media (max-width: 1901px) and (min-width: 1642px) { 
