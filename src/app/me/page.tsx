@@ -37,7 +37,7 @@ const DiaryPage: React.FC = () => {
       <Sidebar />
       <div id="Me" className="rounded layout w-full">
         <div className="echo flex flex-col relative">
-          <div className="flex flex-col  h-screen items-center w-full justify-center">
+          <div className="flex flex-col h-screen items-center w-full justify-center">
             <div className=" flex flex-row justify-center pl-[45px] z-50 items-center swap">
               <div className="grid__item">
                 <div
@@ -113,7 +113,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div>
+          <div className="pt-40">
             <p className="content__title" >
               In the tender years of my youth, my memories of my father were
               akin to fleeting glimpses of a distant dream — fragmented yet

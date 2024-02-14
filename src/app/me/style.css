@@ -24,6 +24,7 @@ html {
 
 }
 
+
 .sidebar{
 	height: 100%;
 	position: fixed;
@@ -122,6 +123,9 @@ text-orientation: upright;
 	font-weight: 300;
 }
 
+.aspectm{
+	border: 10px solid white;
+}
 
 .grid__item-img {
 	position: relative;
@@ -131,7 +135,7 @@ text-orientation: upright;
 	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
-	border: 5px solid white;
+	border: 12px solid white;
 	opacity: 1;
 }
 
@@ -143,7 +147,7 @@ text-orientation: upright;
 	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
-	border: 5px solid white;
+
 	opacity: 1;
 }
 
@@ -155,7 +159,7 @@ text-orientation: upright;
 	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
-	border: 5px solid white;
+
 }
 
 .grid__item-img3 {
@@ -166,7 +170,7 @@ text-orientation: upright;
 	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
-	border: 5px solid white;
+
 }
 
 .grid__item-img4 {
@@ -177,7 +181,7 @@ text-orientation: upright;
 	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
-	border: 5px solid white;
+
 }
 
 .grid__item-img5 {
@@ -188,7 +192,7 @@ text-orientation: upright;
 	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
-	border: 5px solid white;
+
 }
 
 .grid__item-img6 {
@@ -199,7 +203,7 @@ text-orientation: upright;
 	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
-	border: 5px solid white;
+
 }
 
 .grid__item-img7 {
@@ -210,7 +214,7 @@ text-orientation: upright;
 	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
-	border: 5px solid white;
+
 }
 
 .grid__item-img8 {
@@ -221,7 +225,7 @@ text-orientation: upright;
 	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
-	border: 5px solid white;
+
 }
 
 .grid__item-img9 {
@@ -232,7 +236,7 @@ text-orientation: upright;
 	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
-	border: 5px solid white;
+
 }
 
 .grid__item-img10 {
@@ -243,7 +247,7 @@ text-orientation: upright;
 	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
-	border: 5px solid white;
+
 }
 
 .lul{
