@@ -114,7 +114,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div className="pt-40">
-            <p className="content__title" >
+            <p className="content__title">
               In the tender years of my youth, my memories of my father were
               akin to fleeting glimpses of a distant dream — fragmented yet
               filled with a profound sense of love and respect. His absence in

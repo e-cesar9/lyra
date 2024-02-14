@@ -17,6 +17,7 @@
 
 body{
 	height: auto;
+	scroll-snap-type: y mandatory;
 }
 
 html {
@@ -55,7 +56,12 @@ figcaption{
 	height: 100%;
 	padding-left: 250px;
 	padding-top: 1px;
-	scroll-snap-type: mandatory;
+	scroll-snap-type: y mandatory;
+
+}
+
+#Me.pt-64{
+	scroll-snap-align: center;
 }
 
 .lined{
@@ -67,11 +73,6 @@ figcaption{
 #h1{
 	font-size: 52px;
 	}
-
-#parg1{
-	top:0;
-}
-
 
 
 #printemps{
@@ -111,11 +112,6 @@ text-orientation: upright;
 	
 }
 
-.sc{
-	scroll-snap-align: start none;
-	scroll-margin-block: 20px;
-	scroll-margin-block-start: 20px;
-}
 
 .content__title{
 	margin: 2rem 26rem;
@@ -135,7 +131,7 @@ text-orientation: upright;
 	background-size: cover;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
-	border: 12px solid white;
+	border: 5px solid white;
 	opacity: 1;
 }
 
@@ -248,16 +244,6 @@ text-orientation: upright;
 	background-position: 50% 50%;
 	will-change: transform, opacity;
 
-}
-
-.lul{
-	top:0;
-	margin-top:0;
-}
-
-
-.photo{
-	border: 5px solid white;
 }
 
 
@@ -494,8 +480,8 @@ text-orientation: upright;
 
 	
 	.content__title{
-		margin: 2rem 0rem;
-		font-size: 17px;
+		margin: 2rem 2rem;
+		font-size: 19px;
 	}
 
 	#parg1{
@@ -530,12 +516,11 @@ text-orientation: upright;
 }
 
 @media (max-width: 1901px) and (min-width: 1642px) { 
-	.content__title{
-		margin: 24rem 14rem ;
+	/* .content__title{
+		margin: 0rem 14rem ;
 		font-size: 25px;
-	}
+	} */
 	.wm{
-		margin-top: -2rem;
 		text-align: -webkit-center;
 	}
 
@@ -543,11 +528,10 @@ text-orientation: upright;
 
 @media (max-width: 1641px) and (min-width: 1281px) { 
 	.content__title{
-		margin: 24rem 14rem ;
+		margin: 0rem 14rem ;
 		font-size: 22px;
 	}
 	.wm{
-		margin-top: -3rem;
 		text-align: -webkit-center;
 	}
 
