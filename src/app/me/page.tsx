@@ -31,805 +31,6 @@ const DiaryPage: React.FC = () => {
   }, [])
 
   const springRef = React.useRef(null)
-  // const titleRef = React.useRef(null)
-
-  // const textRef = React.useRef(null)
-  // const textRef2 = React.useRef(null)
-  // const textRef3 = React.useRef(null)
-  // const textRef4 = React.useRef(null)
-  // const textRef5 = React.useRef(null)
-  // const textRef6 = React.useRef(null)
-  // const textRef7 = React.useRef(null)
-  // const textRef8 = React.useRef(null)
-  // const textRef9 = React.useRef(null)
-  // const textRef10 = React.useRef(null)
-  // const textRef11 = React.useRef(null)
-
-  // const textRefs = [
-  //   textRef.current,
-  //   textRef2.current,
-  //   textRef3.current,
-  //   textRef4.current,
-  //   textRef5.current,
-  //   textRef6.current,
-  //   textRef7.current,
-  //   textRef8.current,
-  //   textRef9.current,
-  //   textRef10.current,
-  //   textRef11.current,
-  // ]
-
-  // React.useLayoutEffect(() => {
-  //   const splitText = async () => {
-  //     const {default: Splitting} = await import("splitting")
-  //     if (titleRef.current) {
-  //       Splitting({target: titleRef.current, by: "chars"})
-  //       const fx25Titles = titleRef.current.querySelectorAll(
-  //         ".content__title[data-effect25]",
-  //       )
-
-  //       gsap.set("#intro", {opacity: 1})
-  //       fx25Titles.forEach((letter) => {
-  //         const letters = letter.querySelectorAll("span.char")
-  //         gsap.fromTo(
-  //           letters,
-  //           {
-  //             "will-change": "transform",
-  //             transformOrigin: "50% 100%",
-  //             scaleY: 0,
-  //           },
-  //           {
-  //             ease: "power3.in",
-  //             opacity: 1,
-  //             scaleY: 1,
-  //             stagger: 0.05,
-  //             scrollTrigger: {
-  //               trigger: ".echo",
-  //               start: "start",
-  //               end: "bottom+=300%",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //       })
-  //     }
-  //   }
-
-  //   splitText()
-  // }, [titleRef.current])
-
-  // // React.useEffect(() => {
-  // const splitText = React.useCallback(async () => {
-  //   const {default: Splitting} = await import("splitting")
-
-  //   if (textRef.current) {
-  //     Splitting({target: textRef.current, by: "words"})
-
-  //     const fx11Titles = textRef.current.querySelectorAll(
-  //       ".content__title[data-effect16]",
-  //     )
-  //     gsap.set(textRef.current, {opacity: 1})
-  //     for (const title of fx11Titles) {
-  //       gsap.fromTo(
-  //         title,
-  //         {
-  //           filter: "blur(20px)",
-  //         },
-  //         {
-  //           ease: "none",
-  //           filter: "blur(0px)",
-  //           scrollTrigger: {
-  //             trigger: textRef.current,
-  //             start: "start+=370% bottom",
-  //             end: "top+=370% top",
-  //             scrub: true,
-  //           },
-  //         },
-  //       )
-  //       const tit = title.querySelectorAll("span.word")
-  //       gsap.fromTo(
-  //         tit,
-  //         {
-  //           "will-change": "opacity",
-  //           opacity: 0.1,
-  //         },
-  //         {
-  //           ease: "none",
-  //           opacity: 1,
-  //           stagger: 0.05,
-  //           scrollTrigger: {
-  //             trigger: textRef.current,
-  //             start: "top+=315% bottom-=300%",
-  //             end: "bottom+=450% top+=60%",
-  //             scrub: true,
-  //           },
-  //         },
-  //       )
-  //     }
-  //   }
-
-  //   if (window.innerWidth >= 1280) {
-  //     if (textRef2.current) {
-  //       Splitting({target: textRef2.current, by: "words"})
-  //       const fx12Titles = textRef2.current.querySelectorAll(
-  //         ".content__title[data-effect16]",
-  //       )
-  //       for (const block of fx12Titles) {
-  //         gsap.fromTo(
-  //           block,
-  //           {
-  //             filter: "blur(20px)",
-  //           },
-  //           {
-  //             ease: "none",
-  //             filter: "blur(0px)",
-  //             scrollTrigger: {
-  //               trigger: block,
-  //               start: "top+=85% bottom",
-  //               end: "top+=45% top",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //         const lett = block.querySelectorAll("span.word")
-  //         gsap.fromTo(
-  //           lett,
-  //           {
-  //             "will-change": "opacity",
-  //             opacity: 0.1,
-  //           },
-  //           {
-  //             ease: "none",
-  //             opacity: 1,
-  //             stagger: 0.05,
-  //             scrollTrigger: {
-  //               trigger: textRef2.current,
-  //               start: "top+=15% bottom-=200%",
-  //               end: "bottom+=70% top+=40%",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //       }
-  //     }
-
-  //     if (textRef3.current) {
-  //       Splitting({target: textRef3.current, by: "words"})
-  //       const fx13Titles = textRef3.current.querySelectorAll(
-  //         ".content__title[data-effect16]",
-  //       )
-
-  //       for (const bloc of fx13Titles) {
-  //         gsap.fromTo(
-  //           bloc,
-  //           {
-  //             filter: "blur(20px)",
-  //           },
-  //           {
-  //             ease: "none",
-  //             filter: "blur(0px)",
-  //             scrollTrigger: {
-  //               trigger: bloc,
-  //               start: "top+=70% bottom",
-  //               end: "top+=30% top",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //         const lette = bloc.querySelectorAll("span.word")
-  //         gsap.fromTo(
-  //           lette,
-  //           {
-  //             "will-change": "opacity",
-  //             opacity: 0.1,
-  //           },
-  //           {
-  //             ease: "none",
-  //             opacity: 1,
-  //             stagger: 0.05,
-  //             scrollTrigger: {
-  //               trigger: textRef3.current,
-  //               start: "top+=13% bottom-=200%",
-  //               end: "bottom+=60% top+=40%",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //       }
-
-  //       Splitting({target: textRef4.current, by: "words"})
-  //       const fx14Titles = textRef4.current.querySelectorAll(
-  //         ".content__title[data-effect16]",
-  //       )
-
-  //       for (const blocx of fx14Titles) {
-  //         gsap.fromTo(
-  //           blocx,
-  //           {
-  //             filter: "blur(20px)",
-  //           },
-  //           {
-  //             ease: "none",
-  //             filter: "blur(0px)",
-  //             scrollTrigger: {
-  //               trigger: blocx,
-  //               start: "top+=85% bottom",
-  //               end: "top+=45% top",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //         const lettex = blocx.querySelectorAll("span.word")
-  //         gsap.fromTo(
-  //           lettex,
-  //           {
-  //             "will-change": "opacity",
-  //             opacity: 0.1,
-  //           },
-  //           {
-  //             ease: "none",
-  //             opacity: 1,
-  //             stagger: 0.05,
-  //             scrollTrigger: {
-  //               trigger: textRef4.current,
-  //               start: "top+=25% bottom-=200%",
-  //               end: "bottom+=70% top+=40%",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //       }
-
-  //       Splitting({target: textRef5.current, by: "words"})
-  //       const fx15Titles = textRef5.current.querySelectorAll(
-  //         ".content__title[data-effect16]",
-  //       )
-
-  //       for (const bloc5 of fx15Titles) {
-  //         gsap.fromTo(
-  //           bloc5,
-  //           {
-  //             filter: "blur(20px)",
-  //           },
-  //           {
-  //             ease: "none",
-  //             filter: "blur(0px)",
-  //             scrollTrigger: {
-  //               trigger: bloc5,
-  //               start: "top+=85% bottom",
-  //               end: "top+=45% top",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //         const lette5 = bloc5.querySelectorAll("span.word")
-  //         gsap.fromTo(
-  //           lette5,
-  //           {
-  //             "will-change": "opacity",
-  //             opacity: 0.1,
-  //           },
-  //           {
-  //             ease: "none",
-  //             opacity: 1,
-  //             stagger: 0.05,
-  //             scrollTrigger: {
-  //               trigger: textRef5.current,
-  //               start: "top+=15% bottom-=200%",
-  //               end: "bottom+=70% top+=40%",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //       }
-
-  //       Splitting({target: textRef6.current, by: "words"})
-  //       const fx16Titles = textRef6.current.querySelectorAll(
-  //         ".content__title[data-effect16]",
-  //       )
-
-  //       for (const bloc5 of fx16Titles) {
-  //         gsap.fromTo(
-  //           bloc5,
-  //           {
-  //             filter: "blur(20px)",
-  //           },
-  //           {
-  //             ease: "none",
-  //             filter: "blur(0px)",
-  //             scrollTrigger: {
-  //               trigger: bloc5,
-  //               start: "top+=85% bottom",
-  //               end: "top+=45% top",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //         const lette5 = bloc5.querySelectorAll("span.word")
-  //         gsap.fromTo(
-  //           lette5,
-  //           {
-  //             "will-change": "opacity",
-  //             opacity: 0.1,
-  //           },
-  //           {
-  //             ease: "none",
-  //             opacity: 1,
-  //             stagger: 0.05,
-  //             scrollTrigger: {
-  //               trigger: textRef6.current,
-  //               start: "top+=5% bottom-=200%",
-  //               end: "bottom+=50% top+=40%",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //       }
-
-  //       Splitting({target: textRef7.current, by: "words"})
-  //       const fx17Titles = textRef7.current.querySelectorAll(
-  //         ".content__title[data-effect16]",
-  //       )
-
-  //       for (const bloc5 of fx17Titles) {
-  //         gsap.fromTo(
-  //           bloc5,
-  //           {
-  //             filter: "blur(20px)",
-  //           },
-  //           {
-  //             ease: "none",
-  //             filter: "blur(0px)",
-  //             scrollTrigger: {
-  //               trigger: bloc5,
-  //               start: "top+=75% bottom",
-  //               end: "top+=35% top",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //         const lette5 = bloc5.querySelectorAll("span.word")
-  //         gsap.fromTo(
-  //           lette5,
-  //           {
-  //             "will-change": "opacity",
-  //             opacity: 0.1,
-  //           },
-  //           {
-  //             ease: "none",
-  //             opacity: 1,
-  //             stagger: 0.05,
-  //             scrollTrigger: {
-  //               trigger: textRef7.current,
-  //               start: "top+=15% bottom-=200%",
-  //               end: "bottom+=50% top+=30%",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //       }
-
-  //       Splitting({target: textRef8.current, by: "words"})
-  //       const fx18Titles = textRef8.current.querySelectorAll(
-  //         ".content__title[data-effect16]",
-  //       )
-
-  //       for (const bloc5 of fx18Titles) {
-  //         gsap.fromTo(
-  //           bloc5,
-  //           {
-  //             filter: "blur(20px)",
-  //           },
-  //           {
-  //             ease: "none",
-  //             filter: "blur(0px)",
-  //             scrollTrigger: {
-  //               trigger: bloc5,
-  //               start: "top+=50% bottom",
-  //               end: "top+=10% top",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //         const lette5 = bloc5.querySelectorAll("span.word")
-  //         gsap.fromTo(
-  //           lette5,
-  //           {
-  //             "will-change": "opacity",
-  //             opacity: 0.1,
-  //           },
-  //           {
-  //             ease: "none",
-  //             opacity: 1,
-  //             stagger: 0.05,
-  //             scrollTrigger: {
-  //               trigger: textRef8.current,
-  //               start: "top+=5% bottom-=200%",
-  //               end: "bottom+=50% top+=40%",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //       }
-
-  //       Splitting({target: textRef9.current, by: "words"})
-  //       const fx19Titles = textRef9.current.querySelectorAll(
-  //         ".content__title[data-effect16]",
-  //       )
-
-  //       for (const bloc5 of fx19Titles) {
-  //         gsap.fromTo(
-  //           bloc5,
-  //           {
-  //             filter: "blur(20px)",
-  //           },
-  //           {
-  //             ease: "none",
-  //             filter: "blur(0px)",
-  //             scrollTrigger: {
-  //               trigger: bloc5,
-  //               start: "top+=90% bottom",
-  //               end: "top+=45% top",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //         const lette5 = bloc5.querySelectorAll("span.word")
-  //         gsap.fromTo(
-  //           lette5,
-  //           {
-  //             "will-change": "opacity",
-  //             opacity: 0.1,
-  //           },
-  //           {
-  //             ease: "none",
-  //             opacity: 1,
-  //             stagger: 0.05,
-  //             scrollTrigger: {
-  //               trigger: textRef9.current,
-  //               start: "top+=15% bottom-=200%",
-  //               end: "bottom+=60% top+=40%",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //       }
-
-  //       Splitting({target: textRef10.current, by: "words"})
-  //       const fx10Titles = textRef10.current.querySelectorAll(
-  //         ".content__title[data-effect16]",
-  //       )
-
-  //       for (const bloc5 of fx10Titles) {
-  //         gsap.fromTo(
-  //           bloc5,
-  //           {
-  //             filter: "blur(20px)",
-  //           },
-  //           {
-  //             ease: "none",
-  //             filter: "blur(0px)",
-  //             scrollTrigger: {
-  //               trigger: bloc5,
-  //               start: "top+=90% bottom",
-  //               end: "top+=45% top",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //         const lette5 = bloc5.querySelectorAll("span.word")
-  //         gsap.fromTo(
-  //           lette5,
-  //           {
-  //             "will-change": "opacity",
-  //             opacity: 0.1,
-  //           },
-  //           {
-  //             ease: "none",
-  //             opacity: 1,
-  //             stagger: 0.05,
-  //             scrollTrigger: {
-  //               trigger: textRef10.current,
-  //               start: "top+=15% bottom-=200%",
-  //               end: "bottom+=60% top+=40%",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //       }
-
-  //       Splitting({target: textRef11.current, by: "words"})
-  //       const fx21Titles = textRef11.current.querySelectorAll(
-  //         ".content__title[data-effect16]",
-  //       )
-
-  //       for (const bloc5 of fx21Titles) {
-  //         gsap.fromTo(
-  //           bloc5,
-  //           {
-  //             filter: "blur(20px)",
-  //           },
-  //           {
-  //             ease: "none",
-  //             filter: "blur(0px)",
-  //             scrollTrigger: {
-  //               trigger: bloc5,
-  //               start: "top+=60% bottom",
-  //               end: "top+=25% top",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //         const lette5 = bloc5.querySelectorAll("span.word")
-  //         gsap.fromTo(
-  //           lette5,
-  //           {
-  //             "will-change": "opacity",
-  //             opacity: 0.1,
-  //           },
-  //           {
-  //             ease: "none",
-  //             opacity: 1,
-  //             stagger: 0.05,
-  //             scrollTrigger: {
-  //               trigger: textRef11.current,
-  //               start: "top+=4% bottom-=200%",
-  //               end: "bottom+=42% top+=40%",
-  //               scrub: true,
-  //             },
-  //           },
-  //         )
-  //       }
-  //     }
-  //   }
-  // }, [textRefs])
-
-  // React.useLayoutEffect(() => {
-  //   splitText()
-  // }, [splitText])
-
-  // useLayoutEffect(() => {
-  //   let ctx = gsap.context(() => {
-  //     gsap.set(".swap", {
-  //       opacity: 1,
-  //       filter: "blur(0px)",
-  //     })
-
-  //     const animation = gsap.to(".swap", {
-  //       opacity: 0,
-  //       filter: "blur(20px)",
-  //       duration: 1,
-  //       stagger: 1,
-  //     })
-
-  //     ScrollTrigger.create({
-  //       trigger: ".wrap",
-  //       start: "top top-=5%",
-  //       end: "bottom+=990% bottom+=5%",
-  //       pin: ".echo",
-  //       animation: animation,
-  //       scrub: true,
-  //     })
-
-  //     if (window.innerWidth >= 1280) {
-
-  //       gsap.set(".grid1", {
-  //         opacity: 1,
-  //         filter: "blur(0px)",
-  //       })
-
-  //       gsap.set(".grid2", {
-  //         opacity: 1,
-  //         filter: "blur(0px)",
-  //       })
-
-  //       gsap.set(".grid3", {
-  //         opacity: 1,
-  //         filter: "blur(0px)",
-  //       })
-
-  //       gsap.set(".grid4", {
-  //         opacity: 1,
-  //         filter: "blur(0px)",
-  //       })
-
-  //       gsap.set(".grid5", {
-  //         opacity: 1,
-  //         filter: "blur(0px)",
-  //       })
-
-  //       gsap.set(".grid6", {
-  //         opacity: 1,
-  //         filter: "blur(0px)",
-  //       })
-
-  //       gsap.set(".grid7", {
-  //         opacity: 1,
-  //         filter: "blur(0px)",
-  //       })
-
-  //       gsap.set(".grid8", {
-  //         opacity: 1,
-  //         filter: "blur(0px)",
-  //       })
-
-  //       gsap.set(".grid9", {
-  //         opacity: 1,
-  //         filter: "blur(0px)",
-  //       })
-
-  //       gsap.set(".grid10", {
-  //         opacity: 1,
-  //         filter: "blur(0px)",
-  //       })
-
-  //       const animation1 = gsap.to(".grid1", {
-  //         opacity: 0,
-  //         filter: "blur(20px)",
-  //         duration: 1,
-  //         stagger: 1,
-  //       })
-
-  //       ScrollTrigger.create({
-  //         trigger: ".element1",
-  //         start: "top+=10% top",
-  //         end: "bottom+=220% bottom",
-  //         pin: ".p1",
-  //         animation: animation1,
-  //         scrub: true,
-  //       })
-
-  //       const animation2 = gsap.to(".grid2", {
-  //         opacity: 0,
-  //         filter: "blur(20px)",
-  //         duration: 1,
-  //         stagger: 1,
-  //       })
-
-  //       ScrollTrigger.create({
-  //         trigger: ".element2",
-  //         start: "top+=3% top",
-  //         end: "bottom+=270% bottom",
-  //         pin: ".p2",
-  //         animation: animation2,
-  //         scrub: true,
-  //       })
-
-  //       const animation3 = gsap.to(".grid3", {
-  //         opacity: 0,
-  //         filter: "blur(20px)",
-  //         duration: 1,
-  //         stagger: 1,
-  //       })
-
-  //       ScrollTrigger.create({
-  //         trigger: ".element3",
-  //         start: "top+=5% top",
-  //         end: "bottom+=300% bottom",
-  //         pin: ".p3",
-  //         animation: animation3,
-  //         scrub: true,
-  //       })
-
-  //       const animation4 = gsap.to(".grid4", {
-  //         opacity: 0,
-  //         filter: "blur(20px)",
-  //         duration: 1,
-  //         stagger: 1,
-  //       })
-
-  //       ScrollTrigger.create({
-  //         trigger: ".element4",
-  //         start: "top+=9% top",
-  //         end: "bottom+=180% bottom",
-  //         pin: ".p4",
-  //         animation: animation4,
-  //         scrub: true,
-  //         //
-  //       })
-
-  //       const animation5 = gsap.to(".grid5", {
-  //         opacity: 0,
-  //         filter: "blur(20px)",
-  //         duration: 1,
-  //         stagger: 1,
-  //       })
-
-  //       ScrollTrigger.create({
-  //         trigger: ".element5",
-  //         start: "top+=11% top",
-  //         end: "bottom+=180% bottom",
-  //         pin: ".p5",
-  //         animation: animation5,
-  //         scrub: true,
-  //         //
-  //       })
-
-  //       const animation6 = gsap.to(".grid6", {
-  //         opacity: 0,
-  //         filter: "blur(20px)",
-  //         duration: 1,
-  //         stagger: 1,
-  //       })
-
-  //       ScrollTrigger.create({
-  //         trigger: ".element6",
-  //         start: "top+=10% top",
-  //         end: "bottom+=250% bottom+=10%",
-  //         pin: ".p6",
-  //         animation: animation6,
-  //         scrub: true,
-  //       })
-
-  //       const animation7 = gsap.to(".grid7", {
-  //         opacity: 0,
-  //         filter: "blur(20px)",
-  //         duration: 1,
-  //         stagger: 1,
-  //       })
-
-  //       ScrollTrigger.create({
-  //         trigger: ".element7",
-  //         start: "top+=12% top",
-  //         end: "bottom+=190% bottom",
-  //         pin: ".p7",
-  //         animation: animation7,
-  //         scrub: true,
-  //       })
-
-  //       const animation8 = gsap.to(".grid8", {
-  //         opacity: 0,
-  //         filter: "blur(20px)",
-  //         duration: 1,
-  //         stagger: 1,
-  //       })
-
-  //       ScrollTrigger.create({
-  //         trigger: ".element8",
-  //         start: "top+=12% top",
-  //         end: "bottom+=190% bottom",
-  //         pin: ".p8",
-  //         animation: animation8,
-  //         scrub: true,
-  //       })
-
-  //       const animation9 = gsap.to(".grid9", {
-  //         opacity: 0,
-  //         filter: "blur(20px)",
-  //         duration: 1,
-  //         stagger: 1,
-  //       })
-
-  //       ScrollTrigger.create({
-  //         trigger: ".element9",
-  //         start: "top+=12% top",
-  //         end: "bottom+=190% bottom",
-  //         pin: ".p9",
-  //         animation: animation9,
-  //         scrub: true,
-  //       })
-
-  //       const animation10 = gsap.to(".grid10", {
-  //         opacity: 0,
-  //         filter: "blur(20px)",
-  //         duration: 1,
-  //         stagger: 1,
-  //       })
-
-  //       ScrollTrigger.create({
-  //         trigger: ".element10",
-  //         start: "top+=7% top",
-  //         end: "bottom+=190% bottom",
-  //         pin: ".p10",
-  //         animation: animation10,
-  //         scrub: true,
-  //       })
-  //     }
-  //   })
-  //   ScrollTrigger.update()
-
-  //   return () => ctx.revert()
-  // }, [])
 
   return (
     <>
@@ -870,7 +71,7 @@ const DiaryPage: React.FC = () => {
             </span>
           </h2>
           <div id="parg1" className="content">
-            <p className="content__title" data-effect16>
+            <p className="content__title" >
               In the twilight of 1948, within a world still finding its bearings
               after the tumult of war, I was born, a child of two worlds. My
               existence was the weaving together of two richly distinct
@@ -900,7 +101,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="flex flex-col pt-64">
-          <div className="flex flex-col items-center w-full h-auto justify-center pink py-20">
+          <div className="flex flex-col items-center w-full h-screenF justify-center pink py-20">
             <div className="grid1 wm">
               <img
                 className="grid__item-img1 aspectm"
@@ -913,7 +114,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div>
-            <p className="content__title" data-effect16>
+            <p className="content__title" >
               In the tender years of my youth, my memories of my father were
               akin to fleeting glimpses of a distant dream — fragmented yet
               filled with a profound sense of love and respect. His absence in
@@ -944,7 +145,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="pt-64">
-          <div className="flex relative flex-col items-center w-full justify-center pink">
+          <div className="flex relative flex-col items-center w-full h-screenF justify-center pink">
             <div className="grid2 wm">
               <img
                 className="grid__item-img2 aspectm"
@@ -1005,7 +206,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="pt-64">
-          <div className="flex flex-col items-center w-full  h-auto justify-center pink py-20">
+          <div className="flex flex-col items-center w-full h-screenF justify-center pink py-20">
             <div className="grid3 wm">
               <img
                 className="grid__item-img3 aspectm"
@@ -1018,7 +219,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div className="pt-40">
-            <p className="content__title" data-effect16>
+            <p className="content__title" >
               In the labyrinth of my intellect, where the threads of philosophy,
               literature, biography, cinema, and beyond intertwine, I find
               myself wandering, a curious observer, a seeker of hidden
@@ -1085,7 +286,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="pt-64">
-          <div className="flex flex-col items-center w-full  h-auto justify-center pink py-20">
+          <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
             <div className="grid4 wm">
               <img
                 className="grid__item-img4 aspectm"
@@ -1136,7 +337,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="pt-64">
-          <div className="flex flex-col items-center w-full  h-auto justify-center pink py-20">
+          <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
             <div className="grid5 wm">
               <img
                 className="grid__item-img5 aspectm"
@@ -1195,7 +396,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="pt-64">
-          <div className="flex flex-col items-center w-full  h-auto justify-center pink py-20">
+          <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
             <div className="grid6 wm">
               <img
                 className="grid__item-img6 aspectm"
@@ -1263,7 +464,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="pt-64">
-          <div className="flex flex-col items-center w-full  h-auto justify-center pink py-20">
+          <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
             <div className="grid7 wm">
               <img
                 className="grid__item-img7 aspectm"
@@ -1336,7 +537,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="pt-64">
-          <div className="flex flex-col items-center w-full  h-auto justify-center pink py-20">
+          <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
             <div className="grid8 wm">
               <img
                 className="grid__item-img8 aspectm"
@@ -1396,7 +597,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="pt-64">
-          <div className="flex flex-col items-center w-full  h-auto justify-center pink py-20">
+          <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
             <div className="grid9 wm">
               <img
                 className="grid__item-img9 aspectm"
@@ -1454,7 +655,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="pt-64">
-          <div className="flex flex-col items-center w-full h-auto justify-center pink py-20">
+          <div className="flex flex-col items-center w-full h-screenF justify-center pink py-20">
             <div className="grid10 wm">
               <img
                 className="grid__item-img10 aspectm"
