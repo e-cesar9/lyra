@@ -26,7 +26,7 @@ const DiaryPage = ({}) => {
 <>
 <Sidebar/>
 <div className="flex flex-col">
-<a className="philosophy" href="#hello">Phyolophy</a>
+<a className="philosophy" href="#hello">Philosophy</a>
 <a className="philosophy" href="#hello1">Novels</a>
 <a className="philosophy" href="#hello2">Biographie</a>
 </div>
