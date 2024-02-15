@@ -269,12 +269,16 @@ text-orientation: upright;
 
 @media (max-width: 760px) { 
 	figcaption{
-		font-size: 18px;
+		font-size: 17px;
 	}
 	
 
 	#Me{
 		padding: 2rem 0 ;
+	}
+
+	#end{
+		padding-bottom: 9rem;
 	}
 
 	.content__title{
