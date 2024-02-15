@@ -36,7 +36,7 @@ const DiaryPage: React.FC = () => {
     <>
       <Sidebar />
       <div id="Me" className="rounded layout w-full">
-        <div className="echo flex flex-col relative">
+        <div className="part echo flex flex-col relative">
           <div className="flex flex-col h-screen items-center w-full justify-center">
             <div className=" flex flex-row justify-center pl-[45px] z-50 items-center swap">
               <div className="grid__item">
@@ -72,7 +72,7 @@ const DiaryPage: React.FC = () => {
               mine to share.
             </span>
           </h2>
-          <div id="parg1" className="content">
+          <div id="parg1" className="content pb-64">
             <p className="content__title">
               In the twilight of 1948, within a world still finding its bearings
               after the tumult of war, I was born, a child of two worlds. My
@@ -102,8 +102,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="part flex flex-col pt-64">
-          <div className="flex flex-col items-center w-full h-screenF justify-center pink py-20">
+        <div className="part flex flex-col">
+          <div className="flex flex-col items-center w-full h-screenF justify-center pink py-20 snap">
             <div className="grid1 wm">
               <img
                 className="grid__item-img1 aspectm"
@@ -115,7 +115,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="pt-40">
+          <div className="snap pt-40 pb-64">
             <p className="content__title">
               In the tender years of my youth, my memories of my father were
               akin to fleeting glimpses of a distant dream — fragmented yet
@@ -146,8 +146,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="part pt-64">
-          <div className="flex relative flex-col items-center w-full h-screenF justify-center pink">
+        <div className="part">
+          <div className="flex relative flex-col items-center w-full h-screenF justify-center pink snap">
             <div className="grid2 wm">
               <img
                 className="grid__item-img2 aspectm"
@@ -159,7 +159,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="pt-40">
+          <div className="pt-40 pb-64 snap">
             <p className="content__title">
               In the embrace of Japan&apos;s countryside, where the whispers of
               nature spoke in a language as ancient as time itself, I found an
@@ -207,8 +207,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="part pt-64">
-          <div className="flex flex-col items-center w-full h-screenF justify-center pink py-20">
+        <div className="part">
+          <div className="flex flex-col items-center w-full h-screenF justify-center pink py-20 snap">
             <div className="grid3 wm">
               <img
                 className="grid__item-img3 aspectm"
@@ -222,7 +222,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="pt-40">
+          <div className="pt-40 pb-64 snap">
             <p className="content__title">
               In the labyrinth of my intellect, where the threads of philosophy,
               literature, biography, cinema, and beyond intertwine, I find
@@ -289,8 +289,8 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="part pt-64">
-          <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
+        <div className="part">
+          <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20 snap">
             <div className="grid4 wm">
               <img
                 className="grid__item-img4 aspectm"
@@ -302,7 +302,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="pt-40">
+          <div className="pt-40 pb-64 snap">
             <p className="content__title">
               In my teenage years, I came to a realization, akin to a quiet
               awakening, about the essence of beauty and its role in my
@@ -340,7 +340,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="part pt-64">
+        <div className="part">
           <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
             <div className="grid5 wm">
               <img
@@ -355,7 +355,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="pt-40">
+          <div className="pt-40 pb-64">
             <div className="content__title">
               Reflecting upon the passage of years, a certain memory comes to
               the fore, vibrant and alive with the energy of my younger self.
@@ -401,7 +401,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="part pt-64">
+        <div className="part">
           <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
             <div className="grid6 wm">
               <img
@@ -414,7 +414,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="pt-40">
+          <div className="pt-40 pb-64">
             <div className="content__title">
               My first encounter with America was a vivid tapestry of
               experiences, each more intense and enlightening than the last. New
@@ -469,7 +469,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="part pt-64">
+        <div className="part">
           <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
             <div className="grid7 wm">
               <img
@@ -484,7 +484,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="pt-40">
+          <div className="pt-40 pb-64">
             <p className="content__title">
               In America, I embraced the force of entrepreneurship — that
               intrepid spirit which seemed to rise from the very ground of
@@ -544,7 +544,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="part pt-64">
+        <div className="part">
           <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
             <div className="grid8 wm">
               <img
@@ -559,7 +559,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="pt-40">
+          <div className="pt-40 pb-64">
             <div className="content__title">
               The cornerstone of our studio&apos;s philosophy is rooted in the
               dual virtues of audacity and curiosity — a blend of fearless
@@ -606,7 +606,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="part pt-64">
+        <div className="part">
           <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
             <div className="grid9 wm">
               <img
@@ -621,7 +621,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="pt-40">
+          <div className="pt-40 pb-64">
             <div className="content__title">
               In our pursuit of excellence, we align ourselves with the finest
               talents, guiding them, learning from them, and forever seeking
@@ -666,7 +666,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="part pt-64">
+        <div className="part">
           <div className="flex flex-col items-center w-full h-screenF justify-center pink py-20">
             <div className="grid10 wm">
               <img
