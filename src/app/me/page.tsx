@@ -32,7 +32,6 @@ const DiaryPage: React.FC = () => {
 
   const springRef = React.useRef()
 
-
   return (
     <>
       <Sidebar />
@@ -48,7 +47,9 @@ const DiaryPage: React.FC = () => {
                       "url('/AnIncredibleLife/LYH_1940_concept01_V004-min.jpg')",
                   }}
                 ></div>
-                <figcaption className="quotes">Hello, I am Lyra Haruto</figcaption>
+                <figcaption className="quotes">
+                  Hello, I am Lyra Haruto
+                </figcaption>
               </div>
               <h1 ref={springRef} data-hover="Lyra Haruto" id="printemps">
                 リラ はると
@@ -67,12 +68,12 @@ const DiaryPage: React.FC = () => {
               <a href={selectedUrl} target="_blank" className="OussamaAmmar">
                 Oussama Ammar,
               </a>{" "}
-              my esteemed co-founder. It beckons a tale of its own, one
-              that is mine to share.
+              my esteemed co-founder. It beckons a tale of its own, one that is
+              mine to share.
             </span>
           </h2>
           <div id="parg1" className="content">
-            <p className="content__title" >
+            <p className="content__title">
               In the twilight of 1948, within a world still finding its bearings
               after the tumult of war, I was born, a child of two worlds. My
               existence was the weaving together of two richly distinct
@@ -215,7 +216,9 @@ const DiaryPage: React.FC = () => {
                 loading="lazy"
                 alt=""
               />
-              <figcaption className="quotes">I am so wise, but am I ?</figcaption>
+              <figcaption className="quotes">
+                I am so wise, but am I ?
+              </figcaption>
             </div>
           </div>
 
@@ -346,7 +349,9 @@ const DiaryPage: React.FC = () => {
                 loading="lazy"
                 alt=""
               />
-              <figcaption className="quotes">If they cannot do it, you just wear it</figcaption>
+              <figcaption className="quotes">
+                If they cannot do it, you just wear it
+              </figcaption>
             </div>
           </div>
 
@@ -473,7 +478,9 @@ const DiaryPage: React.FC = () => {
                 loading="lazy"
                 alt=""
               />
-              <figcaption className="quotes">Selfies were already a thing, isn’t it ?</figcaption>
+              <figcaption className="quotes">
+                Selfies were already a thing, isn’t it ?
+              </figcaption>
             </div>
           </div>
 
@@ -546,7 +553,9 @@ const DiaryPage: React.FC = () => {
                 loading="lazy"
                 alt=""
               />
-              <figcaption className="quotes">Smile to life and life will shine at you</figcaption>
+              <figcaption className="quotes">
+                Smile to life and life will shine at you
+              </figcaption>
             </div>
           </div>
 
@@ -606,7 +615,9 @@ const DiaryPage: React.FC = () => {
                 loading="lazy"
                 alt=""
               />
-              <figcaption className="quotes">A bit slow student but …</figcaption>
+              <figcaption className="quotes">
+                A bit slow student but …
+              </figcaption>
             </div>
           </div>
 
@@ -664,7 +675,9 @@ const DiaryPage: React.FC = () => {
                 loading="lazy"
                 alt=""
               />
-              <figcaption className="quotes">It is time for a new adventure</figcaption>
+              <figcaption className="quotes">
+                It is time for a new adventure
+              </figcaption>
             </div>
           </div>
 
