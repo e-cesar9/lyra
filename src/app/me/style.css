@@ -17,8 +17,8 @@
 
 body{
 	height: auto;
-	/* scroll-snap-type: y mandatory;
-	scroll-behavior: smooth; */
+	/* scroll-snap-type: y mandatory; */
+	scroll-behavior: smooth;
 }
 
 html {
@@ -61,7 +61,7 @@ figcaption{
 	padding-left: 250px;
 	padding-top: 1px;
 	overflow-y: scroll;
-	scroll-behavior: smooth;
+	scroll-behavior:smooth;
 	scrollbar-width: none;
 	scroll-snap-type: y mandatory;
 
