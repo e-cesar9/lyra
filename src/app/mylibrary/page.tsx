@@ -41,7 +41,7 @@ const DiaryPage = ({}) => {
           <a target="__blank" className="menu__item-inner">
             Nassim Taleb
             <Image
-              src="/MyLibrary/ogien.webp"
+              src="/MyLibrary/taleb.webp"
               alt="ogien cover"
               width={256}
               height={256}
