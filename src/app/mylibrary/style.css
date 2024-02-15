@@ -95,3 +95,9 @@
   .menu__item-inner:hover .hover-image {
     opacity: 1;
   }
+
+  @media (max-width: 760px) { 
+	.menu{
+		position: absolute;
+	}
+  }
