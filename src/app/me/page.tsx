@@ -681,7 +681,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="pt-40">
+          <div className="pt-40 pb-20">
             <div className="content__title">
               The world, indeed, does not always extend its arms in welcome to
               the novelties of new talent and fresh creations. These fragile
