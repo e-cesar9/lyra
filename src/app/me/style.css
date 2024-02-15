@@ -17,7 +17,6 @@
 
 body{
 	height: auto;
-	/* scroll-snap-type: y mandatory; */
 	scroll-behavior: smooth;
 }
 
@@ -35,7 +34,6 @@ html {
 
 .h-screenF{
 	height: 100vh;
-	/* width: 100vw; */
 }
 
 .OussamaAmmar{
@@ -68,22 +66,8 @@ figcaption{
 }
 
 .part{
-	/* width: 100vw; */
-	/* overflow-y: scroll; */
-	/* height: 600vh; */
-	/* scroll-snap-type: y mandatory; */
 	scroll-snap-align:start;
 }
-
-.snap{
-	/* scroll-snap-stop:normal; */
-
-}
-
-#Me.pt-64{
-	/* scroll-snap-align: center; */
-}
-
 
 .lined{
 	line-height:2em;
