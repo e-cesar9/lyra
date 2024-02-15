@@ -38,7 +38,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a target="__blank" className="menu__item-inner">
+          <a href="https://www.amazon.com/Incerto-Fooled-Randomness-Procrustes-Antifragile/dp/0399590455" target="__blank" className="menu__item-inner">
             Nassim Taleb
             <Image
               src="/MyLibrary/taleb.webp"
