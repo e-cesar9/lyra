@@ -16,22 +16,20 @@ const DiaryPage = ({}) => {
   //     new InfiniteMenu(hoverRef.current)
   //   }
   // }, [])
-  React.useLayoutEffect(() => {
-
-    const menu = new InfiniteMenu(document.querySelector('nav.menu'));
+  // React.useLayoutEffect(() => {
+    const menuRef = React.useRef()
+    React.useEffect(() => {      
+                new InfiniteMenu(document.getElementById('menu'));
   })
+  // })
 
 
   return (
 <>
 <Sidebar/>
-<div className="flex flex-col">
-<a className="philosophy" href="#hello">Philosophy</a>
-<a className="philosophy" href="#hello1">Novels</a>
-<a className="philosophy" href="#hello2">Biographie</a>
-</div>
-<nav className="menu">
-        <div className="menu__item"><a id="hello" className="menu__item-inner">Ruwen Ogien<Image
+
+<nav id="menu" className="menu" ref={menuRef}>
+        <div className="menu__item"><a className="menu__item-inner">Ruwen Ogien<Image
             src="/MyLibrary/Ogien.jpg"
             alt="ogien cover"
             width={100}

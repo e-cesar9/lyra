@@ -30,7 +30,7 @@ const DiaryPage: React.FC = () => {
     setSelectedUrl(getRandomUrl())
   }, [])
 
-  const springRef = React.useRef(null)
+  const springRef = React.useRef()
 
   return (
     <>
@@ -100,7 +100,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex flex-col pt-64">
+        <div className="part flex flex-col pt-64">
           <div className="flex flex-col items-center w-full h-screenF justify-center pink py-20">
             <div className="grid1 wm">
               <img
@@ -144,7 +144,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-64">
+        <div className="part pt-64">
           <div className="flex relative flex-col items-center w-full h-screenF justify-center pink">
             <div className="grid2 wm">
               <img
@@ -205,7 +205,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-64">
+        <div className="part pt-64">
           <div className="flex flex-col items-center w-full h-screenF justify-center pink py-20">
             <div className="grid3 wm">
               <img
@@ -285,7 +285,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-64">
+        <div className="part pt-64">
           <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
             <div className="grid4 wm">
               <img
@@ -336,7 +336,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-64">
+        <div className="part pt-64">
           <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
             <div className="grid5 wm">
               <img
@@ -395,7 +395,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-64">
+        <div className="part pt-64">
           <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
             <div className="grid6 wm">
               <img
@@ -463,7 +463,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-64">
+        <div className="part pt-64">
           <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
             <div className="grid7 wm">
               <img
@@ -536,7 +536,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-64">
+        <div className="part pt-64">
           <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
             <div className="grid8 wm">
               <img
@@ -596,7 +596,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-64">
+        <div className="part pt-64">
           <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
             <div className="grid9 wm">
               <img
@@ -654,7 +654,7 @@ const DiaryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-64">
+        <div className="part pt-64">
           <div className="flex flex-col items-center w-full h-screenF justify-center pink py-20">
             <div className="grid10 wm">
               <img
