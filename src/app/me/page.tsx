@@ -32,6 +32,7 @@ const DiaryPage: React.FC = () => {
 
   const springRef = React.useRef()
 
+
   return (
     <>
       <Sidebar />
@@ -219,7 +220,7 @@ const DiaryPage: React.FC = () => {
           </div>
 
           <div className="pt-40">
-            <p className="content__title" >
+            <p className="content__title">
               In the labyrinth of my intellect, where the threads of philosophy,
               literature, biography, cinema, and beyond intertwine, I find
               myself wandering, a curious observer, a seeker of hidden

@@ -11,17 +11,10 @@ const DiaryPage = ({}) => {
   const inputRef = React.useRef<HTMLInputElement>(null)
   const containerRef = React.useRef(null)
 
-  // useEffect(() => {
-  //   if (menuRef.current) {
-  //     new InfiniteMenu(hoverRef.current)
-  //   }
-  // }, [])
-  // React.useLayoutEffect(() => {
     const menuRef = React.useRef()
     React.useEffect(() => {      
                 new InfiniteMenu(document.getElementById('menu'));
   })
-  // })
 
 
   return (
