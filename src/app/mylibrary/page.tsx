@@ -472,9 +472,238 @@ const DiaryPage = ({}) => {
             />
           </a>
         </div>
+
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Norbert Wiener
+            <Image
+              src="/MyLibrary/novels/honoredebalzac.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Simone de Beauvoir
+            <Image
+              src="/MyLibrary/novels/honoredebalzac.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          The Dictionary of Imaginary Places
+            <Image
+              src="/MyLibrary/novels/honoredebalzac.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          A Beautiful Mind 
+            <Image
+              src="/MyLibrary/novels/honoredebalzac.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Alan Turing: The Enigma             <Image
+              src="/MyLibrary/novels/honoredebalzac.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Alexander Hamilton             <Image
+              src="/MyLibrary/novels/honoredebalzac.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Napoleon: A Life             <Image
+              src="/MyLibrary/novels/honoredebalzac.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Steve Jobs 
+            <Image
+              src="/MyLibrary/novels/honoredebalzac.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Leonardo da Vinci 
+            <Image
+              src="/MyLibrary/novels/honoredebalzac.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Marie-Antoinette 
+            <Image
+              src="/MyLibrary/novels/honoredebalzac.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Magellan 
+            <Image
+              src="/MyLibrary/novels/honoredebalzac.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Warren Buffett and the Business of Life 
+            <Image
+              src="/MyLibrary/novels/honoredebalzac.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Morgan, American Financier
+            <Image
+              src="/MyLibrary/novels/honoredebalzac.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Jack, Straight From the Gut
+            <Image
+              src="/MyLibrary/novels/honoredebalzac.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Jeff Bezos and the Age of Amazon
+            <Image
+              src="/MyLibrary/novels/honoredebalzac.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Alibaba: The House That Jack Ma Built
+            <Image
+              src="/MyLibrary/novels/honoredebalzac.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Creativity, Inc.
+            <Image
+              src="/MyLibrary/novels/honoredebalzac.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Empire State of Mind – Jay Z
+            <Image
+              src="/MyLibrary/novels/honoredebalzac.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Losing My Virginity – Richard Branson
+            <Image
+              src="/MyLibrary/novels/honoredebalzac.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+
       <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
+          Novecento The Pianist
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -486,7 +715,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
+          Remember The Titans
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -498,7 +727,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
+          Beaumarchais l’Insolent
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -510,7 +739,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
+          Ratatouille
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -522,7 +751,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
+          M
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -534,7 +763,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
+          12 Angry Men
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -546,7 +775,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
+          The Godfather
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -558,7 +787,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
+          Bary Lindon
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -570,7 +799,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
+          2001 The Space Odyssey
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -582,7 +811,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
+          Gattaca
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -594,7 +823,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
+          Aladdin
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -606,7 +835,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
+          Amadeus
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -618,7 +847,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
+          House of Flying Daggers
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -630,7 +859,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
+          Gladiator
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -642,7 +871,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
+          Good Will Hunting
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -654,7 +883,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
+          Forrest Gump
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -666,7 +895,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
+          Dead Poets Society
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -678,7 +907,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
+          Lawrence of Arabia
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -690,8 +919,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
-            <Image
+          All the Marvel 😉 — even Captain America            <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
               width={256}
@@ -702,8 +930,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Balzac
-            <Image
+          if you are courageous, any Terence Malek            <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
               width={256}
