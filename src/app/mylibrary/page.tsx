@@ -13,7 +13,9 @@ const DiaryPage = ({}) => {
 
   const menuRef = React.useRef()
   React.useEffect(() => {
-    new InfiniteMenu(document.getElementById("menu"))
+    if (window.innerWidth > 760) {
+      new InfiniteMenu(document.getElementById("menu"))
+    }
   })
 
   return (
@@ -38,7 +40,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="https://www.amazon.com/Incerto-Fooled-Randomness-Procrustes-Antifragile/dp/0399590455" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Incerto-Fooled-Randomness-Procrustes-Antifragile/dp/0399590455"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Nassim Taleb
             <Image
               src="/MyLibrary/taleb.webp"
@@ -202,7 +208,7 @@ const DiaryPage = ({}) => {
           >
             John Stuart Mills
             <Image
-              src="/MyLibrary/ogien.webp"
+              src="/MyLibrary/onliberty.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -218,7 +224,7 @@ const DiaryPage = ({}) => {
           >
             Friedrich Von Hayek
             <Image
-              src="/MyLibrary/ogien.webp"
+              src="/MyLibrary/roadtoserfdom.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -276,7 +282,19 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a target="__blank" className="menu__item-inner">
-          Oscar Wilde
+            Oscar Wilde
+            <Image
+              src="/MyLibrary/doriangray.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a target="__blank" className="menu__item-inner">
+            Philip Pullman
             <Image
               src="/MyLibrary/ogien.webp"
               alt="ogien cover"
@@ -288,21 +306,9 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a target="__blank" className="menu__item-inner">
-          Philip Pullman
-                      <Image
-              src="/MyLibrary/ogien.webp"
-              alt="ogien cover"
-              width={256}
-              height={256}
-              className="hover-image"
-            />
-          </a>
-        </div>
-        <div className="menu__item">
-          <a target="__blank" className="menu__item-inner">
-          Marcel Proust
+            Marcel Proust
             <Image
-              src="/MyLibrary/ogien.webp"
+              src="/MyLibrary/swannsway.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -312,14 +318,9 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a target="__blank" id="hello2" className="menu__item-inner">
-          Alessandro Baricco
-          </a>
-        </div>
-        <div className="menu__item">
-          <a target="__blank" className="menu__item-inner">
-          Leo Tolstoy
+            The Epic of Gilgamesh
             <Image
-              src="/MyLibrary/ogien.webp"
+              src="/MyLibrary/gilgamesh.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -328,10 +329,10 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a target="__blank" className="menu__item-inner">
-          Rabelais
+          <a target="__blank" id="hello2" className="menu__item-inner">
+            Alessandro Baricco
             <Image
-              src="/MyLibrary/ogien.webp"
+              src="/MyLibrary/city.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -341,9 +342,9 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a target="__blank" className="menu__item-inner">
-          Edith Hamilton
+            Leo Tolstoy
             <Image
-              src="/MyLibrary/ogien.webp"
+              src="/MyLibrary/annakarenina.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -353,9 +354,9 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a target="__blank" className="menu__item-inner">
-          Marguerite Yourcenar
+            Rabelais
             <Image
-              src="/MyLibrary/ogien.webp"
+              src="/MyLibrary/gargantua.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -365,32 +366,9 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a target="__blank" className="menu__item-inner">
-          Scheherazade 😉
-                      <Image
-              src="/MyLibrary/ogien.webp"
-              alt="ogien cover"
-              width={256}
-              height={256}
-              className="hover-image"
-            />
-          </a>
-        </div>
-        <div className="menu__item">
-          <a target="__blank" className="menu__item-inner">
-          Homer            <Image
-              src="/MyLibrary/ogien.webp"
-              alt="ogien cover"
-              width={256}
-              height={256}
-              className="hover-image"
-            />
-          </a>
-        </div>
-        <div className="menu__item">
-          <a target="__blank" className="menu__item-inner">
-          Isaac Asimov
+            Edith Hamilton
             <Image
-              src="/MyLibrary/ogien.webp"
+              src="/MyLibrary/timelesstalesofgod.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -400,9 +378,9 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a target="__blank" className="menu__item-inner">
-          Robert Heinlein
+            Marguerite Yourcenar
             <Image
-              src="/MyLibrary/ogien.webp"
+              src="/MyLibrary/memoirsofhadrian.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -412,9 +390,9 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a target="__blank" className="menu__item-inner">
-          Borges
+            Scheherazade 😉
             <Image
-              src="/MyLibrary/ogien.webp"
+              src="/MyLibrary/1001nights.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -424,9 +402,9 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a target="__blank" className="menu__item-inner">
-          Zola
+            Homer{" "}
             <Image
-              src="/MyLibrary/ogien.webp"
+              src="/MyLibrary/Illiadeodyssey.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -436,9 +414,57 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a target="__blank" className="menu__item-inner">
-          Balzac
+            Isaac Asimov
             <Image
-              src="/MyLibrary/ogien.webp"
+              src="/MyLibrary/foundation.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a target="__blank" className="menu__item-inner">
+            Robert Heinlein
+            <Image
+              src="/MyLibrary/themanwhosoldthemoon.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a target="__blank" className="menu__item-inner">
+            Borges
+            <Image
+              src="/MyLibrary/collectedfictions.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a target="__blank" className="menu__item-inner">
+            Zola
+            <Image
+              src="/MyLibrary/zola.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a target="__blank" className="menu__item-inner">
+            Balzac
+            <Image
+              src="/MyLibrary/honoredebalzac.webp"
               alt="ogien cover"
               width={256}
               height={256}
