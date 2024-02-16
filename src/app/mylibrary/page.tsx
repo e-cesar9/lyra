@@ -1,7 +1,5 @@
 "use client"
 import React from "react"
-import ChatComponent from "../../components/chatComponent"
-import RootLayout from "../layout"
 import "./style.css"
 import Image from "next/image"
 import InfiniteMenu from "./Infinite"
@@ -1003,6 +1001,115 @@ const DiaryPage = ({}) => {
             Any Terence Malek{" "}
             <Image
               src="/MyLibrary/movies/malek.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+            Jiro Dreams of Sushi{" "}
+            <Image
+              src="/MyLibrary/docs/jirodreams.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+            Behind the Curve{" "}
+            <Image
+              src="/MyLibrary/docs/behindthecurve.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+            Fyre Festival{" "}
+            <Image
+              src="/MyLibrary/docs/fyre.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+            Life, Animated{" "}
+            <Image
+              src="/MyLibrary/docs/animated.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+            The times of Harvey Milk{" "}
+            <Image
+              src="/MyLibrary/docs/harveymilk.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+            Exit Through The Gift Shop{" "}
+            <Image
+              src="/MyLibrary/docs/exitthrough.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+            Chef’s Table{" "}
+            <Image
+              src="/MyLibrary/docs/cheftable.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+            The Final Year{" "}
+            <Image
+              src="/MyLibrary/docs/thefinalyear.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+            I am not your Guru{" "}
+            <Image
+              src="/MyLibrary/docs/tonyrobbins.webp"
               alt="ogien cover"
               width={256}
               height={256}
