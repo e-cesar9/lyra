@@ -284,7 +284,7 @@ const DiaryPage = ({}) => {
           <a target="__blank" className="menu__item-inner">
             Oscar Wilde
             <Image
-              src="/MyLibrary/doriangray.webp"
+              src="/MyLibrary/novels/doriangray.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -404,7 +404,7 @@ const DiaryPage = ({}) => {
           <a target="__blank" className="menu__item-inner">
             Homer{" "}
             <Image
-              src="/MyLibrary/novels/Illiadeodyssey.webp"
+              src="/MyLibrary/novels/Illiadodyssey.webp"
               alt="ogien cover"
               width={256}
               height={256}
