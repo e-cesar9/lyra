@@ -501,7 +501,7 @@ const DiaryPage = ({}) => {
 
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          The Dictionary of Imaginary Places
+          Alberto Manguel
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -606,7 +606,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Warren Buffett and the Business of Life 
+          Warren Buffett
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -618,7 +618,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Morgan, American Financier
+          J.P Morgan
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -630,7 +630,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Jack, Straight From the Gut
+          Jack Welch
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -642,7 +642,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Jeff Bezos and the Age of Amazon
+          Jeff Bezos
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -654,7 +654,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Alibaba: The House That Jack Ma Built
+          Jack Ma
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -678,7 +678,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Empire State of Mind – Jay Z
+          Jay-Z
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -690,7 +690,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Losing My Virginity – Richard Branson
+          Richard Branson
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -919,7 +919,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          All the Marvel 😉 — even Captain America            <Image
+          All the Marvel 😉          <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
               width={256}
@@ -930,7 +930,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          if you are courageous, any Terence Malek            <Image
+          Any Terence Malek            <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
               width={256}
