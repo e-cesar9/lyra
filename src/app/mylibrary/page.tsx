@@ -308,7 +308,7 @@ const DiaryPage = ({}) => {
           <a target="__blank" className="menu__item-inner">
             Marcel Proust
             <Image
-              src="/MyLibrary/swannsway.webp"
+              src="/MyLibrary/novels/swannsway.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -320,7 +320,7 @@ const DiaryPage = ({}) => {
           <a target="__blank" id="hello2" className="menu__item-inner">
             The Epic of Gilgamesh
             <Image
-              src="/MyLibrary/gilgamesh.webp"
+              src="/MyLibrary/novels/gilgamesh.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -332,7 +332,7 @@ const DiaryPage = ({}) => {
           <a target="__blank" id="hello2" className="menu__item-inner">
             Alessandro Baricco
             <Image
-              src="/MyLibrary/city.webp"
+              src="/MyLibrary/novels/city.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -344,7 +344,7 @@ const DiaryPage = ({}) => {
           <a target="__blank" className="menu__item-inner">
             Leo Tolstoy
             <Image
-              src="/MyLibrary/annakarenina.webp"
+              src="/MyLibrary/novels/annakarenina.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -356,7 +356,7 @@ const DiaryPage = ({}) => {
           <a target="__blank" className="menu__item-inner">
             Rabelais
             <Image
-              src="/MyLibrary/gargantua.webp"
+              src="/MyLibrary/novels/gargantua.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -368,7 +368,7 @@ const DiaryPage = ({}) => {
           <a target="__blank" className="menu__item-inner">
             Edith Hamilton
             <Image
-              src="/MyLibrary/timelesstalesofgod.webp"
+              src="/MyLibrary/novels/timelesstalesofgod.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -380,7 +380,7 @@ const DiaryPage = ({}) => {
           <a target="__blank" className="menu__item-inner">
             Marguerite Yourcenar
             <Image
-              src="/MyLibrary/memoirsofhadrian.webp"
+              src="/MyLibrary/novels/memoirsofhadrian.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -392,7 +392,7 @@ const DiaryPage = ({}) => {
           <a target="__blank" className="menu__item-inner">
             Scheherazade 😉
             <Image
-              src="/MyLibrary/1001nights.webp"
+              src="/MyLibrary/novels/1001nights.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -404,7 +404,7 @@ const DiaryPage = ({}) => {
           <a target="__blank" className="menu__item-inner">
             Homer{" "}
             <Image
-              src="/MyLibrary/Illiadeodyssey.webp"
+              src="/MyLibrary/novels/Illiadeodyssey.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -416,7 +416,7 @@ const DiaryPage = ({}) => {
           <a target="__blank" className="menu__item-inner">
             Isaac Asimov
             <Image
-              src="/MyLibrary/foundation.webp"
+              src="/MyLibrary/novels/foundation.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -428,7 +428,7 @@ const DiaryPage = ({}) => {
           <a target="__blank" className="menu__item-inner">
             Robert Heinlein
             <Image
-              src="/MyLibrary/themanwhosoldthemoon.webp"
+              src="/MyLibrary/novels/themanwhosoldthemoon.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -440,7 +440,7 @@ const DiaryPage = ({}) => {
           <a target="__blank" className="menu__item-inner">
             Borges
             <Image
-              src="/MyLibrary/collectedfictions.webp"
+              src="/MyLibrary/novels/collectedfictions.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -452,7 +452,7 @@ const DiaryPage = ({}) => {
           <a target="__blank" className="menu__item-inner">
             Zola
             <Image
-              src="/MyLibrary/zola.webp"
+              src="/MyLibrary/novels/zola.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -464,7 +464,7 @@ const DiaryPage = ({}) => {
           <a target="__blank" className="menu__item-inner">
             Balzac
             <Image
-              src="/MyLibrary/honoredebalzac.webp"
+              src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
               width={256}
               height={256}
