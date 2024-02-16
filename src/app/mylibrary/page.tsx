@@ -281,7 +281,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="https://www.amazon.com/Picture-Dorian-Gray-Clydesdale-Classics-ebook/dp/B073QZRCM1/ref=sr_1_1?dchild=1&keywords=The+Picture+of+Dorian+Gray&qid=1592737417&sr=8-1&ref=daedalium.com" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Picture-Dorian-Gray-Clydesdale-Classics-ebook/dp/B073QZRCM1/ref=sr_1_1?dchild=1&keywords=The+Picture+of+Dorian+Gray&qid=1592737417&sr=8-1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Oscar Wilde
             <Image
               src="/MyLibrary/novels/doriangray.webp"
@@ -293,7 +297,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="https://www.amazon.com/His-Dark-Materials-Trilogy-Spyglass/dp/B00849DWSQ/ref=pd_lpo_14_t_0/138-8131567-1576343?_encoding=UTF8&pd_rd_i=B00849DWSQ&pd_rd_r=f254a7ef-c7eb-4053-b40d-96a80f5dc19c&pd_rd_w=dh9mg&pd_rd_wg=kTWKA&pf_rd_p=7b36d496-f366-4631-94d3-61b87b52511b&pf_rd_r=51DX3RR5A49JN95BMC4D&psc=1&refRID=51DX3RR5A49JN95BMC4D&ref=daedalium.com" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/His-Dark-Materials-Trilogy-Spyglass/dp/B00849DWSQ/ref=pd_lpo_14_t_0/138-8131567-1576343?_encoding=UTF8&pd_rd_i=B00849DWSQ&pd_rd_r=f254a7ef-c7eb-4053-b40d-96a80f5dc19c&pd_rd_w=dh9mg&pd_rd_wg=kTWKA&pf_rd_p=7b36d496-f366-4631-94d3-61b87b52511b&pf_rd_r=51DX3RR5A49JN95BMC4D&psc=1&refRID=51DX3RR5A49JN95BMC4D&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Philip Pullman
             <Image
               src="/MyLibrary/goldencompass.webp"
@@ -305,7 +313,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="https://www.amazon.com/Swanns-Way-Search-Penguin-Classics/dp/0142437964/ref=sr_1_1?dchild=1&keywords=proust&qid=1592739843&sr=8-1&ref=daedalium.com" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Swanns-Way-Search-Penguin-Classics/dp/0142437964/ref=sr_1_1?dchild=1&keywords=proust&qid=1592739843&sr=8-1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Marcel Proust
             <Image
               src="/MyLibrary/novels/swannsway.webp"
@@ -317,7 +329,12 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="https://www.amazon.com/Epic-Gilgamesh-Penguin-Classics/dp/0140449191/ref=sr_1_2?dchild=1&keywords=gilgamesh&qid=1592739904&sr=8-2&ref=daedalium.com" target="__blank" id="hello2" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Epic-Gilgamesh-Penguin-Classics/dp/0140449191/ref=sr_1_2?dchild=1&keywords=gilgamesh&qid=1592739904&sr=8-2&ref=daedalium.com"
+            target="__blank"
+            id="hello2"
+            className="menu__item-inner"
+          >
             The Epic of Gilgamesh
             <Image
               src="/MyLibrary/novels/gilgamesh.webp"
@@ -329,7 +346,12 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="https://www.amazon.com/City-Vintage-International-Alessandro-Baricco-ebook/dp/B000XUDGC6/ref=sr_1_5?dchild=1&keywords=alessandro+baricco+city&qid=1592739972&sr=8-5&ref=daedalium.com" target="__blank" id="hello2" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/City-Vintage-International-Alessandro-Baricco-ebook/dp/B000XUDGC6/ref=sr_1_5?dchild=1&keywords=alessandro+baricco+city&qid=1592739972&sr=8-5&ref=daedalium.com"
+            target="__blank"
+            id="hello2"
+            className="menu__item-inner"
+          >
             Alessandro Baricco
             <Image
               src="/MyLibrary/novels/city.webp"
@@ -341,7 +363,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="https://www.amazon.com/Anna-Karenina-Leo-Tolstoy/dp/0143035002/ref=sr_1_1?dchild=1&keywords=Anna+Karenina&qid=1592740296&sr=8-1&ref=daedalium.com" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Anna-Karenina-Leo-Tolstoy/dp/0143035002/ref=sr_1_1?dchild=1&keywords=Anna+Karenina&qid=1592740296&sr=8-1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Leo Tolstoy
             <Image
               src="/MyLibrary/novels/annakarenina.webp"
@@ -353,7 +379,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="https://www.amazon.com/Gargantua-Pantagruel-Classics-Francois-Rabelais/dp/0140445501/ref=sr_1_1?dchild=1&keywords=rabelais&qid=1592740277&sr=8-1&ref=daedalium.com" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Gargantua-Pantagruel-Classics-Francois-Rabelais/dp/0140445501/ref=sr_1_1?dchild=1&keywords=rabelais&qid=1592740277&sr=8-1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Rabelais
             <Image
               src="/MyLibrary/novels/gargantua.webp"
@@ -365,7 +395,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="https://www.amazon.com/Mythology-Timeless-Heroes-Anniversary-Illustrated/dp/0316438529/ref=sr_1_1?dchild=1&keywords=mythology&qid=1592740348&sr=8-1&ref=daedalium.com" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Mythology-Timeless-Heroes-Anniversary-Illustrated/dp/0316438529/ref=sr_1_1?dchild=1&keywords=mythology&qid=1592740348&sr=8-1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Edith Hamilton
             <Image
               src="/MyLibrary/novels/timelesstalesofgod.webp"
@@ -377,7 +411,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="https://www.amazon.com/Memoirs-Hadrian-Classics-Marguerite-Yourcenar/dp/0374529264/ref=sr_1_1?dchild=1&keywords=memory+of+hadrian&qid=1592740389&sr=8-1&ref=daedalium.com" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Memoirs-Hadrian-Classics-Marguerite-Yourcenar/dp/0374529264/ref=sr_1_1?dchild=1&keywords=memory+of+hadrian&qid=1592740389&sr=8-1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Marguerite Yourcenar
             <Image
               src="/MyLibrary/novels/memoirsofhadrian.webp"
@@ -389,7 +427,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="https://www.amazon.com/Arabian-Nights-New-Deluxe/dp/0393331660/ref=sr_1_2?dchild=1&keywords=1001+nights&qid=1592740436&sr=8-2&ref=daedalium.com" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Arabian-Nights-New-Deluxe/dp/0393331660/ref=sr_1_2?dchild=1&keywords=1001+nights&qid=1592740436&sr=8-2&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Scheherazade 😉
             <Image
               src="/MyLibrary/novels/1001nights.webp"
@@ -401,7 +443,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="https://www.amazon.com/Iliad-Odyssey-Leather-bound-Classics-Homer/dp/1607102129/ref=sr_1_1?dchild=1&keywords=homer&qid=1592740503&s=books&sr=1-1&ref=daedalium.com" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Iliad-Odyssey-Leather-bound-Classics-Homer/dp/1607102129/ref=sr_1_1?dchild=1&keywords=homer&qid=1592740503&s=books&sr=1-1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Homer{" "}
             <Image
               src="/MyLibrary/novels/Illiadodyssey.webp"
@@ -413,7 +459,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="https://www.amazon.com/Foundation-Isaac-Asimov-audiobook/dp/B003IF37TK/ref=sr_1_1?crid=2975M24FQERLH&dchild=1&keywords=foundation+asimov&qid=1592759501&s=books&sprefix=foundation+%2Cstripbooks-intl-ship%2C208&sr=1-1&ref=daedalium.com" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Foundation-Isaac-Asimov-audiobook/dp/B003IF37TK/ref=sr_1_1?crid=2975M24FQERLH&dchild=1&keywords=foundation+asimov&qid=1592759501&s=books&sprefix=foundation+%2Cstripbooks-intl-ship%2C208&sr=1-1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Isaac Asimov
             <Image
               src="/MyLibrary/novels/foundation.webp"
@@ -425,7 +475,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="https://www.amazon.com/Man-Who-Sold-Moon-Orphans-ebook/dp/B00ELJZZ24/ref=sr_1_1?dchild=1&keywords=The+Man+Who+Sold+the+Moon&qid=1592759578&s=books&sr=1-1&ref=daedalium.com" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Man-Who-Sold-Moon-Orphans-ebook/dp/B00ELJZZ24/ref=sr_1_1?dchild=1&keywords=The+Man+Who+Sold+the+Moon&qid=1592759578&s=books&sr=1-1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Robert Heinlein
             <Image
               src="/MyLibrary/novels/themanwhosoldthemoon.webp"
@@ -437,7 +491,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="https://www.amazon.com/Collected-Fictions-Jorge-Luis-Borges/dp/0140286802/ref=sr_1_1?dchild=1&keywords=fictions&qid=1592759643&s=books&sr=1-1&ref=daedalium.com" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Collected-Fictions-Jorge-Luis-Borges/dp/0140286802/ref=sr_1_1?dchild=1&keywords=fictions&qid=1592759643&s=books&sr=1-1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Borges
             <Image
               src="/MyLibrary/novels/collectedfictions.webp"
@@ -449,7 +507,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="https://www.amazon.com/Masterpiece-Oxford-Worlds-Classics/dp/0199536910/ref=sr_1_1?dchild=1&keywords=zola&qid=1592760133&s=books&sr=1-1&ref=daedalium.com" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Masterpiece-Oxford-Worlds-Classics/dp/0199536910/ref=sr_1_1?dchild=1&keywords=zola&qid=1592760133&s=books&sr=1-1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Zola
             <Image
               src="/MyLibrary/novels/zola.webp"
@@ -461,7 +523,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="https://www.amazon.com/Father-Goriot-P%C3%A8re-Classic-Illustrated-ebook/dp/B00PSDX84E/ref=sr_1_1?dchild=1&keywords=balzac+rastignac&qid=1592760190&s=books&sr=1-1&ref=daedalium.com" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Father-Goriot-P%C3%A8re-Classic-Illustrated-ebook/dp/B00PSDX84E/ref=sr_1_1?dchild=1&keywords=balzac+rastignac&qid=1592760190&s=books&sr=1-1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Balzac
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
@@ -475,7 +541,7 @@ const DiaryPage = ({}) => {
 
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Norbert Wiener
+            Norbert Wiener
             <Image
               src="/MyLibrary/bio/wierner.webp"
               alt="ogien cover"
@@ -488,7 +554,7 @@ const DiaryPage = ({}) => {
 
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Simone de Beauvoir
+            Simone de Beauvoir
             <Image
               src="/MyLibrary/bio/simonedebeauvoir.webp"
               alt="ogien cover"
@@ -501,7 +567,7 @@ const DiaryPage = ({}) => {
 
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Alberto Manguel
+            Alberto Manguel
             <Image
               src="/MyLibrary/bio/mythical.webp"
               alt="ogien cover"
@@ -513,7 +579,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          A Beautiful Mind 
+            A Beautiful Mind
             <Image
               src="/MyLibrary/bio/beautifullmind.webp"
               alt="ogien cover"
@@ -525,7 +591,8 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Alan Turing: The Enigma             <Image
+            Alan Turing: The Enigma{" "}
+            <Image
               src="/MyLibrary/bio/alanturning.webp"
               alt="ogien cover"
               width={256}
@@ -536,7 +603,8 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Alexander Hamilton             <Image
+            Alexander Hamilton{" "}
+            <Image
               src="/MyLibrary/bio/hamilton.webp"
               alt="ogien cover"
               width={256}
@@ -547,7 +615,8 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Napoleon: A Life             <Image
+            Napoleon: A Life{" "}
+            <Image
               src="/MyLibrary/bio/napoleon.webp"
               alt="ogien cover"
               width={256}
@@ -558,7 +627,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Steve Jobs 
+            Steve Jobs
             <Image
               src="/MyLibrary/bio/jobs.webp"
               alt="ogien cover"
@@ -570,7 +639,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Leonardo da Vinci 
+            Leonardo da Vinci
             <Image
               src="/MyLibrary/bio/davinci.webp"
               alt="ogien cover"
@@ -582,7 +651,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Marie-Antoinette 
+            Marie-Antoinette
             <Image
               src="/MyLibrary/bio/marieantoinette.webp"
               alt="ogien cover"
@@ -594,7 +663,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Magellan 
+            Magellan
             <Image
               src="/MyLibrary/bio/magellan.webp"
               alt="ogien cover"
@@ -606,7 +675,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Warren Buffett
+            Warren Buffett
             <Image
               src="/MyLibrary/bio/buffet.webp"
               alt="ogien cover"
@@ -618,7 +687,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          J.P Morgan
+            J.P Morgan
             <Image
               src="/MyLibrary/bio/jpmorgan.webp"
               alt="ogien cover"
@@ -630,7 +699,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Jack Welch
+            Jack Welch
             <Image
               src="/MyLibrary/bio/jackwelch.webp"
               alt="ogien cover"
@@ -642,7 +711,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Jeff Bezos
+            Jeff Bezos
             <Image
               src="/MyLibrary/bio/bezos.webp"
               alt="ogien cover"
@@ -654,7 +723,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Jack Ma
+            Jack Ma
             <Image
               src="/MyLibrary/bio/jackma.webp"
               alt="ogien cover"
@@ -666,7 +735,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Creativity, Inc.
+            Creativity, Inc.
             <Image
               src="/MyLibrary/bio/pixar.webp"
               alt="ogien cover"
@@ -678,7 +747,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Jay-Z
+            Jay-Z
             <Image
               src="/MyLibrary/bio/jay.webp"
               alt="ogien cover"
@@ -690,7 +759,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Richard Branson
+            Richard Branson
             <Image
               src="/MyLibrary/bio/branson.webp"
               alt="ogien cover"
@@ -701,9 +770,9 @@ const DiaryPage = ({}) => {
           </a>
         </div>
 
-      <div className="menu__item">
+        <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Novecento The Pianist
+            Novecento The Pianist
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -715,7 +784,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Remember The Titans
+            Remember The Titans
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -727,7 +796,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Beaumarchais l’Insolent
+            Beaumarchais l’Insolent
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -739,7 +808,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Ratatouille
+            Ratatouille
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -751,7 +820,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          M
+            M
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -763,7 +832,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          12 Angry Men
+            12 Angry Men
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -775,7 +844,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          The Godfather
+            The Godfather
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -787,7 +856,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Bary Lindon
+            Bary Lindon
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -799,7 +868,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          2001 The Space Odyssey
+            2001 The Space Odyssey
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -811,7 +880,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Gattaca
+            Gattaca
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -823,7 +892,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Aladdin
+            Aladdin
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -835,7 +904,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Amadeus
+            Amadeus
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -847,7 +916,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          House of Flying Daggers
+            House of Flying Daggers
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -859,7 +928,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Gladiator
+            Gladiator
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -871,7 +940,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Good Will Hunting
+            Good Will Hunting
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -883,7 +952,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Forrest Gump
+            Forrest Gump
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -895,7 +964,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Dead Poets Society
+            Dead Poets Society
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -907,7 +976,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Lawrence of Arabia
+            Lawrence of Arabia
             <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
@@ -919,7 +988,8 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          All the Marvel 😉          <Image
+            All the Marvel 😉{" "}
+            <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
               width={256}
@@ -930,7 +1000,8 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-          Any Terence Malek            <Image
+            Any Terence Malek{" "}
+            <Image
               src="/MyLibrary/novels/honoredebalzac.webp"
               alt="ogien cover"
               width={256}
