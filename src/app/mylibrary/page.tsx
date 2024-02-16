@@ -774,7 +774,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             Novecento The Pianist
             <Image
-              src="/MyLibrary/movies/novecencto.webp"
+              src="/MyLibrary/movies/novecento.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -846,7 +846,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             The Godfather
             <Image
-              src="/MyLibrary/movies/gofather.webp"
+              src="/MyLibrary/movies/godfather.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -856,9 +856,9 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Bary Lyndon
+            Barry Lyndon
             <Image
-              src="/MyLibrary/movies/barylyndon.webp"
+              src="/MyLibrary/movies/barrylyndon.webp"
               alt="ogien cover"
               width={256}
               height={256}
