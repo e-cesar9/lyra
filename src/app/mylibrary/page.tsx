@@ -304,7 +304,7 @@ const DiaryPage = ({}) => {
           >
             Philip Pullman
             <Image
-              src="/MyLibrary/goldencompass.webp"
+              src="/MyLibrary/novels/goldencompass.webp"
               alt="ogien cover"
               width={256}
               height={256}
