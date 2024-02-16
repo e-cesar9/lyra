@@ -774,7 +774,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             Novecento The Pianist
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/novecencto.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -786,7 +786,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             Remember The Titans
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/remembertitans.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -798,7 +798,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             Beaumarchais l’Insolent
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/beaumarchais.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -810,7 +810,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             Ratatouille
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/ratatouille.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -822,7 +822,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             M
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/m.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -834,7 +834,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             12 Angry Men
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/12angry.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -846,7 +846,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             The Godfather
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/gofather.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -856,9 +856,9 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Bary Lindon
+            Bary Lyndon
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/barylyndon.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -870,7 +870,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             2001 The Space Odyssey
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/2001space.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -882,7 +882,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             Gattaca
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/gattaca.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -894,7 +894,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             Aladdin
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/aladdin.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -906,7 +906,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             Amadeus
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/amadeus.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -918,7 +918,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             House of Flying Daggers
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/flyingdaggers.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -930,7 +930,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             Gladiator
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/gladiator.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -942,7 +942,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             Good Will Hunting
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/willhunting.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -954,7 +954,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             Forrest Gump
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/forest.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -966,7 +966,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             Dead Poets Society
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/deadpoets.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -978,7 +978,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             Lawrence of Arabia
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/lawrence.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -990,7 +990,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             All the Marvel 😉{" "}
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/marvel.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -1002,7 +1002,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
             Any Terence Malek{" "}
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/movies/malek.webp"
               alt="ogien cover"
               width={256}
               height={256}
