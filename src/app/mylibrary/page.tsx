@@ -477,7 +477,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
           Norbert Wiener
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/bio/wierner.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -490,7 +490,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
           Simone de Beauvoir
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/bio/simonedebeauvoir.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -503,7 +503,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
           Alberto Manguel
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/bio/mythical.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -515,7 +515,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
           A Beautiful Mind 
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/bio/beautifullmind.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -526,7 +526,7 @@ const DiaryPage = ({}) => {
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
           Alan Turing: The Enigma             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/bio/alanturning.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -537,7 +537,7 @@ const DiaryPage = ({}) => {
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
           Alexander Hamilton             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/bio/hamilton.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -548,7 +548,7 @@ const DiaryPage = ({}) => {
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
           Napoleon: A Life             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/bio/napoleon.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -560,7 +560,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
           Steve Jobs 
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/bio/jobs.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -572,7 +572,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
           Leonardo da Vinci 
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/bio/davinci.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -584,7 +584,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
           Marie-Antoinette 
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/bio/marieantoinette.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -596,7 +596,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
           Magellan 
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/bio/magellan.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -608,7 +608,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
           Warren Buffett
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/bio/buffet.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -620,7 +620,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
           J.P Morgan
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/bio/jpmorgan.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -632,7 +632,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
           Jack Welch
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/bio/jackwelch.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -644,7 +644,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
           Jeff Bezos
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/bio/bezos.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -656,7 +656,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
           Jack Ma
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/bio/jackma.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -668,7 +668,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
           Creativity, Inc.
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/bio/pixar.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -680,7 +680,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
           Jay-Z
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/bio/jay.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -692,7 +692,7 @@ const DiaryPage = ({}) => {
           <a href="" target="__blank" className="menu__item-inner">
           Richard Branson
             <Image
-              src="/MyLibrary/novels/honoredebalzac.webp"
+              src="/MyLibrary/bio/branson.webp"
               alt="ogien cover"
               width={256}
               height={256}
