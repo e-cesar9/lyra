@@ -30,13 +30,16 @@
 
 }
 #library{
-	padding-right: 3rem;
+	padding-right: 2.5rem;
 }
 #lyra{
 	padding-left: 4rem;
 }
 
 @media (min-width: 760px) { 
+	.menu{
+		padding-top: 2rem;
+	}
 	.baseline{
 		height: 55px;
 		width: 81%;
@@ -51,12 +54,6 @@
 	}
 
 }
-/* .baseline{
-		border-bottom: 1px solid white;
-		width: 100%;
-		padding-right: 6rem;
-	bottom: 0;
-} */
 
 .menu {
 	width: 100vw;
@@ -76,7 +73,7 @@
 	user-select: none;
 	font-family: 'Stardom-Regular';
 	letter-spacing: .1em;
-	padding-top: 2rem;
+	padding-top: 6rem;
 
 }
 
