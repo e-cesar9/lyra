@@ -1166,6 +1166,247 @@ const DiaryPage = ({}) => {
             />
           </a>
         </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Vikings{" "}
+            <Image
+              src="/MyLibrary/series/vikings.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Roman Empire{" "}
+            <Image
+              src="/MyLibrary/series/romanempire.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          The Good Place
+{" "}
+            <Image
+              src="/MyLibrary/series/goodplace.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Battle Star Galactica{" "}
+            <Image
+              src="/MyLibrary/series/battlestar.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          The Goodwife{" "}
+            <Image
+              src="/MyLibrary/series/goodwife.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          The Master of None{" "}
+            <Image
+              src="/MyLibrary/series/masterofnone.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Jane, The Virgin{" "}
+            <Image
+              src="/MyLibrary/series/janethevirgin.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Money Heist{" "}
+            <Image
+              src="/MyLibrary/series/moneyheist.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Midnight Dinners{" "}
+            <Image
+              src="/MyLibrary/series/midnightdinners.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Sherlock{" "}
+            <Image
+              src="/MyLibrary/series/sherlock.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Friends{" "}
+            <Image
+              src="/MyLibrary/series/friends.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Dragon Ball Z{" "}
+            <Image
+              src="/MyLibrary/anime/dbz.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Sword Art Online{" "}
+            <Image
+              src="/MyLibrary/anime/swordart.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Hunter x Hunter{" "}
+            <Image
+              src="/MyLibrary/anime/hunterxhunter.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Saint Seiya{" "}
+            <Image
+              src="/MyLibrary/anime/seiya.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Love, Death & Robots{" "}
+            <Image
+              src="/MyLibrary/anime/lovedeathrobots.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Death Note{" "}
+            <Image
+              src="/MyLibrary/anime/deathnote.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Fairy Tail{" "}
+            <Image
+              src="/MyLibrary/anime/fairytail.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Full Metal Alchemist{" "}
+            <Image
+              src="/MyLibrary/anime/fullmetal.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+          Miyazaki{" "}
+            <Image
+              src="/MyLibrary/anime/miyazaki.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
       </nav>
     </>
   )
