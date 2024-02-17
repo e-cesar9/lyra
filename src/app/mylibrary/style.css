@@ -43,14 +43,14 @@
 	.baseline{
 		height: 55px;
 		width: 81%;
-		margin-left: 15.5%;
+		margin-left: 15%;
 
 	}
 	#lyra{
 		padding-left: 7rem;
 	}
 	#library{
-		padding-right: 2rem;
+		padding-right: 0rem;
 	}
 
 }
