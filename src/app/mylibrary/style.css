@@ -9,8 +9,20 @@
 	src: url(/assets/fonts/Stardom-Regular.ttf);
 }
 
+@media (max-width: 1910px) { 
+	.base{
+		display: none;
+	}
+}
 
-
+.base{
+	display: block;
+	height: 55px;
+	width: 100%;
+	position: fixed;
+	background-color: black;
+	z-index: 10;
+}
 .baseline{
 	position: fixed;
 	border-bottom: 1px solid white;
