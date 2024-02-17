@@ -52,7 +52,7 @@ figcaption{
 
 
 #Me{
-	font-family: 'Zodiak-Variable';
+	font-family: 'Stardom-Regular';
 	position: relative;
 	height: 100vh;
 	width: 100vw;
@@ -121,6 +121,8 @@ text-orientation: upright;
 	margin: 2rem 26rem;
 	font-size: 27px;
 	font-weight: 300;
+	line-height: 2em;
+    letter-spacing: .1em;
 }
 
 .aspectm{
