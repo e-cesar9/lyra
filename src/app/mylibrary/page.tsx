@@ -771,7 +771,7 @@ const DiaryPage = ({}) => {
 
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Novecento The Pianist
+          Novecento: Pianist
             <Image
               src="/MyLibrary/movies/novecento.webp"
               alt="ogien cover"
