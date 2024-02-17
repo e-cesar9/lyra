@@ -517,7 +517,7 @@ const DiaryPage = ({}) => {
               alt="ogien cover"
               width={256}
               height={256}
-              className="hover-image"
+              className="hover-image small"
             />
           </a>
         </div>
@@ -752,7 +752,7 @@ const DiaryPage = ({}) => {
               alt="ogien cover"
               width={256}
               height={256}
-              className="hover-image"
+              className="hover-image small"
             />
           </a>
         </div>
@@ -825,7 +825,7 @@ const DiaryPage = ({}) => {
               alt="ogien cover"
               width={256}
               height={256}
-              className="hover-image"
+              className="hover-image small"
             />
           </a>
         </div>
