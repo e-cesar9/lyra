@@ -1070,7 +1070,7 @@ const DiaryPage = ({}) => {
             />
           </a>
         </div>
-        <div className="menu__item">
+        {/* <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
             Exit Through The Gift Shop{" "}
             <Image
@@ -1081,7 +1081,7 @@ const DiaryPage = ({}) => {
               className="hover-image"
             />
           </a>
-        </div>
+        </div> */}
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
             Chef’s Table{" "}
@@ -1111,6 +1111,54 @@ const DiaryPage = ({}) => {
             I am not your Guru{" "}
             <Image
               src="/MyLibrary/docs/tonyrobbins.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+            The West Wing{" "}
+            <Image
+              src="/MyLibrary/series/.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+            Kaamelott{" "}
+            <Image
+              src="/MyLibrary/series/.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+            Sense8{" "}
+            <Image
+              src="/MyLibrary/series/sense8.webp"
+              alt="ogien cover"
+              width={256}
+              height={256}
+              className="hover-image"
+            />
+          </a>
+        </div>
+        <div className="menu__item">
+          <a href="" target="__blank" className="menu__item-inner">
+            Lucifer{" "}
+            <Image
+              src="/MyLibrary/series/lucifer.webp"
               alt="ogien cover"
               width={256}
               height={256}

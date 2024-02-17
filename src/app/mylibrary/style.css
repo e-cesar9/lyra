@@ -39,10 +39,15 @@
 @media (min-width: 760px) { 
 	.baseline{
 		height: 55px;
-		width: 96.5%;
+		width: 80.5%;
+		margin-left: 16%;
+
 	}
 	#lyra{
-		padding-left: 22rem;
+		padding-left: 7rem;
+	}
+	#library{
+		padding-right: 2rem;
 	}
 
 }
@@ -96,7 +101,7 @@
 	white-space: nowrap;
 	position: relative;
 	cursor: pointer;
-	font-size: 6vw;
+	font-size: 5vw;
 	letter-spacing: .1em;
 	padding: 0.5rem;
 	display: block;
