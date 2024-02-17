@@ -175,3 +175,34 @@
 		left: 0%;
 	}
   }
+
+  @media (max-width: 1281px) and (min-width: 760px){
+	.menu{
+
+	}
+	.menu__item{
+margin-right: 3rem;
+	}
+	.menu__item-inner{
+		font-size: 4.3vw;
+	}
+
+	#lyra{
+		padding-left: 9rem;
+	}
+	#library{
+		padding-right: 1rem;
+	}
+	.hover-image{
+		left: 0;
+	}
+}
+
+@media (max-width: 1641px) and (min-width: 1282px){
+	.menu__item{
+		margin-right: 4rem;
+			}
+	.menu__item-inner{
+		font-size: 5vw;
+	}
+}
