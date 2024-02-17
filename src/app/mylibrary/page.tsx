@@ -334,7 +334,7 @@ const DiaryPage = ({}) => {
             id="hello2"
             className="menu__item-inner"
           >
-            The Epic of Gilgamesh
+            Epic Gilgamesh
             <Image
               src="/MyLibrary/novels/gilgamesh.webp"
               alt="ogien cover"
@@ -590,7 +590,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            Alan Turing: The Enigma{" "}
+            Turing: The Enigma{" "}
             <Image
               src="/MyLibrary/bio/alanturning.webp"
               alt="ogien cover"
@@ -793,7 +793,7 @@ const DiaryPage = ({}) => {
             />
           </a>
         </div>
-        <div className="menu__item">
+        {/* <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
             Beaumarchais l’Insolent
             <Image
@@ -804,7 +804,7 @@ const DiaryPage = ({}) => {
               className="hover-image"
             />
           </a>
-        </div>
+        </div> */}
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
             Ratatouille
@@ -867,7 +867,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            2001 The Space Odyssey
+            2001 Space Odyssey
             <Image
               src="/MyLibrary/movies/2001space.webp"
               alt="ogien cover"
@@ -915,7 +915,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            House of Flying Daggers
+            Flying Daggers
             <Image
               src="/MyLibrary/movies/flyingdaggers.webp"
               alt="ogien cover"
@@ -1060,7 +1060,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="menu__item">
           <a href="" target="__blank" className="menu__item-inner">
-            The times of Harvey Milk{" "}
+            Harvey Milk{" "}
             <Image
               src="/MyLibrary/docs/harveymilk.webp"
               alt="ogien cover"
