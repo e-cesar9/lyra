@@ -19,8 +19,10 @@ const DiaryPage = ({}) => {
   return (
     <>
       <Sidebar />
-    <div className="base"></div>
-      <div className="baseline"><span id="lyra">リラ はると</span> <span id="library">My Library</span></div>
+      <div className="base"></div>
+      <div className="baseline">
+        <span id="lyra">リラ はると</span> <span id="library">My Library</span>
+      </div>
       <nav id="menu" className="menu" ref={menuRef}>
         <div className="menu__item">
           <a
@@ -539,7 +541,11 @@ const DiaryPage = ({}) => {
         </div>
 
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Ex-Prodigy-Childhood-Youth-Norbert-Wiener/dp/0262730081/ref=sr_1_4?dchild=1&keywords=norbert+wiener&qid=1592736541&sr=8-4&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Norbert Wiener
             <Image
               src="/MyLibrary/bio/wierner.webp"
@@ -552,7 +558,11 @@ const DiaryPage = ({}) => {
         </div>
 
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.fr/dp/1350047171/ref=as_at?linkCode=gs2&tag=5books07-21&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Simone de Beauvoir
             <Image
               src="/MyLibrary/bio/simonedebeauvoir.webp"
@@ -565,7 +575,11 @@ const DiaryPage = ({}) => {
         </div>
 
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Dictionary-Imaginary-Places-Updated-Expanded/dp/0156008726/ref=sr_1_5?dchild=1&keywords=Alberto+Manguel&qid=1592759814&s=books&sr=1-5&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Alberto Manguel
             <Image
               src="/MyLibrary/bio/mythical.webp"
@@ -577,7 +591,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.fr/gp/video/ssoredirect/?ru=https%3A%2F%2Fapp.primevideo.com%2Fdetail%3Fgti%3Damzn1.dv.gti.ecaf0d91-80db-3fec-ce14-ec9ac0148002%26ref_%3Ddvm_src_ret_fr_xx_s&page-type-id=B07WQNDXGP&linkCode=gs3&ref=sr_1_1&creativeASIN=B004QWZ5SA&keywords=A+Beautiful+Mind&qid=1592760465&creative=165953&camp=2025&sr=8-1&tag=reedsyfr-21"
+            target="__blank"
+            className="menu__item-inner"
+          >
             A Beautiful Mind
             <Image
               src="/MyLibrary/bio/beautifullmind.webp"
@@ -589,7 +607,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Alan-Turing-Enigma-Inspired-Imitation/dp/069116472X/ref=sr_1_1?dchild=1&keywords=Alan+Turing%3A+The+Enigma&qid=1592760817&s=books&sr=1-1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Turing: The Enigma{" "}
             <Image
               src="/MyLibrary/bio/alanturning.webp"
@@ -601,7 +623,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Alexander-Hamilton-Ron-Chernow-audiobook/dp/B0007OB58A/ref=sr_1_1?dchild=1&keywords=Alexander+Hamilton&qid=1592760835&s=books&sr=1-1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Alexander Hamilton{" "}
             <Image
               src="/MyLibrary/bio/hamilton.webp"
@@ -613,7 +639,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.fr/Napoleon-Life-Andrew-Roberts/dp/0143127853?ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Napoleon: A Life{" "}
             <Image
               src="/MyLibrary/bio/napoleon.webp"
@@ -625,7 +655,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.fr/Steve-Jobs-The-Exclusive-Biography/dp/B01CV5SAZI/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Steve+Jobs&qid=1592760868&s=english-books&sr=1-1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Steve Jobs
             <Image
               src="/MyLibrary/bio/jobs.webp"
@@ -637,7 +671,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Walter-Isaacson/dp/1501139169/ref=sr_1_1?dchild=1&keywords=Walter+Isaacson&qid=1592760774&s=books&sr=1-1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Leonardo da Vinci
             <Image
               src="/MyLibrary/bio/davinci.webp"
@@ -649,7 +687,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/Marie-Antoinette-Stefan-Zweig-ebook/dp/B006WV3CEM?ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Marie-Antoinette
             <Image
               src="/MyLibrary/bio/marieantoinette.webp"
@@ -661,7 +703,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.fr/Magellan/dp/B01DL0TGIM/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=stefan+zweig+magellan&qid=1592761048&sr=8-1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Magellan
             <Image
               src="/MyLibrary/bio/magellan.webp"
@@ -673,7 +719,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/dp/B009MYD9F8/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Warren Buffett
             <Image
               src="/MyLibrary/bio/buffet.webp"
@@ -685,7 +735,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/dp/B008IU9X6Q/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             J.P Morgan
             <Image
               src="/MyLibrary/bio/jpmorgan.webp"
@@ -697,7 +751,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.com/dp/B001GUXJQK/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Jack Welch
             <Image
               src="/MyLibrary/bio/jackwelch.webp"
@@ -709,7 +767,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.fr/dp/0316219282?tag=tcl03-21&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Jeff Bezos
             <Image
               src="/MyLibrary/bio/bezos.webp"
@@ -721,7 +783,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.theceolibrary.com/alibaba-the-house-that-jack-ma-built-983.html?ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Jack Ma
             <Image
               src="/MyLibrary/bio/jackma.webp"
@@ -733,7 +799,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.fr/dp/0812993012?tag=tcl03-21&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Creativity, Inc.
             <Image
               src="/MyLibrary/bio/pixar.webp"
@@ -745,7 +815,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.fr/dp/1591848342?tag=tcl03-21&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Jay-Z
             <Image
               src="/MyLibrary/bio/jay.webp"
@@ -757,7 +831,11 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a
+            href="https://www.amazon.fr/dp/0307720748?tag=tcl03-21&ref=daedalium.com"
+            target="__blank"
+            className="menu__item-inner"
+          >
             Richard Branson
             <Image
               src="/MyLibrary/bio/branson.webp"
@@ -770,8 +848,8 @@ const DiaryPage = ({}) => {
         </div>
 
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          Novecento: Pianist
+          <a target="__blank" className="menu__item-inner">
+            Novecento: Pianist
             <Image
               src="/MyLibrary/movies/novecento.webp"
               alt="ogien cover"
@@ -782,7 +860,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Remember The Titans
             <Image
               src="/MyLibrary/movies/remembertitans.webp"
@@ -794,7 +872,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         {/* <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a  target="__blank" className="menu__item-inner">
             Beaumarchais l’Insolent
             <Image
               src="/MyLibrary/movies/beaumarchais.webp"
@@ -806,7 +884,7 @@ const DiaryPage = ({}) => {
           </a>
         </div> */}
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Ratatouille
             <Image
               src="/MyLibrary/movies/ratatouille.webp"
@@ -818,7 +896,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             M
             <Image
               src="/MyLibrary/movies/m.webp"
@@ -830,7 +908,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             12 Angry Men
             <Image
               src="/MyLibrary/movies/12angry.webp"
@@ -842,7 +920,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             The Godfather
             <Image
               src="/MyLibrary/movies/godfather.webp"
@@ -854,7 +932,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Barry Lyndon
             <Image
               src="/MyLibrary/movies/barrylyndon.webp"
@@ -866,7 +944,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             2001 Space Odyssey
             <Image
               src="/MyLibrary/movies/2001space.webp"
@@ -878,7 +956,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Gattaca
             <Image
               src="/MyLibrary/movies/gattaca.webp"
@@ -890,7 +968,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Aladdin
             <Image
               src="/MyLibrary/movies/aladdin.webp"
@@ -902,7 +980,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Amadeus
             <Image
               src="/MyLibrary/movies/amadeus.webp"
@@ -914,7 +992,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Flying Daggers
             <Image
               src="/MyLibrary/movies/flyingdaggers.webp"
@@ -926,7 +1004,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Gladiator
             <Image
               src="/MyLibrary/movies/gladiator.webp"
@@ -938,7 +1016,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Good Will Hunting
             <Image
               src="/MyLibrary/movies/willhunting.webp"
@@ -950,7 +1028,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Forrest Gump
             <Image
               src="/MyLibrary/movies/forest.webp"
@@ -962,7 +1040,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Dead Poets Society
             <Image
               src="/MyLibrary/movies/deadpoets.webp"
@@ -974,7 +1052,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Lawrence of Arabia
             <Image
               src="/MyLibrary/movies/lawrence.webp"
@@ -986,7 +1064,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             All the Marvel 😉{" "}
             <Image
               src="/MyLibrary/movies/marvel.webp"
@@ -998,7 +1076,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Any Terence Malek{" "}
             <Image
               src="/MyLibrary/movies/malek.webp"
@@ -1011,7 +1089,7 @@ const DiaryPage = ({}) => {
         </div>
 
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Jiro Dreams of Sushi{" "}
             <Image
               src="/MyLibrary/docs/jirodreams.webp"
@@ -1023,7 +1101,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Behind the Curve{" "}
             <Image
               src="/MyLibrary/docs/behindthecurve.webp"
@@ -1035,7 +1113,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Fyre Festival{" "}
             <Image
               src="/MyLibrary/docs/fyre.webp"
@@ -1047,7 +1125,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Life, Animated{" "}
             <Image
               src="/MyLibrary/docs/animated.webp"
@@ -1059,7 +1137,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Harvey Milk{" "}
             <Image
               src="/MyLibrary/docs/harveymilk.webp"
@@ -1071,7 +1149,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         {/* <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a  target="__blank" className="menu__item-inner">
             Exit Through The Gift Shop{" "}
             <Image
               src="/MyLibrary/docs/exitthrough.webp"
@@ -1083,7 +1161,7 @@ const DiaryPage = ({}) => {
           </a>
         </div> */}
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Chef’s Table{" "}
             <Image
               src="/MyLibrary/docs/cheftable.webp"
@@ -1095,7 +1173,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             The Final Year{" "}
             <Image
               src="/MyLibrary/docs/thefinalyear.webp"
@@ -1107,7 +1185,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             I am not your Guru{" "}
             <Image
               src="/MyLibrary/docs/tonyrobbins.webp"
@@ -1119,10 +1197,10 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             The West Wing{" "}
             <Image
-              src="/MyLibrary/series/.webp"
+              src="/MyLibrary/series/westwing.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -1131,10 +1209,10 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Kaamelott{" "}
             <Image
-              src="/MyLibrary/series/.webp"
+              src="/MyLibrary/series/kaamelott.webp"
               alt="ogien cover"
               width={256}
               height={256}
@@ -1143,7 +1221,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Sense8{" "}
             <Image
               src="/MyLibrary/series/sense8.webp"
@@ -1155,7 +1233,7 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
+          <a target="__blank" className="menu__item-inner">
             Lucifer{" "}
             <Image
               src="/MyLibrary/series/lucifer.webp"
@@ -1167,8 +1245,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          Vikings{" "}
+          <a target="__blank" className="menu__item-inner">
+            Vikings{" "}
             <Image
               src="/MyLibrary/series/vikings.webp"
               alt="ogien cover"
@@ -1179,8 +1257,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          Roman Empire{" "}
+          <a target="__blank" className="menu__item-inner">
+            Roman Empire{" "}
             <Image
               src="/MyLibrary/series/romanempire.webp"
               alt="ogien cover"
@@ -1191,9 +1269,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          The Good Place
-{" "}
+          <a target="__blank" className="menu__item-inner">
+            The Good Place{" "}
             <Image
               src="/MyLibrary/series/goodplace.webp"
               alt="ogien cover"
@@ -1204,8 +1281,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          Battle Star Galactica{" "}
+          <a target="__blank" className="menu__item-inner">
+            Battle Star Galactica{" "}
             <Image
               src="/MyLibrary/series/battlestar.webp"
               alt="ogien cover"
@@ -1216,8 +1293,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          The Goodwife{" "}
+          <a target="__blank" className="menu__item-inner">
+            The Goodwife{" "}
             <Image
               src="/MyLibrary/series/goodwife.webp"
               alt="ogien cover"
@@ -1228,8 +1305,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          The Master of None{" "}
+          <a target="__blank" className="menu__item-inner">
+            The Master of None{" "}
             <Image
               src="/MyLibrary/series/masterofnone.webp"
               alt="ogien cover"
@@ -1240,8 +1317,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          Jane, The Virgin{" "}
+          <a target="__blank" className="menu__item-inner">
+            Jane, The Virgin{" "}
             <Image
               src="/MyLibrary/series/janethevirgin.webp"
               alt="ogien cover"
@@ -1252,8 +1329,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          Money Heist{" "}
+          <a target="__blank" className="menu__item-inner">
+            Money Heist{" "}
             <Image
               src="/MyLibrary/series/moneyheist.webp"
               alt="ogien cover"
@@ -1264,8 +1341,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          Midnight Dinners{" "}
+          <a target="__blank" className="menu__item-inner">
+            Midnight Dinners{" "}
             <Image
               src="/MyLibrary/series/midnightdinners.webp"
               alt="ogien cover"
@@ -1276,8 +1353,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          Sherlock{" "}
+          <a target="__blank" className="menu__item-inner">
+            Sherlock{" "}
             <Image
               src="/MyLibrary/series/sherlock.webp"
               alt="ogien cover"
@@ -1288,8 +1365,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          Friends{" "}
+          <a target="__blank" className="menu__item-inner">
+            Friends{" "}
             <Image
               src="/MyLibrary/series/friends.webp"
               alt="ogien cover"
@@ -1300,8 +1377,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          Dragon Ball Z{" "}
+          <a target="__blank" className="menu__item-inner">
+            Dragon Ball Z{" "}
             <Image
               src="/MyLibrary/anime/dbz.webp"
               alt="ogien cover"
@@ -1312,8 +1389,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          Sword Art Online{" "}
+          <a target="__blank" className="menu__item-inner">
+            Sword Art Online{" "}
             <Image
               src="/MyLibrary/anime/swordart.webp"
               alt="ogien cover"
@@ -1324,8 +1401,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          Hunter x Hunter{" "}
+          <a target="__blank" className="menu__item-inner">
+            Hunter x Hunter{" "}
             <Image
               src="/MyLibrary/anime/hunterxhunter.webp"
               alt="ogien cover"
@@ -1336,8 +1413,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          Saint Seiya{" "}
+          <a target="__blank" className="menu__item-inner">
+            Saint Seiya{" "}
             <Image
               src="/MyLibrary/anime/seiya.webp"
               alt="ogien cover"
@@ -1348,8 +1425,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          Love, Death & Robots{" "}
+          <a target="__blank" className="menu__item-inner">
+            Love, Death & Robots{" "}
             <Image
               src="/MyLibrary/anime/lovedeathrobots.webp"
               alt="ogien cover"
@@ -1360,8 +1437,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          Death Note{" "}
+          <a target="__blank" className="menu__item-inner">
+            Death Note{" "}
             <Image
               src="/MyLibrary/anime/deathnote.webp"
               alt="ogien cover"
@@ -1372,8 +1449,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          Fairy Tail{" "}
+          <a target="__blank" className="menu__item-inner">
+            Fairy Tail{" "}
             <Image
               src="/MyLibrary/anime/fairytail.webp"
               alt="ogien cover"
@@ -1384,8 +1461,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          Full Metal Alchemist{" "}
+          <a target="__blank" className="menu__item-inner">
+            Full Metal Alchemist{" "}
             <Image
               src="/MyLibrary/anime/fullmetal.webp"
               alt="ogien cover"
@@ -1396,8 +1473,8 @@ const DiaryPage = ({}) => {
           </a>
         </div>
         <div className="menu__item">
-          <a href="" target="__blank" className="menu__item-inner">
-          Miyazaki{" "}
+          <a target="__blank" className="menu__item-inner">
+            Miyazaki{" "}
             <Image
               src="/MyLibrary/anime/miyazaki.webp"
               alt="ogien cover"
