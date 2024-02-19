@@ -2,8 +2,9 @@
 import React from "react"
 import ChatComponent from "../../components/chatComponent"
 import {useConfirmContext} from "../../components/context/ConfirmContext"
-import Layout  from "../../components/layout/Layout"
+import Layout from "../../components/layout/Layout"
 import Sidebar from "../sideBar"
+import "./style.css"
 
 const DiaryPage = ({}) => {
   const inputRef = React.useRef<HTMLInputElement>(null)
@@ -28,8 +29,7 @@ const DiaryPage = ({}) => {
     </div>
   )
 
-  var comming = 
-  `
+  var comming = `
    ::::::::   ::::::::  ::::    ::::  ::::    ::::  ::::::::::: ::::    :::  ::::::::        ::::::::   ::::::::   ::::::::  ::::    ::: 
   :+:    :+: :+:    :+: +:+:+: :+:+:+ +:+:+: :+:+:+     :+:     :+:+:   :+: :+:    :+:      :+:    :+: :+:    :+: :+:    :+: :+:+:   :+: 
   +:+        +:+    +:+ +:+ +:+:+ +:+ +:+ +:+:+ +:+     +:+     :+:+:+  +:+ +:+             +:+        +:+    +:+ +:+    +:+ :+:+:+  +:+ 
@@ -38,21 +38,20 @@ const DiaryPage = ({}) => {
   #+#    #+# #+#    #+# #+#       #+# #+#       #+#     #+#     #+#   #+#+# #+#    #+#      #+#    #+# #+#    #+# #+#    #+# #+#   #+#+# 
    ########   ########  ###       ### ###       ### ########### ###    ####  ########        ########   ########   ########  ###    ####...`
 
-   var come = `#
-    #    _______  _____  _______ _______ _____ __   _  ______      _______  _____   _____  __   _
-   #    |       |     | |  |  | |  |  |   |   | \  | |  ____      |______ |     | |     | | \  |
-   #   |_____  |_____| |  |  | |  |  | __|__ |  \_| |_____|      ______| |_____| |_____| |  \_
-   |
-   #                                                                                           `
+  var coming = `
+     _______  _____  _______ _____ __   _  ______      _______  _____   _____  __   _
+     |       |     | |  |  |   |   | \\  | |  ____      |______ |     | |     | | \\  |
+     |_____  |_____| |  |  | __|__ |  \\_| |_____|      ______| |_____| |_____| |  \\_|
+                                                                                     `
 
-   
   return (
     <>
-    <Sidebar/>
-<Layout>
-<div className="flex justify-center align-middle items-center h-full w-full whitespace-pre -mt-8">
-{comming} </div>
-</Layout>
+      <Sidebar />
+      <Layout>
+        <div className="flex justify-center align-middle items-center h-full w-full whitespace-pre -mt-8 lyratitle">
+          {coming}{" "}
+        </div>
+      </Layout>
     </>
   )
 }
