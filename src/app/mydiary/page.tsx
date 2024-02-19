@@ -2,6 +2,8 @@
 import React from "react"
 import ChatComponent from "../../components/chatComponent"
 import {useConfirmContext} from "../../components/context/ConfirmContext"
+import Layout  from "../../components/layout/Layout"
+import Sidebar from "../sideBar"
 
 const DiaryPage = ({}) => {
   const inputRef = React.useRef<HTMLInputElement>(null)
@@ -26,18 +28,31 @@ const DiaryPage = ({}) => {
     </div>
   )
 
+  var comming = 
+  `
+   ::::::::   ::::::::  ::::    ::::  ::::    ::::  ::::::::::: ::::    :::  ::::::::        ::::::::   ::::::::   ::::::::  ::::    ::: 
+  :+:    :+: :+:    :+: +:+:+: :+:+:+ +:+:+: :+:+:+     :+:     :+:+:   :+: :+:    :+:      :+:    :+: :+:    :+: :+:    :+: :+:+:   :+: 
+  +:+        +:+    +:+ +:+ +:+:+ +:+ +:+ +:+:+ +:+     +:+     :+:+:+  +:+ +:+             +:+        +:+    +:+ +:+    +:+ :+:+:+  +:+ 
+  +#+        +#+    +:+ +#+  +:+  +#+ +#+  +:+  +#+     +#+     +#+ +:+ +#+ :#:             +#++:++#++ +#+    +:+ +#+    +:+ +#+ +:+ +#+ 
+  +#+        +#+    +#+ +#+       +#+ +#+       +#+     +#+     +#+  +#+#+# +#+   +#+#             +#+ +#+    +#+ +#+    +#+ +#+  +#+#+# 
+  #+#    #+# #+#    #+# #+#       #+# #+#       #+#     #+#     #+#   #+#+# #+#    #+#      #+#    #+# #+#    #+# #+#    #+# #+#   #+#+# 
+   ########   ########  ###       ### ###       ### ########### ###    ####  ########        ########   ########   ########  ###    ####...`
+
+   var come = `#
+    #    _______  _____  _______ _______ _____ __   _  ______      _______  _____   _____  __   _
+   #    |       |     | |  |  | |  |  |   |   | \  | |  ____      |______ |     | |     | | \  |
+   #   |_____  |_____| |  |  | |  |  | __|__ |  \_| |_____|      ______| |_____| |_____| |  \_
+   |
+   #                                                                                           `
+
+   
   return (
     <>
-      {showConfirmation && (
-        <ShowConfirm handleConfirmationResponse={handleConfirmationResponse} />
-      )}
-      <div
-        ref={containerRef}
-        id="yo"
-        className="overflow-y-auto h-full p-4 rounded layout"
-      >
-        <ChatComponent inputRef={inputRef} containerRef={containerRef} />
-      </div>
+    <Sidebar/>
+<Layout>
+<div className="flex justify-center align-middle items-center h-full w-full whitespace-pre -mt-8">
+{comming} </div>
+</Layout>
     </>
   )
 }
