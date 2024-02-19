@@ -45,7 +45,7 @@ export const ChatComponent = ({inputRef, containerRef}) => {
         containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
         inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
         inputRef.current.focus()
-      }, 18500)
+      }, 15500)
     }
   }, [messages, history])
 
