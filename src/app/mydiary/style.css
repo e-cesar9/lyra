@@ -1,3 +1,12 @@
 .lyratitle{
     text-shadow: 0 0 4px #fff;
 }
+
+@media (max-width: 1080px){
+    .terminal{
+        width: 100%;
+    }
+    .desk{
+      display: none;
+    }
+  }

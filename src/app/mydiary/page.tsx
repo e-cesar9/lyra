@@ -38,6 +38,18 @@ const DiaryPage = ({}) => {
     #+#    #+# #+#    #+# #+#       #+#     #+#     #+#   #+#+# #+#    #+#      #+#    #+# #+#    #+# #+#    #+# #+#   #+#+# 
      ########   ########  ###       ### ########### ###    ####  ########        ########   ########   ########  ###    ####... `
 
+  var com = `
+ ____ ____ _  _ _ _  _ ____ 
+ |    |  | |\\/| | |\\ | | __ 
+ |___ |__| |  | | | \\| |__] 
+                            `
+
+  var soon = `
+    ____ ____ ____ _  _ 
+    [__  |  | |  | |\\ | 
+    ___] |__| |__| | \\| 
+                        `
+
   var coming = `
      _______  _____  _______ _____ __   _  ______      _______  _____   _____  __   _
      |       |     | |  |  |   |   | \\  | |  ____      |______ |     | |     | | \\  |
@@ -48,8 +60,12 @@ const DiaryPage = ({}) => {
     <>
       <Sidebar />
       <Layout>
-        <div className="flex justify-center align-middle items-center h-full w-full whitespace-pre -mt-8 lyratitle">
+        <div className="flex justify-center align-middle items-center h-full w-full whitespace-pre -mt-8 lyratitle desk">
           {coming}{" "}
+        </div>
+        <div className="flex justify-center align-middle items-center h-full w-full whitespace-pre -mt-8 lyratitle mob">
+          {com}
+          {soon}{" "}
         </div>
       </Layout>
     </>
