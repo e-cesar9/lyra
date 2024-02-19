@@ -70,7 +70,7 @@
 .menu {
 	width: 100vw;
 	height: 100vh;
-	position: relative;
+	position: relative!important;
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
 	scrollbar-width: none; /* Hide scrollbar in FF */
