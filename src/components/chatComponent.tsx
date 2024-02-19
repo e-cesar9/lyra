@@ -135,7 +135,7 @@ export const ChatComponent = ({inputRef, containerRef}) => {
             setValue(event.target.value)
             handleInputChange(event)
           }}
-          placeholder="Type 'help' or Message Lyra Haruto."
+          placeholder="Type 'help' or Message Lyra Haruto..."
           autoComplete="off"
           autoCorrect="off"
           autoCapitalize="off"
