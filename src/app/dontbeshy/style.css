@@ -26,8 +26,12 @@ html {
 }
 
 #stripe{
+    overflow-x: hidden;
+    overflow-y: hidden;
     background-color: black;
     color: #fff;
+    width: 150vw;
+    
 }
 
 #form-section{

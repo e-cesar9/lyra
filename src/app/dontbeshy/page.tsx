@@ -45,7 +45,7 @@ const DiaryPage = ({}) => {
 
             <a>Let’s talk</a>
           </div>
-          <div className="flex flex-row px-12 pb-6 justify-between">
+          <div className="flex flex-row px-12 pb-6 justify-between ">
             {" "}
             <div className="uppercase">hello</div>{" "}
             <div className="uppercase">Social</div>{" "}
@@ -53,11 +53,10 @@ const DiaryPage = ({}) => {
             <div className="uppercase">Location</div>{" "}
           </div>
         </div>
-        <div className="flex flex-col h-screen " id="form-section">
+        <div className="flex flex-col h-screen overflow-x-hidden overflow-y-hidden " id="form-section">
           <div className="text-7xl py-4" id="stripe">
             {" "}
-            SAY HI <span>😊</span> SAY HI <span>😊</span> SAY HI <span>😊</span>{" "}
-            SAY HI <span>😊</span>{" "}
+            <span> SAY HI <span>😊</span></span><span> SAY HI <span>😊</span></span><span> SAY HI <span>😊</span></span><span> SAY HI <span>😊</span></span><span> SAY HI <span>😊</span></span>{" "}
           </div>{" "}
           <br />
           <div className="flex h-screen">
