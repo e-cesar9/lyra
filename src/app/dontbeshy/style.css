@@ -35,6 +35,10 @@ html {
     color: black;
 }
 
+label{
+    font-size: 18px;
+}
+
 @media (max-width : 761px){
     .sidebar{
         height: 100%;
