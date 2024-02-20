@@ -49,7 +49,7 @@ const DiaryPage = ({}) => {
             {" "}
             <div className="uppercase flex items-end">waiting to hear from you</div>{" "}
             <div className="uppercase ">Social<br/><div className="flex flex-row justify-between">
-            <a className="btnContact" href="https://www.instagram.com/lyra.haruto/">IG</a><br/><a href="" className="btnContact">LK</a><br/><a href="https://twitter.com/lyraharuto/" className="btnContact">Tweeter</a></div>
+            <a className="btnContact" href="https://www.instagram.com/lyra.haruto/">IG</a><br/><a href="" className="btnContact">LK</a><br/><a href="https://twitter.com/lyraharuto/" className="btnContact">Twitter</a></div>
             </div>{" "}
             <div className="uppercase flex items-end">Contacts<br/>iam@thelyraharuto</div>{" "}
             <div className="uppercase flex items-end">Location <br/> 4, Privet Drive, Little Whinging, Surrey </div>{" "}
@@ -180,7 +180,7 @@ const DiaryPage = ({}) => {
             <div className="uppercase">SAY HI : <br/><span className=""> iam@thelyraharuto.com</span></div>{" "}
             <div className="uppercase"></div>{" "}
             <div className="uppercase">made with love by<br/> Lyra Haruto</div>{" "}
-            <div className="uppercase"><a href="https://www.instagram.com/lyra.haruto/">Instagram</a><br/> <a href=""> Linkedin</a><br/> <a href="https://twitter.com/lyraharuto/">Tweeter</a> </div>{" "}
+            <div className="uppercase"><a href="https://www.instagram.com/lyra.haruto/">Instagram</a><br/> <a href=""> Linkedin</a><br/> <a href="https://twitter.com/lyraharuto/">Twitter</a> </div>{" "}
           </div>
           <div className="flex flex-col justify-end align-end h-screen w-full -mt-8">
             <div className="py-8">
