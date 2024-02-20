@@ -32,7 +32,7 @@ const DiaryPage = ({}) => {
           </div>
         </div>
         <div className="flex flex-col h-screen " id="form-section">
-          <div className="text-7xl py-4" id="stripe"> SAY HI 😊 </div> <br />
+          <div className="text-7xl py-4" id="stripe"> SAY HI <span>😊</span> SAY HI <span>😊</span> SAY HI <span>😊</span> SAY HI <span>😊</span> </div> <br />
           <div className="flex h-screen">
             <div className="w-2/5">Contacts</div>{" "}
             <div className="w-3/5">
