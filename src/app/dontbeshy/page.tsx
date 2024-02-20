@@ -144,9 +144,6 @@ const DiaryPage = ({}) => {
                     <div className="response" id="mce-error-response"></div>
                     <div className="response" id="mce-success-response"></div>
                   </div>
-                  <div aria-hidden="true">
-                    <input type="text" value="" />
-                  </div>
                   <div className="optionalParent">
                     <div className="clear foot">
                       <input
