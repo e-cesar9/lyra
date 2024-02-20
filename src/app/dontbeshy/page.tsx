@@ -159,7 +159,7 @@ const DiaryPage = ({}) => {
             </div>{" "}
           </div>
         </div>
-        <div className="flex flex-col w-full h-screen">
+        <div className="flex flex-col w-full h-screen" id="tapeScreen">
           <div className="flex flex-col justify-center align-middle items-center h-screen w-full  -mt-8">
             <a>Click on the screen</a>
 
@@ -173,12 +173,12 @@ const DiaryPage = ({}) => {
           </div>
         </div>
         <div className="flex flex-col w-full" id="footer-contact">
-          <div className="flex flex-row px-12 pb-6 justify-between">
+          <div className="flex flex-row px-12 pb-6 pt-6 justify-between">
             {" "}
-            <div className="uppercase">hello</div>{" "}
-            <div className="uppercase">Social</div>{" "}
-            <div className="uppercase">Contacts</div>{" "}
-            <div className="uppercase">Location</div>{" "}
+            <div className="uppercase">SAY HI : <br/><span className=""> hello@lyraharuto.com</span></div>{" "}
+            <div className="uppercase"></div>{" "}
+            <div className="uppercase">made with love by<br/> Lyra Haruto</div>{" "}
+            <div className="uppercase">Instagram<br/> Linkedin<br/> Twitter</div>{" "}
           </div>
           <div className="flex flex-col justify-end align-end h-screen w-full -mt-8">
             <div className="py-8">

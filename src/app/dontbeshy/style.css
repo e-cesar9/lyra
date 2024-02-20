@@ -20,23 +20,28 @@ html {
 }
 
 #footer-contact{
-    background-color: #fff;
-    color: black;
+    background-color: black;
+    color: white;
+    /* background-color: white;
+    color: black; */
     height: 90vh;
 }
 
 #stripe{
     overflow-x: hidden;
     overflow-y: hidden;
-    background-color: black;
-    color: #fff;
+    /* background-color: black;
+    color: white; */
+    background-color: white;
+    color: black;
     width: 150vw;
-    
 }
 
 #form-section{
-    background-color: #fff;
-    color: black;
+    background-color: black;
+    color: white;
+    /* background-color: white;
+    color: black; */
 }
 
 label{
@@ -46,7 +51,15 @@ label{
 input, select{
     display: block;
     width: 100%;
-    border-bottom: 1px solid black;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+}
+
+#tapeScreen{
+background-color: white;
+color: black;
+/* background-color: black;
+color: white; */
 }
 
 @media (max-width : 761px){
