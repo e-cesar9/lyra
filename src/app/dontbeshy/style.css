@@ -1,6 +1,7 @@
 body{
     overflow-y: auto;
     font-family: 'Technor-Variable';
+
 }
 
 html {
@@ -59,7 +60,13 @@ input, select{
 #tapeScreen{
 background-color: white;
 color: black;
+}
 
+.btnContact{
+    border: 1px solid white;
+    border-radius: 32px;
+    padding: 0.5rem  .75rem;
+    margin: 1rem 1rem 0 0 ;
 }
 
 
