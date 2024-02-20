@@ -10,7 +10,7 @@ const DiaryPage = ({}) => {
   return (
 <>
 <Sidebar/>
-<div className="flex flex-col w-full h-full">
+<div className="flex flex-col w-full h-full" id="contact-main">
 <div className="flex flex-col justify-center align-middle items-center h-full w-full whitespace-pre -mt-8">
 
 <a>SAY HI</a>
@@ -28,7 +28,7 @@ const DiaryPage = ({}) => {
 <a>Let’s talk</a>
 
 </div>
-<div className="flex flex-row px-12 pb-4 justify-between"> <div className="uppercase">hello</div> <div className="uppercase">Social</div> <div className="uppercase">Contacts</div> <div className="uppercase">Location</div> </div>
+<div className="flex flex-row px-12 pb-6 justify-between"> <div className="uppercase">hello</div> <div className="uppercase">Social</div> <div className="uppercase">Contacts</div> <div className="uppercase">Location</div> </div>
 </div>
 </>
   )

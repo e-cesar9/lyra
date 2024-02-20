@@ -2,3 +2,10 @@ body{
     overflow-y: auto;
     font-family: 'Technor-Variable';
 }
+
+@media (max-width : 1080px){
+
+    #contact-main{
+        position: absolute;
+    }
+  }
