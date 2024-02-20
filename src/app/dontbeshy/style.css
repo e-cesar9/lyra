@@ -10,6 +10,22 @@ body{
     margin-top: -14rem;
 }
 
+#footer-contact{
+    background-color: #fff;
+    color: black;
+    height: 90vh;
+}
+
+#stripe{
+    background-color: black;
+    color: #fff;
+}
+
+#form-section{
+    background-color: #fff;
+    color: black;
+}
+
 @media (max-width : 1080px){
     #contact-main{
         position: absolute;

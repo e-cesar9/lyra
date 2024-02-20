@@ -12,7 +12,7 @@ const DiaryPage = ({}) => {
       <Sidebar />
       <div className="w-full overflow-y-auto" id="contact-main">
         <div className="flex flex-col w-full h-screen">
-          <div className="flex flex-col justify-center align-middle items-center h-screen w-full  -mt-8">
+          <div className="flex flex-col justify-center align-middle items-center h-screen w-full -mt-8">
             <a>SAY HI</a>
 
             <div className="py-16">
@@ -31,17 +31,19 @@ const DiaryPage = ({}) => {
             <div className="uppercase">Location</div>{" "}
           </div>
         </div>
-        <div className="flex flex-col h-screen">
-          <div className="text-7xl"> SAY HI 😊 </div> <br />
+        <div className="flex flex-col h-screen " id="form-section">
+          <div className="text-7xl py-4" id="stripe"> SAY HI 😊 </div> <br />
           <div className="flex h-screen">
             <div className="w-2/5">Contacts</div>{" "}
             <div className="w-3/5">
+            <div className="text-7xl uppercase font-bold pt-8">Hello</div>
+            <div className="text-7xl uppercase font-light pb-8">Lyra Haruto</div>
 
               <form action="" target="_self">
                 <div>
                   <div>
-                    <label htmlFor="NAME">Im </label>
-                    <input type="text" value="" name="NAME" id="NAME" />
+                    <label htmlFor="NAME">I’m </label>
+                    <input type="text" value="" name="NAME" id="NAME"/>
                     <span id="mce-NAME-HELPERTEXT"></span>
                   </div>
                   <div className="mc-field-group">
@@ -149,9 +151,9 @@ const DiaryPage = ({}) => {
           </div>
 
         </div>
-        <div className="flex flex-col w-full h-screen">
-        <div className="flex flex-col justify-end align-end h-screen w-full  -mt-8">
-            <div className="">
+        <div className="flex flex-col w-full" id="footer-contact">
+        <div className="flex flex-col justify-end align-end h-screen w-full -mt-8">
+            <div className="py-8">
               <div className="text-7xl text-center uppercase">LYRA HARUTO - リラ はると <span><img src="lyrawalk2.gif" alt="" id="lyrawalk"/></span></div>
             </div>
           </div>
