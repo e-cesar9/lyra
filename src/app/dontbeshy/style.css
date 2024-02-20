@@ -82,8 +82,14 @@ color: black;
     }
     #contact-main{
         position: absolute;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
     #lyrawalk{
         z-index: -5;
+    }
+    #header-text{
+        display: flex;
+        flex-direction: column;
     }
   }

@@ -45,7 +45,7 @@ const DiaryPage = ({}) => {
 
             <a>Let’s talk</a>
           </div>
-          <div className="flex flex-row px-12 pb-6 justify-between ">
+          <div className="flex flex-row px-12 pb-6 justify-between" id="header-text">
             {" "}
             <div className="uppercase flex items-end">waiting to hear from you</div>{" "}
             <div className="uppercase ">Social<br/><div className="flex flex-row justify-between">
