@@ -47,7 +47,7 @@ const DiaryPage = ({}) => {
           </div>
           <div className="flex flex-row px-12 pb-6 justify-between ">
             {" "}
-            <div className="uppercase flex items-end">waiting to hear from you</div>{" "}
+            <div className="uppercase flex">waiting to hear from you</div>{" "}
             <div className="uppercase">Social<br/><div className="flex flex-row justify-between">
             <a className="btnContact" href="https://www.instagram.com/lyra.haruto/">IG</a><br/><a href="" className="btnContact">LK</a><br/><a href="https://twitter.com/lyraharuto/" className="btnContact">Tweeter</a></div>
             </div>{" "}
