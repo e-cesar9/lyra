@@ -38,9 +38,9 @@ const DiaryPage = ({}) => {
             <a>SAY HI</a>
 
             <div className="py-16">
-              <div className="text-8xl text-center uppercase">No need</div>
+              <div className="text-8xl max-[760px]:text-6xl text-center uppercase">No need</div>
 
-              <div className="text-8xl text-center uppercase">to be shy.</div>
+              <div className="text-8xl max-[760px]:text-6xl text-center uppercase">to be shy.</div>
             </div>
 
             <a>Let’s talk</a>
@@ -56,7 +56,7 @@ const DiaryPage = ({}) => {
           </div>
         </div>
         <div className="flex flex-col h-screen overflow-x-hidden overflow-y-hidden " id="form-section">
-          <div className="text-7xl py-4" id="stripe">
+          <div className="text-7xl max-[760px]:text-4xl py-4" id="stripe">
             {" "}
             <span> SAY HI <span>😊</span></span><span> SAY HI <span>😊</span></span><span> SAY HI <span>😊</span></span><span> SAY HI <span>😊</span></span><span> SAY HI <span>😊</span></span>{" "}
           </div>{" "}
@@ -66,8 +66,8 @@ const DiaryPage = ({}) => {
               <img src={selectedGif} />
             </div>{" "}
             <div className="w-3/5 pl-4">
-              <div className="text-7xl uppercase font-bold pt-8">Hello</div>
-              <div className="text-7xl uppercase font-light pb-8">
+              <div className="text-7xl max-[760px]:text-5xl uppercase font-bold pt-8">Hello</div>
+              <div className="text-7xl max-[760px]:text-5xl uppercase font-light pb-8">
                 Lyra Haruto
               </div>
 
@@ -166,9 +166,9 @@ const DiaryPage = ({}) => {
             <a>Click on the screen</a>
 
             <div className="py-16">
-              <div className="text-7xl text-center uppercase">Let’s</div>
+              <div className="text-7xl max-[760px]:text-5xl text-center uppercase">Let’s</div>
 
-              <div className="text-7xl text-center uppercase">Talk</div>
+              <div className="text-7xl max-[760px]:text-5xl text-center uppercase">Talk</div>
             </div>
 
             <a>Let’s talk</a>
