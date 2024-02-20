@@ -39,7 +39,7 @@ const DiaryPage = ({}) => {
           </div>{" "}
           <br />
           <div className="flex h-screen">
-            <div className="w-2/5 flex align-bottom">Contacts</div>{" "}
+            <div className="w-2/5 flex items-end">Contacts</div>{" "}
             <div className="w-3/5">
               <div className="text-7xl uppercase font-bold pt-8">Hello</div>
               <div className="text-7xl uppercase font-light pb-8">
