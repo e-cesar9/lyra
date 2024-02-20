@@ -116,7 +116,6 @@ const DiaryPage = ({}) => {
                   <div aria-hidden="true">
                     <input
                       type="text"
-                      name="b_2693a20f5554249891bacbb27_11f9654bc0"
                       value=""
                     />
                   </div>

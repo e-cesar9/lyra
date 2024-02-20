@@ -7,7 +7,7 @@ body{
     display: inline;
     width: calc(418px/2);
     height: calc(597px/2);
-    margin-top: -8rem;
+    margin-top: -14rem;
 }
 
 @media (max-width : 1080px){
