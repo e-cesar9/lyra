@@ -74,6 +74,9 @@ color: black;
 
 
 @media (max-width : 761px){
+    body{
+        overflow-y: auto;
+    }
     .sidebar{
         height: 100%;
         position: fixed;
@@ -89,6 +92,10 @@ color: black;
         z-index: -5;
     }
     #header-text{
+        display: flex;
+        flex-direction: column;
+    }
+    #footer-text{
         display: flex;
         flex-direction: column;
     }

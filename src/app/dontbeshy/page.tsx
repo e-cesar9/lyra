@@ -175,7 +175,7 @@ const DiaryPage = ({}) => {
           </div>
         </div>
         <div className="flex flex-col w-full" id="footer-contact">
-          <div className="flex flex-row px-12 pb-6 pt-6 justify-between">
+          <div className="flex flex-row px-12 pb-6 pt-6 justify-between" id="footer-text">
             {" "}
             <div className="uppercase">SAY HI : <br/><span className=""> iam@thelyraharuto.com</span></div>{" "}
             <div className="uppercase"></div>{" "}
