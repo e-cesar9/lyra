@@ -177,6 +177,13 @@ const DiaryPage = ({}) => {
           </div>
         </div>
         <div className="flex flex-col w-full" id="footer-contact">
+          <div className="flex flex-row px-12 pb-6 justify-between">
+            {" "}
+            <div className="uppercase">hello</div>{" "}
+            <div className="uppercase">Social</div>{" "}
+            <div className="uppercase">Contacts</div>{" "}
+            <div className="uppercase">Location</div>{" "}
+          </div>
           <div className="flex flex-col justify-end align-end h-screen w-full -mt-8">
             <div className="py-8">
               <div className="text-7xl text-center uppercase">
