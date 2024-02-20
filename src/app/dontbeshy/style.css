@@ -3,8 +3,14 @@ body{
     font-family: 'Technor-Variable';
 }
 
-@media (max-width : 1080px){
+#lyrawalk{
+    display: inline;
+    width: calc(418px/2);
+    height: calc(597px/2);
+    margin-top: -8rem;
+}
 
+@media (max-width : 1080px){
     #contact-main{
         position: absolute;
     }

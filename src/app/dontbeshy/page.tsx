@@ -10,24 +10,153 @@ const DiaryPage = ({}) => {
   return (
     <>
       <Sidebar />
-      <div className="flex flex-col w-full h-full" id="contact-main">
-        <div className="flex flex-col justify-center align-middle items-center h-full w-full whitespace-pre -mt-8">
-          <a>SAY HI</a>
+      <div className="w-full overflow-y-auto" id="contact-main">
+        <div className="flex flex-col w-full h-screen">
+          <div className="flex flex-col justify-center align-middle items-center h-screen w-full  -mt-8">
+            <a>SAY HI</a>
 
-          <div className="py-16">
-            <div className="text-7xl text-center uppercase">No need</div>
+            <div className="py-16">
+              <div className="text-7xl text-center uppercase">No need</div>
 
-            <div className="text-7xl text-center uppercase">to be shy.</div>
+              <div className="text-7xl text-center uppercase">to be shy.</div>
+            </div>
+
+            <a>Let’s talk</a>
+          </div>
+          <div className="flex flex-row px-12 pb-6 justify-between">
+            {" "}
+            <div className="uppercase">hello</div>{" "}
+            <div className="uppercase">Social</div>{" "}
+            <div className="uppercase">Contacts</div>{" "}
+            <div className="uppercase">Location</div>{" "}
+          </div>
+        </div>
+        <div className="flex flex-col h-screen">
+          <div className="text-7xl"> SAY HI 😊 </div> <br />
+          <div className="flex h-screen">
+            <div className="w-2/5">Contacts</div>{" "}
+            <div className="w-3/5">
+
+              <form action="" target="_self">
+                <div>
+                  <div>
+                    <label htmlFor="NAME">Im </label>
+                    <input type="text" value="" name="NAME" id="NAME" />
+                    <span id="mce-NAME-HELPERTEXT"></span>
+                  </div>
+                  <div className="mc-field-group">
+                    <label htmlFor="mce-EMAIL">Here is my email</label>
+                    <input
+                      type="email"
+                      value=""
+                      name="EMAIL"
+                      id="mce-EMAIL"
+                      required
+                    />
+                    <span
+                      id="mce-EMAIL-HELPERTEXT"
+                      className="helper_text"
+                    ></span>
+                  </div>
+                  <div className="mc-field-group">
+                    <label htmlFor="mce-FROM">
+                      I heard about Cyclops Club{" "}
+                    </label>
+                    <select name="FROM" className="" id="mce-FROM">
+                      <option value=""></option>
+                      <option value="Instagram">Instagram</option>
+                      <option value="Facebook">Facebook</option>
+                      <option value="TikTok">TikTok</option>
+                      <option value="LinkedIn">LinkedIn</option>
+                      <option value="Word of mouth">Word of mouth</option>
+                      <option value="Other">Other</option>
+                    </select>
+                    <span
+                      id="mce-FROM-HELPERTEXT"
+                      className="helper_text"
+                    ></span>
+                  </div>
+                  <div className="mc-field-group">
+                    <label htmlFor="mce-SERVICE">I need you service for </label>
+                    <input
+                      type="text"
+                      value=""
+                      name="SERVICE"
+                      className=""
+                      id="mce-SERVICE"
+                    />
+                    <span
+                      id="mce-SERVICE-HELPERTEXT"
+                      className="helper_text"
+                    ></span>
+                  </div>
+                  <div className="mc-field-group">
+                    <label htmlFor="mce-PROJECT">Here is my project </label>
+                    <div
+                      className="text-box-form"
+                      role="textbox"
+                      aria-label="project description"
+                    ></div>
+                    <input
+                      type="text"
+                      value=""
+                      name="PROJECT"
+                      className=""
+                      id="mce-PROJECT"
+                    />
+                    <span
+                      id="mce-PROJECT-HELPERTEXT"
+                      className="helper_text"
+                    ></span>
+                  </div>
+                  <div id="mce-responses" className="clear foot">
+                    <div className="response" id="mce-error-response"></div>
+                    <div className="response" id="mce-success-response"></div>
+                  </div>
+                  <div aria-hidden="true">
+                    <input
+                      type="text"
+                      name="b_2693a20f5554249891bacbb27_11f9654bc0"
+                      value=""
+                    />
+                  </div>
+                  <div className="optionalParent">
+                    <div className="clear foot">
+                      <input
+                        type="submit"
+                        value="Submit"
+                        name="subscribe"
+                        id="mc-embedded-subscribe"
+                        className="button"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>{" "}
+          </div>
+        </div>
+        <div className="flex flex-col w-full h-screen">
+        <div className="flex flex-col justify-center align-middle items-center h-screen w-full  -mt-8">
+            <a>Click on the screen</a>
+
+            <div className="py-16">
+              <div className="text-7xl text-center uppercase">Let’s</div>
+
+              <div className="text-7xl text-center uppercase">Talk</div>
+            </div>
+
+            <a>Let’s talk</a>
           </div>
 
-          <a>Let’s talk</a>
         </div>
-        <div className="flex flex-row px-12 pb-6 justify-between">
-          {" "}
-          <div className="uppercase">hello</div>{" "}
-          <div className="uppercase">Social</div>{" "}
-          <div className="uppercase">Contacts</div>{" "}
-          <div className="uppercase">Location</div>{" "}
+        <div className="flex flex-col w-full h-screen">
+        <div className="flex flex-col justify-end align-end h-screen w-full  -mt-8">
+            <div className="">
+              <div className="text-7xl text-center uppercase">LYRA HARUTO - リラ はると <span><img src="lyrawalk2.gif" alt="" id="lyrawalk"/></span></div>
+            </div>
+          </div>
+
         </div>
       </div>
     </>
