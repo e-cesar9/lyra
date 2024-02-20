@@ -34,7 +34,7 @@ const DiaryPage = ({}) => {
       <Sidebar />
       <div className="w-full overflow-y-auto" id="contact-main">
         <div className="flex flex-col w-full h-screen">
-          <div className="flex flex-col justify-center align-middle items-center h-screen w-full -mt-8">
+          <div className="flex flex-col justify-center align-middle items-center h-screen w-full mt-4">
             <a>SAY HI</a>
 
             <div className="py-16">
@@ -47,12 +47,12 @@ const DiaryPage = ({}) => {
           </div>
           <div className="flex flex-row px-12 pb-6 justify-between ">
             {" "}
-            <div className="uppercase flex">waiting to hear from you</div>{" "}
-            <div className="uppercase">Social<br/><div className="flex flex-row justify-between">
+            <div className="uppercase flex items-end">waiting to hear from you</div>{" "}
+            <div className="uppercase ">Social<br/><div className="flex flex-row justify-between">
             <a className="btnContact" href="https://www.instagram.com/lyra.haruto/">IG</a><br/><a href="" className="btnContact">LK</a><br/><a href="https://twitter.com/lyraharuto/" className="btnContact">Tweeter</a></div>
             </div>{" "}
-            <div className="uppercase">Contacts<br/>iam@thelyraharuto</div>{" "}
-            <div className="uppercase">Location <br/> 4, Privet Drive, Little Whinging, Surrey </div>{" "}
+            <div className="uppercase flex items-end">Contacts<br/>iam@thelyraharuto</div>{" "}
+            <div className="uppercase flex items-end">Location <br/> 4, Privet Drive, Little Whinging, Surrey </div>{" "}
           </div>
         </div>
         <div className="flex flex-col h-screen overflow-x-hidden overflow-y-hidden " id="form-section">
