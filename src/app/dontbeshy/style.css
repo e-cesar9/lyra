@@ -3,6 +3,22 @@ body{
     font-family: 'Technor-Variable';
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+
+.sidebar{
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.relative.z-0.flex.h-full.w-full.overflow-hidden{
+scrollbar-width: none;
+}
+
 #lyrawalk{
     display: inline;
     width: calc(418px/2);
@@ -29,5 +45,8 @@ body{
 @media (max-width : 1080px){
     #contact-main{
         position: absolute;
+    }
+    #lyrawalk{
+        z-index: -5;
     }
   }
