@@ -7,6 +7,20 @@ const DiaryPage = ({}) => {
   const inputRef = React.useRef<HTMLInputElement>(null)
   const containerRef = React.useRef(null)
 
+  const gifData = ['/hello.gif','hello1.gif','hello2.gif','hello3.gif','hello4.gif','hello5.gif','hello7.gif']
+  const [selectedGif, setSelectedGif] = React.useState<string>('');
+
+  // Function to select a random GIF
+  const getRandomGif = () => {
+    const randomIndex = Math.floor(Math.random() * gifData.length);
+    return gifData[randomIndex];
+  };
+
+  // Set an initial GIF when the component mounts
+  React.useEffect(() => {
+    setSelectedGif(getRandomGif());
+  }, []);
+
   return (
     <>
       <Sidebar />
@@ -39,7 +53,7 @@ const DiaryPage = ({}) => {
           </div>{" "}
           <br />
           <div className="flex h-screen">
-            <div className="w-2/5 flex items-end">Contacts</div>{" "}
+            <div className="w-2/5 flex items-end"><img src={selectedGif}/></div>{" "}
             <div className="w-3/5">
               <div className="text-7xl uppercase font-bold pt-8">Hello</div>
               <div className="text-7xl uppercase font-light pb-8">

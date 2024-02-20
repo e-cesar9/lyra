@@ -35,7 +35,7 @@ html {
     color: black;
 }
 
-@media (max-width : 1080px){
+@media (max-width : 761px){
     .sidebar{
         height: 100%;
         position: fixed;
