@@ -175,10 +175,10 @@ const DiaryPage = ({}) => {
         <div className="flex flex-col w-full" id="footer-contact">
           <div className="flex flex-row px-12 pb-6 pt-6 justify-between">
             {" "}
-            <div className="uppercase">SAY HI : <br/><span className=""> hello@lyraharuto.com</span></div>{" "}
+            <div className="uppercase">SAY HI : <br/><span className=""> iam@thelyraharuto.com</span></div>{" "}
             <div className="uppercase"></div>{" "}
             <div className="uppercase">made with love by<br/> Lyra Haruto</div>{" "}
-            <div className="uppercase">Instagram<br/> Linkedin<br/> Twitter</div>{" "}
+            <div className="uppercase"><a href="https://www.instagram.com/lyra.haruto/">Instagram</a><br/> <a href=""> Linkedin</a><br/> <a href="https://twitter.com/lyraharuto/">Twitter</a> </div>{" "}
           </div>
           <div className="flex flex-col justify-end align-end h-screen w-full -mt-8">
             <div className="py-8">

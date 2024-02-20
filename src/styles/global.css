@@ -335,6 +335,9 @@ MediaQuery General
     color: white;
     padding: 24px;
   }
+  #prompt{
+    width: 96%;
+  }
   .bar{
     display: inline;
     width: 100%;

@@ -52,15 +52,17 @@ input, select{
     display: block;
     width: 100%;
     background-color: transparent;
+    background-color: black;
     border-bottom: 1px solid white;
 }
 
 #tapeScreen{
 background-color: white;
 color: black;
-/* background-color: black;
-color: white; */
+
 }
+
+
 
 @media (max-width : 761px){
     .sidebar{
