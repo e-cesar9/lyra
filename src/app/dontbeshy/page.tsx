@@ -60,7 +60,7 @@ const DiaryPage = ({}) => {
                   </div>
                   <div className="mc-field-group">
                     <label htmlFor="mce-FROM">
-                      I heard about Cyclops Club{" "}
+                      I heard about Lyra Haruto{" "}
                     </label>
                     <select name="FROM" className="" id="mce-FROM">
                       <option value=""></option>
@@ -156,7 +156,6 @@ const DiaryPage = ({}) => {
               <div className="text-7xl text-center uppercase">LYRA HARUTO - リラ はると <span><img src="lyrawalk2.gif" alt="" id="lyrawalk"/></span></div>
             </div>
           </div>
-
         </div>
       </div>
     </>
