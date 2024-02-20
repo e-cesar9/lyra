@@ -158,6 +158,7 @@ type Link = {
   href: string
   ref: React.RefObject<HTMLParagraphElement>
   text: string
+  target:string
   setText: React.Dispatch<React.SetStateAction<string>>
 }
 
@@ -167,12 +168,12 @@ function Sidebar() {
   const toggleRef = useRef<HTMLDivElement>(null)
 
   const linksData = [
-    {originalText: "#Me", emoji: "😜", href: "/me"},
-    {originalText: "My Craft", emoji: "🤖", href: "/mycraft"},
-    {originalText: "My Diary", emoji: "👩‍🦳", href: "/mydiary"},
-    {originalText: "My Library", emoji: "👾", href: "/mylibrary"},
-    {originalText: "Your Fate", emoji: "🦄", href: "/yourfate"},
-    {originalText: "Don't Be Shy", emoji: "😉", href: "/dontbeshy"},
+    {originalText: "#Me", emoji: "😜", href: "/me", target:"_self"},
+    {originalText: "My Craft", emoji: "🤖", href: "/mycraft", target:"_self"},
+    {originalText: "My Diary", emoji: "👩‍🦳", href: "https://lyraharuto.substack.com/", target:"_blank"},
+    {originalText: "My Library", emoji: "👾", href: "/mylibrary", target:"_self"},
+    {originalText: "Your Fate", emoji: "🦄", href: "/yourfate", target:"_self"},
+    {originalText: "Don't Be Shy", emoji: "😉", href: "/dontbeshy", target:"_self"},
   ]
 
   // Create a ref and a state for each link
@@ -331,6 +332,7 @@ function Sidebar() {
                 <div key={index} className="group relative active:opacity-90">
                   <Link
                     href={link.href}
+                    target={link.target}
                     className="flex items-center gap-2 rounded-lg p-2"
                   >
                     {/* {link.href === path && (
