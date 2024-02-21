@@ -105,8 +105,11 @@ color: black;
 
 @keyframes entry {
     from {     transform: translate(0px, 120px);
+        rotate: 10deg;
     }
     to {     transform: translate(0px, 0px);
+        rotate: 0deg;
+
     }
   }
 
