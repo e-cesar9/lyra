@@ -199,7 +199,7 @@ const DiaryPage = ({}) => {
             <div className="w-2/5 flex items-end">
               <img id="gifForm" src={selectedGif} />
             </div>{" "}
-            <div className="w-3/5 pl-4">
+            <div className="w-3/5 px-2">
               <div className="text-7xl max-[760px]:text-5xl uppercase font-bold pt-8">
                 Hello
               </div>
@@ -288,7 +288,7 @@ const DiaryPage = ({}) => {
                         value="Submit"
                         name="subscribe"
                         id="mc-embedded-subscribe"
-                        className=""
+                        className="btnSubmit"
                       />
                     </div>
                   </div>
