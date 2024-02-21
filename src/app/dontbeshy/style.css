@@ -42,6 +42,7 @@ html {
 }
 
 #stripeAnim{
+    width: max-content;
     animation: slideLeftToRight 12s linear infinite;
 }
 
