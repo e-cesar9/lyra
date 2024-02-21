@@ -114,7 +114,9 @@ color: black;
     }
   }
 
-
+#gifForm{
+    min-width: 520px;
+}
 /* #shygif:hover{
         width: 150px;
     clip-path: inset(0%) ;

@@ -174,7 +174,7 @@ const DiaryPage = ({}) => {
           <br />
           <div className="flex h-screen">
             <div className="w-2/5 flex items-end">
-              <img src={selectedGif} />
+              <img id="gifForm" src={selectedGif} />
             </div>{" "}
             <div className="w-3/5 pl-4">
               <div className="text-7xl max-[760px]:text-5xl uppercase font-bold pt-8">
