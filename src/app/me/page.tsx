@@ -52,7 +52,7 @@ const DiaryPage: React.FC = () => {
                 </figcaption>
               </div>
               <h1 ref={springRef} data-hover="Lyra Haruto" id="printemps">
-                リラ はると
+              ライラー・ハルト
               </h1>
             </div>
             <div

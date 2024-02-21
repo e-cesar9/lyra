@@ -265,7 +265,7 @@ const DiaryPage = ({}) => {
                         value="Submit"
                         name="subscribe"
                         id="mc-embedded-subscribe"
-                        className="button"
+                        className=""
                       />
                     </div>
                   </div>
@@ -315,7 +315,7 @@ const DiaryPage = ({}) => {
           <div className="flex flex-col justify-end align-end h-screen w-full -mt-8">
             <div className="py-8">
               <div className="text-7xl text-center uppercase">
-                LYRA HARUTO - リラ はると{" "}
+                LYRA HARUTO - ライラー・ハルト{" "}
                 <span>
                   <img src="lyrawalk2.gif" alt="" id="lyrawalk" />
                 </span>

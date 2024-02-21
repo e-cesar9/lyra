@@ -67,6 +67,10 @@ input, select{
     border-bottom: 1px solid white;
 }
 
+input:focus, select:focus {
+    outline: none;
+  }
+
 #tapeScreen{
 background-color: white;
 color: black;
@@ -78,8 +82,11 @@ color: black;
     padding: 0.5rem  .75rem;
     margin: 1rem 1rem 0 0 ;
     transition: all .2s ease-in-out;
-
 }
+
+/* .btnForm{
+width: max-content;
+} */
 
 .btnContact:hover{
     background-color: white;
