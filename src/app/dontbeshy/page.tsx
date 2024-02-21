@@ -117,17 +117,20 @@ const DiaryPage = ({}) => {
                 <a
                   className="btnContact"
                   href="https://www.instagram.com/lyra.haruto/"
+                  target="_blank"
                 >
                   IG
                 </a>
                 <br />
-                <a href="" className="btnContact">
+                <a href="" className="btnContact" target="_blank"
+>
                   LK
                 </a>
                 <br />
                 <a
                   href="https://twitter.com/lyraharuto/"
                   className="btnContact"
+                  target="_blank"
                 >
                   Twitter
                 </a>
@@ -320,9 +323,12 @@ const DiaryPage = ({}) => {
               <br /> Lyra Haruto
             </div>{" "}
             <div className="uppercase">
-              <a href="https://www.instagram.com/lyra.haruto/">Instagram</a>
-              <br /> <a href=""> Linkedin</a>
-              <br /> <a href="https://twitter.com/lyraharuto/">Twitter</a>{" "}
+              <a href="https://www.instagram.com/lyra.haruto/" target="_blank"
+>Instagram</a>
+              <br /> <a href="" target="_blank"
+> Linkedin</a>
+              <br /> <a href="https://twitter.com/lyraharuto/" target="_blank"
+>Twitter</a>{" "}
             </div>{" "}
           </div>
           <div className="flex flex-col justify-end align-end h-screen w-full -mt-8">
