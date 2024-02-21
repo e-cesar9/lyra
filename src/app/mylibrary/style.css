@@ -19,6 +19,9 @@ body{
 		display: none;
 	}
 }
+.itemMenu{
+    animation: none;
+  }
 
 .base{
 	display: block;

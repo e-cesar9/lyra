@@ -99,6 +99,9 @@ color: black;
     /* transform: translate(0px, 0px); */
     animation: entry .4s ease;
 }
+.itemMenu{
+    animation: none;
+  }
 
 @keyframes entry {
     from {     transform: translate(0px, 120px);
