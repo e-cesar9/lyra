@@ -41,6 +41,19 @@ html {
     color: white;
 }
 
+#stripeAnim{
+    animation: slideLeftToRight 12s linear infinite;
+}
+
+@keyframes slideLeftToRight {
+    from {
+      transform: translateX(-25%);
+    }
+    to {
+      transform: translateX(-0.3%);
+    }
+  }
+
 label{
     display: block;
     font-size: 18px;

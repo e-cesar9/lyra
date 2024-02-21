@@ -17,6 +17,7 @@ const DiaryPage = ({}) => {
     "hello5.gif",
     "hello7.gif",
   ]
+
   const [selectedGif, setSelectedGif] = React.useState<string>("")
 
   // Function to select a random GIF
@@ -121,7 +122,7 @@ const DiaryPage = ({}) => {
             <div className="uppercase flex items-end">
               Contacts
               <br />
-              iam@thelyraharuto
+              iam@thelyraharuto.com
             </div>{" "}
             <div className="uppercase flex items-end">
               Location <br /> 4, Privet Drive, Little Whinging, Surrey{" "}
@@ -133,27 +134,41 @@ const DiaryPage = ({}) => {
           id="form-section"
         >
           <div className="text-7xl max-[760px]:text-4xl py-4" id="stripe">
-            {" "}
-            <span>
+            <div id="stripeAnim">
               {" "}
-              SAY HI <span>😊</span>
-            </span>
-            <span>
-              {" "}
-              SAY HI <span>😊</span>
-            </span>
-            <span>
-              {" "}
-              SAY HI <span>😊</span>
-            </span>
-            <span>
-              {" "}
-              SAY HI <span>😊</span>
-            </span>
-            <span>
-              {" "}
-              SAY HI <span>😊</span>
-            </span>{" "}
+              <span>
+                {" "}
+                SAY HI <span>😊</span>
+              </span>
+              <span>
+                {" "}
+                SAY HI <span>😊</span>
+              </span>
+              <span>
+                {" "}
+                SAY HI <span>😊</span>
+              </span>
+              <span>
+                {" "}
+                SAY HI <span>😊</span>
+              </span>
+              <span>
+                {" "}
+                SAY HI <span>😊</span>
+              </span>{" "}
+              <span>
+                {" "}
+                SAY HI <span>😊</span>
+              </span>
+              <span>
+                {" "}
+                SAY HI <span>😊</span>
+              </span>{" "}
+              <span>
+                {" "}
+                SAY HI <span>😊</span>
+              </span>
+            </div>
           </div>{" "}
           <br />
           <div className="flex h-screen">
