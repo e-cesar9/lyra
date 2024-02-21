@@ -31,8 +31,6 @@ html {
 #stripe{
     overflow-x: hidden;
     overflow-y: hidden;
-    /* background-color: black;
-    color: white; */
     background-color: white;
     color: black;
     width: 150vw;
@@ -41,8 +39,6 @@ html {
 #form-section{
     background-color: black;
     color: white;
-    /* background-color: white;
-    color: black; */
 }
 
 label{
@@ -69,6 +65,19 @@ color: black;
     margin: 1rem 1rem 0 0 ;
 }
 
+#shygif{
+    display: inline;
+    height: 150px;
+    width: 0px;
+    clip-path: inset(0% 0% 0% 100%);
+    margin-left: 1rem;
+}
+
+/* #shygif:hover{
+        width: 150px;
+    clip-path: inset(0%) ;
+    transition: all 0.2 ease;
+} */
 
 
 @media (max-width : 761px){

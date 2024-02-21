@@ -2,6 +2,7 @@
 import React from "react"
 import Sidebar from "../sideBar"
 import "./style.css"
+import gsap from "gsap"
 
 const DiaryPage = ({}) => {
   const inputRef = React.useRef<HTMLInputElement>(null)
@@ -29,6 +30,38 @@ const DiaryPage = ({}) => {
     setSelectedGif(getRandomGif())
   }, [])
 
+  const shyRef = React.useRef<HTMLDivElement>(null)
+  const gifshyRef = React.useRef<HTMLImageElement>(null)
+
+  React.useEffect(() => {
+    const shyElement = shyRef.current
+    const gifshyElement = gifshyRef.current
+
+    const hoverInAnimation = () => {
+      gsap.to(gifshyElement, {
+        width: "150px",
+        clipPath: "inset(0%)",
+        duration: 0.5,
+      })
+    }
+
+    const hoverOutAnimation = () => {
+      gsap.to(gifshyElement, {
+        width: "0px",
+        clipPath: "inset(0% 0% 0% 100%)",
+        duration: 0.5,
+      })
+    }
+
+    shyElement?.addEventListener("mouseenter", hoverInAnimation)
+    shyElement?.addEventListener("mouseleave", hoverOutAnimation)
+
+    return () => {
+      shyElement?.removeEventListener("mouseenter", hoverInAnimation)
+      shyElement?.removeEventListener("mouseleave", hoverOutAnimation)
+    }
+  }, [])
+
   return (
     <>
       <Sidebar />
@@ -38,27 +71,89 @@ const DiaryPage = ({}) => {
             <a>SAY HI</a>
 
             <div className="py-16">
-              <div className="text-8xl max-[760px]:text-6xl text-center uppercase">No need</div>
+              <div className="text-8xl max-[760px]:text-6xl text-center uppercase">
+                No need
+              </div>
 
-              <div className="text-8xl max-[760px]:text-6xl text-center uppercase">to be shy.</div>
+              <div
+                ref={shyRef}
+                id="shy"
+                className="text-8xl max-[760px]:text-6xl text-center uppercase"
+              >
+                to be
+                <img ref={gifshyRef} id="shygif" src="shy.gif" /> shy.
+              </div>
             </div>
 
             <a>Let’s talk</a>
           </div>
-          <div className="flex flex-row px-12 pb-6 justify-between" id="header-text">
+          <div
+            className="flex flex-row px-12 pb-6 justify-between"
+            id="header-text"
+          >
             {" "}
-            <div className="uppercase flex items-end">waiting to hear from you</div>{" "}
-            <div className="uppercase ">Social<br/><div className="flex flex-row justify-between">
-            <a className="btnContact" href="https://www.instagram.com/lyra.haruto/">IG</a><br/><a href="" className="btnContact">LK</a><br/><a href="https://twitter.com/lyraharuto/" className="btnContact">Twitter</a></div>
+            <div className="uppercase flex items-end">
+              waiting to hear from you
             </div>{" "}
-            <div className="uppercase flex items-end">Contacts<br/>iam@thelyraharuto</div>{" "}
-            <div className="uppercase flex items-end">Location <br/> 4, Privet Drive, Little Whinging, Surrey </div>{" "}
+            <div className="uppercase ">
+              Social
+              <br />
+              <div className="flex flex-row justify-between">
+                <a
+                  className="btnContact"
+                  href="https://www.instagram.com/lyra.haruto/"
+                >
+                  IG
+                </a>
+                <br />
+                <a href="" className="btnContact">
+                  LK
+                </a>
+                <br />
+                <a
+                  href="https://twitter.com/lyraharuto/"
+                  className="btnContact"
+                >
+                  Twitter
+                </a>
+              </div>
+            </div>{" "}
+            <div className="uppercase flex items-end">
+              Contacts
+              <br />
+              iam@thelyraharuto
+            </div>{" "}
+            <div className="uppercase flex items-end">
+              Location <br /> 4, Privet Drive, Little Whinging, Surrey{" "}
+            </div>{" "}
           </div>
         </div>
-        <div className="flex flex-col h-screen overflow-x-hidden overflow-y-hidden " id="form-section">
+        <div
+          className="flex flex-col h-screen overflow-x-hidden overflow-y-hidden "
+          id="form-section"
+        >
           <div className="text-7xl max-[760px]:text-4xl py-4" id="stripe">
             {" "}
-            <span> SAY HI <span>😊</span></span><span> SAY HI <span>😊</span></span><span> SAY HI <span>😊</span></span><span> SAY HI <span>😊</span></span><span> SAY HI <span>😊</span></span>{" "}
+            <span>
+              {" "}
+              SAY HI <span>😊</span>
+            </span>
+            <span>
+              {" "}
+              SAY HI <span>😊</span>
+            </span>
+            <span>
+              {" "}
+              SAY HI <span>😊</span>
+            </span>
+            <span>
+              {" "}
+              SAY HI <span>😊</span>
+            </span>
+            <span>
+              {" "}
+              SAY HI <span>😊</span>
+            </span>{" "}
           </div>{" "}
           <br />
           <div className="flex h-screen">
@@ -66,7 +161,9 @@ const DiaryPage = ({}) => {
               <img src={selectedGif} />
             </div>{" "}
             <div className="w-3/5 pl-4">
-              <div className="text-7xl max-[760px]:text-5xl uppercase font-bold pt-8">Hello</div>
+              <div className="text-7xl max-[760px]:text-5xl uppercase font-bold pt-8">
+                Hello
+              </div>
               <div className="text-7xl max-[760px]:text-5xl uppercase font-light pb-8">
                 Lyra Haruto
               </div>
@@ -166,21 +263,38 @@ const DiaryPage = ({}) => {
             <a>Click on the screen</a>
 
             <div className="py-16">
-              <div className="text-7xl max-[760px]:text-5xl text-center uppercase">Let’s</div>
+              <div className="text-7xl max-[760px]:text-5xl text-center uppercase">
+                Let’s
+              </div>
 
-              <div className="text-7xl max-[760px]:text-5xl text-center uppercase">Talk</div>
+              <div className="text-7xl max-[760px]:text-5xl text-center uppercase">
+                Talk
+              </div>
             </div>
 
             <a>Let’s talk</a>
           </div>
         </div>
         <div className="flex flex-col w-full" id="footer-contact">
-          <div className="flex flex-row px-12 pb-6 pt-6 justify-between" id="footer-text">
+          <div
+            className="flex flex-row px-12 pb-6 pt-6 justify-between"
+            id="footer-text"
+          >
             {" "}
-            <div className="uppercase">SAY HI : <br/><span className=""> iam@thelyraharuto.com</span></div>{" "}
+            <div className="uppercase">
+              SAY HI : <br />
+              <span className=""> iam@thelyraharuto.com</span>
+            </div>{" "}
             <div className="uppercase"></div>{" "}
-            <div className="uppercase">made with love by<br/> Lyra Haruto</div>{" "}
-            <div className="uppercase"><a href="https://www.instagram.com/lyra.haruto/">Instagram</a><br/> <a href=""> Linkedin</a><br/> <a href="https://twitter.com/lyraharuto/">Twitter</a> </div>{" "}
+            <div className="uppercase">
+              made with love by
+              <br /> Lyra Haruto
+            </div>{" "}
+            <div className="uppercase">
+              <a href="https://www.instagram.com/lyra.haruto/">Instagram</a>
+              <br /> <a href=""> Linkedin</a>
+              <br /> <a href="https://twitter.com/lyraharuto/">Twitter</a>{" "}
+            </div>{" "}
           </div>
           <div className="flex flex-col justify-end align-end h-screen w-full -mt-8">
             <div className="py-8">
