@@ -158,6 +158,6 @@ color: black;
         overflow-y: hidden;
     }
     #gifForm{
-        min-width: none;
+        min-width: 0;
     }
   }
