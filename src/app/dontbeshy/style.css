@@ -20,6 +20,7 @@ html {
     overflow-x: hidden;
     scrollbar-width: none;
     font-family: 'Technor-Variable';
+    width: 100vw;
 
 }
 
