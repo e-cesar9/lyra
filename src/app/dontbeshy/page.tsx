@@ -72,17 +72,18 @@ const DiaryPage = ({}) => {
             <a>SAY HI</a>
 
             <div className="py-16">
-              <div className="text-8xl max-[760px]:text-6xl text-center uppercase">
-                No need
+              <div className="text-8xl max-[760px]:text-6xl text-center uppercase relative overflow-hidden">
+                <div className="revealText"> No need </div>
               </div>
 
               <div
                 ref={shyRef}
                 id="shy"
-                className="text-8xl max-[760px]:text-6xl text-center uppercase"
-              >
+                className="text-8xl max-[760px]:text-6xl text-center uppercase relative overflow-hidden"
+              ><div className="revealText">
                 to be
                 <img ref={gifshyRef} id="shygif" src="shy.gif" /> shy.
+              </div>
               </div>
             </div>
 
