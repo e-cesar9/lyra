@@ -1,7 +1,13 @@
+@font-face {
+    font-family: 'Technor-Variable';
+    src: url(/assets/fonts/Technor-Variable.ttf);
+}
+
+
+
 body{
     overflow-y: auto;
     font-family: 'Technor-Variable';
-
 }
 
 html {
@@ -13,6 +19,8 @@ html {
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-width: none;
+    font-family: 'Technor-Variable';
+
 }
 
 #lyrawalk{

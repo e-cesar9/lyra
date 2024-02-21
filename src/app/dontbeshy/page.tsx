@@ -18,7 +18,10 @@ const DiaryPage = ({}) => {
     "hello7.gif",
   ]
 
+  const gifShyData = ['shy.gif','shy1.gif','shy2.gif','shy3.gif','shy4.gif','shy5.gif']
+
   const [selectedGif, setSelectedGif] = React.useState<string>("")
+  const [selectedShyGif, setSelectedShyGif] = React.useState<string>("")
 
   // Function to select a random GIF
   const getRandomGif = () => {
@@ -26,9 +29,18 @@ const DiaryPage = ({}) => {
     return gifData[randomIndex]
   }
 
+  const getRandomShyGif = () => {
+    const randomIndex1 = Math.floor(Math.random() * gifShyData.length)
+    return gifShyData[randomIndex1]
+  }
+
   // Set an initial GIF when the component mounts
   React.useEffect(() => {
     setSelectedGif(getRandomGif())
+  }, [])
+
+  React.useEffect(() => {
+    setSelectedShyGif(getRandomShyGif())
   }, [])
 
   const shyRef = React.useRef<HTMLDivElement>(null)
@@ -83,7 +95,7 @@ const DiaryPage = ({}) => {
               >
                 <div className="revealText">
                   to be
-                  <img ref={gifshyRef} id="shygif" src="shy.gif" /> shy.
+                  <img ref={gifshyRef} id="shygif" src={selectedShyGif} /> shy.
                 </div>
               </div>
             </div>
