@@ -18,7 +18,7 @@ const DiaryPage = ({}) => {
     "hello7.gif",
   ]
 
-  const gifShyData = ['shy.gif','shy1.gif','shy2.gif','shy3.gif','shy4.gif','shy5.gif']
+  const gifShyData = ['shy.gif','shy1.gif','shy2.gif','shy3.gif','shy4.gif','shy5.gif', 'shy6.gif']
 
   const [selectedGif, setSelectedGif] = React.useState<string>("")
   const [selectedShyGif, setSelectedShyGif] = React.useState<string>("")
