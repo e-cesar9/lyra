@@ -80,10 +80,11 @@ const DiaryPage = ({}) => {
                 ref={shyRef}
                 id="shy"
                 className="text-8xl max-[760px]:text-6xl text-center uppercase relative overflow-hidden"
-              ><div className="revealText">
-                to be
-                <img ref={gifshyRef} id="shygif" src="shy.gif" /> shy.
-              </div>
+              >
+                <div className="revealText">
+                  to be
+                  <img ref={gifshyRef} id="shygif" src="shy.gif" /> shy.
+                </div>
               </div>
             </div>
 

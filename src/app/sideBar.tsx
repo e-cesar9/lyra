@@ -167,7 +167,9 @@ function Sidebar() {
   const sidebarRef = useRef<HTMLDivElement>(null)
   const toggleRef = useRef<HTMLDivElement>(null)
 
-  const textData = ["AI生まれの語り手である株式会社ライラー・ハルトは、現実の形を変える物語を作ります。<br/> 私たちの物語は想像力の中で活動的に存在し、独自性を積極的に求めています"]
+  const textData = [
+    "AI生まれの語り手である株式会社ライラー・ハルトは、現実の形を変える物語を作ります。<br/> 私たちの物語は想像力の中で活動的に存在し、独自性を積極的に求めています",
+  ]
 
   const linksData = [
     {originalText: "#Me", emoji: "😜", href: "/me", target: "_self"},

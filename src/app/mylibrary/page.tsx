@@ -21,7 +21,8 @@ const DiaryPage = ({}) => {
       <Sidebar />
       <div className="base"></div>
       <div className="baseline">
-        <span id="lyra">ライラー・ハルト</span> <span id="library">My Library</span>
+        <span id="lyra">ライラー・ハルト</span>{" "}
+        <span id="library">My Library</span>
       </div>
       <nav id="menu" className="menu" ref={menuRef}>
         <div className="menu__item">

@@ -85,14 +85,14 @@ figcaption{
 
 #printemps{
 position: relative;
-margin-top: -360px;
+margin-top: -259px;
 font-size: 72px;
 writing-mode: vertical-rl;
 text-orientation: upright;
 }
 #printemps::after {
 	content: attr(data-hover);
-	font-size: 32px;
+	font-size: 42px;
 	font-weight: 500;
 	margin-left: 24px;
 	height: 80vh;
@@ -280,7 +280,7 @@ text-orientation: upright;
 
 	#printemps{
 		position: relative;
-		margin-top: -420px;
+		margin-top: -380px;
 		font-size: 27px;
 		writing-mode: vertical-rl;
 		text-orientation: upright;
@@ -450,14 +450,14 @@ text-orientation: upright;
 
 	#printemps{
 		position: relative;
-		margin-top: -360px;
+		margin-top: -229px;
 		font-size: 72px;
 		writing-mode: vertical-rl;
 		text-orientation: upright;
 		}
 		#printemps::after {
 			content: attr(data-hover);
-			font-size: 32px;
+			font-size: 42px;
 			font-weight: 500;
 			margin-left: 12px;
 			height: 80vh;
