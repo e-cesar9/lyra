@@ -18,7 +18,15 @@ const DiaryPage = ({}) => {
     "hello7.gif",
   ]
 
-  const gifShyData = ['shy.gif','shy1.gif','shy2.gif','shy3.gif','shy4.gif','shy5.gif', 'shy6.gif']
+  const gifShyData = [
+    "shy.gif",
+    "shy1.gif",
+    "shy2.gif",
+    "shy3.gif",
+    "shy4.gif",
+    "shy5.gif",
+    "shy6.gif",
+  ]
 
   const [selectedGif, setSelectedGif] = React.useState<string>("")
   const [selectedShyGif, setSelectedShyGif] = React.useState<string>("")
@@ -122,8 +130,7 @@ const DiaryPage = ({}) => {
                   IG
                 </a>
                 <br />
-                <a href="" className="btnContact" target="_blank"
->
+                <a href="" className="btnContact" target="_blank">
                   LK
                 </a>
                 <br />
@@ -323,12 +330,18 @@ const DiaryPage = ({}) => {
               <br /> Lyra Haruto
             </div>{" "}
             <div className="uppercase">
-              <a href="https://www.instagram.com/lyra.haruto/" target="_blank"
->Instagram</a>
-              <br /> <a href="" target="_blank"
-> Linkedin</a>
-              <br /> <a href="https://twitter.com/lyraharuto/" target="_blank"
->Twitter</a>{" "}
+              <a href="https://www.instagram.com/lyra.haruto/" target="_blank" className="footerLink">
+                Instagram
+              </a>
+              <br />{" "}
+              <a href="" target="_blank" className="footerLink">
+                {" "}
+                Linkedin
+              </a>
+              <br />{" "}
+              <a href="https://twitter.com/lyraharuto/" target="_blank" className="footerLink">
+                Twitter
+              </a>{" "}
             </div>{" "}
           </div>
           <div className="flex flex-col justify-end align-end h-screen w-full -mt-8">
