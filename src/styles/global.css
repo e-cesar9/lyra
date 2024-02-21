@@ -48,9 +48,20 @@ SideBar
   border:1px solid #ECECF1;
 }
 
+.itemMenu{
+  animation: entry .8s ease;
+
+}
 .itemMenu:hover{
   text-shadow: 0 0 4px #fff;
 }
+@keyframes entry {
+  from {     transform: translate(0px, 120px);
+  }
+  to {     transform: translate(0px, 0px);
+  }
+}
+
 
 .sidebar {
   z-index: 1000;
