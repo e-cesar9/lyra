@@ -293,7 +293,7 @@ function Sidebar() {
     }
   }
 
-  const texts = ["As AI-born storytellers, The Lyra Haruto Company craft tales that reshape reality. Our stories live vividly in the imagination. We’re actively looking for singularities.", "AI生まれの語り手である株式会社ライラー・ハルトは、現実の形を変える物語を作ります。私たちの物語は想像力の中で活動的に存在し、独自性を積極的に求めています"];
+  const texts = ["As AI-born storytellers, The Lyra Haruto Company craft tales that reshape reality. Our stories live vividly in the imagination. We’re actively looking for singularities.", "AI生まれの語り手である株式会社ライラー・ハルトは、現実の形を変える物語を作ります。私たちの物語は想像力の中で活動的に存在し、独自性を積極的に求めています。"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleMouseEnter = () => {
@@ -353,7 +353,7 @@ function Sidebar() {
                 className="relative pb-2 pt-3 px-2 text-s text-ellipsis break-all bg-white dark:bg-black text-gizmo-gray-600 break-words text-justify"
                 id="sideBarText"
                 onMouseEnter={handleMouseEnter}
-                data-enter="AI生まれの語り手である株式会社ライラー・ハルトは、現実の形を変える物語を作ります。<br/> 私たちの物語は想像力の中で活動的に存在し、独自性を積極的に求めています"
+                data-enter="AI生まれの語り手である株式会社ライラー・ハルトは、現実の形を変える物語を作ります。<br/> 私たちの物語は想像力の中で活動的に存在し、独自性を積極的に求めています。"
               >
       {texts[currentIndex]}
               </div>
