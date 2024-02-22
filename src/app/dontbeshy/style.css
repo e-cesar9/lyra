@@ -231,4 +231,7 @@ padding-left: 0;   }
     #gifForm{
         min-width: 0;
     }
+    #shyGif{
+        height: 110px;
+    }
   }
