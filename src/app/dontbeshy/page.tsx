@@ -16,7 +16,7 @@ const DiaryPage = ({}) => {
 
     const handleMouseEnter = () => {
       // Animate overlay z-index after a slight delay to ensure it's visible
-      gsap.to(overlay, {backgroundColor: "pink", opacity: 1, zIndex:10, duration: 0.5})
+      gsap.to(overlay, {backgroundColor: "#f1a7ce", opacity: 1, zIndex:10, duration: 0.5})
       // animateText('hello');
     }
 
