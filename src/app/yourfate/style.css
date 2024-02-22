@@ -28,3 +28,22 @@ body{
 	line-height: 2em;
     letter-spacing: .1em;
 }
+
+@media (max-width : 761px){
+	.content__title{
+		margin: 0;
+		padding: 2rem 25px;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 2em;
+    letter-spacing: .1em;
+	}
+
+	img{
+		padding: 1rem 3rem;
+	}
+
+	#contact-main{
+		position: absolute;
+	}
+}
