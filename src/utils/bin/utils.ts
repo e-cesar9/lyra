@@ -20,15 +20,15 @@ export const date = async (args: string[]): Promise<string> => {
 }
 
 export const gui = async (args: string[]): Promise<string> => {
-  window.open("https://www.daedalium.com/", "_self")
+  window.open("https://linkedin.com/in/oussamaammar/", "_self")
 
   return "Opening GUI version..."
 }
 
 export const email = async (args: string[]): Promise<string> => {
-  window.open("mailto:hi@lyraHaruto.com")
+  window.open("mailto:iam@thelyraharuto.com")
 
-  return "Opening mailto:hi@lyraHaruto.com..."
+  return "Opening mailto:iam@thelyraharuto.com..."
 }
 
 export const vi = async (args: string[]): Promise<string> => {
