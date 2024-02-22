@@ -234,4 +234,7 @@ padding-left: 0;   }
     #shyGif{
         height: 110px;
     }
+    .btnHead{
+        margin: 0;
+    }
   }

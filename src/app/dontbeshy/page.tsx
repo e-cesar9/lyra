@@ -161,7 +161,7 @@ const DiaryPage = ({}) => {
               <p className="overflow-hidden py-1 z-20">SAY HI</p>
             </div>
 
-            <div className="py-16">
+            <div className="py-16 max-[760px]:pb-0">
               <div className="text-8xl max-[760px]:text-6xl text-center uppercase relative overflow-hidden">
                 <div className="revealText"> No need </div>
               </div>
