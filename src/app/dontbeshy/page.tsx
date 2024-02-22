@@ -116,47 +116,38 @@ const DiaryPage = ({}) => {
   const sectionRef = React.useRef<HTMLDivElement>(null); // Use useRef to get a reference to the section element
 
   const [displayImageSrc, setDisplayImageSrc] = React.useState<string | null>(null);
-  const sounds = ['yahou.mp3', 'fun.mp3']; // Paths to your sound files
-  const images = ['chicken.png', 'hello.gif', 'minecursor.png', 'lyrawalk2.gif']; // Paths to your image files
+  const soundPaths = ['yahou.mp3', 'fun.mp3']; // Paths to your sound files
+  const imagePaths = ['chicken.png', 'hello.gif', 'lyrawalk2.gif'];
+  const [images, setImages] = React.useState<{ src: string; x: number; y: number }[]>([]);
+
 
   React.useEffect(() => {
     const section = sectionRef.current;
-    const logMousePosition = (e: MouseEvent) => {
-      const randomAction = Math.random() < 0.75 ? 'image' : 'sound';
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!section) return;
+
       const rect = section.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
+      const x = e.clientX - rect.left -42; // x position within the element.
+      const y = e.clientY - rect.top-42;  // y position within the element.
 
-
-      if (randomAction === 'image') {
-        // Randomly select an image and update state
-        const randomImage = images[Math.floor(Math.random() * images.length)];
-        setDisplayImageSrc(randomImage);
-
-        // Position the image at the mouse coordinates
-        const imageElement = document.getElementById('randomImage');
-        if (imageElement) {
-          imageElement.style.position ="absolute"
-          imageElement.style.top = `${y-42}px`;
-          imageElement.style.left = `${x-42}px`;
-          imageElement.style.width = '100px';
-
-          imageElement.style.opacity = '1';
-        }
-      } else if (randomAction === 'sound') {
-        // Randomly select a sound and play it
-        const randomSoundIndex = Math.floor(Math.random() * sounds.length);
-        const audio = new Audio(sounds[randomSoundIndex]);
+      // Randomly choose to display an image or play a sound
+      if (Math.random() < 0.5) { // 50% chance
+        // Choose a random image
+        const randomImageIndex = Math.floor(Math.random() * imagePaths.length);
+        const newImage = { src: imagePaths[randomImageIndex], x, y };
+        setImages(prevImages => [...prevImages, newImage]);
+      } else {
+        // Choose a random sound to play
+        const randomSoundIndex = Math.floor(Math.random() * soundPaths.length);
+        const audio = new Audio(soundPaths[randomSoundIndex]);
         audio.play();
       }
-
-      // console.log(`Mouse X: ${y}, Mouse Y: ${x}`);
     };
 
-    section?.addEventListener('click', logMousePosition);
+    section?.addEventListener('click', handleMouseMove);
 
     return () => {
-      section?.removeEventListener('click', logMousePosition); // Cleanup the event listener on component unmount
+      section?.removeEventListener('click', handleMouseMove); // Cleanup the event listener on component unmount
     };
   }, []);
 
@@ -390,8 +381,11 @@ const DiaryPage = ({}) => {
           </div>
         </div>
         <div className="flex flex-col w-full h-screen relative" id="tapeScreen" ref={sectionRef}>
-          <img id="randomImage" src={displayImageSrc}/>
-          <div className="flex flex-col justify-center align-middle items-center h-screen w-full  -mt-8">
+        {images.map((img, index) => (
+        <img key={index} src={img.src} alt={`Dynamic at ${img.x}, ${img.y}`}
+             style={{ position: 'absolute', left: img.x, top: img.y, maxWidth: '150px', maxHeight: '150px' }} />
+      ))}
+                <div className="flex flex-col justify-center align-middle items-center h-screen w-full  -mt-8">
             <a>Click on the screen</a>
 
             <div className="py-16">
