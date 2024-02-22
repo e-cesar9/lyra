@@ -186,8 +186,8 @@ const DiaryPage = ({}) => {
               Location <br /> 4, Privet Drive, Little Whinging, Surrey{" "}
             </div>{" "}
           </div>
-          <div
-            className="h-screen w-full opacity-0 absolute flex flex-row items-end justify-center align-middle"
+          {/* <div
+            className="h-screen w-full opacity-0 absolute flex flex-row items-end justify-center align-middle overflow-y-auto"
             id="overlayHello"
             ref={overlayRef}
           >
@@ -196,7 +196,7 @@ const DiaryPage = ({}) => {
             <p className="helloFont">L</p>
             <p className="helloFont">L</p>
             <p className="helloFont">O</p>
-          </div>
+          </div> */}
         </div>
         <div
           className="flex flex-col h-screen overflow-x-hidden overflow-y-hidden "
