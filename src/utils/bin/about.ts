@@ -1,7 +1,6 @@
 import {getBio} from "../../api"
 
 export const about = async (args: string[]): Promise<string> => {
-  // const bio = await getBio()
 
   return `
   The Lyra Haruto Company, Inc. is a storytelling enterprise founded by Oussama Ammar.\n

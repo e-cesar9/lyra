@@ -5,7 +5,7 @@ export const enigma = async (
   if (args.length === 0) {
     return `
       I am a number, studied by thinkers,
-      Only clear in simplest reflections.
+      Only clear in deepest reflections.
       I am a chain, that keeps the paradoxes of existence,
       A fade into the clarity of knowledge.
       I am the shadow, in discussions of time and space, 
