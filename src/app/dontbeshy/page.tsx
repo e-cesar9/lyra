@@ -151,7 +151,7 @@ const DiaryPage = ({}) => {
         audio.play();
       }
 
-      console.log(`Mouse X: ${y}, Mouse Y: ${x}`);
+      // console.log(`Mouse X: ${y}, Mouse Y: ${x}`);
     };
 
     section?.addEventListener('click', logMousePosition);
