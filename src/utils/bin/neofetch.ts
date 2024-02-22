@@ -207,7 +207,7 @@ const getInfo = () => {
     visitedAt,
   )}\n</span>`
   message += `<span style="color: ${theme.red}">Author</span>: ${packageJson.author.name}\n`
-  message += `<span style="color: ${theme.red}">Instructions</span>: i'm alive \n`
+  message += `<span style="color: ${theme.red}">Instructions</span>:<span onclick="var audio = new Audio('/yahou.mp3');audio.play();"> i'm alive \n</span>`
 
   return message
 }
