@@ -116,8 +116,8 @@ const DiaryPage = ({}) => {
   const sectionRef = React.useRef<HTMLDivElement>(null); // Use useRef to get a reference to the section element
 
   const [displayImageSrc, setDisplayImageSrc] = React.useState<string | null>(null);
-  const sounds = ['yahou.mp3', 'c3po.mp3']; // Paths to your sound files
-  const images = ['chicken.png', 'hello.gif']; // Paths to your image files
+  const sounds = ['yahou.mp3', 'fun.mp3']; // Paths to your sound files
+  const images = ['chicken.png', 'hello.gif', 'minecursor.png', 'lyrawalk2.gif']; // Paths to your image files
 
   React.useEffect(() => {
     const section = sectionRef.current;
