@@ -114,6 +114,53 @@ const DiaryPage = ({}) => {
     }
   }, [])
 
+  const sectionRef = React.useRef<HTMLDivElement>(null); // Use useRef to get a reference to the section element
+
+  const [displayImageSrc, setDisplayImageSrc] = React.useState<string | null>(null);
+  const sounds = ['yahou.mp3', 'c3po.mp3']; // Paths to your sound files
+  const images = ['chicken.png', 'hello.gif']; // Paths to your image files
+
+  React.useEffect(() => {
+    const section = sectionRef.current;
+    const logMousePosition = (e: MouseEvent) => {
+      const randomAction = Math.random() < 0.75 ? 'image' : 'sound';
+      const rect = section.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+
+      if (randomAction === 'image') {
+        // Randomly select an image and update state
+        const randomImage = images[Math.floor(Math.random() * images.length)];
+        setDisplayImageSrc(randomImage);
+
+        // Position the image at the mouse coordinates
+        const imageElement = document.getElementById('randomImage');
+        if (imageElement) {
+          imageElement.style.position ="absolute"
+          imageElement.style.top = `${y-42}px`;
+          imageElement.style.left = `${x-42}px`;
+          imageElement.style.width = '100px';
+
+          imageElement.style.opacity = '1';
+        }
+      } else if (randomAction === 'sound') {
+        // Randomly select a sound and play it
+        const randomSoundIndex = Math.floor(Math.random() * sounds.length);
+        const audio = new Audio(sounds[randomSoundIndex]);
+        audio.play();
+      }
+
+      console.log(`Mouse X: ${y}, Mouse Y: ${x}`);
+    };
+
+    section?.addEventListener('click', logMousePosition);
+
+    return () => {
+      section?.removeEventListener('click', logMousePosition); // Cleanup the event listener on component unmount
+    };
+  }, []);
+
   return (
     <>
       <Sidebar />
@@ -343,7 +390,8 @@ const DiaryPage = ({}) => {
             </div>{" "}
           </div>
         </div>
-        <div className="flex flex-col w-full h-screen" id="tapeScreen">
+        <div className="flex flex-col w-full h-screen relative" id="tapeScreen" ref={sectionRef}>
+          <img id="randomImage" src={displayImageSrc}/>
           <div className="flex flex-col justify-center align-middle items-center h-screen w-full  -mt-8">
             <a>Click on the screen</a>
 

@@ -103,6 +103,10 @@ input, select{
     border-bottom: 1px solid white;
 }
 
+#randomImage{
+
+}
+
 input:focus, select:focus {
     outline: none;
   }
