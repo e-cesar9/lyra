@@ -5,8 +5,38 @@ import "./style.css"
 import gsap from "gsap"
 
 const DiaryPage = ({}) => {
-  const inputRef = React.useRef<HTMLInputElement>(null)
-  const containerRef = React.useRef(null)
+  const [letters, setLetters] = React.useState<Array<string>>([])
+  const overlayRef = React.useRef<HTMLDivElement>(null)
+
+  const hiRef = React.useRef<HTMLDivElement>(null)
+
+  React.useEffect(() => {
+    const overlay = overlayRef.current
+    const hi = hiRef.current
+
+    const handleMouseEnter = () => {
+      // Animate overlay z-index after a slight delay to ensure it's visible
+      gsap.to(overlay, {backgroundColor: "pink", opacity: 1, duration: 0.5})
+      // animateText('hello');
+    }
+
+    const handleMouseLeave = () => {
+      gsap.to(overlay, {
+        backgroundColor: "transparent",
+        opacity: 0,
+        duration: 0.5,
+      })
+      setLetters([])
+    }
+
+    hi?.addEventListener("mouseenter", handleMouseEnter)
+    hi?.addEventListener("mouseleave", handleMouseLeave)
+
+    return () => {
+      hi?.removeEventListener("mouseenter", handleMouseEnter)
+      hi?.removeEventListener("mouseleave", handleMouseLeave)
+    }
+  }, [])
 
   const gifData = [
     "/hello.gif",
@@ -87,9 +117,11 @@ const DiaryPage = ({}) => {
     <>
       <Sidebar />
       <div className="w-full overflow-y-auto" id="contact-main">
-        <div className="flex flex-col w-full h-screen">
+        <div className="flex flex-col w-full h-screen" id="headContact">
           <div className="flex flex-col justify-center align-middle items-center h-screen w-full mt-4">
-            <a>SAY HI</a>
+            <div ref={hiRef} className="z-20">
+              <p className="text-2xl overflow-hidden py-1 z-20">SAY HI</p>
+            </div>
 
             <div className="py-16">
               <div className="text-8xl max-[760px]:text-6xl text-center uppercase relative overflow-hidden">
@@ -108,7 +140,9 @@ const DiaryPage = ({}) => {
               </div>
             </div>
 
-            <a className="btnHead px-8 py-1" href="#form-section">Let’s talk</a>
+            <a className="btnHead px-8 py-1" href="#form-section">
+              Let’s talk
+            </a>
           </div>
           <div
             className="flex flex-row px-12 pb-6 justify-between"
@@ -151,6 +185,17 @@ const DiaryPage = ({}) => {
             <div className="uppercase flex items-end">
               Location <br /> 4, Privet Drive, Little Whinging, Surrey{" "}
             </div>{" "}
+          </div>
+          <div
+            className="h-screen w-full opacity-0 absolute flex flex-row items-end justify-center align-middle"
+            id="overlayHello"
+            ref={overlayRef}
+          >
+            <p className="helloFont">H</p>
+            <p className="helloFont">E</p>
+            <p className="helloFont">L</p>
+            <p className="helloFont">L</p>
+            <p className="helloFont">O</p>
           </div>
         </div>
         <div
@@ -330,7 +375,11 @@ const DiaryPage = ({}) => {
               <br /> Lyra Haruto
             </div>{" "}
             <div className="uppercase">
-              <a href="https://www.instagram.com/lyra.haruto/" target="_blank" className="footerLink">
+              <a
+                href="https://www.instagram.com/lyra.haruto/"
+                target="_blank"
+                className="footerLink"
+              >
                 Instagram
               </a>
               <br />{" "}
@@ -339,7 +388,11 @@ const DiaryPage = ({}) => {
                 Linkedin
               </a>
               <br />{" "}
-              <a href="https://twitter.com/lyraharuto/" target="_blank" className="footerLink">
+              <a
+                href="https://twitter.com/lyraharuto/"
+                target="_blank"
+                className="footerLink"
+              >
                 Twitter
               </a>{" "}
             </div>{" "}

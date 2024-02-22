@@ -8,16 +8,39 @@
 body{
     overflow-y: auto;
     font-family: 'Technor-Variable';
+
 }
 
 html {
 	scroll-behavior: smooth;
+
+}
+
+#contact-main{
+    scrollbar-width: none;
+
 }
 
 .footerLink:hover{
 	color:#f1a7ce;
 }
 
+#headContact{
+    background-color: black;
+
+}
+
+.helloFont{
+    font-size: 28vw;
+}
+
+#overlayHello{
+    padding-left: 250px;
+    background-color: #f1a7ce;
+    text-align: center;
+    line-height: 1;
+    right: 0;
+}
 
 .relative.z-0.flex.h-full.w-full.overflow-hidden{
     overflow-y: auto;
