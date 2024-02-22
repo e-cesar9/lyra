@@ -116,7 +116,7 @@ Your path to changing the world through stories begins here. Be not just a part 
 </div>
 <div className="flex flex-col items-center pt-12"> 
 {/* <p className="text-7xl py-8 bounty"> Bounty for Artist </p> */}
-<img src="ace.png" className="pb-8" ref={endRef}/>
+<img src="ace.png" id="ace" className="pb-8" ref={endRef}/>
 </div>
 </div>
 </>
