@@ -191,7 +191,7 @@ color: black;
 
 @media (max-width : 761px){
     #overlayHello{
-margin: 0;    }
+padding-left: 0;   }
     body{
         overflow-y: auto;
     }
