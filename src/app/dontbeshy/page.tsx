@@ -16,7 +16,7 @@ const DiaryPage = ({}) => {
 
     const handleMouseEnter = () => {
       // Animate overlay z-index after a slight delay to ensure it's visible
-      gsap.to(overlay, {backgroundColor: "pink", opacity: 1, duration: 0.5})
+      gsap.to(overlay, {backgroundColor: "pink", opacity: 1, zIndex:10, duration: 0.5})
       // animateText('hello');
     }
 
@@ -24,6 +24,7 @@ const DiaryPage = ({}) => {
       gsap.to(overlay, {
         backgroundColor: "transparent",
         opacity: 0,
+        zIndex:-10,
         duration: 0.5,
       })
       setLetters([])
@@ -186,8 +187,8 @@ const DiaryPage = ({}) => {
               Location <br /> 4, Privet Drive, Little Whinging, Surrey{" "}
             </div>{" "}
           </div>
-          {/* <div
-            className="h-screen w-full opacity-0 absolute flex flex-row items-end justify-center align-middle overflow-y-auto"
+          <div
+            className="h-screen w-full opacity-0 absolute flex flex-row items-end justify-center align-middle overflow-scroll -z-10"
             id="overlayHello"
             ref={overlayRef}
           >
@@ -196,7 +197,7 @@ const DiaryPage = ({}) => {
             <p className="helloFont">L</p>
             <p className="helloFont">L</p>
             <p className="helloFont">O</p>
-          </div> */}
+          </div>
         </div>
         <div
           className="flex flex-col h-screen overflow-x-hidden overflow-y-hidden "
