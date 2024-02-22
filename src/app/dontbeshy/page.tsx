@@ -121,7 +121,7 @@ const DiaryPage = ({}) => {
         <div className="flex flex-col w-full h-screen" id="headContact">
           <div className="flex flex-col justify-center align-middle items-center h-screen w-full mt-4">
             <div ref={hiRef} className="z-20">
-              <p className="text-2xl overflow-hidden py-1 z-20">SAY HI</p>
+              <p className="overflow-hidden py-1 z-20">SAY HI</p>
             </div>
 
             <div className="py-16">
