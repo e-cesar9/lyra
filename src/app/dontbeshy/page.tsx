@@ -108,7 +108,7 @@ const DiaryPage = ({}) => {
               </div>
             </div>
 
-            <a>Let’s talk</a>
+            <a className="btnHead px-8 py-1" href="#form-section">Let’s talk</a>
           </div>
           <div
             className="flex flex-row px-12 pb-6 justify-between"
@@ -311,7 +311,7 @@ const DiaryPage = ({}) => {
               </div>
             </div>
 
-            <a>Let’s talk</a>
+            <a className="">Let’s talk</a>
           </div>
         </div>
         <div className="flex flex-col w-full" id="footer-contact">
