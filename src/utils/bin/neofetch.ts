@@ -129,6 +129,15 @@ const getPlatform = (): "Unknown" | "Windows" | "MacOS" | "Linux" => {
   return os
 }
 
+var audioPath = ['/poem1.mp3', '/yahou.mp3','/poem2.mp3','/poem3.mp3']
+function getRandomElementFromArray(array) {
+  const randomIndex = Math.floor(Math.random() * array.length);  
+  return array[randomIndex];
+}
+
+// Use the function to get a random value from the array
+var randomAudio = getRandomElementFromArray(audioPath);
+
 const getMainColor = () => {
   const platform = getPlatform()
   const themeName = localStorage.getItem("theme")
@@ -207,7 +216,7 @@ const getInfo = () => {
     visitedAt,
   )}\n</span>`
   message += `<span style="color: ${theme.red}">Author</span>: ${packageJson.author.name}\n`
-  message += `<span style="color: ${theme.red}">Instructions</span>:<span onclick="var audio = new Audio('/yahou.mp3');audio.play();"> i'm alive \n</span>`
+  message += `<span style="color: ${theme.red}">Instructions</span>:<span onclick="var audio = new Audio('${randomAudio}');audio.play();"> i'm alive \n</span>`
 
   return message
 }

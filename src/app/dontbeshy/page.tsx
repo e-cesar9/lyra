@@ -7,7 +7,6 @@ import gsap from "gsap"
 const DiaryPage = ({}) => {
   const [letters, setLetters] = React.useState<Array<string>>([])
   const overlayRef = React.useRef<HTMLDivElement>(null)
-
   const hiRef = React.useRef<HTMLDivElement>(null)
 
   React.useEffect(() => {
