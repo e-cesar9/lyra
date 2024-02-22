@@ -445,7 +445,7 @@ text-orientation: upright;
 	body{
 	}
 	#Me{
-		margin: 1px 0 0 250px;
+		/* margin: 1px 0 0 250px; */
 		padding: 2rem 0;
 	}
 
