@@ -383,7 +383,7 @@ const DiaryPage = ({}) => {
         <div className="flex flex-col w-full h-screen relative" id="tapeScreen" ref={sectionRef}>
         {images.map((img, index) => (
         <img key={index} src={img.src} alt={`Dynamic at ${img.x}, ${img.y}`}
-             style={{ position: 'absolute', left: img.x, top: img.y, maxWidth: '150px', maxHeight: '150px' }} />
+             style={{ position: 'absolute', left: img.x, top: img.y, maxWidth: '250px', maxHeight: '250px' }} />
       ))}
                 <div className="flex flex-col justify-center align-middle items-center h-screen w-full  -mt-8">
             <a>Click on the screen</a>

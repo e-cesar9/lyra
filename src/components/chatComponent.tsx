@@ -65,7 +65,7 @@ export const ChatComponent = ({inputRef, containerRef}) => {
     }
 
     if (event.key === "Enter" || event.code === "13") {
-      if (lastKeyCode === 452) {
+      if (lastKeyCode === 452 || 884 ) {
         setShowCanvas(true)
         setTimeout(() => {
           setShowCanvas(false)
