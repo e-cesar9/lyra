@@ -57,24 +57,27 @@ const DiaryPage = ({}) => {
           <div className="containerS encoded">
             <div className="slider">
               <div className="slider__scroller">
-                <div className="slide">hello aaaaaa</div>
+                <div className="slide"></div>
 
-                <div className="slide">a a a a a a a a a a a</div>
+                <div className="slide"></div>
 
-                <div className="slide">a a a a a a a a a a a</div>
+                <div className="slide"></div>
 
-                <div className="slide">a a a a a a a a a a a</div>
+                <div className="slide"></div>
 
-                <div className="slide">a a a a a a a a a a a</div>
+                <div className="slide"></div>
 
-                <div className="slide">a a a a a a a a a a a</div>
+                <div className="slide"></div>
               </div>
             </div>
           </div>
         </div>
         <canvas className="webgl"></canvas>
 
-        <div className="flex flex-col items-center w-full pt-64">
+        <div className="flex flex-col items-center w-full">
+        <div className="text-6xl max-[760px]:text-6xl text-center uppercase relative overflow-hidden mt-48 mb-24">
+                <div className="revealText"> Your Fate </div>
+              </div>
           <div
             ref={textRef}
             className="flex flex-row px-6 pb-6 justify-between text-2xl"

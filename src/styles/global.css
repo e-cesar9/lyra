@@ -395,6 +395,25 @@ MediaQuery General
   }
 }
 
+.revealText{
+  /* transform-origin: 0% 50%; */
+  /* transform: translate(0px, 0px); */
+  animation: entry .4s ease;
+}
+@keyframes entry {
+  from {     transform: translate(0px, 120px);
+      rotate: 10deg;
+  }
+  to {     transform: translate(0px, 0px);
+      rotate: 0deg;
+
+  }
+}
+
+#contact-main{
+  scrollbar-width: none;
+
+}
 
 /* YOUR FATE PAGE */
 .jobs{
