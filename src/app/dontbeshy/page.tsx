@@ -5,6 +5,33 @@ import "./style.css"
 import gsap from "gsap"
 
 const DiaryPage = ({}) => {
+
+  const [isSuccess, setIsSuccess] = React.useState(false);
+  const [message, setMessage] = React.useState(false);
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "3215bec3-4eb4-477a-bbaa-452716747f7b");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
+    });
+    const result = await response.json();
+    if (result.success) {
+      setIsSuccess(true);
+    }
+}
+
+
   const [letters, setLetters] = React.useState<Array<string>>([])
   const overlayRef = React.useRef<HTMLDivElement>(null)
   const hiRef = React.useRef<HTMLDivElement>(null)
@@ -161,7 +188,7 @@ const DiaryPage = ({}) => {
               <p className="overflow-hidden py-1 z-20">SAY HI</p>
             </div>
 
-            <div className="py-16 max-[760px]:pb-0">
+            <div className="py-16 max-[760px]:pb-2">
               <div className="text-8xl max-[760px]:text-6xl text-center uppercase relative overflow-hidden">
                 <div className="revealText"> No need </div>
               </div>
@@ -218,7 +245,7 @@ const DiaryPage = ({}) => {
             <div className="uppercase flex items-end">
               Contacts
               <br />
-              iam@thelyraharuto.com
+              iam@thelyraharutostudios.com
             </div>{" "}
             <div className="uppercase flex items-end">
               Location <br /> 4, Privet Drive, Little Whinging, Surrey{" "}
@@ -284,24 +311,27 @@ const DiaryPage = ({}) => {
             </div>{" "}
             <div className="w-3/5 px-2">
               <div className="text-7xl max-[760px]:text-5xl uppercase font-bold pt-8">
-                Hello
+               Hello
               </div>
               <div className="text-7xl max-[760px]:text-5xl uppercase font-light pb-8">
-                Lyra Haruto
+               Lyra Haruto
               </div>
-
-              <form action="" target="_self" className="">
+              { isSuccess && (
+        <div className="mt-12 text-sm text-left text-green-500">
+          {"Sugoi! Your path to this journey have been sent successfully"}
+        </div>
+      ) ||
+              <form onSubmit={handleSubmit} className="">
                 <div>
                   <div>
                     <label htmlFor="NAME">I’m </label>
-                    <input type="text" value="" name="NAME" id="NAME" />
+                    <input type="text" name="NAME" id="NAME" />
                     <span id="mce-NAME-HELPERTEXT"></span>
                   </div>
                   <div className="mc-field-group">
                     <label htmlFor="mce-EMAIL">Here is my email</label>
                     <input
                       type="email"
-                      value=""
                       name="EMAIL"
                       id="mce-EMAIL"
                       required
@@ -314,7 +344,7 @@ const DiaryPage = ({}) => {
                   <div className="mc-field-group">
                     <label htmlFor="mce-FROM">I heard about Lyra Haruto </label>
                     <select name="FROM" className="" id="mce-FROM">
-                      <option value=""></option>
+                      <option ></option>
                       <option value="Instagram">Instagram</option>
                       <option value="Facebook">Facebook</option>
                       <option value="TikTok">TikTok</option>
@@ -331,7 +361,6 @@ const DiaryPage = ({}) => {
                     <label htmlFor="mce-SERVICE">I need you service for </label>
                     <input
                       type="text"
-                      value=""
                       name="SERVICE"
                       className=""
                       id="mce-SERVICE"
@@ -350,7 +379,6 @@ const DiaryPage = ({}) => {
                     ></div>
                     <input
                       type="text"
-                      value=""
                       name="PROJECT"
                       className=""
                       id="mce-PROJECT"
@@ -360,15 +388,10 @@ const DiaryPage = ({}) => {
                       className="helper_text"
                     ></span>
                   </div>
-                  <div id="mce-responses" className="clear foot">
-                    <div className="response" id="mce-error-response"></div>
-                    <div className="response" id="mce-success-response"></div>
-                  </div>
                   <div className="optionalParent">
                     <div className="clear foot">
                       <input
                         type="submit"
-                        value="Submit"
                         name="subscribe"
                         id="mc-embedded-subscribe"
                         className="btnSubmit"
@@ -377,6 +400,8 @@ const DiaryPage = ({}) => {
                   </div>
                 </div>
               </form>
+}
+
             </div>{" "}
           </div>
         </div>
@@ -409,7 +434,7 @@ const DiaryPage = ({}) => {
             {" "}
             <div className="uppercase">
               SAY HI : <br />
-              <span className=""> iam@thelyraharuto.com</span>
+              <span className=""> iam@thelyraharutostudios.com</span>
             </div>{" "}
             <div className="uppercase"></div>{" "}
             <div className="uppercase">

@@ -164,7 +164,9 @@ form{
   cursor: url('/minecurso.png'), auto;
 }
 
-
+.play{
+  cursor: crosshair;
+}
 /* 
 Main Screen Effect
  */
