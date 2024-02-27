@@ -144,7 +144,7 @@ const DiaryPage = ({}) => {
 
   const [displayImageSrc, setDisplayImageSrc] = React.useState<string | null>(null);
   const soundPaths = ['yahou.mp3', 'fun.mp3']; // Paths to your sound files
-  const imagePaths = ['chicken.png', 'hello.gif', 'lyrawalk2.gif'];
+  const imagePaths = ['chicken.png', 'hello.gif', 'lyrawalk2.gif', 'luigitoadpeach.png'];
   const [images, setImages] = React.useState<{ src: string; x: number; y: number }[]>([]);
 
 
@@ -158,7 +158,7 @@ const DiaryPage = ({}) => {
       const y = e.clientY - rect.top-42;  // y position within the element.
 
       // Randomly choose to display an image or play a sound
-      if (Math.random() < 0.5) { // 50% chance
+      if (Math.random() < 0.7) {
         // Choose a random image
         const randomImageIndex = Math.floor(Math.random() * imagePaths.length);
         const newImage = { src: imagePaths[randomImageIndex], x, y };

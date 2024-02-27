@@ -21,6 +21,10 @@ const DiaryPage = ({}) => {
     <>
       <Sidebar />
       <div className="w-full overflow-y-auto h-screen " id="contact-main">
+      <div className="flex flex-col items-center pt-12">
+          {/* <p className="text-7xl py-8 bounty"> Bounty for Artist </p> */}
+          <img src="ace.png" id="ace" className="pb-8" ref={endRef} />
+        </div>
         <div className="flex flex-col items-center w-full pt-32">
           <div ref={textRef} className="flex flex-row px-6 pb-6 justify-between text-2xl">
             <p className="text_block px-2">
@@ -62,17 +66,14 @@ const DiaryPage = ({}) => {
               </p>
 
           </div>
-              <p className="text_block px-2 pt-6">
+              <p className="text_block px-2 pt-6 text-2xl">
               Your path to changing the world through stories begins here. Be
               not just a part of history, but a creator of it. Welcome to the
               Lyra Haruto Company, where every story is a doorway to a new
               world.
             </p>
         </div>
-        <div className="flex flex-col items-center pt-12">
-          {/* <p className="text-7xl py-8 bounty"> Bounty for Artist </p> */}
-          <img src="ace.png" id="ace" className="pb-8" ref={endRef} />
-        </div>
+
       </div>
     </>
   )
