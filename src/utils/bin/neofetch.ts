@@ -129,14 +129,14 @@ const getPlatform = (): "Unknown" | "Windows" | "MacOS" | "Linux" => {
   return os
 }
 
-var audioPath = ['/poem1.mp3', '/yahou.mp3','/poem2.mp3','/poem3.mp3']
+var audioPath = ["/poem1.mp3", "/yahou.mp3", "/poem2.mp3", "/poem3.mp3"]
 function getRandomElementFromArray(array) {
-  const randomIndex = Math.floor(Math.random() * array.length);  
-  return array[randomIndex];
+  const randomIndex = Math.floor(Math.random() * array.length)
+  return array[randomIndex]
 }
 
 // Use the function to get a random value from the array
-var randomAudio = getRandomElementFromArray(audioPath);
+var randomAudio = getRandomElementFromArray(audioPath)
 
 const getMainColor = () => {
   const platform = getPlatform()
