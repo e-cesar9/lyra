@@ -91,7 +91,7 @@ body
     width: 100%;
 }
 
-.slider__scroller{
+.slider__scroll{
     display: flex;
     flex-wrap: nowrap;
     gap: 200px;

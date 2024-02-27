@@ -8,7 +8,7 @@ import * as THREE from "three"
 // Canvas
 if (typeof window !== "undefined" && typeof document !== "undefined") {
   const canvas = document.querySelector("canvas.webgl")
-  const scroller = [...document.querySelectorAll(".slider__scroller")]
+  const scroller = [...document.querySelectorAll(".slider__scroll")]
   const scrollerEncod = [...document.querySelectorAll(".encoded .slide")]
 
   function genString(length) {
@@ -170,8 +170,8 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
   scene.add(camera)
 
   // Controls
-//   const controls = new OrbitControls(camera, canvas)
-//   controls.enableDamping = true
+  //   const controls = new OrbitControls(camera, canvas)
+  //   controls.enableDamping = true
 
   /**
    * Renderer

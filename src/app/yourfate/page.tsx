@@ -27,7 +27,7 @@ const DiaryPage = ({}) => {
           <div className="separator"></div>
           <div className="containerS">
             <div className="slider">
-              <div className="slider__scroller">
+              <div className="slider__scroll">
                 <div className="slide">
                   <img src="ace.png" alt="" />
                 </div>
@@ -56,7 +56,7 @@ const DiaryPage = ({}) => {
           </div>
           <div className="containerS encoded">
             <div className="slider">
-              <div className="slider__scroller">
+              <div className="slider__scroll">
                 <div className="slide"></div>
 
                 <div className="slide"></div>
@@ -75,9 +75,9 @@ const DiaryPage = ({}) => {
         <canvas className="webgl"></canvas>
 
         <div className="flex flex-col items-center w-full">
-        <div className="text-6xl max-[760px]:text-6xl text-center uppercase relative overflow-hidden mt-48 mb-24">
-                <div className="revealText"> Your Fate </div>
-              </div>
+          <div className="text-6xl max-[760px]:text-6xl text-center uppercase relative overflow-hidden mt-48 mb-24">
+            <div className="revealText"> Your Fate </div>
+          </div>
           <div
             ref={textRef}
             className="flex flex-row px-6 pb-6 justify-between text-2xl"

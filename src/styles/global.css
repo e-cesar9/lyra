@@ -55,6 +55,11 @@ SideBar
 .itemMenu:hover{
   text-shadow: 0 0 4px #fff;
 }
+
+.activeLink{
+  text-shadow: 0 0 4px #fff;
+
+}
 @keyframes entry {
   from {     transform: translate(0px, 120px);
   }
@@ -67,7 +72,7 @@ SideBar
   z-index: 1000;
   width: 250px;
   height: auto;
-  /* min-height:100vh; */
+  min-height:100vh;
   background-color: #000;
   padding: 24px;
   color: #ECECF1;

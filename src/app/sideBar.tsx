@@ -134,7 +134,7 @@ function BtnSide() {
               <Menu.Item>
                 {({active}) => (
                   <a
-                    href="404NoError"
+                    href="https://www.google.com"
                     className={classNames(
                       active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                       "block px-4 py-2 text-sm",
@@ -163,7 +163,8 @@ type Link = {
 }
 
 function Sidebar() {
-  // const path = usePathname()
+  const path = usePathname()
+
   const sidebarRef = useRef<HTMLDivElement>(null)
   const toggleRef = useRef<HTMLDivElement>(null)
 
@@ -210,34 +211,36 @@ function Sidebar() {
   const handleMouseOverRef = useRef(null)
 
   useEffect(() => {
-    handleMouseOverRef.current = (e) => {
-      const link = links.find((l) => l.ref.current === e.currentTarget)
-      if (link) {
-        const textLength = link.text.length
-        link.setText(getRandomString(textLength))
-        setTimeout(() => link.setText(getRandomString(textLength)), 100)
-        setTimeout(() => link.setText(getRandomString(textLength)), 200)
-        setTimeout(() => link.setText(link.originalText), 400)
+    if (window.innerWidth > 760) {
+      handleMouseOverRef.current = (e) => {
+        const link = links.find((l) => l.ref.current === e.currentTarget)
+        if (link) {
+          const textLength = link.text.length
+          link.setText(getRandomString(textLength))
+          setTimeout(() => link.setText(getRandomString(textLength)), 100)
+          setTimeout(() => link.setText(getRandomString(textLength)), 200)
+          setTimeout(() => link.setText(link.originalText), 400)
+        }
       }
-    }
 
-    links.forEach((link) => {
-      const linkElement = link.ref.current
-      if (linkElement) {
-        linkElement.addEventListener("mouseover", handleMouseOverRef.current)
-      }
-    })
-
-    return () => {
       links.forEach((link) => {
         const linkElement = link.ref.current
         if (linkElement) {
-          linkElement.removeEventListener(
-            "mouseover",
-            handleMouseOverRef.current,
-          )
+          linkElement.addEventListener("mouseover", handleMouseOverRef.current)
         }
       })
+
+      return () => {
+        links.forEach((link) => {
+          const linkElement = link.ref.current
+          if (linkElement) {
+            linkElement.removeEventListener(
+              "mouseover",
+              handleMouseOverRef.current,
+            )
+          }
+        })
+      }
     }
   }, [links])
 
@@ -368,7 +371,9 @@ function Sidebar() {
                   <Link
                     href={link.href}
                     target={link.target}
-                    className="flex items-center gap-2 rounded-lg p-2"
+                    className={`flex items-center gap-2 rounded-lg p-2 ${
+                      path === link.href ? "activeLink" : ""
+                    }`}
                   >
                     {/* {link.href === path && (
                     <motion.span
