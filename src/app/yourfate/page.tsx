@@ -5,8 +5,7 @@ import gsap from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
 import Sidebar from "../sideBar"
 import "./style.css"
-import "splitting/dist/splitting.css"
-import "splitting/dist/splitting-cells.css"
+import "./script.js"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -20,12 +19,62 @@ const DiaryPage = ({}) => {
   return (
     <>
       <Sidebar />
-      <div className="w-full overflow-y-auto h-screen " id="contact-main">
-        <div className="flex flex-col items-center pt-12">
-          {/* <p className="text-7xl py-8 bounty"> Bounty for Artist </p> */}
-          <img src="ace.png" id="ace" className="pb-8" ref={endRef} />
+      <div
+        className="w-full overflow-y-auto h-screen relative"
+        id="contact-main"
+      >
+        <div className="slider_odin">
+          <div className="separator"></div>
+          <div className="containerS">
+            <div className="slider">
+              <div className="slider__scroller">
+                <div className="slide">
+                  <img src="ace.png" alt="" />
+                </div>
+
+                <div className="slide">
+                  <img src="ace.png" alt="" />
+                </div>
+
+                <div className="slide">
+                  <img src="ace.png" alt="" />
+                </div>
+
+                <div className="slide">
+                  <img src="ace.png" alt="" />
+                </div>
+
+                <div className="slide">
+                  <img src="ace.png" alt="" />
+                </div>
+
+                <div className="slide">
+                  <img src="ace.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="containerS encoded">
+            <div className="slider">
+              <div className="slider__scroller">
+                <div className="slide">hello aaaaaa</div>
+
+                <div className="slide">a a a a a a a a a a a</div>
+
+                <div className="slide">a a a a a a a a a a a</div>
+
+                <div className="slide">a a a a a a a a a a a</div>
+
+                <div className="slide">a a a a a a a a a a a</div>
+
+                <div className="slide">a a a a a a a a a a a</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col items-center w-full pt-32">
+        <canvas className="webgl"></canvas>
+
+        <div className="flex flex-col items-center w-full pt-64">
           <div
             ref={textRef}
             className="flex flex-row px-6 pb-6 justify-between text-2xl"

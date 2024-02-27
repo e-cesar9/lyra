@@ -44,3 +44,89 @@ body{
 		position: absolute;
 	}
 }
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html,
+body
+{
+    font-family: 'Technor-Variable';
+    overflow: auto;
+    height: 100%;
+    background-color: black;
+	overflow-y: scroll;
+}
+
+.containerS{
+    width: 100%;
+    clip-path: inset(0 50% 0 0);
+    position: absolute;
+    z-index: 20;
+    top:0;
+}
+.containerS.encoded{
+    clip-path: inset(0 0 0 50%);
+}
+.slider{
+    overflow: hidden;
+    width: 100%;
+}
+.slide{
+    width: 300px;
+    height: 440px;
+    min-width: 300px;
+}
+
+.slide img{
+    display: block;
+    width: 100%;
+}
+
+.slider__scroller{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 200px;
+}
+
+.encoded .slide{
+    font-family: 'Technor-Variable';
+    color: grey;
+    font-size: 11px;
+    overflow: hidden;
+}
+
+.encoded .slide strong{
+    color: black;
+}
+
+.slider_odin{
+    position: relative;
+	width: 100vw;
+    top: 100px;
+    height: 440px;
+    /* border: 1px solid red; */
+}
+
+
+.webgl{
+    width: 100vw;
+    height: 440px;
+    position: absolute;
+    top: 100px;
+    /* z-index: 20; */
+    /* border: 1px solid red; */
+    transition: opacity .4s ease-in-out;
+}
+
+.webgl
+{
+    outline: none;
+    z-index: 40;
+}
