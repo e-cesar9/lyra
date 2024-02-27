@@ -130,3 +130,8 @@ body
     outline: none;
     z-index: 40;
 }
+
+
+p .text-block{
+	font-weight: 300;
+}

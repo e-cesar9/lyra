@@ -1,5 +1,5 @@
 import * as THREE from "three"
-import {OrbitControls} from "three/examples/jsm/controls/OrbitControls.js"
+// import {OrbitControls} from "three/examples/jsm/controls/OrbitControls.js"
 
 /**
  * Base
@@ -171,8 +171,8 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
   scene.add(camera)
 
   // Controls
-  const controls = new OrbitControls(camera, canvas)
-  controls.enableDamping = true
+//   const controls = new OrbitControls(camera, canvas)
+//   controls.enableDamping = true
 
   /**
    * Renderer
@@ -240,7 +240,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
     }
 
     // Update controls
-    controls.update()
+    // controls.update()
     xAxis += 0.5
     if (xAxis > 0) {
       xAxis = -2 * (300 + 200)
