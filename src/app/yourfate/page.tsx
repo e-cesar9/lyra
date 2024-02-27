@@ -66,7 +66,7 @@ const DiaryPage = ({}) => {
               </p>
 
           </div>
-              <p className="text_block px-2 pt-6 text-2xl">
+              <p className="text_block px-8 pt-6 text-2xl">
               Your path to changing the world through stories begins here. Be
               not just a part of history, but a creator of it. Welcome to the
               Lyra Haruto Company, where every story is a doorway to a new
