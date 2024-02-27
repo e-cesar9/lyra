@@ -153,6 +153,7 @@ const DiaryPage = ({}) => {
     "hello.gif",
     "lyrawalk2.gif",
     "luigitoadpeach.png",
+    "panda.png",
   ]
   const [images, setImages] = React.useState<
     {src: string; x: number; y: number}[]
