@@ -230,10 +230,8 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
     }
 
     if (checkIfActive()) {
-      separator[0].style.opacity = 1
       canvas.style.opacity = 1
     } else {
-      separator[0].style.opacity = 0
       canvas.style.opacity = 0
     }
 

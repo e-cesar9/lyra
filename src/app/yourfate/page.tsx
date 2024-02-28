@@ -3,13 +3,18 @@ import React from "react"
 import gsap from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
 import Sidebar from "../sideBar"
+import * as THREE from "three"
+
 import "./style.css"
 import "./script.js"
 import PageTransition from "@/src/utils/effect/PageTransition"
+import SlideComponent from "./SlideComponent"
 
 gsap.registerPlugin(ScrollTrigger)
 
+
 const DiaryPage = ({}) => {
+  
   const inputRef = React.useRef<HTMLInputElement>(null)
   const containerRef = React.useRef(null)
   const textRef = React.useRef(null)
@@ -24,7 +29,8 @@ const DiaryPage = ({}) => {
         id="contact-main"
       >
         <div className="h-screen flex content-end flex-col justify-between">
-          <div className="slider_odin mt-8">
+
+        <div className="slider_odin mt-8" >
             <div className="separator"></div>
             <div className="containerS">
               <div className="slider">
