@@ -28,15 +28,15 @@ const DiaryPage = ({}) => {
       >
         <div className="h-screen flex content-end flex-col justify-between">
           <SlideComponent />
-          <div className="text-9xl max-[760px]:text-6xl text-left uppercase relative overflow-hidden mb-2">
-            <div className="revealText pl-6"> Your Fate </div>
+          <div className="text-9xl  text-left uppercase relative overflow-hidden mb-2">
+            <div className="revealText max-[760px]:text-6xl pl-6"> Your Fate </div>
           </div>
         </div>
 
         <div className="flex flex-col w-full h-[75vh] justify-between mb-2">
           <div
             ref={textRef}
-            className="flex flex-row px-6 justify-between text-2xl mt-20"
+            className="flex flex-row max-[760px]:flex-col px-6 justify-between text-2xl mt-20"
           >
             <p className="text_block px-2">
               At the Lyra Haruto Company, we stand at the forefront of a
