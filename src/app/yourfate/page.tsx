@@ -123,7 +123,7 @@ const DiaryPage = ({}) => {
             </p>
           </div>
           <p className="text_block px-8 pb-4 text-2xl">
-            Your path to changing the world through stories begins here. Be not
+            Your path to changing the world through stories begins here. <br/> Be not
             just a part of history, but a creator of it. Welcome to the Lyra
             Haruto Company, where every story is a doorway to a new world.
           </p>
