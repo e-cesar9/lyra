@@ -75,7 +75,7 @@ const DiaryPage = ({}) => {
           </div>
           <canvas className="webgl mt-8"></canvas>
           <div className="text-9xl max-[760px]:text-6xl text-left uppercase relative overflow-hidden mb-2">
-            <div className="revealText pl-2"> Your Fate </div>
+            <div className="revealText pl-6"> Your Fate </div>
           </div>
         </div>
 
