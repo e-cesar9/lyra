@@ -7,8 +7,6 @@ const SlideComponent: React.FC = () => {
   // const canvasRef = useRef<HTMLDivElement>(null)
   const sliderRef = useRef<HTMLDivElement>(null)
 
-
-
   function range(start, end) {
     let r = Math.random()
     return r * (end - start) + start
@@ -65,11 +63,10 @@ const SlideComponent: React.FC = () => {
   }
 
   useEffect(() => {
-
     var scrollerEncod = Array.from(
       document.querySelectorAll(".encoded .slide"),
     ) as HTMLElement[]
-  
+
     function genStringDom() {
       scrollerEncod.forEach((slide, index) => {
         let string = genString(1200)
@@ -266,7 +263,7 @@ const SlideComponent: React.FC = () => {
     tick()
 
     // Cleanup function
-
+    return () => {}
   }, [])
 
   return (
