@@ -7,8 +7,8 @@ import gsap from "gsap"
 const SlideComponent: React.FC = () => {
     // const canvasRef = useRef<HTMLDivElement>(null)
     const sliderRef = useRef<HTMLDivElement>(null)
-    if (typeof window !== "undefined" && typeof document !== "undefined") {
-    var scrollerEncod = Array.from(document.querySelectorAll(".encoded .slide")) as HTMLElement[];}
+
+    var scrollerEncod = Array.from(document.querySelectorAll(".encoded .slide")) as HTMLElement[];
 
     function genStringDom() {
         scrollerEncod.forEach((slide, index) => {
@@ -75,7 +75,6 @@ const SlideComponent: React.FC = () => {
 
     useEffect(() => {
         // if (!canvasRef.current) return
-        if (typeof window !== "undefined" && typeof document !== "undefined") {
 
             var canvas = document.querySelector("canvas.webgl") as HTMLCanvasElement; // Cast to HTMLCanvasElement
             var scroller = Array.from(document.querySelectorAll(".slider__scroll")) as HTMLElement[]; // Cast to HTMLElement[]
@@ -268,7 +267,7 @@ const SlideComponent: React.FC = () => {
             }
           
             tick()
-          }
+          
           
     
         
