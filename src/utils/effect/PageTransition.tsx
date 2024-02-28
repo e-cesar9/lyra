@@ -1,28 +1,21 @@
 import React, {useEffect} from "react"
-import {useTheme} from "../../utils/themeProvider"
-import gsap from "gsap"
+import {gsap} from "gsap"
 
-interface Props {
-  children: React.ReactNode
-}
-
-const Layout: React.FC<Props> = ({children}) => {
-  const {theme} = useTheme()
-
+const PageTransition = () => {
   const rows = 7
   const columns = 11
-  const boxes = []
 
   // Create boxes for the grid
+  const boxes = []
   for (let row = 0; row < rows; row++) {
     for (let col = 0; col < columns; col++) {
       boxes.push(
         <div
           className="box"
           style={{
-            backgroundColor: theme.foreground,
+            backgroundColor: "white",
           }}
-          key={`${row}+${col}`}
+          key={`${row}-${col}`} // Changed the key format for consistency
         ></div>,
       )
     }
@@ -46,7 +39,6 @@ const Layout: React.FC<Props> = ({children}) => {
         ".box",
         {
           duration: 0.3,
-          // scale: 0.1,
           opacity: 0,
           transformOrigin: "50% 50%",
           ease: "power3",
@@ -74,24 +66,12 @@ const Layout: React.FC<Props> = ({children}) => {
 
   return (
     <div
-      className="terminal relative flex h-full max-w-full flex-1 flex-col overflow-hidden"
-      style={{
-        color: theme.foreground,
-      }}
+      className="overlay"
+      style={{display: "grid", gridTemplateColumns: `repeat(${columns}, 1fr)`}}
     >
-      <main
-        className="w-full h-full p-2"
-        style={{
-          background: theme.background,
-        }}
-      >
-        {children}
-      </main>
-      {/* <div className="scanlines"></div> */}
-      {/* <div className="noise"></div> */}
-      <div className="overlay">{boxes}</div>
+      {boxes}
     </div>
   )
 }
 
-export default Layout
+export default PageTransition

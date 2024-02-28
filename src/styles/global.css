@@ -73,6 +73,7 @@ SideBar
   width: 250px;
   height: auto;
   min-height:100vh;
+  top: 0;
   background-color: #000;
   padding: 24px;
   color: #ECECF1;

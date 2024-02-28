@@ -3,7 +3,6 @@ import * as THREE from "three"
 /**
  * Base
  */
-// Debug
 
 // Canvas
 if (typeof window !== "undefined" && typeof document !== "undefined") {
@@ -104,7 +103,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
         pos.x*=.3;
     
         vec4 mvPosition = modelViewMatrix * vec4(pos,1.);
-        gl_PointSize = aSize * (2.5 / - mvPosition.z);
+        gl_PointSize = aSize * (1. / - mvPosition.z);
         gl_Position = projectionMatrix * mvPosition; 
     }
     `,
@@ -166,7 +165,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
     0.1,
     100,
   )
-  camera.position.set(0, 0, 0.7)
+  camera.position.set(0, 0, 0.5)
   scene.add(camera)
 
   // Controls
@@ -187,21 +186,22 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
   let tempPos
   let curPos
   function checkIfActive() {
-    let half = sizes.width // a adapter avec le canvas (-250px)
+    let half = window.innerWidth // a adapter avec le canvas (-250px)
     // console.log(half);
     let slideWidth = 300 //depend on affiche size
     let slideGap = 200 //gap flex
     let whole = slideWidth + slideGap
-    tempPos = xAxis + whole * 10
-    curPos = tempPos % whole
 
-    // var center = true
-    var center = curPos > half - slideWidth
-    center = true
-    // console.log(center);
-    // if(curPos> slideWidth){
-    //     center = false
-    // }
+    tempPos = xAxis + whole
+    curPos = (tempPos % whole) + 50
+
+    // console.log(tempPos);
+
+    var center = true
+    // var center = !(curPos > slideWidth);
+    // if(curPos>tempPos){ center = false}
+    // center = true
+
     // console.log(curPos);
     // if(curPos >400 || curPos < 200){
     //     center=true
@@ -212,7 +212,6 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
   }
 
   let separator = document.getElementsByClassName("separator")
-  //   console.log(separator)
   /**
    * Animate
    */

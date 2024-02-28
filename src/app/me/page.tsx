@@ -4,9 +4,7 @@ import "./style.css"
 import gsap from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
 import Sidebar from "../sideBar"
-
-import "splitting/dist/splitting.css"
-import "splitting/dist/splitting-cells.css"
+import PageTransition from "@/src/utils/effect/PageTransition"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -30,8 +28,6 @@ const DiaryPage: React.FC = () => {
     setSelectedUrl(getRandomUrl())
   }, [])
 
-  const springRef = React.useRef()
-
   return (
     <>
       <Sidebar />
@@ -51,7 +47,7 @@ const DiaryPage: React.FC = () => {
                   Hello, I am Lyra Haruto
                 </figcaption>
               </div>
-              <h1 ref={springRef} data-hover="Lyra Haruto" id="printemps">
+              <h1 data-hover="Lyra Haruto" id="printemps">
                 ライラー・ハルト
               </h1>
             </div>
@@ -737,6 +733,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
         </div>
+        <PageTransition />
       </div>
     </>
   )

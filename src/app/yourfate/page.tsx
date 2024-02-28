@@ -1,11 +1,11 @@
 "use client"
 import React from "react"
-import Image from "next/image"
 import gsap from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
 import Sidebar from "../sideBar"
 import "./style.css"
 import "./script.js"
+import PageTransition from "@/src/utils/effect/PageTransition"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -74,13 +74,13 @@ const DiaryPage = ({}) => {
         </div>
         <canvas className="webgl"></canvas>
 
-        <div className="flex flex-col items-center w-full">
-          <div className="text-6xl max-[760px]:text-6xl text-center uppercase relative overflow-hidden mt-48 mb-24">
+        <div className="flex flex-col w-full">
+          <div className="text-6xl max-[760px]:text-6xl text-left uppercase relative overflow-hidden mt-48 mb-24">
             <div className="revealText"> Your Fate </div>
           </div>
           <div
             ref={textRef}
-            className="flex flex-row px-6 pb-6 justify-between text-2xl"
+            className="flex flex-row px-6 pb-6 justify-between text-2xl "
           >
             <p className="text_block px-2">
               At the Lyra Haruto Company, we stand at the forefront of a
@@ -126,6 +126,7 @@ const DiaryPage = ({}) => {
             Haruto Company, where every story is a doorway to a new world.
           </p>
         </div>
+        <PageTransition />
       </div>
     </>
   )

@@ -12,7 +12,6 @@
 body{
     font-family: 'Zodiak-Variable';
 	scrollbar-width: none;
-
 }
 
 .bounty{
@@ -117,6 +116,7 @@ body
 }
 
 
+
 .webgl{
     width: 100vw;
     height: 440px;
@@ -138,3 +138,10 @@ p .text-block{
 	font-weight: 300;
 }
 
+.itemMenu{
+    animation: none;
+}
+
+.overlay{
+    top: 0;
+}

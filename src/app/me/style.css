@@ -88,6 +88,7 @@ text-orientation: upright;
 	content: attr(data-hover);
 	font-size: 42px;
 	font-weight: 500;
+	/* letter-spacing: -2px; */
 	margin-left: 24px;
 	height: 80vh;
 	writing-mode: vertical-rl;
@@ -539,4 +540,8 @@ text-orientation: upright;
 		text-align: -webkit-center;
 	}
 
+}
+
+.overlay{
+	top: 0;
 }

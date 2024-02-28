@@ -3,6 +3,7 @@ import React from "react"
 import Sidebar from "../sideBar"
 import "./style.css"
 import gsap from "gsap"
+import PageTransition from "@/src/utils/effect/PageTransition"
 
 const DiaryPage = ({}) => {
   const [isSuccess, setIsSuccess] = React.useState(false)
@@ -505,6 +506,7 @@ const DiaryPage = ({}) => {
             </div>
           </div>
         </div>
+        <PageTransition />
       </div>
     </>
   )

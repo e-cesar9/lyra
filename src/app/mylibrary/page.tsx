@@ -4,6 +4,7 @@ import "./style.css"
 import Image from "next/image"
 import InfiniteMenu from "./Infinite"
 import Sidebar from "../sideBar"
+import PageTransition from "@/src/utils/effect/PageTransition"
 
 const DiaryPage = ({}) => {
   const inputRef = React.useRef<HTMLInputElement>(null)
@@ -1485,6 +1486,7 @@ const DiaryPage = ({}) => {
             />
           </a>
         </div>
+        <PageTransition />
       </nav>
     </>
   )
