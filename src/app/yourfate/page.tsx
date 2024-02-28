@@ -30,56 +30,7 @@ const DiaryPage = ({}) => {
       >
         <div className="h-screen flex content-end flex-col justify-between">
 
-        <div className="slider_odin mt-8" >
-            <div className="separator"></div>
-            <div className="containerS">
-              <div className="slider">
-                <div className="slider__scroll">
-                  <div className="slide">
-                    <img src="ace.png" alt="" />
-                  </div>
-
-                  <div className="slide">
-                    <img src="ace.png" alt="" />
-                  </div>
-
-                  <div className="slide">
-                    <img src="ace.png" alt="" />
-                  </div>
-
-                  <div className="slide">
-                    <img src="ace.png" alt="" />
-                  </div>
-
-                  <div className="slide">
-                    <img src="ace.png" alt="" />
-                  </div>
-
-                  <div className="slide">
-                    <img src="ace.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="containerS encoded">
-              <div className="slider">
-                <div className="slider__scroll">
-                  <div className="slide"></div>
-
-                  <div className="slide"></div>
-
-                  <div className="slide"></div>
-
-                  <div className="slide"></div>
-
-                  <div className="slide"></div>
-
-                  <div className="slide"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <canvas className="webgl mt-8"></canvas>
+          <SlideComponent/>
           <div className="text-9xl max-[760px]:text-6xl text-left uppercase relative overflow-hidden mb-2">
             <div className="revealText pl-6"> Your Fate </div>
           </div>
