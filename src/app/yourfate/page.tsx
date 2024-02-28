@@ -6,15 +6,13 @@ import Sidebar from "../sideBar"
 import * as THREE from "three"
 
 import "./style.css"
-import "./script.js"
+// import "./script.js"
 import PageTransition from "@/src/utils/effect/PageTransition"
 import SlideComponent from "./SlideComponent"
 
 gsap.registerPlugin(ScrollTrigger)
 
-
 const DiaryPage = ({}) => {
-  
   const inputRef = React.useRef<HTMLInputElement>(null)
   const containerRef = React.useRef(null)
   const textRef = React.useRef(null)
@@ -29,8 +27,7 @@ const DiaryPage = ({}) => {
         id="contact-main"
       >
         <div className="h-screen flex content-end flex-col justify-between">
-
-          <SlideComponent/>
+          <SlideComponent />
           <div className="text-9xl max-[760px]:text-6xl text-left uppercase relative overflow-hidden mb-2">
             <div className="revealText pl-6"> Your Fate </div>
           </div>
@@ -80,9 +77,9 @@ const DiaryPage = ({}) => {
             </p>
           </div>
           <p className="text_block px-8 pb-4 text-2xl">
-            Your path to changing the world through stories begins here. <br/> Be not
-            just a part of history, but a creator of it. Welcome to the Lyra
-            Haruto Company, where every story is a doorway to a new world.
+            Your path to changing the world through stories begins here. <br />{" "}
+            Be not just a part of history, but a creator of it. Welcome to the
+            Lyra Haruto Company, where every story is a doorway to a new world.
           </p>
         </div>
         <PageTransition />

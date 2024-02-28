@@ -9,10 +9,6 @@
 }
 
 
-body{
-    font-family: 'Zodiak-Variable';
-	scrollbar-width: none;
-}
 
 .bounty{
 	/* font-weight: 300; */
@@ -63,6 +59,8 @@ body
     height: 100%;
     background-color: black;
 	overflow-y: scroll;
+    scrollbar-width: none;
+
 }
 
 .containerS{
