@@ -23,64 +23,66 @@ const DiaryPage = ({}) => {
         className="w-full overflow-y-auto h-screen relative"
         id="contact-main"
       >
-        <div className="slider_odin">
-          <div className="separator"></div>
-          <div className="containerS">
-            <div className="slider">
-              <div className="slider__scroll">
-                <div className="slide">
-                  <img src="ace.png" alt="" />
-                </div>
+        <div className="h-screen flex content-end flex-col justify-between">
+          <div className="slider_odin mt-8">
+            <div className="separator"></div>
+            <div className="containerS">
+              <div className="slider">
+                <div className="slider__scroll">
+                  <div className="slide">
+                    <img src="ace.png" alt="" />
+                  </div>
 
-                <div className="slide">
-                  <img src="ace.png" alt="" />
-                </div>
+                  <div className="slide">
+                    <img src="ace.png" alt="" />
+                  </div>
 
-                <div className="slide">
-                  <img src="ace.png" alt="" />
-                </div>
+                  <div className="slide">
+                    <img src="ace.png" alt="" />
+                  </div>
 
-                <div className="slide">
-                  <img src="ace.png" alt="" />
-                </div>
+                  <div className="slide">
+                    <img src="ace.png" alt="" />
+                  </div>
 
-                <div className="slide">
-                  <img src="ace.png" alt="" />
-                </div>
+                  <div className="slide">
+                    <img src="ace.png" alt="" />
+                  </div>
 
-                <div className="slide">
-                  <img src="ace.png" alt="" />
+                  <div className="slide">
+                    <img src="ace.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="containerS encoded">
+              <div className="slider">
+                <div className="slider__scroll">
+                  <div className="slide"></div>
+
+                  <div className="slide"></div>
+
+                  <div className="slide"></div>
+
+                  <div className="slide"></div>
+
+                  <div className="slide"></div>
+
+                  <div className="slide"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="containerS encoded">
-            <div className="slider">
-              <div className="slider__scroll">
-                <div className="slide"></div>
-
-                <div className="slide"></div>
-
-                <div className="slide"></div>
-
-                <div className="slide"></div>
-
-                <div className="slide"></div>
-
-                <div className="slide"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <canvas className="webgl"></canvas>
-
-        <div className="flex flex-col w-full">
-          <div className="text-6xl max-[760px]:text-6xl text-left uppercase relative overflow-hidden mt-48 mb-24">
+          <canvas className="webgl mt-8"></canvas>
+          <div className="text-9xl max-[760px]:text-6xl text-left uppercase relative overflow-hidden mb-2">
             <div className="revealText"> Your Fate </div>
           </div>
+        </div>
+
+        <div className="flex flex-col w-full h-[75vh] justify-between mb-2">
           <div
             ref={textRef}
-            className="flex flex-row px-6 pb-6 justify-between text-2xl "
+            className="flex flex-row px-6 justify-between text-2xl mt-20"
           >
             <p className="text_block px-2">
               At the Lyra Haruto Company, we stand at the forefront of a
@@ -120,7 +122,7 @@ const DiaryPage = ({}) => {
               of dreams made manifest.
             </p>
           </div>
-          <p className="text_block px-8 pt-6 text-2xl">
+          <p className="text_block px-8 pb-4 text-2xl">
             Your path to changing the world through stories begins here. Be not
             just a part of history, but a creator of it. Welcome to the Lyra
             Haruto Company, where every story is a doorway to a new world.

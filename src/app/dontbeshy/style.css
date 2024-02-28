@@ -4,11 +4,9 @@
 }
 
 
-
 body{
     overflow-y: auto;
     font-family: 'Technor-Variable';
-
 }
 
 html {
@@ -120,7 +118,7 @@ color: black;
     border: 1px solid white;
     border-radius: 32px;
     margin: 1rem 1rem 0 0 ;
-    transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out ;
 }
 .btnHead:hover{
     background-color: #f1a7ce;
@@ -166,9 +164,7 @@ color: black;
 }
 
 .revealText{
-    /* transform-origin: 0% 50%; */
-    /* transform: translate(0px, 0px); */
-    animation: entry .4s ease;
+    animation: entry .4s ease .4s;
 }
 .itemMenu{
     animation: none;

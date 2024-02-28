@@ -108,8 +108,6 @@ SideBar
   display: none;
 }
 
-
-
 /* 
 Main terminal screen
 */
@@ -426,12 +424,10 @@ MediaQuery General
   margin-top: 8rem;
   display: flex;
   justify-content:space-around;
-  
 }
 
 /* .mob{
   display: none;
-
 }
 .desk{
   width: 100%;
