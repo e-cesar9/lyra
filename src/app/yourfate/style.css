@@ -146,3 +146,7 @@ body
 .overlay{
     top: 0;
 }
+
+.text_roles{
+    color: grey;
+}
