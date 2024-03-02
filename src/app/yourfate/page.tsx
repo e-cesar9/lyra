@@ -36,7 +36,7 @@ const DiaryPage = ({}) => {
           </div>
         </div>
 
-        <div className="flex flex-col w-full h-[75vh] justify-between mb-2">
+        <div className="flex flex-col w-full h-[75vh] max-[760px]:h-auto justify-between mb-2">
           <div
             ref={textRef}
             className="flex flex-row max-[760px]:flex-col px-6 justify-between text-2xl mt-20"
@@ -85,7 +85,7 @@ const DiaryPage = ({}) => {
             Lyra Haruto Company, where every story is a doorway to a new world.
           </p>
         </div>
-        <div className="flex flex-col w-full h-screen mt-36 pb-8 pl-6 text-2xl">
+        <div className="flex flex-col w-full h-screen max-[760px]:h-auto mt-36 pb-8 pl-6 text-2xl">
           <h1>Artistic Roles</h1>
           <p>
             Animator:{" "}
