@@ -55,6 +55,7 @@ const PageTransition = () => {
         {
           duration: 0.4,
           opacity: 0,
+          display:'none'
         },
         1,
       )
