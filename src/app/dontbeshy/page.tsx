@@ -155,6 +155,8 @@ const DiaryPage = ({}) => {
     "lyrawalk2.gif",
     "luigitoadpeach.png",
     "panda.png",
+    "trunks.png",
+    "ichigo.png"
   ]
   const [images, setImages] = React.useState<
     {src: string; x: number; y: number}[]
@@ -241,7 +243,11 @@ const DiaryPage = ({}) => {
                   IG
                 </a>
                 <br />
-                <a href="" className="btnContact" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/lyra-haruto/"
+                  className="btnContact"
+                  target="_blank"
+                >
                   LK
                 </a>
                 <br />
@@ -438,6 +444,7 @@ const DiaryPage = ({}) => {
                 top: img.y,
                 maxWidth: "250px",
                 maxHeight: "250px",
+                rotate: `${Math.random()>.5? 6 : -6}deg`
               }}
             />
           ))}
@@ -481,7 +488,11 @@ const DiaryPage = ({}) => {
                 Instagram
               </a>
               <br />{" "}
-              <a href="" target="_blank" className="footerLink">
+              <a
+                href="https://www.linkedin.com/in/lyra-haruto/"
+                target="_blank"
+                className="footerLink"
+              >
                 {" "}
                 Linkedin
               </a>

@@ -170,6 +170,11 @@ form{
 
 .play{
   cursor: crosshair;
+  transition: all .3s ease-in-out;
+}
+.play:hover{
+  text-decoration: underline;
+
 }
 /* 
 Main Screen Effect
@@ -404,6 +409,8 @@ MediaQuery General
   /* transform: translate(0px, 0px); */
   animation: entry .4s ease;
 }
+
+
 @keyframes entry {
   from {     transform: translate(0px, 120px);
       rotate: 10deg;

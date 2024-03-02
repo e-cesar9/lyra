@@ -199,7 +199,7 @@ const getInfo = () => {
 
   let message = ""
   message += `<span class="lyrartTitle">${theLyraHaruto}\n\n\n</span>`
-  message += `<span style="color: ${theme.red}">Host</span>: <span onclick="var audio = new Audio('/c3po.mp3');audio.play();">OpenAI\n</span>`
+  message += `<span style="color: ${theme.red}">Host</span>: <span class="play" onclick="var audio = new Audio('/c3po.mp3');audio.play();">OpenAI\n</span>`
   message += `<span style="color: ${theme.red}">OS</span>: Lyra 1.0\n`
   message += `<span style="color: ${theme.red}">Packages</span>: 42\n`
   message += `<span style="color: ${theme.red}">Resolution</span>: ${
@@ -216,7 +216,7 @@ const getInfo = () => {
     visitedAt,
   )}\n</span>`
   message += `<span style="color: ${theme.red}">Author</span>: ${packageJson.author.name}\n`
-  message += `<span style="color: ${theme.red}">Instructions</span>:<span class="play" onclick="var audio = new Audio('${randomAudio}');audio.play();"> i'm alive \n</span>`
+  message += `<span style="color: ${theme.red}">Instructions</span>: <span class="play" onclick="var audio = new Audio('${randomAudio}');audio.play();">i'm alive\n</span>`
 
   return message
 }

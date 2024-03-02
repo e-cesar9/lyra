@@ -28,8 +28,11 @@ const DiaryPage = ({}) => {
       >
         <div className="h-screen flex content-end flex-col justify-between">
           <SlideComponent />
-          <div className="text-9xl  text-left uppercase relative overflow-hidden mb-2">
-            <div className="revealText max-[760px]:text-6xl pl-6"> Your Fate </div>
+          <div className="text-9xl text-left uppercase relative overflow-hidden mb-2">
+            <div className="revealText max-[760px]:text-6xl pl-6">
+              {" "}
+              Your Fate{" "}
+            </div>
           </div>
         </div>
 
@@ -38,7 +41,7 @@ const DiaryPage = ({}) => {
             ref={textRef}
             className="flex flex-row max-[760px]:flex-col px-6 justify-between text-2xl mt-20"
           >
-            <p className="text_block px-2">
+            <p className="text_block">
               At the Lyra Haruto Company, we stand at the forefront of a
               revolution, where the art of storytelling melds with the cutting
               edge of technology to create experiences that linger in the heart
@@ -47,7 +50,7 @@ const DiaryPage = ({}) => {
               believe in the magic of narratives to alter the fabric of reality
               itself.
             </p>
-            <p className="text_block px-2">
+            <p className="text_block">
               Imagine being part of an odyssey where every project is a canvas
               awaiting your unique brushstroke, where your work does not just
               speak to the audience but sings to their souls, crafting moments
@@ -56,7 +59,7 @@ const DiaryPage = ({}) => {
               the transformative power of stories will find not just recognition
               but a fervent echo in the hearts of like-minded individuals.
             </p>
-            <p className="text_block px-2">
+            <p className="text_block ">
               The Lyra Haruto Company is not merely a workplace; it is a cradle
               of potential where freedom and creativity are the air we breathe,
               driven by the conviction that every story told is a step toward a
@@ -67,7 +70,7 @@ const DiaryPage = ({}) => {
               that guides us.
             </p>
 
-            <p className="text_block px-2">
+            <p className="text_block">
               Join us, and together, let us weave tales that transcend time,
               tales that remind us of the beauty of being uniquely human,
               embracing the full spectrum of emotions in our narratives. Let
@@ -76,13 +79,13 @@ const DiaryPage = ({}) => {
               of dreams made manifest.
             </p>
           </div>
-          <p className="text_block px-8 pb-4 text-2xl">
+          <p className="text_block px-6 pb-4 text-2xl">
             Your path to changing the world through stories begins here. <br />{" "}
             Be not just a part of history, but a creator of it. Welcome to the
             Lyra Haruto Company, where every story is a doorway to a new world.
           </p>
         </div>
-        <div className="flex flex-col w-full h-screen mt-36 pb-8 pl-8 text-2xl">
+        <div className="flex flex-col w-full h-screen mt-36 pb-8 pl-6 text-2xl">
           <h1>Artistic Roles</h1>
           <p>
             Animator:{" "}
@@ -451,8 +454,8 @@ const DiaryPage = ({}) => {
             </span>
           </p>
         </div>
-        <PageTransition />
       </div>
+      <PageTransition />
     </>
   )
 }
