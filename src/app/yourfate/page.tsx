@@ -28,8 +28,8 @@ const DiaryPage = ({}) => {
       >
         <div className="h-screen flex content-end flex-col justify-between">
           <SlideComponent />
-          <div className="text-9xl text-left uppercase relative overflow-hidden mb-2">
-            <div className="revealText max-[760px]:text-6xl pl-6">
+          <div className="text-9xl max-[1280px]:text-9xl max-[760px]:text-6xl text-left uppercase relative overflow-hidden mb-2 sizingFate">
+            <div className="revealText pl-6">
               {" "}
               Your Fate{" "}
             </div>
@@ -85,7 +85,7 @@ const DiaryPage = ({}) => {
             Lyra Haruto Company, where every story is a doorway to a new world.
           </p>
         </div>
-        <div className="flex flex-col w-full h-screen max-[760px]:h-auto mt-36 pb-8 pl-6 text-2xl">
+        <div className="flex flex-col w-full h-screen max-[760px]:h-auto mt-36 max-[1440px]:mt-64 pb-8 pl-6 text-2xl">
           <h1>Artistic Roles</h1>
           <p>
             Animator:{" "}
