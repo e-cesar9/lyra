@@ -55,9 +55,15 @@ const PageTransition = () => {
         {
           duration: 0.4,
           opacity: 0,
-          display:'none'
         },
         1,
+      )
+      .to(
+        ".overlay",
+        {
+          display:'none'
+        },
+        1.4,
       )
   }
 
