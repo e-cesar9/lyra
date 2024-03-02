@@ -103,7 +103,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
         pos.x*=.3;
     
         vec4 mvPosition = modelViewMatrix * vec4(pos,1.);
-        gl_PointSize = aSize * (1. / - mvPosition.z);
+        gl_PointSize = aSize * (1.8 / - mvPosition.z);
         gl_Position = projectionMatrix * mvPosition; 
     }
     `,
@@ -165,7 +165,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
     0.1,
     100,
   )
-  camera.position.set(0, 0, 0.5)
+  camera.position.set(0, 0, 0.3)
   scene.add(camera)
 
   // Controls

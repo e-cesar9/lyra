@@ -201,7 +201,7 @@ const SlideComponent: React.FC = () => {
       0.1,
       100,
     )
-    camera.position.set(0, 0, 0.5)
+    camera.position.set(0, 0, 0.3)
     scene.add(camera)
 
     // Controls
