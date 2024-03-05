@@ -12,7 +12,7 @@ import SlideComponent from "./SlideComponent"
 
 gsap.registerPlugin(ScrollTrigger)
 
-const DiaryPage = ({}) => {
+const FatePage = ({}) => {
   const inputRef = React.useRef<HTMLInputElement>(null)
   const containerRef = React.useRef(null)
   const textRef = React.useRef(null)
@@ -29,10 +29,7 @@ const DiaryPage = ({}) => {
         <div className="h-screen flex content-end flex-col justify-between">
           <SlideComponent />
           <div className="text-9xl max-[1280px]:text-9xl max-[760px]:text-6xl text-left uppercase relative overflow-hidden mb-2 sizingFate">
-            <div className="revealText pl-6">
-              {" "}
-              Your Fate{" "}
-            </div>
+            <div className="revealText pl-6"> Your Fate </div>
           </div>
         </div>
 
@@ -460,4 +457,4 @@ const DiaryPage = ({}) => {
   )
 }
 
-export default DiaryPage
+export default FatePage

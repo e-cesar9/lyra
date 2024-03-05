@@ -20,7 +20,10 @@ body{
 	overscroll-behavior-y: none;
 }
 
+html{
+	overscroll-behavior-y: none;
 
+}
 
 .itemMenu{
     animation: none;
@@ -55,14 +58,20 @@ figcaption{
 	overflow-y: scroll;
 	scroll-behavior:smooth;
 	scrollbar-width: none;
-	scroll-snap-type: y proximity;
-
-}
-
-.part:not(:last-child){
+	scroll-snap-type: y mandatory;
 	scroll-snap-align:start;
-	scroll-snap-stop: always;
+	overscroll-behavior: none;
+
+
 }
+
+#Me .part{
+	scroll-snap-align:start;
+	overscroll-behavior: none;
+	/* scroll-snap-stop: always; */
+}
+
+/* :not(:last-child) */
 
 .lined{
 	line-height:2em;
@@ -114,7 +123,7 @@ text-orientation: upright;
 
 
 .content__title{
-	margin: 2rem 26rem;
+	margin: 2rem 20rem;
 	font-size: 27px;
 	font-weight: 300;
 	line-height: 2em;

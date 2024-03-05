@@ -6,9 +6,7 @@ import InfiniteMenu from "./Infinite"
 import Sidebar from "../sideBar"
 import PageTransition from "@/src/utils/effect/PageTransition"
 
-const DiaryPage = ({}) => {
-  const inputRef = React.useRef<HTMLInputElement>(null)
-  const containerRef = React.useRef(null)
+const LibraryPage = ({}) => {
 
   const menuRef = React.useRef()
   React.useEffect(() => {
@@ -1492,4 +1490,4 @@ const DiaryPage = ({}) => {
   )
 }
 
-export default DiaryPage
+export default LibraryPage

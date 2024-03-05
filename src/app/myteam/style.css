@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Zodiak-Variable';
+	src: url(/assets/fonts/Zodiak-Variable.ttf);
+}
+
+
+.mainTeam{
+    font-family: 'Zodiak-Variable';
+}

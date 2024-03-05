@@ -6,7 +6,7 @@ import Layout from "../../components/layout/Layout"
 import Sidebar from "../sideBar"
 import "./style.css"
 
-const DiaryPage = ({}) => {
+const CraftPage = ({}) => {
   const inputRef = React.useRef<HTMLInputElement>(null)
   const containerRef = React.useRef(null)
   const {showConfirmation, setShowConfirmation} = useConfirmContext()
@@ -72,4 +72,4 @@ const DiaryPage = ({}) => {
   )
 }
 
-export default DiaryPage
+export default CraftPage
