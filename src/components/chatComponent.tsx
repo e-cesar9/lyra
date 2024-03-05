@@ -33,17 +33,17 @@ export const ChatComponent = ({inputRef, containerRef}) => {
   }
 
   useEffect(() => {
-    containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
+    // containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
     inputRef.current.focus()
-    inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
+    // inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
 
-    if (inputRef.current && window.innerWidth >= 1280) {
-      setTimeout(() => {
-        containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
-        inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
-        inputRef.current.focus()
-      }, 15500)
-    }
+    // if (inputRef.current && window.innerWidth >= 1280) {
+    //   setTimeout(() => {
+    //     containerRef.current.scrollTo(0, containerRef.current.scrollHeight)
+    //     inputRef.current.scrollTo(0, inputRef.current.scrollHeight)
+    //     inputRef.current.focus()
+    //   }, 15500)
+    // }
   }, [messages, history])
 
   const onSubmit = async (event: React.KeyboardEvent<HTMLInputElement>) => {
