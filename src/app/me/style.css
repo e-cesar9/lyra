@@ -17,12 +17,9 @@
 
 body{
 	height: 100%;
-	scroll-behavior: smooth;
+	overscroll-behavior-y: none;
 }
 
-html {
-	scroll-behavior: smooth;
-}
 
 
 .itemMenu{
@@ -58,7 +55,7 @@ figcaption{
 	overflow-y: scroll;
 	scroll-behavior:smooth;
 	scrollbar-width: none;
-	scroll-snap-type: y mandatory;
+	scroll-snap-type: y proximity;
 
 }
 

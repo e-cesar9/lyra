@@ -34,7 +34,7 @@ const DiaryPage: React.FC = () => {
       <div id="Me" className="rounded layout w-full">
         <div className="part echo flex flex-col relative">
           <div className="flex flex-col h-screen items-center w-full justify-center">
-            <div className=" flex flex-row justify-center pl-[45px] z-50 items-center swap">
+            <div className="flex flex-row justify-center pl-[45px] z-50 items-center swap">
               <div className="grid__item">
                 <div
                   className="grid__item-img photo"
