@@ -59,8 +59,9 @@ figcaption{
 
 }
 
-.part{
+.part:not(:last-child){
 	scroll-snap-align:start;
+	scroll-snap-stop: always;
 }
 
 .lined{
