@@ -7,7 +7,6 @@ import Sidebar from "../sideBar"
 import PageTransition from "@/src/utils/effect/PageTransition"
 
 const LibraryPage = ({}) => {
-
   const menuRef = React.useRef()
   React.useEffect(() => {
     if (window.innerWidth > 760) {

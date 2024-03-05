@@ -3,7 +3,22 @@
 	src: url(/assets/fonts/Zodiak-Variable.ttf);
 }
 
-
-.mainTeam{
+body{
+    height: 100%;
+    overflow-y: scroll;
+}
+.main{
     font-family: 'Zodiak-Variable';
+}
+
+img{
+    max-width: none;
+}
+
+.team__bio{
+	font-weight: 300;
+    /* font-size: 27px;
+	line-height: 2em;
+    letter-spacing: .1em; */
+
 }
