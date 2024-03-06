@@ -86,7 +86,7 @@ body {
     .main{
         position: absolute;
     }
-    img{
+    .team__picture{
         max-width: 60%;
     }
 
@@ -106,4 +106,17 @@ body {
         margin-left: 0;
     }
 
+}
+
+@media (min-width: 760px) and (max-width: 1440px) { 
+    .team__picture{
+        max-width: 65%;
+    }
+    .team__bio{
+        margin-left: 0;
+    }
+    .team__text{
+        margin-left: -10rem;
+        justify-content: center;
+    }
 }

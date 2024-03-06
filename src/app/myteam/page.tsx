@@ -35,8 +35,8 @@ const handleClick = () => {
     <>
       <Sidebar />
       <div className="w-full h-full overflow-y-scroll main">
-        <div className="mainTeam flex text-6xl items-center justify-between w-full relative h-screen">
-          <p className="ml-36">
+        <div className="mainTeam flex text-6xl max-[760px]:text-4xl items-center justify-between w-full relative h-screen">
+          <p className="ml-36 max-[760px]:ml-8">
             From Tokyo to New York,
             <br />
             We come from all
@@ -50,7 +50,7 @@ const handleClick = () => {
             <span className="team__title">Brand Director</span>
             <Image
               src="/vicki-final1.jpg"
-              className=""
+              className="team__picture"
               alt="Brand logo from Lyra Haruto"
               width={600}
               height={800}
