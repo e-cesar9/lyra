@@ -81,7 +81,7 @@ const FatePage = ({}) => {
             Lyra Haruto Company, where every story is a doorway to a new world.
           </p>
         </div>
-        <div className="flex flex-col w-full h-screen max-[760px]:h-auto mt-36 max-[1440px]:mt-64 pb-8 pl-6 text-2xl">
+        <div className="flex flex-col w-full h-screen max-[760px]:h-auto mt-16 max-[1550px]:mt-64 pb-8 pl-6 text-2xl">
           <h1>Artistic Roles</h1>
           <p>
             Animator:{" "}
@@ -450,8 +450,8 @@ const FatePage = ({}) => {
             </span>
           </p>
         </div>
-      </div>
       <PageTransition />
+      </div>
     </>
   )
 }

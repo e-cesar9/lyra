@@ -3,6 +3,7 @@ import React from "react"
 import Sidebar from "../sideBar"
 import Image from "next/image"
 import "./style.css"
+import PageTransition from "@/src/utils/effect/PageTransition"
 
 const TeamPage = ({}) => {
 
@@ -36,7 +37,7 @@ const handleClick = () => {
       <Sidebar />
       <div className="w-full h-full overflow-y-scroll main">
         <div className="mainTeam flex text-6xl max-[760px]:text-4xl items-center justify-between w-full relative h-screen">
-          <p className="ml-36 max-[760px]:ml-8">
+          <p className="ml-36 max-[760px]:ml-6">
             From Tokyo to New York,
             <br />
             We come from all
@@ -118,7 +119,7 @@ const handleClick = () => {
 
           </div>
         </div>
-
+        <PageTransition />
       </div>
     </>
   )
