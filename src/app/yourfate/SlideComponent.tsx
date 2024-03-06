@@ -80,8 +80,6 @@ const SlideComponent: React.FC = () => {
       document.querySelectorAll(".slider__scroll"),
     ) as HTMLElement[] // Cast to HTMLElement[]
 
-    //   console.log(scrollerEncod)
-
     // Scene
     const scene = new THREE.Scene()
 

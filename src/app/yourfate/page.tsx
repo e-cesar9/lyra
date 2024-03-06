@@ -6,7 +6,6 @@ import Sidebar from "../sideBar"
 import * as THREE from "three"
 
 import "./style.css"
-// import "./script.js"
 import PageTransition from "@/src/utils/effect/PageTransition"
 import SlideComponent from "./SlideComponent"
 
