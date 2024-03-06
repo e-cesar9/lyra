@@ -45,7 +45,7 @@ const handleClick = () => {
           </p>
         </div>
 
-        <div className="teamContent flex flex-row justify-center w-full relative h-screen">
+        <div className="teamContent flex flex-row justify-center max-[760px]:justify-start max-[760px]:ml-6 w-full relative h-screen">
           <div className="team__brand">
             <span className="team__title">Brand Director</span>
             <Image
@@ -82,7 +82,7 @@ const handleClick = () => {
           </div>
         </div>
 
-        <div className="teamContent flex flex-row justify-start w-full relative h-screen ml-8 mt-64">
+        <div className="teamContent flex flex-row justify-start w-full relative h-screen ml-6 mt-64 max-[760px]:mt-0">
           <div className="team__brand">
             <span className="team__title">Brand Director</span>
             <Image

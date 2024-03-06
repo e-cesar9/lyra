@@ -91,7 +91,7 @@ body {
     }
 
     .team__brand{
-        padding-left: 1rem;
+        /* padding-left: 1rem; */
     }
 
     .team__text{
@@ -103,9 +103,8 @@ body {
     }
 
     .team__bio{
-        margin-left: 0;
+        margin-left: -50px;
         font-size: 16px;
-
     }
 
 }
