@@ -45,7 +45,7 @@ const handleClick = () => {
           </p>
         </div>
 
-        <div className="teamContent flex flex-row justify-center max-[760px]:justify-start max-[760px]:ml-6 w-full relative h-screen">
+        <div className="teamContent flex flex-row justify-center max-[760px]:justify-end max-[760px]:ml-6 w-full relative h-screen">
           <div className="team__brand">
             <span className="team__title">Brand Director</span>
             <Image
