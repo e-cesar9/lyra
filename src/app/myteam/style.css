@@ -17,8 +17,64 @@ img{
 
 .team__bio{
 	font-weight: 300;
-    /* font-size: 27px;
-	line-height: 2em;
-    letter-spacing: .1em; */
+    font-size: 18px;
+    width: 100%;
+    color: hsla(0,0%,100%,.3);
+    transition: all .65s ease-in-out;
 
+}
+.btnClick{
+    border-color: hsla(0,0%,100%,.3);
+}
+.team__title{
+    font-weight: bold;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.plusminus {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	
+	&.active {
+		&:before {
+			transform: translatey(-50%) rotate(-90deg);
+			opacity: 0;
+		}
+		&:after {
+			transform: translatey(-50%) rotate(0);
+		}
+	}
+	
+	&:before , &:after {
+		content: "";
+		display: block;
+		background-color: #fff;
+		position: absolute;		
+		top: 50%; left: 0;
+		transition: .4s;
+		width: 100%;
+		height: 1px;
+	}
+	
+	&:before {		
+		transform: translatey(-50%);
+	}
+	
+	&:after {
+		transform: translatey(-50%) rotate(90deg);
+	}
+	
 }
