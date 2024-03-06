@@ -6,9 +6,12 @@
 body{
     height: 100%;
     overflow-y: scroll;
+    scrollbar-width: none;
+
 }
 .main{
     font-family: 'Zodiak-Variable';
+    scrollbar-width: none;
 }
 
 img{
@@ -77,4 +80,30 @@ body {
 		transform: translatey(-50%) rotate(90deg);
 	}
 	
+}
+
+@media (max-width: 760px) { 
+    .main{
+        position: absolute;
+    }
+    img{
+        max-width: 60%;
+    }
+
+    .team__brand{
+        padding-left: 1rem;
+    }
+
+    .team__text{
+        position: absolute;
+        padding-left: 0;
+        margin-top: 2rem;
+        left: 50%;
+        width: 60%;
+    }
+
+    .team__bio{
+        margin-left: 0;
+    }
+
 }

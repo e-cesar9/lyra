@@ -46,7 +46,7 @@ const handleClick = () => {
         </div>
 
         <div className="teamContent flex flex-row justify-center w-full relative h-screen">
-          <div className="">
+          <div className="team__brand">
             <span className="team__title">Brand Director</span>
             <Image
               src="/vicki-final1.jpg"
@@ -58,7 +58,7 @@ const handleClick = () => {
             />
             <span>1</span>
           </div>
-          <div className="w-1/3 flex flex-col justify-end pl-3 ml-[-3rem]">
+          <div className="w-1/3 flex flex-col justify-end pl-3 ml-[-3rem] team__text">
             <p className="text-5xl mb-9 leading-[4rem]">
               Lyra <br /> Haruto
             </p>
