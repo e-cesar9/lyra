@@ -81,7 +81,7 @@ const FatePage = ({}) => {
             Lyra Haruto Company, where every story is a doorway to a new world.
           </p>
         </div>
-        <div className="flex flex-col w-full h-screen max-[760px]:h-auto mt-16 max-[1550px]:mt-64 pb-8 pl-6 text-2xl">
+        <div className="flex flex-col w-full h-screen max-[760px]:h-auto mt-16 max-[1550px]:mt-64 pl-6 text-2xl">
           <h1>Artistic Roles</h1>
           <p>
             Animator:{" "}
@@ -141,7 +141,6 @@ const FatePage = ({}) => {
               Creates digital paintings that serve as backdrops.
             </span>
           </p>
-
           <h1>Technique Roles</h1>
           <p>
             Director:{" "}
@@ -203,7 +202,6 @@ const FatePage = ({}) => {
               maintained.
             </span>
           </p>
-
           <h1>Support and Production Roles</h1>
           <p>
             Production Manager:{" "}
@@ -255,7 +253,6 @@ const FatePage = ({}) => {
               against cyber-attacks and data breaches.
             </span>
           </p>
-
           <h1>Development and Pre-production Roles</h1>
           <p>
             Development Executive:{" "}
@@ -277,7 +274,6 @@ const FatePage = ({}) => {
               is coherent and well-structured.
             </span>
           </p>
-
           <h1>Production Roles</h1>
           <p>
             Animation Supervisor:{" "}
@@ -314,7 +310,6 @@ const FatePage = ({}) => {
               animation.
             </span>
           </p>
-
           <h1>Post-production Roles</h1>
           <p>
             Supervisor:{" "}
@@ -348,7 +343,6 @@ const FatePage = ({}) => {
               Manages AI social network accounts.
             </span>
           </p>
-
           <h1>Other Important Roles</h1>
           <p>
             IT Technician/Support:{" "}
@@ -376,7 +370,6 @@ const FatePage = ({}) => {
               Manages budget, accounting, project and studio finances.
             </span>
           </p>
-
           <h1>AI Branch Roles</h1>
           <p>
             AI Research Scientist:{" "}
@@ -448,9 +441,10 @@ const FatePage = ({}) => {
             <span className="text_roles">
               Advises on the studio&apos;s AI adoption strategy.
             </span>
-          </p>
+          </p>{" "}
+          <br />
         </div>
-      <PageTransition />
+        <PageTransition />
       </div>
     </>
   )

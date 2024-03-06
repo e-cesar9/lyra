@@ -6,37 +6,36 @@ import "./style.css"
 import PageTransition from "@/src/utils/effect/PageTransition"
 
 const TeamPage = ({}) => {
+  //   let button = document.querySelector('.plusminus');
+  // button.addEventListener('click', (e) => {
+  // 	e.target.classList.toggle('active')
+  // })
 
-//   let button = document.querySelector('.plusminus');
-// button.addEventListener('click', (e) => {
-// 	e.target.classList.toggle('active')
-// })
+  const [isActive, setIsActive] = React.useState(false)
 
-const [isActive, setIsActive] = React.useState(false);
+  React.useEffect(() => {
+    const button = document.querySelector(".plusminus")
 
-React.useEffect(() => {
-  const button = document.querySelector('.plusminus');
-  
-  if (isActive) {
-    button.classList.add('active');
-  } else {
-    button.classList.remove('active');
+    if (isActive) {
+      button.classList.add("active")
+    } else {
+      button.classList.remove("active")
+    }
+
+    return () => {
+      // Cleanup function to remove event listeners if necessary
+    }
+  }, [isActive])
+
+  const handleClick = () => {
+    setIsActive(!isActive)
   }
-
-  return () => {
-    // Cleanup function to remove event listeners if necessary
-  };
-}, [isActive]);
-
-const handleClick = () => {
-  setIsActive(!isActive);
-};
 
   return (
     <>
       <Sidebar />
-      <div className="w-full h-full overflow-y-scroll main">
-        <div className="mainTeam flex text-6xl max-[760px]:text-4xl items-center justify-between w-full relative h-screen">
+      <div className="w-full h-full overflow-y-scroll overflow-x-hidden main">
+        <div className="mainTeam flex text-6xl max-[760px]:text-4xl items-center justify-between w-full relative h-screen overflow-x-hidden">
           <p className="ml-36 max-[760px]:ml-6">
             From Tokyo to New York,
             <br />
@@ -64,11 +63,17 @@ const handleClick = () => {
               Lyra <br /> Haruto
             </p>
             <span className="border w-[100px] h-[100px] rounded-full mb-4 btnClick">
-              <button className= "w-full h-full p-9 " onClick={handleClick}>
-              {" "}<div className={`plusminus ${isActive ? 'active' : ''}`} ></div></button>
+              <button className="w-full h-full p-9 " onClick={handleClick}>
+                {" "}
+                <div className={`plusminus ${isActive ? "active" : ""}`}></div>
+              </button>
             </span>
-            
-            <p className={`${isActive ? 'opacity-100 ml-20' : 'opacity-0 ml-4'} w-30 team__bio  pb-4`} >
+
+            <p
+              className={`${
+                isActive ? "opacity-100 ml-20" : "opacity-0 ml-4"
+              } w-30 team__bio  pb-4`}
+            >
               Optio Urna s.d.a Sit-mi in v nisi-nativo AC minori
               hectorem/impiorum. Firmissime eius Axioma, Non mus usus urgeant me
               d AB Probitas sed Aut continue modo omnis. Eum nobilis eos
@@ -79,7 +84,6 @@ const handleClick = () => {
               praefixionem mus litterarum Minim eaque te occiditur oppressor
               facultates per praetensionis nisl dui urna.
             </p>
-
           </div>
         </div>
 
@@ -101,11 +105,17 @@ const handleClick = () => {
               Lyra <br /> Haruto
             </p>
             <span className="border w-[100px] h-[100px] rounded-full mb-4 btnClick">
-              <button className= "w-full h-full p-9 " onClick={handleClick}>
-              {" "}<div className={`plusminus ${isActive ? 'active' : ''}`} ></div></button>
+              <button className="w-full h-full p-9 " onClick={handleClick}>
+                {" "}
+                <div className={`plusminus ${isActive ? "active" : ""}`}></div>
+              </button>
             </span>
-            
-            <p className={`${isActive ? 'opacity-100 ml-20' : 'opacity-0 ml-4'} w-30 team__bio  pb-4`} >
+
+            <p
+              className={`${
+                isActive ? "opacity-100 ml-20" : "opacity-0 ml-4"
+              } w-30 team__bio  pb-4`}
+            >
               Optio Urna s.d.a Sit-mi in v nisi-nativo AC minori
               hectorem/impiorum. Firmissime eius Axioma, Non mus usus urgeant me
               d AB Probitas sed Aut continue modo omnis. Eum nobilis eos
@@ -116,7 +126,6 @@ const handleClick = () => {
               praefixionem mus litterarum Minim eaque te occiditur oppressor
               facultates per praetensionis nisl dui urna.
             </p>
-
           </div>
         </div>
         <PageTransition />
