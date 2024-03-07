@@ -33,7 +33,7 @@ html {
 }
 
 #overlayHello{
-    padding-left: 250px;
+    /* padding-left: 250px; */
     background-color: #f1a7ce;
     text-align: center;
     line-height: 1;

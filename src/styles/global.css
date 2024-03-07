@@ -375,7 +375,6 @@ MediaQuery General
   .sidebar{
     overflow-y: scroll;
     scrollbar-width: none;
-
   }
   .scrollbar-trigger{
     overflow-y: scroll;

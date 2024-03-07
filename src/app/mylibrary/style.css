@@ -10,8 +10,8 @@ body{
 
 
 @font-face {
-	font-family: 'Stardom-Regular';
-	src: url(/assets/fonts/Stardom-Regular.ttf);
+    font-family: 'Technor-Variable';
+    src: url(/assets/fonts/Technor-Variable.ttf);
 }
 
 @media (max-width: 1910px) { 

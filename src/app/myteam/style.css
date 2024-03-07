@@ -3,6 +3,11 @@
 	src: url(/assets/fonts/Zodiak-Variable.ttf);
 }
 
+@font-face {
+    font-family: 'Technor-Variable';
+    src: url(/assets/fonts/Technor-Variable.ttf);
+  }
+
 body{
     height: 100%;
     overflow-y: scroll;
@@ -30,7 +35,12 @@ img{
     border-color: hsla(0,0%,100%,.3);
 }
 .team__title{
+    font-family: 'Technor-Variable';
     font-weight: bold;
+}
+
+.team__name{
+    letter-spacing: .1em;
 }
 
 

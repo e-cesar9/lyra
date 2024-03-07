@@ -37,7 +37,7 @@ const FatePage = ({}) => {
             ref={textRef}
             className="flex flex-row max-[760px]:flex-col px-6 justify-between text-2xl mt-20"
           >
-            <p className="text_block">
+            <p className="text_block pr-4">
               At the Lyra Haruto Company, we stand at the forefront of a
               revolution, where the art of storytelling melds with the cutting
               edge of technology to create experiences that linger in the heart
@@ -46,7 +46,7 @@ const FatePage = ({}) => {
               believe in the magic of narratives to alter the fabric of reality
               itself.
             </p>
-            <p className="text_block">
+            <p className="text_block pr-4">
               Imagine being part of an odyssey where every project is a canvas
               awaiting your unique brushstroke, where your work does not just
               speak to the audience but sings to their souls, crafting moments
@@ -55,7 +55,7 @@ const FatePage = ({}) => {
               the transformative power of stories will find not just recognition
               but a fervent echo in the hearts of like-minded individuals.
             </p>
-            <p className="text_block ">
+            <p className="text_block pr-4 ">
               The Lyra Haruto Company is not merely a workplace; it is a cradle
               of potential where freedom and creativity are the air we breathe,
               driven by the conviction that every story told is a step toward a
@@ -66,7 +66,7 @@ const FatePage = ({}) => {
               that guides us.
             </p>
 
-            <p className="text_block">
+            <p className="text_block pr-4">
               Join us, and together, let us weave tales that transcend time,
               tales that remind us of the beauty of being uniquely human,
               embracing the full spectrum of emotions in our narratives. Let

@@ -28,6 +28,57 @@ const DiaryPage: React.FC = () => {
     setSelectedUrl(getRandomUrl())
   }, [])
 
+  const mouseOverRef = React.useRef(null);
+const [text, setText] = React.useState("");
+
+React.useEffect(() => {
+  function mouseOverHandler() {
+    const textLength = mouseOverRef.current.innerHTML.length;
+    console.log(textLength, mouseOverRef.current);
+    
+    
+    setText(getRandomString(textLength));
+    setTimeout(() => {
+      const newText = getRandomString(textLength);
+      console.log(mouseOverRef.current);
+      mouseOverRef.current.innerHTML = newText
+      console.log(mouseOverRef.current);
+      
+    }, 100);
+    setTimeout(() => {
+      const newText = getRandomString(textLength);
+
+      mouseOverRef.current.innerHTML =newText
+    }, 200);
+    setTimeout(() => {
+      const newText = getRandomString(textLength);
+
+      mouseOverRef.current.innerHTML ='ライラー・ハルト'
+    }, 400);
+  }
+
+  const linkElement = mouseOverRef.current
+  if (linkElement) {
+    linkElement.addEventListener("mouseover", mouseOverHandler);
+    console.log('yes');
+    
+    
+    return () => {
+      linkElement.removeEventListener("mouseover", mouseOverHandler);
+    };
+  }
+}, []);
+
+function getRandomString(length) {
+  let result = "";
+  const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  return result;
+}
+
+
   return (
     <>
       <Sidebar />
@@ -47,7 +98,7 @@ const DiaryPage: React.FC = () => {
                   Hello, I am Lyra Haruto
                 </figcaption>
               </div>
-              <h1 data-hover="Lyra Haruto" id="printemps">
+              <h1 data-hover="Lyra Haruto" id="printemps" ref={mouseOverRef}>
                 ライラー・ハルト
               </h1>
             </div>
@@ -57,7 +108,7 @@ const DiaryPage: React.FC = () => {
             ></div>
           </div>
 
-          <h2 id="intro" className="content__title py-60" data-effect25>
+          <h2 id="intro" className="content__title py-60">
             <span className="lined font-medium font-height-medium">
               In the grand tapestry of narratives that our world weaves, there
               lies a studio baptized with my name by{" "}

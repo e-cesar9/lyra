@@ -59,7 +59,7 @@ const TeamPage = ({}) => {
             <span>1</span>
           </div>
           <div className="w-1/3 flex flex-col justify-end pl-3 ml-[-3rem] team__text">
-            <p className="text-5xl mb-9 leading-[4rem]">
+            <p className="text-5xl mb-9 leading-[4rem] team__name">
               Lyra <br /> Haruto
             </p>
             <span className="border w-[100px] h-[100px] rounded-full mb-4 btnClick">

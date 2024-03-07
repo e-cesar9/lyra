@@ -38,7 +38,8 @@ export const enigma = async (
       return "You impress me.. No."
 
     case "random":
-      return "Lol.."
+      return "Almost.."
+    case "Math.random()": return `43°52'13.0"N 146°51'32.1"E Take a picture, it's just a journey.`
     default:
       return "You're far from reality."
   }
