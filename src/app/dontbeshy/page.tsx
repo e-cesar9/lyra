@@ -195,7 +195,7 @@ const DiaryPage = ({}) => {
   return (
     <>
       <Sidebar />
-      <div className="w-full overflow-y-auto" id="contact-main">
+      <div className="w-full overflow-y-auto h-screen relative" id="contact-main">
         <div className="flex flex-col w-full h-screen" id="headContact">
           <div className="flex flex-col justify-center align-middle items-center h-screen w-full mt-4">
             <div ref={hiRef} className="z-20">
