@@ -19,8 +19,9 @@ div#__next,
 div#__next > div {
   height: 100%;
   overflow: auto;
-  min-height: fill-available;
+  min-height: -moz-available;
   min-height: -webkit-fill-available;
+  min-height: fill-available;
 }
 
 ::-webkit-scrollbar {
