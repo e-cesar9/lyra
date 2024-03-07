@@ -1483,8 +1483,8 @@ const LibraryPage = ({}) => {
             />
           </a>
         </div>
-        <PageTransition />
       </nav>
+        <PageTransition />
     </>
   )
 }

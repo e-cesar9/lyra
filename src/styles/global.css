@@ -322,7 +322,7 @@ to { transform: translate(0, 100vh)}
 	position: absolute;
   height: 100%;
   width: 100%;
-	z-index: 3000;
+	z-index: 300;
 	pointer-events: none;
 	opacity: 1;
 	--columns: 11;
