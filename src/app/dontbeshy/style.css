@@ -188,7 +188,11 @@ color: black;
     clip-path: inset(0%) ;
     transition: all 0.2 ease;
 } */
-
+@media (max-width: 1550px) and (min-width: 761px){
+    #gifForm{
+        min-width: 0;
+    }
+}
 
 @media (max-width : 761px){
     #overlayHello{
@@ -214,10 +218,10 @@ padding-left: 0;   }
     #lyrawalk{
         z-index: -5;
     }
-    #header-text{
+    /* #header-text{
         display: flex;
         flex-direction: column;
-    }
+    } */
     #footer-text{
         display: flex;
         flex-direction: column;

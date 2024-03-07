@@ -224,7 +224,7 @@ const DiaryPage = ({}) => {
             </a>
           </div>
           <div
-            className="flex flex-row px-12 pb-6 justify-between"
+            className="flex flex-row max-[1500px]:flex-col px-12 pb-6 justify-between"
             id="header-text"
           >
             {" "}
