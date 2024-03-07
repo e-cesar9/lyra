@@ -370,7 +370,7 @@ MediaQuery General
     background: black;
   }
   .sidebar{
-    overflow-y: auto;
+    overflow-y: scroll;
   }
   .lyrart{
     display: none;
