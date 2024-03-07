@@ -90,12 +90,8 @@ margin-top: -259px;
 font-size: 72px;
 writing-mode: vertical-rl;
 text-orientation: upright;
-width: auto;
-display: inline-block; 
-box-sizing: border-box;
-height: auto;
 }
-/*  */
+
 
 
 
@@ -270,7 +266,7 @@ height: auto;
 		writing-mode: vertical-rl;
 		text-orientation: upright;
 		}
-		/* #printemps::after {
+		#printemps::after {
 		  content: attr(data-hover);
 		  font-size: 21px;
 		  font-weight: 500;
@@ -284,7 +280,7 @@ height: auto;
 		  top: 0;
 		  left: 0;
 		  transition: opacity 0.5s, visibility 0.5s;
-		} */
+		}
 	  
 		#printemps:hover::after {
 		  visibility: visible;

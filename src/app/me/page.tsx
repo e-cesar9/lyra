@@ -48,8 +48,13 @@ React.useEffect(() => {
     setTimeout(() => {
       const newText = getRandomString(textLength);
 
-      mouseOverRef.current.innerHTML =newText
+      mouseOverRef.current.innerHTML ='Lyra Haruto'
     }, 200);
+    setTimeout(() => {
+      const newText = getRandomString(textLength);
+
+      mouseOverRef.current.innerHTML =newText
+    }, 300);
     setTimeout(() => {
       const newText = getRandomString(textLength);
 
