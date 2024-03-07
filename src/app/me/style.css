@@ -85,11 +85,19 @@ figcaption{
 
 
 #printemps{
-position: relative;
+position: absolute;
 margin-top: -259px;
+right: 30%;
 font-size: 72px;
+width: 100px;
 writing-mode: vertical-rl;
 text-orientation: upright;
+}
+
+.highlighted{
+	font-size: 42px!important;
+	margin-right:2rem;
+
 }
 
 

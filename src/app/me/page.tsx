@@ -29,34 +29,47 @@ const DiaryPage: React.FC = () => {
   }, [])
 
   const mouseOverRef = React.useRef(null);
-const [text, setText] = React.useState("");
+const [text, setText] = React.useState("ライラー・ハルト");
+const originalTextRef = React.useRef("ライラー・ハルト");
+const [className, setClassName] = React.useState("");
 
 React.useEffect(() => {
   function mouseOverHandler() {
     const textLength = mouseOverRef.current.innerHTML.length;
-    console.log(textLength, mouseOverRef.current);
+    originalTextRef.current = mouseOverRef.current.innerHTML;
     
     
     setText(getRandomString(textLength));
     setTimeout(() => {
+      setClassName("highlighted");
       const newText = getRandomString(textLength);
-      console.log(mouseOverRef.current);
       mouseOverRef.current.innerHTML = newText
-      console.log(mouseOverRef.current);
       
     }, 100);
+
     setTimeout(() => {
+      const newText = getRandomString(textLength);
+      setClassName("highlighted");
+
+      mouseOverRef.current.innerHTML =newText
+    }, 200);
+    setTimeout(() => {
+      setClassName("highlighted");
+
       const newText = getRandomString(textLength);
 
       mouseOverRef.current.innerHTML ='Lyra Haruto'
-    }, 200);
-    setTimeout(() => {
-      const newText = getRandomString(textLength);
+    }, 400);
+  }
 
-      mouseOverRef.current.innerHTML =newText
-    }, 300);
+  function mouseLeaveHandler() {
+    mouseOverRef.current.innerHTML = originalTextRef;
+    setText(originalTextRef.current);
+    setClassName("");
+
     setTimeout(() => {
-      const newText = getRandomString(textLength);
+
+      setClassName("");
 
       mouseOverRef.current.innerHTML ='ライラー・ハルト'
     }, 400);
@@ -65,10 +78,10 @@ React.useEffect(() => {
   const linkElement = mouseOverRef.current
   if (linkElement) {
     linkElement.addEventListener("mouseover", mouseOverHandler);
-    console.log('yes');
-    
+    linkElement.addEventListener("mouseleave", mouseLeaveHandler);
     
     return () => {
+      linkElement.removeEventListener("mouseleave", mouseLeaveHandler);
       linkElement.removeEventListener("mouseover", mouseOverHandler);
     };
   }
@@ -103,8 +116,8 @@ function getRandomString(length) {
                   Hello, I am Lyra Haruto
                 </figcaption>
               </div>
-              <h1 data-hover="Lyra Haruto" id="printemps" ref={mouseOverRef}>
-                ライラー・ハルト
+              <h1 data-hover="Lyra Haruto" id="printemps" ref={mouseOverRef} className={className}>
+                {text}
               </h1>
             </div>
             <div
