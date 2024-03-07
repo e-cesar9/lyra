@@ -508,10 +508,10 @@ const DiaryPage = ({}) => {
           </div>
           <div className="flex flex-col justify-end align-end h-screen w-full -mt-8">
             <div className="py-8">
-              <div className="text-7xl text-center uppercase">
+              <div className="text-7xl text-center uppercase relative z-10"> 
                 LYRA HARUTO - ライラー・ハルト{" "}
                 <span>
-                  <img src="lyrawalk2.gif" alt="" id="lyrawalk" />
+                  <img src="lyrawalk2.gif" alt="" id="lyrawalk" className="relative -z-10" />
                 </span>
               </div>
             </div>
