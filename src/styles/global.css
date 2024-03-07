@@ -375,6 +375,9 @@ MediaQuery General
   .sidebar{
     overflow-y: scroll;
   }
+  .scrollbar-trigger{
+    overflow-y: scroll;
+  }
   .lyrart{
     display: none;
   }
