@@ -197,12 +197,12 @@ const DiaryPage = ({}) => {
       <Sidebar />
       <div className="w-full overflow-y-auto" id="contact-main">
         <div className="flex flex-col w-full h-screen" id="headContact">
-          <div className="flex flex-col justify-center align-middle items-center h-screen w-full mt-4">
+          <div className="flex flex-col justify-center max-[760px]:justify-start align-middle items-center h-screen w-full mt-4">
             <div ref={hiRef} className="z-20">
               <p className="overflow-hidden py-1 z-20">SAY HI</p>
             </div>
 
-            <div className="py-16 max-[760px]:pb-2">
+            <div className="py-16 max-[760px]:pb-2 max-[760px]:pt-40">
               <div className="text-8xl max-[760px]:text-6xl text-center uppercase relative overflow-hidden">
                 <div className="revealText"> No need </div>
               </div>
