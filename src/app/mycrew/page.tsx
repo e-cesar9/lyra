@@ -87,8 +87,8 @@ const TeamPage = ({}) => {
           </div>
         </div>
 
-        <div className="teamContent flex flex-row justify-center max-[760px]:justify-end max-[760px]:mr-6 w-full relative h-screen">
-        <div className="w-1/3 flex flex-col justify-end items-end team__text pr-3 mr-[-3rem] z-10">
+        <div className="teamContent flex flex-row justify-end pr-40 max-[760px]:justify-end mt-48 max-[1080px]:pr-6 w-full relative h-screen">
+        <div className="w-1/3 flex flex-col justify-end items-end team__text_right pr-3 mr-[-3rem] z-10">
             <p className="text-5xl mb-9 leading-[4rem] team__name text-right ">
               Lyra <br /> Haruto
             </p>
@@ -101,8 +101,8 @@ const TeamPage = ({}) => {
 
             <p
               className={`${
-                isActive ? "opacity-100 ml-20" : "opacity-0 ml-4"
-              } w-30 team__bio  pb-4`}
+                isActive ? "opacity-100 mr-20" : "opacity-0 mr-4"
+              } w-30 team__bio  pb-4 text-right  max-[760px]:mr-0`}
             >
               Optio Urna s.d.a Sit-mi in v nisi-nativo AC minori
               hectorem/impiorum. Firmissime eius Axioma, Non mus usus urgeant me
@@ -115,8 +115,8 @@ const TeamPage = ({}) => {
               facultates per praetensionis nisl dui urna.
             </p>
           </div>
-          <div className="team__brand">
-            <span className="team__title flex flex-col items-end">Brand Director</span>
+          <div className="team__brand flex flex-col items-end">
+            <span className="team__title">Brand Director</span>
             <Image
               src="/vicki-final1.jpg"
               className="team__picture"
@@ -127,10 +127,9 @@ const TeamPage = ({}) => {
             />
             <span>1</span>
           </div>
-
         </div>
 
-        <div className="teamContent flex flex-row justify-center max-[760px]:justify-end max-[760px]:ml-6 w-full relative h-screen">
+        <div className="teamContent flex flex-row justify-center max-[760px]:justify-end mt-48 max-[760px]:ml-6 w-full relative h-screen">
           <div className="team__brand">
             <span className="team__title">Brand Director</span>
             <Image
@@ -172,8 +171,8 @@ const TeamPage = ({}) => {
           </div>
         </div>
 
-        <div className="teamContent flex flex-row justify-center max-[760px]:justify-end max-[760px]:mr-6 w-full relative h-screen">
-        <div className="w-1/3 flex flex-col justify-end items-end team__text pr-3 mr-[-3rem] z-10">
+        <div className="teamContent flex flex-row justify-end pr-40 max-[760px]:justify-end mt-48 max-[1080px]:pr-6 w-full relative h-screen">
+        <div className="w-1/3 flex flex-col justify-end items-end team__text_right pr-3 mr-[-3rem] z-10">
             <p className="text-5xl mb-9 leading-[4rem] team__name text-right ">
               Lyra <br /> Haruto
             </p>
@@ -186,8 +185,8 @@ const TeamPage = ({}) => {
 
             <p
               className={`${
-                isActive ? "opacity-100 ml-20" : "opacity-0 ml-4"
-              } w-30 team__bio  pb-4`}
+                isActive ? "opacity-100 mr-20" : "opacity-0 mr-4"
+              } w-30 team__bio  pb-4 text-right`}
             >
               Optio Urna s.d.a Sit-mi in v nisi-nativo AC minori
               hectorem/impiorum. Firmissime eius Axioma, Non mus usus urgeant me
@@ -200,8 +199,8 @@ const TeamPage = ({}) => {
               facultates per praetensionis nisl dui urna.
             </p>
           </div>
-          <div className="team__brand">
-            <span className="team__title flex flex-col items-end">Brand Director</span>
+          <div className="team__brand flex flex-col items-end">
+            <span className="team__title">Brand Director</span>
             <Image
               src="/vicki-final1.jpg"
               className="team__picture"
@@ -212,10 +211,9 @@ const TeamPage = ({}) => {
             />
             <span>1</span>
           </div>
-
         </div>
 
-        <div className="teamContent flex flex-row justify-center max-[760px]:justify-end max-[760px]:ml-6 w-full relative h-screen">
+        <div className="teamContent flex flex-row justify-center max-[760px]:justify-end mt-48 max-[760px]:ml-6 w-full relative h-screen">
           <div className="team__brand">
             <span className="team__title">Brand Director</span>
             <Image
@@ -257,8 +255,8 @@ const TeamPage = ({}) => {
           </div>
         </div>
 
-        <div className="teamContent flex flex-row justify-center max-[760px]:justify-end max-[760px]:mr-6 w-full relative h-screen">
-        <div className="w-1/3 flex flex-col justify-end items-end team__text pr-3 mr-[-3rem] z-10">
+        <div className="teamContent flex flex-row justify-end pr-40 max-[760px]:justify-end mt-48 max-[1080px]:pr-6 w-full relative h-screen">
+        <div className="w-1/3 flex flex-col justify-end items-end team__text_right pr-3 mr-[-3rem] z-10">
             <p className="text-5xl mb-9 leading-[4rem] team__name text-right ">
               Lyra <br /> Haruto
             </p>
@@ -271,8 +269,8 @@ const TeamPage = ({}) => {
 
             <p
               className={`${
-                isActive ? "opacity-100 ml-20" : "opacity-0 ml-4"
-              } w-30 team__bio  pb-4`}
+                isActive ? "opacity-100 mr-20" : "opacity-0 mr-4"
+              } w-30 team__bio  pb-4 text-right`}
             >
               Optio Urna s.d.a Sit-mi in v nisi-nativo AC minori
               hectorem/impiorum. Firmissime eius Axioma, Non mus usus urgeant me
