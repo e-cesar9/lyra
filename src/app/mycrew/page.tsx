@@ -32,7 +32,7 @@ const TeamPage = ({}) => {
       <Sidebar />
       <div className="w-full h-full overflow-y-scroll overflow-x-hidden main">
         <div className="mainTeam flex text-6xl max-[760px]:text-4xl items-center justify-between w-full relative h-screen overflow-x-hidden">
-          <p className="ml-36 max-[760px]:ml-6">
+          <p className="ml-36 max-[760px]:ml-6 max-[760px]:pb-16">
             From Tokyo to Los Angeles,
             <br />
             We come from all
@@ -41,8 +41,8 @@ const TeamPage = ({}) => {
           </p>
         </div>
 
-        <div className="teamContent flex flex-row justify-center  max-[760px]:justify-end max-[760px]:ml-6 w-full relative h-screen">
-          <div className="team__brand">
+        <div className="teamContent flex flex-row justify-center  max-[760px]:justify-end max-[760px]:ml-6 w-full relative h-screen -mt-16">
+          <div className="team__brand min-[1550px]:-ml-16">
             <span className="team__title">Brand Director</span>
             <Image
               src="/vicki-final1.jpg"
@@ -126,7 +126,7 @@ const TeamPage = ({}) => {
         </div>
 
         <div className="teamContent flex flex-row justify-center max-[760px]:justify-end mt-48 max-[1080px]:mt-16 max-[760px]:ml-6 w-full relative h-screen">
-          <div className="team__brand">
+          <div className="team__brand min-[1550px]:-ml-16">
             <span className="team__title">Brand Director</span>
             <Image
               src="/vicki-final1.jpg"
@@ -210,7 +210,7 @@ const TeamPage = ({}) => {
         </div>
 
         <div className="teamContent flex flex-row justify-center max-[760px]:justify-end mt-48 max-[1080px]:mt-16 max-[760px]:ml-6 w-full relative h-screen">
-          <div className="team__brand">
+          <div className="team__brand min-[1550px]:-ml-16">
             <span className="team__title">Brand Director</span>
             <Image
               src="/vicki-final1.jpg"

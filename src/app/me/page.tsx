@@ -116,10 +116,9 @@ const DiaryPage: React.FC = () => {
               <h1
                 data-hover="Lyra Haruto"
                 id="printemps"
-                ref={mouseOverRef}
-                className={className}
+
               >
-                {text}
+ライラー・ハルト
               </h1>
             </div>
             <div
