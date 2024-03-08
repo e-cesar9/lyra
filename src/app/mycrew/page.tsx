@@ -88,7 +88,7 @@ const TeamPage = ({}) => {
         </div>
 
         <div className="teamContent flex flex-row justify-center max-[760px]:justify-end max-[760px]:mr-6 w-full relative h-screen">
-          <div className="w-1/3 flex flex-col justify-end items-end team__text mr-[-3rem] z-10">
+        <div className="w-1/3 flex flex-col justify-end items-end team__text pr-3 mr-[-3rem] z-10">
             <p className="text-5xl mb-9 leading-[4rem] team__name text-right ">
               Lyra <br /> Haruto
             </p>
@@ -116,7 +116,7 @@ const TeamPage = ({}) => {
             </p>
           </div>
           <div className="team__brand">
-            <span className="team__title">Brand Director</span>
+            <span className="team__title flex flex-col items-end">Brand Director</span>
             <Image
               src="/vicki-final1.jpg"
               className="team__picture"
@@ -127,6 +127,7 @@ const TeamPage = ({}) => {
             />
             <span>1</span>
           </div>
+
         </div>
 
         <div className="teamContent flex flex-row justify-center max-[760px]:justify-end max-[760px]:ml-6 w-full relative h-screen">
@@ -172,7 +173,7 @@ const TeamPage = ({}) => {
         </div>
 
         <div className="teamContent flex flex-row justify-center max-[760px]:justify-end max-[760px]:mr-6 w-full relative h-screen">
-          <div className="w-1/3 flex flex-col justify-end items-end team__text mr-[-3rem] z-10">
+        <div className="w-1/3 flex flex-col justify-end items-end team__text pr-3 mr-[-3rem] z-10">
             <p className="text-5xl mb-9 leading-[4rem] team__name text-right ">
               Lyra <br /> Haruto
             </p>
@@ -200,7 +201,7 @@ const TeamPage = ({}) => {
             </p>
           </div>
           <div className="team__brand">
-            <span className="team__title">Brand Director</span>
+            <span className="team__title flex flex-col items-end">Brand Director</span>
             <Image
               src="/vicki-final1.jpg"
               className="team__picture"
@@ -211,6 +212,7 @@ const TeamPage = ({}) => {
             />
             <span>1</span>
           </div>
+
         </div>
 
         <div className="teamContent flex flex-row justify-center max-[760px]:justify-end max-[760px]:ml-6 w-full relative h-screen">
@@ -256,7 +258,7 @@ const TeamPage = ({}) => {
         </div>
 
         <div className="teamContent flex flex-row justify-center max-[760px]:justify-end max-[760px]:mr-6 w-full relative h-screen">
-          <div className="w-1/3 flex flex-col justify-end items-end team__text mr-[-3rem] z-10">
+        <div className="w-1/3 flex flex-col justify-end items-end team__text pr-3 mr-[-3rem] z-10">
             <p className="text-5xl mb-9 leading-[4rem] team__name text-right ">
               Lyra <br /> Haruto
             </p>
@@ -283,7 +285,7 @@ const TeamPage = ({}) => {
               facultates per praetensionis nisl dui urna.
             </p>
           </div>
-          <div className="team__brand">
+          <div className="team__brand flex flex-col items-end">
             <span className="team__title">Brand Director</span>
             <Image
               src="/vicki-final1.jpg"
