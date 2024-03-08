@@ -6,10 +6,6 @@ import "./style.css"
 import PageTransition from "@/src/utils/effect/PageTransition"
 
 const TeamPage = ({}) => {
-  //   let button = document.querySelector('.plusminus');
-  // button.addEventListener('click', (e) => {
-  // 	e.target.classList.toggle('active')
-  // })
 
   const [isActive, setIsActive] = React.useState(false)
 
@@ -45,7 +41,7 @@ const TeamPage = ({}) => {
           </p>
         </div>
 
-        <div className="teamContent flex flex-row justify-center max-[760px]:justify-end max-[760px]:ml-6 w-full relative h-screen">
+        <div className="teamContent flex flex-row justify-center  max-[760px]:justify-end max-[760px]:ml-6 w-full relative h-screen">
           <div className="team__brand">
             <span className="team__title">Brand Director</span>
             <Image
@@ -87,7 +83,7 @@ const TeamPage = ({}) => {
           </div>
         </div>
 
-        <div className="teamContent flex flex-row justify-end pr-40 max-[760px]:justify-end mt-48 max-[1080px]:pr-6 w-full relative h-screen">
+        <div className="teamContent flex flex-row justify-end pr-40 max-[760px]:justify-end mt-48 max-[1080px]:mt-16 max-[1080px]:pr-6 w-full relative h-screen">
         <div className="w-1/3 flex flex-col justify-end items-end team__text_right pr-3 mr-[-3rem] z-10">
             <p className="text-5xl mb-9 leading-[4rem] team__name text-right ">
               Lyra <br /> Haruto
@@ -129,7 +125,7 @@ const TeamPage = ({}) => {
           </div>
         </div>
 
-        <div className="teamContent flex flex-row justify-center max-[760px]:justify-end mt-48 max-[760px]:ml-6 w-full relative h-screen">
+        <div className="teamContent flex flex-row justify-center max-[760px]:justify-end mt-48 max-[1080px]:mt-16 max-[760px]:ml-6 w-full relative h-screen">
           <div className="team__brand">
             <span className="team__title">Brand Director</span>
             <Image
@@ -171,7 +167,7 @@ const TeamPage = ({}) => {
           </div>
         </div>
 
-        <div className="teamContent flex flex-row justify-end pr-40 max-[760px]:justify-end mt-48 max-[1080px]:pr-6 w-full relative h-screen">
+        <div className="teamContent flex flex-row justify-end pr-40 max-[760px]:justify-end mt-48 max-[1080px]:mt-16 max-[1080px]:pr-6 w-full relative h-screen">
         <div className="w-1/3 flex flex-col justify-end items-end team__text_right pr-3 mr-[-3rem] z-10">
             <p className="text-5xl mb-9 leading-[4rem] team__name text-right ">
               Lyra <br /> Haruto
@@ -186,7 +182,7 @@ const TeamPage = ({}) => {
             <p
               className={`${
                 isActive ? "opacity-100 mr-20" : "opacity-0 mr-4"
-              } w-30 team__bio  pb-4 text-right`}
+              } w-30 team__bio  pb-4 text-right max-[760px]:mr-0`}
             >
               Optio Urna s.d.a Sit-mi in v nisi-nativo AC minori
               hectorem/impiorum. Firmissime eius Axioma, Non mus usus urgeant me
@@ -213,7 +209,7 @@ const TeamPage = ({}) => {
           </div>
         </div>
 
-        <div className="teamContent flex flex-row justify-center max-[760px]:justify-end mt-48 max-[760px]:ml-6 w-full relative h-screen">
+        <div className="teamContent flex flex-row justify-center max-[760px]:justify-end mt-48 max-[1080px]:mt-16 max-[760px]:ml-6 w-full relative h-screen">
           <div className="team__brand">
             <span className="team__title">Brand Director</span>
             <Image
@@ -255,7 +251,7 @@ const TeamPage = ({}) => {
           </div>
         </div>
 
-        <div className="teamContent flex flex-row justify-end pr-40 max-[760px]:justify-end mt-48 max-[1080px]:pr-6 w-full relative h-screen">
+        <div className="teamContent flex flex-row justify-end pr-40 max-[760px]:justify-end mt-48 max-[1080px]:mt-16 max-[1080px]:pr-6 w-full relative h-screen">
         <div className="w-1/3 flex flex-col justify-end items-end team__text_right pr-3 mr-[-3rem] z-10">
             <p className="text-5xl mb-9 leading-[4rem] team__name text-right ">
               Lyra <br /> Haruto
@@ -270,7 +266,7 @@ const TeamPage = ({}) => {
             <p
               className={`${
                 isActive ? "opacity-100 mr-20" : "opacity-0 mr-4"
-              } w-30 team__bio  pb-4 text-right`}
+              } w-30 team__bio  pb-4 text-right max-[760px]:mr-0`}
             >
               Optio Urna s.d.a Sit-mi in v nisi-nativo AC minori
               hectorem/impiorum. Firmissime eius Axioma, Non mus usus urgeant me
