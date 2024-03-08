@@ -4,8 +4,11 @@ import Sidebar from "../sideBar"
 import Image from "next/image"
 import "./style.css"
 import PageTransition from "@/src/utils/effect/PageTransition"
+import * as THREE from 'three'
 
 const TeamPage = ({}) => {
+
+  
 
   const [isActive, setIsActive] = React.useState(false)
 
@@ -27,19 +30,114 @@ const TeamPage = ({}) => {
     setIsActive(!isActive)
   }
 
+React.useLayoutEffect(() => {
+
+const canvas = document.querySelector('canvas.webgl')
+
+let scene = new THREE.Scene();
+
+let camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+camera.position.z = 8;
+
+const vertexShader =`
+varying vec2 vUv;
+uniform float uTime;
+
+void main() {
+  vUv = uv;
+
+  vec3 transformed = position;
+  transformed.z += cos(position.z + position.x + uTime*.5);
+
+  gl_Position = projectionMatrix * modelViewMatrix * vec4(transformed, 1.0);
+}`
+			const fragmentShader = `varying vec2 vUv;
+uniform float uTime;
+uniform sampler2D uTexture;
+
+void main() {
+  float time = uTime;
+
+  vec2 uv = vUv;
+  vec2 repeat = vec2(6.0, 12.0);
+  uv.x += cos(uv.y + time*0.1) * 0.15;
+
+  uv = fract(uv * repeat + vec2(0.0, time));
+  
+  vec4 color = texture2D(uTexture, uv);
+  
+  gl_FragColor = color;
+}`
+
+const renderer = new THREE.WebGLRenderer({
+  canvas: canvas,
+  antialias: true,
+  alpha:true
+})
+renderer.setSize( 1400, 1200 );
+
+// document.body.appendChild( renderer.domElement );
+
+
+let forme = new THREE.Group();
+let geometry = new THREE.TorusGeometry( 3, 1, 100, 100 );
+
+const texture = new THREE.TextureLoader().load('./lyrashade.png', (texture) => {
+	texture.minFilter = THREE.NearestFilter;
+})
+
+let material = new THREE.ShaderMaterial({
+	vertexShader,
+	fragmentShader, 
+	uniforms:{
+		uTime : { value:0},
+		uTexture : {value: texture}
+	},
+	transparent: true,
+	// side: THREE.DoubleSide,
+});
+
+forme.add(new THREE.Mesh( geometry, material ));
+scene.add( forme );
+
+camera.position.z = 8;
+
+
+let clock = new THREE.Clock();
+
+function render(){
+
+	material.uniforms.uTime.value = clock.getElapsedTime();
+
+	renderer.render(scene, camera);
+}
+
+function animate() {
+	requestAnimationFrame( animate );
+	forme.rotation.x = Math.PI * -0.25;
+	// forme.rotation.y += 0.005;
+	render();
+}
+
+animate();
+
+  })
+
   return (
     <>
       <Sidebar />
       <div className="w-full h-full overflow-y-scroll overflow-x-hidden main">
         <div className="mainTeam flex text-6xl max-[760px]:text-4xl items-center justify-between w-full relative h-screen overflow-x-hidden">
-          <p className="ml-36 max-[760px]:ml-6 max-[760px]:pb-16">
+          <p className="ml-36 max-[760px]:ml-6 max-[760px]:pb-16 pb-20 leading-[80px]">
             From Tokyo to Los Angeles,
             <br />
             We come from all
             <br />
             over the world.
           </p>
+
         </div>
+          <canvas className="webgl"></canvas>
 
         <div className="teamContent flex flex-row justify-center  max-[760px]:justify-end max-[760px]:ml-6 w-full relative h-screen -mt-16">
           <div className="team__brand min-[1550px]:-ml-16">

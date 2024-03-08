@@ -116,7 +116,6 @@ const DiaryPage: React.FC = () => {
               <h1
                 data-hover="Lyra Haruto"
                 id="printemps"
-
               >
 ライラー・ハルト
               </h1>
