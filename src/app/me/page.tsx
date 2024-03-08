@@ -28,74 +28,71 @@ const DiaryPage: React.FC = () => {
     setSelectedUrl(getRandomUrl())
   }, [])
 
-  const mouseOverRef = React.useRef(null);
-const [text, setText] = React.useState("ライラー・ハルト");
-const originalTextRef = React.useRef("ライラー・ハルト");
-const [className, setClassName] = React.useState("");
+  const mouseOverRef = React.useRef(null)
+  const [text, setText] = React.useState("ライラー・ハルト")
+  const originalTextRef = React.useRef("ライラー・ハルト")
+  const [className, setClassName] = React.useState("")
 
-React.useEffect(() => {
-  function mouseOverHandler() {
-    const textLength = mouseOverRef.current.innerHTML.length;
-    originalTextRef.current = mouseOverRef.current.innerHTML;
-    
-    
-    setText(getRandomString(textLength));
-    setTimeout(() => {
-      setClassName("highlighted");
-      const newText = getRandomString(textLength);
-      mouseOverRef.current.innerHTML = newText
-      
-    }, 100);
+  React.useEffect(() => {
+    function mouseOverHandler() {
+      const textLength = mouseOverRef.current.innerHTML.length
+      originalTextRef.current = mouseOverRef.current.innerHTML
 
-    setTimeout(() => {
-      const newText = getRandomString(textLength);
-      setClassName("highlighted");
+      setText(getRandomString(textLength))
+      setTimeout(() => {
+        setClassName("highlighted")
+        const newText = getRandomString(textLength)
+        mouseOverRef.current.innerHTML = newText
+      }, 100)
 
-      mouseOverRef.current.innerHTML =newText
-    }, 200);
-    setTimeout(() => {
-      setClassName("highlighted");
+      setTimeout(() => {
+        const newText = getRandomString(textLength)
+        setClassName("highlighted")
 
-      const newText = getRandomString(textLength);
+        mouseOverRef.current.innerHTML = newText
+      }, 200)
+      setTimeout(() => {
+        setClassName("highlighted")
 
-      mouseOverRef.current.innerHTML ='Lyra Haruto'
-    }, 400);
+        const newText = getRandomString(textLength)
+
+        mouseOverRef.current.innerHTML = "Lyra Haruto"
+      }, 400)
+    }
+
+    function mouseLeaveHandler() {
+      mouseOverRef.current.innerHTML = originalTextRef
+      setText(originalTextRef.current)
+      setClassName("")
+
+      setTimeout(() => {
+        setClassName("")
+
+        mouseOverRef.current.innerHTML = "ライラー・ハルト"
+      }, 400)
+    }
+
+    const linkElement = mouseOverRef.current
+    if (linkElement) {
+      linkElement.addEventListener("mouseover", mouseOverHandler)
+      linkElement.addEventListener("mouseleave", mouseLeaveHandler)
+
+      return () => {
+        linkElement.removeEventListener("mouseleave", mouseLeaveHandler)
+        linkElement.removeEventListener("mouseover", mouseOverHandler)
+      }
+    }
+  }, [])
+
+  function getRandomString(length) {
+    let result = ""
+    const characters =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+    for (let i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * characters.length))
+    }
+    return result
   }
-
-  function mouseLeaveHandler() {
-    mouseOverRef.current.innerHTML = originalTextRef;
-    setText(originalTextRef.current);
-    setClassName("");
-
-    setTimeout(() => {
-
-      setClassName("");
-
-      mouseOverRef.current.innerHTML ='ライラー・ハルト'
-    }, 400);
-  }
-
-  const linkElement = mouseOverRef.current
-  if (linkElement) {
-    linkElement.addEventListener("mouseover", mouseOverHandler);
-    linkElement.addEventListener("mouseleave", mouseLeaveHandler);
-    
-    return () => {
-      linkElement.removeEventListener("mouseleave", mouseLeaveHandler);
-      linkElement.removeEventListener("mouseover", mouseOverHandler);
-    };
-  }
-}, []);
-
-function getRandomString(length) {
-  let result = "";
-  const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  for (let i = 0; i < length; i++) {
-    result += characters.charAt(Math.floor(Math.random() * characters.length));
-  }
-  return result;
-}
-
 
   return (
     <>
@@ -116,7 +113,12 @@ function getRandomString(length) {
                   Hello, I am Lyra Haruto
                 </figcaption>
               </div>
-              <h1 data-hover="Lyra Haruto" id="printemps" ref={mouseOverRef} className={className}>
+              <h1
+                data-hover="Lyra Haruto"
+                id="printemps"
+                ref={mouseOverRef}
+                className={className}
+              >
                 {text}
               </h1>
             </div>

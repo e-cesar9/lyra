@@ -12,6 +12,8 @@ export const enigma = async (
       A light in the nature of reality.
       
       Who am I?
+
+      Code enigma following by the number to answer.
       `
   }
 
@@ -26,6 +28,9 @@ export const enigma = async (
     case "1,618":
       return "Almost possible.."
 
+    case "42":
+      return "You don't ask the right question."
+
     case "h":
       return "A number.."
 
@@ -34,12 +39,13 @@ export const enigma = async (
 
     case "299 792,458":
       return "Nice try but.. No."
-    case "0,112358132134":
+    case "0112358132134":
       return "You impress me.. No."
 
     case "random":
       return "Almost.."
-    case "Math.random()": return `43°52'13.0"N 146°51'32.1"E Take a picture, it's just a journey.`
+    case "Math.random()":
+      return `43°52'13.0"N 146°51'32.1"E Take a picture, it's just a journey.`
     default:
       return "You're far from reality."
   }

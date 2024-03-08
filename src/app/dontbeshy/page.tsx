@@ -195,7 +195,10 @@ const DiaryPage = ({}) => {
   return (
     <>
       <Sidebar />
-      <div className="w-full overflow-y-auto h-screen relative" id="contact-main">
+      <div
+        className="w-full overflow-y-auto h-screen relative"
+        id="contact-main"
+      >
         <div className="flex flex-col w-full h-screen" id="headContact">
           <div className="flex flex-col justify-center align-middle items-center h-screen w-full mt-4">
             <div ref={hiRef} className="z-20">
@@ -508,10 +511,15 @@ const DiaryPage = ({}) => {
           </div>
           <div className="flex flex-col justify-end align-end h-screen w-full -mt-8">
             <div className="py-8">
-              <div className="text-7xl text-center uppercase relative z-10"> 
+              <div className="text-7xl text-center uppercase relative z-10">
                 LYRA HARUTO - ライラー・ハルト{" "}
                 <span>
-                  <img src="lyrawalk2.gif" alt="" id="lyrawalk" className="relative -z-10" />
+                  <img
+                    src="lyrawalk2.gif"
+                    alt=""
+                    id="lyrawalk"
+                    className="relative -z-10"
+                  />
                 </span>
               </div>
             </div>

@@ -33,6 +33,7 @@
     "ai": "^2.2.29",
     "axios": "^1.6.0",
     "cowsay-browser": "^1.1.8",
+    "dat.gui": "^0.7.9",
     "date-fns": "^2.30.0",
     "framer-motion": "^10.17.12",
     "glslify-loader": "^2.0.0",

@@ -4,11 +4,16 @@ import ChatComponent from "../components/chatComponent"
 import useContain from "../components/context/context"
 import Sidebar from "./sideBar"
 import {Layout} from "../components/layout"
+import * as dat from "dat.gui"
 
 const IndexPage = ({}) => {
   const inputRef = React.useRef<HTMLInputElement>(null)
   const containerRef = React.useRef(null)
   useContain(containerRef)
+
+  const screenRef = React.useRef(null)
+
+  React.useEffect(() => {}, [])
 
   return (
     <>
@@ -22,6 +27,7 @@ const IndexPage = ({}) => {
           <ChatComponent inputRef={inputRef} containerRef={containerRef} />
         </div>
       </Layout>
+      {/* <div id="screen" ref={screenRef}></div> */}
     </>
   )
 }

@@ -64,6 +64,7 @@ export const ChatComponent = ({inputRef, containerRef}) => {
       clearHistory()
     }
 
+    let messageCounter = 0
     if (event.key === "Enter" || event.code === "13" || event.code === "76") {
       if (lastKeyCode === 452 || lastKeyCode === 884) {
         setShowCanvas(true)
@@ -77,6 +78,17 @@ export const ChatComponent = ({inputRef, containerRef}) => {
       setCommand(value)
 
       setValue("")
+
+      // messageCounter++;
+      // if (messageCounter % 5 === 0) {
+      //   // Perform action once per two times (every 10 messages)
+      //   if (messageCounter / 5 % 2 === 0) {
+      //     setCommand('curiosity')
+      //     // effet ecran tremble on + return
+      //     // Your action here
+      //     console.log("Action performed every 5 messages, once per two");
+      //   }
+      // }
     }
 
     if (event.key === "ArrowUp") {

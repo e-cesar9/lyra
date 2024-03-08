@@ -173,7 +173,7 @@ function Sidebar() {
 
   const linksData = [
     {originalText: "#Me", emoji: "😜", href: "/me", target: "_self"},
-    {originalText: "My Team", emoji: "😎", href: "/myteam", target: "_self"},
+    {originalText: "My Crew", emoji: "😎", href: "/mycrew", target: "_self"},
     {originalText: "My Craft", emoji: "🤖", href: "/mycraft", target: "_self"},
     {
       originalText: "My Diary",
