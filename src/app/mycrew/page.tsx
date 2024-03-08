@@ -32,7 +32,7 @@ const TeamPage = ({}) => {
 
 React.useLayoutEffect(() => {
 
-const canvas = document.querySelector('canvas.webgl')
+const canvas = document.querySelector('canvas.webglLyra')
 
 let scene = new THREE.Scene();
 
@@ -137,7 +137,7 @@ animate();
           </p>
 
         </div>
-          <canvas className="webgl"></canvas>
+          <canvas className="webglLyra"></canvas>
 
         <div className="teamContent flex flex-row justify-center  max-[760px]:justify-end max-[760px]:ml-6 w-full relative h-screen -mt-16">
           <div className="team__brand min-[1550px]:-ml-16">

@@ -141,7 +141,7 @@ body {
     }
 }
 
-canvas.webgl{
+canvas.webglLyra{
     position: absolute;
     right: 0;
     overflow: hidden;
