@@ -128,7 +128,7 @@ animate();
       <Sidebar />
       <div className="w-full h-full overflow-y-scroll overflow-x-hidden main">
         <div className="mainTeam flex text-6xl max-[760px]:text-4xl items-center justify-between w-full relative h-screen overflow-x-hidden">
-          <p className="ml-36 max-[760px]:ml-6 max-[760px]:pb-16 pb-20 leading-[80px]">
+          <p className="ml-36 max-[760px]:ml-6 max-[760px]:pb-16 pb-20 leading-[80px] max-[760px]:leading-[64px]">
             From Tokyo to Los Angeles,
             <br />
             We come from all
