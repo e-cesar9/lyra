@@ -111,7 +111,7 @@ const DiaryPage: React.FC = () => {
   return (
     <>
       <Sidebar />
-      <div id="Me" className="rounded layout w-full" ref={snapElementRef} onScroll={handleScroll}>
+      <div id="Me" className="rounded layout overflow-y-auto w-full relative" ref={snapElementRef} onScroll={handleScroll}>
         <div className="part echo flex flex-col relative">
           <div className="flex flex-col h-screen items-center w-full justify-center">
             <div className=" flex flex-row justify-center pl-[45px] z-50 items-center swap">
