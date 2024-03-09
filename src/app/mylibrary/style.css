@@ -51,6 +51,8 @@ body{
 }
 #library{
 	padding-right: 2.5rem;
+	font-family: 'Technor-Variable';
+	font-weight: 700;
 }
 #lyra{
 	padding-left: 4rem;
