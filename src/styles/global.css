@@ -22,7 +22,6 @@ div#__next > div {
   min-height: -moz-available;
   scrollbar-width: none;
 
-
 }
 
 ::-webkit-scrollbar {
@@ -368,15 +367,7 @@ MediaQuery General
     z-index: 1001;
     background: black;
   }
-  .sidebar{
-    overflow-y: scroll;
-    scrollbar-width: none;
-  }
-  .scrollbar-trigger{
-    overflow-y: scroll;
-    scrollbar-width: none;
 
-  }
   .lyrart{
     display: none;
   }
