@@ -8,27 +8,32 @@ import * as THREE from 'three'
 
 const TeamPage = ({}) => {
 
-  
-
   const [isActive, setIsActive] = React.useState(false)
-
-  React.useEffect(() => {
-    const button = document.querySelector(".plusminus")
-
-    if (isActive) {
-      button.classList.add("active")
-    } else {
-      button.classList.remove("active")
-    }
-
-    return () => {
-      // Cleanup function to remove event listeners if necessary
-    }
-  }, [isActive])
+  const [isActive1, setIsActive1] = React.useState(false)
+  const [isActive2, setIsActive2] = React.useState(false)
+  const [isActive3, setIsActive3] = React.useState(false)
+  const [isActive4, setIsActive4] = React.useState(false)
+  const [isActive5, setIsActive5] = React.useState(false)
 
   const handleClick = () => {
     setIsActive(!isActive)
   }
+  const handleClick1 = () => {
+    setIsActive1(!isActive1)
+  }
+  const handleClick2 = () => {
+    setIsActive2(!isActive2)
+  }
+  const handleClick3 = () => {
+    setIsActive3(!isActive3)
+  }
+  const handleClick4 = () => {
+    setIsActive4(!isActive4)
+  }
+  const handleClick5 = () => {
+    setIsActive5(!isActive5)
+  }
+
 
 React.useLayoutEffect(() => {
 
@@ -51,7 +56,7 @@ void main() {
 
   gl_Position = projectionMatrix * modelViewMatrix * vec4(transformed, 1.0);
 }`
-			const fragmentShader = `varying vec2 vUv;
+const fragmentShader = `varying vec2 vUv;
 uniform float uTime;
 uniform sampler2D uTexture;
 
@@ -187,15 +192,15 @@ animate();
               Lyra <br /> Haruto
             </p>
             <span className="border w-[100px] h-[100px] rounded-full mb-4 btnClick">
-              <button className="w-full h-full p-9 " onClick={handleClick}>
+              <button className="w-full h-full p-9 " onClick={handleClick1}>
                 {" "}
-                <div className={`plusminus ${isActive ? "active" : ""}`}></div>
+                <div className={`plusminus ${isActive1 ? "active" : ""}`}></div>
               </button>
             </span>
 
             <p
               className={`${
-                isActive ? "opacity-100 mr-20" : "opacity-0 mr-4"
+                isActive1 ? "opacity-100 mr-20" : "opacity-0 mr-4"
               } w-30 team__bio  pb-4 text-right  max-[760px]:mr-0`}
             >
               Optio Urna s.d.a Sit-mi in v nisi-nativo AC minori
@@ -241,15 +246,15 @@ animate();
               Lyra <br /> Haruto
             </p>
             <span className="border w-[100px] h-[100px] rounded-full mb-4 btnClick">
-              <button className="w-full h-full p-9 " onClick={handleClick}>
+              <button className="w-full h-full p-9 " onClick={handleClick2}>
                 {" "}
-                <div className={`plusminus ${isActive ? "active" : ""}`}></div>
+                <div className={`plusminus ${isActive2 ? "active" : ""}`}></div>
               </button>
             </span>
 
             <p
               className={`${
-                isActive ? "opacity-100 ml-20" : "opacity-0 ml-4"
+                isActive2 ? "opacity-100 ml-20" : "opacity-0 ml-4"
               } w-30 team__bio  pb-4`}
             >
               Optio Urna s.d.a Sit-mi in v nisi-nativo AC minori
@@ -271,15 +276,15 @@ animate();
               Lyra <br /> Haruto
             </p>
             <span className="border w-[100px] h-[100px] rounded-full mb-4 btnClick">
-              <button className="w-full h-full p-9 " onClick={handleClick}>
+              <button className="w-full h-full p-9 " onClick={handleClick3}>
                 {" "}
-                <div className={`plusminus ${isActive ? "active" : ""}`}></div>
+                <div className={`plusminus ${isActive3 ? "active" : ""}`}></div>
               </button>
             </span>
 
             <p
               className={`${
-                isActive ? "opacity-100 mr-20" : "opacity-0 mr-4"
+                isActive3 ? "opacity-100 mr-20" : "opacity-0 mr-4"
               } w-30 team__bio  pb-4 text-right max-[760px]:mr-0`}
             >
               Optio Urna s.d.a Sit-mi in v nisi-nativo AC minori
@@ -325,15 +330,15 @@ animate();
               Lyra <br /> Haruto
             </p>
             <span className="border w-[100px] h-[100px] rounded-full mb-4 btnClick">
-              <button className="w-full h-full p-9 " onClick={handleClick}>
+              <button className="w-full h-full p-9 " onClick={handleClick4}>
                 {" "}
-                <div className={`plusminus ${isActive ? "active" : ""}`}></div>
+                <div className={`plusminus ${isActive4 ? "active" : ""}`}></div>
               </button>
             </span>
 
             <p
               className={`${
-                isActive ? "opacity-100 ml-20" : "opacity-0 ml-4"
+                isActive4 ? "opacity-100 ml-20" : "opacity-0 ml-4"
               } w-30 team__bio  pb-4`}
             >
               Optio Urna s.d.a Sit-mi in v nisi-nativo AC minori
@@ -355,15 +360,15 @@ animate();
               Lyra <br /> Haruto
             </p>
             <span className="border w-[100px] h-[100px] rounded-full mb-4 btnClick">
-              <button className="w-full h-full p-9 " onClick={handleClick}>
+              <button className="w-full h-full p-9 " onClick={handleClick5}>
                 {" "}
-                <div className={`plusminus ${isActive ? "active" : ""}`}></div>
+                <div className={`plusminus ${isActive5 ? "active" : ""}`}></div>
               </button>
             </span>
 
             <p
               className={`${
-                isActive ? "opacity-100 mr-20" : "opacity-0 mr-4"
+                isActive5 ? "opacity-100 mr-20" : "opacity-0 mr-4"
               } w-30 team__bio  pb-4 text-right max-[760px]:mr-0`}
             >
               Optio Urna s.d.a Sit-mi in v nisi-nativo AC minori
