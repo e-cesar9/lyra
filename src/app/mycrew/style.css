@@ -147,4 +147,7 @@ canvas.webglLyra{
     overflow: hidden;
     margin-right: -35rem;
     bottom: -260px;
+    z-index: -10;
+    scrollbar-width: none;
+
 }
