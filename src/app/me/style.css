@@ -59,10 +59,8 @@ figcaption{
 	scroll-behavior:smooth;
 	scrollbar-width: none;
 	scroll-snap-type: y mandatory;
-	scroll-snap-align:start;
+	/* scroll-snap-align:start; */
 	overscroll-behavior: none;
-
-
 }
 
 #Me .part{

@@ -148,7 +148,7 @@ const DiaryPage = ({}) => {
   const [displayImageSrc, setDisplayImageSrc] = React.useState<string | null>(
     null,
   )
-  const soundPaths = ["yahou.mp3", "fun.mp3"] // Paths to your sound files
+  const soundPaths = ["yahou.mp3"] // Paths to your sound files
   const imagePaths = [
     "chicken.png",
     "hello.gif",
