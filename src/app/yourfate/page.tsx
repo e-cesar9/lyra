@@ -32,7 +32,7 @@ const FatePage = ({}) => {
           </div>
         </div>
 
-        <div className="flex flex-col w-full h-[75vh] max-[760px]:h-auto justify-between mb-2">
+        <div className="flex flex-col w-full h-[75vh] max-[760px]:h-auto justify-between mb-2 h-auto">
           <div
             ref={textRef}
             className="flex flex-row max-[760px]:flex-col px-6 justify-between text-2xl mt-20"
@@ -46,7 +46,7 @@ const FatePage = ({}) => {
               believe in the magic of narratives to alter the fabric of reality
               itself.
             </p>
-            <p className="text_block pr-4">
+            <p className="text_block pr-4 max-[760px]:pt-6">
               Imagine being part of an odyssey where every project is a canvas
               awaiting your unique brushstroke, where your work does not just
               speak to the audience but sings to their souls, crafting moments
@@ -55,7 +55,7 @@ const FatePage = ({}) => {
               the transformative power of stories will find not just recognition
               but a fervent echo in the hearts of like-minded individuals.
             </p>
-            <p className="text_block pr-4 ">
+            <p className="text_block pr-4 max-[760px]:pt-6">
               The Lyra Haruto Company is not merely a workplace; it is a cradle
               of potential where freedom and creativity are the air we breathe,
               driven by the conviction that every story told is a step toward a
@@ -66,7 +66,7 @@ const FatePage = ({}) => {
               that guides us.
             </p>
 
-            <p className="text_block pr-4">
+            <p className="text_block pr-4 max-[760px]:pt-6">
               Join us, and together, let us weave tales that transcend time,
               tales that remind us of the beauty of being uniquely human,
               embracing the full spectrum of emotions in our narratives. Let
@@ -81,7 +81,7 @@ const FatePage = ({}) => {
             Lyra Haruto Company, where every story is a doorway to a new world.
           </p>
         </div>
-        <div className="flex flex-col w-full h-screen max-[760px]:h-auto mt-16 max-[1550px]:mt-24 pl-6 text-2xl">
+        <div className="flex flex-col w-full h-screen max-[760px]:h-auto mt-16 pl-6 text-2xl pr-4">
           <h1>Artistic Roles</h1>
           <p>
             Animator:{" "}
