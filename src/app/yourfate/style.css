@@ -14,8 +14,13 @@
 	/* font-weight: 300; */
 }
 
+#fate-main{
+    font-family: 'Technor-Variable';
+    scrollbar-width: none;
+}
+
 .content__title{
-	font-family: 'Zodiak-Variable';
+    font-family: 'Technor-Variable';
     margin: 2rem 24rem 2rem 25rem;
 	font-size: 27px;
 	font-weight: 300;
@@ -37,7 +42,7 @@
 		padding: 1rem 3rem;
 	}
 
-	#contact-main{
+	#fate-main{
 		position: absolute;
 	}
     /* .h-\[75vh\]{
@@ -156,4 +161,16 @@ body
 
 .text_roles{
     color: grey;
+}
+
+.btnContact{
+    border: 1px solid white;
+    border-radius: 32px;
+    padding: 0.5rem  .75rem;
+    margin: 1rem 1rem 0 0 ;
+    transition: all .2s ease-in-out;
+}
+.btnContact:hover{
+    background-color:	#f1a7ce;
+    color: white;
 }

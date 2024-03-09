@@ -23,7 +23,7 @@ const FatePage = ({}) => {
       <Sidebar />
       <div
         className="w-full overflow-y-auto h-screen relative"
-        id="contact-main"
+        id="fate-main"
       >
         <div className="h-screen flex content-end flex-col justify-between">
           <SlideComponent />
@@ -75,13 +75,13 @@ const FatePage = ({}) => {
               of dreams made manifest.
             </p>
           </div>
-          <p className="text_block px-6 pb-4 text-2xl">
+          <p className="text_block px-6 pb-4 text-2xl mt-16">
             Your path to changing the world through stories begins here. <br />{" "}
             Be not just a part of history, but a creator of it. Welcome to the
             Lyra Haruto Company, where every story is a doorway to a new world.
           </p>
         </div>
-        <div className="flex flex-col w-full h-screen max-[760px]:h-auto mt-16 max-[1550px]:mt-64 pl-6 text-2xl">
+        <div className="flex flex-col w-full h-screen max-[760px]:h-auto mt-16 max-[1550px]:mt-24 pl-6 text-2xl">
           <h1>Artistic Roles</h1>
           <p>
             Animator:{" "}
@@ -441,6 +441,14 @@ const FatePage = ({}) => {
             <span className="text_roles">
               Advises on the studio&apos;s AI adoption strategy.
             </span>
+            <span className="absolute right-0">
+          <a
+                  className="btnContact"
+                  href="/dontbeshy#form-section"
+                  target="_blank"
+                >
+                  Apply
+                </a></span>
           </p>{" "}
           <br />
         </div>
