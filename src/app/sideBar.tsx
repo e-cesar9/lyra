@@ -365,7 +365,7 @@ function Sidebar() {
               </div>
             </div>
 
-            <div className="py-3 mb-6 ml-1">
+            <div className="pb-4 pt-2 mb-6 ml-1">
               {links.map((link, index) => (
                 <div key={index} className="group relative active:opacity-90">
                   <Link
