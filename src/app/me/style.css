@@ -59,17 +59,15 @@ figcaption{
 	scroll-behavior:smooth;
 	scrollbar-width: none;
 	scroll-snap-type: y mandatory;
-	/* scroll-snap-align:start; */
-	overscroll-behavior: scroll;
+	scroll-snap-align:start;
+	overscroll-behavior: none;
+
 }
 
 #Me .part{
-	height: auto;
-	scroll-snap-type: y mandatory;
 	scroll-snap-align:start;
-	overscroll-behavior: scroll;
-	scroll-snap-stop: always;
-	overflow-y: scroll;
+	overscroll-behavior: none;
+	/* scroll-snap-stop: always; */
 }
 
 /* :not(:last-child) */
