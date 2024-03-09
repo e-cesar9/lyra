@@ -60,15 +60,16 @@ figcaption{
 	scrollbar-width: none;
 	scroll-snap-type: y mandatory;
 	/* scroll-snap-align:start; */
-	overscroll-behavior: none;
+	overscroll-behavior: scroll;
 }
 
 #Me .part{
 	height: auto;
 	scroll-snap-type: y mandatory;
 	scroll-snap-align:start;
-	overscroll-behavior: none;
+	overscroll-behavior: scroll;
 	scroll-snap-stop: always;
+	overflow-y: scroll;
 }
 
 /* :not(:last-child) */
