@@ -27,7 +27,6 @@ const IndexPage = ({}) => {
           <ChatComponent inputRef={inputRef} containerRef={containerRef} />
         </div>
       </Layout>
-      {/* <div id="screen" ref={screenRef}></div> */}
     </>
   )
 }

@@ -37,6 +37,11 @@ a {
   text-decoration: none;
 }
 
+nav{
+  scrollbar-width: none;
+
+}
+
 /* 
 SideBar
  */
@@ -84,7 +89,6 @@ SideBar
   font-family: 'Technor-Variable';
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
-
 }
 
 .sidebar div {
@@ -288,7 +292,6 @@ MediaQuery General
 
 #contact-main{
   scrollbar-width: none;
-
 }
 
 /* YOUR FATE PAGE */
