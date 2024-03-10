@@ -37,7 +37,7 @@ a {
   text-decoration: none;
 }
 
-nav{
+.scrollbar-trigger{
   scrollbar-width: none;
 
 }

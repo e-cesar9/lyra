@@ -341,8 +341,8 @@ function Sidebar() {
         id="sidebar"
         ref={sidebarRef}
       >
-        <div className="scrollbar-trigger relative h-full w-full flex-1 items-start border-white/20">
-          <nav className="flex h-full w-full flex-col pb-1 justify-between overflow-y-scroll">
+        <div className="scrollbar-trigger relative h-full w-full flex-1 items-start border-white/20 overflow-y-auto">
+          <nav className="flex h-full w-full flex-col pb-1 justify-between">
             <div className="relative pr-2 pt-2 text-s font-medium text-ellipsis break-all bg-white dark:bg-black text-gizmo-gray-600">
               <a href="/">
                 <Image
