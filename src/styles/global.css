@@ -19,7 +19,7 @@ div#__next,
 div#__next > div {
   height: 100%;
   overflow: auto;
-  min-height: -moz-available;
+  /* min-height: -moz-available; */
   scrollbar-width: none;
 
 }
