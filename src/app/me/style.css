@@ -17,8 +17,7 @@
 
 body{
 	height: 100%;
-	scrollbar-width: none;
-	scroll-snap-type: y mandatory;
+	overscroll-behavior-y: none;
 }
 
 html{
@@ -60,17 +59,18 @@ figcaption{
 	scroll-behavior:smooth;
 	scrollbar-width: none;
 	scroll-snap-type: y mandatory;
-
-	/* scroll-snap-align:start; */
+	scroll-snap-align:start;
 	overscroll-behavior: none;
+
 
 }
 
 #Me .part{
 	scroll-snap-align:start;
 	overscroll-behavior: none;
-	scroll-snap-stop: always;
+	/* scroll-snap-stop: always; */
 }
+
 
 /* :not(:last-child) */
 
