@@ -107,10 +107,6 @@ body {
         max-width: 60%;
     }
 
-    .team__brand{
-        /* padding-left: 1rem; */
-    }
-
     .team__text{
         position: absolute;
         padding-left: 0;
@@ -155,5 +151,4 @@ canvas.webglLyra{
     bottom: -260px;
     z-index: -10;
     scrollbar-width: none;
-
 }

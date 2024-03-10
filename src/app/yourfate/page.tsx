@@ -21,10 +21,7 @@ const FatePage = ({}) => {
   return (
     <>
       <Sidebar />
-      <div
-        className="w-full overflow-y-auto h-screen relative"
-        id="fate-main"
-      >
+      <div className="w-full overflow-y-auto h-screen relative" id="fate-main">
         <div className="h-screen flex content-end flex-col justify-between">
           <SlideComponent />
           <div className="text-9xl max-[1280px]:text-9xl max-[760px]:text-6xl text-left uppercase relative overflow-hidden mb-2 sizingFate">
@@ -442,13 +439,14 @@ const FatePage = ({}) => {
               Advises on the studio&apos;s AI adoption strategy.
             </span>
             <span className="absolute right-0">
-          <a
-                  className="btnContact"
-                  href="/dontbeshy#form-section"
-                  target="_blank"
-                >
-                  Apply
-                </a></span>
+              <a
+                className="btnContact"
+                href="/dontbeshy#form-section"
+                target="_blank"
+              >
+                Apply
+              </a>
+            </span>
           </p>{" "}
           <br />
         </div>

@@ -4,10 +4,9 @@ import Sidebar from "../sideBar"
 import Image from "next/image"
 import "./style.css"
 import PageTransition from "@/src/utils/effect/PageTransition"
-import * as THREE from 'three'
+import * as THREE from "three"
 
 const TeamPage = ({}) => {
-
   const [isActive, setIsActive] = React.useState(false)
   const [isActive1, setIsActive1] = React.useState(false)
   const [isActive2, setIsActive2] = React.useState(false)
@@ -34,17 +33,20 @@ const TeamPage = ({}) => {
     setIsActive5(!isActive5)
   }
 
+  React.useLayoutEffect(() => {
+    const canvas = document.querySelector("canvas.webglLyra")
 
-React.useLayoutEffect(() => {
+    let scene = new THREE.Scene()
 
-const canvas = document.querySelector('canvas.webglLyra')
+    let camera = new THREE.PerspectiveCamera(
+      75,
+      window.innerWidth / window.innerHeight,
+      0.1,
+      1000,
+    )
+    camera.position.z = 8
 
-let scene = new THREE.Scene();
-
-let camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-camera.position.z = 8;
-
-const vertexShader =`
+    const vertexShader = `
 varying vec2 vUv;
 uniform float uTime;
 
@@ -56,7 +58,7 @@ void main() {
 
   gl_Position = projectionMatrix * modelViewMatrix * vec4(transformed, 1.0);
 }`
-const fragmentShader = `varying vec2 vUv;
+    const fragmentShader = `varying vec2 vUv;
 uniform float uTime;
 uniform sampler2D uTexture;
 
@@ -74,58 +76,57 @@ void main() {
   gl_FragColor = color;
 }`
 
-const renderer = new THREE.WebGLRenderer({
-  canvas: canvas,
-  antialias: true,
-  alpha:true
-})
-renderer.setSize( 1400, 1200 );
+    const renderer = new THREE.WebGLRenderer({
+      canvas: canvas,
+      antialias: true,
+      alpha: true,
+    })
+    renderer.setSize(1400, 1200)
 
-// document.body.appendChild( renderer.domElement );
+    // document.body.appendChild( renderer.domElement );
 
+    let forme = new THREE.Group()
+    let geometry = new THREE.TorusGeometry(3, 1, 100, 100)
 
-let forme = new THREE.Group();
-let geometry = new THREE.TorusGeometry( 3, 1, 100, 100 );
+    const texture = new THREE.TextureLoader().load(
+      "./lyrashade.png",
+      (texture) => {
+        texture.minFilter = THREE.NearestFilter
+      },
+    )
 
-const texture = new THREE.TextureLoader().load('./lyrashade.png', (texture) => {
-	texture.minFilter = THREE.NearestFilter;
-})
+    let material = new THREE.ShaderMaterial({
+      vertexShader,
+      fragmentShader,
+      uniforms: {
+        uTime: {value: 0},
+        uTexture: {value: texture},
+      },
+      transparent: true,
+      // side: THREE.DoubleSide,
+    })
 
-let material = new THREE.ShaderMaterial({
-	vertexShader,
-	fragmentShader, 
-	uniforms:{
-		uTime : { value:0},
-		uTexture : {value: texture}
-	},
-	transparent: true,
-	// side: THREE.DoubleSide,
-});
+    forme.add(new THREE.Mesh(geometry, material))
+    scene.add(forme)
 
-forme.add(new THREE.Mesh( geometry, material ));
-scene.add( forme );
+    camera.position.z = 8
 
-camera.position.z = 8;
+    let clock = new THREE.Clock()
 
+    function render() {
+      material.uniforms.uTime.value = clock.getElapsedTime()
 
-let clock = new THREE.Clock();
+      renderer.render(scene, camera)
+    }
 
-function render(){
+    function animate() {
+      requestAnimationFrame(animate)
+      forme.rotation.x = Math.PI * -0.25
+      // forme.rotation.y += 0.005;
+      render()
+    }
 
-	material.uniforms.uTime.value = clock.getElapsedTime();
-
-	renderer.render(scene, camera);
-}
-
-function animate() {
-	requestAnimationFrame( animate );
-	forme.rotation.x = Math.PI * -0.25;
-	// forme.rotation.y += 0.005;
-	render();
-}
-
-animate();
-
+    animate()
   })
 
   return (
@@ -140,9 +141,8 @@ animate();
             <br />
             over the world.
           </p>
-
         </div>
-          <canvas className="webglLyra"></canvas>
+        <canvas className="webglLyra"></canvas>
 
         <div className="teamContent flex flex-row justify-center  max-[760px]:justify-end max-[760px]:ml-6 w-full relative h-screen -mt-16">
           <div className="team__brand min-[1550px]:-ml-16">
@@ -187,7 +187,7 @@ animate();
         </div>
 
         <div className="teamContent flex flex-row justify-end pr-40 max-[760px]:justify-end mt-48 max-[1080px]:mt-16 max-[1080px]:pr-6 w-full relative h-screen">
-        <div className="w-1/3 flex flex-col justify-end items-end team__text_right pr-3 mr-[-3rem] z-10">
+          <div className="w-1/3 flex flex-col justify-end items-end team__text_right pr-3 mr-[-3rem] z-10">
             <p className="text-5xl mb-9 leading-[4rem] team__name text-right ">
               Lyra <br /> Haruto
             </p>
@@ -271,7 +271,7 @@ animate();
         </div>
 
         <div className="teamContent flex flex-row justify-end pr-40 max-[760px]:justify-end mt-48 max-[1080px]:mt-16 max-[1080px]:pr-6 w-full relative h-screen">
-        <div className="w-1/3 flex flex-col justify-end items-end team__text_right pr-3 mr-[-3rem] z-10">
+          <div className="w-1/3 flex flex-col justify-end items-end team__text_right pr-3 mr-[-3rem] z-10">
             <p className="text-5xl mb-9 leading-[4rem] team__name text-right ">
               Lyra <br /> Haruto
             </p>
@@ -355,7 +355,7 @@ animate();
         </div>
 
         <div className="teamContent flex flex-row justify-end pr-40 max-[760px]:justify-end mt-48 max-[1080px]:mt-16 max-[1080px]:pr-6 w-full relative h-screen">
-        <div className="w-1/3 flex flex-col justify-end items-end team__text_right pr-3 mr-[-3rem] z-10">
+          <div className="w-1/3 flex flex-col justify-end items-end team__text_right pr-3 mr-[-3rem] z-10">
             <p className="text-5xl mb-9 leading-[4rem] team__name text-right ">
               Lyra <br /> Haruto
             </p>

@@ -9,21 +9,9 @@
     src: url(/assets/fonts/Technor-Variable.ttf);
 }
 
-:root{
-	--max-width:calc(min(100vw - 60px, 2000px, 145px + 50vw));
-	--margin: calc((100vw - var(--max-width))/2);
-	--font-size: calc(max(min(14px + 0.75vw, 50px), 14.5px + 0.75vw))
-}
-
-
 body{
 	height: 100%;
 	overflow-y: scroll;
-}
-
-html{
-
-
 }
 
 .itemMenu{
@@ -54,25 +42,17 @@ figcaption{
 	position: relative;
 	height: 100vh;
 	width: 100vw;
-	/* padding-left: 250px; */
 	padding-top: 1px;
 	overflow-y: scroll;
 	scroll-behavior:smooth;
 	scrollbar-width: none;
-	/* scroll-snap-type: y mandatory;
-	scroll-snap-align:start; */
 	overscroll-behavior: none;
 
 }
 
 #Me .part{
-	/* scroll-snap-align:start; */
 	overscroll-behavior: none;
-	/* scroll-snap-stop: always; */
 }
-
-
-/* :not(:last-child) */
 
 .lined{
 	line-height:2em;
@@ -450,7 +430,6 @@ figcaption{
 	body{
 	}
 	#Me{
-		/* margin: 1px 0 0 250px; */
 		padding: 2rem 0;
 	}
 
@@ -531,10 +510,6 @@ figcaption{
 }
 
 @media (max-width: 1901px) and (min-width: 1642px) { 
-	/* .content__title{
-		margin: 0rem 14rem ;
-		font-size: 25px;
-	} */
 	.wm{
 		text-align: -webkit-center;
 	}
