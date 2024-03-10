@@ -41,10 +41,11 @@ a {
 SideBar
  */
 
- #sideBarText{
-   word-break: break-word;
-   font-size: 0.85rem;
-  } 
+#sideBarText
+{
+  word-break: break-word;
+  font-size: 0.85rem;
+}
 
 #modal{
   background: #000;
@@ -81,7 +82,7 @@ SideBar
   padding: 24px;
   color: #ECECF1;
   font-family: 'Technor-Variable';
-  overflow-y: auto;
+  overflow-y: scroll;
   scrollbar-width: none;
 }
 
@@ -401,8 +402,6 @@ MediaQuery General
 }
 
 .revealText{
-  /* transform-origin: 0% 50%; */
-  /* transform: translate(0px, 0px); */
   animation: entry .4s ease;
 }
 
