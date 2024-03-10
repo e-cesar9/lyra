@@ -4,6 +4,18 @@
 }
 
 
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+  height: 100%;
+  overflow: auto;
+  min-height: -moz-available;
+  scrollbar-width: none;
+
+}
+
 body{
     overflow-y: auto;
     font-family: 'Technor-Variable';

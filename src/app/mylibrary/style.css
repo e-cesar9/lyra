@@ -3,6 +3,18 @@ body{
 	overflow: auto;
 }
 
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+  height: 100%;
+  overflow: auto;
+  min-height: -moz-available;
+  scrollbar-width: none;
+
+}
+
 @font-face {
 	font-family: 'Zodiak-Variable';
 	src: url(/assets/fonts/Zodiak-Variable.ttf);

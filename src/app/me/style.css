@@ -15,13 +15,26 @@
 	--font-size: calc(max(min(14px + 0.75vw, 50px), 14.5px + 0.75vw))
 }
 
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+  height: 100%;
+  overflow: auto;
+  min-height: -moz-available;
+  scrollbar-width: none;
+
+}
+
+
 body{
 	height: 100%;
-	overscroll-behavior-y: none;
+	overflow-y: scroll;
 }
 
 html{
-	overscroll-behavior-y: none;
+
 
 }
 
