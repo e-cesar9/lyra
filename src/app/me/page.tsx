@@ -1,6 +1,8 @@
 "use client"
 import React, {useLayoutEffect} from "react"
 import "./style.css"
+import '../../styles/global.css'
+
 import gsap from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
 import Sidebar from "../sideBar"
