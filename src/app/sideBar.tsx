@@ -10,6 +10,7 @@ import "../utils/effect/BtnEffect.css"
 import {usePathname} from "next/navigation"
 import {useConfirmContext} from "../components/context/ConfirmContext"
 import gsap from "gsap"
+import '../styles/global.css'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ")
@@ -341,7 +342,7 @@ function Sidebar() {
         id="sidebar"
         ref={sidebarRef}
       >
-        <div className="scrollbar-trigger relative h-full w-full flex-1 items-start border-white/20 overflow-y-auto">
+        <div className="scrollbar-trigger relative h-full w-full flex-1 items-start border-white/20">
           <nav className="flex h-full w-full flex-col pb-1 justify-between">
             <div className="relative pr-2 pt-2 text-s font-medium text-ellipsis break-all bg-white dark:bg-black text-gizmo-gray-600">
               <a href="/">
