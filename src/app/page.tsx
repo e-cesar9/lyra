@@ -22,7 +22,7 @@ const IndexPage = ({}) => {
         <div
           ref={containerRef}
           id="yo"
-          className="overflow-y-auto h-full p-4 rounded layout"
+          className="overflow-y-scroll h-full p-4 rounded layout"
         >
           <ChatComponent inputRef={inputRef} containerRef={containerRef} />
         </div>
