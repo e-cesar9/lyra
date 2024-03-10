@@ -10,7 +10,6 @@ import "../utils/effect/BtnEffect.css"
 import {usePathname} from "next/navigation"
 import {useConfirmContext} from "../components/context/ConfirmContext"
 import gsap from "gsap"
-import '../styles/global.css'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ")

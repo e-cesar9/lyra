@@ -1,7 +1,6 @@
 "use client"
 import React, {useLayoutEffect} from "react"
 import "./style.css"
-import '../../styles/global.css'
 
 import gsap from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
@@ -115,7 +114,7 @@ const DiaryPage: React.FC = () => {
       <Sidebar />
       <div
         id="Me"
-        className="rounded layout overflow-y-scroll w-full "
+        className="rounded layout overflow-y-scroll w-full"
         ref={snapElementRef}
         onScroll={handleScroll}
       >
