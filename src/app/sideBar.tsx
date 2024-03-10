@@ -337,7 +337,7 @@ function Sidebar() {
       <MobileSidebarToggle onClick={handleToggleRequest} />
 
       <div
-        className="sidebar dark flex-shrink-0 overflow-x-hidden overflow-y-auto bg-black"
+        className="sidebar dark flex-shrink-0 overflow-x-hidden overflow-y-scroll bg-black"
         id="sidebar"
         ref={sidebarRef}
       >
