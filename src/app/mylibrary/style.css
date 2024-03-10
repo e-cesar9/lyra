@@ -1,6 +1,14 @@
-body{
-	height: 100%;
+html,
+body
+{
+    font-family: 'Technor-Variable';
+    overflow: auto;
+    height: 100%;
+    background-color: black;
+    scrollbar-width: none;
+
 }
+
 
 @font-face {
 	font-family: 'Zodiak-Variable';
