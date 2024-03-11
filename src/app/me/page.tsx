@@ -1,13 +1,8 @@
 "use client"
-import React, {useLayoutEffect} from "react"
+import React from "react"
 import "./style.css"
-
-import gsap from "gsap"
-import {ScrollTrigger} from "gsap/ScrollTrigger"
 import Sidebar from "../sideBar"
 import PageTransition from "@/src/utils/effect/PageTransition"
-
-gsap.registerPlugin(ScrollTrigger)
 
 const DiaryPage: React.FC = () => {
   const urls = [
@@ -29,94 +24,92 @@ const DiaryPage: React.FC = () => {
     setSelectedUrl(getRandomUrl())
   }, [])
 
-  const mouseOverRef = React.useRef(null)
-  const [text, setText] = React.useState("ライラー・ハルト")
-  const originalTextRef = React.useRef("ライラー・ハルト")
-  const [className, setClassName] = React.useState("")
+  // const mouseOverRef = React.useRef(null)
+  // const [text, setText] = React.useState("ライラー・ハルト")
+  // const originalTextRef = React.useRef("ライラー・ハルト")
+  // const [className, setClassName] = React.useState("")
 
-  React.useEffect(() => {
-    function mouseOverHandler() {
-      const textLength = mouseOverRef.current.innerHTML.length
-      originalTextRef.current = mouseOverRef.current.innerHTML
+  // React.useEffect(() => {
+  //   function mouseOverHandler() {
+  //     const textLength = mouseOverRef.current.innerHTML.length
+  //     originalTextRef.current = mouseOverRef.current.innerHTML
 
-      setText(getRandomString(textLength))
-      setTimeout(() => {
-        setClassName("highlighted")
-        const newText = getRandomString(textLength)
-        mouseOverRef.current.innerHTML = newText
-      }, 100)
+  //     setText(getRandomString(textLength))
+  //     setTimeout(() => {
+  //       setClassName("highlighted")
+  //       const newText = getRandomString(textLength)
+  //       mouseOverRef.current.innerHTML = newText
+  //     }, 100)
 
-      setTimeout(() => {
-        const newText = getRandomString(textLength)
-        setClassName("highlighted")
+  //     setTimeout(() => {
+  //       const newText = getRandomString(textLength)
+  //       setClassName("highlighted")
 
-        mouseOverRef.current.innerHTML = newText
-      }, 200)
-      setTimeout(() => {
-        setClassName("highlighted")
+  //       mouseOverRef.current.innerHTML = newText
+  //     }, 200)
+  //     setTimeout(() => {
+  //       setClassName("highlighted")
 
-        const newText = getRandomString(textLength)
+  //       const newText = getRandomString(textLength)
 
-        mouseOverRef.current.innerHTML = "Lyra Haruto"
-      }, 400)
-    }
+  //       mouseOverRef.current.innerHTML = "Lyra Haruto"
+  //     }, 400)
+  //   }
 
-    function mouseLeaveHandler() {
-      mouseOverRef.current.innerHTML = originalTextRef
-      setText(originalTextRef.current)
-      setClassName("")
+  //   function mouseLeaveHandler() {
+  //     mouseOverRef.current.innerHTML = originalTextRef
+  //     setText(originalTextRef.current)
+  //     setClassName("")
 
-      setTimeout(() => {
-        setClassName("")
+  //     setTimeout(() => {
+  //       setClassName("")
 
-        mouseOverRef.current.innerHTML = "ライラー・ハルト"
-      }, 400)
-    }
+  //       mouseOverRef.current.innerHTML = "ライラー・ハルト"
+  //     }, 400)
+  //   }
 
-    const linkElement = mouseOverRef.current
-    if (linkElement) {
-      linkElement.addEventListener("mouseover", mouseOverHandler)
-      linkElement.addEventListener("mouseleave", mouseLeaveHandler)
+  //   const linkElement = mouseOverRef.current
+  //   if (linkElement) {
+  //     linkElement.addEventListener("mouseover", mouseOverHandler)
+  //     linkElement.addEventListener("mouseleave", mouseLeaveHandler)
 
-      return () => {
-        linkElement.removeEventListener("mouseleave", mouseLeaveHandler)
-        linkElement.removeEventListener("mouseover", mouseOverHandler)
-      }
-    }
-  }, [])
+  //     return () => {
+  //       linkElement.removeEventListener("mouseleave", mouseLeaveHandler)
+  //       linkElement.removeEventListener("mouseover", mouseOverHandler)
+  //     }
+  //   }
+  // }, [])
 
-  function getRandomString(length) {
-    let result = ""
-    const characters =
-      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
-    for (let i = 0; i < length; i++) {
-      result += characters.charAt(Math.floor(Math.random() * characters.length))
-    }
-    return result
-  }
+  // function getRandomString(length) {
+  //   let result = ""
+  //   const characters =
+  //     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+  //   for (let i = 0; i < length; i++) {
+  //     result += characters.charAt(Math.floor(Math.random() * characters.length))
+  //   }
+  //   return result
+  // }
 
-  const snapElementRef = React.useRef(null)
-  let lastScrollTime = 0
+  // const snapElementRef = React.useRef(null)
+  // let lastScrollTime = 0
 
-  const handleScroll = (event) => {
-    const currentTime = new Date().getTime()
+  // const handleScroll = (event) => {
+  //   const currentTime = new Date().getTime()
 
-    if (currentTime - lastScrollTime < 100) {
-      event.preventDefault()
-      return false
-    }
+  //   if (currentTime - lastScrollTime < 100) {
+  //     event.preventDefault()
+  //     return false
+  //   }
 
-    lastScrollTime = currentTime
-  }
+  //   lastScrollTime = currentTime
+  // }
 
   return (
     <>
       <Sidebar />
       <div
         id="Me"
-        className="rounded layout overflow-y-scroll w-full"
-        ref={snapElementRef}
-        onScroll={handleScroll}
+        className="w-full overflow-y-auto h-screen relative"
       >
         <div className="part echo flex flex-col relative">
           <div className="flex flex-col h-screen items-center w-full justify-center">
