@@ -238,8 +238,9 @@ figcaption{
 	
 
 	#Me{
-		position: absolute;
-		padding: 0 0 2rem 0 ;
+        position: absolute;
+        overflow-x: hidden;
+        overflow-y: auto;
 	}
 
 	#end{
