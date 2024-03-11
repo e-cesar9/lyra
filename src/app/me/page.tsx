@@ -812,7 +812,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
         </div>
-        <PageTransition />
+        {/* <PageTransition /> */}
       </div>
     </>
   )
