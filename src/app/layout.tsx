@@ -15,7 +15,7 @@ const RootLayout = ({children}: {children: React.ReactNode}) => {
 
   const Global = (props: GlobalProps) => {
     return (
-      <div className="relative z-0 flex h-full w-full overflow-hidden">
+      <div className="relative z-0 flex h-full w-full overflow-hidden overflow-y-scroll">
         {props.children}
       </div>
     )
