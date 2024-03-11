@@ -21,6 +21,9 @@ div#__next > div {
   overflow: auto;
   min-height: -moz-available;
   scrollbar-width: none;
+}
+.relative.z-0.flex.h-full.w-full.overflow-hidden.overflow-y-scroll{
+  scrollbar-width: none;
 
 }
 
