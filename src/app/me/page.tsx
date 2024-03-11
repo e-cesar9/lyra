@@ -186,7 +186,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="snap pt-40 pb-64">
+          <div className="snap py-40">
             <p className="content__title">
               In the tender years of my youth, my memories of my father were
               akin to fleeting glimpses of a distant dream — fragmented yet
@@ -229,7 +229,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="pt-40 pb-64 snap">
+          <div className="py-40 snap">
             <p className="content__title">
               In the embrace of Japan&apos;s countryside, where the whispers of
               nature spoke in a language as ancient as time itself, I found an
@@ -291,7 +291,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="pt-40 pb-64 snap">
+          <div className="py-40 snap">
             <p className="content__title">
               In the labyrinth of my intellect, where the threads of philosophy,
               literature, biography, cinema, and beyond intertwine, I find
@@ -359,7 +359,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="part">
-          <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20 snap">
+          <div className="flex flex-col items-center w-full h-[120vh] justify-center pink py-20 snap">
             <div className="grid4 wm">
               <img
                 className="grid__item-img4 aspectm"
@@ -370,7 +370,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="pt-40 pb-64 snap">
+          <div className="py-40 snap">
             <p className="content__title">
               In my teenage years, I came to a realization, akin to a quiet
               awakening, about the essence of beauty and its role in my
@@ -409,7 +409,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="part">
-          <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
+          <div className="flex flex-col items-center w-full h-[120vh] justify-center pink py-20">
             <div className="grid5 wm">
               <img
                 className="grid__item-img5 aspectm"
@@ -422,7 +422,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="pt-40 pb-64">
+          <div className="py-40">
             <div className="content__title">
               Reflecting upon the passage of years, a certain memory comes to
               the fore, vibrant and alive with the energy of my younger self.
@@ -480,7 +480,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="pt-40 pb-64">
+          <div className="py-40">
             <div className="content__title">
               My first encounter with America was a vivid tapestry of
               experiences, each more intense and enlightening than the last. New
@@ -536,7 +536,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="part">
-          <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
+          <div className="flex flex-col items-center w-full  hh-[135vh] justify-center pink py-20">
             <div className="grid7 wm">
               <img
                 className="grid__item-img7 aspectm"
@@ -549,7 +549,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="pt-40 pb-64">
+          <div className="py-40">
             <p className="content__title">
               In America, I embraced the force of entrepreneurship — that
               intrepid spirit which seemed to rise from the very ground of
@@ -610,7 +610,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="part">
-          <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
+          <div className="flex flex-col items-center w-full  h-[120vh] justify-center pink py-20">
             <div className="grid8 wm">
               <img
                 className="grid__item-img8 aspectm"
@@ -623,7 +623,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="pt-40 pb-64">
+          <div className="py-40">
             <div className="content__title">
               The cornerstone of our studio&apos;s philosophy is rooted in the
               dual virtues of audacity and curiosity — a blend of fearless
@@ -671,7 +671,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="part">
-          <div className="flex flex-col items-center w-full  h-screenF justify-center pink py-20">
+          <div className="flex flex-col items-center w-full  h-[125vh] justify-center pink py-20">
             <div className="grid9 wm">
               <img
                 className="grid__item-img9 aspectm"
@@ -684,7 +684,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="pt-40 pb-64">
+          <div className="py-40">
             <div className="content__title">
               In our pursuit of excellence, we align ourselves with the finest
               talents, guiding them, learning from them, and forever seeking
