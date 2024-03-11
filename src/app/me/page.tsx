@@ -107,10 +107,7 @@ const DiaryPage: React.FC = () => {
   return (
     <>
       <Sidebar />
-      <div
-        id="Me"
-        className="w-full overflow-y-auto h-screen relative"
-      >
+      <div id="Me" className="w-full overflow-y-auto h-screen relative">
         <div className="part echo flex flex-col relative">
           <div className="flex flex-col h-screen items-center w-full justify-center">
             <div className=" flex flex-row justify-center pl-[45px] z-50 items-center swap">
@@ -183,7 +180,6 @@ const DiaryPage: React.FC = () => {
               <img
                 className="grid__item-img1 aspectm"
                 src="/AnIncredibleLife/LYH_1940_visuel_v002-min.jpg"
-                loading="lazy"
                 alt=""
               />
               <figcaption className="quotes">Dad, Mum, I love you</figcaption>
@@ -227,7 +223,6 @@ const DiaryPage: React.FC = () => {
               <img
                 className="grid__item-img2 aspectm"
                 src="/AnIncredibleLife/LYH_1957_visuel03_V001-min.jpg"
-                loading="lazy"
                 alt=""
               />
               <figcaption className="quotes">Run Forest, Run</figcaption>
@@ -288,7 +283,6 @@ const DiaryPage: React.FC = () => {
               <img
                 className="grid__item-img3 aspectm"
                 src="/AnIncredibleLife/LYH_1957_visuel06_V001-min.jpg"
-                loading="lazy"
                 alt=""
               />
               <figcaption className="quotes">
@@ -370,7 +364,6 @@ const DiaryPage: React.FC = () => {
               <img
                 className="grid__item-img4 aspectm"
                 src="/AnIncredibleLife/LYH_1967_concept01_V001-mina.jpg"
-                loading="lazy"
                 alt=""
               />
               <figcaption className="quotes">Oh! Glory of youth …</figcaption>
@@ -421,7 +414,6 @@ const DiaryPage: React.FC = () => {
               <img
                 className="grid__item-img5 aspectm"
                 src="/AnIncredibleLife/LYH_1967_visuel01_V020-mina.jpg"
-                loading="lazy"
                 alt=""
               />
               <figcaption className="quotes">
@@ -482,7 +474,6 @@ const DiaryPage: React.FC = () => {
               <img
                 className="grid__item-img6 aspectm"
                 src="/AnIncredibleLife/LYH_1977_visuel_2_v001-min.jpg"
-                loading="lazy"
                 alt=""
               />
               <figcaption className="quotes">New York, New York</figcaption>
@@ -550,7 +541,6 @@ const DiaryPage: React.FC = () => {
               <img
                 className="grid__item-img7 aspectm"
                 src="/AnIncredibleLife/LYH_1977_visuel_3_v001-min.jpg"
-                loading="lazy"
                 alt=""
               />
               <figcaption className="quotes">
@@ -625,7 +615,6 @@ const DiaryPage: React.FC = () => {
               <img
                 className="grid__item-img8 aspectm"
                 src="/AnIncredibleLife/LYH_1977_visuel_v001-mina.jpg"
-                loading="lazy"
                 alt=""
               />
               <figcaption className="quotes">
@@ -687,7 +676,6 @@ const DiaryPage: React.FC = () => {
               <img
                 className="grid__item-img9 aspectm"
                 src="/AnIncredibleLife/LYH_2007_visuel2_v009-min.jpg"
-                loading="lazy"
                 alt=""
               />
               <figcaption className="quotes">
@@ -747,7 +735,6 @@ const DiaryPage: React.FC = () => {
               <img
                 className="grid__item-img10 aspectm"
                 src="/AnIncredibleLife/LYH_2023_visuel1_cleanup_v001-min.jpg"
-                loading="lazy"
                 alt=""
               />
               <figcaption className="quotes">

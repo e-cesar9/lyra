@@ -22,7 +22,11 @@ const LibraryPage = ({}) => {
         <span id="lyra">ライラー・ハルト</span>{" "}
         <span id="library">My Library</span>
       </div>
-      <nav id="menu" className="menu w-full overflow-y-auto h-screen relative" ref={menuRef}>
+      <nav
+        id="menu"
+        className="menu w-full overflow-y-auto h-screen relative"
+        ref={menuRef}
+      >
         <div className="menu__item">
           <a
             target="__blank"
