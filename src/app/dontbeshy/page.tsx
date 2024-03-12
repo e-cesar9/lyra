@@ -156,7 +156,6 @@ const DiaryPage = ({}) => {
     "luigitoadpeach.png",
     "panda.png",
     "trunks.png",
-    "ichigo.png",
   ]
   const [images, setImages] = React.useState<
     {src: string; x: number; y: number}[]

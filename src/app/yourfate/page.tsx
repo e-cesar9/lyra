@@ -438,7 +438,7 @@ const FatePage = ({}) => {
             <span className="text_roles">
               Advises on the studio&apos;s AI adoption strategy.
             </span>
-            <span className="absolute right-0">
+            <span className="absolute right-0 max-[1280px]:pb-12 max-[1280px]:mt-12">
               <a
                 className="btnContact"
                 href="/dontbeshy#form-section"

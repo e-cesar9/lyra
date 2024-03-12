@@ -173,15 +173,19 @@ void main() {
                 isActive ? "opacity-100 ml-20" : "opacity-0 ml-4"
               } w-30 team__bio  pb-4`}
             >
-              Optio Urna s.d.a Sit-mi in v nisi-nativo AC minori
-              hectorem/impiorum. Firmissime eius Axioma, Non mus usus urgeant me
-              d AB Probitas sed Aut continue modo omnis. Eum nobilis eos
-              Facundla, Risus Tributa, Fuga Arcui, CRAS, VERO, Quos, Publicarum,
-              InduCcre... Sed quis ut potens adolescentulus tantae proditorem
-              est facilis ornare clari charitativum laborum mirabile militantes
-              qui leo nam praesentiam. Inaugurationem qui eventum ut
-              praefixionem mus litterarum Minim eaque te occiditur oppressor
-              facultates per praetensionis nisl dui urna.
+              Oussama Ammar is a luminary in the constellation of
+              entrepreneurship. Harnessing the harmony of creativity and
+              strategy, he is easily likened to an expert fencer, his
+              entrepreneurial genius unrivaled. A modern-day alchemist, he
+              transmutes unadorned startups into beacons of innovation with his
+              keen intellect and audacious vision. As my co-creator, we traverse
+              the labyrinth of narratives, alighting seldom-explored paths,
+              marrying shared beliefs in freedom and storytelling, speaking a
+              dialectic unique to us. Architect of ambition, beacon of
+              foresight. Oussama not only navigates impossibility, but redefines
+              its parameters, while remaining a humble and genial soul.
+              Multi-dimensioned, inspirational, a beacon lighting the path to
+              greatness.
             </p>
           </div>
         </div>
