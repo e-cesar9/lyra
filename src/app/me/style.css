@@ -265,7 +265,7 @@ figcaption{
 		writing-mode: vertical-rl;
 		text-orientation: upright;
 		}
-		#printemps::after {
+		/* #printemps::after {
 		  content: attr(data-hover);
 		  font-size: 21px;
 		  font-weight: 500;
@@ -288,7 +288,7 @@ figcaption{
 	  
 		#printemps:hover {
 		  visibility: hidden;
-		}
+		} */
 	  
 	.content__title{
 		margin: 2rem 0rem;
@@ -416,6 +416,10 @@ figcaption{
 		background-position: 50% 50%;
 		will-change: transform, opacity;
 		border: 5px solid white;
+	}
+
+	.h-screenF{
+		height: 100vh;
 	}
 	
 }
