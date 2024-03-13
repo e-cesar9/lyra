@@ -536,7 +536,7 @@ const DiaryPage: React.FC = () => {
         </div>
 
         <div className="part">
-          <div className="flex flex-col items-center w-full  hh-[135vh] justify-center pink py-20">
+          <div className="flex flex-col items-center w-full h-[135vh] justify-center pink py-20">
             <div className="grid7 wm">
               <img
                 className="grid__item-img7 aspectm"

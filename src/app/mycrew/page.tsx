@@ -140,6 +140,8 @@ void main() {
             We come from all
             <br />
             over the world.
+            
+          <p className="quote"><em> - Lyra Haruto </em></p>
           </p>
         </div>
         <canvas className="webglLyra"></canvas>
@@ -148,7 +150,7 @@ void main() {
           <div className="team__brand min-[1550px]:-ml-16">
             <span className="team__title">Brand Director</span>
             <Image
-              src="/vicki-final1.jpg"
+              src="/OussamaAmmar.jpg"
               className="team__picture"
               alt="Brand logo from Lyra Haruto"
               width={600}
@@ -159,7 +161,7 @@ void main() {
           </div>
           <div className="w-1/3 flex flex-col justify-end pl-3 ml-[-3rem] team__text">
             <p className="text-5xl mb-9 leading-[4rem] team__name">
-              Lyra <br /> Haruto
+              Oussama <br /> Ammar
             </p>
             <span className="border w-[100px] h-[100px] rounded-full mb-4 btnClick">
               <button className="w-full h-full p-9 " onClick={handleClick}>
@@ -191,7 +193,7 @@ void main() {
         </div>
 
         <div className="teamContent flex flex-row justify-end pr-40 max-[760px]:justify-end mt-48 max-[1080px]:mt-16 max-[1080px]:pr-6 w-full relative h-screen">
-          <div className="w-1/3 flex flex-col justify-end items-end team__text_right pr-3 mr-[-3rem] z-10">
+          <div className="w-1/3 flex flex-col justify-end items-end team__text_right pr-3 mr-[-3rem] z-10 ">
             <p className="text-5xl mb-9 leading-[4rem] team__name text-right ">
               Lyra <br /> Haruto
             </p>

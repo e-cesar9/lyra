@@ -476,7 +476,7 @@ const DiaryPage = ({}) => {
         </div>
         <div className="flex flex-col w-full" id="footer-contact">
           <div
-            className="flex flex-row px-12 pb-6 pt-6 justify-between"
+            className="flex flex-row max-[880px]:flex-col px-12 pb-6 pt-6 justify-between"
             id="footer-text"
           >
             {" "}

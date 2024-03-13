@@ -16,6 +16,10 @@ body{
     scrollbar-width: none;
 }
 
+.quote{
+    font-size: initial;
+}
+
 .itemMenu{
     animation: none;
   }
@@ -99,6 +103,15 @@ body {
 }
 
 @media (max-width: 760px) { 
+    canvas.webglLyra{
+        position: absolute;
+        right: 0;
+        overflow: hidden;
+        margin-right: -35rem;
+        bottom: -260px;
+        z-index: -10;
+        scrollbar-width: none;
+    }
     .main{
         position: absolute;
     }
@@ -129,7 +142,7 @@ body {
 
 }
 
-@media (min-width: 760px) and (max-width: 1440px) { 
+@media (min-width: 761px) and (max-width: 1440px) { 
     .team__picture{
         max-width: 65%;
     }
@@ -140,10 +153,13 @@ body {
         margin-left: -10rem;
         justify-content: center;
     }
+    .team__text_right{
+margin-right: -10rem;
+    }
 }
 
 canvas.webglLyra{
-    position: absolute;
+    position: fixed;
     right: 0;
     overflow: hidden;
     margin-right: -35rem;
