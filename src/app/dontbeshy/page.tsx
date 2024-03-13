@@ -191,12 +191,11 @@ const DiaryPage = ({}) => {
     }
   }, [])
 
-
-  const scrollRef = React.useRef(null);
+  const scrollRef = React.useRef(null)
 
   const scrollToSection = () => {
-    scrollRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
+    scrollRef.current.scrollIntoView({behavior: "smooth", block: "start"})
+  }
 
   return (
     <>
@@ -228,7 +227,7 @@ const DiaryPage = ({}) => {
               </div>
             </div>
 
-            <button className="btnHead px-8 py-1"  onClick={scrollToSection}>
+            <button className="btnHead px-8 py-1" onClick={scrollToSection}>
               Let’s talk
             </button>
           </div>
@@ -333,7 +332,7 @@ const DiaryPage = ({}) => {
             </div>
           </div>{" "}
           <br />
-          <div className="flex h-screen" >
+          <div className="flex h-screen">
             <div className="w-2/5 flex items-end">
               <img id="gifForm" src={selectedGif} />
             </div>{" "}
@@ -351,7 +350,7 @@ const DiaryPage = ({}) => {
                   }
                 </div>
               )) || (
-                <form onSubmit={handleSubmit} className="" >
+                <form onSubmit={handleSubmit} className="">
                   <div>
                     <div>
                       <label htmlFor="NAME">I’m </label>

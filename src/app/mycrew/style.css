@@ -142,20 +142,40 @@ body {
 
 }
 
-@media (min-width: 761px) and (max-width: 1440px) { 
+@media (min-width: 761px) and (max-width: 1280px) { 
+    .teamContent{}
     .team__picture{
+        max-width: 65%;
+    }
+    .team__bio{
+        margin-left: 0;
+        margin-right:0;
+    }
+    .team__text{
+        margin-left: -20rem;
+        justify-content: center;
+    }
+
+    .team__text_right{
+    margin-right: -20rem;
+    justify-content:center;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) { 
+    /* .team__picture{
         max-width: 65%;
     }
     .team__bio{
         margin-left: 0;
     }
     .team__text{
-        margin-left: -10rem;
+        margin-left: -20rem;
         justify-content: center;
     }
     .team__text_right{
-margin-right: -10rem;
-    }
+margin-right: -20rem;
+    } */
 }
 
 canvas.webglLyra{
