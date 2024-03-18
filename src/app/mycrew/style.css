@@ -8,8 +8,6 @@
     src: url(/assets/fonts/Technor-Variable.ttf);
   }
 
-
-
 body{
     height: 100%;
     overflow: auto;
@@ -22,7 +20,7 @@ body{
 
 .itemMenu{
     animation: none;
-  }
+}
   
 .main{
     font-family: 'Zodiak-Variable';
@@ -98,8 +96,7 @@ body {
 	
 	&:after {
 		transform: translatey(-50%) rotate(90deg);
-	}
-	
+	}	
 }
 
 @media (max-width: 760px) { 
@@ -166,16 +163,17 @@ body {
     /* .team__picture{
         max-width: 65%;
     }
-    .team__bio{
-        margin-left: 0;
-    }
     .team__text{
         margin-left: -20rem;
         justify-content: center;
     }
     .team__text_right{
-margin-right: -20rem;
+        margin-right: -20rem;
     } */
+    .team__bio{
+        margin-left: 0;
+        margin-right:0;
+    }
 }
 
 canvas.webglLyra{
